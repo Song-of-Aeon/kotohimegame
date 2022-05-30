@@ -1,5 +1,4 @@
 function music_set(music, face=MUSFACE.FRONT, swaptype=MUSSWAP.INSTANT) {
-	exit; //PROBLEM
 	if music == global.playingmusic {
 		global.playingmusictime = audio_sound_get_track_position(global.playingmusicdata);
 		audio_stop_sound(global.playingmusicdata);

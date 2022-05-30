@@ -12,8 +12,8 @@ global.surfaces = {
 	//gameSize: {x:200,y:340},
 	gameOffset:{x:0,y:10},
 	threedeescale:1,
-	borderSize: 34,
-	borderSize_orig : 34,
+	borderSize: 0,
+	borderSize_orig : 0,
 	border: surface_create(640+60,360+60),
 	skip: 0,
 	skipmod: 1,
@@ -100,11 +100,6 @@ global.surfaces = {
 }
 function surfaces_init(){
 	with(global.surfaces){
-		if os_get_config() == "noborder" {fancy = false}
-		if(!fancy)
-		borderSize = 0;
-		else
-		borderSize = borderSize_orig;
 		HUD= surface_create(640,360);
 		bg= surface_create(310,360);
 		screen2 = surface_create(640,360);
@@ -116,7 +111,6 @@ function surfaces_init(){
 		window_set_size((640*global.scale)+(borderSize*2*global.scale),(360*global.scale)+(borderSize*2*global.scale));
 		
 		threedee= surface_create(surface_get_width(application_surface)*threedeescale,surface_get_height(application_surface)*threedeescale);
-		log("this is dll calling")
 		display_set_timing_method(tm_sleep); //eventually expose these to the player because they are black magic and different computers like different settings
 		display_set_sleep_margin(10000);
 		//window_set_size((640*global.scale)+(global.surfaces.borderSize*global.scale*2),(360*global.scale)+(global.surfaces.borderSize*global.scale*2));

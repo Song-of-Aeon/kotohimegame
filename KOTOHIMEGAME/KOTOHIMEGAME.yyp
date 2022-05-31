@@ -398,6 +398,7 @@
     {"id":{"name":"s_worldmapbg","path":"sprites/s_worldmapbg/s_worldmapbg.yy",},"order":7,},
     {"id":{"name":"c_drawinfo","path":"scripts/c_drawinfo/c_drawinfo.yy",},"order":0,},
     {"id":{"name":"ach_deathbomb","path":"scripts/ach_deathbomb/ach_deathbomb.yy",},"order":7,},
+    {"id":{"name":"s_letterback","path":"sprites/s_letterback/s_letterback.yy",},"order":33,},
     {"id":{"name":"s_moyai","path":"sprites/s_moyai/s_moyai.yy",},"order":8,},
     {"id":{"name":"c_graze","path":"scripts/c_graze/c_graze.yy",},"order":4,},
     {"id":{"name":"s_doors","path":"sprites/s_doors/s_doors.yy",},"order":21,},

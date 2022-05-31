@@ -2,6 +2,7 @@ function txt_testtalk() {
 	msg = [
 	txt("HI GUYS", KOTOHIME.NORMAL, SPRITEPOS.LEFT, s_black),
 	txt("works so well. its easy.#its comical how easy it is", KOTOHIME.NORMAL),
+	txt("suote says hi.#yay",KOTOHIME.NORMAL),
 	]
 	
 	endevent = c_null;

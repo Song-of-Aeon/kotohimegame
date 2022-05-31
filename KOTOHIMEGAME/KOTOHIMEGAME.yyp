@@ -99,6 +99,7 @@
     {"id":{"name":"txt_reimuyaunnafter","path":"scripts/txt_reimuyaunnafter/txt_reimuyaunnafter.yy",},"order":4,},
     {"id":{"name":"cmd_fart","path":"scripts/cmd_fart/cmd_fart.yy",},"order":2,},
     {"id":{"name":"c_txtspecial","path":"scripts/c_txtspecial/c_txtspecial.yy",},"order":5,},
+    {"id":{"name":"fl_testwo","path":"scripts/fl_testwo/fl_testwo.yy",},"order":5,},
     {"id":{"name":"s_aunn16","path":"sprites/s_aunn16/s_aunn16.yy",},"order":2,},
     {"id":{"name":"s_mapicon195","path":"sprites/s_mapicon195/s_mapicon195.yy",},"order":3,},
     {"id":{"name":"s_impossiblereisen","path":"sprites/s_impossiblereisen/s_impossiblereisen.yy",},"order":14,},

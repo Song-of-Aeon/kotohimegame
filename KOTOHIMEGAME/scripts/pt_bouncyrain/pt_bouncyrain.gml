@@ -1,3 +1,11 @@
+/*nu pattern_ext(function() {
+	c
+	if ncm(10) {
+		c_shoot(10, 10, 1, point_me(), bul.point);
+		
+	}
+});*/
+
 nu pattern_ext(function() {
 	count++;
 	if ncm(23) {
@@ -26,7 +34,7 @@ nu pattern_ext(function() {
 		}
 		iterations++;
 		if ISAAC.y <= 100 && ncm(60) {
-			c_shootcircle(x, y, 4, point_me(), 20, global.bullets.big, c_white);
+			c_shootcircle(x, y, 4, point_me(), 20, bul.big, c_white);
 		}
 	}
 }, 600, 70, "aunn", SPELL.CARD, DIFFICULTY.HARD, "Brave Even While Weathered", u, c_aunnspelldraw);

@@ -29,6 +29,10 @@ selecting = false;
 skipped = false;
 specialchars = 0;
 
+backlog = [];
+
+nvlline = 0;
+
 bg = s_null;
 
 with o_pickup pulled = true;

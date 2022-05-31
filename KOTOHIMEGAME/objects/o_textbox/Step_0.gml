@@ -55,6 +55,8 @@ if drawchars <= talklength && !skipped {
 } else { 
     if select {
         if (talkpos < talksize-1) {
+			array_push(backlog, msg[talkpos]);
+			//nvlline++;
 			talkpos++;
 			talklength = string_length(msg[talkpos].text);
 			drawing = "";

@@ -40,44 +40,60 @@ global.stages[DAY.WEDNES][0] = {
 	}),
 	bgdraw: munction(function() {
 		with o_3dmanager {
-			surface_set_target(global.surfaces.bg);
-			draw_set_color(c_black);
-			draw_set_alpha(0.5)
-			draw_rectangle(0,0,1000,1000,false);
-			surface_reset_target();
-			draw_clear_alpha(c_black,1);
-			draw_set_alpha(1);
-			surface_set_target(global.surfaces.threedee);
-			draw_set_lighting(false)
 			var camera = camera_get_active();
 			global.vmat = camera_get_view_mat(camera)
 			global.projmat = camera_get_proj_mat(camera)
 			y++;
+			var c_darkpurple = $360D33
 			//var c_darkpurple = $0
-			draw_clear_alpha(c_blue,1);
-			draw_sprite_stretched(s_kybox,0,0,0,surface_get_width(global.surfaces.threedee)+1,surface_get_height(global.surfaces.threedee)+1);
-			//mousey = -20
-			//gpu_pop_state()
+			draw_clear_alpha(c_darkpurple,1);
 
+			draw_clear(0x5E2663);
+			if ngm(20) {
+				var guy = scriptable_create(function() {
+					x += hspd;
+					y += vspd;
+					image_angle += 4;
+					if is_oob(300) instance_destroy();
+				}, function() {
+					surface_set_target(global.surfaces.bg);
+					draw_sprite_ext(s_bgblock, image_index, x, y, 1, 1, image_angle, colorr, 1);
+					surface_reset_target();
+				});
+				guy.x = irandom(500)-310;
+				guy.y = -100;
+				guy.hspd = random(5)-2.5;
+				guy.vspd = random(2)+2;
+				guy.image_angle = irandom(360);
+				guy.image_speed = 0;
+				guy.image_index = irandom(3);
+				guy.colorr = choose(0x5E2663, 0x220628, 0x8E4753);
+			}
+			/*surface_reset_target();
+			draw_surface(global.surfaces.bg,camera_get_view_x(view_camera[0]) ,camera_get_view_y(view_camera[0]));
+			draw_surface_stretched(global.surfaces.threedee,0,0,room_width,room_height);
+			gpu_set_colorwriteenable([1,1,1,1]);*/
+			
+			
+			//draw_sprite(s_pace,0,camera_get_view_x(view_camera[0]),camera_get_view_y(view_camera[0]));
+			mousey = -20
+			//gpu_pop_state()
 			gpu_set_alphatestenable(true);
 			//gpu_set_alphatestref()
 			gpu_set_ztestenable(true);
 			gpu_set_zwriteenable(true);
 			//gpu_set_fog(true,c_darkpurple,0,0);
-	
+
 
 			camera_set_view_mat(camera,matrix_build_lookat(global.camerax,global.cameray,global.cameraz,global.camerax +cos(mousex/100),global.cameray +sin(mousex/100),global.cameraz+sin(mousey/100),0,0,-1));
 
-			camera_set_proj_mat(camera, matrix_build_projection_perspective_fov(60, 310/360, 20, 5000));
+			camera_set_proj_mat(camera, matrix_build_projection_perspective_fov(60, 310/360, 0.01, 5000));
 			camera_apply(camera);
 
 			//shader_reset();
 			shader_set(z_discard)
 			for(var i = 0; i < ds_list_size(models);i++){
 				models[|i].draw();	
-				if(models[|i].x < global.camerax){
-					models[|i].x += 400*80;	
-				}
 			}
 			shader_reset();
 			//shader_reset();
@@ -92,11 +108,7 @@ global.stages[DAY.WEDNES][0] = {
 			gpu_set_ztestenable(false)
 			gpu_set_zwriteenable(false);
 			gpu_set_fog(false,c_white,0,20);
-			gpu_set_colorwriteenable([1,1,1,0])
-			surface_reset_target()
 			draw_surface(global.surfaces.bg,camera_get_view_x(view_camera[0]) ,camera_get_view_y(view_camera[0]));
-			draw_surface_stretched(global.surfaces.threedee,0,0,room_width,room_height);
-			gpu_set_colorwriteenable([1,1,1,1])
 		}
 	}),
 	name: "TEST",

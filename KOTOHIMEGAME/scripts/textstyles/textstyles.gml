@@ -1,6 +1,12 @@
 global.gw = 290;
 global.gh = 340;//uh oh
 
+enum TEXTTYPE {
+	ADV,
+	NVL,
+	FREE,
+	OUTLINE,
+}
 
 global.textdefault = {
 	x: 320,
@@ -10,6 +16,17 @@ global.textdefault = {
 	spriteposx: 210,
 	spriteposy: 190,
 	sprite: s_spacetext,
+	type: TEXTTYPE.ADV,
+}
+global.textnvl = {
+	x: 320,
+	y: 30,
+	width: 420,
+	height: 300,
+	spriteposx: 210,
+	spriteposy: 190,
+	sprite: s_bigtext,
+	type: TEXTTYPE.NVL,
 }
 
 global.textshop = {
@@ -20,6 +37,7 @@ global.textshop = {
 	spriteposx: 250,
 	spriteposy: 180,
 	sprite: s_null,
+	type: TEXTTYPE.FREE,
 }
 
 global.textcalling = {
@@ -30,6 +48,7 @@ global.textcalling = {
 	spriteposx: -90,
 	spriteposy: -90,
 	sprite: s_null,
+	type: TEXTTYPE.FREE,
 }
 
 global.textnod = {
@@ -40,6 +59,7 @@ global.textnod = {
 	spriteposx: 80,
 	spriteposy: 220,
 	sprite: s_null,
+	type: TEXTTYPE.FREE,
 }
 
 

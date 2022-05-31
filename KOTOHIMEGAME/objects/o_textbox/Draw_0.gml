@@ -44,7 +44,7 @@ if txtprocessed {
 	for (j=0; j<array_length(backlog); j++) {
 		if texttype == TEXTTYPE.NVL {
 			draw_set_halign(fa_right);
-			draw_text(x-width/2-20, y+(fontsize)+(lb+nvlline)*(fontsize*2), talker[0].name);
+			draw_text(x-width/2-20, y+(fontsize)+(lb+nvlline)*(fontsize*2), backlog[j].name);
 			draw_set_halign(fa_left);
 		}
 		for (i=1; i<=string_length(backlog[j].text)+1; i++) {

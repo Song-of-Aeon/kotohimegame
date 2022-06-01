@@ -20,10 +20,9 @@ function c_hitpause(mstime){
 }
 ///flash(surface, duration, colour);
 function c_flash(_surface/*:surface*/, _duration/*:number*/, _color/*:any*/){
-	with(instance_create(0,0,o_flash)){
-		surface = other._surface;
-		duration = other._duration;
-		color = other._color
-	}
+	var dude = (instance_create(0,0,o_flash))
+	dude.surface = _surface;
+	dude.duration = _duration;
+	dude.color = _color
 }
  

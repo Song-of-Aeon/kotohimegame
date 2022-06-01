@@ -74,20 +74,21 @@ if txtprocessed {
 		    xpos += sizemult;
 		}
 		lb++;
+		clr = c_white;
+		var clrdur = 0;
+		var xpos = 0;
+		sizemult = 1;
+		var effchars = drawchars;
+		specialchars = 0;
+		wigglex = 0;
+		wiggley = 0;
+		shake = 0;
+		sizepos = 0;
+		pressing = 0;
+		fontsize = font_get_size(draw_get_font())-1;
 	}
 	
-	clr = c_white;
-	var clrdur = 0;
-	var xpos = 0;
-	sizemult = 1;
-	var effchars = drawchars;
-	specialchars = 0;
-	wigglex = 0;
-	wiggley = 0;
-	shake = 0;
-	sizepos = 0;
-	pressing = 0;
-	fontsize = font_get_size(draw_get_font())-1;
+	
 	
 	switch texttype {
 		case TEXTTYPE.ADV:

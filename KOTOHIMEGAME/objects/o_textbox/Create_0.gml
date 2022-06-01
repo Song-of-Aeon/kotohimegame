@@ -28,6 +28,10 @@ shake = 0;
 selecting = false;
 skipped = false;
 specialchars = 0;
+didsounds = array_create(999);
+didfuncs = array_create(999);
+atsound = 0;
+atfunc = 0;
 
 backlog = [];
 

@@ -17,6 +17,10 @@ if !txtprocessed {
 		msg[talkpos].text = talker[0].texteffects + msg[talkpos.text];
 	}
 	if msg[talkpos].bg != "UNCHANGED" bg = msg[talkpos].bg;
+	didsounds = array_create(999);
+	didfuncs = array_create(999);
+	atsound = 0;
+	atfunc = 0;
 }
 
 if wait {
@@ -66,6 +70,10 @@ if drawchars <= talklength && !skipped {
 			c_charpush(new talkchar(msg[talkpos].sprite, msg[talkpos].name, msg[talkpos].spritepos));
 			talkspeed = talker[0].textspeed;
 			if msg[talkpos].bg != "UNCHANGED" bg = msg[talkpos].bg;
+			didsounds = array_create(999);
+			didfuncs = array_create(999);
+			atsound = 0;
+			atfunc = 0;
         } else {
 			endevent();
             instance_destroy();

@@ -40,8 +40,11 @@ if txtprocessed {
 	sizepos = 0;
 	pressing = 0;
 	fontsize = font_get_size(draw_get_font())-1;
+	backlogging = true;
+	atsound = 0;
+	atfunc = 0;
 	var j=0;
-	for (j=0; j<array_length(backlog); j++) {
+	for (j=0; j<array_length(backlog) && texttype = TEXTTYPE.NVL; j++) {
 		if texttype == TEXTTYPE.NVL {
 			draw_set_halign(fa_right);
 			draw_text(x-width/2-20, y+(fontsize)+(lb+nvlline)*(fontsize*2), backlog[j].name);
@@ -86,8 +89,10 @@ if txtprocessed {
 		sizepos = 0;
 		pressing = 0;
 		fontsize = font_get_size(draw_get_font())-1;
+		atsound = 0;
+		atfunc = 0;
 	}
-	
+	backlogging = false;
 	
 	
 	switch texttype {
@@ -102,7 +107,8 @@ if txtprocessed {
 			draw_set_halign(fa_left);
 			break;
 	}
-	
+	atsound = 0;
+	atfunc = 0;
 	for (i=1; i<=effchars; i++) {
 		while string_char_at(msg[talkpos].text, i) = "|" {
 	        c_txtspecial();
@@ -128,6 +134,7 @@ if txtprocessed {
 	        xpos = -1;
 	    }
 	    xpos += sizemult;
+		
 	}
 	
 	

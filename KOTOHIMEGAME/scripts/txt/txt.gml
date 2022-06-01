@@ -1,4 +1,4 @@
-function txt(text_=c_errorstring(), sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.REPLACE, bg_="UNCHANGED", event_=c_null) {
+function txt(text_=c_errorstring(), sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.REPLACE, bg_="UNCHANGED", event_=c_null, sounds_=[], funcs_=[]) {
 	return {
 		text: text_,
 		name: sprite_.char.name,
@@ -6,6 +6,8 @@ function txt(text_=c_errorstring(), sprite_=global.textguy[?""].NOTHING, spritep
 		event: event_,
 		spritepos: spritepos_,
 		bg: bg_,
+		sounds: sounds_,
+		funcs: funcs_,
 	};
 }//not technically a constructor since dont wanna write new every time
 

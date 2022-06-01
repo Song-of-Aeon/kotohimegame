@@ -107,7 +107,7 @@ function c_txtspecial() {
 			}
 			
 			break;
-		case "f": //facepic
+		case "p": //portrait
 			var myguy = string_copy(msg[talkpos].text, i, 2);
 			talkindex[spritepos] = real(myguy);
 			i += 2;
@@ -132,6 +132,20 @@ function c_txtspecial() {
 			i++;
 			specialchars++;
 			break;
+		case "a": //audio (sound effect)
+			if !didsounds[atsound] {
+				audio_play_sound(msg[talkpos].sounds[atsound], 0, false);
+				didsounds[atsound] = true;
+			}
+			atsound++;
+			break;
+		case "f": //in-text function
+			if !didfuncs[atfunc] {
+				msg[talkpos].funcs[atfunc]();
+				didfuncs[atfunc] = true;
+			}
+			atfunc++;
+			break;
 		case "|": //neither does this
 			
 			break;
@@ -154,6 +168,8 @@ WAIT FOR INPUT as |n
 CHANGE FACEPIC as |fXX (talksprite)
 ITALICS as |iX to start and |i to close
 SHAKE as |xXX to start and |x to close
+FUNCTION as |f
+AUDIO as |a
 
 not yet done:
 BOLDED as |b to start and close

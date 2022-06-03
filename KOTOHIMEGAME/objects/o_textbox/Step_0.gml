@@ -6,6 +6,7 @@ if !txtprocessed {
     txtprocessed = true;
 	talksize = array_length(msg);
 	talkpos = 0;
+	msg[talkpos].text = lb_auto(msg[talkpos].text, 50);
 	talklength = string_length(msg[talkpos].text)+1;
 	drawing = ""
 	drawchars = 0;
@@ -66,6 +67,7 @@ if drawchars <= talklength && !skipped {
 				backlog = [];
 				talkpos++;
 			}
+			msg[talkpos].text = lb_auto(msg[talkpos].text, 50);
 			talklength = string_length(msg[talkpos].text);
 			drawing = "";
 			drawchars = 0;

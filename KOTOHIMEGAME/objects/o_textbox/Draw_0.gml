@@ -43,7 +43,7 @@ if txtprocessed {
 	backlogging = true;
 	atsound = 0;
 	atfunc = 0;
-	var j=0;
+	var j;
 	for (j=0; j<array_length(backlog) && texttype = TEXTTYPE.NVL; j++) {
 		if texttype == TEXTTYPE.NVL {
 			draw_set_halign(fa_right);

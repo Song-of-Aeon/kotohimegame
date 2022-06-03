@@ -15,9 +15,16 @@ function txt_testtalk2() {
 	msg = [
 	txt("HI GUYS 2", KOTOHIME.NORMAL, SPRITEPOS.LEFT, s_black),
 	txt("works so well. its easy.#its comical how easy it is 2", KOTOHIME.NORMAL),
+<<<<<<< Updated upstream
 	ptxt(),
 	txt("or is it?", KOTOHIME.NORMAL),
 	txt("well. that's for me to know|n#and you to find out", KOTOHIME.NORMAL),
+=======
+	txt("so what else do you want to do?"),
+	txt("Prose."),
+	txt("k#just a sec", KOTOHIME.NORMAL, SPRITEPOS.LEFT, s_black),
+	
+>>>>>>> Stashed changes
 	]
 	
 	endevent = c_null;

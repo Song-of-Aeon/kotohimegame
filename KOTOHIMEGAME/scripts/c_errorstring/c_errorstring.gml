@@ -1,5 +1,4 @@
 function c_errorstring() {
-	log("errorstringing");
 	var returnable = "super busted"
 	switch irandom(9) {
 		case 0:

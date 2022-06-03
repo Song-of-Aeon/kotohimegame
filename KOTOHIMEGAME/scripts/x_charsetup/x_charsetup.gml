@@ -13,6 +13,10 @@ nu chardata();
 nu chardata("Kotohime", s_kotohime, se_talkbloop);
 nu talksprite("NORMAL", "kotohime", 0);
 
+#macro EIRIN global.textguy[?"eirin"]
+nu chardata("Eirin", s_null, se_talkbloop);
+nu talksprite("NORMAL", "eirin", 0);
+
 function chardata(name_="drip", sprite_=s_drip, talksound_=se_null, textspeed_=.5, texteffects_=[]) constructor {
 	name = name_;
 	sprite = sprite_;

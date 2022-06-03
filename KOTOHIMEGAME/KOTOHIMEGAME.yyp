@@ -204,6 +204,7 @@
     {"id":{"name":"s_kybox","path":"sprites/s_kybox/s_kybox.yy",},"order":14,},
     {"id":{"name":"it_gocrazy","path":"scripts/it_gocrazy/it_gocrazy.yy",},"order":0,},
     {"id":{"name":"s_p","path":"sprites/s_p/s_p.yy",},"order":1,},
+    {"id":{"name":"txt_gaming","path":"scripts/txt_gaming/txt_gaming.yy",},"order":1,},
     {"id":{"name":"ft_couriernew7","path":"fonts/ft_couriernew7/ft_couriernew7.yy",},"order":2,},
     {"id":{"name":"txt_","path":"scripts/txt_/txt_.yy",},"order":0,},
     {"id":{"name":"s_fortuneteller","path":"sprites/s_fortuneteller/s_fortuneteller.yy",},"order":4,},

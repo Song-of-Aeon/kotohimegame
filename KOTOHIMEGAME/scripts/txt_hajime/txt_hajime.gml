@@ -3,7 +3,7 @@ function txt_hajime() {
 	msg = msglang([
 	
 	//txt("12345678901234567890123456789012345678901234578901234567890"),
-	txt("It is an unimaginably long journey."),
+	txt("It is an unimaginably long journey.", u, u, s_black),
 	txt("I do not know the origin of what I carry with me now, being the latest in its' series of bearers."),
 	txt("It is light. Fragile."),
 	txt("But of course, I would never falter with it."),
@@ -18,7 +18,7 @@ function txt_hajime() {
 	txt("What? Oh, you. It's nothing. You're welcome.", KOTOHIME.NORMAL, SPRITEPOS.LEFT),
 	txt("I'm welcome... for what?", REISEN.HAPPY),
 	txt("The sight of one of my rare performances! Very enigmatic, yes?", KOTOHIME.NORMAL),
-	txt("I mean, maybe if it didn't use to be my job.", REISEN.HAPPY),
+	txt("I mean, maybe if what you're describing didn't use to be my job.", REISEN.HAPPY),
 	txt("I'm sure you understand, then. The weight of this mission...", KOTOHIME.NORMAL),
 	txt("Anyway, let's go! Take me to Kaguya!", KOTOHIME.NORMAL),
 	txt("Kagu-#I mean, the princess is sleeping right now. I wouldn't want to be the one to wake her...", REISEN.HAPPY),
@@ -31,5 +31,5 @@ function txt_hajime() {
 	
 	])
 	
-	endevent = c_null;
+	endevent = function() {textbox_create(txt_gaming)};
 }

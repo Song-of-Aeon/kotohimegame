@@ -68,6 +68,7 @@ if drawchars <= talklength && !skipped {
 				talkpos++;
 			}
 			msg[talkpos].text = lb_auto(msg[talkpos].text, 50);
+			log(msg[talkpos]);
 			talklength = string_length(msg[talkpos].text);
 			drawing = "";
 			drawchars = 0;

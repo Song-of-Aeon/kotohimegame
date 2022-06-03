@@ -40,6 +40,7 @@ function c_txtspecial() {
 			}
 			break;
 		case "w": //wait
+			if backlogging exit;
 			var myguy = string_copy(msg[talkpos].text, i, 4);
 			i += 4;
 			specialchars += 4;
@@ -54,6 +55,7 @@ function c_txtspecial() {
 			}
 			break;
 		case "-": //try to skip
+		if backlogging exit;
 			if !skipped {
 				selecting = true;
 				skipped = true;
@@ -98,6 +100,7 @@ function c_txtspecial() {
 			}
 			break;
 		case "n": //nod
+			if backlogging exit;
 			if select || pressed[pressing] {
 				pressed[pressing] = true;
 				pressing++;

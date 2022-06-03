@@ -11,15 +11,19 @@ function txt(text_=c_errorstring(), sprite_=global.textguy[?""].NOTHING, spritep
 	};
 }//not technically a constructor since dont wanna write new every time
 
-function ntxt(wait=0, name_="", sprite_=0, spritepos_=SPRITEPOS.HIDDEN, bg_="UNCHANGED", event_=c_null) {
+function ntxt(wait=0, sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.HIDDEN, bg_="UNCHANGED", event_=c_null) {
 	return {
 		text: "|w"+ string_format(wait, 4, 0) + "|-",
-		name: name_,
-		sprite: sprite_,
+		name: sprite_.char.name,
+		sprite: sprite_.val,
 		event: event_,
 		spritepos: spritepos_,
 		bg: bg_,
 	};
+}
+
+function ptxt(wait=0, sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.HIDDEN, bg_="UNCHANGED", event_=c_null) {
+	return "GONEXT";
 }
 
 enum SPRITEPOS {

@@ -149,6 +149,12 @@ function c_txtspecial() {
 		case "|": //neither does this
 			
 			break;
+		case "g": //neither does this
+			if !backlogging {
+				backlog = [];
+				log("yiiking out rn");
+			}
+			break;
 		#endregion
 		
 		default:
@@ -170,6 +176,7 @@ ITALICS as |iX to start and |i to close
 SHAKE as |xXX to start and |x to close
 FUNCTION as |f
 AUDIO as |a
+NEXT PAGE as |g
 
 not yet done:
 BOLDED as |b to start and close

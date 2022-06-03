@@ -62,6 +62,10 @@ if drawchars <= talklength && !skipped {
 			array_push(backlog, msg[talkpos]);
 			//nvlline++;
 			talkpos++;
+			while msg[talkpos] == "GONEXT" {
+				backlog = [];
+				talkpos++;
+			}
 			talklength = string_length(msg[talkpos].text);
 			drawing = "";
 			drawchars = 0;

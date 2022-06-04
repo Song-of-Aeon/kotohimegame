@@ -17,6 +17,10 @@ nu talksprite("NORMAL", "kotohime", 0);
 nu chardata("Eirin", s_null, se_talkbloop);
 nu talksprite("NORMAL", "eirin", 0);
 
+#macro KAGUYA global.textguy[?"kaguya"]
+nu chardata("Kaguya", s_null, se_talkbloop);
+nu talksprite("NORMAL", "kaguya", 0);
+
 function chardata(name_="drip", sprite_=s_drip, talksound_=se_null, textspeed_=.5, texteffects_=[]) constructor {
 	name = name_;
 	sprite = sprite_;

@@ -24,7 +24,7 @@ skruh = method(global.surfaces,function(){
 });
 global.surfaces.preDraw = skruh;*/
 surfaces_init();
-state = st_standard;
+state = c_null;
 hspd = 0;
 vspd = 0;
 familiars = [];

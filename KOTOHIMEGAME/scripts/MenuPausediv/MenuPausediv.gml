@@ -22,7 +22,7 @@ function makePauseUIElement(_x,_y,text,onSelect){
 	element.onSelect = onSelect;
 	element.text = text;
 	element.draw = method(element,function(){
-		draw_text(x,y,text);
+		draw_text(x, y, text);
 	});
 	return element;
 }

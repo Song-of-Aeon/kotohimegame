@@ -1,4 +1,5 @@
 function regenerateItemUI(){// dont call this every frame
+	exit;
 	if(instance_exists(o_uicontroller)){
 		o_uicontroller.UIElements = [];
 	}

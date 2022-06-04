@@ -4,6 +4,7 @@ function lb_auto(str, maxlength) {
 	lbcount = 0;
 	for (i=0; i<string_length(str); i++) {
 		if string_char_at(str, i) == "#" lbcount = 0;
+		if string_char_at(str, i) == "|" lbcount -= 2;
 		if lbcount >= maxlength {
 			for (j=0; j<lbcount; j++) {
 				if string_char_at(str, i-j) == " " {

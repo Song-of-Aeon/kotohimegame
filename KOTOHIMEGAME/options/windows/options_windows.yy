@@ -1,7 +1,7 @@
 {
   "ConfigValues": {
     "BreadManFrameSkip": {"option_windows_sleep_margin":"100","option_windows_texture_page":"4096x4096",},
-    "noborder": {"option_windows_use_x64":"true",},
+    "noborder": {"option_windows_use_x64":"true","option_windows_executable_name":"kotohime.exe","option_windows_display_name":"kotohime stenography challenge","option_windows_copyright_info":"mine","option_windows_product_info":"this","option_windows_company_info":"me",},
   },
   "option_windows_display_name": "Touhou Lensed Night Sky, 果世外",
   "option_windows_executable_name": "Kaseigai.exe",

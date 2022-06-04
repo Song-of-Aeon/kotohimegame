@@ -42,5 +42,10 @@ function txt_gaming() {
 	
 	])
 	
-	endevent = function() {textbox_create(txt_gmod)};
+	endevent = function() {textchoice_make([
+		new choice("elden ring", function() {textbox_create(txt_hajime)}),
+		new choice("garry's mod", function() {textbox_create(txt_gmod)}),
+		new choice("ultrakill", function() {textbox_create(txt_hallway)}),
+	])};
+	//endevent = function() {textbox_create(txt_gmod)};
 }

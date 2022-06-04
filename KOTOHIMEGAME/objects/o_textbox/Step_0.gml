@@ -24,11 +24,14 @@ if !txtprocessed {
 	atfunc = 0;
 }
 
+if ctrlh {
+	wait = 0;
+}
+
 if wait {
 	wait--;
 	exit;
 }
-
 
 if ctrlh {
     select = true;

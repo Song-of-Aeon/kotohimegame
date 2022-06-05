@@ -9,6 +9,8 @@ nu chardata("", s_null, se_null, 1);
 nu chardata("spamton g. spamton", s_drip);
 nu chardata();
 
+
+
 #macro KOTOHIME global.textguy[?"kotohime"]
 nu chardata("Kotohime", s_kotohime, se_talkbloop);
 nu talksprite("NORMAL", "kotohime", 0);

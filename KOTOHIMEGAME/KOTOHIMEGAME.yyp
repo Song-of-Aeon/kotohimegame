@@ -147,6 +147,7 @@
     {"id":{"name":"cl_thurs1timeeasy","path":"scripts/cl_thurs1timeeasy/cl_thurs1timeeasy.yy",},"order":1,},
     {"id":{"name":"c_clearenemies","path":"scripts/c_clearenemies/c_clearenemies.yy",},"order":55,},
     {"id":{"name":"st_dayselect","path":"scripts/st_dayselect/st_dayselect.yy",},"order":53,},
+    {"id":{"name":"textbox_set_type","path":"scripts/textbox_set_type/textbox_set_type.yy",},"order":6,},
     {"id":{"name":"s_shuffle","path":"sprites/s_shuffle/s_shuffle.yy",},"order":3,},
     {"id":{"name":"format_time","path":"scripts/format_time/format_time.yy",},"order":37,},
     {"id":{"name":"x_naming","path":"scripts/x_naming/x_naming.yy",},"order":1,},

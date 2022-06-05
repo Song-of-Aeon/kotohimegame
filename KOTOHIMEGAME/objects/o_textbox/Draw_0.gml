@@ -66,7 +66,7 @@ if txtprocessed {
 			}
 			var textoffsetx = cos((count+i*2)/(talkspeed*20))*wigglex+random(shake/2)-shake/4;
 			var textoffsety = sin((count+i*2)/(talkspeed*20))*wiggley+random(shake/2)-shake/4;
-			var textxpos = x+width/20+(xpos+centerOffset)*(fontsize)-width/2;
+			var textxpos = x+margin+(xpos+centerOffset)*(fontsize)-width/2;
 			var textypos = y+(fontsize)+(lb+nvlline)*(fontsize*2);
 			var thechar = string_hash_to_newline(string_char_at(backlog[j].text, i));
 		    draw_text_ext_transformed_colour(textxpos+textoffsetx, textypos+textoffsety, thechar, 0, 999, sizemult, sizemult, 0, clr, clr, clr, clr, 1);
@@ -125,7 +125,7 @@ if txtprocessed {
 		}
 		var textoffsetx = cos((count+i*2)/(talkspeed*20))*wigglex+random(shake/2)-shake/4;
 		var textoffsety = sin((count+i*2)/(talkspeed*20))*wiggley+random(shake/2)-shake/4;
-		var textxpos = x+width/20+(xpos+centerOffset)*(fontsize)-width/2;
+		var textxpos = x+margin+(xpos+centerOffset)*(fontsize)-width/2;
 		var textypos = y+(fontsize)+(lb+nvlline)*(fontsize*2);
 		var thechar = string_hash_to_newline(string_char_at(msg[talkpos].text, i));
 	    draw_text_ext_transformed_colour(textxpos+textoffsetx, textypos+textoffsety, thechar, 0, 999, sizemult, sizemult, 0, clr, clr, clr, clr, 1);

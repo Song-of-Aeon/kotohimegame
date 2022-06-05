@@ -13,6 +13,7 @@ function txt_testtalk() {
 
 function txt_testtalk2() {
 	msg = [
+	txt("ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ", KOTOHIME.NORMAL, u, s_black),
 	txt("HI GUYS 2", KOTOHIME.NORMAL, u, s_black),
 	txt("works so well. its easy.#its comical how easy it is 2", KOTOHIME.NORMAL),
 	//ptxt(),

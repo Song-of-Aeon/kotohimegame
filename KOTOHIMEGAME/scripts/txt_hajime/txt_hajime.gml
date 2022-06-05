@@ -13,7 +13,7 @@ function txt_hajime() {
 	txt("Well, no matter. I'm already here, at its destination."),
 	txt("This incredible thing that should not exist in such a ridiculous world of ours..."),
 	txt("It is proof that we are different. That we stand together. It is proof of our-"),
-	txt("Royalty."),
+	txt("|c255000085Royalty|c255255255."),
 	txt("It is?", REISEN.HAPPY, SPRITEPOS.RIGHT),
 	txt("What? Oh, you. It's nothing. You're welcome.", KOTOHIME.NORMAL, SPRITEPOS.LEFT),
 	txt("I'm welcome... for what?", REISEN.HAPPY),
@@ -31,5 +31,5 @@ function txt_hajime() {
 	
 	])
 	
-	endevent = function() {textbox_create(txt_gaming)};
+	endevent = function() {textbox_create(txt_hallway)};
 }

@@ -1,3 +1,8 @@
+if instance_exists(o_uicontroller) {
+	o_uicontroller.UIElements = [];
+	global.MenuCursor.disabled = true;
+}
+
 txtprocessed = false;
 keyboard_check_advanced = keyboard_check;
 msgscript = txt_test;

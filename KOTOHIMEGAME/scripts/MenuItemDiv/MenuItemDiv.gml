@@ -1,6 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function generateItemMenu(){
+	exit;
 	global.MenuCursor.draw = munction(function(){
 		surface_set_target(global.surfaces.HUD);
 		draw_sprite_ext(s_itemselector,0,x-17,y-18,(width+6)/32,(height+6)/32,0,c_white,1);

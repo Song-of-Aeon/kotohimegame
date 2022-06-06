@@ -103,7 +103,10 @@ function txt_begin() {
 	txt("Are you one of those youkai exterminators?", KODOHIMEY.POGQMARK),
 	txt("Not really. I sorta... work for a youkai.", MARY.AWW),
 	txt("That's even cooler!", KODOHIMEY.POG),
-	
+
+
+	ptxt(),
+
 	txt("We talked like this for a while. I didn't know many witches, so I couldn't help but bombard her with questions.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("\"Student of a Lady Mima, the vengeful ghost,\"#\"Novice in everything but starlight magic,\"#\"Lives in a mighty palace in another world.\""),
 	txt("Or... lived in one. This \"Lady Mima\" had recently disappeared after being badly beaten. Mary was confident that her teacher would return, but she had little to do in the meantime."),

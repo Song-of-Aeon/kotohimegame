@@ -22,7 +22,9 @@ function txt_gmod() {
 	txt("When death becomes loses its stay, it becomes symbiotic."),
 	txt("A suicide attack is just using a tool in one's arsenal."),
 	txt("How pragmatic."),
-	//txt("Kotohime, I'm surprised you can take this so seriously."),
+	txt("Kotohime, I'm surprised you can take this so seriously."),
+	txt("Do you not have your \"princessly duties\" this eve?"),
+	txt("Alas, the eve has already given way to morrow."),
 	txt(""),
 	txt(""),
 	

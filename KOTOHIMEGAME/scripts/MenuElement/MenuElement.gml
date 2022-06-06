@@ -12,12 +12,13 @@ function MenuElement(_x,_y,_width,_height, depth = 0) constructor {
 	draw = function(){};
 	update = function(){};
 	onSelect = function(){};
+	isHovered = function(){return global.MenuCursor == self}
 	if(!instance_exists(o_uicontroller)){
 		instance_create(0,0,o_uicontroller,/*"Instances_ui"*/);
 	}
 	array_push(o_uicontroller.UIElements, self);
 	destroy = function(){
-		
+		o_uicontroller.destroy(self);
 	}
 	
 }

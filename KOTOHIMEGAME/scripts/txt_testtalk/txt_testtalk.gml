@@ -13,11 +13,17 @@ function txt_testtalk() {
 
 function txt_testtalk2() {
 	msg = [
-	txt("HI GUYS 2", KOTOHIME.NORMAL, SPRITEPOS.LEFT, s_black),
+	txt("ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ARG ", KOTOHIME.NORMAL, u, s_black),
+	txt("HI GUYS 2", KOTOHIME.NORMAL, u, s_black),
 	txt("works so well. its easy.#its comical how easy it is 2", KOTOHIME.NORMAL),
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 	ptxt(),
 	txt("or is it?", KOTOHIME.NORMAL),
+=======
+	//ptxt(),
+	txt("or is it?", KOTOHIME.NORMAL, u, u, function() {log("lmao"); textbox_set_type(global.textdefault)}),
+>>>>>>> main
 	txt("well. that's for me to know|n#and you to find out", KOTOHIME.NORMAL),
 =======
 	txt("so what else do you want to do?"),
@@ -27,5 +33,5 @@ function txt_testtalk2() {
 >>>>>>> Stashed changes
 	]
 	
-	endevent = c_null;
+	endevent = function() {};
 }

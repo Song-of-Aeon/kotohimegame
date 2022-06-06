@@ -2,11 +2,14 @@ c_input();
 count++;
 
 if !txtprocessed {
+	margin = width/20;
     msgscript();
     txtprocessed = true;
 	talksize = array_length(msg);
 	talkpos = 0;
-	msg[talkpos].text = lb_auto(msg[talkpos].text, 50);
+	var dudes = font_get_size(draw_get_font())-1;
+	var dudes2 = floor((sprite_width-margin*2)/dudes);
+	msg[talkpos].text = lb_auto(msg[talkpos].text, dudes2);
 	talklength = string_length(msg[talkpos].text)+1;
 	drawing = ""
 	drawchars = 0;

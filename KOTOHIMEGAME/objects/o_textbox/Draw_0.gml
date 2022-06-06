@@ -4,16 +4,23 @@ if txtprocessed {
 	//draw_self();
 	//log(talker, talkindex, spriteposx, spriteposy);
 	//for (i=0; i<array_length(talker); i++) {
-	for (i=array_length(talker)-1; i>=0; i--) {
-		//log(i);
-		//log(talker[i]);
-		//draw_sprite_ext(talker[i], talkindex[i], x+(i-2)*width/7+width/7, spriteposy, -ineg(i<2), 1, 0, c_white, 1);
-		draw_sprite_ext(talker[i].sprite,
-		talker[i].index,
-		x+(talker[i].position-2)*width/5,
-		spriteposy,
-		ineg(talker[i].position > SPRITEPOS.CENTER),
-		1, 0, make_color_hsv(0, 0, 255-(i>0)*100), talker[i].position <= SPRITEPOS.RIGHT);
+	if global.suoting {
+		for (i=array_length(talker)-1; i>=0; i--) {
+			draw_sprite_ext(talker[i].sprite,
+			talker[i].index,
+			x+(talker[i].position-2)*width/5,
+			spriteposy,
+			1, 1, 0, make_color_hsv(0, 0, 255-(i>0)*100), talker[i].position <= SPRITEPOS.RIGHT);
+		}
+	} else {
+		for (i=array_length(talker)-1; i>=0; i--) {
+			draw_sprite_ext(talker[i].sprite,
+			talker[i].index,
+			x+(talker[i].position-2)*width/5,
+			spriteposy,
+			ineg(talker[i].position > SPRITEPOS.CENTER),
+			1, 0, make_color_hsv(0, 0, 255-(i>0)*100), talker[i].position <= SPRITEPOS.RIGHT);
+		}
 	}
 	if sprite_index == s_textbox || sprite_index == s_null {
 		draw_set_color(c_black);

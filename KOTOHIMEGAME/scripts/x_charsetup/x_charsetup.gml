@@ -15,6 +15,30 @@ nu chardata();
 nu chardata("Kotohime", s_kotohime, se_talkbloop);
 nu talksprite("NORMAL", "kotohime", 0);
 
+#macro KODOHIMEY global.textguy[?"kodohimey"]
+nu chardata("Kodohimey", s_kodohimey);
+nu talksprite("DEF", "kodohimey", 0);
+
+
+#macro MARY global.textguy[?"mary"]
+nu chardata("Mary", s_mary);
+nu talksprite("DEF", "mary", 0);
+
+
+#macro MAYRA global.textguy[?"mayra"]
+nu chardata("Mayra", s_mary);
+nu talksprite("DEF", "mayra", 0);
+
+
+//beans
+
+
+
+
+
+
+
+
 #macro EIRIN global.textguy[?"eirin"]
 nu chardata("Eirin", s_null, se_talkbloop);
 nu talksprite("NORMAL", "eirin", 0);
@@ -41,6 +65,44 @@ from s_reimu16;
 
 
 
+
+
+var z=0;
+nu talksprite("DEF", "kodohimey", z++);
+nu talksprite("DISTANT", "kodohimey", z++);
+nu talksprite("HEHE", "kodohimey", z++);
+nu talksprite("KAAAY", "kodohimey", z++);
+nu talksprite("MIFFED", "kodohimey", z++);
+nu talksprite("POG", "kodohimey", z++);
+nu talksprite("POGQMARK", "kodohimey", z++);
+nu talksprite("SMUG", "kodohimey", z++);
+nu talksprite("WAAH", "kodohimey", z++);
+nu talksprite("WHAA", "kodohimey", z++);
+nu talksprite("WINKY", "kodohimey", z++);
+nu talksprite("WINKYHEART", "kodohimey", z++);
+nu talksprite("YAY", "kodohimey", z++);
+nu talksprite("YAYSWEAT", "kodohimey", z++);
+nu talksprite("HEHENOTE", "kodohimey", z++);
+
+
+
+var z=0;
+nu talksprite("DEF", "mary", z++);
+nu talksprite("OOH", "mary", z++);
+nu talksprite("YAY", "mary", z++);
+nu talksprite("AWW", "mary", z++);
+nu talksprite("ANGERY", "mary", z++);
+nu talksprite("UHH", "mary", z++);
+nu talksprite("WAAH", "mary", z++);
+
+
+var z=0;
+nu talksprite("DEF", "mayra", z++);
+
+
+
+
+
 var z=0;
 nu talksprite("HAPPY", "reimu", z++);
 nu talksprite("CONCERNED", "reimu", z++);
@@ -49,6 +111,8 @@ nu talksprite("WINKING", "reimu", z++);
 nu talksprite("POG", "reimu", z++);
 nu talksprite("ANNOYED", "reimu", z++);
 nu talksprite("NOTHING", "reimu", z++);
+
+
 
 var z=0;
 nu talksprite("NOTHING", "yukari", z++);

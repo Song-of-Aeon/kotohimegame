@@ -4,16 +4,23 @@ if txtprocessed {
 	//draw_self();
 	//log(talker, talkindex, spriteposx, spriteposy);
 	//for (i=0; i<array_length(talker); i++) {
-	for (i=array_length(talker)-1; i>=0; i--) {
-		//log(i);
-		//log(talker[i]);
-		//draw_sprite_ext(talker[i], talkindex[i], x+(i-2)*width/7+width/7, spriteposy, -ineg(i<2), 1, 0, c_white, 1);
-		draw_sprite_ext(talker[i].sprite,
-		talker[i].index,
-		x+(talker[i].position-2)*width/5,
-		spriteposy,
-		ineg(talker[i].position > SPRITEPOS.CENTER),
-		1, 0, make_color_hsv(0, 0, 255-(i>0)*100), talker[i].position <= SPRITEPOS.RIGHT);
+	if global.suoting {
+		for (i=array_length(talker)-1; i>=0; i--) {
+			draw_sprite_ext(talker[i].sprite,
+			talker[i].index,
+			x+(talker[i].position-2)*width/5,
+			spriteposy,
+			1, 1, 0, make_color_hsv(0, 0, 255-(i>0)*100), talker[i].position <= SPRITEPOS.RIGHT);
+		}
+	} else {
+		for (i=array_length(talker)-1; i>=0; i--) {
+			draw_sprite_ext(talker[i].sprite,
+			talker[i].index,
+			x+(talker[i].position-2)*width/5,
+			spriteposy,
+			ineg(talker[i].position > SPRITEPOS.CENTER),
+			1, 0, make_color_hsv(0, 0, 255-(i>0)*100), talker[i].position <= SPRITEPOS.RIGHT);
+		}
 	}
 	if sprite_index == s_textbox || sprite_index == s_null {
 		draw_set_color(c_black);
@@ -43,7 +50,7 @@ if txtprocessed {
 	backlogging = true;
 	atsound = 0;
 	atfunc = 0;
-	var j;
+	j = 0;
 	for (j=0; j<array_length(backlog) && texttype = TEXTTYPE.NVL; j++) {
 		if texttype == TEXTTYPE.NVL {
 			draw_set_halign(fa_right);
@@ -66,7 +73,7 @@ if txtprocessed {
 			}
 			var textoffsetx = cos((count+i*2)/(talkspeed*20))*wigglex+random(shake/2)-shake/4;
 			var textoffsety = sin((count+i*2)/(talkspeed*20))*wiggley+random(shake/2)-shake/4;
-			var textxpos = x+width/20+(xpos+centerOffset)*(fontsize)-width/2;
+			var textxpos = x+margin+(xpos+centerOffset)*(fontsize)-width/2;
 			var textypos = y+(fontsize)+(lb+nvlline)*(fontsize*2);
 			var thechar = string_hash_to_newline(string_char_at(backlog[j].text, i));
 		    draw_text_ext_transformed_colour(textxpos+textoffsetx, textypos+textoffsety, thechar, 0, 999, sizemult, sizemult, 0, clr, clr, clr, clr, 1);
@@ -125,7 +132,7 @@ if txtprocessed {
 		}
 		var textoffsetx = cos((count+i*2)/(talkspeed*20))*wigglex+random(shake/2)-shake/4;
 		var textoffsety = sin((count+i*2)/(talkspeed*20))*wiggley+random(shake/2)-shake/4;
-		var textxpos = x+width/20+(xpos+centerOffset)*(fontsize)-width/2;
+		var textxpos = x+margin+(xpos+centerOffset)*(fontsize)-width/2;
 		var textypos = y+(fontsize)+(lb+nvlline)*(fontsize*2);
 		var thechar = string_hash_to_newline(string_char_at(msg[talkpos].text, i));
 	    draw_text_ext_transformed_colour(textxpos+textoffsetx, textypos+textoffsety, thechar, 0, 999, sizemult, sizemult, 0, clr, clr, clr, clr, 1);

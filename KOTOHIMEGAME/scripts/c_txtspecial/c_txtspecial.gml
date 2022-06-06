@@ -1,9 +1,13 @@
 function c_txtspecial() {
 	specialchars += 2;
-	i++
-	switch string_char_at(msg[talkpos].text, i++) {
+	i++;
+	var shitread = msg[talkpos];
+	if backlogging {
+		shitread = backlog[j];
+	}
+	switch string_char_at(shitread.text, i++) {
 		case "c": //color
-			var myguy = string_copy(msg[talkpos].text, i, 9);
+			var myguy = string_copy(shitread.text, i, 9);
 			var myguy2 = string_replace(myguy, ".", "0");
 			if string_digits(myguy2) != myguy2 {
 				clr = c_white;
@@ -18,7 +22,7 @@ function c_txtspecial() {
 			//
 			break;
 		case "s": //speed
-			var myguy = string_copy(msg[talkpos].text, i, 3);
+			var myguy = string_copy(shitread.text, i, 3);
 			var myguy2 = string_replace(myguy, ".", "0");
 			if string_digits(myguy2) != myguy2 {
 				talkspeed = talker[0].textspeed;
@@ -29,7 +33,7 @@ function c_txtspecial() {
 			}
 			break;
 		case "l": //size (large)
-			var myguy = string_copy(msg[talkpos].text, i, 3);
+			var myguy = string_copy(shitread.text, i, 3);
 			var myguy2 = string_replace(myguy, ".", "0");
 			if string_digits(myguy2) != myguy2 {
 				sizemult = 1;
@@ -40,8 +44,12 @@ function c_txtspecial() {
 			}
 			break;
 		case "w": //wait
-			if backlogging exit;
-			var myguy = string_copy(msg[talkpos].text, i, 4);
+			if backlogging {
+				i += 4;
+				specialchars += 4;
+				break;
+			}
+			var myguy = string_copy(shitread.text, i, 4);
 			i += 4;
 			specialchars += 4;
 			
@@ -55,7 +63,7 @@ function c_txtspecial() {
 			}
 			break;
 		case "-": //try to skip
-		if backlogging exit;
+		if backlogging break;
 			if !skipped {
 				selecting = true;
 				skipped = true;
@@ -65,7 +73,7 @@ function c_txtspecial() {
 			drawchars = talklength;
 			break;
 		case "v": //viggle
-			var myguy = string_copy(msg[talkpos].text, i, 2);
+			var myguy = string_copy(shitread.text, i, 2);
 			var myguy2 = string_replace(myguy, ".", "0");
 			if string_digits(myguy) != myguy {
 				wigglex = 0;
@@ -79,7 +87,7 @@ function c_txtspecial() {
 			//
 			break;
 		case "i": //italics
-			var myguy = string_copy(msg[talkpos].text, i, 1);
+			var myguy = string_copy(shitread.text, i, 1);
 			if string_digits(myguy) != myguy {
 				draw_set_font(restorefont);
 			} else {
@@ -90,7 +98,7 @@ function c_txtspecial() {
 			}
 			break;
 		case "x": //shake
-			var myguy = string_copy(msg[talkpos].text, i, 2);
+			var myguy = string_copy(shitread.text, i, 2);
 			if string_digits(myguy) != myguy {
 				shake = 0;
 			} else {
@@ -100,7 +108,7 @@ function c_txtspecial() {
 			}
 			break;
 		case "n": //nod
-			if backlogging exit;
+			if backlogging break;
 			if select || pressed[pressing] {
 				pressed[pressing] = true;
 				pressing++;
@@ -111,16 +119,17 @@ function c_txtspecial() {
 			
 			break;
 		case "p": //portrait
-			var myguy = string_copy(msg[talkpos].text, i, 2);
-			talkindex[spritepos] = real(myguy);
-			i += 2;
-			specialchars += 2;
+			var myguy = string_copy(shitread.text, i, 2);
+			var myguy2 = string_copy(shitread.text, i+3, 2);
+			talker[myguy].index = real(myguy2);
+			i += 5;
+			specialchars += 5;
 			break;
 		
 		
 		#region bustedones
 		case "j": //actually doesnt work maybe later
-			var myguy = string_copy(msg[talkpos].text, i, 1);
+			var myguy = string_copy(shitread.text, i, 1);
 			switch myguy {
 				case "c":
 					draw_set_halign(fa_center);
@@ -137,14 +146,14 @@ function c_txtspecial() {
 			break;
 		case "a": //audio (sound effect)
 			if !didsounds[atsound] {
-				audio_play_sound(msg[talkpos].sounds[atsound], 0, false);
+				audio_play_sound(shitread.sounds[atsound], 0, false);
 				didsounds[atsound] = true;
 			}
 			atsound++;
 			break;
 		case "f": //in-text function
 			if !didfuncs[atfunc] {
-				msg[talkpos].funcs[atfunc]();
+				shitread.funcs[atfunc]();
 				didfuncs[atfunc] = true;
 			}
 			atfunc++;
@@ -161,7 +170,7 @@ function c_txtspecial() {
 		#endregion
 		
 		default:
-			msg[talkpos].text = c_errorstring();
+			shitread.text = c_errorstring();
 			break;
 	}
 }
@@ -174,7 +183,7 @@ WAIT as |wXXXX (frames)
 AUTOPRESS as |-
 SINEWIGGLE as |vXX (hspd, vspd) or |v to close
 WAIT FOR INPUT as |n
-CHANGE FACEPIC as |fXX (talksprite)
+CHANGE FACEPIC as |pXX:XX (talksprite, character)
 ITALICS as |iX to start and |i to close
 SHAKE as |xXX to start and |x to close
 FUNCTION as |f

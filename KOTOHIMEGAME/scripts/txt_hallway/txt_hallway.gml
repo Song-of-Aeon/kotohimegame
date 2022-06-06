@@ -4,7 +4,7 @@ function txt_hallway() {
 	
 	txt("...", u, u, s_black),
 	txt("Will you be staying a while?", REISEN.HAPPY, SPRITEPOS.MIDLEFT),
-	txt("Kaguya and I will probably be at it all night long!", KOTOHIME.NORMAL, SPRITEPOS.LEFT),
+	txt("Kaguya and I will probably be at it |p01:03all night long!", KOTOHIME.NORMAL, SPRITEPOS.LEFT),
 	txt("Please don't say it like that.", REISEN.HAPPY),
 	txt("I just wanted to know if I should prepare refreshments.", REISEN.HAPPY),
 	txt("Then please do.", KOTOHIME.NORMAL),

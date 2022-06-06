@@ -12,7 +12,11 @@
 		draw_set_color(c_white);
 	});*/
 	global.MenuCursor.draw = method(undefined, function() {
+
 		surface_set_target(global.surfaces.HUD);
+		var mousex = window_mouse_get_x()*global.scale;
+		var mousey = window_mouse_get_y()*global.scale;
+		//draw_sprite(s_)
 		if global.MenuCursor.target != o_uicontroller.UIElements[7] && global.MenuCursor.target != o_uicontroller.UIElements[6] {
 			draw_set_color(c_white);
 			draw_line(global.MenuCursor.target.x+global.MenuCursor.target.xplus+40,

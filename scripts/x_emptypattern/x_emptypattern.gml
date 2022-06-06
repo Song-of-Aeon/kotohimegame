@@ -1,0 +1,1 @@
+global.emptypattern = new pattern();

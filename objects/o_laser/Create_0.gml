@@ -1,0 +1,20 @@
+event_inherited();
+dir = 0;
+spd = 0;
+tspd = 0; //turnspeed
+hspd = 0;
+vspd = 0;
+acc = 0;
+count = 0;
+behaviors = NUMBER5;
+conditions = array_create(5);
+type = global.lasers.small;
+grazed = false;
+endx = x;
+endy = y;
+endtime = 0;
+width = 1;
+length = 32;
+image_alpha = 0;
+alpha = 0;
+draws = c_laserdraw;

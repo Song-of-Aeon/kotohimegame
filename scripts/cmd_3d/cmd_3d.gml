@@ -1,0 +1,1 @@
+nu consoleCommand("3d","3d 1/0",function(args){o_3dmanager.enabled = real(args[0])});

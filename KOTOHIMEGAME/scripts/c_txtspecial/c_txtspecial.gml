@@ -120,9 +120,10 @@ function c_txtspecial() {
 			break;
 		case "p": //portrait
 			var myguy = string_copy(shitread.text, i, 2);
-			talkindex[spritepos] = real(myguy);
-			i += 2;
-			specialchars += 2;
+			var myguy2 = string_copy(shitread.text, i+3, 2);
+			talker[myguy].index = real(myguy2);
+			i += 5;
+			specialchars += 5;
 			break;
 		
 		
@@ -182,7 +183,7 @@ WAIT as |wXXXX (frames)
 AUTOPRESS as |-
 SINEWIGGLE as |vXX (hspd, vspd) or |v to close
 WAIT FOR INPUT as |n
-CHANGE FACEPIC as |fXX (talksprite)
+CHANGE FACEPIC as |pXX:XX (talksprite, character)
 ITALICS as |iX to start and |i to close
 SHAKE as |xXX to start and |x to close
 FUNCTION as |f

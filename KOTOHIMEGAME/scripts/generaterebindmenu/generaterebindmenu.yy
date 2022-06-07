@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "UI 2.0",
-    "path": "folders/Technical/UI 2.0.yy",
+    "name": "rebind",
+    "path": "folders/Technical/UI 2.0/title/rebind.yy",
   },
   "resourceVersion": "1.0",
-  "name": "MenuElementdiv",
+  "name": "generateRebindMenu",
   "tags": [],
   "resourceType": "GMScript",
 }

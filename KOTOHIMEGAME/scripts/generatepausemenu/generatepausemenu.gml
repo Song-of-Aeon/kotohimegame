@@ -17,12 +17,3 @@ function generatePauseMenu(_x,_y){
 			STATS.runsabandoned++;
 		});
 }
-function makePauseUIElement(_x,_y,text,onSelect){
-	var element = makeGenericElement(_x,_y,100,30,s_mistake);	
-	element.onSelect = onSelect;
-	element.text = text;
-	element.draw = method(element,function(){
-		draw_text(x, y, text);
-	});
-	return element;
-}

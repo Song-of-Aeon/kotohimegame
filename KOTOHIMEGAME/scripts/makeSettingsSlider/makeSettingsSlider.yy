@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "settings",
-    "path": "folders/Technical/UI 2.0/settings.yy",
+    "path": "folders/Technical/UI 2.0/title/settings.yy",
   },
   "resourceVersion": "1.0",
   "name": "makeSettingsSlider",

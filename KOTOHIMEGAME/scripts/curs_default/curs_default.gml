@@ -1,6 +1,3 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-
 function setCursor(){
 	global.MenuCursor = { //ideally we have 3 or 4 presets for how menucursor should behave and 
 		x:0,

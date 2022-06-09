@@ -30,7 +30,6 @@ function st_textadv() {
 	sizepos = 0;
 	pressing = 0;
 	fontsize = font_get_size(draw_get_font())-1;
-	backlogging = true;
 	atsound = 0;
 	atfunc = 0;
 	j = 0;

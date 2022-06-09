@@ -112,6 +112,5 @@ function st_textnvl() {
 	    }
 	    xpos += sizemult;
 	}
-	draw_set_font(otherfonts);
 	surface_reset_target();
 }

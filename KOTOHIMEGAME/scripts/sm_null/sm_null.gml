@@ -1,3 +1,0 @@
-function sm_null() {
-
-}

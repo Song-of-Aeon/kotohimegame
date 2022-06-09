@@ -1,3 +1,0 @@
-function choice_create() {
-
-}

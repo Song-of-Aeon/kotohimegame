@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "UI 2.0",
-    "path": "folders/Technical/UI 2.0.yy",
+    "name": "death",
+    "path": "folders/Technical/UI 2.0/death.yy",
   },
   "resourceVersion": "1.0",
-  "name": "MenuItemDiv",
+  "name": "generateDeathMenu",
   "tags": [],
   "resourceType": "GMScript",
 }

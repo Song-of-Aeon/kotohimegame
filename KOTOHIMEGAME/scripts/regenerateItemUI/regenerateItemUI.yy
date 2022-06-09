@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "shop",
-    "path": "folders/Technical/UI 2.0/shop.yy",
+    "name": "ingameHUD",
+    "path": "folders/Technical/UI 2.0/ingameHUD.yy",
   },
   "resourceVersion": "1.0",
   "name": "regenerateItemUI",

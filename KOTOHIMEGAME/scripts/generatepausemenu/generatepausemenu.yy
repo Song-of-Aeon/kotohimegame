@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "UI 2.0",
-    "path": "folders/Technical/UI 2.0.yy",
+    "name": "pause",
+    "path": "folders/Technical/UI 2.0/pause.yy",
   },
   "resourceVersion": "1.0",
-  "name": "MenuUtilsdiv",
+  "name": "generatePauseMenu",
   "tags": [],
   "resourceType": "GMScript",
 }

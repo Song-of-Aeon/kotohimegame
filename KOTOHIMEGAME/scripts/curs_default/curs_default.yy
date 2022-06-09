@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "UI 2.0",
-    "path": "folders/Technical/UI 2.0.yy",
+    "name": "cursors",
+    "path": "folders/Technical/UI 2.0/cursors.yy",
   },
   "resourceVersion": "1.0",
-  "name": "MenuRundataDiv",
+  "name": "curs_default",
   "tags": [],
   "resourceType": "GMScript",
 }

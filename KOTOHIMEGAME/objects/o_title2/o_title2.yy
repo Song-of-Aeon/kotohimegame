@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI 2.0",
-    "path": "folders/Technical/UI 2.0.yy",
+    "name": "title",
+    "path": "folders/Technical/UI 2.0/title.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_title2",

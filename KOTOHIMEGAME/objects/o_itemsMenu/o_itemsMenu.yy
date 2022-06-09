@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "UI 2.0",
-    "path": "folders/Technical/UI 2.0.yy",
+    "name": "items",
+    "path": "folders/Technical/UI 2.0/title/items.yy",
   },
   "resourceVersion": "1.0",
   "name": "o_itemsMenu",

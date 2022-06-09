@@ -2,6 +2,11 @@ function txt_hajime() {
 	
 	msg = msglang([
 	
+	txt("among us in real life", REIMU.UNIMPRESSED, SPRITEPOS.LEFT),
+	txt("lookin sus who do we trust", REIMU.CONCERNED, SPRITEPOS.LEFT),
+	ntxt(99, CHIYURI.CRINGE, SPRITEPOS.RIGHT),
+	txt("i don't know the rest", REIMU.UNIMPRESSED, SPRITEPOS.LEFT),
+	
 	//txt("12345678901234567890123456789012345678901234578901234567890"),
 	txt("It is an unimaginably long journey.", u, u, s_black),
 	txt("I do not know the origin of what I carry with me now, being the latest in its' series of bearers."),

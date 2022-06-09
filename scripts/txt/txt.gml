@@ -8,6 +8,7 @@ function txt(text_=c_errorstring(), sprite_=global.textguy[?""].NOTHING, spritep
 		bg: bg_,
 		sounds: sounds_,
 		funcs: funcs_,
+		type:"normal",
 	};
 }//not technically a constructor since dont wanna write new every time
 
@@ -19,11 +20,20 @@ function ntxt(wait=0, sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.
 		event: event_,
 		spritepos: spritepos_,
 		bg: bg_,
+		type:"ntxt",
 	};
 }
 
 function ptxt(wait=0, sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.HIDDEN, bg_="UNCHANGED", event_=c_null) {
-	return "GONEXT";
+	return {
+		text: "",
+		name: sprite_.char.name,
+		sprite: sprite_.val,
+		event: event_,
+		spritepos: spritepos_,
+		bg: bg_,
+		type:"ptxt",
+	};
 }
 
 enum SPRITEPOS {

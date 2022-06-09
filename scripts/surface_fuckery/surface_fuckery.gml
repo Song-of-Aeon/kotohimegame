@@ -1,6 +1,9 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-global.scale = 2;
+
+//this is to fix feather
+
+global.scale = 3;
 global.surfaces = {
 	HUD: surface_create(640,360),
 	bg: surface_create(310,480),
@@ -29,6 +32,7 @@ global.surfaces = {
 		/// @description Insert description here
 		// You can write your code in this editor
 		if(!surface_exists(global.surfaces.HUD)){
+			log("surfaces have been destroyed, regenerating...");
 			surfaces_init();
 		}
 		surface_set_target(global.surfaces.screen2);
@@ -97,9 +101,13 @@ global.surfaces = {
 		}
 		surfaces_init();
 	}
+
 }
-function surfaces_init(){
+
+
+function surfaces_init(_scale){
 	with(global.surfaces){
+		log("initting surfaces");
 		HUD= surface_create(640,360);
 		bg= surface_create(310,360);
 		screen2 = surface_create(640,360);
@@ -108,7 +116,7 @@ function surfaces_init(){
 
 		surface_resize(application_surface,gameSize.x*global.scale,gameSize.y*global.scale) //uncover this when doing real resolutions //i uncovered it thanks past bread man
 		camera_set_view_size(camera_get_active(),gameSize.x,gameSize.y);
-		window_set_size((640*global.scale)+(borderSize*2*global.scale),(360*global.scale)+(borderSize*2*global.scale));
+		//window_set_size((640*global.scale)+(borderSize*2*global.scale),(360*global.scale)+(borderSize*2*global.scale));
 		
 		threedee= surface_create(surface_get_width(application_surface)*threedeescale,surface_get_height(application_surface)*threedeescale);
 		display_set_timing_method(tm_sleep); //eventually expose these to the player because they are black magic and different computers like different settings

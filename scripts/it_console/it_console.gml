@@ -40,7 +40,7 @@ function consoleEntry(_text,_color = c_black) constructor{
 }
 global.consoleLog = ds_list_create();
 
-z = {
+var z = {
 	onstep: function(){
 		if(keyboard_check_pressed(191)){
 			enabled = true;

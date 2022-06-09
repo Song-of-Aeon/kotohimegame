@@ -1,0 +1,45 @@
+code:
+	- ntxt() fix
+	- new menu
+	- secret minigame 1
+	- secret minigame 2
+	- (probably more)
+	- items for suotemode
+	- free textbox mode
+	- choices
+text:
+	- aeon route
+		= a bunch. i make it fully linearly, so it's hard to say
+	- aeon route editing
+	- aeon route implementation
+	- suote routes
+		= a smaller bunch, but four of them
+	- suote route editing
+	- suote route implementation
+art:
+	- character portraits
+		= kotohime
+		= kaguya
+		= reisen
+	- expressions
+		= kotohime
+		= kaguya
+		= reisen
+	- full illustrations
+		= (tbd)
+	- backgrounds
+		= eientei outside
+		= eientei inside
+		= forest of magic
+		= (tbd)
+	- secret minigame art 1 (i can probably handle this myself)
+	- secret minigame art 2 (likewise, its not much)
+	- suote minigame art
+	- title (tbd)
+	- textbox
+		= adv
+		= nvl
+		= choices
+		= free floating
+music:
+	- i will talk to tami when she is available!

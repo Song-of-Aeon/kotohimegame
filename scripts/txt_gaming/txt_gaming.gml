@@ -9,7 +9,7 @@ function txt_gaming() {
 	txt("KAGUYAAAAAA!#I'M HEEEERE~!", KOTOHIME.NORMAL),
 	txt("Please come in.", KAGUYA.NORMAL),
 	txt("And lo, your price arrives.", KOTOHIME.NORMAL, SPRITEPOS.MIDLEFT),
-	txt("Oh? You know, I can only call you my price if you can fulfill my impossible requests...", KAGUYA.NORMAL, SPRITEPOS.RIGHT),
+	txt("Oh? You know, I can only call you my prince if you can fulfill my impossible requests...", KAGUYA.NORMAL, SPRITEPOS.RIGHT),
 	txt("But of course.", KOTOHIME.NORMAL),
 	txt("I have it right...", KOTOHIME.NORMAL),
 	txt("Right, uh...", KOTOHIME.NORMAL),

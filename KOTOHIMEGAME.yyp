@@ -143,7 +143,7 @@
     {"id":{"name":"s_chiyuriintro3b","path":"sprites/s_chiyuriintro3b/s_chiyuriintro3b.yy",},"order":6,},
     {"id":{"name":"c_bulletdraw","path":"scripts/c_bulletdraw/c_bulletdraw.yy",},"order":13,},
     {"id":{"name":"s_fairy","path":"sprites/s_fairy/s_fairy.yy",},"order":0,},
-    {"id":{"name":"doll","path":"sounds/doll/doll.yy",},"order":3,},
+    {"id":{"name":"m_doll","path":"sounds/m_doll/m_doll.yy",},"order":3,},
     {"id":{"name":"c_playerinit","path":"scripts/c_playerinit/c_playerinit.yy",},"order":3,},
     {"id":{"name":"z_enblacken","path":"shaders/z_enblacken/z_enblacken.yy",},"order":6,},
     {"id":{"name":"o_null","path":"objects/o_null/o_null.yy",},"order":6,},

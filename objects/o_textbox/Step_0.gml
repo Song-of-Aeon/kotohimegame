@@ -67,6 +67,8 @@ if drawchars <= talklength && !skipped {
     if select {
         if (talkpos < talksize-1) {
 			skipped = false;
+			waiting = 0;
+			waited = array_create(20);
 			if msg[talkpos].type == "normal" {
 				array_push(backlog, msg[talkpos]);
 			}

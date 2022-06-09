@@ -6,6 +6,7 @@ enum TEXTTYPE {
 	NVL,
 	FREE,
 	OUTLINE,
+	FACEPIC,
 }
 
 global.textdefault = {

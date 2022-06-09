@@ -109,12 +109,12 @@ function txt_begin() {
 	txt("Or... lived in one. This \"Lady Mima\" had recently disappeared after being badly beaten. Mary was confident that her teacher would return, but she had little to do in the meantime."),
 
 	txt("Hey, can you... help me with something else?", MARY.AWW, u, u, function() {textbox_set_type(global.textdefault)}),
-	txt("Sure! What is it?", KODOHIMEY.DEF)
+	txt("Sure! What is it?", KODOHIMEY.DEF),
 	txt("There's... there's this girl I really like. Like, LIKE like.", MARY.HUH),
 	txt("Like, friend like?", KODOHIMEY.DEF),
 	txt("Like, LOVE like.|n But I don't think she likes me back.", MARY.AWW),
 	txt("Really? How do you know?", KODOHIMEY.DEF),
-	txt("She beat the crud outta me.", MARY.AWW)
+	txt("She beat the crud outta me.", MARY.AWW),
 	txt("Oh.", KODOHIMEY.KAAAY),
 	txt("I just couldn't fight back properly! Every time I looked into her eyes, my heart would beat really fast and I'd just want to run up and hug her!", MARY.HAAHH),
 	txt("But Lady Mima wouldn't want that.", MARY.AWW),			

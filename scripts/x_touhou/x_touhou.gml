@@ -1,1 +1,0 @@
-nu boss("touhou", s_touhou);

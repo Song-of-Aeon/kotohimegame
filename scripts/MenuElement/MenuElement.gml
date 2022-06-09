@@ -18,7 +18,7 @@ function MenuElement(_x,_y,_width,_height, depth = 0) constructor {
 	}
 	array_push(o_uicontroller.UIElements, self);
 	destroy = function(){
-		
+		o_uicontroller.destroy(self);
 	}
 	
 }

@@ -5,3 +5,12 @@ UIElements = [];
 depth = -201
 
 arrlen = 0;
+
+function destroy(uiElement){
+	for(var i = 0; i < array_length(UIElements);i++){
+		if(UIElement == UIElements[i]){
+			array_delete(uiElements,i,1);
+			return;
+		}
+	}
+}

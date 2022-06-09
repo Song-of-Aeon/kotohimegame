@@ -26,7 +26,7 @@ function txt_gmod() {
 	txt("Do you not have your \"princessly duties\" this eve?"),
 	txt("Alas, the eve has already given way to morrow."),
 	txt("So it has..."),
-	txt("Will you be staying much longer, Kotohime?"),
+	txt("Especially with that, will you be staying much longer, Kotohime?"),
 	txt("No, I ought to not."),
 	txt("I'm sure to have mountains of work upon my unexpected return."),
 	txt("Peoples' campaigns, marriage proposals..."),

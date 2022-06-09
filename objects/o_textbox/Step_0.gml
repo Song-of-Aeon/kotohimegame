@@ -66,10 +66,13 @@ if drawchars <= talklength && !skipped {
 } else { 
     if select {
         if (talkpos < talksize-1) {
-			array_push(backlog, msg[talkpos]);
+			skipped = false;
+			if msg[talkpos].type == "normal" {
+				array_push(backlog, msg[talkpos]);
+			}
 			//nvlline++;
 			talkpos++;
-			while msg[talkpos] == "GONEXT" {
+			while msg[talkpos].type == "ptxt" {
 				backlog = [];
 				talkpos++;
 			}

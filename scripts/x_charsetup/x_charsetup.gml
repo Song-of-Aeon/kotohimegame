@@ -78,7 +78,7 @@ var z=0;
 nu talksprite("DEF", "mayra", z++);
 
 
-#macro LEIMU global.textguy[?"Leimu"]
+#macro LEIMU global.textguy[?"leimu"]
 nu chardata("Leimu", s_leimu);
 var z=0;
 nu talksprite("DEF", "leimu", z++);

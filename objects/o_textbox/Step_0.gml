@@ -69,6 +69,8 @@ if drawchars <= talklength && !skipped {
 			skipped = false;
 			waiting = 0;
 			waited = array_create(20);
+			pressing = 0;
+			pressed = array_create(20);
 			if msg[talkpos].type == "normal" {
 				array_push(backlog, msg[talkpos]);
 			}

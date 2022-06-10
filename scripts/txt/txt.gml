@@ -20,7 +20,7 @@ function ntxt(wait=0, sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.
 		event: event_,
 		spritepos: spritepos_,
 		bg: bg_,
-		type:"ntxt",
+		type: "ntxt",
 	};
 }
 
@@ -32,7 +32,7 @@ function ptxt(wait=0, sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.
 		event: event_,
 		spritepos: spritepos_,
 		bg: bg_,
-		type:"ptxt",
+		type: "ptxt",
 	};
 }
 

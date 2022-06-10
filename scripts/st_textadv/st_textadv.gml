@@ -1,13 +1,24 @@
 function st_textadv() {
 	surface_set_target(global.surfaces.HUD);
 	draw_sprite(bg, 0, 0, 0);
-	for (i=array_length(talker)-1; i>=0; i--) {
-		draw_sprite_ext(talker[i].sprite,
-		talker[i].index,
-		x+(talker[i].position-2)*width/5,
-		spriteposy,
-		ineg(talker[i].position > SPRITEPOS.CENTER),
-		1, 0, make_color_hsv(0, 0, 255-(i>0)*100), talker[i].position <= SPRITEPOS.RIGHT);
+	if !global.suoting {
+		for (i=array_length(talker)-1; i>=0; i--) {
+			draw_sprite_ext(talker[i].sprite,
+			talker[i].index,
+			x+(talker[i].position-2)*width/5,
+			spriteposy,
+			ineg(talker[i].position > SPRITEPOS.CENTER),
+			1, 0, make_color_hsv(0, 0, 255-(i>0)*100), talker[i].position <= SPRITEPOS.RIGHT);
+		}
+	} else {
+		for (i=array_length(talker)-1; i>=0; i--) {
+			draw_sprite_ext(talker[i].sprite,
+			talker[i].index,
+			x+(talker[i].position-2)*width/5,
+			spriteposy,
+			1,
+			1, 0, c_white, talker[i].position <= SPRITEPOS.RIGHT);
+		}
 	}
 	if sprite_index == s_textbox || sprite_index == s_null {
 		draw_set_color(c_black);
@@ -30,7 +41,6 @@ function st_textadv() {
 	sizepos = 0;
 	pressing = 0;
 	fontsize = font_get_size(draw_get_font())-1;
-	backlogging = true;
 	atsound = 0;
 	atfunc = 0;
 	j = 0;

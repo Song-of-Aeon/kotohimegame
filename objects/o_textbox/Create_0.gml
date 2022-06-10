@@ -37,11 +37,14 @@ didsounds = array_create(999);
 didfuncs = array_create(999);
 atsound = 0;
 atfunc = 0;
+backlogging = false;
 
 backlog = [];
 
 nvlline = 0;
 
 bg = s_null;
+
+drawstates = [st_textadv, st_textnvl, c_null, c_null, st_textfacepic];
 
 with o_pickup pulled = true;

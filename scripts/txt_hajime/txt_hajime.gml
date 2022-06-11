@@ -1,5 +1,5 @@
 function txt_hajime() {
-	
+	global.thecolor = 0xFF00FF
 	msg = msglang([
 	
 	txt("among us|n in real life", REIMU.UNIMPRESSED, SPRITEPOS.LEFT),

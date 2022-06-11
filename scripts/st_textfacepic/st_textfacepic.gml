@@ -15,7 +15,7 @@ function st_textfacepic() {
 		talker[0].index,
 		x+(SPRITEPOS.MIDLEFT-2)*width/5,
 		y+height/2,
-		1, 1, 0, c_white, 1);
+		1, 1, 0, global.thecolor, 1);
 		doproblems = true;
 	}
 	set_font_style(FONT.TALK);

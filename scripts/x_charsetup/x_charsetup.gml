@@ -46,14 +46,12 @@ nu talksprite("DEF", "mary", z++);
 nu talksprite("OOH", "mary", z++);
 nu talksprite("YAY", "mary", z++);
 nu talksprite("AWW", "mary", z++);
-nu talksprite("ANGERY", "mary", z++);
+nu talksprite("SHOCKED", "mary", z++);
 nu talksprite("UHH", "mary", z++);
 nu talksprite("WAAH", "mary", z++);
 nu talksprite("HUH", "mary", z++);
 nu talksprite("HAAHH", "mary", z++);
-nu talksprite("CONFUZED", "mary", z++);
 nu talksprite("AHHH", "mary", z++);
-nu talksprite("SHOCKED", "mary", z++);
 nu talksprite("OVERJOYED", "mary", z++);
 
 
@@ -72,10 +70,13 @@ nu talksprite("HUH", "girl", z++);
 nu talksprite("HAAHH", "girl", z++);
 
 
-#macro MAYRA global.textguy[?"mayra"]
-nu chardata("Mayra", s_mary);
+#macro MEIRA global.textguy[?"meira"]
+nu chardata("Meira", s_meira);
 var z=0;
-nu talksprite("DEF", "mayra", z++);
+nu talksprite("DEF", "meira", z++);
+nu talksprite("SWEAT", "meira", z++);
+nu talksprite("ANGERY", "meira", z++);
+nu talksprite("DEFEATED", "meira", z++);
 
 
 #macro LEIMU global.textguy[?"leimu"]

@@ -543,6 +543,7 @@
     {"id":{"name":"se_talkblip","path":"sounds/se_talkblip/se_talkblip.yy",},"order":1,},
     {"id":{"name":"lb_auto","path":"scripts/lb_auto/lb_auto.yy",},"order":4,},
     {"id":{"name":"s_minimoon","path":"sprites/s_minimoon/s_minimoon.yy",},"order":7,},
+    {"id":{"name":"s_meira","path":"sprites/s_meira/s_meira.yy",},"order":23,},
     {"id":{"name":"snd_bomb","path":"sounds/snd_bomb/snd_bomb.yy",},"order":7,},
     {"id":{"name":"o_boss","path":"objects/o_boss/o_boss.yy",},"order":2,},
     {"id":{"name":"s_redfairy","path":"sprites/s_redfairy/s_redfairy.yy",},"order":1,},
@@ -842,7 +843,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"lake-water-1.dat","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.500.0.121",
+    "IDEVersion": "2022.5.0.8",
   },
   "resourceVersion": "1.5",
   "name": "KOTOHIMEGAME",

@@ -14,7 +14,7 @@ function txt_begin() {
 	txt("To me... life means movement. Growth. Change."),
 	txt("Floating on the wind,#swimming through the seas,#finding patches of shelter and sunlight,#and becoming a part of the world."),
 	txt("Even being stomped on and crushed forever is a form of living. Because while you can't see it, the seeds you bore will carry on through the wind, and you will live through them."),
-	txt("But when you sink into the shadows, whither away and leave nothing but ash... THAT is dying."),	
+	txt("But when you sink into the shadows, sealing your fate to whither away and leave nothing but ash... you are not living, but slowly dying."),	
 	txt("..."),
 	txt("Sometimes I get really scared of death."),
 	
@@ -24,7 +24,7 @@ function txt_begin() {
 
 	txt("But you don't care about all that sad stuff, do you?", ME.DEF, SPRITEPOS.CENTER, s_black, function() {textbox_set_type(global.textdefault)}),
 	txt("I certainly don't!", ME.HEHE),
-	txt("Right now, I'm here to show you a collection of stories where love is everywhere!", ME.HEHE),
+	txt("Today, I'm here to show you a collection of stories where love is everywhere!", ME.HEHE),
 	txt("Blooming from the spring trees, falling from the sky, and sneaking up on you when you least expect it!", ME.WINKYHEART),
 	txt("These stories aren't exactly mine to tell...", ME.WINKYHEART),
 	txt("But I played a part in them, so it's okay.", ME.WINKYHEART),
@@ -64,7 +64,7 @@ function txt_begin() {
 	
 	txt("And as the sandcastles melt,", ME.YAYNOTE, u, u, function() {textbox_set_type(global.textdefault)}),
 	txt("Will you see on my face, a much brighter place", ME.YAYNOTE),
-	txt("Than the one--|w0060", ME.YAYNOTE),
+	txt("Than the one--|-", ME.YAYNOTE),
 	
 	//loud stick cracking sound effect
 	
@@ -95,7 +95,8 @@ function txt_begin() {
 	
 	//use |l0.5 when mary says "okay..."
 
-	//ntxt(0000, GIRL.DEF, SPRITEPOS.HIDDEN),
+	ntxt(0000, GIRL.DEF, SPRITEPOS.HIDDEN),
+	ntxt(0000, ME.TINYSMIRK, SPRITEPOS.MIDRIGHT),
 	
 	ptxt(),
 	
@@ -123,7 +124,7 @@ function txt_begin() {
 	txt("So who are you?", ME.DEF, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textdefault)}),
 	txt("Uh...|w0060 I'm a witch. My name is Mari... uhm, Maris-", GIRL.DEF, SPRITEPOS.CENTER),
 	txt("Mary?! What a great name!", ME.YAY),
-	//ntxt(0000, GIRL.WAAH, SPRITEPOS.HIDDEN),
+	ntxt(0000, GIRL.WAAH, SPRITEPOS.HIDDEN),
 	txt("That's not...", MARY.UHH, SPRITEPOS.CENTER),
 	txt("So Mary, why are you in such a dangerous place?", ME.DEF),
 	txt("I'm, uh... training my magic power. I need to beat someone in a fight.", MARY.HUH),
@@ -141,7 +142,7 @@ function txt_begin() {
 	
 	txt("I don't actually live in the palace right now. It was my home for a while, but then Lady Mima was... exterminated.", MARY.HUH, u, u, function() {textbox_set_type(global.textdefault)}),
 	txt("She's strong, so she'll definitely come back.", MARY.HUH),
-	txt("But right now, all I can do is wait around and train myself.", MARY.HUH),
+	txt("But in the meantime, all I can do is wait around and train myself.", MARY.HUH),
 	txt("That must be such fun! I'm so jealous!", ME.YAYNOTE),
 	txt("If you say so.", MARY.HUH),
 	txt("Lady Mima isn't what I'm worried about, though. It's... something else.", MARY.AWW),
@@ -159,7 +160,7 @@ function txt_begin() {
 	txt("But Lady Mima would be so mad if I said anything. Because that girl... she's the one who exterminated Lady Mima!", MARY.AWW),			
 	txt("I just don't know what to do!", MARY.HAAHH),
 	txt("How about I help you out?", ME.TINYSMIRK),
-	txt("Lady Mima's gone, right? So before she comes back, I'll set up a date with you two, and give you a few tips and pointers.", ME.TINYSMIRK),
+	txt("I'll set up a date with you two, and give you a few tips and pointers.", ME.TINYSMIRK),
 	txt("You two will be a couple in no time.", ME.HEHE),
 	txt("And when \"Lady Mima\" finally comes back, she'll see how lovey-dovey you are together and forgive the both of you!", ME.YAY),
 	txt("Really? You know how to do all that? Dating and confessing and romance?", MARY.OOH),
@@ -173,8 +174,8 @@ function txt_begin() {
 	
 	
 	
-	//ntxt(000, MARY.DEF, SPRITEPOS.HIDDEN),
-	//ntxt(0000, ME.DEF, SPRITEPOS.HIDDEN),
+	ntxt(000, MARY.DEF, SPRITEPOS.HIDDEN),
+	ntxt(0000, ME.DEF, SPRITEPOS.HIDDEN),
 	
 	
 	ptxt(),
@@ -191,36 +192,36 @@ function txt_begin() {
 	//begin "music" track of footstep sounds on stone
 	
 	
-	txt("HEY, MARY! GREAT TO-", ME.YAY, SPRITEPOS.CENTER, u, function() {textbox_set_type(global.textdefault)}),
+	txt("HEY, MARY!|n GREAT TO-|-", ME.YAY, SPRITEPOS.CENTER, u, function() {textbox_set_type(global.textdefault)}),
 	txt("D-don't be so loud...!", MARY.UHH, SPRITEPOS.RIGHT),
 	txt("She might hear us.", MARY.UHH),
 	txt("Whoopsies!", ME.YAYNOTE),
-	txt("She's at the top of these steps right now. We're supposed to think of a plan first, right?", MARY.HUH),
+	txt("She's probably at the top of these steps. We're supposed to think of a plan first, right?", MARY.HUH),
 	txt("Correct.", ME.HEHE),
 
 		
 	txt("So, what's this girl like?", ME.DEF),
-	txt("She's...|n wonderful.", MARY.HUH, u, u, function() {music_set(mus.sunrise)}),
+	txt("She's...|n wonderful.", MARY.HUH), //, u, u, function() {music_set(mus.sunrise)}),
 	
 	//marisa nerds out about leimu
 	//writing this has me sliiiightly stumped
 	//is what's here right now enough?
 	
-	//ntxt(0000, ME.TINYSMIRK),
+	ntxt(0000, ME.TINYSMIRK, SPRITEPOS.CENTER),
 	
 	txt("She has this feeling about her that's so carefree, but so mature too.", MARY.AHHH),
 	txt("The way she talks, the way she moves, the way she looks at you with those beautiful eyes...", MARY.AHHH),
 	txt("Everything about her is just...", MARY.AHHH),
-	//ntxt(0000, ME.POG),
+	ntxt(0000, ME.POG, SPRITEPOS.CENTER),
 	txt("There she is!", MARY.OOH),
 	
 	ptxt(),
 	
 	txt("A shrine maiden in the distance swept the grounds, oblivious to our presence.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("Looking at her, I could see what Mary meant. Something about her felt... different from most people."),
+	txt("Her name was \"Leimu.\" As far as Mary knew, she was the only inhabitant of the shrine, besides a large turtle she kept around. Despite the responsibility of caring for herself, the turtle, and the shrine, she was happy as could be."),
 	txt("Mary and I talked for a minute about what to do."),
 	txt("It was a simple plan."),
-	
 	
 	//the plan involves kotohime exploderizing a huge magic that creates fireworks
 	//the rest is just marisa doing a little confession speech
@@ -237,12 +238,12 @@ function txt_begin() {
 	txt("Okay...|n#I'm ready.", MARY.HUH, u, u, function() {textbox_set_type(global.textdefault)}),
 	
 	//sound of footsteps
-	//ntxt(0000, ME.DEF, SPRITEPOS.HIDDEN),
-	//ntxt(0000, MARY.DEF, SPRITEPOS.HIDDEN),
+	ntxt(0000, ME.DEF, SPRITEPOS.HIDDEN),
+	ntxt(0000, MARY.DEF, SPRITEPOS.HIDDEN),
 	
 	
 	txt("Oh, hey.", LEIMU.DEF, SPRITEPOS.LEFT),
-	txt("You here to donat---", LEIMU.DEF),
+	txt("You here to donat--|w0030|-", LEIMU.DEF),
 	txt("Hey, I know you!", LEIMU.SWEAT),
 	txt("You're that girl that tried to kill me!", LEIMU.SWEAT),
 	txt("...", MARY.AWW, SPRITEPOS.MIDRIGHT),
@@ -264,11 +265,184 @@ function txt_begin() {
 	
 	//|-
 	
-	//ntxt(0100, LEIMU.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.null)}),
-	//ntxt(0200, MARY.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.graving)}),
+	ntxt(0000, LEIMU.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.null)}),
 	
+	ntxt(0000, MARY.DEF, SPRITEPOS.HIDDEN, u, u,), //PLAY A SWORD SWING SOUND EFFECT HERE
+	
+	ntxt(0070),
+	
+	//txt("The air shook, vibrating with motion", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	
+	
+	
+	ntxt(0100, MEIRA.DEF, SPRITEPOS.CENTER, u, function() {music_set(mus.graving)}),
 	
 
+	
+	txt("Halt your foolish pleasantries, children!|n#It is I, Meira, the Samurai of Darkness!", MEIRA.DEF, SPRITEPOS.LEFT),
+	txt("What the...", MARY.WAAH, SPRITEPOS.RIGHT),
+	txt("You again?", LEIMU.DEF, SPRITEPOS.CENTER),
+	txt("Do you wanna sweep the shrine too?", LEIMU.HAHA),
+	txt("No, you dimwit! I am here for a rematch!", MEIRA.DEF),
+	txt("...Really? You're trying again?", LEIMU.SWEAT),
+	txt("Sorry, uh...|n who are you?", MARY.HUH),
+	txt("Oh, her?", LEIMU.DEF),
+	txt("She's my wife!", LEIMU.YAY),
+	
+	
+	//ntxt(0000, MARY.WAAH, SPRITEPOS.CENTER),
+	
+	
+	
+	
+	
+	ntxt(0000, MARY.SHOCKED, SPRITEPOS.RIGHT),
+	
+	//txt("I am NOT your wife, fool! We never agreed on such a thing!", MEIRA.ANGERY),
+	
+	txt("\(She's still keeping up this foolish act?\)", MEIRA.SWEAT),
+	txt("She proposed to me right when we first met! I had never met someone so dashing before, so I just had to say yes!", LEIMU.HAHA),
+	txt("...Oh.", MARY.SHOCKED),
+
+	txt("SILENCE!", MEIRA.ANGERY),
+	txt("You disgust me, Hakurei child!", MEIRA.ANGERY),
+	txt("I am a WOMAN, not a ten-year-old girl!", MEIRA.ANGERY),
+	txt("If you do not stop this tomfoolery this instant, I will make the extraction of your powers especially painful!", MEIRA.ANGERY),
+	txt("Our marriage is a little rocky.", LEIMU.DEF),
+	
+	txt("That's it. Prepare yourself!", MEIRA.DEF),
+	txt("I, Meira, shall take what is mine once and for all!", MEIRA.DEF),
+	
+	txt("WAIT!", ME.POG, SPRITEPOS.HIDDEN, u, function() {music_set(mus.null)}),
+	
+	ntxt(100, LEIMU.DEF, SPRITEPOS.HIDDEN),
+	
+	txt("Aren't you ignoring somebody, Miss Meira?", ME.MIFFED, SPRITEPOS.CENTER),
+	txt("Wh-who are you?", MEIRA.SWEAT),
+	txt("Just a passerby here to help a friend in love.", ME.WINKY),
+	txt("You see, this witch here has fallen head-over-heels for the girl you wish to take for yourself!", ME.HEHE),
+	txt("It seems we have a love triangle on our hands!", ME.HEHE),
+
+	txt("I told you, I'm not--", MEIRA.SWEAT),
+	
+	txt("As we all know, love triangles are one of the most dangerous kinds of conflicts.", ME.DEF),
+	txt("So, I propose we take the most civil way two maidens in love can resolve this battle...", ME.HEHE),
+	txt("Danmaku!!", ME.WINKYHEART),
+	txt("Meira the Samurai and Mary the Witch shall fight to the \(near\) death to their utmost efforts!", ME.WINKYHEART),
+	txt("If Mary loses, she cannot interrupt you in any way.", ME.DEF),
+	txt("If she wins, you must break up with this shrine maiden forever!", ME.SMUG),
+	
+	ntxt(142, MARY.AWW, SPRITEPOS.RIGHT, u, function() {music_set(mus.flight)}),
+	
+	txt("Alright.", MARY.AWW),
+	txt("I may not know how to do love yet...", MARY.AWW),
+	txt("But a danmaku battle is my best shot here!", MARY.YAY),
+	txt("Bring it on, sword-lady!", MARY.YAY),
+	ntxt(0000, ME.YAYSWEAT, SPRITEPOS.CENTER),
+	txt("No matter. Whether I must fight two children or two-thousand, I WILL become stronger!", MEIRA.DEF),
+//	txt("That's... a little concerning.", ME.YAYSWEAT),
+
+
+	//BIG BATTLE THING
+	//IF WE DONT DO THE SHMUP SECTION THEN LETS JUST DESCRIBE THE BAMBAMWOOSHYPOW ACTION OKAY????
+
+	ntxt(0, ME.DEF, SPRITEPOS.HIDDEN),
+	ntxt(0, MARY.DEF, SPRITEPOS.HIDDEN),
+	ntxt(0, MEIRA.DEF, SPRITEPOS.HIDDEN),
+
+	ntxt(100),
+	
+	
+	
+	txt("Haah... haah...", MEIRA.DEF, SPRITEPOS.RIGHT),
+	txt("You're stronger than I thought.", MEIRA.DEF),
+	txt("You're weaker than I thought!", MARY.YAY, SPRITEPOS.CENTER),
+	txt("Well?|n Are you going to keep your promise?", ME.DEF, SPRITEPOS.LEFT),
+	txt("I didn't even promis-|w0040|-", MEIRA.ANGERY),
+	txt("Whatever. This Hakurei girl is far more trouble than she's worth.", MEIRA.DEF),
+	txt("Farewell.", MEIRA.DEF),
+	
+	ntxt(0050, MEIRA.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.flower)}),
+	
+	ptxt(),
+	
+	txt("Finally, it was over.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("The afterglow from thousands of magic stars had covered the air around us in a purple hue."),
+	
+	txt("Mary stood in place and gazed at the shadow of Meira fading into the distance."),
+	txt("In an instant, a huge grin appeared on her face, and she turned towards me."),
+	txt("Leimu, who was sitting on the sidelines with a huge smile, got up and started walking towards us."),
+	txt("In that moment, I knew we could still salvage this."),
+	txt("I beckoned Mary to me and whispered in her ear."),
+	txt("Mary nodded, and turned to face Leimu."),	
+	
+	ntxt(0000, ME.DEF, SPRITEPOS.HIDDEN),
+	ntxt(0000, MARY.HUH, SPRITEPOS.MIDLEFT),
+	
+	ptxt(),
+	
+	txt("Thanks for beating her up there! That was really fun to watch!", LEIMU.YAY, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textdefault)}),
+	
+	
+	ptxt(),
+	
+	txt("Mary held her hand above her head, and in an instant, we were surrounded by a starry night sky.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("It was an illusion, of course. With mine and Marisa's powers combined, such a thing was elementary."),
+	txt("Yet Leimu's eyes lit up at the sight."),
+	
+	txt("It's so pretty!", LEIMU.YAY, u, u, function() {textbox_set_type(global.textdefault)}),
+	
+	txt("...Thank you.", MARY.DEF),	
+	txt("Hey, Leimu?", MARY.HUH),
+	txt("Yeah?", LEIMU.DEF),
+	txt("I know we got off on the wrong foot at first... all that stuff with Lady Mima.", MARY.AWW),
+	txt("But I hope I've made it up to you now.", MARY.AWW),
+	txt("Of course you have! You were really cool back there!", LEIMU.YAY),
+	txt("Way cooler than Meira, even!", LEIMU.HAHA),
+	txt("Really?", MARY.OOH),
+	txt("Totally!", LEIMU.HAHA),
+	ntxt(0000, LEIMU.DEF, SPRITEPOS.MIDRIGHT),
+	
+	
+	txt("Then...", MARY.HUH),
+	txt("I promise to be way better to you than Meira ever was.", MARY.HUH),
+	txt("Even though she only wanted you for your powers...", MARY.AWW),
+	txt("I want you... for you.", MARY.AHHH),
+	txt("I've... never met someone so dashing before.", MARY.AHHH),
+	txt("Everything you say, everything you do...", MARY.AHHH),
+	txt("You radiate a beautiful light all the time.", MARY.AHHH),
+	txt("I guess, to put it another way...", MARY.AHHH),
+	
+	//couple-second-long pause as the sound of fireworks exploding happens
+	//maybe image of firework exploding?
+	
+	
+	//CG HERE (or description if we cant do that)
+	//basically marisa has her arms outstretched and smiling with fireworks behind her
+	//yeah
+	
+	txt("I really, really like you!", MARY.YAY),
+	txt("Will you please go out with me?", MARY.YAY),
+	txt("...", LEIMU.DEF),
+	txt("Sure!", LEIMU.HAHA),
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//txt("Oh, it's okay. I was just cleaning Genji's back while you were fighting.", LEIMU.YAY),
+	
+	
+	//txt("You know what? I think I'm okay for now."),
+	
+	
 
 	//meira appears all like HEY HAKUREI GIRL IM BACK TO TAKE YOU FOR MYSELF and kotohime goes all HEY WHO IS THAT and reimu goes "oh yeah thats my wife" and marisa is super shocked (sound effect of thunder, the screen shakes and the background turns to a lighting strike)
 	//m_graving plays for maximum WTF mood

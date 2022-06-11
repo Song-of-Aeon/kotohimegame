@@ -6,7 +6,7 @@ nu pattern_ext(function() {
 	if ncm(4) { //every four frames
 		c_shootcircle( //shoot a circle of bullets,
 			x+seed.next(100)-50, //within 50 x pixels of the boss,
-			y+seed.next(100)-50, //within 60 y pixels of the boss,
+			y+seed.next(100)-50, //within 50 y pixels of the boss,
 			4, //at speed 4 px/frame,
 			seed.next(360), //starting from a random direction,
 			36, //that is composed of 36 bullets,

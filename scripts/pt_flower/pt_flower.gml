@@ -1,5 +1,5 @@
 nu pattern_ext(function() {
-	c; //increase count every frame
+	c; //increase count every frame. equivalent to "count++"
 	if ncm(6) { //if count is evenly divisible by six (every sixth frame)
 		var i;
 		for (i=0; i<6; i++) { //create a variable called i and set it to zero. as long as i is less than six, this code will continuously run. increase i every time the code runs (run this code six times per frame)

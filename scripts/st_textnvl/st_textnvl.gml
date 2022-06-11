@@ -17,7 +17,7 @@ function st_textnvl() {
 			x+(talker[i].position-2)*width/5,
 			spriteposy,
 			1,
-			1, 0, c_white, talker[i].position <= SPRITEPOS.RIGHT);
+			1, 0, global.thecolor, talker[i].position <= SPRITEPOS.RIGHT);
 		}
 	}
 	if sprite_index == s_textbox || sprite_index == s_null {

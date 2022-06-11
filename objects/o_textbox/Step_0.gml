@@ -7,7 +7,8 @@ if !txtprocessed {
     txtprocessed = true;
 	talksize = array_length(msg);
 	talkpos = 0;
-	var dudes = font_get_size(draw_get_font())-1;
+	textline_next();
+	/*var dudes = font_get_size(draw_get_font())-1;
 	var dudes2 = floor((sprite_width-margin*2)/dudes);
 	msg[talkpos].text = lb_auto(msg[talkpos].text, dudes2);
 	talklength = string_length(msg[talkpos].text)+1;
@@ -24,7 +25,7 @@ if !txtprocessed {
 	didsounds = array_create(999);
 	didfuncs = array_create(999);
 	atsound = 0;
-	atfunc = 0;
+	atfunc = 0;*/
 }
 
 if ctrlh {
@@ -66,34 +67,7 @@ if drawchars <= talklength && !skipped {
 } else { 
     if select {
         if (talkpos < talksize-1) {
-			skipped = false;
-			waiting = 0;
-			waited = array_create(20);
-			pressing = 0;
-			pressed = array_create(20);
-			if msg[talkpos].type == "normal" {
-				array_push(backlog, msg[talkpos]);
-			}
-			//nvlline++;
-			talkpos++;
-			while msg[talkpos].type == "ptxt" {
-				backlog = [];
-				talkpos++;
-			}
-			msg[talkpos].text = lb_auto(msg[talkpos].text, 50);
-			log(msg[talkpos]);
-			talklength = string_length(msg[talkpos].text);
-			drawing = "";
-			drawchars = 0;
-			name = msg[talkpos].name;
-			msg[talkpos].event();
-			c_charpush(new talkchar(msg[talkpos].sprite, msg[talkpos].name, msg[talkpos].spritepos));
-			talkspeed = talker[0].textspeed;
-			if msg[talkpos].bg != "UNCHANGED" bg = msg[talkpos].bg;
-			didsounds = array_create(999);
-			didfuncs = array_create(999);
-			atsound = 0;
-			atfunc = 0;
+			textline_next();
         } else {
 			endevent();
             instance_destroy();

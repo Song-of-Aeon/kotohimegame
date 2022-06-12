@@ -4,9 +4,10 @@ count++;
 if !txtprocessed {
 	margin = width/20;
     msgscript();
-    txtprocessed = true;
+    
 	talksize = array_length(msg);
 	talkpos = 0;
+	//if msg[talkpos].bg != "UNCHANGED" bg = msg[talkpos].bg;
 	textline_next();
 	/*var dudes = font_get_size(draw_get_font())-1;
 	var dudes2 = floor((sprite_width-margin*2)/dudes);
@@ -26,6 +27,7 @@ if !txtprocessed {
 	didfuncs = array_create(999);
 	atsound = 0;
 	atfunc = 0;*/
+	txtprocessed = true;
 }
 
 if ctrlh {

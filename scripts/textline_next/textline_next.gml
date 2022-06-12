@@ -5,12 +5,14 @@ function textline_next() {
 		waited = array_create(20);
 		pressing = 0;
 		pressed = array_create(20);
-		if msg[talkpos].type == "normal" {
-			array_push(backlog, msg[talkpos]);
-		}
-		talkpos++;
-		if msg[talkpos].type == "ptxt" {
-			backlog = [];
+		if txtprocessed {
+			if msg[talkpos].type == "normal" {
+				array_push(backlog, msg[talkpos]);
+			}
+			talkpos++;
+			if msg[talkpos].type == "ptxt" {
+				backlog = [];
+			}
 		}
 		var dudes = font_get_size(draw_get_font())-1;
 		var dudes2 = floor((sprite_width-margin*2)/dudes);

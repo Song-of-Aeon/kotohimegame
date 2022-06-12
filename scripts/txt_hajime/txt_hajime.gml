@@ -1,5 +1,10 @@
 function txt_hajime() {
-	global.thecolor = 0xFF00FF
+	global.thecolor = 0xFF00FF;
+	global.theflags = {
+		eldenring: 0,
+		gmod: 0,
+		ultrakill: 0,
+	}
 	msg = msglang([
 	
 	txt("among us|n in real life", REIMU.UNIMPRESSED, SPRITEPOS.LEFT),

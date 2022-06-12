@@ -6,7 +6,7 @@
     "path": "folders/Dialogue/technical/KOTOHIME GAMING.yy",
   },
   "resourceVersion": "1.0",
-  "name": "txt_gmod",
+  "name": "txt_chillin",
   "tags": [],
   "resourceType": "GMScript",
 }

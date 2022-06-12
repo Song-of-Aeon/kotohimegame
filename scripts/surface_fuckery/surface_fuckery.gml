@@ -39,7 +39,7 @@ global.surfaces = {
 		draw_clear_alpha(c_black,0);
 		surface_reset_target();
 		surface_set_target(global.surfaces.HUD);
-		draw_clear_alpha(c_white,0)
+		draw_clear_alpha(c_black,1)
 		surface_reset_target();
 		surface_set_target(global.surfaces.border);
         draw_sprite_stretched(tex_based,0,0,0,surface_get_width(global.surfaces.border),surface_get_height(global.surfaces.border));
@@ -72,8 +72,8 @@ global.surfaces = {
 			shader_set_uniform_f(Unidir,sin(magic)*10,cos(magic)*10);
 			draw_surface(i%2?flopSurf:application_surface,0,0);
 			surface_reset_target();
-		}
-		gpu_set_colorwriteenable(1,1,1,1);*/
+		}*/
+		gpu_set_colorwriteenable(1,1,1,0);
 		gamePosition.x = ((window_get_width()/2)-surface_get_width(application_surface)/2)+(gameOffset.x*global.scale);
 		gamePosition.y = sly+(gameOffset.y*global.scale);
 		draw_surface_stretched(application_surface,gamePosition.x,gamePosition.y,gameSize.x*global.scale,gameSize.y*global.scale);
@@ -84,6 +84,7 @@ global.surfaces = {
 		//draw_surface(global.surfaces.screen,slx,sly);
 		draw_surface_stretched(global.surfaces.screen2, slx, sly, window_get_width()-slx*2,window_get_height()-sly*2);
 		application_surface_draw_enable(false);
+		//gpu_set_colorwriteenable(1,1,1,1);
 		shader_reset();
 		draw_text(0,0,fps);
 		draw_text(40,40,instance_number(o_bullet));
@@ -109,6 +110,7 @@ function surfaces_init(_scale){
 	with(global.surfaces){
 		log("initting surfaces");
 		HUD= surface_create(window_get_width(),window_get_height());
+		//HUD= surface_create(640,360);
 		bg= surface_create(310,360);
 		screen2 = surface_create(640,360);
 		map = surface_create(290, 340);

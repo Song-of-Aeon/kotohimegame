@@ -92,11 +92,11 @@ global.stages[DAY.WEDNES][1] = {
 			gpu_set_ztestenable(false)
 			gpu_set_zwriteenable(false);
 			gpu_set_fog(false,c_white,0,20);
-			gpu_set_colorwriteenable([1,1,1,0])
+			//gpu_set_colorwriteenable([1,1,1,0])
 			surface_reset_target()
 			draw_surface(global.surfaces.bg,camera_get_view_x(view_camera[0]) ,camera_get_view_y(view_camera[0]));
 			draw_surface_stretched(global.surfaces.threedee,0,0,room_width,room_height);
-			gpu_set_colorwriteenable([1,1,1,1])
+			//gpu_set_colorwriteenable([1,1,1,1])
 		}
 	}),
 	name: "TEST",

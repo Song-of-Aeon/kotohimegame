@@ -108,7 +108,7 @@ global.surfaces = {
 function surfaces_init(_scale){
 	with(global.surfaces){
 		log("initting surfaces");
-		HUD= surface_create(640,360);
+		HUD= surface_create(window_get_width(),window_get_height());
 		bg= surface_create(310,360);
 		screen2 = surface_create(640,360);
 		map = surface_create(290, 340);

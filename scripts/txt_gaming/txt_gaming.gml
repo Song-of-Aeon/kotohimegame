@@ -15,7 +15,7 @@ function txt_gaming() {
 	txt("Right, uh...", KOTOHIME.NORMAL),
 	txt("|c102137255I shoved it in my sleeve somewhere...|w0050 there.", KOTOHIME.NORMAL),
 	txt("Here!", KOTOHIME.NORMAL),
-	txt("Kotohime brandishes a single USB thumb drive.", KAGUYA.NORMAL),
+	txt("|c160160160Kotohime brandishes a single USB thumb drive."),
 	txt("As unassuming as always, isn't it? What mysteries does it bring to us this time...?", KOTOHIME.NORMAL),
 	txt("Yes, certainly.", KAGUYA.NORMAL),
 	txt("It was quite the wait. Let's see what it has to offer.", KAGUYA.NORMAL),

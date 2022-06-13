@@ -220,6 +220,7 @@
     {"id":{"name":"s_p","path":"sprites/s_p/s_p.yy",},"order":1,},
     {"id":{"name":"txt_hallway","path":"scripts/txt_hallway/txt_hallway.yy",},"order":1,},
     {"id":{"name":"ft_couriernew7","path":"fonts/ft_couriernew7/ft_couriernew7.yy",},"order":2,},
+    {"id":{"name":"txt_freedom","path":"scripts/txt_freedom/txt_freedom.yy",},"order":7,},
     {"id":{"name":"txt_","path":"scripts/txt_/txt_.yy",},"order":0,},
     {"id":{"name":"s_fortuneteller","path":"sprites/s_fortuneteller/s_fortuneteller.yy",},"order":4,},
     {"id":{"name":"s_bigtext","path":"sprites/s_bigtext/s_bigtext.yy",},"order":32,},

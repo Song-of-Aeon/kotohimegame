@@ -33,7 +33,11 @@ if !txtprocessed {
 var i;
 for (i=0; i<array_length(talker); i++) {
 	talker[i].x = lerp(talker[i].x, x+(talker[i].position-2)*width/5, .1);
-	talker[i].alpha += .05;
+	if talker[i].position <= SPRITEPOS.RIGHT {
+		talker[i].alpha += .1;
+	} else {
+		talker[i].alpha = 0;
+	}
 }
 
 if ctrlh {

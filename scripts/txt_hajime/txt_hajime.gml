@@ -7,12 +7,12 @@ function txt_hajime() {
 	}
 	msg = msglang([
 	
-	txt("among us|n in real life", REIMU.UNIMPRESSED, SPRITEPOS.LEFT),
+	/*txt("among us|n in real life", REIMU.UNIMPRESSED, SPRITEPOS.LEFT),
 	txt("lookin sus|n who do we|n trust", REIMU.CONCERNED, SPRITEPOS.LEFT),
 	ntxt(0, CHIYURI.CRINGE, SPRITEPOS.RIGHT),
 	ntxt(0, CHIYURI.GRIN, SPRITEPOS.RIGHT),
 	ntxt(0, CHIYURI.PHONE, SPRITEPOS.RIGHT),
-	txt("i|n don't|n know|n the|n rest", REIMU.UNIMPRESSED, SPRITEPOS.LEFT),
+	txt("i|n don't|n know|n the|n rest", REIMU.UNIMPRESSED, SPRITEPOS.LEFT),*/
 	
 	//txt("12345678901234567890123456789012345678901234578901234567890"),
 	txt("It is an unimaginably long journey.", u, u, s_black),

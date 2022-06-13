@@ -37,8 +37,6 @@ function txt_deception() {
 	txt("Fine, fine.", REISEN.HAPPY),
 	txt("Great~!", KOTOHIME.NORMAL),
 	txt("Now, I think it was around this way...", KOTOHIME.NORMAL),
-	txt(""),
-	txt(""),
 	
 	],[
 	

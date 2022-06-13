@@ -214,6 +214,7 @@
     {"id":{"name":"s_impossibleaunn","path":"sprites/s_impossibleaunn/s_impossibleaunn.yy",},"order":15,},
     {"id":{"name":"x_treasurerooms","path":"scripts/x_treasurerooms/x_treasurerooms.yy",},"order":0,},
     {"id":{"name":"s_bulletcirclecc","path":"sprites/s_bulletcirclecc/s_bulletcirclecc.yy",},"order":14,},
+    {"id":{"name":"txt_deception","path":"scripts/txt_deception/txt_deception.yy",},"order":6,},
     {"id":{"name":"s_kybox","path":"sprites/s_kybox/s_kybox.yy",},"order":14,},
     {"id":{"name":"it_gocrazy","path":"scripts/it_gocrazy/it_gocrazy.yy",},"order":0,},
     {"id":{"name":"s_p","path":"sprites/s_p/s_p.yy",},"order":1,},

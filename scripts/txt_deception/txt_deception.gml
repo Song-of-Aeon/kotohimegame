@@ -44,5 +44,5 @@ function txt_deception() {
 	
 	])
 	
-	endevent = c_null;
+	endevent = function() {textbox_create(txt_freedom)};
 }

@@ -16,10 +16,10 @@ function st_textadv() {
 		for (i=array_length(talker)-1; i>=0; i--) {
 			draw_sprite_ext(talker[i].sprite,
 			talker[i].index,
-			x+(talker[i].position-2)*width/5,
-			spriteposy,
-			1,
-			1, 0, global.thecolor, talker[i].position <= SPRITEPOS.RIGHT);
+			talker[i].x,
+			talker[i].y,
+			ineg(talker[i].position > SPRITEPOS.CENTER),
+			1, 0, make_color_hsv(0, 0, 255-(i>0)*100), talker[i].alpha*(talker[i].position <= SPRITEPOS.RIGHT));
 		}
 	}
 	if sprite_index == s_textbox || sprite_index == s_null {

@@ -5,7 +5,7 @@ var wid = surface_get_width(global.surfaces.screen2);
 var hei = surface_get_height(global.surfaces.screen2);
 
 //draw_sprite(s_when_uh,0,wid/2,hei/2);
-if(keyboard_check_pressed(vk_anykey)){
+if(keyboard_check_pressed(vk_anykey)) || true{
 	room = TITLE	
 }
 if(count > 0)

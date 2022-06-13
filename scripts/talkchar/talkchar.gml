@@ -8,6 +8,9 @@ function c_charpush(char) {
 			if char.position == SPRITEPOS.REPLACE {
 				char.position = talker[i].position;
 			}
+			char.x = talker[i].x;
+			char.y = talker[i].y;
+			char.alpha = talker[i].alpha;
 			array_delete(talker, i, 1);
 			i--;
 		}
@@ -23,6 +26,9 @@ function talkchar(spriteindex_=s_null, name_="", position_=SPRITEPOS.HIDDEN) con
 	name = name_;
 	index = spriteindex_;
 	position = position_;
+	x = o_textbox.x+(position-2)*o_textbox.width/5;
+	y = o_textbox.spriteposy;
+	alpha = 0;
 }
 
 global.textguy = ds_map_create();

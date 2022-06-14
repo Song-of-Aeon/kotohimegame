@@ -42,5 +42,5 @@ function txt_freedom() {
 	
 	])
 	
-	endevent = c_null;
+	endevent = function() {textbox_create(txt_bar)};
 }

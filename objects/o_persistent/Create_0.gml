@@ -23,17 +23,17 @@ STATS.randomnumber = irandom(999999);
 
 buttons = [{
 	effect: munction(function() {
-		game_end();
+		//game_end();
 	}),
 	sprite: s_xbutton,
 	pressed: false,
 	hovered: false,
 },{
 	effect: method(o_persistent, function() {
-		window_set_position(display_mouse_get_x()-window_get_width()+46*global.scale+i*41*global.scale, display_mouse_get_y()-13*global.scale);
+		/*window_set_position(display_mouse_get_x()-window_get_width()+46*global.scale+i*41*global.scale, display_mouse_get_y()-13*global.scale);
 		if mouse_check_button_released(mb_left) {
 			buttons[i].pressed = false;
-		}
+		}*/
 	}),
 	sprite: s_movebutton,
 	pressed: false,

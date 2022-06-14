@@ -18,7 +18,7 @@ function st_textadv() {
 			talker[i].index,
 			talker[i].x,
 			talker[i].y,
-			ineg(talker[i].position > SPRITEPOS.CENTER),
+			1,
 			1, 0, make_color_hsv(0, 0, 255-(i>0)*100), talker[i].alpha*(talker[i].position <= SPRITEPOS.RIGHT));
 		}
 	}

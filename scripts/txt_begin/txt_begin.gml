@@ -38,7 +38,7 @@ function txt_begin() {
 	
 	
 	
-	txt("Angel, angel, in the sky--", ME.YAYNOTE, SPRITEPOS.RIGHT, u, function() {music_set(mus.ragnarok)}),
+	txt("Angel, angel, in the sky--", ME.YAYNOTE, SPRITEPOS.RIGHT, s_forest, function() {music_set(mus.ragnarok)}),
 	txt("Whatever could have made you cry?", ME.YAYNOTE),
 	txt("For your wings are so bright", ME.YAYNOTE),
 	txt("They light up the night", ME.YAYNOTE),
@@ -141,7 +141,7 @@ function txt_begin() {
 	
 	
 	txt("I don't actually live in the palace right now. It was my home for a while, but then Lady Mima was... exterminated.", MARY.HUH, u, u, function() {textbox_set_type(global.textdefault)}),
-	txt("She's strong, so she'll definitely come back.", MARY.HUH),
+	txt("Lady Mima is strong, so I know she'll come back.", MARY.HUH),
 	txt("But in the meantime, all I can do is wait around and train myself.", MARY.HUH),
 	txt("That must be such fun! I'm so jealous!", ME.YAYNOTE),
 	txt("If you say so.", MARY.HUH),
@@ -192,7 +192,7 @@ function txt_begin() {
 	//begin "music" track of footstep sounds on stone
 	
 	
-	txt("HEY, MARY!|n GREAT TO-|-", ME.YAY, SPRITEPOS.CENTER, u, function() {textbox_set_type(global.textdefault)}),
+	txt("HEY, MARY!|n GREAT TO-|-", ME.YAY, SPRITEPOS.CENTER, s_steps, function() {textbox_set_type(global.textdefault)}),
 	txt("D-don't be so loud...!", MARY.UHH, SPRITEPOS.RIGHT),
 	txt("She might hear us.", MARY.UHH),
 	txt("Whoopsies!", ME.YAYNOTE),
@@ -217,7 +217,7 @@ function txt_begin() {
 	
 	ptxt(),
 	
-	txt("A shrine maiden in the distance swept the grounds, oblivious to our presence.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("A shrine maiden in the distance swept the grounds, oblivious to our presence.", u, u, s_shrine, function() {textbox_set_type(global.textnvl)}),
 	txt("Looking at her, I could see what Mary meant. Something about her felt... different from most people."),
 	txt("Her name was \"Leimu.\" As far as Mary knew, she was the only inhabitant of the shrine, besides a large turtle she kept around. Despite the responsibility of caring for herself, the turtle, and the shrine, she was happy as could be."),
 	txt("Mary and I talked for a minute about what to do."),
@@ -426,16 +426,11 @@ function txt_begin() {
 	txt("...", LEIMU.DEF),
 	txt("Sure!", LEIMU.HAHA),
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
 	
 	//txt("Oh, it's okay. I was just cleaning Genji's back while you were fighting.", LEIMU.YAY),
 	
@@ -464,6 +459,77 @@ function txt_begin() {
 	//txt("What's in a name? That which we call a rose#By any other name would smell as sweet.", ME.TINYSMIRK),
 	//txt("Uh...", MARY.CONFUZED),
 	//txt("I gotta go now. See you later, Mary!", ME.DEF),
+	
+	
+	
+	
+	
+	
+	//OKAY SO THERE SHOULD BE AN EPILOGUE TO THIS BUT EEHHH ITS FIIIINE
+	//PUT IT IN LATER CUZ IMMA WRITE THE BEGINNING OF THE KANA STORY NOW BECAUSE THATS EXCITING
+	
+	
+	
+	
+	
+	//OKAY THIS IS THE SECOND STORY
+	//ALL THE CLEANUP AND SEPARATING OF TEXT DOCUMENTS AND STUFF SHALL BE DNOE AFTER THE FIRST DRAFT BECAUSE UGUU WHO KAREZ
+	
+	
+	
+	
+	/*
+	
+	ntxt(000, LEIMU.DEF, SPRITEPOS.HIDDEN, s_black, function() {music_set(mus.null)}),
+	ntxt(000, MARY.DEF, SPRITEPOS.HIDDEN),
+	
+	
+	txt("Our second story comes not long after the first.", ME.HEHE, SPRITEPOS.CENTER),
+	
+	
+	txt("This is the story of a wandering ghost who wished for a soulmate.", ME.TINYSMIRK),
+	
+	//hard cut to a big explosion image thingy with a BOOM and a BONK sound effect
+	
+	txt("Now get out, and stay away forever!", LEIMU.MIFFED, SPRITEPOS.MIDLEFT),
+	
+	//maybe have like BOOM sound effects
+
+	txt("Fine, fine! Just stop hitting me with those things!", KANA.SCARED, SPRITEPOS.RIGHT),
+	
+	ntxt(0030, KANA.SCARED, SPRITEPOS.HIDDEN),
+	
+	//kana slides out of frame
+	
+	
+	txt("Gee golly gosh gloriosky, I thought she'd never leave.", LEIMU.DEF)
+	
+	ntxt(0000, LEIMU.DEF, SPRITEPOS.HIDDEN, s_shrine, function() {music_set(mus.dancers5)},
+	ntxt(0080),
+	
+	ptxt(),
+	
+	txt("A scene unfolding before me like a.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("The shrine maiden I had come to visit was throwing amulets at a floating girl.
+	
+	
+	
+	
+	txt("", KANA.DEF, SPRITEPOS.RIGHT),
+	
+	
+	
+	
+	
+	*/
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	],[

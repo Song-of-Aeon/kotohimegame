@@ -36,6 +36,7 @@ nu talksprite("HEHENOTE", "me", z++);
 nu talksprite("YAYNOTE", "me", z++);
 nu talksprite("TINYSMIRK", "me", z++);
 nu talksprite("DISAPOINT", "me", z++);
+nu talksprite("NEUTRAL", "me", z++);
 
 
 

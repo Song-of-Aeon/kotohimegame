@@ -179,7 +179,9 @@ nu talksprite("CRYLAUGH", "mokou", z++);
 
 
 
-
+#macro KAGUYA2 global.textguy[?"kaguya2"]
+nu chardata("Kaguya2", s_kaguya2);
+nu talksprite("NORMAL", "kaguya2", 0);
 
 #macro EIRIN global.textguy[?"eirin"]
 nu chardata("Eirin", s_null, se_talkbloop);

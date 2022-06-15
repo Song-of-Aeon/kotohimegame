@@ -2,7 +2,7 @@ nu chardata("Reimu", s_reimu16, se_talkpew, .5);
 nu chardata("Aunn", s_aunn16, se_talkpew, .5);
 nu chardata("Mike", s_mike16, se_talkgeneral, .5);
 nu chardata("Yukari", s_yukari16, se_talkbloop, .3);
-nu chardata("Reisen", s_reisen16, se_talkbloop, .5);
+nu chardata("Reisen", s_reisen16, u, .5);
 nu chardata("Yumemi", s_yumemi16, se_talkbloop, .8);
 nu chardata("Chiyuri", s_chiyuri16, se_talkpew, .5);
 nu chardata("", s_null, se_null, 1);
@@ -71,6 +71,7 @@ nu talksprite("HUH", "girl", z++);
 nu talksprite("HAAHH", "girl", z++);
 
 
+
 #macro MEIRA global.textguy[?"meira"]
 nu chardata("Meira", s_meira);
 var z=0;
@@ -80,16 +81,31 @@ nu talksprite("ANGERY", "meira", z++);
 nu talksprite("DEFEATED", "meira", z++);
 
 
-#macro LEIMU global.textguy[?"leimu"]
-nu chardata("Leimu", s_leimu);
+
+#macro REIMU global.textguy[?"reimu"]
+nu chardata("Reimu", s_reimu);
 var z=0;
-nu talksprite("DEF", "leimu", z++);
-nu talksprite("HAHA", "leimu", z++);
-nu talksprite("MIFFED", "leimu", z++);
-nu talksprite("SWEAT", "leimu", z++);
-nu talksprite("YAY", "leimu", z++);
+nu talksprite("DEF", "reimu", z++);
+nu talksprite("HAHA", "reimu", z++);
+nu talksprite("MIFFED", "reimu", z++);
+nu talksprite("SWEAT", "reimu", z++);
+nu talksprite("YAY", "reimu", z++);
 
 
+#macro KANA global.textguy[?"kana"]
+nu chardata("Kana", s_kana);
+var z=0;
+nu talksprite("DEF", "kana", z++);
+nu talksprite("AWW", "kana", z++);
+nu talksprite("YAY", "kana", z++);
+nu talksprite("WINKY", "kana", z++);
+nu talksprite("MAD", "kana", z++);
+nu talksprite("COCKY", "kana", z++);
+nu talksprite("NEUTRAL", "kana", z++);
+nu talksprite("SCARED", "kana", z++);
+nu talksprite("DISTANT", "kana", z++);
+nu talksprite("SADSMILE", "kana", z++);
+nu talksprite("BRUH", "kana", z++);
 
 
 
@@ -102,13 +118,74 @@ nu talksprite("YAY", "leimu", z++);
 
 
 
+#macro KAGUYA global.textguy[?"kaguya"]
+nu chardata("Kaguya", s_kaguya);
+var z=0;
+nu talksprite("NORMAL", "kaguya", z++);
+nu talksprite("DEF", "kaguya", z++);
+nu talksprite("AWW", "kaguya", z++);
+nu talksprite("FUFUFU", "kaguya", z++);
+nu talksprite("YAY", "kaguya", z++);
+nu talksprite("COCKY", "kaguya", z++);
+nu talksprite("NEUTRAL", "kaguya", z++);
+nu talksprite("WAAH", "kaguya", z++);
+nu talksprite("SHOCKED", "kaguya", z++);
+nu talksprite("SMUG", "kaguya", z++);
+nu talksprite("WINKY", "kaguya", z++);
+nu talksprite("WINKYHEART", "kaguya", z++);
+nu talksprite("WOAH", "kaguya", z++);
+nu talksprite("CRY", "kaguya", z++);
+nu talksprite("CRYSMILE", "kaguya", z++);
+nu talksprite("LOVEY", "kaguya", z++);
+
+
+#macro REISEN global.textguy[?"reisen"]
+var z=0;
+nu talksprite("HAPPY", "reisen", z++);
+nu talksprite("SURPRISED", "reisen", z++);
+nu talksprite("SHITSTUFF", "reisen", z++);
+nu talksprite("DAMN", "reisen", z++);
+nu talksprite("GODDAMN", "reisen", z++);
+nu talksprite("KABLOOEY", "reisen", z++);
+nu talksprite("NEUTRAL", "reisen", z++);
+nu talksprite("HEH", "reisen", z++);
+nu talksprite("UGGH", "reisen", z++);
+nu talksprite("YAY", "reisen", z++);
+nu talksprite("WOAH", "reisen", z++);
+nu talksprite("CONFUZZLED", "reisen", z++);
+nu talksprite("SMUG", "reisen", z++);
+nu talksprite("MAD", "reisen", z++);
+nu talksprite("LUNATICEYES", "reisen", z++);
+
+
+
+#macro MOKOU global.textguy[?"mokou"]
+nu chardata("Mokou", s_mokou);
+var z=0;
+nu talksprite("DEF", "mokou", z++);
+nu talksprite("NEUTRAL", "mokou", z++);
+nu talksprite("HMPH", "mokou", z++);
+nu talksprite("YAY", "mokou", z++);
+nu talksprite("COCKY", "mokou", z++);
+nu talksprite("SMUG", "mokou", z++);
+nu talksprite("MAD", "mokou", z++);
+nu talksprite("SAD", "mokou", z++);
+nu talksprite("SADSMILE", "mokou", z++);
+nu talksprite("SURPRISED", "mokou", z++);
+nu talksprite("LOVEY", "mokou", z++);
+nu talksprite("LOVEYSAD", "mokou", z++);
+nu talksprite("CRYLAUGH", "mokou", z++);
+
+
+
+
+
+
 #macro EIRIN global.textguy[?"eirin"]
 nu chardata("Eirin", s_null, se_talkbloop);
 nu talksprite("NORMAL", "eirin", 0);
 
-#macro KAGUYA global.textguy[?"kaguya"]
-nu chardata("Kaguya", s_kaguya, se_talkbloop);
-nu talksprite("NORMAL", "kaguya", 0);
+
 
 function chardata(name_="drip", sprite_=s_drip, talksound_=se_null, textspeed_=.5, texteffects_=[]) constructor {
 	name = name_;
@@ -193,13 +270,12 @@ nu talksprite("NOTMYPROBLEM", "yumemi", z++);
 nu talksprite("NOTMYPROBLEMPOINT", "yumemi", z++);
 nu talksprite("NOTHING", "yumemi", z++);
 
-var z=0;
-nu talksprite("HAPPY", "reisen", z++);
-nu talksprite("SURPRISED", "reisen", z++);
-nu talksprite("SHITSTUFF", "reisen", z++);
-nu talksprite("DAMN", "reisen", z++);
-nu talksprite("GODDAMN", "reisen", z++);
-nu talksprite("PEWPEW", "reisen", z++);
+
+
+
+
+
+
 nu talksprite("NOTHING", "reisen", z++);
 
 nu talksprite("NOTHING", "", 0);
@@ -211,10 +287,8 @@ function talksprite(name_, char_, val_) constructor {
 	char = global.textguy[?char_];
 }
 
-#macro REIMU global.textguy[?"reimu"]
 #macro YUKARI global.textguy[?"yukari"]
 #macro AUNN global.textguy[?"aunn"]
 #macro MIKE global.textguy[?"mike"]
-#macro REISEN global.textguy[?"reisen"]
 #macro CHIYURI global.textguy[?"chiyuri"]
 #macro YUMEMI global.textguy[?"yumemi"]

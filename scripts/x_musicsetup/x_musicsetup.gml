@@ -35,6 +35,10 @@ nu song("Forgotten", "forgotten", [m_forgotten], u, "by nerve");
 nu song("Where The Wind Blows", "windblows", [m_windblows], u, "by nerve");
 nu song("Theme of Owner", "owner", [m_owner], u, "by nerve");
 
+nu song("summerhill2", "summerhill2", [m_summer_hill2], u, "by taira komori");
+nu song("autmninsects3", "autmninsects3", [m_autmn_insects3], u, "by taira komori");
+
+
 
 
 

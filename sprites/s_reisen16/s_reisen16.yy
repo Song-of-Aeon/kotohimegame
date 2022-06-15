@@ -45,6 +45,33 @@
     {"compositeImage":{"FrameId":{"name":"1e4983da-a79e-495c-880a-edbcf12dcc4e","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"1e4983da-a79e-495c-880a-edbcf12dcc4e","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":{"name":"fd88e24a-8d7d-4584-a10d-2afb97c9a472","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"s_reisen16","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"1e4983da-a79e-495c-880a-edbcf12dcc4e","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7fbdba92-2bfb-48b8-a5ee-40f78947beb0","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7fbdba92-2bfb-48b8-a5ee-40f78947beb0","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":{"name":"fd88e24a-8d7d-4584-a10d-2afb97c9a472","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_reisen16","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"7fbdba92-2bfb-48b8-a5ee-40f78947beb0","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"b3279478-7371-411a-8782-0d374f5785c1","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"b3279478-7371-411a-8782-0d374f5785c1","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":{"name":"fd88e24a-8d7d-4584-a10d-2afb97c9a472","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_reisen16","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"b3279478-7371-411a-8782-0d374f5785c1","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"3496c5fc-fdab-46f8-b1e2-267709074f64","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"3496c5fc-fdab-46f8-b1e2-267709074f64","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":{"name":"fd88e24a-8d7d-4584-a10d-2afb97c9a472","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_reisen16","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"3496c5fc-fdab-46f8-b1e2-267709074f64","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"83292553-b677-4f75-abee-772096b976d3","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"83292553-b677-4f75-abee-772096b976d3","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":{"name":"fd88e24a-8d7d-4584-a10d-2afb97c9a472","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_reisen16","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"83292553-b677-4f75-abee-772096b976d3","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7daae2ca-6dac-40db-ac16-eee8f0c75138","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7daae2ca-6dac-40db-ac16-eee8f0c75138","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":{"name":"fd88e24a-8d7d-4584-a10d-2afb97c9a472","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_reisen16","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"7daae2ca-6dac-40db-ac16-eee8f0c75138","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"4ca5c401-1642-414c-a8ff-1a15e34b52c2","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"4ca5c401-1642-414c-a8ff-1a15e34b52c2","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":{"name":"fd88e24a-8d7d-4584-a10d-2afb97c9a472","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_reisen16","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"4ca5c401-1642-414c-a8ff-1a15e34b52c2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"645ee796-b73e-457b-b0df-df26d4418a12","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"645ee796-b73e-457b-b0df-df26d4418a12","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":{"name":"fd88e24a-8d7d-4584-a10d-2afb97c9a472","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_reisen16","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"645ee796-b73e-457b-b0df-df26d4418a12","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"38733d01-7b68-4d31-b799-1fddeb1af5ee","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"38733d01-7b68-4d31-b799-1fddeb1af5ee","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":{"name":"fd88e24a-8d7d-4584-a10d-2afb97c9a472","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_reisen16","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"38733d01-7b68-4d31-b799-1fddeb1af5ee","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"9385c369-aa73-4e58-a0ad-635fa2edcb84","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"9385c369-aa73-4e58-a0ad-635fa2edcb84","path":"sprites/s_reisen16/s_reisen16.yy",},"LayerId":{"name":"fd88e24a-8d7d-4584-a10d-2afb97c9a472","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_reisen16","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","name":"9385c369-aa73-4e58-a0ad-635fa2edcb84","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"s_reisen16","path":"sprites/s_reisen16/s_reisen16.yy",},
@@ -54,7 +81,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 7.0,
+    "length": 16.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -66,6 +93,15 @@
             {"id":"9e084c8b-b55c-49b9-a6dc-4c37bcdb2e09","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"efb7fc20-0d13-41cb-a341-fe12014c0346","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"9ad84597-b86d-4c8e-89fd-135ef92d7660","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6e6a69b8-43b7-45a9-9798-50903a400c8c","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"965e29eb-0a5f-48f3-9038-b292d2037b6a","Key":6.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1e4983da-a79e-495c-880a-edbcf12dcc4e","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bf8d758a-4518-4be2-af15-05c61f7325d6","Key":7.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7fbdba92-2bfb-48b8-a5ee-40f78947beb0","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7ac46d2c-c2c4-4ce2-80ec-df826adf35d0","Key":8.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b3279478-7371-411a-8782-0d374f5785c1","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"53af2afc-b09c-4cce-9387-345cc492742c","Key":9.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"3496c5fc-fdab-46f8-b1e2-267709074f64","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6f34b913-836c-450b-aae4-d8ea063b26dc","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"83292553-b677-4f75-abee-772096b976d3","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"c0409945-ee77-43ac-a001-be8594e5d1bb","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7daae2ca-6dac-40db-ac16-eee8f0c75138","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"0ae90b7e-e76d-4777-b531-2e14ba678a18","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4ca5c401-1642-414c-a8ff-1a15e34b52c2","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"cb468738-0f6f-468a-a41d-0c78e6cfa3b4","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"645ee796-b73e-457b-b0df-df26d4418a12","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"f2c5db9d-5beb-4c7a-9820-e0fa9f403a87","Key":14.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"38733d01-7b68-4d31-b799-1fddeb1af5ee","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b94f7587-c71a-4327-b3d2-4953274d674f","Key":15.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9385c369-aa73-4e58-a0ad-635fa2edcb84","path":"sprites/s_reisen16/s_reisen16.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -79,7 +115,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 130,
-    "yorigin": 240,
+    "yorigin": 220,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"s_reisen16","path":"sprites/s_reisen16/s_reisen16.yy",},

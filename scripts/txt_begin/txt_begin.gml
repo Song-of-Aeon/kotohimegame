@@ -536,7 +536,7 @@ function txt_begin() {
 	txt("Not much, just taking out the trash.", REIMU.DEF),
 	txt("...And the \"trash\" is Kana?", ME.NEUTRAL),
 	
-	//txt("Oh, that's her name?", REIMU.DEF
+	//txt("Oh, that's her name?", REIMU.DEF),
 	txt("Yeah, and it was really hard! I needed to get myself some new poltergeist-repellant amulets!", REIMU.HAHA),
 	txt("Why did you...?", ME.KAAAY),
 	txt("She showed up here a few weeks ago and acted like she owned the place!", REIMU.MIFFED),
@@ -559,7 +559,7 @@ function txt_begin() {
 	txt("Nope!", ME.WINKY),
 	txt("Play Shogi?", REIMU.YAY),
 	txt("Nope!", ME.WINKY),
-	txt("..|w0070.Sweep the shrine for me?", REIMU.HAHA),
+	txt("...|w0070Sweep the shrine for me?", REIMU.HAHA),
 	txt("Nope!", ME.WINKY),
 	txt("Then what are you here for!?", REIMU.SWEAT),
 	txt("Saying hello!", ME.DEF),
@@ -634,9 +634,9 @@ function txt_begin() {
 	
 	
 	txt("Come on, cookies are infinitely better than mochi!", KANA.WINKY, SPRITEPOS.MIDRIGHT, s_bambooevening, function() {textbox_set_type(global.textdefault)}),
-	txt("But it's so dry\~\~. Half the time it's just crumbly bits of flowers.", ME.DISAPOINT, SPRITEPOS.MIDLEFT),
+	txt("But they're so dry\~\~. Half the time it's just crumbly bits of flowers.", ME.DISAPOINT, SPRITEPOS.MIDLEFT),
 	//the wigglylines look weird ingame. fix it or get rid of em
-	txt("Yeah, that's what the milk is for! You just dip them in the milk, and they're all nice and wet.", KANA.WINKY),
+	txt("That's what the milk is for! You just dip them in the milk, and they're all nice and wet.", KANA.WINKY),
 	txt("But you can eat mochi normally, anytime! You don't need to get milk from a cow to enjoy it!", ME.DEF),
 	txt("And they just get sweeter when you bite into them, not all bitter and crunchy like cookies.", ME.HEHE),
 	txt("Bitter and crunchy!? What kind of cookies have you been eating?", KANA.MAD),

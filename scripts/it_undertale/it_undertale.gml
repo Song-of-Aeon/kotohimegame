@@ -18,6 +18,7 @@ itemgen({
 		}
 		global.MenuCursor.disabled = false;
 		global.MenuCursor.target = noone;
+		setCursor();
 		o_uicontroller.UIElements = [];
 		var fight = makeGenericElement(100, 200, 10, 10, s_null);
 		fight.draw = function() {

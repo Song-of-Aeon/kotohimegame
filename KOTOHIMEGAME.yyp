@@ -158,6 +158,7 @@
     {"id":{"name":"pk_grazebox","path":"scripts/pk_grazebox/pk_grazebox.yy",},"order":5,},
     {"id":{"name":"lerpable","path":"scripts/lerpable/lerpable.yy",},"order":6,},
     {"id":{"name":"cl_thurs1timeeasy","path":"scripts/cl_thurs1timeeasy/cl_thurs1timeeasy.yy",},"order":1,},
+    {"id":{"name":"it_undertale","path":"scripts/it_undertale/it_undertale.yy",},"order":17,},
     {"id":{"name":"c_clearenemies","path":"scripts/c_clearenemies/c_clearenemies.yy",},"order":55,},
     {"id":{"name":"st_dayselect","path":"scripts/st_dayselect/st_dayselect.yy",},"order":53,},
     {"id":{"name":"textbox_set_type","path":"scripts/textbox_set_type/textbox_set_type.yy",},"order":6,},

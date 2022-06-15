@@ -42,10 +42,10 @@ function txt_gaming() {
 	
 	])
 	
-	endevent = function() {textchoice_make([
+	/*endevent = function() {textchoice_make([
 		new choice("elden ring", function() {textbox_create(txt_hajime) global.theflags.eldenring = 1}),
 		new choice("garry's mod", function() {textbox_create(txt_gmod) global.theflags.gmod = 1}),
 		new choice("ultrakill", function() {textbox_create(txt_hallway) global.theflags.ultrakill = 1}),
-	])};
-	//endevent = function() {textbox_create(txt_gmod)};
+	])};*/
+	endevent = function() {textbox_create(txt_gmod)};
 }

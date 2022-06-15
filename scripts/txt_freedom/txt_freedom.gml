@@ -43,7 +43,7 @@ function txt_freedom() {
 	])
 	
 	endevent = function() {
-		textbox_create(txt_bar);
+		textbox_create(txt_walking);
 		/*gpu_set_colorwriteenable([1,1,1,1])
         draw_set_alpha(0)
         draw_rectangle(xx,yy,x2,y2,false)

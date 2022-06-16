@@ -44,31 +44,11 @@ global.stages[DAY.WEDNES][0] = {
 			global.vmat = camera_get_view_mat(camera)
 			global.projmat = camera_get_proj_mat(camera)
 			y++;
-			var c_darkpurple = $360D33
+			var c_darkpurple = $000000
 			//var c_darkpurple = $0
 			draw_clear_alpha(c_darkpurple,1);
 
-			draw_clear(0x5E2663);
-			if ngm(20) {
-				var guy = scriptable_create(function() {
-					x += hspd;
-					y += vspd;
-					image_angle += 4;
-					if is_oob(300) instance_destroy();
-				}, function() {
-					surface_set_target(global.surfaces.bg);
-					draw_sprite_ext(s_bgblock, image_index, x, y, 1, 1, image_angle, colorr, 1);
-					surface_reset_target();
-				});
-				guy.x = irandom(500)-310;
-				guy.y = -100;
-				guy.hspd = random(5)-2.5;
-				guy.vspd = random(2)+2;
-				guy.image_angle = irandom(360);
-				guy.image_speed = 0;
-				guy.image_index = irandom(3);
-				guy.colorr = choose(0x5E2663, 0x220628, 0x8E4753);
-			}
+			draw_clear(0x000000);
 			/*surface_reset_target();
 			draw_surface(global.surfaces.bg,camera_get_view_x(view_camera[0]) ,camera_get_view_y(view_camera[0]));
 			draw_surface_stretched(global.surfaces.threedee,0,0,room_width,room_height);

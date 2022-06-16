@@ -40,13 +40,11 @@ global.chara[?"reimu"] = {
 			collectionpoint:1,
 		}
 	},
-	sprite: s_rforward3,
-	startingitems: [ITEMS._DEBUG, /*ITEMS._SHOTPOWERNUMBERS,*/ ITEMS._STATS, ITEMS._GRAZE, ITEMS._CONSOLE, ITEMS.PAUSE, ITEMS.FOCUS, ITEMS._ROOMINFO, /*ITEMS._INPUTDISPLAY,*/ ITEMS._DPS,
-	ITEMS.NEEDLES, ITEMS.YINYANG,
-	],
-	name: "Reimu\nHakurei",
-	desc: "Irate Shrine Maiden",
-	data: ["Persuasion Needles", "Yin-Yang Orbs"],
+	sprite: s_soul,
+	startingitems: [ITEMS._STATS, ITEMS._GRAZE, ITEMS._CONSOLE, ITEMS.PAUSE, ITEMS.FOCUS,],
+	name: "Kotohime",
+	desc: "Enigmatic Princess",
+	data: ["FIGHT", "ACT"],
 	menusprite: s_reimu16,
 }
 global.chara[?"chiyuri"] = {

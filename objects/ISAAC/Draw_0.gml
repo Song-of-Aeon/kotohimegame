@@ -5,8 +5,8 @@
 //if(dietime){
 //	shader_set(z_enredden);
 //}
-image_xscale = 1.3;
-image_yscale = 1.3;
+//image_xscale = 1.3;
+//image_yscale = 1.3;
 if(!dietime){
 	draw_set_alpha(image_alpha);
 	//draw_sprite_at(sprite_index, image_index, x, y, 24, 24);

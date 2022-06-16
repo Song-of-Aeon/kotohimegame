@@ -5,53 +5,75 @@ itemgen({
 		if battling {
 			ISAAC.state = st_standard;
 			ISAAC.sprite_index = s_soul;
-			ISAAC.x = clamp(x, bordleft, bordright);
-			ISAAC.y = clamp(y, borddown, bordup);
+			ISAAC.x = clamp(ISAAC.x, bordleft, bordright);
+			ISAAC.y = clamp(ISAAC.y, bordup, borddown);
 		} else {
 			ISAAC.state = c_null;
 			ISAAC.sprite_index = s_null;
+			if fighting {
+				fightx++;
+				if player.select {
+					fighting = false;
+					battling = true;
+					c_makeboss(global.bosses.aunn);
+				}
+			}
 		}
+	},
+	ondraw: function() {
+		if fighting {
+			draw_text(200+fightx, 130, "IM FIGHTBAR");
+		}
+		draw_rectangle(bordleft, bordup, bordright, borddown, true);
 	},
 	onpickup: function() {
 		if(!instance_exists(o_uicontroller)){
 			instance_create(0,0,o_uicontroller,/*"Instances_ui"*/);
 		}
-		global.MenuCursor.disabled = false;
-		global.MenuCursor.target = noone;
-		setCursor();
 		o_uicontroller.UIElements = [];
-		var fight = makeGenericElement(100, 200, 10, 10, s_null);
-		fight.draw = function() {
-			if global.MenuCursor.target == self {
-				draw_text(x, y, "FIGHT!");
-			} else {
-				draw_text(x, y, "FIGHT");
-			}
-		}
-		var act = makeGenericElement(200, 200, 10, 10, s_null);
-		act.draw = function() {
-			if global.MenuCursor.target == self {
-				draw_text(x, y, "ACT!");
-			} else {
-				draw_text(x, y, "ACT");
-			}
-		}
-		var item = makeGenericElement(300, 200, 10, 10, s_null);
-		item.draw = function() {
-			if global.MenuCursor.target == self {
-				draw_text(x, y, "ITEM!");
-			} else {
-				draw_text(x, y, "ITEM");
-			}
-		}
-		var mercy = makeGenericElement(400, 200, 10, 10, s_null);
-		mercy.draw = function() {
-			if global.MenuCursor.target == self {
-				draw_text(x, y, "MERCY!");
-			} else {
-				draw_text(x, y, "MERCY");
-			}
-		}
+		setCursor();
+		global.MenuCursor.disabled = false;
+		global.MenuCursor.onBack = c_null;
+		global.MenuCursor.draw = c_null;
+		var fight = makeGenericElement(640/5, 280, 10, 10, s_null);
+		fight.draw = munction(function() {
+			draw_sprite(s_undytale, 0+(global.MenuCursor.target==self), x, y);
+		})
+		fight.onSelect = munction(function() {
+			var chiyuri = makeGenericElement(200, 150, 10, 10, s_null);
+			chiyuri.draw = munction(function() {
+				if global.MenuCursor.target == self {
+					draw_text(x, y, "* chiyuri!");
+				} else {
+					draw_text(x, y, "* chiyuri");
+				}
+			})
+			chiyuri.onSelect = munction(function() {
+				c_getitembyid(ITEMS.UNDERTALE).fighting = true;
+				destroy();
+				global.MenuCursor.disabled = true;
+			})
+			o_uicontroller.UIElements[0].options.selectable = false;
+			o_uicontroller.UIElements[1].options.selectable = false;
+			o_uicontroller.UIElements[2].options.selectable = false;
+			o_uicontroller.UIElements[3].options.selectable = false;
+			setCursor();
+			global.MenuCursor.disabled = false;
+			global.MenuCursor.onBack = c_getitembyid(ITEMS.UNDERTALE).onpickup;
+		})
+		var act = makeGenericElement(640/5*2, 280, 10, 10, s_null);
+		act.draw = munction(function() {
+			draw_sprite(s_undytale, 2+(global.MenuCursor.target==self), x, y);
+		})
+		var item = makeGenericElement(640/5*3, 280, 10, 10, s_null);
+		item.draw = munction(function() {
+			draw_sprite(s_undytale, 4+(global.MenuCursor.target==self), x, y);
+		})
+		var mercy = makeGenericElement(640/5*4, 280, 10, 10, s_null);
+		mercy.draw = munction(function() {
+			draw_sprite(s_undytale, 6+(global.MenuCursor.target==self), x, y);
+		})
+		global.MenuCursor.target = fight;
 	},
 	name: "undertale",
 	description: "undertale up",
@@ -64,6 +86,8 @@ itemgen({
 	bordup: 340/2-100,
 	borddown: 340/2+100,
 	battling: false,
+	fightx: 0,
+	fighting: false,
 	
 	charge: 0,
 	chargemax: 0,

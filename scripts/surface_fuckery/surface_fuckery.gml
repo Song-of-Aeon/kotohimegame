@@ -40,9 +40,9 @@ global.surfaces = {
 		surface_reset_target();
 		surface_set_target(global.surfaces.HUD);
 		if instance_exists(o_textbox) {
-			draw_clear_alpha(c_black,1);
+			draw_clear_alpha(c_black, 1);
 		} else {
-			draw_clear_alpha(c_white,0);
+			draw_clear_alpha(c_white, 0);
 		}
 		surface_reset_target();
 		surface_set_target(global.surfaces.border);
@@ -59,7 +59,7 @@ global.surfaces = {
 		//draw_clear($009999);
 		
 		
-		var slx = borderSize* global.scale; //screen location x
+		var slx = borderSize * global.scale; //screen location x
 		var sly = borderSize * global.scale;
 		//draw_surface_stretched(application_surface,(window_get_width()/2)-((surface_get_width(application_surface)*global.scale)/2),60,310*global.scale,360*global.scale);
 		/*shader_set(z_gauss13)

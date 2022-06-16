@@ -1,13 +1,13 @@
 draw();
 
 
-
+/*
 if patterns[currentpattern].type == SPELL.CARD {
 	
 	/*draw_set_halign(fa_right);
 	draw_text(290, 20+fxcount, patterns[currentpattern].name);
 	fxcount = lerp(fxcount, 0, .5);*/
-	draw_set_color(c_cyan);
+	/*draw_set_color(c_cyan);
 	if armor && hp <= maxhp/5 && !(irandom(3)) draw_set_color(c_yellow);
 	draw_circle_curve(x, y, 52, 20, 90, (hp/maxhp)*180, 3, true);
 } else {

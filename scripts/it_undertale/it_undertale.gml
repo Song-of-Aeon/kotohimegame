@@ -9,10 +9,6 @@ itemgen({
 			ISAAC.y = clamp(ISAAC.y, bordup, borddown);
 			fightx = 0;
 		} else {
-			bordleft = 290/2-100;
-			bordright = 290/2+100;
-			bordup = 340/2-100;
-			borddown = 340/2+100;
 			ISAAC.state = c_null;
 			ISAAC.sprite_index = s_null;
 			if fighting {
@@ -20,6 +16,7 @@ itemgen({
 				if player.select && fightx >= 2 {
 					fighting = false;
 					battling = true;
+					textbox_create(txt_sans, global.texttale);
 					c_makeboss(global.bosses.chiyuri, [SPELL.NON]);
 				}
 			}
@@ -28,11 +25,11 @@ itemgen({
 	ondraw: function() {
 		draw_set_color(c_white);
 		if fighting {
-			draw_text(100+fightx, 130, "IM FIGHTBAR");
+			draw_text_transformed(100+fightx, 130, "IM FIGHTBAR", 1, 1, 270);
 		}
-		draw_line_width(bordleft, bordup, bordleft, borddown, 5);
+		draw_line_width(bordleft, bordup-2, bordleft, borddown+2, 5);
 		draw_line_width(bordleft, bordup, bordright, bordup, 5);
-		draw_line_width(bordright, bordup, bordright, borddown, 5);
+		draw_line_width(bordright, bordup-2, bordright, borddown+2, 5);
 		draw_line_width(bordleft, borddown, bordright, borddown, 5);
 	},
 	onpickup: function() {
@@ -90,10 +87,10 @@ itemgen({
 	sprite: s_mistake,
 	quality: 1,
 	usage: ITTYPE.MECHANIC,
-	bordleft: 290/2-100,
-	bordright: 290/2+100,
-	bordup: 340/2-100,
-	borddown: 340/2+100,
+	bordleft: 290/2-60,
+	bordright: 290/2+60,
+	bordup: 340/2-60,
+	borddown: 340/2+60,
 	battling: false,
 	fightx: 0,
 	fighting: false,

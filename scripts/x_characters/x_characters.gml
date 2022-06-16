@@ -10,15 +10,15 @@ global.chara[?"reimu"] = {
 		radius:1,
 		collectionpoint:1,
 		
-		focusspd:1.6,
-		unfocspd:3,
-		evenspd:2.3,
+		focusspd:1.0,
+		unfocspd:2.5,
+		evenspd:1.9,
 	
 		//bonus stats
 		damage: 1,
 		firerate: 1,
 		defense:1,
-		hitboxsize:2.5,
+		hitboxsize:8,
 		critrate:0,
 		critdmg:3,
 		deathbombwindow:20,

@@ -15,7 +15,7 @@ z = {
 	},
 	ondraw: function(player=global.me) {
 		with ISAAC {
-			if focus {
+			/*if focus {
 				//focusfx = max(focusfx-.1, 0);
 				focusfx = lerp(focusfx, 0, .1);
 				
@@ -34,6 +34,7 @@ z = {
 				gpu_set_blendmode(bm_normal);
 				draw_set_alpha(1);
 			//three rings connected to eachother and rotating hitbox/radius/itemzone
+			*/
 		}
 	},
 	//myhooks: {onstep: true, ondraw: true},

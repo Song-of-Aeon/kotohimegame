@@ -13,6 +13,7 @@ nu boss("aunn", s_impossibleaunn);
 nu boss("reisen", s_impossiblereisen);
 nu boss("yumemi", s_impossibleyumemi);
 nu boss("touhou", s_touhou);
+nu boss("chiyuri", s_null);
 
 global.destroyshape = DESTROYSHAPE.CIRCLE;
 

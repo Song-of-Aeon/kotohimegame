@@ -7,24 +7,33 @@ itemgen({
 			ISAAC.sprite_index = s_soul;
 			ISAAC.x = clamp(ISAAC.x, bordleft, bordright);
 			ISAAC.y = clamp(ISAAC.y, bordup, borddown);
+			fightx = 0;
 		} else {
+			bordleft = 290/2-100;
+			bordright = 290/2+100;
+			bordup = 340/2-100;
+			borddown = 340/2+100;
 			ISAAC.state = c_null;
 			ISAAC.sprite_index = s_null;
 			if fighting {
 				fightx++;
-				if player.select {
+				if player.select && fightx >= 2 {
 					fighting = false;
 					battling = true;
-					c_makeboss(global.bosses.aunn);
+					c_makeboss(global.bosses.chiyuri, [SPELL.NON]);
 				}
 			}
 		}
 	},
 	ondraw: function() {
+		draw_set_color(c_white);
 		if fighting {
-			draw_text(200+fightx, 130, "IM FIGHTBAR");
+			draw_text(100+fightx, 130, "IM FIGHTBAR");
 		}
-		draw_rectangle(bordleft, bordup, bordright, borddown, true);
+		draw_line_width(bordleft, bordup, bordleft, borddown, 5);
+		draw_line_width(bordleft, bordup, bordright, bordup, 5);
+		draw_line_width(bordright, bordup, bordright, borddown, 5);
+		draw_line_width(bordleft, borddown, bordright, borddown, 5);
 	},
 	onpickup: function() {
 		if(!instance_exists(o_uicontroller)){

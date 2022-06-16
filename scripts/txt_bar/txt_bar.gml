@@ -25,7 +25,7 @@ function txt_bar() {
 	txt("So I gather. Hi, Chiyurii!"),
 	txt("Yo. Who's the new girl?"),
 	txt("Just a friend. Well, a fellow princess-in-arms."),
-	txt("A princess...? I guess they aren't all that uncommon."),
+	txt("A princess...? I guess they aren't all that uncommon. She does look the part."),
 	txt("Oh, but she is quite a refined lady."),
 	txt("In fact-#Well, Chiyurii, can you keep a secret?"),
 	txt("Sure."),

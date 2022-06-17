@@ -3,12 +3,20 @@
 itemgen({
 	onstep: function(player=global.me) {
 		if battling {
+			bordleft = 290/2-60;
+			bordright = 290/2+60;
+			bordup = 340/2-60;
+			borddown = 340/2+60;
 			ISAAC.state = st_standard;
 			ISAAC.sprite_index = s_soul;
-			ISAAC.x = clamp(ISAAC.x, bordleft, bordright);
-			ISAAC.y = clamp(ISAAC.y, bordup, borddown);
+			ISAAC.x = clamp(ISAAC.x, bordleft+8, bordright-8);
+			ISAAC.y = clamp(ISAAC.y, bordup+8, borddown-8);
 			fightx = 0;
 		} else {
+			bordleft = WIDTH/5-175;
+			bordright = 500-175;
+			bordup = 180;
+			borddown = 260;
 			ISAAC.state = c_null;
 			ISAAC.sprite_index = s_null;
 			if fighting {
@@ -27,12 +35,16 @@ itemgen({
 		if fighting {
 			draw_text_transformed(100+fightx, 130, "IM FIGHTBAR", 1, 1, 270);
 		}
-		draw_line_width(bordleft, bordup-2, bordleft, borddown+2, 5);
-		draw_line_width(bordleft, bordup, bordright, bordup, 5);
-		draw_line_width(bordright, bordup-2, bordright, borddown+2, 5);
-		draw_line_width(bordleft, borddown, bordright, borddown, 5);
+		surface_set_target(global.surfaces.HUD);
+		draw_line_width(bordleft+175, bordup+10-2.5, bordleft+175, borddown+10+2.5, 5);
+		draw_line_width(bordleft+175, bordup+10, bordright+175, bordup+10, 5);
+		draw_line_width(bordright+175, bordup+10-2.5, bordright+175, borddown+10+2.5, 5);
+		draw_line_width(bordleft+175, borddown+10, bordright+175, borddown+10, 5);
+		surface_reset_target();
 	},
 	onpickup: function() {
+		battling = false;
+		fighting = false;
 		if(!instance_exists(o_uicontroller)){
 			instance_create(0,0,o_uicontroller,/*"Instances_ui"*/);
 		}
@@ -80,6 +92,7 @@ itemgen({
 			draw_sprite(s_undytale, 6+(global.MenuCursor.target==self), x, y);
 		})
 		global.MenuCursor.target = fight;
+		//textbox_create(txt_yoursins, global.textdefault, false);
 	},
 	name: "undertale",
 	description: "undertale up",

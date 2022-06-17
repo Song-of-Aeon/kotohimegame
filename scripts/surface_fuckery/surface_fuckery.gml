@@ -39,7 +39,7 @@ global.surfaces = {
 		draw_clear_alpha(c_black,0);
 		surface_reset_target();
 		surface_set_target(global.surfaces.HUD);
-		if instance_exists(o_textbox) {
+		if instance_exists(o_textbox) || false {
 			draw_clear_alpha(c_black, 1);
 		} else {
 			draw_clear_alpha(c_white, 0);

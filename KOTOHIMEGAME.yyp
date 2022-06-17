@@ -233,6 +233,7 @@
     {"id":{"name":"s_charselectbg","path":"sprites/s_charselectbg/s_charselectbg.yy",},"order":19,},
     {"id":{"name":"MenuAchievementsDiv","path":"scripts/MenuAchievementsDiv/MenuAchievementsDiv.yy",},"order":11,},
     {"id":{"name":"s_staurogram","path":"sprites/s_staurogram/s_staurogram.yy",},"order":2,},
+    {"id":{"name":"txt_yoursins","path":"scripts/txt_yoursins/txt_yoursins.yy",},"order":21,},
     {"id":{"name":"c_circle","path":"scripts/c_circle/c_circle.yy",},"order":29,},
     {"id":{"name":"s_stage2bn","path":"sprites/s_stage2bn/s_stage2bn.yy",},"order":1,},
     {"id":{"name":"it_","path":"scripts/it_/it_.yy",},"order":1,},

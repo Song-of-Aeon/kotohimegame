@@ -6,8 +6,8 @@ function st_standard() {
 	pocpoint = lerp(pocpoint, collectionpoint*30+20, .1);
 	if focus {
 		
-		hspd = hput*lerp(focusspd, evenspd, 1-agility*.25);
-		vspd = vput*lerp(focusspd, evenspd, 1-agility*.25);
+		hspd = hput*lerp(focusspd, evenspd, 1-5*.25);
+		vspd = vput*lerp(focusspd, evenspd, 1-5*.25);
 		
 	} else {
 		hspd = hput*lerp(unfocspd, evenspd, 1-agility*.25);

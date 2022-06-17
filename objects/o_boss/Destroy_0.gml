@@ -1,5 +1,5 @@
 
-guy = new Particle(x, y, function() {
+/*guy = new Particle(x, y, function() {
 	//log(self);
 	draw_set_color(c_cyan);
 	draw_set_alpha(.8);

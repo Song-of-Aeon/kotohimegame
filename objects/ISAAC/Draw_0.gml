@@ -32,7 +32,7 @@ if(!dietime){
 if c_dohook(hooks.ondraw) exit;
 if shift {
 	//draw_ellipse(x-1-hitboxsize, y-hitboxsize, x+hitboxsize, y+hitboxsize, false);
-	draw_sprite(shitbox, 0, x+1, y+1);
+	//draw_sprite(shitbox, 0, x+1, y+1);
 }
 //matrix_set
 

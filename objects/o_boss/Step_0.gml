@@ -77,10 +77,6 @@ for (i=0; i<owlist; i++) {
 
 inv--;
 if hp <= 0 || time <= 0 {
-	var guy = seed.next(4)+1;
-	repeat(15) {
-		c_spawnpickup(x, y, guy, 0);
-	}
 	with global.me {
 		for (i=0; i<ds_list_size(hooks.onenemydeath); i++) {
 			hooks.onenemydeath[|i](global.me, other.id);

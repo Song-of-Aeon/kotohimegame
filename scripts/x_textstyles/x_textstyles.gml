@@ -19,6 +19,16 @@ global.textdefault = {
 	sprite: s_spacetext,
 	type: TEXTTYPE.ADV,
 }
+global.texttale = {
+	x: 380,
+	y: 80,
+	width: 88,
+	height: 66,
+	spriteposx: 210,
+	spriteposy: 190,
+	sprite: s_textbubble,
+	type: TEXTTYPE.ADV,
+}
 global.textfacepic = {
 	x: 320,
 	y: 250,

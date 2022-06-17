@@ -6,7 +6,7 @@
     "path": "folders/Dialogue/technical.yy",
   },
   "resourceVersion": "1.0",
-  "name": "textstyles",
+  "name": "x_textstyles",
   "tags": [],
   "resourceType": "GMScript",
 }

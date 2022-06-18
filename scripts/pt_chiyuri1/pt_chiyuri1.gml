@@ -13,4 +13,4 @@ nu pattern_ext(function() {
 			c_shoot(bordright, lad+bordup+irandom(5), .5+i*.3, 180, bul.square2);
 		}
 	}
-}, 10, 8, "touhou", SPELL.NON, DIFFICULTY.HARD, "ut1", u, u, function() {c_getitembyid(ITEMS.UNDERTALE).onpickup()});
+}, 10, 8, "touhou", SPELL.NON, DIFFICULTY.HARD, "ut1", u, u, function() {c_getitembyid(ITEMS.UNDERTALE).menugen()});

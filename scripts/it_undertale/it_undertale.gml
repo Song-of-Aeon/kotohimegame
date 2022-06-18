@@ -53,7 +53,7 @@ itemgen({
 		battling = true;
 		textbox_create(txt_sans, global.texttale);
 		c_makeboss(global.bosses.chiyuri, [SPELL.NON]);
-	}
+	},
 	menugen: function() {
 		battling = false;
 		fighting = false;

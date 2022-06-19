@@ -106,6 +106,8 @@ nu talksprite("SCARED", "kana", z++);
 nu talksprite("DISTANT", "kana", z++);
 nu talksprite("SADSMILE", "kana", z++);
 nu talksprite("BRUH", "kana", z++);
+nu talksprite("LOVEYSHY", "kana", z++);
+nu talksprite("LOVEY", "kana", z++);
 
 #macro KAGUYA global.textguy[?"kaguya"]
 nu chardata("Kaguya", s_kaguya);
@@ -159,6 +161,7 @@ nu talksprite("YAY", "mokou", z++);
 nu talksprite("COCKY", "mokou", z++);
 nu talksprite("SMUG", "mokou", z++);
 nu talksprite("MAD", "mokou", z++);
+nu talksprite("BRUH", "mokou", z++);
 nu talksprite("SAD", "mokou", z++);
 nu talksprite("SADSMILE", "mokou", z++);
 nu talksprite("SURPRISED", "mokou", z++);

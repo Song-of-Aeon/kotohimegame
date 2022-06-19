@@ -9,6 +9,7 @@ function textchoice_make(choices=[new choice(), new choice()]){
 		draw_set_alpha(1);
 		draw_set_color(c_white);
 	});*/
+	array_remove(choices, u);
 	global.MenuCursor.draw = method(undefined, function() {
 		surface_set_target(global.surfaces.HUD);
 		draw_set_color(c_white);

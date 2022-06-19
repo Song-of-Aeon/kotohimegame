@@ -180,13 +180,18 @@ nu talksprite("NORMAL", "kaguya2", 0);
 nu chardata("Eirin", s_null, se_talkbloop);
 nu talksprite("NORMAL", "eirin", 0);
 
+#macro GENGETSU global.textguy[?"gengetsu"]
+nu chardata("Gengetsu", s_null, se_talkbloop);
+nu talksprite("NORMAL", "gengetsu", 0);
 
 
-function chardata(name_="drip", sprite_=s_drip, talksound_=se_null, textspeed_=.5, texteffects_=[]) constructor {
+
+function chardata(name_="drip", sprite_=s_drip, talksound_=se_null, textspeed_=.5, namecolor_=c_white, texteffects_=[]) constructor {
 	name = name_;
 	sprite = sprite_;
 	talksound = talksound_;
 	textspeed = textspeed_;
+	namecolor = namecolor_;
 	texteffects = texteffects_;
 	
 	global.textguy[?string_lower(name)] = self;

@@ -9,6 +9,7 @@ function textchoice_make(choices=[new choice(), new choice()]){
 		draw_set_alpha(1);
 		draw_set_color(c_white);
 	});*/
+	array_remove(choices, u);
 	global.MenuCursor.draw = method(undefined, function() {
 		surface_set_target(global.surfaces.HUD);
 		draw_set_color(c_white);
@@ -24,7 +25,11 @@ function textchoice_make(choices=[new choice(), new choice()]){
 		dude.choicename = choices[i-1].name;
 		dude.draw = method(dude, function(){
 			draw_set_halign(fa_center);
-			draw_text(x, y, choicename);
+			if global.MenuCursor.target == self {
+				draw_text(x, y, ">" + choicename + "<");
+			} else {
+				draw_text(x, y, choicename);
+			}
 		});
 		//mymans = choices[i-1].func;
 		//dude.onSelect = function_append(mymans, function() {global.MenuCursor.disabled = true;});

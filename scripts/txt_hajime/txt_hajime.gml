@@ -1,10 +1,26 @@
+//global.thecolor = 0xFF00FF;
+global.theflags = {
+	eldenring: 0,
+	gmod: 0,
+	ultrakill: 0,
+	kana: 0,
+	gengetsu: 0,
+	sariel: 0,
+	ruukoto: 0,
+}
+
 function txt_hajime() {
 	global.thecolor = 0xFF00FF;
 	global.theflags = {
 		eldenring: 0,
 		gmod: 0,
 		ultrakill: 0,
+		kana: 0,
+		gengetsu: 0,
+		sariel: 0,
+		ruukoto: 0,
 	}
+	c_additem(ITEMS.HIDE);
 	msg = msglang([
 	
 	/*txt("among us|n in real life", REIMU.UNIMPRESSED, SPRITEPOS.LEFT),

@@ -73,6 +73,7 @@ enum ITEMS {
 	GIVESTATUS,
 	GOCRAZY,
 	UNDERTALE,
+	HIDE,
 	#region mechanics
 	_STATS,
 	_GRAZE,

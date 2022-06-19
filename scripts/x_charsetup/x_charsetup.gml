@@ -107,17 +107,6 @@ nu talksprite("DISTANT", "kana", z++);
 nu talksprite("SADSMILE", "kana", z++);
 nu talksprite("BRUH", "kana", z++);
 
-
-
-//beans
-
-
-
-
-
-
-
-
 #macro KAGUYA global.textguy[?"kaguya"]
 nu chardata("Kaguya", s_kaguya);
 var z=0;
@@ -128,6 +117,7 @@ nu talksprite("FUFUFU", "kaguya", z++);
 nu talksprite("YAY", "kaguya", z++);
 nu talksprite("COCKY", "kaguya", z++);
 nu talksprite("NEUTRAL", "kaguya", z++);
+nu talksprite("MAD", "kaguya", z++);
 nu talksprite("WAAH", "kaguya", z++);
 nu talksprite("SHOCKED", "kaguya", z++);
 nu talksprite("SMUG", "kaguya", z++);
@@ -147,7 +137,7 @@ nu talksprite("SHITSTUFF", "reisen", z++);
 nu talksprite("DAMN", "reisen", z++);
 nu talksprite("GODDAMN", "reisen", z++);
 nu talksprite("KABLOOEY", "reisen", z++);
-nu talksprite("NEUTRAL", "reisen", z++);
+nu talksprite("DEF", "reisen", z++);
 nu talksprite("HEH", "reisen", z++);
 nu talksprite("UGGH", "reisen", z++);
 nu talksprite("YAY", "reisen", z++);

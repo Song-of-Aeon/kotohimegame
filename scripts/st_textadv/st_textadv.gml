@@ -46,11 +46,13 @@ function st_textadv() {
 	atsound = 0;
 	atfunc = 0;
 	j = 0;
-	draw_set_color(talker[0].namecolor);
-	draw_set_halign(fa_center);
-	draw_text(x+width/20-width/2+17, y-18, talker[0].name);
-	draw_set_halign(fa_left);
-	draw_set_color(c_white);
+	if msg[talkpos].type == "normal" {
+		draw_set_color(talker[0].namecolor);
+		draw_set_halign(fa_center);
+		draw_text(x+width/20-width/2+17, y-18, talker[0].name);
+		draw_set_halign(fa_left);
+		draw_set_color(c_white);
+	}
 	atsound = 0;
 	atfunc = 0;
 	for (i=1; i<=effchars; i++) {

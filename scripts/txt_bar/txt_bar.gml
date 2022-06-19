@@ -63,7 +63,7 @@ function txt_bar() {
 	])
 	
 	endevent = function() {
-		//c_additem(ITEMS.UNDERTALE);
-		textbox_create(txt_itsdemo);
+		c_additem(ITEMS.UNDERTALE);
+		//textbox_create(txt_itsdemo);
 	};
 }

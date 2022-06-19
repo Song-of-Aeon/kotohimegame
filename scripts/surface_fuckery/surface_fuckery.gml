@@ -39,11 +39,8 @@ global.surfaces = {
 		draw_clear_alpha(c_black,0);
 		surface_reset_target();
 		surface_set_target(global.surfaces.HUD);
-		if instance_exists(o_textbox) || false {
-			draw_clear_alpha(c_black, 1);
-		} else {
-			draw_clear_alpha(c_white, 0);
-		}
+		draw_clear_alpha(c_white, 0);
+		draw_sprite(s_black, 0, 0, 0);
 		surface_reset_target();
 		surface_set_target(global.surfaces.border);
         draw_sprite_stretched(tex_based,0,0,0,surface_get_width(global.surfaces.border),surface_get_height(global.surfaces.border));
@@ -77,9 +74,7 @@ global.surfaces = {
 			draw_surface(i%2?flopSurf:application_surface,0,0);
 			surface_reset_target();
 		}*/
-		if instance_exists(o_textbox) {
-			gpu_set_colorwriteenable(1,1,1,0);
-		}
+		gpu_set_colorwriteenable(1,1,1,1);
 		gamePosition.x = ((window_get_width()/2)-surface_get_width(application_surface)/2)+(gameOffset.x*global.scale);
 		gamePosition.y = sly+(gameOffset.y*global.scale);
 		draw_surface_stretched(application_surface,gamePosition.x,gamePosition.y,gameSize.x*global.scale,gameSize.y*global.scale);

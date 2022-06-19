@@ -113,7 +113,7 @@ function st_textnvl() {
 		var centerOffset = 0;
 		if(draw_get_halign() == fa_center || draw_get_halign() == fa_right) {
 			var linelist = string_split(msg[talkpos].text,"#");
-			var msglen = string_length(linelist[lb])
+			var msglen = string_length(linelist[lb]);
 			centeroffset = ((width/(fontsize+5))) - msglen;
 			if(draw_get_halign() == fa_center) {
 				centeroffset/=2;

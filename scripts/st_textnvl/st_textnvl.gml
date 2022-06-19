@@ -46,9 +46,11 @@ function st_textnvl() {
 	atfunc = 0;
 	j = 0;
 	for (j=0; j<array_length(backlog); j++) {
+		draw_set_color(backlog[j].guy.namecolor);
 		draw_set_halign(fa_right);
 		draw_text(x-width/2-20, y+(fontsize)+(lb+nvlline)*(fontsize*2), backlog[j].name);
 		draw_set_halign(fa_left);
+		draw_set_color(c_white);
 		for (i=1; i<=string_length(backlog[j].text)+1; i++) {
 			while string_char_at(backlog[j].text, i) = "|" {
 		        c_txtspecial();
@@ -92,9 +94,11 @@ function st_textnvl() {
 		atfunc = 0;
 	}
 	backlogging = false;
+	draw_set_color(talker[0].namecolor);
 	draw_set_halign(fa_right);
 	draw_text(x-width/2-20, y+(fontsize)+(lb+nvlline)*(fontsize*2), talker[0].name);
 	draw_set_halign(fa_left);
+	draw_set_color(c_white);
 	atsound = 0;
 	atfunc = 0;
 	for (i=1; i<=effchars; i++) {

@@ -3,6 +3,7 @@ function txt(text_=c_errorstring(), sprite_=global.textguy[?""].NOTHING, spritep
 		text: text_,
 		name: sprite_.char.name,
 		sprite: sprite_.val,
+		guy: sprite_.char,
 		event: event_,
 		spritepos: spritepos_,
 		bg: bg_,

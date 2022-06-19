@@ -23,6 +23,7 @@ function talkchar(spriteindex_=s_null, name_="", position_=SPRITEPOS.HIDDEN) con
 	talksound = global.textguy[?string_lower(name_)].talksound;
 	textspeed = global.textguy[?string_lower(name_)].textspeed;
 	texteffects = global.textguy[?string_lower(name_)].texteffects;
+	namecolor = global.textguy[?string_lower(name_)].namecolor;
 	name = name_;
 	index = spriteindex_;
 	position = position_;

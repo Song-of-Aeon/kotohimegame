@@ -30,5 +30,5 @@ function textline_next() {
 		didfuncs = array_create(999);
 		atsound = 0;
 		atfunc = 0;
-	} until msg[talkpos].type == "normal";
+	} until msg[talkpos].type == "normal" || string_contains(msg[talkpos].text, "|w");
 }

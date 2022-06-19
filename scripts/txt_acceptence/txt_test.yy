@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "KOTOHIME GAMING",
-    "path": "folders/Dialogue/technical/KOTOHIME GAMING.yy",
+    "name": "Dialogue",
+    "path": "folders/Dialogue.yy",
   },
   "resourceVersion": "1.0",
-  "name": "txt_walking",
+  "name": "txt_test",
   "tags": [],
   "resourceType": "GMScript",
 }

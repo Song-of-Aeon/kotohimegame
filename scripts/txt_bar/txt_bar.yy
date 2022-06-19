@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Dialogue",
-    "path": "folders/Dialogue.yy",
+    "name": "KOTOHIME GAMING",
+    "path": "folders/Dialogue/technical/KOTOHIME GAMING.yy",
   },
   "resourceVersion": "1.0",
   "name": "txt_bar",

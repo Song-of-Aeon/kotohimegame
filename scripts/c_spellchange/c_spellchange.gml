@@ -1,5 +1,5 @@
 function c_spellchange(charge=true) {
-	c_clearradius(x, y, 900, true);
+	c_clearradius(x, y, 900, true, true);
 	instance_destroy(o_spelltext);
 	patterns[currentpattern].clear();
 	currentpattern++;

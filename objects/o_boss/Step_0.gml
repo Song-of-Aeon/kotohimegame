@@ -83,7 +83,7 @@ if hp <= 0 || time <= 0 {
 		}
 	}
 	//hp += maxhp;
-	c_spellchange(patterns[currentpattern].type = SPELL.CARD);
+	c_spellchange(patterns[currentpattern].type == SPELL.CARD);
 	if currentpattern >= array_length(patterns) {
 		instance_destroy();
 		audio_play_sound(snd_enemydeath, 0, false);

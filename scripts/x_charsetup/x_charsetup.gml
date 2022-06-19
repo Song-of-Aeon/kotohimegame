@@ -189,7 +189,7 @@ nu talksprite("NORMAL", "eirin", 0);
 
 #macro GENGETSU global.textguy[?"gengetsu"]
 nu chardata("Gengetsu", s_null, se_talkbloop);
-nu talksprite("NORMAL", "GENGETSU", 0);
+nu talksprite("NORMAL", "gengetsu", 0);
 
 
 

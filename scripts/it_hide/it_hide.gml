@@ -4,6 +4,7 @@ itemgen({
 	ondraw: function(player=global.me) {
 		draw_set_color(c_black);
 		draw_rectangle(-999, -999, 999, 999, false);
+		ISAAC.sprite_index = s_null;
 	},
 	name: "Template",
 	description: "Template up",

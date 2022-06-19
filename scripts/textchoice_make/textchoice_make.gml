@@ -25,7 +25,11 @@ function textchoice_make(choices=[new choice(), new choice()]){
 		dude.choicename = choices[i-1].name;
 		dude.draw = method(dude, function(){
 			draw_set_halign(fa_center);
-			draw_text(x, y, choicename);
+			if global.MenuCursor.target == self {
+				draw_text(x, y, ">" + choicename + "<");
+			} else {
+				draw_text(x, y, choicename);
+			}
 		});
 		//mymans = choices[i-1].func;
 		//dude.onSelect = function_append(mymans, function() {global.MenuCursor.disabled = true;});

@@ -20,6 +20,7 @@ function txt_hajime() {
 		sariel: 0,
 		ruukoto: 0,
 	}
+	c_additem(ITEMS.HIDE);
 	msg = msglang([
 	
 	/*txt("among us|n in real life", REIMU.UNIMPRESSED, SPRITEPOS.LEFT),

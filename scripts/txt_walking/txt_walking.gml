@@ -18,6 +18,7 @@ function txt_walking() {
 	txt("If you lost, nothing good came of it.", KOTOHIME.NORMAL),
 	txt("I see...", KAGUYA2.NORMAL),
 	txt("It is true that even my failed plans from long ago moved us at Eientei forward, in regards to social status in Gensokyo.", KAGUYA2.NORMAL),
+	txt("Less fortune was spared for those in the back.", KOTOHIME.NORMAL),
 	txt("Almost everybody seems to be over it, but we still meet at the bar.", KOTOHIME.NORMAL),
 	txt("The Twilight Bar is an incredible and secluded place, that can block out even fantasy.", KOTOHIME.NORMAL),
 	txt("Not so different from my current residence, then.", KAGUYA2.NORMAL),

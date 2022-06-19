@@ -3,7 +3,7 @@ function txt_deception() {
 	msg = msglang([
 	
 	txt("..."),
-	txt("That was heavy. I don't think I've ever seen the princess get so mad...", REISEN.HAPPY, SPRITEPOS.MIDLEFT),
+	txt("That was heavy. I don't think I've ever seen the princess get so mad...", REISEN.HAPPY, SPRITEPOS.LEFT),
 	txt("What did you do?", REISEN.HAPPY),
 	txt("Well~", KOTOHIME.NORMAL, SPRITEPOS.RIGHT),
 	txt("You know~", KOTOHIME.NORMAL),
@@ -31,7 +31,7 @@ function txt_deception() {
 	txt("...Gah. What are you going to do?", REISEN.HAPPY),
 	txt("It's simple! Help me look for that thing!", KOTOHIME.NORMAL, SPRITEPOS.RIGHT),
 	txt("I don't think I can help with that. It's incredibly tiny.", REISEN.HAPPY),
-	txt("If you haven't made a habit of burning bridges all around Gensokyo, maybe you could find someone skilled at finding lost things?", REISEN.HAPPY),
+	txt("If you haven't made a habit of burning bridges all around Gensokyo, maybe you could get someone skilled at finding lost things?", REISEN.HAPPY),
 	txt("It won't be that bad. I'm pretty sure I know around where I dropped it.", KOTOHIME.NORMAL),
 	txt("If we find it quickly, maybe Kaguya will calm down. Besides, most people can't navigate the Bamboo Forest as well as someone who lives in it, right?", KOTOHIME.NORMAL),
 	txt("Fine, fine.", REISEN.HAPPY),

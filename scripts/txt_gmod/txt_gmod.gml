@@ -12,7 +12,7 @@ function txt_gmod() {
 	txt("Kotohime, you just-#That poor man! That was a mountain of explosives!", KAGUYA2.NORMAL),
 	txt("Kyaha, we can always make more. What, did you wanna take his place?", KOTOHIME.NORMAL),
 	txt("No, I don't think I do. Would you mind being on your way?", KAGUYA2.NORMAL),
-	txt("|aAh!|aDang. That can't stop me! In this world, I've got the same convenient body you do!", KOTOHIME.NORMAL, u, u, u, [se_null, se_null]),
+	txt("|aAh! |aDang. That can't stop me! In this world, I've got the same convenient body you do!", KOTOHIME.NORMAL, u, u, u, [se_null, se_null]),
 	txt("If I pick up the crossbow here...", KOTOHIME.NORMAL),
 	txt("There! Got you!", KOTOHIME.NORMAL),
 	txt("You misunderstand. An immortal body works only to your disadvantage.", KAGUYA2.NORMAL),

@@ -15,7 +15,7 @@ function textline_next() {
 			}
 		}
 		var dudes = font_get_size(draw_get_font())-1;
-		var dudes2 = floor((sprite_width-margin*2)/dudes);
+		var dudes2 = floor((width-margin*2)/dudes);
 		msg[talkpos].text = lb_auto(msg[talkpos].text, dudes2);
 		log(msg[talkpos]);
 		talklength = string_length(msg[talkpos].text);
@@ -30,5 +30,5 @@ function textline_next() {
 		didfuncs = array_create(999);
 		atsound = 0;
 		atfunc = 0;
-	} until msg[talkpos].type == "normal" || string_contains(msg[talkpos].text, "|w");
+	} until msg[talkpos].type == "normal" || (string_contains(msg[talkpos].text, "|w") && !string_contains(msg[talkpos].text, "|w0000"));
 }

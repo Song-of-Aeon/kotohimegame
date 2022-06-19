@@ -32,7 +32,7 @@ function txt_hajime() {
 	
 	//txt("12345678901234567890123456789012345678901234578901234567890"),
 	txt("It is an unimaginably long journey.", u, u, s_black),
-	txt("I do not know the origin of what I carry with me now, being the latest in its' series of bearers."),
+	txt("I do not know the origin of what I carry with me now, being only the latest in its' series of bearers."),
 	txt("It is light. Fragile."),
 	txt("But of course, I would never falter with it."),
 	txt("After all, this thing is more important to us than its journey is long."),

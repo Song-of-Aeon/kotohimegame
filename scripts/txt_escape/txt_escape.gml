@@ -36,6 +36,7 @@ function txt_escape() {
 	txt("Oh, hey Reisen.", KOTOHIME.NORMAL, SPRITEPOS.MIDRIGHT),
 	txt("Hi?", REISEN.HAPPY),
 	ntxt(0, KOTOHIME.NORMAL, SPRITEPOS.MIDLEFT),
+	ntxt(0, REISEN.HAPPY, SPRITEPOS.LEFT),
 	txt("REISEN! Escort this... nincompoop! Off the premises! Out of here! NOW!", KAGUYA2.NORMAL, SPRITEPOS.RIGHT),
 	txt("Very well. Should I-", REISEN.HAPPY),
 	txt("Just do it!!", KAGUYA2.NORMAL),

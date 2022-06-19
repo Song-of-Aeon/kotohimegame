@@ -190,6 +190,7 @@
     {"id":{"name":"surface_fuckery","path":"scripts/surface_fuckery/surface_fuckery.yy",},"order":4,},
     {"id":{"name":"TITLE","path":"rooms/TITLE/TITLE.yy",},"order":0,},
     {"id":{"name":"z_outline","path":"shaders/z_outline/z_outline.yy",},"order":0,},
+    {"id":{"name":"c_badpractice","path":"scripts/c_badpractice/c_badpractice.yy",},"order":10,},
     {"id":{"name":"x_charsetup","path":"scripts/x_charsetup/x_charsetup.yy",},"order":3,},
     {"id":{"name":"o_itemmanager","path":"objects/o_itemmanager/o_itemmanager.yy",},"order":0,},
     {"id":{"name":"txt_chiyuriyaunn","path":"scripts/txt_chiyuriyaunn/txt_chiyuriyaunn.yy",},"order":3,},

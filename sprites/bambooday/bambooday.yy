@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f6e168ed-30bc-4558-a026-8b4c10f24df2","path":"sprites/s_bambooday/s_bambooday.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f6e168ed-30bc-4558-a026-8b4c10f24df2","path":"sprites/s_bambooday/s_bambooday.yy",},"LayerId":{"name":"a9f8a1eb-7fe7-4ba8-a03a-9368ea7737ef","path":"sprites/s_bambooday/s_bambooday.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_bambooday","path":"sprites/s_bambooday/s_bambooday.yy",},"resourceVersion":"1.0","name":"f6e168ed-30bc-4558-a026-8b4c10f24df2","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"29e0f3ee-7515-41e4-bfe6-d66a72e07ab2","path":"sprites/bambooday/bambooday.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"29e0f3ee-7515-41e4-bfe6-d66a72e07ab2","path":"sprites/bambooday/bambooday.yy",},"LayerId":{"name":"017f4e95-86bc-4444-b8d2-4d3df2d2ddf3","path":"sprites/bambooday/bambooday.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"bambooday","path":"sprites/bambooday/bambooday.yy",},"resourceVersion":"1.0","name":"29e0f3ee-7515-41e4-bfe6-d66a72e07ab2","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"s_bambooday","path":"sprites/s_bambooday/s_bambooday.yy",},
+    "spriteId": {"name":"bambooday","path":"sprites/bambooday/bambooday.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"7b637eb2-a6c1-48f7-b878-3cadb9e54ab2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f6e168ed-30bc-4558-a026-8b4c10f24df2","path":"sprites/s_bambooday/s_bambooday.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1e2dfb67-1431-4555-beb1-602a2d7bb43d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"29e0f3ee-7515-41e4-bfe6-d66a72e07ab2","path":"sprites/bambooday/bambooday.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"s_bambooday","path":"sprites/s_bambooday/s_bambooday.yy",},
+    "parent": {"name":"bambooday","path":"sprites/bambooday/bambooday.yy",},
     "resourceVersion": "1.4",
-    "name": "s_bambooday",
+    "name": "bambooday",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"a9f8a1eb-7fe7-4ba8-a03a-9368ea7737ef","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"017f4e95-86bc-4444-b8d2-4d3df2d2ddf3","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/bakgrounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "s_bambooday",
+  "name": "bambooday",
   "tags": [],
   "resourceType": "GMSprite",
 }

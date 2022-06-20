@@ -13,8 +13,8 @@ itemgen({
 			ISAAC.y = clamp(ISAAC.y, bordup+8, borddown-8);
 			fightx = 0;
 		} else {
-			bordleft = WIDTH/5-175;
-			bordright = 500-175;
+			bordleft = 640/5-175;
+			bordright = 640/5*4-175;
 			bordup = 180;
 			borddown = 260;
 			ISAAC.state = c_null;
@@ -47,6 +47,13 @@ itemgen({
 		draw_line_width(bordleft+175, bordup+10, bordright+175, bordup+10, 5);
 		draw_line_width(bordright+175, bordup+10-2.5, bordright+175, borddown+10+2.5, 5);
 		draw_line_width(bordleft+175, borddown+10, bordright+175, borddown+10, 5);
+		draw_text(bordleft, 300, "KOTOHIME");
+		draw_text(bordleft+80, 300, "LV 1");
+		draw_text(bordleft+160, 300, "HP");
+		draw_set_color(c_red);
+		draw_rectangle(bordleft+180, 300-8, bordleft+20, 300+8, false);
+		draw_set_color(c_yellow);
+		draw_rectangle(bordleft+180, 300-8, bordleft+20, 300+8, false);
 		surface_reset_target();
 	},
 	onpickup: function() {
@@ -65,7 +72,7 @@ itemgen({
 		global.MenuCursor.disabled = false;
 		global.MenuCursor.onBack = c_null;
 		global.MenuCursor.draw = c_null;
-		var fight = makeGenericElement(640/5, 280, 10, 10, s_null);
+		var fight = makeGenericElement(640/5, 320, 10, 10, s_null);
 		fight.draw = munction(function() {
 			draw_sprite(s_undytale, 0+(global.MenuCursor.target==self), x, y);
 		})
@@ -91,15 +98,15 @@ itemgen({
 			global.MenuCursor.disabled = false;
 			global.MenuCursor.onBack = c_getitembyid(ITEMS.UNDERTALE).menugen;
 		})
-		var act = makeGenericElement(640/5*2, 280, 10, 10, s_null);
+		var act = makeGenericElement(640/5*2, 320, 10, 10, s_null);
 		act.draw = munction(function() {
 			draw_sprite(s_undytale, 2+(global.MenuCursor.target==self), x, y);
 		})
-		var item = makeGenericElement(640/5*3, 280, 10, 10, s_null);
+		var item = makeGenericElement(640/5*3, 320, 10, 10, s_null);
 		item.draw = munction(function() {
 			draw_sprite(s_undytale, 4+(global.MenuCursor.target==self), x, y);
 		})
-		var mercy = makeGenericElement(640/5*4, 280, 10, 10, s_null);
+		var mercy = makeGenericElement(640/5*4, 320, 10, 10, s_null);
 		mercy.draw = munction(function() {
 			draw_sprite(s_undytale, 6+(global.MenuCursor.target==self), x, y);
 		})

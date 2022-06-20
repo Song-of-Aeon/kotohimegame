@@ -40,7 +40,7 @@ global.surfaces = {
 		surface_reset_target();
 		surface_set_target(global.surfaces.HUD);
 		draw_clear_alpha(c_white, 0);
-		draw_sprite(s_black, 0, 0, 0);
+		draw_sprite(s_black, 1, 0, 0);
 		surface_reset_target();
 		surface_set_target(global.surfaces.border);
         draw_sprite_stretched(tex_based,0,0,0,surface_get_width(global.surfaces.border),surface_get_height(global.surfaces.border));

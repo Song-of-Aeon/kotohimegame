@@ -13,7 +13,18 @@ nu chardata();
 
 #macro KOTOHIME global.textguy[?"kotohime"]
 nu chardata("Kotohime", s_kotohime, se_null);
-nu talksprite("NORMAL", "kotohime", 0);
+var z=0;
+nu talksprite("HAPPY", "kotohime", z++);
+nu talksprite("LMAO", "kotohime", z++);
+nu talksprite("DISAPPOINTED", "kotohime", z++);
+nu talksprite("EXCITED", "kotohime", z++);
+nu talksprite("THINKING", "kotohime", z++);
+nu talksprite("SMUG", "kotohime", z++);
+nu talksprite("NERVOUS", "kotohime", z++);
+nu talksprite("WINK", "kotohime", z++);
+nu talksprite("STUNNED", "kotohime", z++);
+nu talksprite("SOLEMN", "kotohime", z++);
+nu talksprite("SILENT", "kotohime", z++);
 
 #macro ME global.textguy[?"me"]
 nu chardata("Me", s_kodohimey);

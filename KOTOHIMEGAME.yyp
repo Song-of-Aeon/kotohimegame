@@ -187,6 +187,7 @@
     {"id":{"name":"c_generatestage","path":"scripts/c_generatestage/c_generatestage.yy",},"order":4,},
     {"id":{"name":"s_junko","path":"sprites/s_junko/s_junko.yy",},"order":16,},
     {"id":{"name":"s_eienteihall1","path":"sprites/s_eienteihall1/s_eienteihall1.yy",},"order":10,},
+    {"id":{"name":"s_kotohime255","path":"sprites/s_kotohime255/s_kotohime255.yy",},"order":31,},
     {"id":{"name":"surface_fuckery","path":"scripts/surface_fuckery/surface_fuckery.yy",},"order":4,},
     {"id":{"name":"TITLE","path":"rooms/TITLE/TITLE.yy",},"order":0,},
     {"id":{"name":"z_outline","path":"shaders/z_outline/z_outline.yy",},"order":0,},

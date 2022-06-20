@@ -23,10 +23,10 @@ function st_textadv() {
 		}
 	}
 	if sprite_index == s_textbox || sprite_index == s_null {
-		draw_set_color(c_black);
+		/*draw_set_color(c_black);
 		draw_rectangle(x-width/2, y, x+width/2, y+height, false);
 		draw_set_color(c_white);
-		draw_rectangle(x-width/2, y, x+width/2, y+height, true);
+		draw_rectangle(x-width/2, y, x+width/2, y+height, true);*/
 	} else {
 		draw_sprite(sprite_index, 0, x, y);
 	}
@@ -42,14 +42,14 @@ function st_textadv() {
 	shake = 0;
 	sizepos = 0;
 	pressing = 0;
-	fontsize = font_get_size(draw_get_font())-1;
+	fontsize = font_get_size(draw_get_font())*.8;
 	atsound = 0;
 	atfunc = 0;
 	j = 0;
 	if msg[talkpos].type == "normal" {
 		draw_set_color(talker[0].namecolor);
 		draw_set_halign(fa_center);
-		draw_text(x+width/20-width/2+17, y-18, talker[0].name);
+		draw_text(x+width/20-width/2+32, y-38, talker[0].name);
 		draw_set_halign(fa_left);
 		draw_set_color(c_white);
 	}

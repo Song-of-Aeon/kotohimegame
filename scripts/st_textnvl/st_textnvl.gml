@@ -21,10 +21,10 @@ function st_textnvl() {
 		}
 	}
 	if sprite_index == s_textbox || sprite_index == s_null {
-		draw_set_color(c_black);
+		/*draw_set_color(c_black);
 		draw_rectangle(x-width/2, y, x+width/2, y+height, false);
 		draw_set_color(c_white);
-		draw_rectangle(x-width/2, y, x+width/2, y+height, true);
+		draw_rectangle(x-width/2, y, x+width/2, y+height, true);*/
 	} else {
 		draw_sprite(sprite_index, 0, x, y);
 	}
@@ -49,7 +49,7 @@ function st_textnvl() {
 		if backlog[j].type == "normal" {
 			draw_set_color(backlog[j].guy.namecolor);
 			draw_set_halign(fa_right);
-			draw_text(x-width/2-20, y+(fontsize)+(lb+nvlline)*(fontsize*2), backlog[j].name);
+			draw_text(x-width/2-40, y+(fontsize)+(lb+nvlline)*(fontsize*2), backlog[j].name);
 			draw_set_halign(fa_left);
 			draw_set_color(c_white);
 		}
@@ -99,7 +99,7 @@ function st_textnvl() {
 	if msg[talkpos].type == "normal" {
 			draw_set_color(msg[talkpos].guy.namecolor);
 			draw_set_halign(fa_right);
-			draw_text(x-width/2-20, y+(fontsize)+(lb+nvlline)*(fontsize*2), msg[talkpos].name);
+			draw_text(x-width/2-40, y+(fontsize)+(lb+nvlline)*(fontsize*2), msg[talkpos].name);
 			draw_set_halign(fa_left);
 			draw_set_color(c_white);
 		}

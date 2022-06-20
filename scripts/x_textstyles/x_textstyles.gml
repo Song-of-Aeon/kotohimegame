@@ -10,20 +10,30 @@ enum TEXTTYPE {
 }
 
 global.textdefault = {
-	x: 320,
-	y: 250,
+	x: 640,
+	y: 520,
+	width: 840,
+	height: 160,
+	spriteposx: 210,
+	spriteposy: 400,
+	sprite: s_spacetext,
+	type: TEXTTYPE.ADV,
+}
+global.textchara = {
+	x: 330,
+	y: 195,
 	width: 420,
 	height: 80,
 	spriteposx: 210,
 	spriteposy: 190,
-	sprite: s_spacetext,
+	sprite: s_null,
 	type: TEXTTYPE.ADV,
 }
 global.texttale = {
-	x: 380,
-	y: 80,
-	width: 88,
-	height: 66,
+	x: 420,
+	y: 40,
+	width: 185,
+	height: 120,
 	spriteposx: 210,
 	spriteposy: 190,
 	sprite: s_textbubble,

@@ -22,7 +22,10 @@ itemgen({
 			if fighting {
 				fightx++;
 				if (player.select && fightx >= 2) || fightx >= bordright-bordleft {
-					bosshp -= floor(abs(fightx-(bordright-bordleft)/2)/5);
+					//bosshp -= floor(abs(fightx-(bordright-bordleft)/2)/5);
+					var middle = bordright-bordleft;
+					var dropoff = abs(fightx-middle/5);
+					bosshp -= 50-dropoff;
 					log(bosshp);
 					if bosshp <= 0 {
 						textbox_create(txt_hajime);
@@ -41,19 +44,30 @@ itemgen({
 		draw_set_color(c_white);
 		surface_set_target(global.surfaces.HUD);
 		if fighting {
-			draw_text_transformed(bordleft+175+fightx, 130, "IM FIGHTBAR", 1, 1, 270);
+			var middle = (bordright-bordleft)/2;
+			var dropoff = abs(fightx-middle)/4;
+			var dude = 50-dropoff;
+			draw_text_transformed(bordleft+175+fightx, 130, dude, 1, 1, 270);
+			
 		}
+		var myleft = 640/5;
+		var myright = 640/5*4;
+		var myup = 284;
 		draw_line_width(bordleft+175, bordup+10-2.5, bordleft+175, borddown+10+2.5, 5);
 		draw_line_width(bordleft+175, bordup+10, bordright+175, bordup+10, 5);
 		draw_line_width(bordright+175, bordup+10-2.5, bordright+175, borddown+10+2.5, 5);
 		draw_line_width(bordleft+175, borddown+10, bordright+175, borddown+10, 5);
-		draw_text(bordleft, 300, "KOTOHIME");
-		draw_text(bordleft+80, 300, "LV 1");
-		draw_text(bordleft+160, 300, "HP");
+		draw_set_valign(fa_middle);
+		draw_text(myleft, myup, "KOTOHIME");
+		draw_text(myleft+80, myup, "LV 1");
+		draw_text(myleft+160, myup, "HP");
 		draw_set_color(c_red);
-		draw_rectangle(bordleft+180, 300-8, bordleft+20, 300+8, false);
+		draw_rectangle(myleft+180, myup-8, myleft+180+20, myup+8, false);
 		draw_set_color(c_yellow);
-		draw_rectangle(bordleft+180, 300-8, bordleft+20, 300+8, false);
+		draw_rectangle(myleft+180, myup-8, myleft+180+(20*(ISAAC.hp/ISAAC.maxhp)), myup+8, false);
+		draw_set_color(c_white);
+		draw_text(myleft+240, myup, string(ISAAC.hp)+" / " + string(ISAAC.maxhp));
+		draw_set_valign(fa_top);
 		surface_reset_target();
 	},
 	onpickup: function() {
@@ -62,6 +76,9 @@ itemgen({
 		c_makeboss(global.bosses.chiyuri, [SPELL.NON]);
 	},
 	menugen: function() {
+		if !sparing {
+			textbox_create(txt_chara, global.textchara, false)
+		}
 		battling = false;
 		fighting = false;
 		if(!instance_exists(o_uicontroller)){
@@ -128,7 +145,8 @@ itemgen({
 	battling: false,
 	fightx: 0,
 	fighting: false,
-	bosshp: 5,
+	bosshp: 200,
+	sparing: false,
 	
 	charge: 0,
 	chargemax: 0,

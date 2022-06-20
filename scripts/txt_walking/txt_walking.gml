@@ -37,4 +37,5 @@ function txt_walking() {
 	])
 	
 	endevent = function() {textbox_create(txt_bar)};
-}
+}//among us in real life
+//lookin sus who do we trust

@@ -14,7 +14,7 @@ function textline_next() {
 				backlog = [];
 			}
 		}
-		var dudes = font_get_size(draw_get_font())-1;
+		var dudes = font_get_size(draw_get_font())*.8;
 		var dudes2 = floor((width-margin*2)/dudes);
 		msg[talkpos].text = lb_auto(msg[talkpos].text, dudes2);
 		log(msg[talkpos]);

@@ -40,7 +40,7 @@ global.chara[?"reimu"] = {
 			collectionpoint:1,
 		}
 	},
-	sprite: s_soul,
+	sprite: s_null,
 	startingitems: [ITEMS._STATS, ITEMS._GRAZE, ITEMS._CONSOLE, ITEMS.PAUSE, ITEMS.FOCUS,],
 	name: "Kotohime",
 	desc: "Enigmatic Princess",

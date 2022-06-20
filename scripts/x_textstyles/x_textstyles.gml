@@ -18,6 +18,18 @@ global.textdefault = {
 	spriteposy: 400,
 	sprite: s_spacetext,
 	type: TEXTTYPE.ADV,
+	font: FONT.TALK,
+}
+global.textzpix = {
+	x: 640,
+	y: 520,
+	width: 840,
+	height: 160,
+	spriteposx: 210,
+	spriteposy: 400,
+	sprite: s_spacetext,
+	type: TEXTTYPE.ADV,
+	font: FONT.ZPIX,
 }
 global.textchara = {
 	x: 330,
@@ -28,6 +40,7 @@ global.textchara = {
 	spriteposy: 190,
 	sprite: s_null,
 	type: TEXTTYPE.ADV,
+	font: FONT.DETERMINATION,
 }
 global.texttale = {
 	x: 420,
@@ -38,6 +51,7 @@ global.texttale = {
 	spriteposy: 190,
 	sprite: s_textbubble,
 	type: TEXTTYPE.ADV,
+	font: FONT.DETERMINATIONSMALL,
 }
 global.textfacepic = {
 	x: 320,
@@ -48,16 +62,18 @@ global.textfacepic = {
 	spriteposy: 190,
 	sprite: s_spacetext,
 	type: TEXTTYPE.FACEPIC,
+	font: FONT.TALK,
 }
 global.textnvl = {
-	x: 320,
-	y: 30,
-	width: 420,
-	height: 300,
+	x: 640,
+	y: 60,
+	width: 840,
+	height: 600,
 	spriteposx: 210,
 	spriteposy: 190,
 	sprite: s_bigtext,
 	type: TEXTTYPE.NVL,
+	font: FONT.ZPIX,
 }
 
 global.textshop = {
@@ -69,6 +85,7 @@ global.textshop = {
 	spriteposy: 180,
 	sprite: s_null,
 	type: TEXTTYPE.FREE,
+	font: FONT.TALK,
 }
 
 global.textcalling = {
@@ -80,6 +97,7 @@ global.textcalling = {
 	spriteposy: -90,
 	sprite: s_null,
 	type: TEXTTYPE.FREE,
+	font: FONT.TALK,
 }
 
 global.textnod = {
@@ -91,6 +109,7 @@ global.textnod = {
 	spriteposy: 220,
 	sprite: s_null,
 	type: TEXTTYPE.FREE,
+	font: FONT.TALK,
 }
 
 

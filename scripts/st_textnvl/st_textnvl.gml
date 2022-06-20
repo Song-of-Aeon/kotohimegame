@@ -28,7 +28,7 @@ function st_textnvl() {
 	} else {
 		draw_sprite(sprite_index, 0, x, y);
 	}
-	set_font_style(FONT.TALK);
+	set_font_style(font);
 	clr = c_white;
 	var xpos = 0;
 	var lb = 0;

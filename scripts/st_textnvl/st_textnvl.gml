@@ -53,6 +53,7 @@ function st_textnvl() {
 			draw_set_halign(fa_left);
 			draw_set_color(c_white);
 		}
+		draw_set_halign(fa_left);
 		for (i=1; i<=string_length(backlog[j].text)+1; i++) {
 			while string_char_at(backlog[j].text, i) = "|" {
 		        c_txtspecial();

@@ -32,10 +32,10 @@ global.textzpix = {
 	font: FONT.ZPIX,
 }
 global.textchara = {
-	x: 330,
-	y: 195,
-	width: 420,
-	height: 80,
+	x: 650,
+	y: 370,
+	width: 840,
+	height: 160,
 	spriteposx: 210,
 	spriteposy: 190,
 	sprite: s_null,
@@ -45,7 +45,7 @@ global.textchara = {
 global.texttale = {
 	x: 420,
 	y: 40,
-	width: 185,
+	width: 185*2,
 	height: 120,
 	spriteposx: 210,
 	spriteposy: 190,

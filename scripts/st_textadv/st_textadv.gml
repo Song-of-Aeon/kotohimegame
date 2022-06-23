@@ -53,6 +53,7 @@ function st_textadv() {
 		draw_set_halign(fa_left);
 		draw_set_color(c_white);
 	}
+	draw_set_halign(fa_left);
 	atsound = 0;
 	atfunc = 0;
 	for (i=1; i<=effchars; i++) {

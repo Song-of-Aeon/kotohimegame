@@ -17,5 +17,5 @@ function txt_acceptence() {
 	
 	])
 	
-	endevent = c_null;
+	endevent = function() {textbox_create(txt_drinks)};
 }

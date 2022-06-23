@@ -534,6 +534,7 @@
     {"id":{"name":"cl_tutorialshop","path":"scripts/cl_tutorialshop/cl_tutorialshop.yy",},"order":1,},
     {"id":{"name":"s_spellbg","path":"sprites/s_spellbg/s_spellbg.yy",},"order":9,},
     {"id":{"name":"s_yforward","path":"sprites/s_yforward/s_yforward.yy",},"order":4,},
+    {"id":{"name":"ft_zpix16","path":"fonts/ft_zpix16/ft_zpix16.yy",},"order":17,},
     {"id":{"name":"s_arm","path":"sprites/s_arm/s_arm.yy",},"order":8,},
     {"id":{"name":"WHOAMII","path":"rooms/WHOAMII/WHOAMII.yy",},"order":1,},
     {"id":{"name":"pt_aunnnon2","path":"scripts/pt_aunnnon2/pt_aunnnon2.yy",},"order":1,},

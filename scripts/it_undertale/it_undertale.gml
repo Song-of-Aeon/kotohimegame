@@ -34,7 +34,7 @@ itemgen({
 					}
 					fighting = false;
 					battling = true;
-					switch c_getitembyid(ITEMS.UNDERTALE).fightpoint {
+					switch fightpoint {
 						case 0:
 							textbox_create(txt_fight, global.texttale);
 							break;
@@ -50,7 +50,7 @@ itemgen({
 						case 4:
 							textbox_create(txt_fight5, global.texttale);
 							break;
-						case 5:
+						default:
 							textbox_create(txt_fight6, global.texttale);
 							break;
 					}
@@ -72,6 +72,7 @@ itemgen({
 		var myleft = 1280/5;
 		var myright = 1280/5*4;
 		var myup = 284*2;
+		set_font_style(FONT.DETERMINATION);
 		draw_line_width(bordleft+350, bordup+10-2.5, bordleft+350, borddown+10+2.5, 5);
 		draw_line_width(bordleft+350, bordup+10, bordright+350, bordup+10, 5);
 		draw_line_width(bordright+350, bordup+10-2.5, bordright+350, borddown+10+2.5, 5);
@@ -151,10 +152,65 @@ itemgen({
 			check.onSelect = munction(function() {
 				textbox_create(txt_check, global.textchara, true);
 				global.MenuCursor.disabled = true;
-				//o_uicontroller.UIElements[4].destroy();
-				//o_uicontroller.UIElements[5].destroy();
-				//o_uicontroller.UIElements[6].destroy();
-				//o_uicontroller.UIElements[7].destroy();
+			})
+			var beg = makeGenericElement(572, 386, 10, 10, s_null);
+			beg.draw = munction(function() {
+				if global.MenuCursor.target == self {
+					draw_text(x, y, "* Beg!");
+				} else {
+					draw_text(x, y, "* Beg");
+				}
+			})
+			beg.onSelect = munction(function() {
+				switch actpoint {
+					case 0:
+						textbox_create(txt_beg, global.texttale);
+						break;
+					case 1:
+						textbox_create(txt_beg2, global.texttale);
+						break;
+					case 4:
+						textbox_create(txt_beg4, global.texttale);
+						break;
+					default:
+						textbox_create(txt_beg3, global.texttale);
+						break;
+				}
+				global.MenuCursor.disabled = true;
+			})
+			var reason = makeGenericElement(272, 446, 10, 10, s_null);
+			reason.draw = munction(function() {
+				if global.MenuCursor.target == self {
+					draw_text(x, y, "* Reason!");
+				} else {
+					draw_text(x, y, "* Reason");
+				}
+			})
+			reason.onSelect = munction(function() {
+				switch actpoint {
+					case 2:
+						textbox_create(txt_reason, global.texttale);
+						break;
+					case 3:
+						textbox_create(txt_reason2, global.texttale);
+						break;
+					default:
+						textbox_create(txt_reason3, global.texttale);
+						break;
+				}
+				global.MenuCursor.disabled = true;
+			})
+			var order = makeGenericElement(572, 446, 10, 10, s_null);
+			order.draw = munction(function() {
+				if global.MenuCursor.target == self {
+					draw_text(x, y, "* Order!");
+				} else {
+					draw_text(x, y, "* Order");
+				}
+			})
+			order.onSelect = munction(function() {
+				textbox_create(txt_order, global.textchara, true);
+				global.MenuCursor.disabled = true;
 			})
 			instance_destroy(o_textbox);
 			o_uicontroller.UIElements[0].options.selectable = false;
@@ -195,6 +251,7 @@ itemgen({
 	sparing: false,
 	fightpoint: 0,
 	actpoint: 0,
+	ordered: false,
 	
 	charge: 0,
 	chargemax: 0,

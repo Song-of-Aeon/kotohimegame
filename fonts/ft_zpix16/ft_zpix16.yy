@@ -133,7 +133,7 @@
     "path": "folders/Technical/Fonts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ft_zpix",
+  "name": "ft_zpix16",
   "tags": [],
   "resourceType": "GMFont",
 }

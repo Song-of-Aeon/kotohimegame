@@ -51,45 +51,6 @@ nu talksprite("NEUTRAL", "me", z++);
 
 
 
-#macro MARY global.textguy[?"mary"]
-nu chardata("Mary", s_mary);
-var z=0;
-nu talksprite("DEF", "mary", z++);
-nu talksprite("OOH", "mary", z++);
-nu talksprite("YAY", "mary", z++);
-nu talksprite("AWW", "mary", z++);
-nu talksprite("SHOCKED", "mary", z++);
-nu talksprite("UHH", "mary", z++);
-nu talksprite("WAAH", "mary", z++);
-nu talksprite("HUH", "mary", z++);
-nu talksprite("HAAHH", "mary", z++);
-nu talksprite("AHHH", "mary", z++);
-nu talksprite("OVERJOYED", "mary", z++);
-
-
-
-#macro GIRL global.textguy[?"girl"]
-nu chardata("Girl", s_mary);
-var z=0
-nu talksprite("DEF", "girl", z++);
-nu talksprite("OOH", "girl", z++);
-nu talksprite("YAY", "girl", z++);
-nu talksprite("AWW", "girl", z++);
-nu talksprite("ANGERY", "girl", z++);
-nu talksprite("UHH", "girl", z++);
-nu talksprite("WAAH", "girl", z++);
-nu talksprite("HUH", "girl", z++);
-nu talksprite("HAAHH", "girl", z++);
-
-
-
-#macro MEIRA global.textguy[?"meira"]
-nu chardata("Meira", s_meira);
-var z=0;
-nu talksprite("DEF", "meira", z++);
-nu talksprite("SWEAT", "meira", z++);
-nu talksprite("ANGERY", "meira", z++);
-nu talksprite("DEFEATED", "meira", z++);
 
 
 
@@ -131,6 +92,7 @@ nu talksprite("YAY", "kaguya", z++);
 nu talksprite("COCKY", "kaguya", z++);
 nu talksprite("NEUTRAL", "kaguya", z++);
 nu talksprite("MAD", "kaguya", z++);
+nu talksprite("MADEARTH", "kaguya", z++);
 nu talksprite("WAAH", "kaguya", z++);
 nu talksprite("SHOCKED", "kaguya", z++);
 nu talksprite("SMUG", "kaguya", z++);
@@ -172,6 +134,8 @@ nu talksprite("YAY", "mokou", z++);
 nu talksprite("COCKY", "mokou", z++);
 nu talksprite("SMUG", "mokou", z++);
 nu talksprite("MAD", "mokou", z++);
+nu talksprite("REALLYMAD", "mokou", z++);
+nu talksprite("MADMOON", "mokou", z++);
 nu talksprite("BRUH", "mokou", z++);
 nu talksprite("SAD", "mokou", z++);
 nu talksprite("SADSMILE", "mokou", z++);

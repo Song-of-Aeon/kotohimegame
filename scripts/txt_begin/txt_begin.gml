@@ -29,7 +29,6 @@ function txt_begin() {
 	txt("These stories aren't exactly mine to tell...", ME.WINKYHEART),
 	txt("But I played a part in them, so it's okay.", ME.WINKYHEART),
 	txt("I'm a collector, you see... not a mere thief.", ME.WINKYHEART),
-	txt("At least, not most of the time.", ME.HEHE),
 	txt("Now, are you ready for some romance?", ME.DEF),
 	
 	//footsteps sound and crickets, fading into kotohime with daytime forest background	
@@ -169,10 +168,11 @@ function txt_begin() {
 	txt("And just like that, we were friends.", u, u, s_black, function() {textbox_set_type(global.textnvl)}),
 	txt("I quickly brought Kana to my home, and went through the necessary rituals to bind her to it."),
 	txt("Poltergeists are normally bound to one place of residence, you see. They cannot leave their home for more than three days, or else they will cease to be."),
-	txt("Somehow she was able to live Reimu's shrine, which I suspect happened because of what she discovered in the ruins."),
+	txt("Somehow she was able to live at Reimu's shrine, which I suspect happened because of what she discovered in the ruins."),
 	txt("For months, Kana lived there in relative happiness. She had to hide from the guards and my parents, on account of her phantomic nature. Though, she did pull pranks on the servants every now and again."),
-	txt("I liked having her there. She brought life to the uptight home, and she turned out to be just as interesting as I had hoped."),
+	
 	ptxt(),
+	txt("I liked having her there. She brought life to the uptight home, and she turned out to be just as interesting as I had hoped."),
 	txt("She originally lived in a western-style house just outside the human village, and while she couldn't get out much, she had access to tomes that taught her many things."),
 	txt("It was to the point that she knew more about the outside world than Gensokyo."),
 	txt("We would often go on walks and talk for hours on incredibly important subjects."),
@@ -230,7 +230,7 @@ function txt_begin() {
 	txt("Soft and caring, with a big smile on her face all the time!", KANA.DEF),
 	txt("She'd be the master of a huge mansion full of things to do, and take care of it with the utmost skill.", KANA.DEF),
 	txt("Tall and strong, in both mind and body. Always there to reassure me when something goes wrong.", KANA.DEF),
-	txt("She'd have long, white hair that glows like the stars!", KANA.YAY),
+	txt("She'd have long hair that glows like the stars!", KANA.YAY),
 	txt("A sense of fashion in her clothing, but not so much it becomes gaudy.", KANA.YAY),
 	txt("Oh, and a set of massive honkers!", KANA.YAY),
 	txt("...Honkers?", ME.WHAA),
@@ -382,15 +382,17 @@ function txt_begin() {
 	//prob put a bit more description here? or lead up to the question
 	
 		
-	txt("You mentioned \"impossible requests\"...#Are you the legendary Princess Kaguya?", KANA.DEF, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textzpix)}),
+	txt("You mentioned \"impossible requests\"...#Are you the legendary Princess Kaguya of the moon?", KANA.DEF, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textdefault)}),
 	txt("Oh? You've heard of me? A mighty well-read one, I see.", KAGUYA.DEF, SPRITEPOS.RIGHT),
 	txt("Not really. Your story is still famous, even in the outside world! Everyone knows it!", KANA.DEF),
 	txt("Ah.|n That's...", KAGUYA.AWW),
-	txt("That's quite quaint. Queer, even. Quirky and quizzical indeed. Mayhaps questionable.", KAGUYA.FUFUFU),
+	txt("That's nice.", KAGUYA.AWW),
 	//the reason she goes AWW is cuz she secretly wants to not be a NEET but is all like BUT IM A LUNARIAN PRINCESS BWAAH
-	
-	
-	txt("So, Little Rabbit, why have you brought this apparition? Are you certain she would not spoil our time together?", KAGUYA.DEF),
+	txt("Why are you here, though? Weren't you brought to the moon shortly after you arrived?", KANA.BRUH),
+	txt("Not quite. The other Lunarians attempted to bring me back... but I wished to stay on Earth.", KAGUYA.DEF),
+	txt("My belief is they are still searching for me. So to speak, this house is my hiding place.", KAGUYA.FUFUFU),
+	txt("But that's enough about me.", KAGUYA.YAY),	
+	txt("Little Rabbit, why have you brought this apparition? Are you certain she would not spoil our time together?", KAGUYA.DEF),
 	txt("What do you mean? She's my friend!", ME.YAY, SPRITEPOS.CENTER),
 	txt("Really now? You actually like her presence?", KAGUYA.NEUTRAL),
 	
@@ -437,7 +439,7 @@ function txt_begin() {
 	
 	txt("Okay, uhh..|n#I'm looking for a girlfriend.", KANA.NEUTRAL),
 	txt("Someone confident and caring. Strong in both mind and body, yet unafraid to open up emotionally. And if something went wrong, she'd be there for me no matter what.", KANA.YAY),
-	txt("Even better if she had a huge extravagent home, long shining white hair, and a slick sense of fashion!", KANA.YAY),
+	txt("Even better if she had a huge extravagent home, long shining hair, and a slick sense of fashion!", KANA.YAY),
 	txt("And some massive honkers!", ME.WINKYHEART),
 	
 	txt("That's so sweet!", KAGUYA.YAY),
@@ -526,7 +528,7 @@ function txt_begin() {
 	txt("Now you can't attack me without losing such a powerful unit!", REISEN.DEF),
 	txt("Okay! How about I castle now?", KANA.DEF, u, s_15),
 	txt("You what?", REISEN.DEF),
-	txt("Castle! If there's nothing between them, tou can make your king and rook switch places.", ME.DEF),
+	txt("Castle! If there's nothing between them, you can make your king and rook switch places.", ME.DEF),
 	
 	ptxt(),
 	txt("...#...#..."),
@@ -810,7 +812,7 @@ function txt_begin() {
 	txt("I don't know who yet, but... I do have an idea. A \"dream girl,\" you could say.", KANA.DEF),
 	txt("Someone strong and sweet,", KANA.DEF),
 	txt("Lovey-dovey and responsible,", ME.HEHE),
-	txt("With long white hair that shines like the stars,", KANA.DEF),
+	txt("With long hair that shines like the stars,", KANA.DEF),
 	txt("A good sense of style,", ME.YAY),
 	txt("And massive honkers!", KANA.WINKY),
 	//the honkers bit might be stale by the third use of it
@@ -1047,7 +1049,7 @@ function txt_begin() {
 	txt("As we left the forest, Kana requested a detour to the Misty Lake."),
 	txt("Since the sun was rising so soon... we might as well watch it."),
 	ptxt(),	
-	txt("When we got there, it was far too silent. There should've been birds singing or fairies playing, but only the flow of water welcomes us.", u, u, s_mistylakesunrise, function() {music_set(mus.autumn)}),
+	txt("When we got there, it was far too silent. There should've been birds singing or fairies playing, but only the flow of water welcomed us.", u, u, s_mistylakesunrise, function() {music_set(mus.autumn)}),
 	txt("We sat on the side of a rock, watching the sun appear."),
 	txt("Normally I would be exhausted, but I had slept through the whole afternoon that day."),
 	txt("So watching the sun rise felt no different from seeing it set."),
@@ -1079,7 +1081,7 @@ function txt_begin() {
 	ntxt(00, KANA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),
 	ptxt(),
-	txt("In that moment, I was racking my brain trying to think of what to get.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("In that moment, I was racking my brain trying to think of what she had.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("Had she brought a souvenir? Did she want to write a love letter for one of our friends?"),
 	txt("Oh, in that case, it was probably Reisen! That's the one she looked the most happy with."),
 	txt("Then again, Kaguya and Mokou each had very strong points. Maybe Kana saw through Kaguya's princess-like attitude-- or did she secretly like it?"),
@@ -1208,7 +1210,7 @@ function txt_begin() {
 	ntxt(090, ME.TINYSMIRK, SPRITEPOS.HIDDEN),
 	ntxt(0040, u, u, s_black),
 	
-	txt("#END OF KANA STORY|w9999 "),
+	txt("#END OF KANA STORY|w9999"),
 	
 	
 	],[

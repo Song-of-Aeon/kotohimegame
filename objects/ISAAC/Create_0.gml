@@ -133,8 +133,8 @@ myitems = ds_list_create();
 ds_list_clear(myitems);
 c_resetstats();
 
-maxhp = 7;
-hp = 7;
+maxhp = 20;
+hp = 20;
 life = 2;
 bombs = 3;
 defaultbombs = 3;

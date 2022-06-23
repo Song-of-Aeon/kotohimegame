@@ -9,5 +9,6 @@ function textbox_create(textscript=txt_test, style=global.textdefault, advancabl
 	chump.msgscript = textscript;
 	chump.sprite_index = style.sprite;
 	chump.texttype = style.type;
+	chump.font = style.font;
 	return chump;
 }

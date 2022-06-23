@@ -21,14 +21,14 @@ function st_textnvl() {
 		}
 	}
 	if sprite_index == s_textbox || sprite_index == s_null {
-		draw_set_color(c_black);
+		/*draw_set_color(c_black);
 		draw_rectangle(x-width/2, y, x+width/2, y+height, false);
 		draw_set_color(c_white);
-		draw_rectangle(x-width/2, y, x+width/2, y+height, true);
+		draw_rectangle(x-width/2, y, x+width/2, y+height, true);*/
 	} else {
 		draw_sprite(sprite_index, 0, x, y);
 	}
-	set_font_style(FONT.TALK);
+	set_font_style(font);
 	clr = c_white;
 	var xpos = 0;
 	var lb = 0;
@@ -49,10 +49,11 @@ function st_textnvl() {
 		if backlog[j].type == "normal" {
 			draw_set_color(backlog[j].guy.namecolor);
 			draw_set_halign(fa_right);
-			draw_text(x-width/2-20, y+(fontsize)+(lb+nvlline)*(fontsize*2), backlog[j].name);
+			draw_text(x-width/2-40, y+(fontsize)+(lb+nvlline)*(fontsize*2), backlog[j].name);
 			draw_set_halign(fa_left);
 			draw_set_color(c_white);
 		}
+		draw_set_halign(fa_left);
 		for (i=1; i<=string_length(backlog[j].text)+1; i++) {
 			while string_char_at(backlog[j].text, i) = "|" {
 		        c_txtspecial();
@@ -99,7 +100,7 @@ function st_textnvl() {
 	if msg[talkpos].type == "normal" {
 			draw_set_color(msg[talkpos].guy.namecolor);
 			draw_set_halign(fa_right);
-			draw_text(x-width/2-20, y+(fontsize)+(lb+nvlline)*(fontsize*2), msg[talkpos].name);
+			draw_text(x-width/2-40, y+(fontsize)+(lb+nvlline)*(fontsize*2), msg[talkpos].name);
 			draw_set_halign(fa_left);
 			draw_set_color(c_white);
 		}

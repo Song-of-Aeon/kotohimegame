@@ -23,5 +23,5 @@ function txt_greed() {
 	
 	])
 	
-	endevent = c_null;
+	endevent = function() {textbox_create(txt_drinks)};
 }

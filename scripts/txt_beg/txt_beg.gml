@@ -9,8 +9,8 @@ function txt_beg() {
 }
 function txt_begc() {
 	msg = msglang([
-	txt("Even if she doesn't, she could lead any amount of other trouble here without knowing it."),
-	txt("That's just how Gensokyo is these days."),
+	txt("|c000000000Even if she doesn't, she could lead any amount of other trouble here without knowing it."),
+	txt("|c000000000That's just how Gensokyo is these days."),
 	],[txt(""),])
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).battling = true;
@@ -19,7 +19,7 @@ function txt_begc() {
 }
 function txt_beg2() {
 	msg = msglang([
-	txt("You tell Chiyuri that you and Kaguya are smart, and won't let that happen."),
+	txt("|c000000000You tell Chiyuri that you and Kaguya are smart, and won't let that happen."),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).actpoint++;
@@ -28,11 +28,11 @@ function txt_beg2() {
 }
 function txt_beg2c() {
 	msg = msglang([
-	txt("Even ignoring your own... intellect, there's always a bigger fish."),
-	txt("Haven't you heard of that spirit going around, impersonating and attacking people?"),
-	txt("It's going everywhere..."),
-	txt("...Everywhere the shrine maiden has bothered to check out."),
-	txt("I don't want to add the bar to that list."),
+	txt("|c000000000Even ignoring your own... intellect, there's always a bigger fish."),
+	txt("|c000000000Haven't you heard of that spirit going around, impersonating and attacking people?"),
+	txt("|c000000000It's going everywhere..."),
+	txt("|c000000000...Everywhere the shrine maiden has bothered to check out."),
+	txt("|c000000000I don't want to add the bar to that list."),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).battling = true;
@@ -49,7 +49,7 @@ function txt_beg3() {
 }
 function txt_beg3c() {
 	msg = msglang([
-	txt("Stop. You just sound pathetic."),
+	txt("|c000000000Stop. You just sound pathetic."),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).battling = true;
@@ -68,7 +68,7 @@ function txt_beg4() {
 }
 function txt_beg4c() {
 	msg = msglang([
-	txt("Wait, seriously?"),
+	txt("|c000000000Wait, seriously?"),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).menugen();

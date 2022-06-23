@@ -28,5 +28,5 @@ nu pattern_ext(function() {
 	}
 }, 10, 1, "chiyuri", SPELL.NON, DIFFICULTY.HARD, "ut1blue", u, u, function() {c_getitembyid(ITEMS.UNDERTALE).menugen()});
 
-nu bullet("bluesquare", s_bluesquare, 1, true, false, false, 1);
-nu bullet("square2", s_bulletsquare, 1, true, false, false, 1);
+nu bullet("bluesquare", s_bluesquare, 4, true, false, false, 1);
+nu bullet("square2", s_bulletsquare, 4, true, false, false, 1);

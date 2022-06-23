@@ -9,7 +9,7 @@ function txt_order() {
 }
 function txt_orderc() {
 	msg = msglang([
-	txt("...Fine."),
+	txt("|c000000000...Fine."),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).battling = true;

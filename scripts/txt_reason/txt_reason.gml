@@ -8,7 +8,7 @@ function txt_reason() {
 }
 function txt_reasonc() {
 	msg = msglang([
-	txt("I don't care."),
+	txt("|c000000000I don't care."),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).battling = true;
@@ -26,8 +26,8 @@ function txt_reason2() {
 }
 function txt_reason2c() {
 	msg = msglang([
-	txt("Yeah, I guess so..."),
-	txt("But right now, she and her pet bunny are major players, getting wrapped up in every other incident."),
+	txt("|c000000000Yeah, I guess so..."),
+	txt("|c000000000But right now, she and her pet bunny are major players, getting wrapped up in every other incident."),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).battling = true;
@@ -45,10 +45,10 @@ function txt_reason3() {
 }
 function txt_reason3c() {
 	msg = msglang([
-	txt("Really? Did you just tell me to brag, then?"),
+	txt("|c000000000Really? Did you just tell me to brag, then?"),
 	],[txt(""),])	
 	endevent = function() {
-		textbox_create(txt_reason32, global.texttale);
+		textbox_create(txt_reason32, global.textchara);
 	};
 }
 function txt_reason32() {
@@ -61,8 +61,8 @@ function txt_reason32() {
 }
 function txt_reason32c() {
 	msg = msglang([
-	txt("I guess that's a bit better."),
-	txt("I still don't think having her here is a good idea."),
+	txt("|c000000000I guess that's a bit better."),
+	txt("|c000000000I still don't think having her here is a good idea."),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).battling = true;

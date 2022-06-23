@@ -162,18 +162,18 @@ itemgen({
 				}
 			})
 			beg.onSelect = munction(function() {
-				switch actpoint {
+				switch c_getitembyid(ITEMS.UNDERTALE).actpoint {
 					case 0:
-						textbox_create(txt_beg, global.texttale);
+						textbox_create(txt_beg, global.textchara);
 						break;
 					case 1:
-						textbox_create(txt_beg2, global.texttale);
+						textbox_create(txt_beg2, global.textchara);
 						break;
 					case 4:
-						textbox_create(txt_beg4, global.texttale);
+						textbox_create(txt_beg4, global.textchara);
 						break;
 					default:
-						textbox_create(txt_beg3, global.texttale);
+						textbox_create(txt_beg3, global.textchara);
 						break;
 				}
 				global.MenuCursor.disabled = true;
@@ -187,15 +187,15 @@ itemgen({
 				}
 			})
 			reason.onSelect = munction(function() {
-				switch actpoint {
+				switch c_getitembyid(ITEMS.UNDERTALE).actpoint {
 					case 2:
-						textbox_create(txt_reason, global.texttale);
+						textbox_create(txt_reason2, global.textchara);
 						break;
 					case 3:
-						textbox_create(txt_reason2, global.texttale);
+						textbox_create(txt_reason3, global.textchara);
 						break;
 					default:
-						textbox_create(txt_reason3, global.texttale);
+						textbox_create(txt_reason, global.textchara);
 						break;
 				}
 				global.MenuCursor.disabled = true;

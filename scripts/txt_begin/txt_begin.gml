@@ -29,7 +29,6 @@ function txt_begin() {
 	txt("These stories aren't exactly mine to tell...", ME.WINKYHEART),
 	txt("But I played a part in them, so it's okay.", ME.WINKYHEART),
 	txt("I'm a collector, you see... not a mere thief.", ME.WINKYHEART),
-	txt("At least, not most of the time.", ME.HEHE),
 	txt("Now, are you ready for some romance?", ME.DEF),
 	
 	//footsteps sound and crickets, fading into kotohime with daytime forest background	
@@ -231,7 +230,7 @@ function txt_begin() {
 	txt("Soft and caring, with a big smile on her face all the time!", KANA.DEF),
 	txt("She'd be the master of a huge mansion full of things to do, and take care of it with the utmost skill.", KANA.DEF),
 	txt("Tall and strong, in both mind and body. Always there to reassure me when something goes wrong.", KANA.DEF),
-	txt("She'd have long, white hair that glows like the stars!", KANA.YAY),
+	txt("She'd have long hair that glows like the stars!", KANA.YAY),
 	txt("A sense of fashion in her clothing, but not so much it becomes gaudy.", KANA.YAY),
 	txt("Oh, and a set of massive honkers!", KANA.YAY),
 	txt("...Honkers?", ME.WHAA),
@@ -383,15 +382,17 @@ function txt_begin() {
 	//prob put a bit more description here? or lead up to the question
 	
 		
-	txt("You mentioned \"impossible requests\"...#Are you the legendary Princess Kaguya?", KANA.DEF, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textzpix)}),
+	txt("You mentioned \"impossible requests\"...#Are you the legendary Princess Kaguya of the moon?", KANA.DEF, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textdefault)}),
 	txt("Oh? You've heard of me? A mighty well-read one, I see.", KAGUYA.DEF, SPRITEPOS.RIGHT),
 	txt("Not really. Your story is still famous, even in the outside world! Everyone knows it!", KANA.DEF),
 	txt("Ah.|n That's...", KAGUYA.AWW),
-	txt("That's quite quaint. Queer, even. Quirky and quizzical indeed. Mayhaps questionable.", KAGUYA.FUFUFU),
+	txt("That's nice.", KAGUYA.AWW),
 	//the reason she goes AWW is cuz she secretly wants to not be a NEET but is all like BUT IM A LUNARIAN PRINCESS BWAAH
-	
-	
-	txt("So, Little Rabbit, why have you brought this apparition? Are you certain she would not spoil our time together?", KAGUYA.DEF),
+	txt("Why are you here, though? Weren't you brought to the moon shortly after you arrived?", KANA.BRUH),
+	txt("Not quite. The other Lunarians attempted to bring me back... but I wished to stay on Earth.", KAGUYA.DEF),
+	txt("My belief is they are still searching for me. So to speak, this house is my hiding place.", KAGUYA.FUFUFU),
+	txt("But that's enough about me.", KAGUYA.YAY),	
+	txt("Little Rabbit, why have you brought this apparition? Are you certain she would not spoil our time together?", KAGUYA.DEF),
 	txt("What do you mean? She's my friend!", ME.YAY, SPRITEPOS.CENTER),
 	txt("Really now? You actually like her presence?", KAGUYA.NEUTRAL),
 	
@@ -438,7 +439,7 @@ function txt_begin() {
 	
 	txt("Okay, uhh..|n#I'm looking for a girlfriend.", KANA.NEUTRAL),
 	txt("Someone confident and caring. Strong in both mind and body, yet unafraid to open up emotionally. And if something went wrong, she'd be there for me no matter what.", KANA.YAY),
-	txt("Even better if she had a huge extravagent home, long shining white hair, and a slick sense of fashion!", KANA.YAY),
+	txt("Even better if she had a huge extravagent home, long shining hair, and a slick sense of fashion!", KANA.YAY),
 	txt("And some massive honkers!", ME.WINKYHEART),
 	
 	txt("That's so sweet!", KAGUYA.YAY),
@@ -811,7 +812,7 @@ function txt_begin() {
 	txt("I don't know who yet, but... I do have an idea. A \"dream girl,\" you could say.", KANA.DEF),
 	txt("Someone strong and sweet,", KANA.DEF),
 	txt("Lovey-dovey and responsible,", ME.HEHE),
-	txt("With long white hair that shines like the stars,", KANA.DEF),
+	txt("With long hair that shines like the stars,", KANA.DEF),
 	txt("A good sense of style,", ME.YAY),
 	txt("And massive honkers!", KANA.WINKY),
 	//the honkers bit might be stale by the third use of it
@@ -1209,7 +1210,7 @@ function txt_begin() {
 	ntxt(090, ME.TINYSMIRK, SPRITEPOS.HIDDEN),
 	ntxt(0040, u, u, s_black),
 	
-	txt("#END OF KANA STORY|w9999 "),
+	txt("#END OF KANA STORY|w9999"),
 	
 	
 	],[

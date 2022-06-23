@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 639,
+  "bbox_right": 1279,
   "bbox_top": 0,
-  "bbox_bottom": 359,
+  "bbox_bottom": 719,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 640,
-  "height": 360,
+  "width": 1280,
+  "height": 720,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f8028914-1e3f-49fd-8868-c56559371769","path":"sprites/s_crater/s_crater.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f8028914-1e3f-49fd-8868-c56559371769","path":"sprites/s_crater/s_crater.yy",},"LayerId":{"name":"63448d60-2677-479d-a47f-03b813595ec8","path":"sprites/s_crater/s_crater.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_crater","path":"sprites/s_crater/s_crater.yy",},"resourceVersion":"1.0","name":"f8028914-1e3f-49fd-8868-c56559371769","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"192a0650-d76e-4b6f-981b-845692fe90fe","path":"sprites/s_crater/s_crater.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"192a0650-d76e-4b6f-981b-845692fe90fe","path":"sprites/s_crater/s_crater.yy",},"LayerId":{"name":"8ac185c7-2da8-479f-b8b9-ef0eda7069bf","path":"sprites/s_crater/s_crater.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_crater","path":"sprites/s_crater/s_crater.yy",},"resourceVersion":"1.0","name":"192a0650-d76e-4b6f-981b-845692fe90fe","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"s_crater","path":"sprites/s_crater/s_crater.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0898a0e7-4931-42ee-957e-c0a3a529629b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f8028914-1e3f-49fd-8868-c56559371769","path":"sprites/s_crater/s_crater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"80c06637-aa35-4522-a5c3-d311374a80b2","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"192a0650-d76e-4b6f-981b-845692fe90fe","path":"sprites/s_crater/s_crater.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"63448d60-2677-479d-a47f-03b813595ec8","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8ac185c7-2da8-479f-b8b9-ef0eda7069bf","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

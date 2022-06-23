@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 637,
+  "bbox_right": 1279,
   "bbox_top": 0,
-  "bbox_bottom": 359,
+  "bbox_bottom": 719,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 638,
-  "height": 360,
+  "width": 1280,
+  "height": 720,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"faeff598-de07-4f71-b9f9-9a1297423a24","path":"sprites/s_fuckingbnuuy/s_fuckingbnuuy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"faeff598-de07-4f71-b9f9-9a1297423a24","path":"sprites/s_fuckingbnuuy/s_fuckingbnuuy.yy",},"LayerId":{"name":"5c2551d0-7f21-4265-a81d-fdfc3e5752a8","path":"sprites/s_fuckingbnuuy/s_fuckingbnuuy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_fuckingbnuuy","path":"sprites/s_fuckingbnuuy/s_fuckingbnuuy.yy",},"resourceVersion":"1.0","name":"faeff598-de07-4f71-b9f9-9a1297423a24","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"53c0326a-1680-406a-8c0e-3ffe90271188","path":"sprites/s_fuckingbnuuy/s_fuckingbnuuy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"53c0326a-1680-406a-8c0e-3ffe90271188","path":"sprites/s_fuckingbnuuy/s_fuckingbnuuy.yy",},"LayerId":{"name":"10efa881-a3bc-4529-a366-e122396034ec","path":"sprites/s_fuckingbnuuy/s_fuckingbnuuy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_fuckingbnuuy","path":"sprites/s_fuckingbnuuy/s_fuckingbnuuy.yy",},"resourceVersion":"1.0","name":"53c0326a-1680-406a-8c0e-3ffe90271188","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"s_fuckingbnuuy","path":"sprites/s_fuckingbnuuy/s_fuckingbnuuy.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"ad31ec99-54c7-4f6b-ab92-f5d1ee9df734","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"faeff598-de07-4f71-b9f9-9a1297423a24","path":"sprites/s_fuckingbnuuy/s_fuckingbnuuy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fc674a4c-9dca-471e-a743-7ae45e4665e8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"53c0326a-1680-406a-8c0e-3ffe90271188","path":"sprites/s_fuckingbnuuy/s_fuckingbnuuy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5c2551d0-7f21-4265-a81d-fdfc3e5752a8","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"10efa881-a3bc-4529-a366-e122396034ec","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

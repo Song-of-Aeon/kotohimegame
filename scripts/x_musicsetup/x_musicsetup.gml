@@ -38,6 +38,7 @@ nu song("Theme of Owner", "owner", [m_owner], u, "by nerve");
 nu song("summerhill2", "summerhill2", [m_summer_hill2], u, "by taira komori");
 nu song("autmninsects3", "autmninsects3", [m_autmn_insects3], u, "by taira komori");
 nu song("wind1", "wind1", [m_wind1], u, "by taira komori");
+nu song("keyboard", "keyboard", [m_pc_keyboard], u, "by taira komori");
 nu song("kitchen_gas_switch", "kitchen_gas_switch", [m_kitchen_gas_switch], u, "by taira komori; first and last second or so cut out");
 
 

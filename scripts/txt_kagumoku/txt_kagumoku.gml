@@ -896,7 +896,7 @@ function txt_kagumoku() {
 	txt("Judge Kana, what do you think of the meat?", ME.DEF),
 	txt("The veggies were cut really well, and they feel great to chew.", KANA.DEF),
 	txt("Judge Kana, what do you think of the meat?", ME.DEF),
-	txt("...It's not dry." KANA.NEUTRAL),
+	txt("...It's not dry.", KANA.NEUTRAL),
 	txt("Amazing input, Judge Kana!", ME.YAY),
 	txt("Now, let's show our scores in 3, 2, 1...", ME.DEF),
 	

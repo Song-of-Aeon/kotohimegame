@@ -50,6 +50,7 @@ nu talksprite("DISAPOINT", "me", z++);
 nu talksprite("NEUTRAL", "me", z++);
 nu talksprite("JDGMOKU", "me", z++);
 nu talksprite("JDGKAGU", "me", z++);
+nu talksprite("JDGALL", "me", z++);
 
 
 
@@ -63,7 +64,6 @@ nu talksprite("HAHA", "reimu", z++);
 nu talksprite("MIFFED", "reimu", z++);
 nu talksprite("SWEAT", "reimu", z++);
 nu talksprite("YAY", "reimu", z++);
-
 
 #macro KANA global.textguy[?"kana"]
 nu chardata("Kana", s_kana);
@@ -83,6 +83,8 @@ nu talksprite("LOVEYSHY", "kana", z++);
 nu talksprite("LOVEY", "kana", z++);
 nu talksprite("JDGMOKU", "kana", z++);
 nu talksprite("JDGKAGU", "kana", z++);
+
+
 
 #macro KAGUYA global.textguy[?"kaguya"]
 nu chardata("Kaguya", s_kaguya);
@@ -105,6 +107,7 @@ nu talksprite("WOAH", "kaguya", z++);
 nu talksprite("CRY", "kaguya", z++);
 nu talksprite("CRYSMILE", "kaguya", z++);
 nu talksprite("LOVEY", "kaguya", z++);
+
 
 
 #macro REISEN global.textguy[?"reisen"]

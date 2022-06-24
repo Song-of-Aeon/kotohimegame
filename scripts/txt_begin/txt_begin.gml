@@ -368,7 +368,7 @@ function txt_begin() {
 	txt("Welcome to the House of Eternity.", KAGUYA.DEF),
 	txt("I have lived here for over a thousand years.", KAGUYA.DEF),
 	txt("With my powers to manipulate eternity, time has effectively stopped.", KAGUYA.DEF),
-	txt("In this house, nothing changes and nothing dies. It is a place void of impurity.", KAGUYA.DEF)
+	txt("In this house, nothing changes and nothing dies. It is a place void of impurity.", KAGUYA.DEF),
 
 	
 	ptxt(),

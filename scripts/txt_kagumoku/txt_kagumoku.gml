@@ -14,7 +14,7 @@ function txt_kagumoku() {
 	ptxt(),
 	txt("This is a very biased view, of course. Only a regular human would think something like this."),
 	txt("Kana Anaberal may die from an accident or a particularly nasty spell, but she does not age."),
-	txt("The Hourai immortals-- Fujiwara no Mokou and Houraisan Kaguya-- really do have an eternity ahead of them."),
+	txt("And the Hourai Immortals-- Fujiwara no Mokou and Houraisan Kaguya-- really do have an eternity ahead of them."),
 	txt("To be honest... I can't tell if I envy or pity them."),
 	ptxt(),
 	
@@ -242,7 +242,7 @@ function txt_kagumoku() {
 	txt("And a strange task called \"programming.\""),
 	
 	ptxt(),
-	txt("...|w0222 |- ", u, u, s_eienteihall1, function() {music_set(mus.keyboard)}),
+	txt("...|w0222 |- ", u, u, s_eienteihall3, function() {music_set(mus.keyboard)}),
 	
 	txt("Ooh, let's see... what about chain reactions?", KANA.YAY, SPRITEPOS.CENTER, u, function() {textbox_set_type(global.textdefault)}),
 	txt("If one enemy explodes close to another, they all explode one by one and kill each other!", KANA.COCKY),
@@ -864,7 +864,7 @@ function txt_kagumoku() {
 	txt("Pop these in the oven here, and... done!", KAGUYA.DEF, SPRITEPOS.LEFT),
 	txt("What the--", MOKOU.SURPRISED),
 	txt("They were only in there for a second!", MOKOU.HMPH),
-	txt("Fufufu. I simply manipulated the oven's eternity. Inside that oven, ten minutes just passed.", KAGUYA.FUFUFU
+	txt("Fufufu. I simply manipulated the oven's eternity. Inside that oven, ten minutes just passed.", KAGUYA.FUFUFU),
 	txt("What about the no-magic rule?", MOKOU.BRUH),
 	txt("That was a rule?", KAGUYA.NEUTRAL),
 	txt("...", MOKOU.SURPRISED),
@@ -946,45 +946,121 @@ function txt_kagumoku() {
 	ntxt(000, ME.DEF, SPRITEPOS.HIDDEN),
 	txt("Wh-what do you mean!?", KAGUYA.SHOCKED, SPRITEPOS.CENTER, s_kitchen),
 	txt("I did them so well! Those cookies were perfect!", KAGUYA.SHOCKED),
-	txt("Kaguya, don't you know?", ME.WINKY, SPRITEPOS.RIGHT),
+	txt("Don't you know?", ME.HEHE, SPRITEPOS.RIGHT),
 	txt("I hate cookies.", ME.SMUG, SPRITEPOS.MIDLEFT),
 	txt("You...", KAGUYA.MAD),
 	txt("...Wow.", MOKOU.NEUTRAL, SPRITEPOS.LEFT),
 	txt("How does it feel to get screwed over by arbitrary bullcrap?", MOKOU.SMUG),
 	txt("Horrible, thank you very much!", KAGUYA.MAD),
-	txt("Not that yours was any good.", KAGUYA.MAD),
+	txt("Not that your food was any good.", KAGUYA.MAD),
 	txt("It would've been if I had as much time as you!", MOKOU.MAD),
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),	
-	txt("\(Hey, why are you giving them so much trouble?\)", KANA.BRUH),	
-	txt("\(It ain't just trouble, Kana. This is all part of my master plan to bring them closer together!\)", ME.HEHE),	
-	txt("\(Are you sure they're not just going to get angry at you?\)", REISEN.CONFUZZLED),
+	txt("\(Hey, why are you giving them so much trouble?\)", KANA.BRUH, SPRITEPOS.LEFT, s_eienteiroom1),	
+	txt("\(It ain't just trouble, Kana. This is all part of my master plan to bring them closer together!\)", ME.HEHE, SPRITEPOS.CENTER),
+	txt("\(Are you sure they're not just going to get angry at you?\)", REISEN.CONFUZZLED, SPRITEPOS.RIGHT),
 	txt("\(Not at all.\)", ME.HEHE),
-	txt("\(I'm putting my life at risk for this!\)", ME.WINKYHEART),
-	
+	txt("\(I'm putting my life at risk for this!\)", ME.WINKY),
+	ntxt(000, REISEN.DEF, SPRITEPOS.HIDDEN),
+	ntxt(000, KANA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(000, ME.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.null)}),
+	ptxt(),
 	txt("While the two immortals argued, us judges started cleaning everything up.", u, u, u, function() {textbox_set_type(global.textnvl)}),
-	txt("Kana and Reisen had to leave, but I stuck around."),
-	txt("Something was going to happen, I just knew it."),
-	txt("And I had to see this through."),
+	txt("Kana and Reisen had to leave immediately, but I stuck around to see Mokou off."),
+	txt("Just as I was about to say goodbye...", u, u, s_kitchen, function() {music_set(mus.sunrise)}),
+	
+	ntxt(00, KAGUYA.YAY, SPRITEPOS.RIGHT),
+	txt("Hey, Princess?", MOKOU.NEUTRAL, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Yeah?", ME.YAY, SPRITEPOS.CENTER),
+	txt("Do you mind if I stay here a little longer?", MOKOU.DEF),
+	txt("For what?", ME.KAAAY),
+	txt("There's a small bit of dough still left, so...", KAGUYA.DEF),
+	txt("...We've decided to bake a few more cookies.", MOKOU.DEF),
+	txt("Together.", KAGUYA.YAY),
+	txt("...", ME.POG),
+	txt("Go for it!", ME.YAY),
+	txt("Thanks. We'll be done in a jiffy, I promise.", MOKOU.YAY),
+	txt("By the way, don't get the wrong idea. I'm only doing this to gauge Kaguya's skills for our next battle.", MOKOU.HMPH),
+	txt("\(Sure you are.\)", ME.KAAAY),
+	ntxt(000, ME.DEF, SPRITEPOS.HIDDEN),
+	
+	txt("Alright, so you roll these into balls... and I'll take these ones.", MOKOU.DEF),
+	txt("Splendid.", KAGUYA.FUFUFU),
+	
+	ntxt(000, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+		
+	txt("Huh, you're really good at this.", MOKOU.NEUTRAL, SPRITEPOS.MIDLEFT),
+	txt("Don't flatter me, Mokou. Your ball-rolling skills are simply flawed.", KAGUYA.FUFUFU, SPRITEPOS.MIDRIGHT),
+	txt("I expected more from you, to be quite honest.", KAGUYA.FUFUFU),	
+	txt("Come on, gimme a break! I haven't done this in 384 years!", MOKOU.MAD),
+	txt("Isn't this the same as creating fireballs?", KAGUYA.DEF),
+	txt("Not at all! Fire is far more malleable than this. For these, you need a different amount of pressure.", MOKOU.HMPH),
+	
+	txt("Oh my, Mokou! That one you made...", KAGUYA.DEF),
+	txt("Hm?", MOKOU.BRUH),
+	txt("Looks a little like a heart, doesn't it?", KAGUYA.DEF),
+	txt("If you say so.", MOKOU.HMPH),
+	txt("Sorry, I'll fix-- |w0040 |- ", MOKOU.NEUTRAL),
+	txt("No no, keep it that way. It adds a little spice!", KAGUYA.YAY),
+	txt("...", MOKOU.SAD),
+	txt("Yeah. You're right.", MOKOU.SADSMILE),
+	
+	txt("Put these in the oven, and... done!", KAGUYA.YAY),
+	txt("Damn, you're really making me jealous over there.", MOKOU.DEF),
+	txt("What the hell did you do to earn those powers?", MOKOU.BRUH),
+	txt("Be a Lunarian Princess. Every one of us is born with some unique power.", KAGUYA.YAY),
+	txt("Beautiful little snowflake, aren't ya? Just to be expected from a lunatic like you.", MOKOU.SMUG),
+	txt("You are too, Mokou.", KAGUYA.YAY),
+	ntxt(000, MOKOU.SURPRISED, SPRITEPOS.MIDRIGHT),
+	txt("A beautiful snowflake.", KAGUYA.WINKYHEART),
+	txt("A--ahh...", MOKOU.LOVEYSAD),
+	ntxt(000, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(000, MOKOU.DEF, SPRITEPOS.HIDDEN),
+	
+	txt("Let us eat these cookies, before they get cold and hard.", KAGUYA.FUFUFU, SPRITEPOS.RIGHT, s_eienteiroom1),
+	//yes she could use he powers to freeze time for them ssshshhsshhshshhshs
+	//could prob mention that in dialogue but uhggg itd be so awkward the way its written nowwwwww
+	txt("Ooh, they look great!", ME.DEF),
+	txt("Can I have some?", ME.YAY),
+	txt("Don't you hate cookies?", MOKOU.BRUH, SPRITEPOS.LEFT),
+	txt("Yes.", ME.WINKY),
+	
+	//nomnomnom sounds
+	
+	txt("...", ME.DISAPOINT),
+	txt("...", ME.NEUTRAL),
+	txt("I love them.", ME.DEF),
+	txt("You two get a 10 out of 10!", ME.JDGALL),
+	txt("Really!?", KAGUYA.SHOCKED),
+	txt("How!?", MOKOU.SURPRISED),
+	txt("Don't you know?", ME.HEHE),
+	txt("Everything tastes sweeter when it's made with love!", ME.WINKYHEART),
+	txt("...", KAGUYA.WOAH),
+	txt("...", MOKOU.LOVEYSAD),
+	ntxt(000, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(000, MOKOU.DEF, SPRITEPOS.HIDDEN),
+	ntxt(000, ME.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.flower)}),
+	
+	ptxt(),
+	txt("It was getting late, so both Mokou and I had to leave.", u, u, s_eienteihall3, function() {textbox_set_type(global.textnvl)}),
+	//txt("As we walked out, the two seemed
 	
 		
-	//mokou feels bad about kaguya losing and is all like "hey lets make cookies together"
-	//"i didnt get to taste yours. i'm just gauging your cooking skills for when we next battle."
-	//also while helping kaguya make the cookies, mokou accidentally makes one in a heart shape
-	
 	
 	//after the competition, Kaguya tries to talk to Mokou
 	//mokou starts being like "yeah i kinda like spending time with you" but stops herself
 	
-	//kaguya goes all "i want to make mokou happy like she is with keine"
-		
 	
-	txt("...What do you want?", ME.NEUTRAL),
-	txt("I...", KAGUYA.AWW),
-	txt("I want to see Mokou happy. Like she is with Keine.", KAGUYA.YAY),
-	txt("No, more than that. I want to be the one that makes her happy.", KAGUYA.DEF),
-	txt("And... I want to be with her, happy together.", KAGUYA.AWW),
-	txt("...Forever.", KAGUYA.LOVEY),
+	//kaguya goes all "i want to make mokou happy like she is with keine"
+	
+	
+	
+	//txt("...What do you want?", ME.NEUTRAL),
+	//txt("I...", KAGUYA.AWW),
+	//txt("I want to see Mokou happy. Like she is with Keine.", KAGUYA.YAY),
+	//txt("No, more than that. I want to be the one that makes her happy.", KAGUYA.DEF),
+	//txt("And... I want to be with her, happy together.", KAGUYA.AWW),
+	//txt("...Forever.", KAGUYA.LOVEY),
 
 	
 	
@@ -1006,6 +1082,12 @@ function txt_kagumoku() {
 	
 	
 	
+	
+	
+	
+	//txt("I know you have gone through countless years of existence, with all the memories and experience that comes with.", KAGUYA.CRY),
+	//txt("And I know I have spent far too long in one place, afraid to see the world...", KAGUYA.CRY),
+	//txt("But at the end of the day, we're both still children!", KAGUYA.CRY),
 	
 	
 	

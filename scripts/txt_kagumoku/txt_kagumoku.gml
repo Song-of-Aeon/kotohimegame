@@ -20,7 +20,8 @@ function txt_kagumoku() {
 	
 	txt("Before I knew it, years had passed.", u, u, s_crescent),
 	txt("The House of Eternity's spell had been revoked, due to a series of encounters that convinced Kaguya to move forward."),
-	txt("Its residents would leave the Bamboo Forest quite often, interacting with the humans and youkai more often."),
+	txt("Its residents would leave the Bamboo Forest quite often, interacting with the humans and youkai on a regular basis."),
+	txt("They even frequently carried out services for the residents of the Human Village."),
 	txt("Kana adjusted well to life there, to the point she rarely ever left."),
 	txt("I visited them far more often, much to the behest of my parents."),
 	
@@ -164,14 +165,19 @@ function txt_kagumoku() {
 	txt("It was great fun like always, but something laid on my mind heavily that night."),
 	txt("I had suspected it for years now, but what I saw that day pushed it to the forefront."),
 	
-	txt("Hey... I think Kaguya and Mokou secretly like each other.", ME.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Hey... why do Kaguya and Mokou fight like that?", ME.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Beats me.", REISEN.DEF),
+	txt("They've been doing it for 300 years, or so I've heard. Mokou's still pissed at Kaguya from something back in the 9th century.", REISEN.DEF),
+	txt("But it's not like those fights actually accomplish anything.", REISEN.UGGH),
+	txt("My best guess is they find living forever boring, so they want to spice their lives up with some good ol' hatred.", REISEN.DEF),
+	txt("...", ME.HEHE),
+	txt("I think they secretly like each other.", ME.DEF),
 	txt("...Huh?", KANA.BRUH),
 	txt("What kinda nonsense is that?", REISEN.CONFUZZLED),
 	txt("I'm serious, you two!", ME.POGQMARK),
 	txt("There's just something with them.", ME.HEHE),
 	txt("Something *between* them.", ME.HEHE),
 	txt("I think your romance sensors need some tuning.", KANA.BRUH),
-	txt("They've been nothing but enemies for hundreds of years.", KANA.BRUH),	
 	txt("Please, just trust me on this one!", ME.POG),
 	txt("If we just set them up together, with the right situations, they might just become a couple!", ME.WINKYHEART),
 	txt("You are out of your mind.", REISEN.UGGH),
@@ -405,7 +411,7 @@ function txt_kagumoku() {
 	txt("Kana and Reisen were off doing errands, so it was only me and the contestants."),
 	txt("I quickly explained a little bit about the game to Kaguya and Mokou, for the sake of expedience."),
 	
-	
+	ntxt(0, u, u, u, function() {music_set(mus.sunnyday)}),
 	txt("Ladies and ladies, welcome to the first ever CLASH OF THE MOON AND THE SUN!!", ME.YAY, SPRITEPOS.CENTER, s_eienteihall2, function() {textbox_set_type(global.textdefault)}),
 	txt("An event where we make your undying wishes come true!", ME.WINKY),
 	//yay clapping sound effect
@@ -570,7 +576,7 @@ function txt_kagumoku() {
 	
 	ptxt(),
 	
-	txt("The two exchanged a short goodbyes, and Mokou departed.", u, u, s_black, function() {textbox_set_type(global.textnvl)}),
+	txt("The two exchanged short goodbyes, and Mokou departed.", u, u, s_black, function() {textbox_set_type(global.textnvl)}),
 	txt("Despite how quick the game went, I was happy with my efforts."),
 	txt("Even if my impeccable romance detectors were wrong... they had done something else for a change."),
 	txt("But I was nothing if not confident in my assumption."),
@@ -624,105 +630,381 @@ function txt_kagumoku() {
 	txt("Mokou was talking to someone. She sounded excited, almost stumbling over her words."),
 	txt("The other person spoke occasionally, and we could recognize her voice immediately."),
 	ptxt(),
-	txt("Keine Kamishirasawa. A teacher in the human village, and a friend of Mokou's."),
+	txt("Keine Kamishirasawa. A teacher in the Human Village, and a friend of Mokou's."),
 	txt("I had come across her several times during my trips there, but never seen her in the Bamboo Forest."),
+	txt("She came across as very nice when we met, and once she was even walking alongside Mokou."),
+	ptxt(),
+	txt("We waited outside the house. It's not eavesdropping if you're still deciding whether to enter, right?"),
+	
+	ptxt(),	
+	txt("I've been finding so much cool stuff recently! Like-- oh my gosh, Keine. Look at this thing!", MOKOU.DEF),
+	txt("Oh? What's that?", KEINE.DEF),
+	txt("It's the Brick! It's this little thing with a screen, like a puppet show. But you control the hero!", MOKOU.DEF),
+	txt("Really? That's incredible!", KEINE.DEF),
+	txt("May I see it?", KEINE.DEF),
+	txt("Be my guest!", MOKOU.DEF),
+	
+	ptxt(),
+	txt("Oh, before we get too caught up in that...", KEINE.DEF),
+	txt("I made you lunch!", KEINE.DEF),
+	txt("Heh... Keine, you really don't have to.", MOKOU.DEF),
+	txt("I do, in fact. You don't properly feed yourself.", KEINE.DEF),
+	txt("It's fine. I can just burn myself alive if I'm that hungry. I'll just resurrect, and have a full stomach again!", MOKOU.DEF),
+	txt("You don't gotta worry yourself so much.", MOKOU.DEF),
+	txt("...", KEINE.DEF),
+	txt("Ah... sorry, that's kinda morbid.", MOKOU.DEF),
+	txt("Mokou, please just eat.", KEINE.DEF),
+	txt("...", MOKOU.DEF),	
+	txt("...Thank you.", MOKOU.DEF),
+	txt("It means a lot to me.", MOKOU.DEF),
+	ptxt(),
+	txt("They stopped talking for a bit. All I could hear were some faint music and Mokou eating."),
 
 	
+	txt("...", KAGUYA.WAAH, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("That's it. Kaguya, you go hide.", ME.NEUTRAL, SPRITEPOS.MIDLEFT),
+	txt("Alright.", KAGUYA.AWW),
+	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
 	
+	//door knocking sounds
+	//walking sounds
+	//door opening
 	
+	ntxt(00, MOKOU.DEF, SPRITEPOS.RIGHT),
+	txt("Hey, Mokou!", ME.YAY),
+	txt("Oh hey. Nice to see you, Princess.", MOKOU.DEF),
 	
-	//keine made lunch for mokou
-	//cuz ya know mokou kinda starves herself
+	ptxt(),
+	txt("Keine sat inside the house, brick in one hand. She waved at me, and I waved back.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	
-	//kaguya hides from mokou
+	txt("Don't mind me. I'm only here to deliver a message.", ME.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Mokou, Round 2 of the contest is tomorrow noon.", ME.HEHE),
+	txt("Throwing it on me once again, aren't you?", MOKOU.BRUH),
+	txt("But this time, it's...", ME.HEHE),
+	txt("Cooking!", ME.YAY),
+	txt("Each contestant will cook only one item.", ME.DEF),
+	txt("You'll be deciding each dish for yourself, so make sure you have a plan and the necessary ingredients.", ME.DEF),
+	txt("Oh, and no magic allowed.", ME.DEF),
+	txt("Sounds horrible.", MOKOU.NEUTRAL),
+	txt("I'm in.", MOKOU.DEF),
+	txt("Yay!", ME.DEF),
+	txt("Anything else you have to say?", MOKOU.NEUTRAL),
+	txt("Hmm... only a question.", ME.HEHE),
+	txt("\(Is Keine your girlfriend?\)", ME.SMUG),
+	txt("Guh--", MOKOU.SURPRISED),
+	txt("That's none of your business.", MOKOU.HMPH),
+	txt("If you say so~~", ME.HEHE),
+	txt("Well, I'm off now. Ta-ta!", ME.YAY),
+	txt("See you later.", MOKOU.DEF),
+	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),
 	
-	//kotohime was originally gonna have round 2 be some other game
-	//but she changes her mind on the spot and says HEY ITS COOKING NOW
+	ptxt(),
+	txt("As I slowly walked away, I could hear a little bit of talking coming from Mokou's house.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("Mokou, you never told me about this! That's so interesting!", KEINE.DEF),
+	txt("It's nothing special, really. Just games with a friend.", MOKOU.DEF),
+	//woah! kaguya is a friend!?!?!?
+	txt("In this case, I should give you some much-needed training!", KEINE.DEF),
+	txt("Keine, I can cook just fine.", MOKOU.DEF),
+	txt("\"Just fine\" isn't enough in a competition. You'll be facing the best of the best!", KEINE.DEF),
+	txt("Somehow, I doubt it.", MOKOU.DEF),
 	
+	ntxt(0070, u, u, s_bambooday, function() {textbox_set_type(global.textdefault)}),
+	txt("Hey, Kaguya.", ME.DEF),
+	txt("Hello.", KAGUYA.NEUTRAL),
+	txt("Sorry I changed my mind on what we would do.", ME.WINKY),
+	txt("It's no issue at all. I'm an excellent cook, you see.", KAGUYA.FUFUFU),
+	txt("If you say so.", ME.HEHE),
+
+	txt("Ah... Little Rabbit.", KAGUYA.NEUTRAL),
+	txt("Hm?", ME.NEUTRAL),
+	txt("What was with Mokou today?", KAGUYA.NEUTRAL),
+	txt("Her voice was so happy, so relaxed... she seemed like a different person.", KAGUYA.NEUTRAL),
+	txt("Is she really like that when Keine's around?", KAGUYA.AWW),
+	txt("...", ME.DISAPOINT),
+	txt("She's like that most of the time.", ME.NEUTRAL),
+	txt("I see...", KAGUYA.WAAH),
 	
+	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),
 	
+	ptxt(),
+	txt("Our walk to the House of Eternity was slow. Too slow.", u, u, s_bambooupday, function() {textbox_set_type(global.textnvl)}),
+	txt("This time, Kaguya was always looking down."),	
 	
+	txt("Hey, Kaguya. What's in the sky right now?", ME.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("The sun. Clouds. Fairies.", KAGUYA.DEF),
+	txt("What else?", ME.DEF),
+	txt("...The moon.", KAGUYA.DEF),
+	txt("Yes.", ME.DEF),
+	txt("The moon is in the sky today, like almost every other day.", ME.DEF),
+	txt("We think the day is the time of sun, and night is when the moon comes out.", ME.DEF),
+	txt("But that's only because it's easier to see the moon at night.", ME.DEF),
+	txt("In reality, they aren't separate at all. You can see them together all the time.", ME.DEF),
+	txt("Little Rabbit, I already know that.", KAGUYA.DEF),
+	txt("Do you?", ME.DEF),
+	txt("...", KAGUYA.DEF),
 	
-	//txt("I've been finding so much cool stuff recently! Like-- oh my gosh, Keine. Look at this thing!", MOKOU.DEF),
-	//txt("Oh? What's that?", KEINE.DEF),
-	//txt("It's the Brick! It's this little thing with a screen, like a puppet show. But you control the hero!", MOKOU.DEF),
-	//txt("Really? That's incredible!", KEINE.DEF),
-	//txt("May I see it?", KEINE.DEF),
-	//txt("Be my guest!", MOKOU.DEF),
+	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(199, ME.DEF, SPRITEPOS.HIDDEN, s_black),
 	
-	//txt("Oh, before we get too caught up in that...", KEINE.DEF),
-	//txt("I made you lunch!", KEINE.DEF),
-	//txt("Heh... Keine, you really don't have to.", MOKOU.DEF),
-	//txt("I do, in fact. You don't properly feed yourself.", KEINE.DEF),
-	//txt("It's fine. I can just burn myself alive if I'm that hungry. I'll just resurrect, and have a full stomach again!", MOKOU.DEF)
-	//txt("...", KEINE.DEF),
-	//txt("Ah... sorry, that's kinda morbid.", MOKOU.DEF),	
-	//txt("Mokou, please just eat.", KEINE.DEF),
-	//txt("...", MOKOU.DEF),	
-	//txt("...Thank you.", MOKOU.DEF),
-	//txt("It means a lot to me." MOKOU.DEF),
+	txt("Ladies and ladies, welcome to the second ever CLASH OF THE MOON AND THE SUN!!", ME.YAY, SPRITEPOS.CENTER, s_eienteiroom1, function() {music_set(mus.sunnyday)}),
+	txt("An event where we make your undying wishes come true!", ME.WINKY),
+	//yay clapping sound effect
+	txt("We have gathered our two fine contestants here today for the second greatest competition in the whole House of Eternity!", ME.DEF),
+	ntxt(00, KAGUYA.YAY, SPRITEPOS.RIGHT),
+	txt("Houraisan Kaguya,", ME.DEF),
+	ntxt(00, MOKOU.DEF, SPRITEPOS.LEFT),
+	txt("And Fujiwara no Mokou!", ME.DEF),
+	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),
+	txt("And as our judges today, we have...", ME.HEHE),
+	ntxt(00, KANA.DEF, SPRITEPOS.LEFT),
+	ntxt(00, REISEN.YAY, SPRITEPOS.RIGHT),
+	txt("Kana Anaberal and Reisen Udongein Inaba!!", ME.YAY),
+	txt("For you see, our compeition today is not simply a matter of sport. It's one of creation!", ME.DEF),
+	ntxt(00, KANA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, REISEN.DEF, SPRITEPOS.HIDDEN),
+	txt("Our contestants will be making one dish of their choice, made in this kitchen!", ME.DEF, SPRITEPOS.HIDDEN, s_kitchen),
+	txt("They will be judged by Kana, Reisen, and I, on a ten-point scale. Whoever has the most points wins!", ME.DEF),
 	
+	txt("So, what will you two be making today?", ME.YAY, SPRITEPOS.CENTER, s_eienteiroom1),
+	txt("Yakitori.", MOKOU.YAY, SPRITEPOS.LEFT),
+	txt("Fufufu... Grilled chicken on a stick? Mokou, how unambitious.", KAGUYA.FUFUFU, SPRITEPOS.RIGHT),
+	txt("Oh yeah? Then what's *your* item?", MOKOU.HMPH),
+	txt("Chocolate-chip cookies!", KAGUYA.WINKY),
+	txt("...", MOKOU.BRUH),
+	txt("Don't you know? They are a high-class delicacy overseas.", KAGUYA.DEF),
+
+	txt("Oh, and by the way... you each have ten minutes!", ME.WINKY),
+	txt("TEN!?", MOKOU.SURPRISED),
+	txt("Ten. Also, the timer started about a minute ago. Get to it!", ME.YAY),
+	txt("Will do!", KAGUYA.YAY),
+	txt("I swear...", MOKOU.HMPH),
+	//sound of scrambling to the kitchen
+	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),
+	ntxt(90, ME.DEF, SPRITEPOS.HIDDEN, s_kitchen),
 	
+	txt("Okay, we have the thighs and vegetables right here...", MOKOU.NEUTRAL, SPRITEPOS.MIDRIGHT),
+
 	
+	txt("Now first is the flour, then the sugar...", KAGUYA.FUFUFU, SPRITEPOS.LEFT),
+	//sound of egg cracking, mixing up
+	txt("~~Humpty Dumpty sat in a carton~~#~~Humpty Dumpty was cracked apart~~", KAGUYA.DEF),
+	txt("~~And all the Princesses and all the bunnies~~#~~Ate Humpty up with an overjoyed grin!~~", KAGUYA.YAY),
+	txt("That didn't even rhyme.", MOKOU.BRUH),
+	txt("It's experimental poetry. You wouldn't understand.", KAGUYA.FUFUFU),
+	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),	
+	ntxt(0, KANA.NEUTRAL, SPRITEPOS.LEFT),
+	ntxt(0, REISEN.DEF, SPRITEPOS.RIGHT),
 	
-	//txt("Keine sat in the center of the home, with a box of 
+	txt("Hey, look at Kaguya! She's mixing those ingredients like a champ!", ME.YAY, SPRITEPOS.CENTER, s_eienteiroom1),
+	ntxt(00, KANA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, REISEN.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),
+	txt("Oh no! The batter's gotten into my hair!", KAGUYA.SHOCKED, SPRITEPOS.LEFT, s_kitchen),
+	txt("I need to clean it this instant!", KAGUYA.AWW),
+	ntxt(40, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	//sound effect of footsteps running	
+	txt("...", MOKOU.BRUH, SPRITEPOS.MIDRIGHT),
+	txt("Well, whatever gives me more time.", MOKOU.YAY),
+	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	
+	ntxt(0, KANA.NEUTRAL, SPRITEPOS.LEFT),
+	ntxt(0, REISEN.DEF, SPRITEPOS.RIGHT),	
+	txt("Woah! Do you see those knife skills from Mokou?", ME.POG, SPRITEPOS.CENTER, s_eienteiroom1),
+	//sound of epic cutting
+	txt("She's cutting the chicken so quickly!", ME.POG),
+	//SLICE sound
+	ntxt(0000, KANA.SCARED),
+	ntxt(0040, REISEN.WOAH),
+	txt("And she... lost a finger.", ME.WHAA),
+	txt("...Should we--", KANA.SCARED),
+	txt("N-nah, it's fine! A little blood would just... add to the flavor!", ME.KAAAY),	
+	ntxt(00, KANA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, REISEN.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),
+	txt("Finally! Alright, now for the sauce. First step is the sake... then soy sauce, and...", MOKOU.NEUTRAL, SPRITEPOS.MIDLEFT, s_kitchen),
+	//sound effect of chicken frying in a pan
+	txt("There we go, I'm all clean now!", KAGUYA.DEF),
+	txt("Now where were we...", KAGUYA.DEF),	
+	txt("Halfway through frying the chicken, your majesty.", MOKOU.SMUG),
+	txt("Yes, I can see tha-- |w0020 |- ", KAGUYA.MAD),
+	txt("--Mokou, your finger!", KAGUYA.SHOCKED),
+	txt("Oh, this?", MOKOU.NEUTRAL),
+	txt("Don't worry about it. I'm not gonna get let any blood on the food.", MOKOU.DEF),	
+	txt("Doesn't it hurt?", KAGUYA.AWW),
+	txt("Of course. But...", MOKOU.NEUTRAL),
+	txt("Just one teensy second...", KAGUYA.FUFUFU),
+	//sound of YAY HEALING MAGIC	
+	txt("There we go!", KAGUYA.YAY),
+	txt("I cast a spell to make it heal instantly. All better now?", KAGUYA.YAY),
+	txt("...", MOKOU.NEUTRAL),
+	txt("Yeah.", MOKOU.YAY),
 	
+	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),
+	txt("Aww...", KANA.YAY, SPRITEPOS.LEFT, s_eienteiroom1),
+	txt("So, Judge Kana, how are you looking foreward to eating these lasses' delicious food?", ME.DEF, SPRITEPOS.CENTER),
+	txt("I'm scared for my life, honestly.", KANA.NEUTRAL, SPRITEPOS.LEFT),
+	txt("A very understandable reaction! How about you, Judge Reisen?", ME.YAY),
+	txt("Who even cares how good it is? I'm so hungry, I could eat anything. Even Kana's cooking!", REISEN.UGGH, SPRITEPOS.RIGHT),
+	txt("Hey, take that back! I'm a great cook!", KANA.MAD),
+	txt("Kana, you are a wonderful, amazing, beautiful person...", REISEN.YAY),
+	txt("Who cooks.", REISEN.SMUG),
+	//sound effect of timer thing
 	
+	ntxt(00, KANA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, REISEN.DEF, SPRITEPOS.HIDDEN),
+	txt("ONE MINUTE LEFT!", ME.DEF, SPRITEPOS.HIDDEN, s_kitchen),
 	
+	txt("Oh, you are so screwed.", MOKOU.SMUG, SPRITEPOS.CENTER),	
+	txt("Pop these in the oven here, and... done!", KAGUYA.DEF, SPRITEPOS.LEFT),
+	txt("What the--", MOKOU.SURPRISED),
+	txt("They were only in there for a second!", MOKOU.HMPH),
+	txt("Fufufu. I simply manipulated the oven's eternity. Inside that oven, ten minutes just passed.", KAGUYA.FUFUFU
+	txt("What about the no-magic rule?", MOKOU.BRUH),
+	txt("That was a rule?", KAGUYA.NEUTRAL),
+	txt("...", MOKOU.SURPRISED),
+	txt("Oh, sorry. I didn't mention that, did I?", ME.WINKY, SPRITEPOS.CENTER),
+	txt("In that case, let's just throw that rule out the window, okay?", ME.DEF),
+	txt("Wait, that's totally wrong! Rules shouldn't be broken *that* easily just because you screwed up!", MOKOU.MAD),
+	txt("But you were okay with your finger being healed.", ME.DEF),
+	txt("That was-- |- ", MOKOU.REALLYMAD),
+	//buzzer sound
+	txt("AAAAND TIME'S UP!!", ME.YAY),
+	txt("Contestants, bring your dishes to the table.", ME.HEHE),
 	
-	//txt("Is she your girlfriend?", ME.SMUG),
-	//txt("Guh--", MOKOU.SURPRISED),
-	//txt("That's none of your business.", MOKOU.HMPH),
+	txt("...", MOKOU.HMPH),
+	txt("...", KAGUYA.FUFUFU),
+	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),	
+	txt("First up is Fujiwara no Mokou's yakitori!", ME.YAY, SPRITEPOS.HIDDEN, s_yaki),
+	txt("Mokou, how was your experience making this fine dish?", ME.DEF),
+	txt("Amazing, except for the fact that I had zero time to actually cook it.", MOKOU.NEUTRAL),
+	txt("Good to know!", ME.YAY),
+	//nomnomnom sounds
 	
+	txt("Hmm...", ME.DISAPOINT, SPRITEPOS.CENTER, s_eienteiroom1),
+	txt("Judge Reisen, what do you think of the meat?", ME.DEF),
+	txt("It's undercooked, as expected.", REISEN.UGGH, SPRITEPOS.RIGHT),
+	txt("I see...", ME.NEUTRAL),
+	txt("Judge Kana, what do you think of the meat?", ME.DEF),
+	txt("I love the sauce! It's very tasty!", KANA.YAY, SPRITEPOS.LEFT),
+	txt("Judge Kana, what do you think of the meat?", ME.DEF),
+	txt("The veggies were cut really well, and they feel great to chew.", KANA.DEF),
+	txt("Judge Kana, what do you think of the meat?", ME.DEF),
+	txt("...It's not dry." KANA.NEUTRAL),
+	txt("Amazing input, Judge Kana!", ME.YAY),
+	txt("Now, let's show our scores in 3, 2, 1...", ME.DEF),
 	
+	//drumroll music
+	ntxt(0060, REISEN.JDGMOKU, SPRITEPOS.RIGHT),
+	ntxt(0060, KANA.JDGMOKU, SPRITEPOS.LEFT),
+	ntxt(0060, ME.JDGMOKU, SPRITEPOS.CENTER),
 	
-	//cooking competition
-	//no magic allowed
+	txt("That's a 3, a 7, and a 6! You get a total of 16 points!", ME.WINKYHEART),
+	txt("A bit generous, honestly...", MOKOU.NEUTRAL),
 	
-	//kaguya makes jelly donuts, burgers, and cookies
-	//mokou makes ramen, yakitori, and some sushi rolls
-	//yes stereotype hardy har
+	ntxt(000, REISEN.DEF, SPRITEPOS.HIDDEN),
+	ntxt(000, KANA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(000, ME.DEF, SPRITEPOS.HIDDEN),
 	
-	//have mokou chop a cabbage
-	//and its just a fukin ball
-	//drawn in 10 seconds in MS paint
+	txt("Next is Houraisan Kaguya's chocolate chip cookies!", ME.YAY, SPRITEPOS.HIDDEN, s_cooky),
+	txt("Pray tell, how did these go for you?", ME.DEF),
+	txt("Absolutely swimmingly.", KAGUYA.FUFUFU),
+	//nomnom sounds
 	
+	txt("Ooh...", ME.HEHE, SPRITEPOS.CENTER, s_eienteiroom1),
+	txt("Judge Kana, what do you think of these?", ME.DEF),	
+	txt("These cookies are perfect!", KANA.YAY, SPRITEPOS.LEFT),
+	txt("They have such a nice gooeyness to them on the inside, that really elevates them for me.", KANA.DEF),
+	txt("It must be because of the chocolate chips, and those create the most immaculate palette of flavors ever!", KANA.COCKY),
+	txt("Oh my, what high praise! Judge Reisen, what's your opinion?", ME.YAY),
+	txt("It's good.", REISEN.DEF, SPRITEPOS.RIGHT),
+	txt("Splendiferous feedback, Judge Reisen!", ME.YAY),
+	txt("Now, for our final scoring...", ME.WINKY),
+	ntxt(000, REISEN.DEF, SPRITEPOS.HIDDEN),
+	ntxt(000, KANA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(000, ME.DEF, SPRITEPOS.HIDDEN),
+	txt("Say goodbye to your dignity, Fujiwara no Mokou.", KAGUYA.FUFUFU, SPRITEPOS.MIDLEFT, s_kitchen),
+	txt("You kidding me? I did that the moment I agreed to this \"competition.\"", MOKOU.HMPH, SPRITEPOS.MIDRIGHT),
+	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),	
 	
-	//mokou has to stand there while kaguya's burgers are getting judged
-	//and her yakitori gets way way overdone because she cant go and turn off the grill
+	txt("In 3...|w0030 2...|w0060 1........~~~|w0140 |-", ME.DEF),
+		
+	///drumroll music
+	ntxt(0100, REISEN.JDGKAGU, SPRITEPOS.RIGHT),
+	ntxt(0200, KANA.JDGKAGU, SPRITEPOS.LEFT),
+	ntxt(0100, ME.JDGKAGU, SPRITEPOS.CENTER),
+	txt("And Kaguya gets 15 points! Sorry, but it seems you've been bested in this round!", ME.DEF),
+	ntxt(000, REISEN.DEF, SPRITEPOS.HIDDEN),
+	ntxt(000, KANA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(000, ME.DEF, SPRITEPOS.HIDDEN),
+	txt("Wh-what do you mean!?", KAGUYA.SHOCKED, SPRITEPOS.CENTER, s_kitchen),
+	txt("I did them so well! Those cookies were perfect!", KAGUYA.SHOCKED),
+	txt("Kaguya, don't you know?", ME.WINKY, SPRITEPOS.RIGHT),
+	txt("I hate cookies.", ME.SMUG, SPRITEPOS.MIDLEFT),
+	txt("You...", KAGUYA.MAD),
+	txt("...Wow.", MOKOU.NEUTRAL, SPRITEPOS.LEFT),
+	txt("How does it feel to get screwed over by arbitrary bullcrap?", MOKOU.SMUG),
+	txt("Horrible, thank you very much!", KAGUYA.MAD),
+	txt("Not that yours was any good.", KAGUYA.MAD),
+	txt("It would've been if I had as much time as you!", MOKOU.MAD),
+	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),	
+	txt("\(Hey, why are you giving them so much trouble?\)", KANA.BRUH),	
+	txt("\(It ain't just trouble, Kana. This is all part of my master plan to bring them closer together!\)", ME.HEHE),	
+	txt("\(Are you sure they're not just going to get angry at you?\)", REISEN.CONFUZZLED),
+	txt("\(Not at all.\)", ME.HEHE),
+	txt("\(I'm putting my life at risk for this!\)", ME.WINKYHEART),
 	
+	txt("While the two immortals argued, us judges started cleaning everything up.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("Kana and Reisen had to leave, but I stuck around."),
+	txt("Something was going to happen, I just knew it."),
+	txt("And I had to see this through."),
 	
-	
-	
-	//mokou kicks over kaguya's cookies and then feels bad about it and helps kaguya out on remaking them
+		
+	//mokou feels bad about kaguya losing and is all like "hey lets make cookies together"
+	//"i didnt get to taste yours. i'm just gauging your cooking skills for when we next battle."
 	//also while helping kaguya make the cookies, mokou accidentally makes one in a heart shape
 	
 	
+	//after the competition, Kaguya tries to talk to Mokou
+	//mokou starts being like "yeah i kinda like spending time with you" but stops herself
+	
+	//kaguya goes all "i want to make mokou happy like she is with keine"
+		
+	
+	txt("...What do you want?", ME.NEUTRAL),
+	txt("I...", KAGUYA.AWW),
+	txt("I want to see Mokou happy. Like she is with Keine.", KAGUYA.YAY),
+	txt("No, more than that. I want to be the one that makes her happy.", KAGUYA.DEF),
+	txt("And... I want to be with her, happy together.", KAGUYA.AWW),
+	txt("...Forever.", KAGUYA.LOVEY),
+
 	
 	
-	//kaguya makes the cookies INSTANTLY
-	//cuz she manipulates the eternity of the oven
-	//which isnt magic because moon or somethin
-	
-	
-	//it looks like mokou will lose
-	//but they kotohime gives kaguya a 1/10
-	//"don't you know? i hate cookies."
-	
-	//txt("So, Judge Kana, how are you looking foreward to eating these lasses' delicious food?", ME.DEF),
-	//txt("I'm scared for my life, honestly.", KANA.NEUTRAL),
-	//txt("A very understandable reaction! How about you, Judge Reisen?", ME.YAY),
-	//txt("Who even cares how good it is. I'm so hungry, I could eat anything. Even Kana's cooking!", REISEN.UGGH),
-	//txt("Hey, take that back! I'm a great cook!", KANA.MAD),
-	//txt("Ah, you're right. Kana, you are a wonderful, amazing, beautiful person...", REISEN.YAY),
-	//txt("Who cooks.", REISEN.SMUG),
+	//then kotohime and kana go and talk to mokou a few nights later
 	
 	
 	
-	//txt("Eugh, why are you eating that!? It looks like BRAINS!", MOKOU.SURPRISED),
-	//txt("Itsh tashetie. Reawwy goohd tchoo.", KANA.DEF),
-	//txt("Oh gosh... I think I'm gonna hurl...", MOKOU.NEUTRAL),
+	
+	
+	
+	
+	//txt("Hatred has kept me alive all these centuries.", MOKOU.SAD),
+	//txt("I spent 300 years hating myself. I wanted to die, but that was impossible. So the next best thing was to keep myself hidden away, as a living mistake.", MOKOU.SAD),
+	//txt("For 300 years, I hated the world. Everyone I came across was obliterated without a trace.", MOKOU.SAD),
+	//txt("And when I stopped hating, I stopped caring. I existed without living.", MOKOU.SAD),	
+	//txt("Now, the one to hate helped cause this in the first place. What's more, she'll always be there.", MOKOU.DEF),
+	//txt("Whether or not she made the right choices back then... I hate her.", MOKOU.SAD),
+	//txt("I have to.", MOKOU.SADSMILE),
+	
+	
 	
 	
 	

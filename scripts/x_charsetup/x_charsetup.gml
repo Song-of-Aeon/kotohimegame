@@ -48,7 +48,8 @@ nu talksprite("YAYNOTE", "me", z++);
 nu talksprite("TINYSMIRK", "me", z++);
 nu talksprite("DISAPOINT", "me", z++);
 nu talksprite("NEUTRAL", "me", z++);
-
+nu talksprite("JDGMOKU", "me", z++);
+nu talksprite("JDGKAGU", "me", z++);
 
 
 
@@ -80,6 +81,8 @@ nu talksprite("SADSMILE", "kana", z++);
 nu talksprite("BRUH", "kana", z++);
 nu talksprite("LOVEYSHY", "kana", z++);
 nu talksprite("LOVEY", "kana", z++);
+nu talksprite("JDGMOKU", "kana", z++);
+nu talksprite("JDGKAGU", "kana", z++);
 
 #macro KAGUYA global.textguy[?"kaguya"]
 nu chardata("Kaguya", s_kaguya);
@@ -121,6 +124,8 @@ nu talksprite("CONFUZZLED", "reisen", z++);
 nu talksprite("SMUG", "reisen", z++);
 nu talksprite("MAD", "reisen", z++);
 nu talksprite("LUNATICEYES", "reisen", z++);
+nu talksprite("JDGMOKU", "reisen", z++);
+nu talksprite("JDGKAGU", "reisen", z++);
 
 
 
@@ -150,6 +155,12 @@ nu talksprite("CRYLAUGH", "mokou", z++);
 #macro KAGUYA2 global.textguy[?" kaguya "]
 nu chardata(" Kaguya ", s_kaguya2, se_null);
 nu talksprite("NORMAL", " kaguya ", 0);
+
+
+#macro KEINE global.textguy[?"keine"]
+nu chardata("Keine", s_keine, se_null);
+nu talksprite("DEF", "keine", 0);
+
 
 #macro EIRIN global.textguy[?"eirin"]
 nu chardata("Eirin", s_eirin, se_null);

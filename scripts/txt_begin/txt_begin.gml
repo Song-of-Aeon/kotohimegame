@@ -32,11 +32,9 @@ function txt_begin() {
 	txt("Now, are you ready for some romance?", ME.DEF),
 	
 	//footsteps sound and crickets, fading into kotohime with daytime forest background	
-	txt("Angel, angel, in the sky--", ME.YAYNOTE, SPRITEPOS.RIGHT, s_forest, function() {music_set(mus.ragnarok)}),
-	txt("Whatever could have made you cry?", ME.YAYNOTE),
-	txt("For your wings are so bright", ME.YAYNOTE),
-	txt("They light up the night", ME.YAYNOTE),
-	txt("And make my own tears wave goodbye!", ME.YAYNOTE),
+	txt("~~Angel, angel, in the sky,~~#~~Whatever could make you cry?~~", ME.YAYNOTE, SPRITEPOS.RIGHT, s_forest, function() {music_set(mus.ragnarok)}),
+	txt("~~For your wings are so bright~~#~~They light up the night~~", ME.YAYNOTE),
+	txt("~~And make my own tears wave goodbye!~~", ME.YAYNOTE),
 
 	ptxt(),
 	txt("The little rabbit princess, frolicking about in the woods.", u, u, u, function() {textbox_set_type(global.textnvl)}),
@@ -51,9 +49,9 @@ function txt_begin() {
 	txt("I was out of tune, out of line, and out of my mind."),
 	txt("...But I was happy."),
 	
-	txt("And as the sandcastles melt,", ME.YAYNOTE, u, u, function() {textbox_set_type(global.textzpix)}),
-	txt("Will you see on my face, a much brighter place", ME.YAYNOTE),
-	txt("Than the one--|-", ME.YAYNOTE, u, u, function() {music_set(mus.null)}),
+	txt("~~And as the sandcastles melt,~~", ME.YAYNOTE, u, u, function() {textbox_set_type(global.textzpix)}),
+	txt("~~Will you see on my face, a much brighter place~~", ME.YAYNOTE),
+	txt("~~Than the one--~~ |- ", ME.YAYNOTE, u, u, function() {music_set(mus.null)}),
 	//hard cut to a big explosion image thingy with a BOOM and a BONK sound effect
 	
 	ntxt(0000, ME.DEF, SPRITEPOS.HIDDEN, s_shrine),
@@ -130,10 +128,12 @@ function txt_begin() {
 	
 	ptxt(),
 	txt("I turned around and bolted to the shrine stairs.", u, u, s_steps, function() {textbox_set_type(global.textnvl)}),
-	txt("Something about Kana had caught my attention."),
+	txt("That girl was Kana Anaberal. I had met her while participating in a little fighting tournament. She ended up winning the tournament rather easily, which caught all the participants off-guard."),
+	txt("I had expected to never meet her again, but here she was."),
+	txt("And this time, something about her had caught my attention."),
 	txt("Many things, actually. Her eyes, the Western-style clothes, the mirage-like glow around her."),
 	txt("I had let many people pass me by before, but something about this girl seemed to call for me."),
-	txt("And I knew that if I refused the call, we would never meet again."),
+	txt("And I knew that if I refused the call, we really would never meet again."),
 	txt("I ran and ran until finally, I caught a glimpse of Kana."),
 	ntxt(0000, ME.NEUTRAL, SPRITEPOS.RIGHT),
 	ntxt(0000, KANA.NEUTRAL, SPRITEPOS.MIDLEFT),
@@ -367,11 +367,11 @@ function txt_begin() {
 	
 	txt("Welcome to the House of Eternity.", KAGUYA.DEF),
 	txt("I have lived here for over a thousand years.", KAGUYA.DEF),
-	txt("For in this house, nothing changes and nothing dies. It is a place void of impurity.", KAGUYA.DEF),
+	txt("With my powers to manipulate eternity, time has effectively stopped.", KAGUYA.DEF),
+	txt("In this house, nothing changes and nothing dies. It is a place void of impurity.", KAGUYA.DEF)
 
 	
 	ptxt(),
-	
 	txt("...Even though I'd been here many times, this place still felt like another world.", u, u, s_eienteihall1, function() {textbox_set_type(global.textnvl)}),
 	txt("The air was so unnaturally still, I almost had trouble breathing. There was not a mite of dust, nor a single creak."),
 	txt("It was a warm castle of solid ice."),
@@ -729,17 +729,17 @@ function txt_begin() {
 	
 	
 	
-	txt("At just a glance#It's only us two", KANA.DEF, u, u, function() {textbox_set_type(global.textzpix)}),
-	txt("But our lives are full#Of the people we see every day on the street", KANA.DEF),
-	txt("Though yesterday#Was forever dark", KANA.DEF),
-	txt("Forever is only a moment too", KANA.DEF),
+	txt("~~At just a glance~~#~~It's only us two~~", KANA.DEF, u, u, function() {textbox_set_type(global.textzpix)}),
+	txt("~~But our lives are full~~#~~Of the people we see every day on the street~~", KANA.DEF),
+	txt("~~Though yesterday~~#~~Was forever dark~~", KANA.DEF),
+	txt("~~Forever is only a moment too~~", KANA.DEF),
 	//hey if youre feeling extra pretentious
 	//reincorporate that "forever is only a moment too" line into the scene where Kaguya and Mokou go all kissy kissy
 	
 	//find a way to format this so its more obviously singing
 	
 	ptxt(),
-		txt("This was the first time I had heard her sing.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("This was the first time I had heard her sing.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("For a second, I thought of making a joke about it. But... it was just too beautiful to interrupt."),
 	txt("Her voice was one with the wind, and she floated along it like a white veil."),
 	
@@ -972,7 +972,7 @@ function txt_begin() {
 	txt("I decided to wait, and simply pressed my ear against the door."),
 	
 	ptxt(),
-	txt("--dreamt you up?", MOKOU.DEF),
+	txt("So this girl dreamt you into existence?", MOKOU.DEF),
 	txt("Yeah, basically.", KANA.DEF),
 	txt("She was going through a lot of horrible things. Her family said they loved her, but...", KANA.DEF),
 	txt("Anyways, I was the monster in her closet. Something to project all the fear and sadness onto.", KANA.DEF),

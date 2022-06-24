@@ -17,7 +17,7 @@ function txt_reasonc() {
 }
 function txt_reason2() {
 	msg = msglang([
-	txt("* You remind Chiyuri that Kaguya was capable of hiding from the public eye for centuries."),
+	txt("* You remind Chiyuri that Kaguya was#  capable of hiding from the public eye#  for centuries."),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).actpoint++;
@@ -36,7 +36,7 @@ function txt_reason2c() {
 }
 function txt_reason3() {
 	msg = msglang([
-	txt("* You tell Chiyuri that Kaguya wants to keep her identity a secret while she's here, and she wouldn't want to drag anyone else in."),
+	txt("* You tell Chiyuri that Kaguya wants to keep#  her identity a secret while she's here,#  and she wouldn't want to drag anyone else in."),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).actpoint++;

@@ -20,7 +20,7 @@ function txt_gengetsu() {
 	flg.gengetsu = 1;
 	msg = msglang([
 	txt("|c160160160A woman with wide, transluscent wings scratches away at a scroll with ink."),
-	txt("|c160160160She seems to be illustrating a chaotic design."),
+	txt("|c160160160She seems to be illustrating a chaotic scene."),
 	txt("Kotohime, that girl seems interesting.", KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT),
 	txt("Ah, her...", KOTOHIME.HAPPY, SPRITEPOS.MIDLEFT),
 	txt("I forget her name. Something-getsu.", KOTOHIME.HAPPY),

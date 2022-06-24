@@ -92,12 +92,12 @@ itemgen({
 	},
 	onpickup: function() {
 		battling = true;
-		textbox_create(txt_sans, global.texttale);
 		c_makeboss(global.bosses.chiyuri, [SPELL.NON]);
 	},
 	menugen: function() {
 		if !sparing {
-			textbox_create(txt_chara, global.textchara, false)
+			//textbox_create(txt_chara, global.textchara, false);
+			textbox_create(sparing ? txt_mercy : choose(txt_battle, txt_battle2, txt_battle3, txt_battle4), global.textchara);
 		}
 		battling = false;
 		fighting = false;
@@ -117,9 +117,13 @@ itemgen({
 			var chiyuri = makeGenericElement(272, 386, 10, 10, s_null);
 			chiyuri.draw = munction(function() {
 				if global.MenuCursor.target == self {
-					draw_text(x, y, "* Chiyuri");
+					if c_getitembyid(ITEMS.UNDERTALE).sparing draw_set_color(c_yellow) else draw_set_color(c_white);
+					draw_text(x, y, "* Chiyuri!");
+					draw_set_color(c_white);
 				} else {
-					draw_text(x, y, "* Chiyuri?");
+					if c_getitembyid(ITEMS.UNDERTALE).sparing draw_set_color(c_yellow) else draw_set_color(c_white);
+					draw_text(x, y, "* Chiyuri");
+					draw_set_color(c_white);
 				}
 			})
 			chiyuri.onSelect = munction(function() {
@@ -228,6 +232,34 @@ itemgen({
 		var mercy = makeGenericElement(1280/5*4, 640, 10, 10, s_null);
 		mercy.draw = munction(function() {
 			draw_sprite(s_undytale, 6+(global.MenuCursor.target==self), x, y);
+		})
+		fight.onSelect = munction(function() {
+			var chiyuri = makeGenericElement(272, 386, 10, 10, s_null);
+			chiyuri.draw = munction(function() {
+				if global.MenuCursor.target == self {
+					if c_getitembyid(ITEMS.UNDERTALE).sparing draw_set_color(c_yellow) else draw_set_color(c_white);
+					draw_text(x, y, "* Chiyuri!");
+					draw_set_color(c_white);
+				} else {
+					if c_getitembyid(ITEMS.UNDERTALE).sparing draw_set_color(c_yellow) else draw_set_color(c_white);
+					draw_text(x, y, "* Chiyuri");
+					draw_set_color(c_white);
+				}
+			})
+			chiyuri.onSelect = munction(function() {
+				if c_getitembyid(ITEMS.UNDERTALE).sparing {
+					c_removeitem(ITEMS.UNDERTALE);
+					textbox_create(txt_acceptence);
+				}
+			})
+			instance_destroy(o_textbox);
+			o_uicontroller.UIElements[0].options.selectable = false;
+			o_uicontroller.UIElements[1].options.selectable = false;
+			o_uicontroller.UIElements[2].options.selectable = false;
+			o_uicontroller.UIElements[3].options.selectable = false;
+			setCursor();
+			global.MenuCursor.disabled = false;
+			global.MenuCursor.onBack = c_getitembyid(ITEMS.UNDERTALE).menugen;
 		})
 		global.MenuCursor.target = fight;
 		//textbox_create(txt_yoursins, global.textdefault, false);

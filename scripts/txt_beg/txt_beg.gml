@@ -1,6 +1,6 @@
 function txt_beg() {
 	msg = msglang([
-	txt("* You tell Chiyuri that Kaguya won't cause any trouble. Promise!"),
+	txt("* You tell Chiyuri that Kaguya won't cause#  any trouble. Promise!"),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).actpoint++;
@@ -19,7 +19,7 @@ function txt_begc() {
 }
 function txt_beg2() {
 	msg = msglang([
-	txt("|c000000000You tell Chiyuri that you and Kaguya are smart, and won't let that happen."),
+	txt("* You tell Chiyuri that you and Kaguya#  are smart, and won't let that happen."),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).actpoint++;
@@ -58,8 +58,8 @@ function txt_beg3c() {
 }
 function txt_beg4() {
 	msg = msglang([
-	txt("* Desperately, you use the last weapon in your arsenal."),
-	txt("* You tell Chiyuri that with the job Kaguya offered you, you can start paying off your tab soon."),
+	txt("* Desperately, you use the last weapon in#  your arsenal."),
+	txt("* You tell Chiyuri that with the job Kaguya#  offered you, you can start paying off#  your tab soon."),
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).actpoint++;

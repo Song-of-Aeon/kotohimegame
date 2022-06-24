@@ -622,6 +622,7 @@
     {"id":{"name":"s_k28","path":"sprites/s_k28/s_k28.yy",},"order":30,},
     {"id":{"name":"pk_options","path":"scripts/pk_options/pk_options.yy",},"order":3,},
     {"id":{"name":"draw_hitbox","path":"scripts/draw_hitbox/draw_hitbox.yy",},"order":6,},
+    {"id":{"name":"txt_battle","path":"scripts/txt_battle/txt_battle.yy",},"order":23,},
     {"id":{"name":"fl_tutorial","path":"scripts/fl_tutorial/fl_tutorial.yy",},"order":3,},
     {"id":{"name":"s_kaguya","path":"sprites/s_kaguya/s_kaguya.yy",},"order":27,},
     {"id":{"name":"s_k20","path":"sprites/s_k20/s_k20.yy",},"order":22,},

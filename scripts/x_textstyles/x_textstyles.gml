@@ -51,7 +51,7 @@ global.texttale = {
 	spriteposy: 190,
 	sprite: s_textbubble,
 	type: TEXTTYPE.ADV,
-	font: FONT.DETERMINATIONSMALL,
+	font: FONT.DETERMINATION,
 }
 global.textfacepic = {
 	x: 320,

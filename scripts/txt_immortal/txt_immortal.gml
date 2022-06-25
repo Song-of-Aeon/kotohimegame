@@ -22,7 +22,7 @@ function txt_immortal() {
 	txt("But all of them loathe certain deaths... the deaths of their loved ones."),
 	txt("There is nobody who wants their truest love to die before them."),
 	txt("Kaguya, you understand correctly. Your immortality is not a curse."),
-	txt("For anyone's love to be invincible... it is a wish presumptuous to the point that few would have such ideations."),
+	txt("For anyone's love to be invincible... it is a wish presumptuous to the point that few would begin such ideations."),
 	txt("Yet you live it. If you were to find love, your inheritance of the Hourai would only be celebrated."),
 	txt("...Kotohime, you..."),
 	txt("Obviously!"),

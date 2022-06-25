@@ -6,7 +6,7 @@
     "path": "folders/Dialogue/technical/KOTOHIME GAMING.yy",
   },
   "resourceVersion": "1.0",
-  "name": "txt_standards",
+  "name": "txt_bye",
   "tags": [],
   "resourceType": "GMScript",
 }

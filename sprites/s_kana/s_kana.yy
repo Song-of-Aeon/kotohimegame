@@ -115,7 +115,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 200,
-    "yorigin": 150,
+    "yorigin": 360,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"s_kana","path":"sprites/s_kana/s_kana.yy",},

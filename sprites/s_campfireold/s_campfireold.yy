@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e3c26207-a929-45f3-b6df-0b60da585ece","path":"sprites/s_campfire/s_campfire.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e3c26207-a929-45f3-b6df-0b60da585ece","path":"sprites/s_campfire/s_campfire.yy",},"LayerId":{"name":"f2fe1303-15a5-4d3b-b88b-2c9c8c1e7a24","path":"sprites/s_campfire/s_campfire.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_campfire","path":"sprites/s_campfire/s_campfire.yy",},"resourceVersion":"1.0","name":"e3c26207-a929-45f3-b6df-0b60da585ece","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"52036e5c-f956-48e8-8e54-f1300bda724b","path":"sprites/s_campfireold/s_campfireold.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"52036e5c-f956-48e8-8e54-f1300bda724b","path":"sprites/s_campfireold/s_campfireold.yy",},"LayerId":{"name":"6aa2cc9c-a276-4cf4-84c0-3eca14f0db1a","path":"sprites/s_campfireold/s_campfireold.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_campfireold","path":"sprites/s_campfireold/s_campfireold.yy",},"resourceVersion":"1.0","name":"52036e5c-f956-48e8-8e54-f1300bda724b","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"s_campfire","path":"sprites/s_campfire/s_campfire.yy",},
+    "spriteId": {"name":"s_campfireold","path":"sprites/s_campfireold/s_campfireold.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"02fb9e19-c6ff-46e8-b7b1-d6c118aa16d3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e3c26207-a929-45f3-b6df-0b60da585ece","path":"sprites/s_campfire/s_campfire.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"202cd330-d4f5-45af-9114-037735371a51","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"52036e5c-f956-48e8-8e54-f1300bda724b","path":"sprites/s_campfireold/s_campfireold.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"s_campfire","path":"sprites/s_campfire/s_campfire.yy",},
+    "parent": {"name":"s_campfireold","path":"sprites/s_campfireold/s_campfireold.yy",},
     "resourceVersion": "1.4",
-    "name": "s_campfire",
+    "name": "s_campfireold",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f2fe1303-15a5-4d3b-b88b-2c9c8c1e7a24","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"6aa2cc9c-a276-4cf4-84c0-3eca14f0db1a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/bakgrounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "s_campfire",
+  "name": "s_campfireold",
   "tags": [],
   "resourceType": "GMSprite",
 }

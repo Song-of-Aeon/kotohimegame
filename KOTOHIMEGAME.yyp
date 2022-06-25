@@ -361,6 +361,7 @@
     {"id":{"name":"c_generateshop","path":"scripts/c_generateshop/c_generateshop.yy",},"order":1,},
     {"id":{"name":"ach_loseitems","path":"scripts/ach_loseitems/ach_loseitems.yy",},"order":4,},
     {"id":{"name":"pt_nue","path":"scripts/pt_nue/pt_nue.yy",},"order":3,},
+    {"id":{"name":"txt_closing","path":"scripts/txt_closing/txt_closing.yy",},"order":27,},
     {"id":{"name":"s_k06","path":"sprites/s_k06/s_k06.yy",},"order":8,},
     {"id":{"name":"pk_poc","path":"scripts/pk_poc/pk_poc.yy",},"order":6,},
     {"id":{"name":"s_bulletpoint","path":"sprites/s_bulletpoint/s_bulletpoint.yy",},"order":6,},

@@ -15,6 +15,10 @@ function txt_closing() {
 	txt("As a reaper..."),
 	txt("!#You mean-"),
 	txt("Yes!"),
+	txt("Kaguya! You are a unique being that is perfectly suited to companionship of our now-mutual friend Elly!"),
+	txt("If she is of interest to you..."),
+	txt("...She is a fairly striking woman."),
+	txt(""),
 	txt(""),
 	
 	],[

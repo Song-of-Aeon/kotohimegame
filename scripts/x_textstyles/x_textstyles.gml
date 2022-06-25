@@ -70,7 +70,7 @@ global.textnvl = {
 	width: 840,
 	height: 600,
 	spriteposx: 210,
-	spriteposy: 190,
+	spriteposy: 400,
 	sprite: s_bigtext,
 	type: TEXTTYPE.NVL,
 	font: FONT.ZPIX,

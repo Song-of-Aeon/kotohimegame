@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "battle",
-    "path": "folders/Dialogue/technical/KOTOHIME GAMING/battle.yy",
+    "name": "debate",
+    "path": "folders/Dialogue/technical/KOTOHIME GAMING/debate.yy",
   },
   "resourceVersion": "1.0",
-  "name": "txt_battle",
+  "name": "txt_objection",
   "tags": [],
   "resourceType": "GMScript",
 }

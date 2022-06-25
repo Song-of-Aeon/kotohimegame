@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "stage 1",
-    "path": "folders/Dialogue/stage 1.yy",
+    "name": "Dialogue",
+    "path": "folders/Dialogue.yy",
   },
   "resourceVersion": "1.0",
-  "name": "txt_reimuyaunn",
+  "name": "txt_inevitable",
   "tags": [],
   "resourceType": "GMScript",
 }

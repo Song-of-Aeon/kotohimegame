@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Dialogue",
-    "path": "folders/Dialogue.yy",
+    "name": "technical",
+    "path": "folders/Dialogue/technical.yy",
   },
   "resourceVersion": "1.0",
   "name": "choice_create",

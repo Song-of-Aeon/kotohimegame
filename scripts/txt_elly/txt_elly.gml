@@ -7,7 +7,7 @@ function txt_elly() {
 	txt("|c102137255Who could have guessed?"),
 	txt("Slow day, is it?"),
 	txt("Yield not, Ka- Tsukiko!"),
-	txt("Please do remember my name."),
+	txt("Please do remember my new name."),
 	txt("For there is yet still a lonely lady just around the corner!"),
 	txt("This feels somewhat ironic. Have I already reached desperation?"),
 	txt("Hark; just behind that pillar lies our perfect target!"),

@@ -6,7 +6,7 @@
     "path": "folders/Dialogue.yy",
   },
   "resourceVersion": "1.0",
-  "name": "txt_",
+  "name": "txt_truther",
   "tags": [],
   "resourceType": "GMScript",
 }

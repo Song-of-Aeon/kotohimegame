@@ -15,9 +15,11 @@ function txt_begin() {
 	txt("To the citizens of the Lunar Capital, life is just continued existence."),
 	ptxt(),
 	txt("To me... life means movement. Growth. Change."),
+	ptxt(),
 	txt("Floating on the wind,#swimming through the seas,#finding patches of shelter and sunlight,#and becoming a part of the world."),
 	txt("Even being stomped on and crushed forever is a form of living. Because while you can't see it, the seeds you bore will carry on through the wind, and you will live through them."),
 	txt("But when you sink into the shadows, sealing your fate to whither away and leave nothing but ash... you are not living, but slowly dying."),
+	ptxt(),
 	txt("..."),
 	txt("Sometimes I get really scared of death."),
 	
@@ -45,6 +47,7 @@ function txt_begin() {
 	txt("This place had just fallen under a great shower of magic and wonder."),
 	txt("The leaves looked like little shards of bent starlight, the morning dew forming little twinkles."),
 	txt("Seeing this filled my heart with a song I had never heard before."),
+	ptxt(),
 	txt("Arms waving about, admiring every sight and sound, I sang with nobody to hear."),
 	txt("I was out of tune, out of line, and out of my mind."),
 	txt("...But I was happy."),
@@ -77,6 +80,7 @@ function txt_begin() {
 	txt("She had been blown out the front door, covered in countless little amulets."),
 	txt("When she was far away to escape the shrine maiden's wrath, she stopped moving and tried scraping off the dirt and amulets."),
 	txt("I only stood in place, watching her closely."),
+	ptxt(),
 	txt("It took a while for her to notice me, but once she did, she started walking towards the stairs."),	
 	txt("She seemed to consider stopping as she approached me, meeting my eyes for only a second. For a moment, I thought I heard muttering."),
 	txt("\"Weirdo.\""),
@@ -130,10 +134,12 @@ function txt_begin() {
 	txt("I turned around and bolted to the shrine stairs.", u, u, s_steps, function() {textbox_set_type(global.textnvl)}),
 	txt("That girl was Kana Anaberal. I had met her while participating in a little fighting tournament. She ended up winning the tournament rather easily, which caught all the participants off-guard."),
 	txt("I had expected to never meet her again, but here she was."),
+	ptxt(),
 	txt("And this time, something about her had caught my attention."),
 	txt("Many things, actually. Her eyes, the Western-style clothes, the mirage-like glow around her."),
 	txt("I had let many people pass me by before, but something about this girl seemed to call for me."),
 	txt("And I knew that if I refused the call, we really would never meet again."),
+	ptxt(),
 	txt("I ran and ran until finally, I caught a glimpse of Kana."),
 	ntxt(0000, ME.NEUTRAL, SPRITEPOS.RIGHT),
 	ntxt(0000, KANA.NEUTRAL, SPRITEPOS.MIDLEFT),
@@ -168,7 +174,8 @@ function txt_begin() {
 	txt("And just like that, we were friends.", u, u, s_black, function() {textbox_set_type(global.textnvl)}),
 	txt("I quickly brought Kana to my home, and went through the necessary rituals to bind her to it."),
 	txt("Poltergeists are normally bound to one place of residence, you see. They cannot leave their home for more than three days, or else they will cease to be."),
-	txt("Somehow she was able to live at Reimu's shrine, which I suspect happened because of what she discovered in the ruins."),
+	ptxt(),
+	txt("Somehow she was able to live at Reimu's shrine, which I suspect happened because of her \"reward\" for winning the tournament."),
 	txt("For months, Kana lived there in relative happiness. She had to hide from the guards and my parents, on account of her phantomic nature. Though, she did pull pranks on the servants every now and again."),
 	
 	ptxt(),
@@ -1210,7 +1217,7 @@ function txt_begin() {
 	ntxt(090, ME.TINYSMIRK, SPRITEPOS.HIDDEN),
 	ntxt(0040, u, u, s_black),
 	
-	txt("#END OF KANA STORY|w9999"),
+	txt("#END OF KANA STORY|w0300 |- "),
 	
 	
 	],[
@@ -1219,7 +1226,7 @@ function txt_begin() {
 	
 	])
 	
-	endevent = function() {while true {}};
+	endevent = function() {textbox_create(txt_kagumoku)};
 }
 
 

@@ -2,9 +2,9 @@ function txt_inevitable() {
 	
 	msg = msglang([
 	
-	txt("(...It's impossible. She's right.)"),
-	txt("(But, that doesn't mean she shouldn't get to enjoy this. That doesn't mean things have to be over.)"),
-	txt("(Kaguya is convinced that \"Tsukiko\" is the only person accepted in that place... I need to change that.)"),
+	txt("|c102137255...It's impossible. She's right."),
+	txt("|c102137255But, that doesn't mean she shouldn't get to enjoy this. That doesn't mean things have to be over."),
+	txt("|c102137255Kaguya is convinced that \"Tsukiko\" is the only person accepted in that place... I need to change that."),
 	txt("...I cannot."),
 	txt("Then it is as simple as that."),
 	txt("The Twilight Bar is an interesting place, but I am not welcome there."),

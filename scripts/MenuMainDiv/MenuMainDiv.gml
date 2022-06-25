@@ -17,13 +17,13 @@
 		var mousex = window_mouse_get_x()*global.scale;
 		var mousey = window_mouse_get_y()*global.scale;
 		//draw_sprite(s_)
-		if global.MenuCursor.target != o_uicontroller.UIElements[7] && global.MenuCursor.target != o_uicontroller.UIElements[6] {
+		//if global.MenuCursor.target != o_uicontroller.UIElements[7] && global.MenuCursor.target != o_uicontroller.UIElements[6] {
 			draw_set_color(c_white);
-			draw_line(global.MenuCursor.target.x+global.MenuCursor.target.xplus+40,
+			draw_line(global.MenuCursor.target.x+40,
 			global.MenuCursor.target.y+20,
-			global.MenuCursor.target.x+global.MenuCursor.target.xplus+string_width(global.MenuCursor.target.name)+40+20,
+			global.MenuCursor.target.x+string_width(global.MenuCursor.target.name)+40+20,
 			global.MenuCursor.target.y+20);
-		}
+		//}
 		
 		surface_reset_target();
 	});
@@ -38,15 +38,10 @@
 	global.MenuCursor.target = o_uicontroller.UIElements[1];
 	//makeGenericMMElement(x+8,y+25,"Replay Start",false).onSelect = function(){}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"Tutorial").onSelect = function(){room_goto(WHOAMI); global.MenuCursor.disabled = true global.currentstage = 0 restart_items() global.doingtutorial = true}
-	makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"Achievements").onSelect = function(){menuTransition(ACHIEVEMENTSROOM)}
-	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"Items").onSelect = function(){menuTransition(ITEMSROOM)}
-	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"Stats").onSelect = function(){menuTransition(STATSROOM)}
-	makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"Options").onSelect = function(){generateOptionsMenu()}
-	makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"Quit").onSelect = function(){game_end()}
+	makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"load").onSelect = function(){game_end()}
+	makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"do not").onSelect = function(){game_end()}
 	//makeGenericMMElement(x+48,y+175,"Mods",false).onSelect = function(){}
-	makeGenericElement(15,346,16,16,s_discord,0).onSelect = function(){url_open("https://discord.gg/97yfm7jQxc")};
-	makeGenericElement(35,346,16,16,s_twitter,0).onSelect = function(){url_open("https://twitter.com/fire_land_dev")};
-	var i;
+	/*var i;
 	for (i=1; i<6; i++) {
 		o_uicontroller.UIElements[i].xplus = abs(sin((global.count+y)/120))*40; //y/120*40
 		o_uicontroller.UIElements[i].draw = munction(function(){
@@ -62,7 +57,7 @@
 			draw_text(x+xplus+40,y,name);
 			draw_set_alpha(1);
 		});
-	}
+	}*/
 }
 
 function makeGenericMMElement(x,y,name,selectable = true){

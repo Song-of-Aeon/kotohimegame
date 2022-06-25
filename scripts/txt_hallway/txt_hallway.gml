@@ -4,7 +4,7 @@ function txt_hallway() {
 	
 	txt("...", u, u, s_black),
 	txt("Will you be staying a while?", REISEN.HAPPY, SPRITEPOS.MIDLEFT),
-	txt("Kaguya and I will probably be at it all night long!", KOTOHIME.HAPPY, SPRITEPOS.LEFT),
+	txt("Kaguya and I will probably be at it all night long!", KOTOHIME.LMAO, SPRITEPOS.LEFT),
 	txt("Please don't say it like that.", REISEN.HAPPY),
 	txt("I just wanted to know if I should prepare refreshments.", REISEN.HAPPY),
 	txt("Then please do.", KOTOHIME.HAPPY),
@@ -12,7 +12,7 @@ function txt_hallway() {
 	txt("Would you terribly mind going to...", EIRIN.NORMAL, SPRITEPOS.RIGHT),
 	//ntxt(u, REISEN.HAPPY, SPRITEPOS.MIDLEFT),
 	txt("Ah. Kotohime.", EIRIN.NORMAL),
-	txt("At your service, ma'am.", KOTOHIME.HAPPY),
+	txt("At your service, ma'am.", KOTOHIME.WINK),
 	txt("Hm. I assume you picked that thing up successfully?", EIRIN.NORMAL),
 	txt("But of course.", KOTOHIME.HAPPY),
 	txt("And I would hope its contents are more hearty than the last one?", EIRIN.NORMAL),
@@ -26,7 +26,7 @@ function txt_hallway() {
 	txt("Reisen, meet with me as soon as you finish escorting Kotohime.", EIRIN.NORMAL),
 	txt("I was planning on getting some tea for the two, but...", REISEN.HAPPY),
 	txt("They can wait.", EIRIN.NORMAL),
-	txt("We can wait!", KOTOHIME.HAPPY),
+	txt("We can wait!", KOTOHIME.LMAO),
 	txt("Understood.", REISEN.HAPPY),
 	//txt(""),
 	

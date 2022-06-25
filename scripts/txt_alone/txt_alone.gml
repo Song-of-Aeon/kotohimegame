@@ -2,10 +2,10 @@ function txt_alone() {
 	
 	msg = msglang([
 	
-	txt("Kaguya turns around, and walks into the forest with practiced pathing."),
+	txt("|c160160160Kaguya turns around, and walks into the forest with practiced pathing."),
 	txt("..."),
 	txt("..."),
-	txt("Kotohime kicks around some rocks in her stride."),
+	txt("|c160160160Kotohime kicks around some rocks in her stride."),
 	txt("..."),
 	txt("And thus it ends! The plot to grant the isolated princess from the moon an opportunity of romance!"),
 	txt("The kind soul Kotohime has fully extended her capability, and has set the stage for an unknowable but unforetellable future to take place."),
@@ -18,7 +18,7 @@ function txt_alone() {
 	txt("..."),
 	txt("So is it that she has clawed her way out of desperation! So is it that she will..."),
 	txt("..."),
-	txt("Kotohime continues walking."),
+	txt("|c160160160Kotohime continues walking."),
 	
 	],[
 	

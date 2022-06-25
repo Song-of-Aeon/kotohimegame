@@ -332,7 +332,6 @@
     {"id":{"name":"s_bigcircle","path":"sprites/s_bigcircle/s_bigcircle.yy",},"order":2,},
     {"id":{"name":"z_translate","path":"shaders/z_translate/z_translate.yy",},"order":7,},
     {"id":{"name":"cmd_cap","path":"scripts/cmd_cap/cmd_cap.yy",},"order":9,},
-    {"id":{"name":"txt_mortal","path":"scripts/txt_mortal/txt_mortal.yy",},"order":7,},
     {"id":{"name":"txt_mortal","path":"scripts/txt_mortal/txt_mortal.yy",},"order":24,},
     {"id":{"name":"s_05","path":"sprites/s_05/s_05.yy",},"order":6,},
     {"id":{"name":"cl_thurs1time_bread","path":"scripts/cl_thurs1time_bread/cl_thurs1time_bread.yy",},"order":0,},

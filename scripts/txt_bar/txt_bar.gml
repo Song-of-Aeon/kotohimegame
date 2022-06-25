@@ -4,7 +4,7 @@ function txt_bar() {
 	
 	txt("..."),
 	txt("This is it?", KAGUYA2.NORMAL, SPRITEPOS.LEFT),
-	/*txt("A bit...", KAGUYA2.NORMAL),
+	txt("A bit...", KAGUYA2.NORMAL),
 	txt("Dingy, drab, and inelegant. It does not appear to be fit for a princess.", KOTOHIME.HAPPY, SPRITEPOS.MIDRIGHT),
 	txt("But we are not here as princesses today.", KOTOHIME.HAPPY),
 	txt("Embrace the lifestyle of the average Gensokyo citizen... is what I would say.", KOTOHIME.HAPPY),
@@ -54,7 +54,7 @@ function txt_bar() {
 	ntxt(0, CHIYURI.NOTHING, SPRITEPOS.CENTER),
 	txt("|c160160160The two go behind the bar, past a storage room in the back, and through the back exit.", CHIYURI.NOTHING),
 	txt("Is something wrong?", KOTOHIME.HAPPY),
-	txt("Yeah, something's wrong.", CHIYURI.NOTHING, SPRITEPOS.MIDRIGHT),*/
+	txt("Yeah, something's wrong.", CHIYURI.NOTHING, SPRITEPOS.MIDRIGHT),
 	
 	],[
 	

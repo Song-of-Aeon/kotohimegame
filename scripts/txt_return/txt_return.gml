@@ -2,10 +2,10 @@ function txt_return() {
 	
 	msg = msglang([
 	
-	txt("Kotohime and Kaguya re-enter the Twilight Bar."),
-	txt("Elly perks her head up at the sound of the door opening."),
+	txt("|c160160160Kotohime and Kaguya re-enter the Twilight Bar."),
+	txt("|c160160160Elly perks her head up at the sound of the door opening."),
 	txt("Oh?"),
-	txt("The two return to their seats across from Elly."),
+	txt("|c160160160The two return to their seats across from Elly."),
 	txt("Didn't you say you weren't coming back?"),
 	txt("Yes...#Before that, Elly, I must apologize."),
 	txt("Sure?"),

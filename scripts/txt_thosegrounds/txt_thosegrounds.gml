@@ -8,7 +8,7 @@ function txt_thosegrounds() {
 	txt("You know..."),
 	txt("The whole thing~"),
 	txt("Don't kid with me."),
-	txt("(Damn.)"),
+	txt("|c102137255Damn."),
 	txt("Have you forgotten?"),
 	txt("Romance and I are not famed for our synergy."),
 	txt("I am aware. However, I believe those perceptions can be overcome."),

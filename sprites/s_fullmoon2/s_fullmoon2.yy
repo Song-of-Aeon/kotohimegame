@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"e3c26207-a929-45f3-b6df-0b60da585ece","path":"sprites/s_campfire/s_campfire.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e3c26207-a929-45f3-b6df-0b60da585ece","path":"sprites/s_campfire/s_campfire.yy",},"LayerId":{"name":"f2fe1303-15a5-4d3b-b88b-2c9c8c1e7a24","path":"sprites/s_campfire/s_campfire.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_campfire","path":"sprites/s_campfire/s_campfire.yy",},"resourceVersion":"1.0","name":"e3c26207-a929-45f3-b6df-0b60da585ece","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"7f8b1ad6-f7fa-428e-9d5b-6655d1338d56","path":"sprites/s_fullmoon2/s_fullmoon2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"7f8b1ad6-f7fa-428e-9d5b-6655d1338d56","path":"sprites/s_fullmoon2/s_fullmoon2.yy",},"LayerId":{"name":"5f78ec76-10aa-4892-ab0b-28cadbfde995","path":"sprites/s_fullmoon2/s_fullmoon2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_fullmoon2","path":"sprites/s_fullmoon2/s_fullmoon2.yy",},"resourceVersion":"1.0","name":"7f8b1ad6-f7fa-428e-9d5b-6655d1338d56","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"s_campfire","path":"sprites/s_campfire/s_campfire.yy",},
+    "spriteId": {"name":"s_fullmoon2","path":"sprites/s_fullmoon2/s_fullmoon2.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"02fb9e19-c6ff-46e8-b7b1-d6c118aa16d3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e3c26207-a929-45f3-b6df-0b60da585ece","path":"sprites/s_campfire/s_campfire.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b4556ce9-4ef5-4d07-9b98-26dfe1d31ce1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7f8b1ad6-f7fa-428e-9d5b-6655d1338d56","path":"sprites/s_fullmoon2/s_fullmoon2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"s_campfire","path":"sprites/s_campfire/s_campfire.yy",},
+    "parent": {"name":"s_fullmoon2","path":"sprites/s_fullmoon2/s_fullmoon2.yy",},
     "resourceVersion": "1.4",
-    "name": "s_campfire",
+    "name": "s_fullmoon2",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"f2fe1303-15a5-4d3b-b88b-2c9c8c1e7a24","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"5f78ec76-10aa-4892-ab0b-28cadbfde995","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/bakgrounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "s_campfire",
+  "name": "s_fullmoon2",
   "tags": [],
   "resourceType": "GMSprite",
 }

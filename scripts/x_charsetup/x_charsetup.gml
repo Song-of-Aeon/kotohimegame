@@ -52,6 +52,27 @@ nu talksprite("JDGMOKU", "me", z++);
 nu talksprite("JDGKAGU", "me", z++);
 nu talksprite("JDGALL", "me", z++);
 
+#macro KME global.textguy[?" me "]
+nu chardata(" Me ", s_kaguya);
+var z=0;
+nu talksprite("NORMAL", " me ", z++);
+nu talksprite("DEF", " me ", z++);
+nu talksprite("AWW", " me ", z++);
+nu talksprite("FUFUFU", " me ", z++);
+nu talksprite("YAY", " me ", z++);
+nu talksprite("COCKY", " me ", z++);
+nu talksprite("NEUTRAL", " me ", z++);
+nu talksprite("MAD", " me ", z++);
+nu talksprite("MADEARTH", " me ", z++);
+nu talksprite("WAAH", " me ", z++);
+nu talksprite("SHOCKED", " me ", z++);
+nu talksprite("SMUG", " me ", z++);
+nu talksprite("WINKY", " me ", z++);
+nu talksprite("WINKYHEART", " me ", z++);
+nu talksprite("WOAH", " me ", z++);
+nu talksprite("CRY", " me ", z++);
+nu talksprite("CRYSMILE", " me ", z++);
+nu talksprite("LOVEY", " me ", z++);
 
 
 
@@ -148,9 +169,9 @@ nu talksprite("BRUH", "mokou", z++);
 nu talksprite("SAD", "mokou", z++);
 nu talksprite("SADSMILE", "mokou", z++);
 nu talksprite("SURPRISED", "mokou", z++);
-nu talksprite("LOVEY", "mokou", z++);
 nu talksprite("LOVEYSAD", "mokou", z++);
 nu talksprite("CRYLAUGH", "mokou", z++);
+nu talksprite("LOVEY", "mokou", z++);
 
 
 

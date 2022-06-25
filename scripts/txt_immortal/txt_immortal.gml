@@ -3,7 +3,7 @@ function txt_immortal() {
 	msg = msglang([
 	
 	txt("Take that!"),
-	txt("Of course. The hourai elixir. Irreversible, unbreakable immortality."),
+	txt("Of course. The effects of the Hourai Elixir. Irreversible, unbreakable immortality."),
 	txt("That's correct."),
 	txt("I cannot age or be killed."),
 	txt("I am exiled from all pure lands, the moon nor the Netherworld will accept me."),
@@ -22,7 +22,7 @@ function txt_immortal() {
 	txt("But all of them loathe certain deaths... the deaths of their loved ones."),
 	txt("There is nobody who wants their truest love to die before them."),
 	txt("Kaguya, you understand correctly. Your immortality is not a curse."),
-	txt("For anyone's love to be invincible... it is such a presumptuous wish that few would have such ideations."),
+	txt("For anyone's love to be invincible... it is a wish presumptuous to the point that few would have such ideations."),
 	txt("Yet you live it. If you were to find love, your inheritance of the Hourai would only be celebrated."),
 	txt("...Kotohime, you..."),
 	txt("Obviously!"),

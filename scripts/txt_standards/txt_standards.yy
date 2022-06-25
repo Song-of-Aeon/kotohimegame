@@ -6,7 +6,7 @@
     "path": "folders/Dialogue/technical/KOTOHIME GAMING/debate.yy",
   },
   "resourceVersion": "1.0",
-  "name": "txt_evitable",
+  "name": "txt_standards",
   "tags": [],
   "resourceType": "GMScript",
 }

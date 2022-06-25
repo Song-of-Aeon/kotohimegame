@@ -15,7 +15,7 @@ function txt_liar() {
 	txt("Then, isn't it-"),
 	txt("You fool!"),
 	txt("Yet, it is more than that history that I would be guilty of denying."),
-	txt("Kotohime, you must recall. There is something else that \"Tsukiko\" could never have."),
+	txt("Kotohime, you must recall. There is something else about myself that \"Tsukiko\" could never have."),
 	txt("Y-yes, of course..."),
 	txt("...Tell it to me."),
 	

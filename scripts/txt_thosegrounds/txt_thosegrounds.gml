@@ -5,7 +5,7 @@ function txt_thosegrounds() {
 	txt("Take that!"),
 	txt("This is what we can overcome!"),
 	txt("...So? What about that can you change?"),
-	txt("You know~"),
+	txt("You know..."),
 	txt("The whole thing~"),
 	txt("Don't kid with me."),
 	txt("(Damn.)"),

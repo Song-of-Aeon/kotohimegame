@@ -80,6 +80,7 @@ function st_textnvl() {
 		    }
 		    xpos += sizemult;
 		}
+		set_font_style(font);
 		lb++;
 		clr = c_white;
 		var clrdur = 0;

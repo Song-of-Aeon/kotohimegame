@@ -760,6 +760,7 @@
     {"id":{"name":"function_append","path":"scripts/function_append/function_append.yy",},"order":31,},
     {"id":{"name":"array_remove","path":"scripts/array_remove/array_remove.yy",},"order":46,},
     {"id":{"name":"o_title2","path":"objects/o_title2/o_title2.yy",},"order":6,},
+    {"id":{"name":"s_elly","path":"sprites/s_elly/s_elly.yy",},"order":33,},
     {"id":{"name":"c_drawshop","path":"scripts/c_drawshop/c_drawshop.yy",},"order":2,},
     {"id":{"name":"s_constellationlink","path":"sprites/s_constellationlink/s_constellationlink.yy",},"order":4,},
     {"id":{"name":"SETTINGS2","path":"rooms/SETTINGS2/SETTINGS2.yy",},"order":6,},
@@ -1027,7 +1028,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"s_kstart.pdn","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.5.0.8",
+    "IDEVersion": "2022.500.0.121",
   },
   "resourceVersion": "1.5",
   "name": "KOTOHIMEGAME",

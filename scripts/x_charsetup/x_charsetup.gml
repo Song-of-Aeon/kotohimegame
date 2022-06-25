@@ -194,6 +194,17 @@ nu talksprite("NORMAL", "eirin", 0);
 nu chardata("Gengetsu", s_null, se_null);
 nu talksprite("NORMAL", "gengetsu", 0);
 
+#macro ELLY global.textguy[?"elly"]
+nu chardata("Elly", s_null, se_null);
+var z=0;
+nu talksprite("HAPPY", "elly", z++);
+nu talksprite("BORED", "elly", z++);
+nu talksprite("ANNOYED", "elly", z++);
+nu talksprite("CONFUSED", "elly", z++);
+nu talksprite("SURPRISED", "elly", z++);
+nu talksprite("FAKELAUGH", "elly", z++);
+nu talksprite("BLUSH", "elly", z++);
+
 
 
 function chardata(name_="drip", sprite_=s_drip, talksound_=se_null, textspeed_=.5, namecolor_=c_white, texteffects_=[]) constructor {

@@ -143,7 +143,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 200,
-    "yorigin": 150,
+    "yorigin": 360,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"s_kodohimey","path":"sprites/s_kodohimey/s_kodohimey.yy",},

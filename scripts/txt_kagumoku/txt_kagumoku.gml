@@ -28,7 +28,7 @@ function txt_kagumoku() {
 	txt("Though, one thing had stayed mostly the same..."),
 	
 	//boom punchy impact frame and big BOOM fire sound effect
-	txt("KAGUYAAAAA!", MOKOU.DEF, u, s_bambooday2, function() {textbox_set_type(global.textdefault)}),
+	txt("KAGUYAAAAA!", MOKOU.DEF, u, s_bambooday2, function() {textbox_set_type(global.textzpix)}),
 	txt("COME BACK HERE, YOU COWARD!", MOKOU.DEF, u, u, function() {music_set(mus.graving)}),
 	
 	ptxt(),
@@ -45,7 +45,7 @@ function txt_kagumoku() {
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN),
 	
-	txt("Oh Mokou, I can't truly participate yet. Your attacks weren't *exciting* enough.", KAGUYA.FUFUFU, SPRITEPOS.LEFT, s_bambooday2, function() {textbox_set_type(global.textdefault)}),
+	txt("Oh Mokou, I can't truly participate yet. Your attacks weren't *exciting* enough.", KAGUYA.FUFUFU, SPRITEPOS.LEFT, s_bambooday2, function() {textbox_set_type(global.textzpix)}),
 	txt("What the hell are you talking about!?", MOKOU.HMPH, SPRITEPOS.RIGHT),
 	txt("I've kicked you so hard your whole body went flying through three dozen trees, and thrown seventy-two fireballs at you!", MOKOU.MAD),
 	txt("Oh yes, those were very violent and painful. But I haven't been seeing the fun yet~~!", KAGUYA.FUFUFU),
@@ -165,7 +165,7 @@ function txt_kagumoku() {
 	txt("It was great fun like always, but something laid on my mind heavily that night."),
 	txt("I had suspected it for years now, but what I saw that day pushed it to the forefront."),
 	
-	txt("Hey... why do Kaguya and Mokou fight like that?", ME.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Hey... why do Kaguya and Mokou fight like that?", ME.DEF, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Beats me.", REISEN.DEF),
 	txt("They've been doing it for 300 years, or so I've heard. Mokou's still pissed at Kaguya from something back in the 9th century.", REISEN.DEF),
 	txt("But it's not like those fights actually accomplish anything.", REISEN.UGGH),
@@ -244,7 +244,7 @@ function txt_kagumoku() {
 	ptxt(),
 	txt("...|w0222 |- ", u, u, s_eienteihall3, function() {music_set(mus.keyboard)}),
 	
-	txt("Ooh, let's see... what about chain reactions?", KANA.YAY, SPRITEPOS.CENTER, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Ooh, let's see... what about chain reactions?", KANA.YAY, SPRITEPOS.CENTER, u, function() {textbox_set_type(global.textzpix)}),
 	txt("If one enemy explodes close to another, they all explode one by one and kill each other!", KANA.COCKY),
 	txt("That's the coolest thing I've ever heard!", ME.YAY, SPRITEPOS.RIGHT),
 	txt("Putting that in right now!", ME.WINKY),	
@@ -277,7 +277,7 @@ function txt_kagumoku() {
 	ptxt(),
 	txt("... |w0164 |- ", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	
-	txt("Ooh, what about enemy attacks?", KANA.YAY, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Ooh, what about enemy attacks?", KANA.YAY, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("What are those?", ME.YAY, SPRITEPOS.MIDLEFT),
 	txt("You can fill up your gauge to throw a clone of yourself at the other player!", KANA.DEF),
 	txt("And the clone does a bunch of attacks that are even harder to dodge than your bomb attacks!", KANA.COCKY),
@@ -290,7 +290,7 @@ function txt_kagumoku() {
 	ptxt(),
 	txt("... |w0222 |- ", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	
-	txt("This is just like old times, isn't?", KANA.YAY, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("This is just like old times, isn't?", KANA.YAY, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("What do you mean?", ME.DEF, SPRITEPOS.MIDLEFT),
 	txt("We haven't been together like this in years.", KANA.WINKY),
 	txt("Just us two.", KANA.YAY),
@@ -307,7 +307,7 @@ function txt_kagumoku() {
 	txt("... |w0202 |- ", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.MIDLEFT),
 	
-	txt("You know, I've been thinking lately. About how we got here.", KANA.DISTANT, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("You know, I've been thinking lately. About how we got here.", KANA.DISTANT, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Ever since that morning we watched the sunrise.", KANA.DISTANT),	
 	txt("It's strange, you know? How much feelings like that can change.", KANA.DEF),
 	txt("At first, Reisen was my second choice. Even after I confessed, our love felt... lesser.", KANA.AWW),
@@ -350,7 +350,7 @@ function txt_kagumoku() {
 	ptxt(),
 	txt("The next day...", u, u, s_eienteihall1, function() {music_set(mus.dancers5)}),
 	
-	txt("So what am I here for, exactly?", MOKOU.NEUTRAL, SPRITEPOS.CENTER, u, function() {textbox_set_type(global.textdefault)}),
+	txt("So what am I here for, exactly?", MOKOU.NEUTRAL, SPRITEPOS.CENTER, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Fun and games for the whole family!", ME.YAY, SPRITEPOS.RIGHT),
 	txt("Heh. Alright.", MOKOU.DEF),
 	txt("By \"the whole family\" do you mean Kaguya and I?", MOKOU.DEF),
@@ -412,7 +412,7 @@ function txt_kagumoku() {
 	txt("I quickly explained a little bit about the game to Kaguya and Mokou, for the sake of expedience."),
 	
 	ntxt(0, u, u, u, function() {music_set(mus.sunnyday)}),
-	txt("Ladies and ladies, welcome to the first ever CLASH OF THE MOON AND THE SUN!!", ME.YAY, SPRITEPOS.CENTER, s_eienteihall2, function() {textbox_set_type(global.textdefault)}),
+	txt("Ladies and ladies, welcome to the first ever CLASH OF THE MOON AND THE SUN!!", ME.YAY, SPRITEPOS.CENTER, s_eienteihall2, function() {textbox_set_type(global.textzpix)}),
 	txt("An event where we make your undying wishes come true!", ME.WINKY),
 	//yay clapping sound effect
 	txt("We have gathered our two fine contestants here today for the greatest competition in the whole House of Eternity!", ME.DEF),
@@ -435,7 +435,7 @@ function txt_kagumoku() {
 	txt("Good! Here is your arena.", ME.DEF, u, s_peeceescreen, function() {textbox_set_type(global.textnvl)}),
 	txt("It's a new type of interface known as the \"Video Game!\"", ME.DEF),
 	txt("Each of you must compete to see who can survive the longest in a simulated danmaku battle.", ME.DEF),
-	txt("Also, due to completely unavoidable hardware limitations, the two of you must share the same keyboard to play.", ME.YAY, SPRITEPOS.RIGHT, s_eienteihall2, function() {textbox_set_type(global.textdefault)}),
+	txt("Also, due to completely unavoidable hardware limitations, the two of you must share the same keyboard to play.", ME.YAY, SPRITEPOS.RIGHT, s_eienteihall2, function() {textbox_set_type(global.textzpix)}),
 	txt("I hope you don't mind that.", ME.SMUG),
 	txt("Whatever works.", MOKOU.DEF, SPRITEPOS.CENTER),
 	txt("Fufufu.", KAGUYA.FUFUFU, SPRITEPOS.LEFT),
@@ -586,7 +586,7 @@ function txt_kagumoku() {
 	txt("Mokou was a little trickier to judge, but her bouts of anger towards Kaguya seemed more like a shield than a sword."),
 	txt("If I could only push them a little more, the truth would reveal itself."),
 	
-	txt("Little Rabbit, where are you going?", KAGUYA.DEF, SPRITEPOS.MIDLEFT, s_eienteihall1, function() {textbox_set_type(global.textdefault)}),
+	txt("Little Rabbit, where are you going?", KAGUYA.DEF, SPRITEPOS.MIDLEFT, s_eienteihall1, function() {textbox_set_type(global.textzpix)}),
 	txt("Mokou's house. I'm telling her to prepare for Round 2!", ME.YAY, SPRITEPOS.MIDRIGHT),
 	txt("We're gonna do a race this time.", ME.HEHE),
 	txt("Ah, how splendid!", KAGUYA.YAY),
@@ -608,7 +608,7 @@ function txt_kagumoku() {
 	txt("But I could feel nothing but calm as we walked through the trees."),
 	txt("For Kaguya, it seemed a different story. There was a strange tension in her movements, and she seemed to always be looking up."),
 	
-	txt("So, have you found anything cool recently?", ME.DEF, SPRITEPOS.MIDLEFT, s_bambooday, function() {textbox_set_type(global.textdefault)}),
+	txt("So, have you found anything cool recently?", ME.DEF, SPRITEPOS.MIDLEFT, s_bambooday, function() {textbox_set_type(global.textzpix)}),
 	txt("Ahh... several things. The red-white shrine maiden allowed me to ride her turtle. Genji, his name was?", KAGUYA.DEF, SPRITEPOS.MIDRIGHT),
 	txt("As for possessions, that young vampire over the lake gave me a bottle of vintage wine last week. It's roughly 500 years old.", KAGUYA.DEF),
 	txt("Woah!", ME.POG),
@@ -662,7 +662,7 @@ function txt_kagumoku() {
 	txt("They stopped talking for a bit. All I could hear was some faint music and Mokou eating."),
 
 	
-	txt("...", KAGUYA.WAAH, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("...", KAGUYA.WAAH, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("That's it. Kaguya, you go hide.", ME.NEUTRAL, SPRITEPOS.MIDLEFT),
 	txt("Alright.", KAGUYA.AWW),
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
@@ -678,7 +678,7 @@ function txt_kagumoku() {
 	ptxt(),
 	txt("Keine sat inside the house, brick in one hand. She waved at me, and I waved back.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	
-	txt("Don't mind me. I'm only here to deliver a message.", ME.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Don't mind me. I'm only here to deliver a message.", ME.DEF, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Mokou, Round 2 of the contest is tomorrow noon.", ME.HEHE),
 	txt("Throwing it on me once again, aren't you?", MOKOU.BRUH),
 	txt("But this time, it's...", ME.HEHE),
@@ -710,7 +710,7 @@ function txt_kagumoku() {
 	txt("\"Just fine\" isn't enough in a competition. You'll be facing the best of the best!", KEINE.DEF),
 	txt("Somehow, I doubt it.", MOKOU.DEF),
 	
-	ntxt(0070, u, u, s_bambooday, function() {textbox_set_type(global.textdefault)}),
+	ntxt(0070, u, u, s_bambooday, function() {textbox_set_type(global.textzpix)}),
 	txt("Hey, Kaguya.", ME.DEF, SPRITEPOS.LEFT),
 	txt("Hello.", KAGUYA.NEUTRAL, SPRITEPOS.CENTER),
 	txt("Sorry I changed my mind on what we would do.", ME.WINKY),
@@ -733,7 +733,7 @@ function txt_kagumoku() {
 	txt("Our walk to the House of Eternity was slow. Too slow.", u, u, s_bambooupday, function() {textbox_set_type(global.textnvl)}),
 	txt("This time, Kaguya was always looking down."),	
 	
-	txt("Hey, Kaguya. What's in the sky right now?", ME.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Hey, Kaguya. What's in the sky right now?", ME.DEF, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("The sun. Clouds. Fairies.", KAGUYA.DEF),
 	txt("What else?", ME.DEF),
 	txt("...The moon.", KAGUYA.DEF),
@@ -835,7 +835,7 @@ function txt_kagumoku() {
 	txt("Yes, I can see tha-- |w0020 |- ", KAGUYA.MAD),
 	txt("--Mokou, your finger!", KAGUYA.SHOCKED),
 	txt("Oh, this?", MOKOU.NEUTRAL),
-	txt("Don't worry about it. I'm not gonna get let any blood on the food.", MOKOU.DEF),	
+	txt("Don't worry about it. I'm not gonna let any blood on the food.", MOKOU.DEF),	
 	txt("Doesn't it hurt?", KAGUYA.AWW),
 	txt("Of course. But...", MOKOU.NEUTRAL),
 	txt("Just one teensy second...", KAGUYA.FUFUFU),
@@ -972,7 +972,7 @@ function txt_kagumoku() {
 	txt("Just as I was about to say goodbye...", u, u, s_kitchen, function() {music_set(mus.sunrise)}),
 	
 	ntxt(00, KAGUYA.YAY, SPRITEPOS.RIGHT),
-	txt("Hey, Princess?", MOKOU.NEUTRAL, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Hey, Princess?", MOKOU.NEUTRAL, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Yeah?", ME.YAY, SPRITEPOS.CENTER),
 	txt("Do you mind if I stay here a little longer?", MOKOU.DEF),
 	txt("For what?", ME.KAAAY),
@@ -1049,7 +1049,7 @@ function txt_kagumoku() {
 	
 	ntxt(000, ME.HEHE, SPRITEPOS.RIGHT),
 	ntxt(000, KAGUYA.DEF, SPRITEPOS.CENTER),
-	txt("See you two later.", MOKOU.DEF, SPRITEPOS.LEFT, s_eientei2, function() {textbox_set_type(global.textdefault)}),
+	txt("See you two later.", MOKOU.DEF, SPRITEPOS.LEFT, s_eientei2, function() {textbox_set_type(global.textzpix)}),
 	txt("Thank you for coming to this. It was very fun.", KAGUYA.DEF),
 	txt("It was.", MOKOU.DEF),
 	txt("I really like spending time with--|w0042 |- ", MOKOU.YAY),
@@ -1073,7 +1073,7 @@ function txt_kagumoku() {
 	txt("Ah--", KAGUYA.WOAH),
 	txt("\"Love\" is a rather intense word...", KAGUYA.AWW),
 	txt("You murder each other regularly. I don't think intensity is that taboo for you.", ME.SMUG),
-	txt("It's different then.", KAGUYA.NEUTRAL),
+	txt("It's different there.", KAGUYA.NEUTRAL),
 	txt("It is?", ME.KAAAY),
 	txt("...", KAGUYA.WAAH),
 	txt("I gotta go now. My parents are gonna be real mad at me.", ME.TINYSMIRK),
@@ -1091,7 +1091,7 @@ function txt_kagumoku() {
 	ntxt(00, KANA.NEUTRAL, SPRITEPOS.MIDRIGHT),
 	txt("I asked Kana to come with me... just like old times."),
 	ntxt(00, ME.HEHE, SPRITEPOS.MIDLEFT),
-	txt("...I don't understand those two at all.", KANA.AWW, SPRITEPOS.MIDRIGHT),
+	txt("...I don't understand those two at all.", KANA.AWW, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Do they like each other or not?", KANA.NEUTRAL, SPRITEPOS.MIDRIGHT),
 	txt("They...", ME.DISAPOINT),
 	txt("It's not that simple, is it?", KANA.AWW),
@@ -1103,7 +1103,7 @@ function txt_kagumoku() {
 	txt("Hey! Over here!", MOKOU.DEF),
 	ntxt(000, ME.DEF, SPRITEPOS.HIDDEN),
 	ntxt(000, KANA.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.campfire)}),
-	txt("My bad, I didn't think anyone would come over.", MOKOU.SMUG, SPRITEPOS.RIGHT, s_campfire, function() {textbox_set_type(global.textdefault)}),
+	txt("My bad, I didn't think anyone would come over.", MOKOU.SMUG, SPRITEPOS.RIGHT, s_campfire, function() {textbox_set_type(global.textzpix)}),
 	txt("Ooh! What are you doing?", ME.POG),
 	txt("Making real yakitori.", MOKOU.SMUG),
 	txt("Want some?", MOKOU.YAY),
@@ -1203,24 +1203,31 @@ function txt_kagumoku() {
 	txt("The full moon rose and fell without a single sound."),
 	
 	ptxt(),
-	txt("... |w0200 |- ", u, u, s_black, function() {music_set(mus.null)}),
+	txt("... |w0200 |- ", u, u, s_black),
 	
 	ptxt(),
 	txt("The night of a full moon, and a night of rain.", u, u, s_eienteihall3, function() {music_set(mus.rainthunder1)}),
-	txt("Normally this would generate excitement from Reisen and Kana, but the sounds seemed to cast a spell of sleep on them."),
-	txt("Despite everything, I was not bored. Simply watching the faint moon was enough at this time."),
+	txt("The moon shone through the clouds with a strange glow. The glow felt... nostalgic. Like something I had not felt in centuries."),
+	txt("This was not the feeling I had when the Moon's emissaries came to take me back. This was... more akin to when I had first gone to Earth."),
+	txt("Normally this would generate excitement from Reisen and Eirin, but the sounds seemed to cast a spell of sleep on them."),
+	
 	ptxt(),
 	txt("Would Little Rabbit come here, I wondered? She loved the time just after it rains."),
 	txt("I doubted it. From the way she described them, her parents were tired of her little adventures. She had toed the line for a long while, but she could not \"sneak out\" every day."),
 	txt("Besides, I would likely not time to lounge. Tonight, something strange was occurring."),
-	ptxt(),
-	txt("The moon shone through the clouds with a strange glow. The glow felt... strange, like something I had not felt in centuries."),
-	txt("This was not the feeling I had when the Moon's emissaries came to take me back. This was... more akin to when I had first gone to Earth."),
+	txt("The House of Eternity seemed... emptier tonight. As though its soul had been plucked out and dropped somewhere."),
+	txt("Each hall was total darkness, each step silent. I couldn't stand it."),
 	
-	txt("...", KME.NEUTRAL, SPRITEPOS.CENTER, u, function() {textbox_set_type(global.textdefault)}),
-	txt("I cannot stay here any longer.", KME.AWW),
-	txt("...Someone is waiting for me.", KME.NEUTRAL),
+	txt("Hey Kaguya.", KANA.DEF, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textzpix)}),
+	txt("Good night.", KME.NEUTRAL, SPRITEPOS.RIGHT),
+	txt("I'm bored. Wanna play Chesshogi?", KANA.YAY),
+	txt("I shall pass tonight. It's about time to leave.", KME.NEUTRAL),
+	txt("Someone is waiting for me.", KME.FUFUFU),
+	txt("...I see.", KANA.NEUTRAL),
+	txt("Good luck.", KANA.AWW),
+	txt("...", KME.AWW),
 	
+	ntxt(0, KANA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
 	ptxt(),
 	txt("Without a sound, I left the House of Eternity.", u, u, s_fullmoon1, function() {textbox_set_type(global.textnvl)}),
@@ -1228,7 +1235,7 @@ function txt_kagumoku() {
 	txt("My search was not long before I found her."),
 	txt("The one who wished to see me."),
 	
-	txt("Hello there, Mokou.", KME.FUFUFU, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Hello there, Mokou.", KME.FUFUFU, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Hey.", MOKOU.HMPH, SPRITEPOS.MIDLEFT),
 	txt("You ready?", MOKOU.HMPH),
 	txt("If you mean to fight...", KME.AWW),
@@ -1238,7 +1245,7 @@ function txt_kagumoku() {
 	txt("I'm not here to fight. I just need tell you something.", KME.NEUTRAL),
 	txt("Mokou, I...|w0060 I lo-- |-", KME.AWW),
 	txt("Save your jokes for afterwards.", MOKOU.HMPH),
-	txt("Or even better, never make them at all.", MOKOU.HMPH),
+	txt("Or even better, don't make them at all.", MOKOU.HMPH),
 	txt("It's not...", KME.WAAH),
 	txt("I'm not in the mood for it, Kaguya.", MOKOU.MAD),
 	txt("...I see.", KME.NEUTRAL),
@@ -1292,8 +1299,8 @@ function txt_kagumoku() {
 	txt("S-stop lying. It's not like you see us as equals.", MOKOU.HMPH),
 	txt("You keep calling me a \"foolish earthling\" every other blow.", MOKOU.HMPH),
 	txt("How could you possibly understand me if that's what I am to you?", MOKOU.MAD),
-	txt("The moon has been far away from me for a long time. I've learned to live among these \"earthlings\" and see them as equals.", KME.AWW),
-	txt("I kept it up for the sake of tradition, but...", KME.WAAH),
+	txt("The moon has been far away from me for a long time. I've learned to live among these \"earthlings.\"", KME.NEUTRAL),
+	txt("The distinction between you and I was arbitrary from the start. I kept the pretense up for the sake of tradition, but...", KME.AWW),
 	txt("I'm an earthling now. A human, just like you.", KME.LOVEY),
 	txt("...I see.", MOKOU.SAD),
 	
@@ -1304,7 +1311,7 @@ function txt_kagumoku() {
 	
 	
 	ntxt(0, MOKOU.SAD, SPRITEPOS.LEFT),	
-	txt("It's strange... I've been wasting my life.", KME.AWW, SPRITEPOS.CENTER),
+	txt("It's funny, looking back... I've been wasting my life.", KME.AWW, SPRITEPOS.CENTER),
 	txt("I spent all these years cooped up inside a cage of my own making.", KME.WAAH),
 	txt("But now that I see the outside...", KME.DEF),
 	txt("It's better than I could've imagined.", KME.YAY),
@@ -1316,7 +1323,7 @@ function txt_kagumoku() {
 	//5TH SPELLCARD
 	//BACHIKUUUU
 		
-	ntxt(0, KME.DEF, SPRITEPOS.RIGHT),
+	ntxt(0, KME.WAAH, SPRITEPOS.RIGHT),
 	txt("Please, Kaguya...", MOKOU.LOVEYSAD, SPRITEPOS.LEFT),
 	txt("I can't.", MOKOU.LOVEYSAD),
 	txt("Do you know how much time I spent in hiding, or being chased, or in constant battles?", MOKOU.LOVEYSAD),
@@ -1335,8 +1342,8 @@ function txt_kagumoku() {
 	ntxt(100, MOKOU.DEF, SPRITEPOS.HIDDEN),	
 	
 	txt("Kaguya...", MOKOU.LOVEYSAD, SPRITEPOS.MIDLEFT),
-	txt("Mokou, I know.", KAGUYA.AWW),
-	txt("I know we've started off on a terrible foot, and that you have every reason to despise me.", KME.LOVEY, SPRITEPOS.MIDRIGHT),
+	txt("Mokou, I know.", KME.AWW, SPRITEPOS.MIDRIGHT),
+	txt("I know we've started off on a terrible foot, and that you have every reason to despise me.", KME.LOVEY),
 	txt("I know you have gone through centuries of living, with all the memories and experience that comes with.", KME.LOVEY),
 	txt("I know that I have spent far too long in one place, afraid to truly live.", KME.LOVEY),
 	txt("But at the end of the day, we're both children!", KME.AWW),
@@ -1351,7 +1358,7 @@ function txt_kagumoku() {
 	//function() {music_set(mus.selene)}),
 	
 	ntxt(0, KME.CRY, SPRITEPOS.MIDRIGHT),
-	ntxt(400, MOKOU.SAD, SPRITEPOS.MIDLEFT, s_fullmoon2, function() {music_set(mus.selene)}),	
+	ntxt(400, MOKOU.SAD, SPRITEPOS.MIDLEFT, s_fullmoon2),
 	
 	txt("...", MOKOU.SADSMILE),
 	txt("Kaguya, you...", MOKOU.YAY),
@@ -1387,40 +1394,40 @@ function txt_kagumoku() {
 	txt("But whether or not that's where it started...", KME.AWW),
 	txt("No matter the origin, I believe we can learn to truly love each other.", KME.YAY),
 	txt("In a way, we're lucky. We have all of eternity to figure it out.", KME.FUFUFU),
-	txt("...Guess so.", MOKOU.YAY),
-	txt("But... are you sure you want to do this now? We may live forever, but... forever is only a moment.", MOKOU.LOVEY),
-	txt("We'll change, and drift apart, and get back together, and lose everything we love.", MOKOU.SAD),
-	txt("We'll see the world crumble apart before our very eyes.", MOKOU.SAD),
-	txt("And when there's nothing left, it'll only be us, floating in an endless void and losing our minds.", MOKOU.SAD),
-	txt("We'll have nothing but each other.", MOKOU.SADSMILE),
-	txt("...I know.", KME.AWW),
-	txt("We'll have each other.", KME.CRY),
-	txt("...Isn't that wonderful?", KME.CRYSMILE),
-	txt("...", MOKOU.LOVEYSAD),
-
-	
+	txt("Guess so.", MOKOU.YAY),
+	txt("I'm... scared, honestly.", MOKOU.LOVEYSAD),
+	txt("This feeling might seem like forever, but... forever is only a moment.", MOKOU.LOVEY),
+	ntxt(0, KME.AWW, SPRITEPOS.MIDRIGHT),
+	txt("We'll become unrecognizable, and drift apart.", MOKOU.NEUTRAL),
+	txt("Maybe we'll get back together, then be back at each other's throats within a thousand years.", MOKOU.NEUTRAL),
+	txt("Friends will come and go, and we'll have no choice but to move on. One day, we'll see the world fall apart before our eyes. ", MOKOU.SAD),
+	txt("And when it's all over, it'll only be us, floating in an endless void and losing our minds.", MOKOU.SADSMILE),
+	txt("We'll have nothing.", MOKOU.SAD),
+	txt("...", KME.CRY),
+	txt("...No, Mokou.", KME.CRY),
+	txt("We'll have each other.", KME.CRYSMILE),
+	//txt("Isn't that wonderful?", KME.CRYSMILE),
+	txt("...", MOKOU.LOVEYSAD),	
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
 	ntxt(69, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	
 	ptxt(),
-	txt("Mokou's eyes changed.", u, u, u, function() {textbox_set_type(global.textnvl)}),
-	txt("It was like she saw a glimpse into the future, through all of eternity."),
-	txt("She was deathly still then, taking in the knowledge of our lives together."),
+	txt("Mokou's eyes changed. She froze, and her eyes seemed to lose mine.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("It was like she saw a glimpse into the future, and our lives together."),
+	txt("She was deathly still then, a million miles away. She was seeing something, from now through the edge of eternity."),
 	ptxt(),
-	txt("And then the spell was broken, and Mokou looked into my eyes, and she began to quiver."),
+	txt("And then Mokou saw me, and the spell was broken. She looked into my eyes, and she began to quiver."),
 	txt("Despite her best efforts, tears streaked down her face."),	
 	txt("Without thinking, I brought a hand to her cheek."),
 	ptxt(),
 	txt("But before it reached, I was in her arms."),
-	txt("Her shoulders heaved with each sob, resounding through the sky. As if afraid that I would crumble to dust, she held on as tight as she could."),
+	txt("Her shoulders heaved with each sob that resounded through the sky. As if afraid that I would crumble to dust, she held on as tight as she could."),
 	txt("Stunned by the sudden embrace, I simply froze. Those three words I wanted to say were stuck in my throat. But no words would be enough here-- all I could do was return the favor."),
 	ptxt(),
 	txt("So I wrapped my arms around her, and cried into her chest."),
-	txt("Our tears fell across our bodies, mixing together."),
-	ptxt(),
 	txt("It was only a moment... but this moment was forever."),
 	
-	txt("#END OF KAGUYAXMOKOU STORY|w9999", u, u, s_black, function() {textbox_set_type(global.textdefault)}),
+	txt("#END OF KAGUYAXMOKOU STORY|w9999", u, u, s_black, function() {textbox_set_type(global.textzpix)}),
 	
 	
 	

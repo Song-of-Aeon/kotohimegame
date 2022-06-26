@@ -28,7 +28,7 @@ function txt_freedom() {
 	txt("Let us be off, then.", KAGUYA2.NORMAL),
 	txt("Ah... flight.", KOTOHIME.THINKING),
 	txt("...Are you incapable of it?", KAGUYA2.NORMAL),
-	txt("I had simply forgotten about it.", KOTOHIME.THINKING),
+	txt("I had simply not expected it.", KOTOHIME.THINKING),
 	txt("How does one...", KAGUYA2.NORMAL),
 	txt("It is the folly of the noble to look down upon the common man, Kaguya.", KOTOHIME.THINKING),
 	txt("How can we claim to represent the best of the people when we do not walk among them?", KOTOHIME.SMUG),

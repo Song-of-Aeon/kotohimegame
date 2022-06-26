@@ -31,7 +31,7 @@ function txt_oncemore() {
 	txt("You've got a good memory, Kotohime. You already know."),
 	txt("This will continue until you do something about it by yourself."),
 	txt("Nobody around to hear your monologues. Nobody for you get distracted trying to help."),
-	txt("Yet, alone..."),
+	txt("Yet, alone...", KOTOHIME.SOLEMN),
 	txt("I don't know. I can't know. Go be alone."),
 	txt("Here."),
 	txt("|c160160160Chiyuri takes a moment to locate some nearby spirits, and mixes them carefully."),

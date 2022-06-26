@@ -26,11 +26,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "vfx-likes",
-    "path": "folders/Technical/Objects/vfx-likes.yy",
+    "name": "Objects",
+    "path": "folders/Technical/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_theStars",
+  "name": "o_glossary",
   "tags": [],
   "resourceType": "GMObject",
 }

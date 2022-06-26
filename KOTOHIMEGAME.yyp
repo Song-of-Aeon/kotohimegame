@@ -511,6 +511,7 @@
     {"id":{"name":"x_textstyles","path":"scripts/x_textstyles/x_textstyles.yy",},"order":2,},
     {"id":{"name":"s_donationbox","path":"sprites/s_donationbox/s_donationbox.yy",},"order":5,},
     {"id":{"name":"s_discord","path":"sprites/s_discord/s_discord.yy",},"order":9,},
+    {"id":{"name":"o_glossary","path":"objects/o_glossary/o_glossary.yy",},"order":13,},
     {"id":{"name":"o_settings","path":"objects/o_settings/o_settings.yy",},"order":6,},
     {"id":{"name":"s_ofuda","path":"sprites/s_ofuda/s_ofuda.yy",},"order":2,},
     {"id":{"name":"o_damagenumber","path":"objects/o_damagenumber/o_damagenumber.yy",},"order":1,},

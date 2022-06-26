@@ -9,7 +9,7 @@ function txt_alone() {
 	txt("|c160160160Kotohime kicks around some rocks in her stride."),
 	txt("...", KOTOHIME.HAPPY),
 	txt("And thus it ends! The plot to grant the isolated princess from the moon an opportunity of romance!", KOTOHIME.EXCITED),
-	txt("The kind soul Kotohime has fully extended her capability, and has set the stage for an unknowable but unforetellable future to take place.", KOTOHIME.LMAO),
+	txt("The kind soul Kotohime has fully extended her capability, and has set the stage for an unknowable but unprecedented future to take place.", KOTOHIME.LMAO),
 	txt("Is it not incredible!? Is it not ridiculous that an ephemeral human such as herself may touch, may mold an eternal life in any capacity?", KOTOHIME.WINK),
 	txt("History books will rot. Statues will crumble. Not billions, INFINITE lives will pass during the existence of that woman.", KOTOHIME.EXCITED),
 	txt("She will have lived infinite lives. She is worth infinite lives.", KOTOHIME.WINK),

@@ -10,4 +10,5 @@ nu pattern_ext(function() {
 	if ncm(105) { //every 105 frames
 		c_shootcircle(x, y, 1, seed.next(360), 16*4, bul.circle, c_red); //shoot a circle of red bullets in a random direction. seed.next is a function that picks a random number between 0 and the given number
 	}
+	
 }, 600, 70, "touhou", SPELL.CARD, DIFFICULTY.HARD, "Flower Sign [Gorgeous Sweet Flower]"); //600 hp, 70 seconds, its character is touhou, its a spellcard for hard difficulty, and its named flower sign whatever

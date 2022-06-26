@@ -466,6 +466,7 @@
     {"id":{"name":"st_textnvl","path":"scripts/st_textnvl/st_textnvl.yy",},"order":8,},
     {"id":{"name":"cl_blackmarketwo","path":"scripts/cl_blackmarketwo/cl_blackmarketwo.yy",},"order":2,},
     {"id":{"name":"s_bambooday2","path":"sprites/s_bambooday2/s_bambooday2.yy",},"order":31,},
+    {"id":{"name":"pt_bowap2","path":"scripts/pt_bowap2/pt_bowap2.yy",},"order":8,},
     {"id":{"name":"pt_aunnnon3","path":"scripts/pt_aunnnon3/pt_aunnnon3.yy",},"order":2,},
     {"id":{"name":"s_20","path":"sprites/s_20/s_20.yy",},"order":11,},
     {"id":{"name":"s_live","path":"sprites/s_live/s_live.yy",},"order":12,},

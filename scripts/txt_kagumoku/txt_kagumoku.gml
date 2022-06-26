@@ -27,7 +27,12 @@ function txt_kagumoku() {
 	
 	txt("Though, one thing had stayed mostly the same..."),
 	
+	//ntxt(0, u, u, u, function() {audio_play_sound(snd_bomb, 0, false)}),
+	
 	//boom punchy impact frame and big BOOM fire sound effect
+	
+	
+	
 	txt("KAGUYAAAAA!", MOKOU.DEF, u, s_bambooday2, function() {textbox_set_type(global.textzpix)}),
 	txt("COME BACK HERE, YOU COWARD!", MOKOU.DEF, u, u, function() {music_set(mus.graving)}),
 	
@@ -62,21 +67,39 @@ function txt_kagumoku() {
 	txt("Come to me, archenemy!", KAGUYA.COCKY),
 	txt("Gladly!", MOKOU.COCKY),
 	
+	ntxt(0, KAGUYA.NEUTRAL, SPRITEPOS.HIDDEN),
+	ntxt(0, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN),
+	ntxt(21, u, u, u, function() {audio_play_sound(snd_attack1, 0, false)}),
+	ntxt(11, u, u, u, function() {audio_play_sound(snd_attack2, 0, false)}),
+	ntxt(09, u, u, u, function() {audio_play_sound(snd_attack1, 0, false)}),
+	ntxt(32, u, u, u, function() {audio_play_sound(snd_game_explosion9, 0, false)}),
+	ntxt(11, u, u, u, function() {audio_play_sound(snd_attack1, 0, false)}),
+	ntxt(11, u, u, u, function() {audio_play_sound(snd_attack1, 0, false)}),
+	ntxt(31, u, u, u, function() {audio_play_sound(snd_attack2, 0, false)}),
+	ntxt(21, u, u, u, function() {audio_play_sound(snd_attack1, 0, false)}),
+	ntxt(26, u, u, u, function() {audio_play_sound(snd_attack2, 0, false)}),
+	ntxt(42, u, u, u, function() {audio_play_sound(snd_game_explosion9, 0, false)}),
 	//BOOM BAM PAWOOSHY
 	//PICHUUN SHSHK KUWAAABAM
 	//BUREHM PSSSSHHHHHHH-BRUH
 	
-	txt("How does that make you feel!?", MOKOU.COCKY),
+	txt("How does that make you feel!?", MOKOU.COCKY, SPRITEPOS.CENTER),
 	//haha baka writing
 	//i dont feel like swearing so uguu beans
-	txt("Splendid, thank you!", KAGUYA.YAY),
+	txt("Splendid, thank you!", KAGUYA.YAY, SPRITEPOS.RIGHT),
 	txt("I see that you favor more focused, high-power attacks over large blasts.", KAGUYA.DEF),
 	txt("It's an admirable effort, but you can't expect to hit me more than--", KAGUYA.FUFUFU),
 	//BOOM PWAPASH PIQUIUUUM
 	//pichuun and resurect sound
+	ntxt(0, KAGUYA.NEUTRAL, SPRITEPOS.HIDDEN),
+	ntxt(0, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN),
+	ntxt(20, u, u, u, function() {audio_play_sound(snd_shoot1, 0, false)}),
+	ntxt(90, u, u, u, function() {audio_play_sound(snd_full_laser, 0, false)}),
+	ntxt(59, u, u, u, function() {audio_play_sound(snd_game_explosion3, 0, false)}),
+	ntxt(40, u, u, u, function() {audio_play_sound(snd_game_explosion4, 0, false)}),
 	
-	txt("Oh, stop talking and kill me already!", MOKOU.COCKY),
-	txt("...", KAGUYA.MAD),
+	txt("Stop talking and kill me already!", MOKOU.COCKY, SPRITEPOS.LEFT),
+	txt("...", KAGUYA.MAD, SPRITEPOS.MIDRIGHT),
 	txt("Gladly.", KAGUYA.MAD),
 	ntxt(0, KAGUYA.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN),
@@ -95,7 +118,16 @@ function txt_kagumoku() {
 		
 	ntxt(0, KANA.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
-	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN),
+	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN, s_bambooday2),
+	
+	
+	ntxt(36, u, u, u, function() {audio_play_sound(snd_punch2c, 0, false)}),
+	ntxt(36, u, u, u, function() {audio_play_sound(snd_middle_kick, 0, false)}),
+	ntxt(17, u, u, u, function() {audio_play_sound(snd_jab, 0, false)}),
+	ntxt(16, u, u, u, function() {audio_play_sound(snd_punch2c, 0, false)}),
+	ntxt(48, u, u, u, function() {audio_play_sound(snd_straight_punch, 0, false)}),
+	ntxt(50, u, u, u, function() {audio_play_sound(snd_game_explosion3, 0, false)}),
+	ntxt(42, u, u, u, function() {audio_play_sound(snd_game_explosion4, 0, false)}),
 	
 	txt("Hey, you're getting better at this whole punching thing!", MOKOU.COCKY, SPRITEPOS.CENTER),
 	txt("You almost made me flinch.", MOKOU.SMUG),
@@ -110,7 +142,76 @@ function txt_kagumoku() {
 	//BWOOOJGODAOJD
 	
 	
-	txt("...|w0099 ", u, u , s_crater),
+	ntxt(30, u, u, u, function() {audio_play_sound(snd_jab, 0, false)}),
+	ntxt(20, u, u, u, function() {audio_play_sound(snd_middle_kick, 0, false)}),
+	ntxt(12, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(11, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(14, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(08, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(19, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(04, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(06, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(06, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(06, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(03, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(03, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(03, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(02, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(02, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(02, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(05, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(04, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(04, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(07, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(07, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(07, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(07, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(02, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(06, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(06, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(06, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(05, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(05, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(05, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(13, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(150, u, u, u, function() {audio_play_sound(snd_falling2a, 0, false)}),
+	ntxt(30, u, u, u, function() {audio_play_sound(snd_explosion2, 0, false)}),
+	
+	txt("...|w0150 |- ", u, u , s_crater),
 	ntxt(0, ME.WHAA, SPRITEPOS.LEFT),
 	ntxt(0, REISEN.UGGH, SPRITEPOS.CENTER),
 	ntxt(0070, KANA.SCARED, SPRITEPOS.RIGHT, s_bambooday),
@@ -123,19 +224,21 @@ function txt_kagumoku() {
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN),
 	
-	txt("You absolutely--|w0040 |- ", KAGUYA.MAD, SPRITEPOS.RIGHT, s_crater),
+	
+	ntxt(0, u, u, u, function() {audio_play_sound(snd_hard_attack, 0, false)}),
+	txt("You absolutely--|w0030 |- ", KAGUYA.MAD, SPRITEPOS.RIGHT, s_crater, function() {audio_play_sound(snd_straight_punch, 0, false)}),
 	ntxt(0, KAGUYA.DEF, SPRITEPOS.HIDDEN),
-	txt("Smug little--|w0040 |- ", MOKOU.MAD, SPRITEPOS.MIDLEFT),
+	txt("Smug little--|w0030 |- ", MOKOU.MAD, SPRITEPOS.MIDLEFT, u, function() {audio_play_sound(snd_kick2, 0, false)}),
 	ntxt(0, MOKOU.DEF, SPRITEPOS.HIDDEN),
-	txt("Brutish--|w0040 |- ", KAGUYA.MAD, SPRITEPOS.RIGHT),
+	txt("Brutish--|w0030 |- ", KAGUYA.MAD, SPRITEPOS.RIGHT, u, function() {audio_play_sound(snd_punch2c, 0, false)}),
 	ntxt(0, KAGUYA.DEF, SPRITEPOS.HIDDEN),
-	txt("Cowardly--|w0040 |- ", MOKOU.MAD, SPRITEPOS.MIDLEFT),
-	ntxt(0080, MOKOU.DEF, SPRITEPOS.HIDDEN),
+	txt("Cowardly--|w0030 |- ", MOKOU.MAD, SPRITEPOS.MIDLEFT, u, function() {audio_play_sound(snd_heavy_punch3, 0, false)}),
+	ntxt(0050, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	ntxt(0, KAGUYA.MADEARTH, SPRITEPOS.RIGHT),
-	ntxt(200, MOKOU.MADMOON, SPRITEPOS.MIDLEFT),
+	ntxt(300, MOKOU.MADMOON, SPRITEPOS.MIDLEFT),
 	//BOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOM
 	ntxt(0, KAGUYA.DEF, SPRITEPOS.HIDDEN),
-	ntxt(37, MOKOU.DEF, SPRITEPOS.HIDDEN),
+	ntxt(57, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	
 	ntxt(0, KANA.NEUTRAL, SPRITEPOS.RIGHT, s_bambooday),
 	ntxt(0, REISEN.DEF, SPRITEPOS.CENTER),
@@ -462,7 +565,7 @@ function txt_kagumoku() {
 	txt("That didn't make your cheeks any less red!", KAGUYA.WINKY),
 	txt("I was on fire too!", MOKOU.REALLYMAD),
 	
-	txt("Are you ready!?", ME.DEF, SPRITEPOS.LEFT, u, function() {music_set(mus.flight)}),
+	txt("Are you ready!?", ME.DEF, SPRITEPOS.LEFT),
 	txt("Absolutely!", KAGUYA.YAY),
 	txt("Ready as I'll ever be...", MOKOU.NEUTRAL),
 
@@ -792,7 +895,7 @@ function txt_kagumoku() {
 	
 	txt("Now first is the flour, then the sugar...", KAGUYA.FUFUFU, SPRITEPOS.LEFT),
 	//sound of egg cracking, mixing up
-	txt("~~Humpty Dumpty sat in a carton~~#~~Humpty Dumpty was cracked apart~~", KAGUYA.DEF),
+	txt("~~Humpty Dumpty sat in a carton~~#~~Humpty Dumpty was cracked apart~~", KAGUYA.DEF, u, u, function() {audio_play_sound(snd_cracking_egg1, 0, false)}),
 	txt("~~And all the Princesses and all the bunnies~~#~~Ate Humpty up with an overjoyed grin!~~", KAGUYA.YAY),
 	txt("That didn't even rhyme.", MOKOU.BRUH),
 	txt("It's experimental poetry. You wouldn't understand.", KAGUYA.FUFUFU),
@@ -807,7 +910,7 @@ function txt_kagumoku() {
 	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),
 	txt("Oh no! The batter's gotten into my hair!", KAGUYA.SHOCKED, SPRITEPOS.LEFT, s_kitchen),
 	txt("I need to clean it this instant!", KAGUYA.AWW),
-	ntxt(40, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(40, KAGUYA.DEF, SPRITEPOS.HIDDEN, u, function() {audio_play_sound(snd_running_in_a_house, 0, false)}),
 	//sound effect of footsteps running	
 	txt("...", MOKOU.BRUH, SPRITEPOS.MIDRIGHT),
 	txt("Well, whatever gives me more time.", MOKOU.YAY),
@@ -815,12 +918,15 @@ function txt_kagumoku() {
 	
 	ntxt(0, KANA.NEUTRAL, SPRITEPOS.LEFT),
 	ntxt(0, REISEN.DEF, SPRITEPOS.RIGHT),	
-	txt("Woah! Do you see those knife skills from Mokou?", ME.POG, SPRITEPOS.CENTER, s_eienteiroom1),
+	txt("Woah! Do you see those knife skills from Mokou?", ME.POG, SPRITEPOS.CENTER, s_eienteiroom1, function() {audio_play_sound(snd_cutting_a_onion_speedy, 0, false)}),
 	//sound of epic cutting
 	txt("She's cutting the chicken so quickly!", ME.POG),
 	//SLICE sound
-	ntxt(0000, KANA.SCARED),
-	ntxt(0040, REISEN.WOAH),
+	ntxt(0040),
+	ntxt(0030, u, u, u, function() {audio_play_sound(snd_cutting_with_a_katana1, 0, false)}),
+	//snd_cutting_with_a_katana1
+	ntxt(0000, KANA.SCARED, SPRITEPOS.LEFT),
+	ntxt(0040, REISEN.WOAH, SPRITEPOS.RIGHT),
 	txt("And she... lost a finger.", ME.WHAA),
 	txt("...Should we--", KANA.SCARED),
 	txt("N-nah, it's fine! A little blood would just... add to the flavor!", ME.KAAAY),	
@@ -839,6 +945,7 @@ function txt_kagumoku() {
 	txt("Doesn't it hurt?", KAGUYA.AWW),
 	txt("Of course. But...", MOKOU.NEUTRAL),
 	txt("Just one teensy second...", KAGUYA.FUFUFU),
+	ntxt(0030, u, u, u, function() {audio_play_sound(snd_magic7, 0, false)}),
 	//sound of YAY HEALING MAGIC	
 	txt("There we go!", KAGUYA.YAY),
 	txt("I cast a spell to make it heal instantly. All better now?", KAGUYA.YAY),
@@ -873,7 +980,7 @@ function txt_kagumoku() {
 	txt("In that case, let's just throw that rule out the window, okay?", ME.DEF),
 	txt("Wait, that's totally wrong! Rules shouldn't be broken *that* easily just because you screwed up!", MOKOU.MAD),
 	txt("But you were okay with your finger being healed.", ME.DEF),
-	txt("That was-- |- ", MOKOU.REALLYMAD),
+	txt("That was-- |- ", MOKOU.REALLYMAD, u, u, function() {audio_play_sound(snd_kitchen_timer1, 0, false)}),
 	//buzzer sound
 	txt("AAAAND TIME'S UP!!", ME.YAY),
 	txt("Contestants, bring your dishes to the table.", ME.HEHE),
@@ -1082,6 +1189,8 @@ function txt_kagumoku() {
 	txt("You too.", ME.TINYSMIRK),
 	ntxt(064, ME.DEF, SPRITEPOS.HIDDEN),
 	ntxt(078, KAGUYA.DEF, SPRITEPOS.HIDDEN),
+	
+	
 	ptxt(),
 	txt("That night, I thought of what to do. Something was coming either way; all I could do was speed it up.", u, u, s_crescent, function() {textbox_set_type(global.textnvl)}),
 	txt("The next few days went smoothly. Most of it comprised of helping out those at Eientei."),
@@ -1333,7 +1442,7 @@ function txt_kagumoku() {
 	txt("I know.", KME.AWW),
 	txt("I know, and I'm sorry.", KME.WAAH),
 	txt("Sorry for keeping the Elixir of Immortality and throwing it away so recklessly.", KME.WAAH),
-	txt("Sorry for hiding myself away from the consequences...", KME.WAAH),
+	txt("Sorry for hiding myself away from the consequences.", KME.WAAH),
 	txt("Sorry for leaving you all alone.", KME.CRY),
 	
 	//FINAL SPELLCARD
@@ -1343,17 +1452,19 @@ function txt_kagumoku() {
 	
 	txt("Kaguya...", MOKOU.LOVEYSAD, SPRITEPOS.MIDLEFT),
 	txt("Mokou, I know.", KME.AWW, SPRITEPOS.MIDRIGHT),
-	txt("I know we've started off on a terrible foot, and that you have every reason to despise me.", KME.LOVEY),
-	txt("I know you have gone through centuries of living, with all the memories and experience that comes with.", KME.LOVEY),
-	txt("I know that I have spent far too long in one place, afraid to truly live.", KME.LOVEY),
-	txt("But at the end of the day, we're both children!", KME.AWW),
+	txt("I know we've started off on a terrible foot, and that you have every reason to despise me.", KME.AWW),
+	txt("I know you have gone through centuries of living, with all the memories and experience that comes with.", KME.AWW),
+	txt("I know that I have spent far too long in one place, afraid to truly live.", KME.AWW),
+	txt("But at the end of the day, we're both children!", KME.LOVEY),
 	txt("We can still grow, we can still change! We have the whole world ahead of us, just waiting to be seen!", KME.AWW),
 	txt("We can start to truly live!", KME.CRY),
 	txt("And more than anything... I want to live with you.", KME.CRY),
 	txt("I love you, Mokou!!", KME.CRYSMILE),
 	
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
-	ntxt(400, MOKOU.DEF, SPRITEPOS.HIDDEN, s_black, function() {music_set(mus.null)}),	
+	ntxt(400, MOKOU.DEF, SPRITEPOS.HIDDEN, s_black),
+	
+	//, function() {music_set(mus.null)}),	
 	
 	//function() {music_set(mus.selene)}),
 	
@@ -1396,9 +1507,9 @@ function txt_kagumoku() {
 	txt("In a way, we're lucky. We have all of eternity to figure it out.", KME.FUFUFU),
 	txt("Guess so.", MOKOU.YAY),
 	txt("I'm... scared, honestly.", MOKOU.LOVEYSAD),
-	txt("This feeling might seem like forever, but... forever is only a moment.", MOKOU.LOVEY),
+	txt("This feeling might seem like forever, but... forever is only a moment.", MOKOU.NEUTRAL),
 	ntxt(0, KME.AWW, SPRITEPOS.MIDRIGHT),
-	txt("We'll become unrecognizable, and drift apart.", MOKOU.NEUTRAL),
+	txt("Someday we'll become unrecognizable, and drift apart.", MOKOU.NEUTRAL),
 	txt("Maybe we'll get back together, then be back at each other's throats within a thousand years.", MOKOU.NEUTRAL),
 	txt("Friends will come and go, and we'll have no choice but to move on. One day, we'll see the world fall apart before our eyes. ", MOKOU.SAD),
 	txt("And when it's all over, it'll only be us, floating in an endless void and losing our minds.", MOKOU.SADSMILE),
@@ -1412,18 +1523,17 @@ function txt_kagumoku() {
 	ntxt(69, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	
 	ptxt(),
-	txt("Mokou's eyes changed. She froze, and her eyes seemed to lose mine.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("Mokou changed then. She froze, and her eyes seemed to lose mine.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("It was like she saw a glimpse into the future, and our lives together."),
-	txt("She was deathly still then, a million miles away. She was seeing something, from now through the edge of eternity."),
+	txt("She was deathly still, a million miles away. She was seeing something, from now through the edge of eternity."),
 	ptxt(),
-	txt("And then Mokou saw me, and the spell was broken. She looked into my eyes, and she began to quiver."),
+	txt("And then Mokou looked into my eyes, and she began to quiver."),
 	txt("Despite her best efforts, tears streaked down her face."),	
 	txt("Without thinking, I brought a hand to her cheek."),
 	ptxt(),
 	txt("But before it reached, I was in her arms."),
 	txt("Her shoulders heaved with each sob that resounded through the sky. As if afraid that I would crumble to dust, she held on as tight as she could."),
 	txt("Stunned by the sudden embrace, I simply froze. Those three words I wanted to say were stuck in my throat. But no words would be enough here-- all I could do was return the favor."),
-	ptxt(),
 	txt("So I wrapped my arms around her, and cried into her chest."),
 	txt("It was only a moment... but this moment was forever."),
 	

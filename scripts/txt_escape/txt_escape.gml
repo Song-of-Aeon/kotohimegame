@@ -15,7 +15,7 @@ function txt_escape() {
 	txt("I see. It endangers your own position here, you know.", KAGUYA2.NORMAL),
 	txt("Not at all! I'll simply...", KOTOHIME.HAPPY),
 	txt("Simply, uh...", KOTOHIME.THINKING),
-	txt("Well. The future is boundless, right?", KOTOHIME.NERV),OUS
+	txt("Well. The future is boundless, right?", KOTOHIME.NERVOUS),
 	txt("Certainly. That's how a mortal should think.", KAGUYA2.NORMAL),
 	txt("Let's get on with the operation, now.", KAGUYA2.NORMAL),
 	ntxt(0, KOTOHIME.HAPPY, SPRITEPOS.HIDDEN),

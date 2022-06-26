@@ -24,7 +24,7 @@ function txt_oncemore() {
 	txt("She's nice. Powerful. Pretty."),
 	txt("You're moving around a bit. However often she needs your help, I guess."),
 	txt("It's really impressive that you found yourself in her good graces..."),
-	txt("But you won't see what you're looking for."),
+	txt("But you won't find what you're looking for."),
 	txt("Doesn't matter how important she is. Changing her life won't do anything for you."),
 	txt("..."),
 	txt("You've got a good memory, Kotohime. You already know."),

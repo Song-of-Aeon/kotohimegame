@@ -6,10 +6,10 @@ function txt_acceptence() {
 	txt("You know, you've never even acknowledged them."),
 	txt("Always pulling some bullshit about \"princessness\" or whatever."),
 	txt("Are you finally getting your act together?"),
-	txt("...A princess such as myself will ever-approach perfection, with ever-growing-"),
+	txt("...A princess such as myself will ever-approach perfection, with ever-growing-", KOTOHIME.SMUG, SPRITEPOS.LEFT),
 	txt("Back to that, huh?"),
 	txt("I can take a hint. We can talk later."),
-	txt("If you insist."),
+	txt("If you insist.", KOTOHIME.WINK),
 	
 	],[
 	

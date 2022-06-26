@@ -11,7 +11,7 @@ vspd += vgrav*-clamp(x-vgravorigin, -1, 1);
 hspd *= acc;
 vspd *= acc;
 speed *= acc;
-if !instance_exists(o_textbox) && !is_oob() {
+if !instance_exists(o_textbox) && !is_oob(escapedistance) {
 	armor = false;
 	//method(self,patterns[currentpattern].step)();
 	method(self,patterns[currentpattern].step)();

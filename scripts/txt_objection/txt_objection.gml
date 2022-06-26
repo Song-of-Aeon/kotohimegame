@@ -3,8 +3,8 @@ function txt_objection() {
 	msg = msglang([
 	
 	txt("Objection!"),
-	txt("Kagyua, you're wrong."),
-	txt("There is something for everybody in that place."),
+	txt("Kagyua, you're wrong.", KOTOHIME.DISAPPOINTED),
+	txt("There is something for everybody in that place.", KOTOHIME.HAPPY),
 	txt("You fool!"),
 	txt("You are very confident."),
 	txt("Do you truly believe this is sustainable? It is inevitable that my identity would come to light."),

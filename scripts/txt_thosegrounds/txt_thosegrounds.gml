@@ -3,15 +3,15 @@ function txt_thosegrounds() {
 	msg = msglang([
 	
 	txt("Take that!"),
-	txt("This is what we can overcome!"),
+	txt("This is what we can overcome!", KOTOHIME.HAPPY),
 	txt("...So? What about that can you change?"),
-	txt("You know..."),
-	txt("The whole thing~"),
+	txt("You know...", KOTOHIME.HAPPY),
+	txt("The whole thing~", KOTOHIME.WINK),
 	txt("Don't kid with me."),
-	txt("|c102137255Damn."),
+	txt("|c102137255Damn.", KOTOHIME.NERVOUS),
 	txt("Have you forgotten?"),
 	txt("Romance and I are not famed for our synergy."),
-	txt("I am aware. However, I believe those perceptions can be overcome."),
+	txt("I am aware. However, I believe those perceptions can be overcome.", KOTOHIME.SMUG),
 	txt("On what grounds? Before that, what part of my image do you think can be overcome?"),
 	
 	],[

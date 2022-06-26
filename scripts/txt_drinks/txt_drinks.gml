@@ -3,9 +3,9 @@ function txt_drinks() {
 	msg = msglang([
 	
 	txt("..."),
-	txt("Hiiii Kaguya!", KOTOHIME.HAPPY, SPRITEPOS.MIDRIGHT),
+	txt("Hiiii Kaguya!", KOTOHIME.EXCITED, SPRITEPOS.MIDRIGHT),
 	txt("What happened over there? It sounded almost like a danmaku battle.", KAGUYA2.NORMAL, SPRITEPOS.MIDLEFT),
-	txt("Simply a greeting. Our resident tavernkeep is out at the moment, and I was catching up with her substitute.", KOTOHIME.HAPPY),
+	txt("Simply a greeting. Our resident tavernkeep is out at the moment, and I was catching up with her substitute.", KOTOHIME.THINKING),
 	txt("Yeah, don't worry about it. Come over to the bar, I'll get the two of you some drinks.", CHIYURI.NOTHING, SPRITEPOS.RIGHT),
 	txt("Also, this isn't a tavern.", CHIYURI.NOTHING),
 	ntxt(0, KOTOHIME.HAPPY, SPRITEPOS.MIDLEFT),
@@ -14,7 +14,7 @@ function txt_drinks() {
 	txt("|c160160160Chiyuri leads the two to some bar stools, and steps behind the counter."),
 	txt("As I said before, something light for the both of us.", KOTOHIME.HAPPY),
 	txt("Our drinks have names, you know. Still don't remember them?", CHIYURI.NOTHING),
-	txt("The fact that I don't is evidence to their quality.", KOTOHIME.HAPPY),
+	txt("The fact that I don't is evidence to their quality.", KOTOHIME.SMUG),
 	txt("Or your lack of restraint. Whatever, I already know what you mean.", CHIYURI.NOTHING),
 	txt("|c160160160Chiyuri pushes a few buttons on a machine embedded in the wall behind the bar."),
 	txt("|c160160160It's connected to a variety of alcohols and soft drinks via small tubes."),

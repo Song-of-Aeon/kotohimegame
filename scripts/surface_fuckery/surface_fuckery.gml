@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 //this is to fix feather
-
+global.gameplay = false;
 global.scale = 2;
 global.surfaces = {
 	HUD: surface_create(1280, 720),
@@ -40,7 +40,9 @@ global.surfaces = {
 		surface_reset_target();
 		surface_set_target(global.surfaces.HUD);
 		draw_clear_alpha(c_white, 0);
-		draw_sprite(s_black, 1, 0, 0);
+		if !global.gameplay {
+			draw_sprite(s_black, 1, 0, 0);
+		}
 		surface_reset_target();
 		surface_set_target(global.surfaces.border);
         draw_sprite_stretched(tex_based,0,0,0,surface_get_width(global.surfaces.border),surface_get_height(global.surfaces.border));

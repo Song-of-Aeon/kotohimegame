@@ -3,7 +3,9 @@ count++;
 
 if !txtprocessed {
 	margin = width/20;
+	//if !global.gameplay {
 	c_savevn(msgscript, style);
+	//}
     msgscript();
 	talksize = array_length(msg);
 	talkpos = 0;

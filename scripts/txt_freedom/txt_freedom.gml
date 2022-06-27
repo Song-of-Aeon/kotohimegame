@@ -3,7 +3,7 @@ function txt_freedom() {
 	msg = msglang([
 	
 	txt("..."),
-	txt("|c102137255Reisen, you are a kind person. I hate to do this evil of deception to you.", KOTOHIME.THINKING, SPRITEPOS.LEFT),
+	txt("|c102137255Reisen, you are a kind person. I hate to do this evil of deception to you.", KOTOHIME.THINKING, SPRITEPOS.LEFT, s_bamboo),
 	txt("|c102137255But it is impossible for you to understand. Your diligence in your duty would prevent it.", KOTOHIME.DISAPPOINTED),
 	txt("|c102137255You will surely be punished for this, but...", KOTOHIME.DISAPPOINTED),
 	txt("|c102137255It is for your lady's good.", KOTOHIME.THINKING),

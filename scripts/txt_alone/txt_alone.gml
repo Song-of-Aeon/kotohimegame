@@ -2,9 +2,9 @@ function txt_alone() {
 	
 	msg = msglang([
 	
-	txt("|c160160160Kaguya turns around, and walks into the forest with practiced pathing."),
+	txt("|c160160160Kaguya turns around, and walks into the forest with practiced pathing.", u, u, s_bamboo),
 	txt("...", KOTOHIME.HAPPY, SPRITEPOS.LEFT),
-	txt("...", KOTOHIME.HAPPY),
+	txt("...", KOTOHIME.HAPPY, u, s_pathnight),
 	ntxt(0, KOTOHIME.HAPPY, SPRITEPOS.MIDLEFT),
 	txt("|c160160160Kotohime kicks around some rocks in her stride."),
 	txt("...", KOTOHIME.HAPPY),

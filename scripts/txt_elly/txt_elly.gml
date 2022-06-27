@@ -2,7 +2,7 @@ function txt_elly() {
 	
 	msg = msglang([
 	
-	txt("None of these women seem terribly approachable..."),
+	txt("None of these women seem terribly approachable...", KAGUYA.NORMAL, SPRITEPOS.MIDRIGHT, s_thebar),
 	txt("Admittedly, the bachelorettes of the Twilight Bar are a fair bit eccentric.", KOTOHIME.THINKING, SPRITEPOS.RIGHT),
 	txt("|c102137255Who could have guessed?"),
 	txt("Slow day, is it?"),
@@ -15,7 +15,7 @@ function txt_elly() {
 	txt("Well what is it to you, Tsukiko!?", KOTOHIME.HAPPY),
 	txt("Are you not a woman of common birth, simply shooting your shot with some locals? No shame in that.", KOTOHIME.HAPPY),
 	txt("...Very well. I will continue to entertain this goal."),
-	txt("|c160160160The two step away from the bar, and orbit the pillar until they can see the table behind it."),
+	txt("|c160160160The two step away from the bar, and orbit the pillar until they can see the table behind it.", u, u, s_table),
 	txt("|c160160160A woman in a deep crimson dress sits, contemplating under a pale hood."),
 	txt("Good evening."),
 	txt("|c160160160Startled, she unsheathes her eyes at the newcomer."),
@@ -106,7 +106,7 @@ function txt_elly() {
 	txt("|c102137255With \"Tsukiko\"..."),
 	txt("|c102137255No, this is wrong."),
 	txt("|c102137255This sort of deception... this friviolity... it is disrespectful."),
-	txt("...No. Apologies."),
+	txt("...No. Apologies.", u, u, s_bar),
 	txt("Truthfully, I must be going now."),
 	txt("...Oh. That's a shame.", ELLY.CONFUSED),
 	txt("Elly. Kotohime. It was pleasant."),

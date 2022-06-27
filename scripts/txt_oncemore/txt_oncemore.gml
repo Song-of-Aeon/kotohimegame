@@ -3,14 +3,14 @@ function txt_oncemore() {
 	msg = msglang([
 	
 	txt("...", KOTOHIME.SOLEMN, SPRITEPOS.LEFT),
-	txt("|c160160160The doors to the bar creak open, once more."),
+	txt("|c160160160The doors to the bar creak open, once more.", u, u, s_barnight),
 	txt("|c160160160Kotohime takes a look around."),
 	txt("...", KOTOHIME.SOLEMN),
 	txt("|c160160160Only two remain in the tabled area, this late."),
 	txt("|c160160160Despite being a bar, it is most used as a meeting place during the day."),
 	txt("|c160160160Gengetsu continues to illustrate something intentfully."),
 	txt("|c160160160Chiyuri is cleaning various dishware from the day's meals and drinks."),
-	ntxt(0, KOTOHIME.SOLEMN, SPRITEPOS.MIDLEFT),
+	ntxt(0, KOTOHIME.SOLEMN, SPRITEPOS.MIDLEFT, u, u, s_thebarnight),
 	txt("|c160160160Kotohime approaches the bar, and sits down."),
 	txt("Oh. You're back.", CHIYURI.NOTHING),
 	txt("I am.", KOTOHIME.SMUG),

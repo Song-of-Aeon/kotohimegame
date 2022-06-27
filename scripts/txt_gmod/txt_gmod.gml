@@ -2,7 +2,7 @@ function txt_gmod() {
 	
 	msg = msglang([
 	
-	txt("This one. \"Garry's Mod\".", KAGUYA2.NORMAL, SPRITEPOS.CENTER, s_black),
+	txt("This one. \"Garry's Mod\".", KAGUYA2.NORMAL, SPRITEPOS.CENTER, s_gaming),
 	txt("Is that how you say it? I can't read any of this western text.", KOTOHIME.NERVOUS, SPRITEPOS.MIDLEFT),
 	txt("I don't quite know. I only have a few basic study books of experience.", KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT),
 	txt("Hm. I hope we can read enough to play.", KOTOHIME.HAPPY),

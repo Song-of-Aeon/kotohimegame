@@ -3,7 +3,7 @@ function txt_walking() {
 	msg = msglang([
 	
 	txt("..."),
-	txt("So, Kotohime, what sort of place are we headed?", KAGUYA2.NORMAL, SPRITEPOS.LEFT),
+	txt("So, Kotohime, what sort of place are we headed?", KAGUYA2.NORMAL, SPRITEPOS.LEFT, s_path),
 	txt("It's a very classy spot, with very classy people.", KOTOHIME.HAPPY, SPRITEPOS.CENTER),
 	txt("I've no doubt that you can find a nice lass there.", KOTOHIME.HAPPY),
 	txt("It's still hard for me to imagine doing that...", KAGUYA2.NORMAL),

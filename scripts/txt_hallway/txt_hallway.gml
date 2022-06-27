@@ -2,7 +2,7 @@ function txt_hallway() {
 	
 	msg = msglang([
 	
-	txt("...", u, u, s_black),
+	txt("...", u, u, s_eienteihall1),
 	txt("Will you be staying a while?", REISEN.HAPPY, SPRITEPOS.MIDLEFT),
 	txt("Kaguya and I will probably be at it all night long!", KOTOHIME.LMAO, SPRITEPOS.LEFT),
 	txt("Please don't say it like that.", REISEN.HAPPY),

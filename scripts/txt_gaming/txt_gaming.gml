@@ -8,7 +8,7 @@ function txt_gaming() {
 	txt("No problem...", REISEN.HAPPY, SPRITEPOS.HIDDEN),
 	txt("KAGUYAAAAAA!#I'M HEEEERE~!", KOTOHIME.EXCITED),
 	txt("Please come in.", KAGUYA2.NORMAL),
-	txt("And lo, your price arrives.", KOTOHIME.THINKING, SPRITEPOS.MIDLEFT),
+	txt("And lo, your price arrives.", KOTOHIME.THINKING, SPRITEPOS.MIDLEFT, s_gaming),
 	txt("Oh? You know, I can only call you my prince if you can fulfill my impossible requests...", KAGUYA2.NORMAL, SPRITEPOS.RIGHT),
 	txt("But of course.", KOTOHIME.WINK),
 	txt("I have it right...", KOTOHIME.HAPPY),

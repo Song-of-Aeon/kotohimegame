@@ -1,6 +1,7 @@
 c_input();
 entries = [];
 pos = 0;
+count = 0;
 
 function glentry(name_, sprite_, info_, desc_) constructor {
 	name = name_;

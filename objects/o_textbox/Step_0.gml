@@ -3,8 +3,8 @@ count++;
 
 if !txtprocessed {
 	margin = width/20;
+	c_savevn(msgscript, style);
     msgscript();
-    
 	talksize = array_length(msg);
 	talkpos = 0;
 	//if msg[talkpos].bg != "UNCHANGED" bg = msg[talkpos].bg;

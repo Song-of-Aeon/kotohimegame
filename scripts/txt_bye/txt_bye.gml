@@ -20,5 +20,5 @@ function txt_bye() {
 	
 	])
 	
-	endevent = c_null;
+	endevent = function() {textbox_create(txt_alone)};
 }

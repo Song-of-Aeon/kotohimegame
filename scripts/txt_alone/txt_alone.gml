@@ -27,5 +27,5 @@ function txt_alone() {
 	
 	])
 	
-	endevent = c_null;
+	endevent = function() {textbox_create(txt_oncemore)};
 }

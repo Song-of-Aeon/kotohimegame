@@ -51,5 +51,10 @@ function txt_return() {
 	
 	])
 	
-	endevent = c_null;
+	endevent = function() {
+		var guy = file_text_open_write("you've won.kotohime");
+		file_text_write_string(guy, "congrats!");
+		file_text_close(guy);
+		room_goto(TITLE);
+	};
 }

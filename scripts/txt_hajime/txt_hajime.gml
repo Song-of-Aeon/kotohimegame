@@ -43,7 +43,7 @@ function txt_hajime() {
 	txt("It is proof that we are different. That we stand together. It is proof of our-"),
 	ntxt(0, KOTOHIME.SMUG, SPRITEPOS.CENTER),
 	txt("|c255000085Royalty|c255255255."),
-	txt("It is?", REISEN.HAPPY, SPRITEPOS.RIGHT),
+	txt("It is?", REISEN.HAPPY, SPRITEPOS.RIGHT, s_bamboo),
 	txt("What? Oh, you. It's nothing. You're welcome.", KOTOHIME.LMAO, SPRITEPOS.LEFT),
 	txt("I'm welcome... for what?", REISEN.HAPPY),
 	txt("The sight of one of my rare performances! Very enigmatic, yes?", KOTOHIME.HAPPY),

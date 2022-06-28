@@ -1,0 +1,16 @@
+surface_set_target(global.surfaces.HUD);
+draw_sprite(s_black, 0, 0, 0);
+draw_sprite(s_glossary1, 0, 900, 370);
+draw_sprite_ext(s_glossary1, 0, 900, 370, 1-(gc%100)/300, 1-(gc%100)/300, 0, c_white, 1-(gc%100)/50);
+draw_sprite(s_glossary2, 0, 260, 370+sin(gc/100)*16);
+draw_sprite(s_glossary3, 0, 640, 0);
+draw_sprite_ext(s_glossary3, 0, 640, 0, 1-(gc%100)/300, 1-(gc%100)/300, 0, c_white, 1-(gc%100)/50);
+set_font_style(FONT.TALK);
+draw_text(600, 160, entries[pos].name);
+set_font_style(FONT.GLOSSARY);
+draw_text(600, 200, entries[pos].info);
+draw_text_ext(600, 280, entries[pos].desc, 30, 600);
+gpu_set_texfilter(false);
+draw_sprite_ext(entries[pos].sprite, 0, 256, 400, cos(count/80)*.7, .7, 0, cos(count/80) <= 0 ? make_color_rgb(160, 160, 160) : c_white, 1);
+gpu_set_texfilter(true);
+surface_reset_target();

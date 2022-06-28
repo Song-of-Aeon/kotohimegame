@@ -2,7 +2,7 @@ function txt_chillin() {
 	
 	msg = msglang([
 	
-	txt("Kotohime, I'm surprised you can take this so seriously.", KAGUYA2.NORMAL, SPRITEPOS.CENTER),
+	txt("Kotohime, I'm surprised you can take this so seriously.", KAGUYA2.NORMAL, SPRITEPOS.CENTER, s_gaming),
 	txt("Do you not have your \"princessly duties\" this eve?", KAGUYA2.NORMAL),
 	txt("Alas, the eve has already given way to morrow.", KOTOHIME.THINKING, SPRITEPOS.LEFT),
 	txt("So it has...", KAGUYA2.NORMAL),

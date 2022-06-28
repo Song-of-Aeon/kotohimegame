@@ -4,9 +4,9 @@ function txt_totalfail() {
 	
 	txt("Take that!"),
 	txt("...I don't see it."),
-	txt("...My finger slipped."),
-	txt("A-allow me once more."),
-	txt("The final reason you're perfect for this is...!"),
+	txt("...My finger slipped.", KOTOHIME.NERVOUS),
+	txt("A-allow me once more.", KOTOHIME.NERVOUS),
+	txt("The final reason you're perfect for this is...!", KOTOHIME.WINK),
 	
 	],[
 	

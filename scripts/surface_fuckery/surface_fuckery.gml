@@ -91,8 +91,8 @@ global.surfaces = {
 			gpu_set_colorwriteenable(1,1,1,1);
 		}
 		shader_reset();
-		draw_text(0,0,fps);
-		draw_text(40,40,instance_number(o_bullet));
+		//draw_text(0,0,fps);
+		//draw_text(40,40,instance_number(o_bullet));
 		//draw_surface_stretched(global.surfaces.threedee,0,0,640,360);
 		//draw_clear($009999);
 		

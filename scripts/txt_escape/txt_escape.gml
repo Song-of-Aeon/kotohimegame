@@ -2,7 +2,7 @@ function txt_escape() {
 	
 	msg = msglang([
 	
-	txt("Oh, I don't know. It can't be that hard.", KOTOHIME.HAPPY, SPRITEPOS.LEFT),
+	txt("Oh, I don't know. It can't be that hard.", KOTOHIME.HAPPY, SPRITEPOS.LEFT, s_gaming),
 	txt("No, it isn't, but I had supposed that a modium of discretion would be helpful.", KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT),
 	txt("Eirin is fond of your help... but she is suspicious of you in many ways, and would not see me off under your supervision.", KAGUYA2.NORMAL),
 	txt("Really? I thought we were on the same page. My heart aches at this...", KOTOHIME.THINKING),
@@ -20,8 +20,8 @@ function txt_escape() {
 	txt("Let's get on with the operation, now.", KAGUYA2.NORMAL),
 	ntxt(0, KOTOHIME.HAPPY, SPRITEPOS.HIDDEN),
 	ntxt(0, KAGUYA2.NORMAL, SPRITEPOS.HIDDEN),
-	txt("..."),
-	txt("...if you would, please.", EIRIN.NORMAL, SPRITEPOS.LEFT),
+	txt("...", u, s_black),
+	txt("...if you would, please.", EIRIN.NORMAL, SPRITEPOS.LEFT, s_eienteihall1),
 	txt("Understood. I'll have it done by tomorrow.", REISEN.HAPPY, SPRITEPOS.MIDRIGHT),
 	txt("That will do.", EIRIN.NORMAL),
 	txt("|c102137255Ugh... another brutal assignment.", REISEN.HAPPY, SPRITEPOS.MIDLEFT),

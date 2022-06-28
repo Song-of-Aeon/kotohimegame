@@ -57,9 +57,9 @@ function c_input_real() {
 		shiftp = keyboard_check_pressed(vk_shift);
 		shiftr = keyboard_check_released(vk_shift);
 
-		esc = keyboard_check_pressed(vk_escape);
+		esc = keyboard_check_pressed(vk_escape) | mouse_check_button_pressed(mb_right);
 		esch = keyboard_check(vk_escape);
-		enter = keyboard_check_pressed(vk_enter); //misc useful buttons, all as pressed
+		enter = keyboard_check_pressed(vk_enter) | mouse_check_button_pressed(mb_left); //misc useful buttons, all as pressed
 		enterh = keyboard_check(vk_enter);
 		ctrl = keyboard_check_pressed(vk_control);
 		ctrlh = keyboard_check(vk_control);

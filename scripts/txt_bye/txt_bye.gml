@@ -8,11 +8,11 @@ function txt_bye() {
 	txt("I'll smooth things over with Eirin for you."),
 	txt("You can expect another job of delivery at the same time next month..."),
 	txt("But I imagine I'll see you again before then, as well."),
-	txt("Inevitably."),
-	txt("However, a princess' work is never done. I may not be at the bar as you arrive."),
+	txt("Inevitably.", KOTOHIME.HAPPY),
+	txt("However, a princess' work is never done. I may not be at the bar as you arrive.", KOTOHIME.SMUG),
 	txt("I see... perhaps I shall bring Tewi along for luck."),
 	txt("Fare well, Kotohime. Until next time."),
-	txt("Until then."),
+	txt("Until then.", KOTOHIME.SMUG),
 	
 	],[
 	
@@ -20,5 +20,5 @@ function txt_bye() {
 	
 	])
 	
-	endevent = c_null;
+	endevent = function() {textbox_create(txt_alone)};
 }

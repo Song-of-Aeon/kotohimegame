@@ -2,7 +2,7 @@ function txt_leaving() {
 	
 	msg = msglang([
 	
-	txt("|c160160160The lunarian lifts off the ground shortly after exiting through the bar's doors."),
+	txt("|c160160160The lunarian lifts off the ground shortly after exiting through the bar's doors.", u, u, s_path),
 	txt("|c102137255And so closes the tale of Tsukiko."),
 	txt("|c102137255It is in ill taste for the aged to pretend to be young."),
 	txt("K-Kaguya!!", KOTOHIME.HAPPY),

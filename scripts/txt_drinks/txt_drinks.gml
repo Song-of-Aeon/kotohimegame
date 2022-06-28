@@ -3,7 +3,7 @@ function txt_drinks() {
 	msg = msglang([
 	
 	txt("..."),
-	txt("Hiiii Kaguya!", KOTOHIME.EXCITED, SPRITEPOS.MIDRIGHT),
+	txt("Hiiii~!", KOTOHIME.EXCITED, SPRITEPOS.MIDRIGHT, s_thebar),
 	txt("What happened over there? It sounded almost like a danmaku battle.", KAGUYA2.NORMAL, SPRITEPOS.MIDLEFT),
 	txt("Simply a greeting. Our resident tavernkeep is out at the moment, and I was catching up with her substitute.", KOTOHIME.THINKING),
 	txt("Yeah, don't worry about it. Come over to the bar, I'll get the two of you some drinks.", CHIYURI.NOTHING, SPRITEPOS.RIGHT),

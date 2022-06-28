@@ -2,7 +2,7 @@ function txt_acceptence() {
 	
 	msg = msglang([
 	
-	txt("You must really have a good thing going with her, if you're going to actually pay your debts."),
+	txt("You must really have a good thing going with her, if you're going to actually pay your debts.", s_path),
 	txt("You know, you've never even acknowledged them."),
 	txt("Always pulling some bullshit about \"princessness\" or whatever."),
 	txt("Are you finally getting your act together?"),

@@ -14,8 +14,8 @@
   "soundFile": "snd_gunshoot.wav",
   "duration": 2.201247,
   "parent": {
-    "name": "geimu noises",
-    "path": "folders/Sounds/geimu noises.yy",
+    "name": "KOTOHIMEGAME",
+    "path": "KOTOHIMEGAME.yyp",
   },
   "resourceVersion": "1.0",
   "name": "snd_gunshoot",

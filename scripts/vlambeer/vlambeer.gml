@@ -24,5 +24,6 @@ function c_flash(_surface/*:surface*/, _duration/*:number*/, _color/*:any*/){
 	dude.surface = _surface;
 	dude.duration = _duration;
 	dude.color = _color
+	//log("flashed"+string(gc));
 }
  

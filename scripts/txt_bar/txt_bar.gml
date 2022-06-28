@@ -2,7 +2,7 @@ function txt_bar() {
 	
 	msg = msglang([
 	
-	txt("...", MOKOU.DEF, SPRITEPOS.CENTER),
+	txt("..."),//, MOKOU.DEF, SPRITEPOS.CENTER),
 	txt("This is it?", KAGUYA2.NORMAL, SPRITEPOS.LEFT),
 	txt("A bit...", KAGUYA2.NORMAL),
 	txt("Dingy, drab, and inelegant. It does not appear to be fit for a princess.", KOTOHIME.DISAPPOINTED, SPRITEPOS.MIDRIGHT),

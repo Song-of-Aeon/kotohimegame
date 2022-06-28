@@ -14,8 +14,8 @@
   "soundFile": "snd_mvmnu1.wav",
   "duration": 0.115011,
   "parent": {
-    "name": "geimu noises",
-    "path": "folders/Sounds/geimu noises.yy",
+    "name": "KOTOHIMEGAME",
+    "path": "KOTOHIMEGAME.yyp",
   },
   "resourceVersion": "1.0",
   "name": "snd_mvmnu1",

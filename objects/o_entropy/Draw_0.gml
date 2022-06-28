@@ -21,7 +21,7 @@ if !file_exists("you've won.kotohime") draw_set_alpha(.3);
 draw_text(640, 540, pos==2 ? ">Glossary<" : "Glossary");
 draw_text(900, 320, pos==3 ? ">End<" : "End");
 draw_set_alpha(1);
-draw_sprite(Sprite361, 0, 0, 0);
+draw_sprite(Sprite361, file_exists("you've won.kotohime"), 0, 0);
 surface_reset_target();
 
 lmao = "lm";

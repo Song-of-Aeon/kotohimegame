@@ -10,6 +10,18 @@ nu bullet("nemesis", s_bullet, 2, true, true, false, .5);
 nu bullet("circle", s_bulletcircle, 1, true, false, true, 1);
 nu bullet("mycircle", s_bulletcircle, 10, true, true, true, 1);
 
+
+
+
+
+nu bullet("smolshot", s_bullet, 1, true, false, false, 1);
+nu bullet("bigerboolit", s_bigerboolit, 1, true, false, false, 1);
+nu bullet("smolerboolit", s_smolerboolit, 1, true, false, false, 1);
+nu bullet("naifu", s_naifu, 1, true, false, false, 1);
+nu bullet("blunaifu", s_blunaifu, 1, true, false, false, 1);
+nu bullet("wideamulet", s_wideamulet, 1, true, false, false, 1);
+nu bullet("bluamulet", s_bluamulet, 1, true, false, false, 1);
+
 var shootConsoleCommand = function(){
 	
 }

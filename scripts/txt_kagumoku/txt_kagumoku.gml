@@ -24,7 +24,7 @@ function txt_kagumoku() {
 	txt("They even frequently carried out services for the residents of the Human Village."),
 	txt("Kana adjusted well to life there, to the point she rarely ever left."),
 	txt("I visited them far more often, much to the behest of my parents."),
-	
+	ptxt(),
 	txt("Though, one thing had stayed mostly the same..."),
 	
 	//ntxt(0, u, u, u, function() {audio_play_sound(snd_bomb, 0, false)}),
@@ -272,7 +272,7 @@ function txt_kagumoku() {
 	txt("Beats me.", REISEN.DEF),
 	txt("They've been doing it for 300 years, or so I've heard. Mokou's still pissed at Kaguya from something back in the 9th century.", REISEN.DEF),
 	txt("But it's not like those fights actually accomplish anything.", REISEN.UGGH),
-	txt("My best guess is they find living forever boring, so they want to spice their lives up with some good ol' hatred.", REISEN.DEF),
+	txt("My best guess is that immortality has turned them into masochists.", REISEN.DEF),
 	txt("...", ME.HEHE),
 	txt("I think they secretly like each other.", ME.DEF),
 	txt("...Huh?", KANA.BRUH),
@@ -440,8 +440,7 @@ function txt_kagumoku() {
 	txt("Like I said. I wouldn't have it any other way.", KANA.DEF),
 	
 	txt("...", ME.DISTANT),
-	txt("You're right.", ME.TINYSMIRK),
-	txt("Thanks for saying that. I really needed those words.", ME.TINYSMIRK),
+	txt("Thank you.", ME.TINYSMIRK),
 	txt("You're welcome.", KANA.YAY),
 	txt("Let's get this game done, okay?", KANA.WINKY),
 	txt("Let's.", ME.YAY),
@@ -1337,11 +1336,12 @@ function txt_kagumoku() {
 	txt("...", KME.AWW),
 	
 	ntxt(0, KANA.DEF, SPRITEPOS.HIDDEN),
-	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
+	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.wind1)}),
 	ptxt(),
 	txt("Without a sound, I left the House of Eternity.", u, u, s_fullmoon1, function() {textbox_set_type(global.textnvl)}),
-	txt("I flew through the countless trees, letting the moon guide me."),	
-	txt("My search was not long before I found her."),
+	txt("I flew through the countless trees, letting the moon guide me."),
+	txt("At some point during my search, the rain stopped."),
+	txt("And shortly after that... I found her."),
 	txt("The one who wished to see me."),
 	
 	txt("Hello there, Mokou.", KME.FUFUFU, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textzpix)}),
@@ -1350,7 +1350,7 @@ function txt_kagumoku() {
 	txt("If you mean to fight...", KME.AWW),
 	txt("Y-yes. I... believe so.", KME.WAAH),
 	txt("What's gotten you so down?", MOKOU.DEF),
-	txt("Is the rain ruining your precious hair?", MOKOU.SMUG),
+	txt("Did the rain ruin your precious hair?", MOKOU.SMUG),
 	txt("I'm not here to fight. I just need tell you something.", KME.NEUTRAL),
 	txt("Mokou, I...|w0060 I lo-- |-", KME.AWW),
 	txt("Save your jokes for afterwards.", MOKOU.HMPH),
@@ -1412,15 +1412,7 @@ function txt_kagumoku() {
 	txt("The distinction between you and I was arbitrary from the start. I kept the pretense up for the sake of tradition, but...", KME.AWW),
 	txt("I'm an earthling now. A human, just like you.", KME.LOVEY),
 	txt("...I see.", MOKOU.SAD),
-	
-	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
-	ntxt(100, MOKOU.DEF, SPRITEPOS.HIDDEN),	
-	//4TH SPELLCARD
-	//BOWASHAPING UGASHITTAKURIDAAAAAA
-	
-	
-	ntxt(0, MOKOU.SAD, SPRITEPOS.LEFT),	
-	txt("It's funny, looking back... I've been wasting my life.", KME.AWW, SPRITEPOS.CENTER),
+	txt("It's funny, looking back... I've been wasting my life.", KME.AWW),
 	txt("I spent all these years cooped up inside a cage of my own making.", KME.WAAH),
 	txt("But now that I see the outside...", KME.DEF),
 	txt("It's better than I could've imagined.", KME.YAY),
@@ -1429,7 +1421,7 @@ function txt_kagumoku() {
 		
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
 	ntxt(100, MOKOU.DEF, SPRITEPOS.HIDDEN),	
-	//5TH SPELLCARD
+	//4TH SPELLCARD
 	//BACHIKUUUU
 		
 	ntxt(0, KME.WAAH, SPRITEPOS.RIGHT),
@@ -1462,16 +1454,24 @@ function txt_kagumoku() {
 	txt("I love you, Mokou!!", KME.CRYSMILE),
 	
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
-	ntxt(400, MOKOU.DEF, SPRITEPOS.HIDDEN, s_black),
+	ntxt(300, MOKOU.DEF, SPRITEPOS.HIDDEN, s_black),
 	
 	//, function() {music_set(mus.null)}),	
 	
 	//function() {music_set(mus.selene)}),
+	ntxt(200, u, u, s_fullmoon2),
 	
 	ntxt(0, KME.CRY, SPRITEPOS.MIDRIGHT),
-	ntxt(400, MOKOU.SAD, SPRITEPOS.MIDLEFT, s_fullmoon2),
+	ntxt(80, MOKOU.SAD, SPRITEPOS.MIDLEFT),
 	
-	txt("...", MOKOU.SADSMILE),
+	//ptxt(),
+	//txt("In a flash, the fire stopped.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	//txt("Mokou stayed in place, looking down."),
+	//txt("And then... she sighed."),
+	
+	
+	
+	txt("...", MOKOU.SADSMILE, u, u, function() {textbox_set_type(global.textdefault)}),
 	txt("Kaguya, you...", MOKOU.YAY),
 	txt("You can be so amazing sometimes!", MOKOU.CRYLAUGH),
 	txt("...?", KME.AWW),
@@ -1487,32 +1487,61 @@ function txt_kagumoku() {
 	txt("...", KME.FUFUFU),
 	txt("Not before I kiss you.", KME.FUFUFU),
 	
-	//CG GOES HERE
+	
+	//CG OR BIG OL DESCRIPTION OF KISS GOES HERE
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
-	ntxt(300, MOKOU.DEF, SPRITEPOS.HIDDEN, s_black),
+	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),
+	ptxt(),
+	
+	txt("Without giving myself time for doubt, I closed my eyes and leaned forward.", u, u, s_black, function() {textbox_set_type(global.textnvl)}),
+	txt("And then we were together."),
+	//MORE DESCRIPTION
 
-
+	ptxt(),
+	txt("Despite all the insults and screams that had come from Mokou's lips... they were so soft."),
+	txt("And for the first time ever... I could truly feel her heartbeat. It felt oddly hollow."),
+	txt("A body that had not changed in over 1000 years now seemed unrecognizable."),
+	//MOAR DESCRIPTION
+	
+	ptxt(),
+	txt("Mokou seemed stiff at first, as if she didn't know how to properly move."),
+	txt("...Not to say that I knew what I was doing either."),
+	txt("For a moment my hands searched for a proper place to stay, before I settled on wrapping my arms around her waist."),
+	txt("Mokou laid a hand on my chest and another on my shoulder, and I simply let my fingers run through her silky hair-- the hair that, only a month ago, I would be ripping off her scalp."),
+	
+	ptxt(),
+	txt("We settled and then stayed there, leaning into each other more and more."),
+	txt("How long was a kiss supposed to last? I did not know, but ours was certainly rather long."),
+	txt("It ended all too soon, and we opened our eyes once more."),
+	
 	//prob more text here
 	
 	ntxt(0, KME.LOVEY, SPRITEPOS.MIDRIGHT),
 	ntxt(100, MOKOU.LOVEY, SPRITEPOS.MIDLEFT, s_fullmoon2),
 	
-	txt("...", MOKOU.LOVEY),
-	txt("Is this love?", MOKOU.LOVEY),
-	txt("It feels like it, but...", MOKOU.LOVEY),
-	txt("What if it's just desperation? What if we're just two fools who are scared of being lonely forever?", MOKOU.LOVEYSAD),
+	ptxt(),
+	txt("Mokou's eyes were so... content. Like flawed rubies that still shined with perfection."),
+	txt("How could she smile so beautifully, after all those centuries of tears?"),
+	txt("As soon as I thought that, Mokou stiffened up, and moved back a little. Once again, we were separate."),
+	txt("But I kept hold of Mokou's hand-- soft, yet calloused from millions of invisible wounds."),
+	
+	txt("...", MOKOU.LOVEYSAD, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Is this love?", MOKOU.LOVEYSAD),
+	txt("It feels like it, but...", MOKOU.LOVEYSAD),
+	txt("What if it's just desperation? What if we're just two fools who are scared of being lonely forever?", MOKOU.SADSMILE),
 	txt("...Maybe so.", KME.AWW),
 	txt("But whether or not that's where it started...", KME.AWW),
-	txt("No matter the origin, I believe we can learn to truly love each other.", KME.YAY),
+	txt("No matter the origin, I believe we can learn to truly love.", KME.YAY),
 	txt("In a way, we're lucky. We have all of eternity to figure it out.", KME.FUFUFU),
 	txt("Guess so.", MOKOU.YAY),
+	txt("...", MOKOU.LOVEYSAD),	
 	txt("I'm... scared, honestly.", MOKOU.LOVEYSAD),
 	txt("This feeling might seem like forever, but... forever is only a moment.", MOKOU.NEUTRAL),
 	ntxt(0, KME.AWW, SPRITEPOS.MIDRIGHT),
-	txt("Someday we'll become unrecognizable, and drift apart.", MOKOU.NEUTRAL),
+	txt("We'll change and change until we're unrecognizable, and drift apart.", MOKOU.NEUTRAL),
 	txt("Maybe we'll get back together, then be back at each other's throats within a thousand years.", MOKOU.NEUTRAL),
-	txt("Friends will come and go, and we'll have no choice but to move on. One day, we'll see the world fall apart before our eyes. ", MOKOU.SAD),
-	txt("And when it's all over, it'll only be us, floating in an endless void and losing our minds.", MOKOU.SADSMILE),
+	txt("Friends will come and go, and we'll have no choice but to move on. We'll eventually see the world fall apart before our eyes.", MOKOU.SAD),
+	txt("And when it's all over, it'll only be us, floating in an endless void and losing our minds.", MOKOU.SAD),
 	txt("We'll have nothing.", MOKOU.SAD),
 	txt("...", KME.CRY),
 	txt("...No, Mokou.", KME.CRY),
@@ -1523,31 +1552,26 @@ function txt_kagumoku() {
 	ntxt(69, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	
 	ptxt(),
-	txt("Mokou changed then. She froze, and her eyes seemed to lose mine.", u, u, u, function() {textbox_set_type(global.textnvl)}),
-	txt("It was like she saw a glimpse into the future, and our lives together."),
-	txt("She was deathly still, a million miles away. She was seeing something, from now through the edge of eternity."),
+	txt("Mokou changed then. She went deathly still, and her eyes seemed to lose mine.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("Though only an arm's length from me, she felt a million years away."),
 	ptxt(),
-	txt("And then Mokou looked into my eyes, and she began to quiver."),
-	txt("Despite her best efforts, tears streaked down her face."),	
-	txt("Without thinking, I brought a hand to her cheek."),
+	txt("And then Mokou looked into my eyes, and she began to quiver. Despite her best efforts, tears streaked down her face."),
+	//moar description here?
+	txt("Without thinking, I brought a hand to her cheek, for a light caress that I couldn't imagine doing even yesterday."),
 	ptxt(),
 	txt("But before it reached, I was in her arms."),
 	txt("Her shoulders heaved with each sob that resounded through the sky. As if afraid that I would crumble to dust, she held on as tight as she could."),
-	txt("Stunned by the sudden embrace, I simply froze. Those three words I wanted to say were stuck in my throat. But no words would be enough here-- all I could do was return the favor."),
+	txt("Stunned by the sudden embrace, I simply froze. Those three words I wanted to say were stuck in my throat."),
+	txt("But in the back of my mind, I knew no words would be enough-- all I could do was return the favor."),
 	txt("So I wrapped my arms around her, and cried into her chest."),
-	txt("It was only a moment... but this moment was forever."),
+	ptxt(),
+	txt("I do not know how long we stayed there-- seconds, minutes, or even hours. But it did not matter. However long this moment may have lasted..."),
+	txt("It was forever."),
 	
-	txt("#END OF KAGUYAXMOKOU STORY|w9999", u, u, s_black, function() {textbox_set_type(global.textzpix)}),
+	txt("#END OF KAGUYAXMOKOU STORY|w99", u, u, s_black, function() {textbox_set_type(global.textzpix)}),
 	
 	
 	
-	/*
-	txt("Ever since I first discovered the House of Eternity, I thought it was the key to a door that was never meant to open."),
-	txt("And I wanted nothing more than to break that door down."),
-	txt("But now, everything had changed..."),
-	txt("...Except for me.",
-	//maybe use this opening monologue for the epilogue instead
-	*/
 	
 	],[
 	
@@ -1556,6 +1580,8 @@ function txt_kagumoku() {
 	])
 	
 	endevent = function() {while true {}};
+	
+	//endevent = textbox_create(txt_end, global.textzpix, false);
 }
 
 

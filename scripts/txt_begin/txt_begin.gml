@@ -39,7 +39,7 @@ function txt_begin() {
 	txt("~~And make my own tears wave goodbye!~~", ME.YAYNOTE),
 
 	ptxt(),
-	txt("The little rabbit princess, frolicking about in the woods.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("The Little Rabbit Princess, frolicking about in the woods.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("After so long staying cooped up in my castle, I wished to leave."),
 	txt("My parents insisted on bringing a bodyguard, but I couldn't stand the idea. How could I appreciate the view with a servant breathing down my neck?"),
 	ptxt(),
@@ -187,7 +187,7 @@ function txt_begin() {
 	
 	ptxt(),
 	txt("I liked having her there. She brought life to the uptight home, and she turned out to be just as interesting as I had hoped."),
-	txt("She originally lived in a western-style house just outside the human village, and while she couldn't get out much, she had access to tomes that taught her many things."),
+	txt("She originally lived in a western-style house just outside the Human Village, and while she couldn't get out much, she had access to tomes that taught her many things."),
 	txt("It was to the point that she knew more about the outside world than Gensokyo."),
 	txt("We would often go on walks and talk for hours on incredibly important subjects."),
 	txt("Until one night..."),	
@@ -630,7 +630,6 @@ function txt_begin() {
 	txt("I believe you. But there is another option...", KAGUYA.DEF),
 	
 	ptxt(),
-	
 	txt("Then we go there, and...", KANA.DEF, u, s_53_1),
 	txt("There!", KANA.DEF, u, s_53_2),
 	txt("Hey! Why did that rook move twice!?!?", REISEN.DEF),
@@ -1201,12 +1200,26 @@ function txt_begin() {
 	//sound effect of a bit of running for just a sec
 	
 	txt("...", ME.DISAPOINT),
-	ntxt(0333, u, u, u, function() {audio_play_sound(snd_running_in_fall_forest, 0, false)}),
-	txt("Hey, Kana!", ME.YAY),
-	ntxt(000, KANA.NEUTRAL, SPRITEPOS.RIGHT),
-	txt("See you tomorrow!", ME.YAY),
-	txt("...", KANA.YAY),
-	txt("You too!", KANA.WINKY),
+//	ntxt(0333, u, u, u, function() {audio_play_sound(snd_running_in_fall_forest, 0, false)}),
+	txt("--one more thing!", KANA.DEF),
+	
+	ptxt(),
+	txt("Just as I turned around to leave, Kana rushed back to me with something in her hand.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),
+	txt("Her little straw hat.", u, u, s_hat),	
+	txt("Here you go. Take it.", KANA.LOVEY, SPRITEPOS.RIGHT, u, function() {textbox_set_type(global.textdefault)}),
+	//kana has no hat on	
+	txt("...Really?", ME.NEUTRAL, SPRITEPOS.LEFT, s_eienteiday),
+	txt("Yeah. I don't want it anymore. So... you can keep it.", KANA.LOVEY, SPRITEPOS.RIGHT),
+	txt("It might look nice on you.", KANA.LOVEY),
+	txt("...", ME.DISTANT),
+	txt("Thanks.", ME.TINYSMIRK),
+	txt("...", KANA.LOVEYSHY),
+	txt("Have fun over there, okay?", ME.DEF),
+	txt("I'll try.", KANA.YAY),
+	txt("...That's good enough for me.", ME.HEHE),
+	txt("See you tomorrow!", ME.WINKY),
+	txt("See ya!", KANA.WINKY),
 	
 	ntxt(0030, KANA.DEF, SPRITEPOS.HIDDEN),
 	

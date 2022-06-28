@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -13,8 +14,8 @@
   "soundFile": "snd_mnuselect.wav",
   "duration": 0.207642,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "geimu noises",
+    "path": "folders/Sounds/geimu noises.yy",
   },
   "resourceVersion": "1.0",
   "name": "snd_mnuselect",

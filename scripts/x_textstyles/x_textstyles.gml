@@ -12,11 +12,11 @@ enum TEXTTYPE {
 global.textdefault = {
 	x: 640,
 	y: 520,
-	width: 840,
+	width: 940,
 	height: 160,
 	spriteposx: 210,
 	spriteposy: 400,
-	sprite: s_spacetext,
+	sprite: s_kotohimetext,
 	type: TEXTTYPE.ADV,
 	font: FONT.TALK,
 }

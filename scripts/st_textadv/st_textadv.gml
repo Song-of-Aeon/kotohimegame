@@ -49,7 +49,11 @@ function st_textadv() {
 	if msg[talkpos].type == "normal" {
 		draw_set_color(talker[0].namecolor);
 		draw_set_halign(fa_center);
-		draw_text(x+width/20-width/2+32, y-38, talker[0].name);
+		if !global.suoting {
+			draw_text(x+width/20-width/2+32, y-38, talker[0].name);
+		} else {
+			draw_text(x+width/20-width/2+32, y-38, talker[0].name);
+		}
 		draw_set_halign(fa_left);
 		draw_set_color(c_white);
 	}

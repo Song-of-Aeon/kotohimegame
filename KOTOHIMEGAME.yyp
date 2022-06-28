@@ -881,6 +881,7 @@
     {"id":{"name":"it_roukanken","path":"scripts/it_roukanken/it_roukanken.yy",},"order":2,},
     {"id":{"name":"pk_movespeed","path":"scripts/pk_movespeed/pk_movespeed.yy",},"order":4,},
     {"id":{"name":"s_reisenspellbg","path":"sprites/s_reisenspellbg/s_reisenspellbg.yy",},"order":17,},
+    {"id":{"name":"s_kotohimetext","path":"sprites/s_kotohimetext/s_kotohimetext.yy",},"order":39,},
     {"id":{"name":"s_daymoon","path":"sprites/s_daymoon/s_daymoon.yy",},"order":26,},
     {"id":{"name":"it_soundSystem","path":"scripts/it_soundSystem/it_soundSystem.yy",},"order":5,},
     {"id":{"name":"s_13","path":"sprites/s_13/s_13.yy",},"order":7,},

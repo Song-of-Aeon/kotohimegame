@@ -10,6 +10,7 @@
     {"id":{"name":"txt_chillin","path":"scripts/txt_chillin/txt_chillin.yy",},"order":4,},
     {"id":{"name":"bullet","path":"scripts/bullet/bullet.yy",},"order":3,},
     {"id":{"name":"rng","path":"scripts/rng/rng.yy",},"order":4,},
+    {"id":{"name":"s_mokou333","path":"sprites/s_mokou333/s_mokou333.yy",},"order":34,},
     {"id":{"name":"s_effect123","path":"sprites/s_effect123/s_effect123.yy",},"order":3,},
     {"id":{"name":"draw_percent","path":"scripts/draw_percent/draw_percent.yy",},"order":4,},
     {"id":{"name":"pt_bouncyrain","path":"scripts/pt_bouncyrain/pt_bouncyrain.yy",},"order":0,},

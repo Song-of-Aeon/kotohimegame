@@ -92,10 +92,10 @@ global.chara[?"chiyuri"] = {
 	startingitems: [ITEMS._DEBUG, /*ITEMS._SHOTPOWERNUMBERS,*/ ITEMS._STATS, ITEMS._GRAZE, ITEMS._CONSOLE, ITEMS.PAUSE, ITEMS.FOCUS, ITEMS._DPS,
 	ITEMS.CONVERGENT,
 	],
-	name: "Chiyuri\n& Yumemi",
-	desc: "Academic vagrant duo",
+	name: "Kaguya",
+	desc: "Lunatic",
 	//data: ["AMEA System", "Bad at magic", "Good at science"],
-	data: ["Artifical magic"],
+	data: ["Moon Magic"],
 	menusprite: s_scienceteam,
 }
 

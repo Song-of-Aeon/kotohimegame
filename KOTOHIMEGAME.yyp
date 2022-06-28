@@ -817,6 +817,7 @@
     {"id":{"name":"m_flight","path":"sounds/m_flight/m_flight.yy",},"order":16,},
     {"id":{"name":"s_lasertestcc","path":"sprites/s_lasertestcc/s_lasertestcc.yy",},"order":1,},
     {"id":{"name":"it_null","path":"scripts/it_null/it_null.yy",},"order":3,},
+    {"id":{"name":"c_yieldpattern","path":"scripts/c_yieldpattern/c_yieldpattern.yy",},"order":57,},
     {"id":{"name":"s_bigfx","path":"sprites/s_bigfx/s_bigfx.yy",},"order":1,},
     {"id":{"name":"s_touhou","path":"sprites/s_touhou/s_touhou.yy",},"order":19,},
     {"id":{"name":"s_ky","path":"sprites/s_ky/s_ky.yy",},"order":4,},

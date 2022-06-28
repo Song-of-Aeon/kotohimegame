@@ -1,3 +1,4 @@
+exit;
 surface_set_target(global.surfaces.HUD);
 
 draw_text(pos.x, pos.y, "SAVE");

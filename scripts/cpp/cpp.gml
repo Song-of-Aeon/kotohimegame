@@ -1,5 +1,8 @@
 function cpp() {
-	count++;
+	if !global.yieldtime {
+		count++;
+		global.yieldtime--;
+	}
 }
 function cmm() {
 	count--;

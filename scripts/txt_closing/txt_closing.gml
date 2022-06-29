@@ -24,7 +24,7 @@ function txt_closing() {
 	txt("I am fine not being reminded of that, thank you."),
 	txt("...I'm sorry. I simply mean to say that, Kaguya...", KOTOHIME.DISAPPOINTED),
 	txt("Your life is EVERYTHING. You serve GREAT purpose.", KOTOHIME.HAPPY),
-	txt("You should trust yourself, NOW!", KOTOHIME.EXCITED),
+	txt("You should trust yourself, |a|fNOW!", KOTOHIME.WINK, u, u, u, [se_NOW], [function() {c_flash(global.surfaces.HUD, 60)}]),
 	txt("And give somebody else a piece of that beauty, and brilliance, that exists in you so you can live inside this incredible blue bubble.", KOTOHIME.SMUG),
 	txt("Because you know what I'm here for! To worship you! Trust yourself!", KOTOHIME.HAPPY),
 	txt("I mean that with a hundred percent, with a thousand percent!", KOTOHIME.SMUG),

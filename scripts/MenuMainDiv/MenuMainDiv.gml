@@ -20,37 +20,40 @@
 		//draw_sprite(s_)
 		//if global.MenuCursor.target != o_uicontroller.UIElements[7] && global.MenuCursor.target != o_uicontroller.UIElements[6] {
 			draw_set_color(c_white);
-			draw_line(global.MenuCursor.target.x+40,
-			global.MenuCursor.target.y+20,
-			global.MenuCursor.target.x+string_width(global.MenuCursor.target.name)+40+20,
-			global.MenuCursor.target.y+20);
+			draw_text_transformed(global.MenuCursor.target.x-30, global.MenuCursor.target.y, ">", 2, 2, 0);
 		//}
 		
 		surface_reset_target();
 	});
 	background.options.selectable = false;
 	//y += 80;
-	var xpos = -4;
+	var xpos = -1;
 	var ypos = 1;
-	global.MenuCursor.target = o_uicontroller.UIElements[1];
+	
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"crash quickly").onSelect = function(){room_goto(WHOAMI); global.MenuCursor.disabled = true global.currentstage = 0 restart_items() global.doingtutorial = false}
-	makeGenericMMElement(x+(xpos*8),y+(ypos++*25),"aeon mode").onSelect = function(){room_goto(MINE)}
+	makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"aeon mode").onSelect = function(){room_goto(MINE)}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"continue", file_exists("hi guys.kotohime")).onSelect = function(){log("????????????");}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"glossary"/*, file_exists("you've won.kotohime")*/).onSelect = function(){}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"end", file_exists("you've won.kotohime")).onSelect = function(){}
-	makeGenericMMElement(x+(xpos*8),y+(ypos++*25),"Former Part").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 1 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
-	makeGenericMMElement(x+(xpos*8),y+(ypos++*25),"Latter Part").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 1 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
-	makeGenericMMElement(x+(xpos*8),y+(ypos++*25),"Epilogue").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 1 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
-	if file_exists("you've won again.kotohime2") {
-		makeGenericMMElement(x+(xpos*8),y+(ypos++*25),"Spell Practice").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 2 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = true}
-		makeGenericMMElement(x+(xpos*8),y+(ypos++*25),"Credits / Afterword").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 1 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
+	
+	makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Former Part").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 1 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
+	if file_exists("you've won.kotohime2") || true {
+		makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Latter Part").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 1 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
+	}
+	if file_exists("you've won again.kotohime2") || true {
+		makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Epilogue").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 1 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
+	}
+	if file_exists("you've won again again.kotohime2") || true {
+		makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Spell Practice").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 2 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = true}
+		makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Credits / Afterword").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 1 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
 	}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"Replay Start", false).onSelect = function(){}
 	
 	//makeGenericMMElement(x+8,y+25,"Replay Start",false).onSelect = function(){}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"Tutorial").onSelect = function(){room_goto(WHOAMI); global.MenuCursor.disabled = true global.currentstage = 0 restart_items() global.doingtutorial = true}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"load").onSelect = function(){game_end()}
-	makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"exit").onSelect = function(){game_end()}
+	makeGenericMMElement(x+(xpos++*8),y+(ypos++*70),"Exit").onSelect = function(){game_end()}
+	global.MenuCursor.target = o_uicontroller.UIElements[1];
 	//makeGenericMMElement(x+48,y+175,"Mods",false).onSelect = function(){}
 	/*var i;
 	for (i=1; i<6; i++) {
@@ -77,7 +80,8 @@ function makeGenericMMElement(x,y,name,selectable = true){
 	element.selectable = selectable;
 	element.draw = method(undefined,function(){
 		if(!selectable) draw_set_alpha(0.5);
-		draw_text(x,y,name);	
+		draw_set_font(ft_mincho);
+		draw_text_transformed(x,y,name, 2, 2, 0);
 		draw_set_alpha(1);
 	});
 	return element;

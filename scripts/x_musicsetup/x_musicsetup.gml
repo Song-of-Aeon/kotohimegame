@@ -15,7 +15,7 @@ nu song("Sweeping Through the Mysterious Waters", "thurs2", [m_mysteriouswaters]
 nu song("Lunatic Eyes ~ Invisible Full Moon", "reisen", [m_lunaticeyes], u, "by palto"); //no information
 nu song("nothing ~ there's nothing", "null");*/
 
-
+nu song("the monstrous glossary", "glosasary", m_glossary);
 
 
 nu song("Ragnarok", "ragnarok", [m_ragnarok], u, "by nerve");

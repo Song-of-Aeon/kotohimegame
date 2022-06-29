@@ -23,7 +23,7 @@ function txt_gaming() {
 	txt("|c160160160Kotohime inserts the drive into one of Kaguya's computers."),
 	txt("Okay, it looks like there are three folders here...", KOTOHIME.HAPPY),
 	txt("They must all be decent. This time, I had that outsider girl contracted.", KAGUYA2.NORMAL),
-	txt("I guess the girl I picked it up from did look kind of weird...", KOTOHIME.HAPPY),
+	txt("I guess the person I picked it up from did look kind of weird...", KOTOHIME.HAPPY),
 	txt("There's an outsider girl who can go back and forth?", KOTOHIME.HAPPY),
 	txt("You... haha! I didn't think there was someone more secluded from current events than I!", KAGUYA2.NORMAL),
 	txt("Her appearance was quite a big deal, you know.", KAGUYA2.NORMAL),

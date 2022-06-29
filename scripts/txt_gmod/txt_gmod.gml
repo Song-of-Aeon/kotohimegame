@@ -6,7 +6,7 @@ function txt_gmod() {
 	txt("Is that how you say it? I can't read any of this western text.", KOTOHIME.NERVOUS, SPRITEPOS.MIDLEFT),
 	txt("I don't quite know. I only have a few basic study books of experience.", KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT),
 	txt("Hm. I hope we can read enough to play.", KOTOHIME.HAPPY),
-	txt("...", u, u, function() {music_set(mus.null)}),
+	txt("...", u, u, s_black, function() {music_set(mus.null)}),
 	txt("Wahahahaha!", KOTOHIME.LMAO, SPRITEPOS.LEFT, u, function() {music_set(mus.gaming)}),
 	txt("Haha!", KAGUYA2.NORMAL, SPRITEPOS.CENTER),
 	txt("Kotohime, you just-#That poor man! That was a mountain of explosives!", KAGUYA2.NORMAL),

@@ -10,7 +10,8 @@ function txt_approach() {
 	txt("Girls will do, right?", KOTOHIME.WINK),
 	txt("Yes.", KAGUYA2.NORMAL),
 	ntxt(0, KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT),
-	txt("|c160160160Kaguya turns from her seat, and observes the tables around the bar.", s_bar),
+	ntxt(0, KOTOHIME.WINK, SPRITEPOS.RIGHT),
+	txt("|c160160160Kaguya turns from her seat, and observes the tables around the bar.", u, u, s_bar),
 	txt("|c160160160She sees..."),
 	
 	],[

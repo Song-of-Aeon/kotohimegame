@@ -1,5 +1,5 @@
 c
-if ncm(20) {
+if nam(count+10, 20) {
 	audio_play_sound(se_encounter, 0, false);
 }
 if count == 79 {

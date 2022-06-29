@@ -3,7 +3,7 @@ function txt_totalfail() {
 	msg = msglang([
 	
 	txt("Take that!"),
-	txt("...I don't see it."),
+	txt("...I don't see it.", KAGUYA2.NORMAL),
 	txt("...My finger slipped.", KOTOHIME.NERVOUS),
 	txt("A-allow me once more.", KOTOHIME.NERVOUS),
 	txt("The final reason you're perfect for this is...!", KOTOHIME.WINK),

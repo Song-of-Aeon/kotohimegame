@@ -22,7 +22,7 @@ function txt_bar() {
 	txt("Of course. That's part of why the time of day is ignored.", KOTOHIME.SMUG),
 	txt("For humans who work in the day and youkai who prowl in the night, it's unfair to give credence to one or the other in this place.", KOTOHIME.SMUG, SPRITEPOS.MIDRIGHT),
 	txt("I told you, didn't I? This place is unconcerned with the outside's business.", KOTOHIME.LMAO),
-	txt("This bar exists in perpetual twilight, never bound to the sun or the moon, to human or youkai. We are equals in the dusk glow.", KOTOHIME.SMUG),
+	txt("The bar exists in perpetual twilight, never bound to the sun or the moon, to human or youkai. We are equals in the dusk glow.", KOTOHIME.SMUG),
 	txt("Hence the name.", KAGUYA2.NORMAL),
 	txt("No, I just made that up. It sort of fits, though.", KOTOHIME.LMAO, SPRITEPOS.MIDLEFT),
 	txt("Should a princess truly be able to lie as easily as she breathes?", KAGUYA2.NORMAL),

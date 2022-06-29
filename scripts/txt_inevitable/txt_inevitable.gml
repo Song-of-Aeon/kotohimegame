@@ -6,15 +6,15 @@ function txt_inevitable() {
 	txt("|c102137255But, that doesn't mean she shouldn't get to enjoy this. That doesn't mean things have to be over.", KOTOHIME.HAPPY),
 	txt("|c102137255Kaguya is convinced that \"Tsukiko\" is the only person accepted in that place... I need to change that.", KOTOHIME.SMUG),
 	txt("...I cannot.", KOTOHIME.DISAPPOINTED),
-	txt("Then it is as simple as that."),
-	txt("The Twilight Bar is an interesting place, but I am not welcome there."),
+	txt("Then it is as simple as that.", KAGUYA2.NORMAL),
+	txt("The Twilight Bar is an interesting place, but I am not welcome there.", KAGUYA2.NORMAL),
 	txt("Obviously!"),
 	txt("That is not the case.", KOTOHIME.HAPPY),
 	txt("\"Tsukiko\" may not be sustainable, |abut it doesn't have to be her.", KOTOHIME.HAPPY, u, u, u, [se_17]),
-	txt("Have you forgotten?"),
-	txt("Romance and I are not famed for our synergy."),
+	txt("Have you forgotten?", KAGUYA2.NORMAL),
+	txt("Romance and I are not famed for our synergy.", KAGUYA2.NORMAL),
 	txt("I am aware. However, I believe those perceptions can be overcome.", KOTOHIME.SMUG),
-	txt("On what grounds? Before that, what part of my image do you think can be overcome?"),
+	txt("On what grounds? Before that, what part of my image do you think can be overcome?", KAGUYA2.NORMAL),
 	
 	],[
 	

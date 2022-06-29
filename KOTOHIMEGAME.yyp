@@ -435,6 +435,7 @@
     {"id":{"name":"s_start","path":"sprites/s_start/s_start.yy",},"order":4,},
     {"id":{"name":"ach_loseitems","path":"scripts/ach_loseitems/ach_loseitems.yy",},"order":4,},
     {"id":{"name":"pt_nue","path":"scripts/pt_nue/pt_nue.yy",},"order":3,},
+    {"id":{"name":"o_bjection","path":"objects/o_bjection/o_bjection.yy",},"order":17,},
     {"id":{"name":"txt_closing","path":"scripts/txt_closing/txt_closing.yy",},"order":10,},
     {"id":{"name":"s_k06","path":"sprites/s_k06/s_k06.yy",},"order":8,},
     {"id":{"name":"pk_poc","path":"scripts/pk_poc/pk_poc.yy",},"order":6,},

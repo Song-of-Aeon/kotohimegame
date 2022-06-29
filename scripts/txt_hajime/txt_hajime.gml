@@ -45,14 +45,14 @@ function txt_hajime() {
 	txt("|c255000085Royalty|c255255255."),
 	txt("It is?", REISEN.HAPPY, SPRITEPOS.RIGHT, s_bamboo),
 	txt("What? Oh, you. It's nothing. You're welcome.", KOTOHIME.LMAO, SPRITEPOS.LEFT, u, function() {music_set(mus.kotohime)}),
-	txt("I'm welcome... for what?", REISEN.CONFUSED),
+	txt("I'm welcome... for what?", REISEN.DAMN),
 	txt("The sight of one of my rare performances! Very enigmatic, yes?", KOTOHIME.HAPPY),
-	txt("I mean, maybe if what you're describing didn't use to be my job.", REISEN.UNIMPRESSED),
+	txt("I mean, maybe if what you're describing didn't use to be my job.", REISEN.DAMN),
 	txt("I'm sure you understand, then. The weight of this mission...", KOTOHIME.THINKING),
 	txt("Anyway, let's go! Take me to Kaguya!", KOTOHIME.EXCITED),
 	txt("Kagu-#I mean, the princess is sleeping right now. I wouldn't want to be the one to wake her...", REISEN.SHITSTUFF),
 	txt("Eh, she'll understand. This is a big deal.", KOTOHIME.HAPPY),
-	txt("If you say so.", REISEN.UNIMPRESSED),
+	txt("If you say so.", REISEN.DAMN),
 	
 	],[
 	

@@ -26,6 +26,7 @@ function txt_freedom() {
 	txt("Hehe, that was fun.", KAGUYA2.NORMAL, SPRITEPOS.LEFT, u, function() {music_set(mus.mokou)}),
 	txt("We're just getting started! Although, we should leave posthaste. Reisen won't be long.", KOTOHIME.HAPPY),
 	txt("Let us be off, then.", KAGUYA2.NORMAL),
+	txt("|c160160160In a practiced motion, Kaguya lifts from the ground. She hovers a moment, waiting for Kotohime to lead the way."),
 	txt("Ah... flight.", KOTOHIME.THINKING),
 	txt("...Are you incapable of it?", KAGUYA2.NORMAL),
 	txt("I had simply not expected it.", KOTOHIME.THINKING),

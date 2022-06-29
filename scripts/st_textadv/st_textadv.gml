@@ -3,7 +3,7 @@ global.thecolor = 0xFFFFFF
 function st_textadv() {
 	surface_set_target(global.surfaces.HUD);
 	draw_sprite(bg, 0, 0, 0);
-	if !global.suoting {
+	if !global.luying {
 		for (i=array_length(talker)-1; i>=0; i--) {
 			draw_sprite_ext(talker[i].sprite,
 			talker[i].index,
@@ -49,7 +49,7 @@ function st_textadv() {
 	if msg[talkpos].type == "normal" {
 		draw_set_color(talker[0].namecolor);
 		draw_set_halign(fa_center);
-		if !global.suoting {
+		if !global.luying {
 			draw_text(x+width/20-width/2+32, y-38, talker[0].name);
 		} else {
 			draw_text(x+width/20-width/2+32, y-38, talker[0].name);

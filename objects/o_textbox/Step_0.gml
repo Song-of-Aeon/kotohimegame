@@ -34,11 +34,11 @@ if !txtprocessed {
 
 var i;
 for (i=0; i<array_length(talker); i++) {
-	talker[i].x = lerp(talker[i].x, x+(talker[i].position-2)*width/5, .1+((global.suoting)*.9));
+	talker[i].x = lerp(talker[i].x, x+(talker[i].position-2)*width/5, .1+((global.luying)*.9));
 	if talker[i].position <= SPRITEPOS.RIGHT {
-		talker[i].alpha = max(talker[i].alpha+(.1+((global.suoting)*.05)), 0);
+		talker[i].alpha = max(talker[i].alpha+(.1+((global.luying)*.05)), 0);
 	} else {
-		talker[i].alpha = min(talker[i].alpha-(.1+((global.suoting)*.05)), 0);
+		talker[i].alpha = min(talker[i].alpha-(.1+((global.luying)*.05)), 0);
 	}
 }
 

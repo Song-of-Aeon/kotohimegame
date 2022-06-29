@@ -6,8 +6,7 @@ nu pattern_ext(function() {
 			ISAAC.y=240
 	}
 	
-	var boom = c_shoot(x, y, 0, 0, bul.smolerboolit, c_blue, function() {
-	}
+	
 	
 	if ncm(30){
 		c_shoot(-32, sin(count/60)*40+0, 2, 0, bul.bluamulet, c_red);
@@ -46,9 +45,14 @@ nu pattern_ext(function() {
 			if count = 400{
 			mokoboomposx= x
 			mokoboomposy = y
+			
+			}
+			if count = 401{
+			var boom = c_shootcircle(mokoboomposx, mokoboomposy, 3, seed.next(360), 50, bul.smolerboolit);
+			boom.escapedistance = 20;
 			}
 			
-			if count = 401{
+			if count = 402{
 			x = lerp(x, 6000, 1);
 			y = lerp(y, 6000, 1);
 			

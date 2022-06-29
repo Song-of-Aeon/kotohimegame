@@ -10,7 +10,7 @@ function txt_inevitable() {
 	txt("The Twilight Bar is an interesting place, but I am not welcome there."),
 	txt("Obviously!"),
 	txt("That is not the case.", KOTOHIME.HAPPY),
-	txt("\"Tsukiko\" may not be sustainable, but it doesn't have to be her.", KOTOHIME.HAPPY),
+	txt("\"Tsukiko\" may not be sustainable, |abut it doesn't have to be her.", KOTOHIME.HAPPY, u, u, u, [se_17]),
 	txt("Have you forgotten?"),
 	txt("Romance and I are not famed for our synergy."),
 	txt("I am aware. However, I believe those perceptions can be overcome.", KOTOHIME.SMUG),

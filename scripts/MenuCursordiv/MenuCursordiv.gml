@@ -13,8 +13,8 @@ function setCursor(){
 			direct: false, //does cursor go directly from one element to another or move on x/y
 			mouse: true,
 			sounds: {
-				moving: new Sound(se_move,50),
-				select: new Sound(se_move,50),
+				moving: new Sound(se_themenu,50),
+				select: new Sound(se_themenu,50),
 			},
 		},
 		moving: false,

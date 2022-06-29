@@ -3,7 +3,7 @@
   "isCompatibility": false,
   "parent": {
     "name": "battle",
-    "path": "folders/Dialogue/technical/KOTOHIME GAMING/battle.yy",
+    "path": "folders/Dialogue/KOTOHIME GAMING/battle.yy",
   },
   "resourceVersion": "1.0",
   "name": "txt_reason",

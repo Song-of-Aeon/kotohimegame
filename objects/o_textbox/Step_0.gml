@@ -65,7 +65,7 @@ if selecting {
 
 if drawchars <= talklength && !skipped {
     skip = select;
-    drawchars += talkspeed; &
+    drawchars += talkspeed;
 	if ncm(4+round((1/talkspeed)/4)) && !global.suoting {
 		var guy = audio_play_sound(talker[0].talksound, 0, false);
 		audio_sound_gain(guy, .2, 0);

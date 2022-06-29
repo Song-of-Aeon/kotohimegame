@@ -22,7 +22,6 @@ itemgen({
 			if fighting {
 				fightx += 3;
 				if (player.select && fightx >= 7) || fightx >= bordright-bordleft {
-					//bosshp -= floor(abs(fightx-(bordright-bordleft)/2)/5);
 					var middle = bordright-bordleft;
 					var dropoff = floor(abs(fightx-middle/5));
 					bosshp -= 50-dropoff;
@@ -54,7 +53,6 @@ itemgen({
 							textbox_create(txt_fight6, global.texttale);
 							break;
 					}
-					//c_makeboss(global.bosses.chiyuri, [SPELL.NON]);
 				}
 			}
 		}
@@ -96,7 +94,6 @@ itemgen({
 	},
 	menugen: function() {
 		if !sparing {
-			//textbox_create(txt_chara, global.textchara, false);
 			textbox_create(sparing ? txt_mercy : choose(txt_battle, txt_battle2, txt_battle3, txt_battle4), global.textchara);
 		}
 		battling = false;
@@ -262,8 +259,6 @@ itemgen({
 			global.MenuCursor.onBack = c_getitembyid(ITEMS.UNDERTALE).menugen;
 		})
 		global.MenuCursor.target = fight;
-		//textbox_create(txt_yoursins, global.textdefault, false);
-		//x = cos(global.count/80)*80;
 	},
 	
 	name: "undertale",

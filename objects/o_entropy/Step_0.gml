@@ -1,9 +1,9 @@
 c_input();
 c
-if left pos = 0;
-if up pos = 1;
-if down pos = 2;
-if right pos = 3;
+if leftp {pos = 0; audio_play_sound(se_themenu, 0, 0)};
+if upp {pos = 1 audio_play_sound(se_themenu, 0, 0)};
+if downp {pos = 2 audio_play_sound(se_themenu, 0, 0)};
+if rightp {pos = 3 audio_play_sound(se_themenu, 0, 0)};
 if select && count > 2 switch pos {
 	default:
 		room_goto(BASEMENT); global.currentstage = 0 global.currentday = DAY.WEDNES restart_items() global.gameplay = false c_flash(global.surfaces.HUD, 120, c_white);

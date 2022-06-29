@@ -4,10 +4,10 @@ function txt_thosegrounds() {
 	
 	txt("Take that!"),
 	txt("This is what we can overcome!", KOTOHIME.HAPPY),
-	txt("...So? What about that can you change?"),
+	txt("...So? What about that can you change?", KAGUYA.NORMAL, SPRITEPOS.MIDLEFT, u, u, [se_23]),
 	txt("You know...", KOTOHIME.HAPPY),
 	txt("The whole thing~", KOTOHIME.WINK),
-	txt("Don't kid with me."),
+	txt("Don't kid with me.", KAGUYA.NORMAL, SPRITEPOS.MIDLEFT, u, u, [se_17]),
 	txt("|c102137255Damn.", KOTOHIME.NERVOUS),
 	txt("Have you forgotten?"),
 	txt("Romance and I are not famed for our synergy."),

@@ -25,6 +25,7 @@ nu talksprite("WINK", "kotohime", z++);
 nu talksprite("STUNNED", "kotohime", z++);
 nu talksprite("SOLEMN", "kotohime", z++);
 nu talksprite("SILENT", "kotohime", z++);
+nu talksprite("NOTHING", "kotohime", z++);
 
 #macro ME global.textguy[?"me"]
 nu chardata("Me", s_kodohimey);

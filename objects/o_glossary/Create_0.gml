@@ -2,6 +2,7 @@ c_input();
 entries = [];
 pos = 0;
 count = 0;
+music_set(mus.glossary);
 c_flash(global.surfaces.HUD, 120, c_white);
 //log("your mom");
 

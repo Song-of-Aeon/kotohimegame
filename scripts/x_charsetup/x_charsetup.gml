@@ -2,9 +2,9 @@ nu chardata("Reimu", s_reimu16, se_talkpew, .5);
 nu chardata("Aunn", s_aunn16, se_talkpew, .5);
 nu chardata("Mike", s_mike16, se_talkgeneral, .5);
 nu chardata("Yukari", s_yukari16, se_talkbloop, .3);
-nu chardata("Reisen", s_reisen16, se_null, .5);
+nu chardata("Reisen", s_reisen16, se_ntalk1, .5);
 nu chardata("Yumemi", s_yumemi16, se_talkbloop, .8);
-nu chardata("Chiyuri", s_chiyurii, se_talkpew, .5);
+nu chardata("Chiyuri", s_chiyurii, se_ntalk1, .5);
 nu chardata("", s_null, se_null, 1);
 nu chardata("spamton g. spamton", s_drip);
 nu chardata();
@@ -12,7 +12,7 @@ nu chardata();
 
 
 #macro KOTOHIME global.textguy[?"kotohime"]
-nu chardata("Kotohime", s_kotohime, se_null);
+nu chardata("Kotohime", s_kotohime, se_ntalk1, .75);
 var z=0;
 nu talksprite("HAPPY", "kotohime", z++);
 nu talksprite("LMAO", "kotohime", z++);
@@ -177,7 +177,7 @@ nu talksprite("LOVEY", "mokou", z++);
 
 
 #macro KAGUYA2 global.textguy[?" kaguya "]
-nu chardata(" Kaguya ", s_kaguya2, se_null);
+nu chardata(" Kaguya ", s_kaguya2, se_ntalk3);
 nu talksprite("NORMAL", " kaguya ", 0);
 
 
@@ -187,15 +187,15 @@ nu talksprite("DEF", "keine", 0);
 
 
 #macro EIRIN global.textguy[?"eirin"]
-nu chardata("Eirin", s_eirin, se_null);
+nu chardata("Eirin", s_eirin, se_ntalk1);
 nu talksprite("NORMAL", "eirin", 0);
 
 #macro GENGETSU global.textguy[?"gengetsu"]
-nu chardata("Gengetsu", s_null, se_null);
+nu chardata("Gengetsu", s_null, se_ntalk2);
 nu talksprite("NORMAL", "gengetsu", 0);
 
 #macro ELLY global.textguy[?"elly"]
-nu chardata("Elly", s_null, se_null);
+nu chardata("Elly", s_null, se_ntalk1);
 var z=0;
 nu talksprite("HAPPY", "elly", z++);
 nu talksprite("BORED", "elly", z++);

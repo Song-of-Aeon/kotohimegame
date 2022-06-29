@@ -52,7 +52,7 @@ function txt_bar() {
 	txt("Kotohime, follow me.", CHIYURI.NOTHING),
 	ntxt(0, KOTOHIME.EXCITED, SPRITEPOS.LEFT),
 	ntxt(0, CHIYURI.NOTHING, SPRITEPOS.CENTER),
-	txt("|c160160160The two go behind the bar, past a storage room in the back, and through the back exit.", CHIYURI.NOTHING, s_path),
+	txt("|c160160160The two go behind the bar, past a storage room in the back, and through the back exit.", u, u, s_path),
 	txt("Is something wrong?", KOTOHIME.HAPPY),
 	txt("Yeah, something's wrong.", CHIYURI.NOTHING, SPRITEPOS.MIDRIGHT),
 	

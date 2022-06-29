@@ -37,7 +37,7 @@ function txt_fight5() {
 }
 function txt_fight6() {
 	msg = msglang([
-	txt("|c000000000Damn it. That's enough."),
+	txt("|c000000000Damn it. That's enough.", u, u, u, function() {music_set(mus.null)}),
 	txt("|c000000000No reason to keep this going."),
 	],[txt(""),])	
 	endevent = function() {

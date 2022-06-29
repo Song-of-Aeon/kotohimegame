@@ -2,7 +2,7 @@ function txt_bar() {
 	
 	msg = msglang([
 	
-	txt("..."),//, MOKOU.DEF, SPRITEPOS.CENTER),
+	txt("...", u, u, u, function() {music_set(mus.null)}),//, MOKOU.DEF, SPRITEPOS.CENTER),
 	txt("This is it?", KAGUYA2.NORMAL, SPRITEPOS.LEFT),
 	txt("A bit...", KAGUYA2.NORMAL),
 	txt("Dingy, drab, and inelegant. It does not appear to be fit for a princess.", KOTOHIME.DISAPPOINTED, SPRITEPOS.MIDRIGHT),
@@ -11,7 +11,7 @@ function txt_bar() {
 	txt("In truth, it is actually quite nice inside.", KOTOHIME.THINKING),
 	txt("I see...", KAGUYA2.NORMAL),
 	txt("..."),
-	txt("And here we are!", KOTOHIME.HAPPY, SPRITEPOS.MIDLEFT, s_bar),
+	txt("And here we are!", KOTOHIME.HAPPY, SPRITEPOS.MIDLEFT, s_bar, function() {music_set(mus.bar)}),
 	txt("|c160160160The bar is lined with tables around its edge, with a spacious center area."),
 	txt("|c160160160Nobody looks up to greet the newcomers, already absorbed in their conversations and entertainment."),
 	txt("There's a small lounge upstairs, but here should be fine for now.", KOTOHIME.HAPPY),
@@ -52,7 +52,7 @@ function txt_bar() {
 	txt("Kotohime, follow me.", CHIYURI.NOTHING),
 	ntxt(0, KOTOHIME.EXCITED, SPRITEPOS.LEFT),
 	ntxt(0, CHIYURI.NOTHING, SPRITEPOS.CENTER),
-	txt("|c160160160The two go behind the bar, past a storage room in the back, and through the back exit.", u, u, s_path),
+	txt("|c160160160The two go behind the bar, past a storage room in the back, and through the back exit.", u, u, s_path, function() {music_set(mus.null)}),
 	txt("Is something wrong?", KOTOHIME.HAPPY),
 	txt("Yeah, something's wrong.", CHIYURI.NOTHING, SPRITEPOS.MIDRIGHT),
 	

@@ -3,7 +3,7 @@ function txt_objection() {
 	msg = msglang([
 	
 	txt("Objection!"),
-	txt("Kagyua, you're wrong.", KOTOHIME.DISAPPOINTED),
+	txt("Kagyua, you're wrong.", KOTOHIME.DISAPPOINTED, u, u, function() {music_set(mus.kotohime)}),
 	txt("There is something for everybody in that place.", KOTOHIME.HAPPY),
 	txt("You fool!"),
 	txt("You are very confident."),

@@ -2,11 +2,11 @@ function txt_chillin() {
 	
 	msg = msglang([
 	
-	txt("Kotohime, I'm surprised you can take this so seriously.", KAGUYA2.NORMAL, SPRITEPOS.CENTER, s_gaming),
+	txt("Kotohime, I'm surprised you can take this so seriously.", KAGUYA2.NORMAL, SPRITEPOS.CENTER, s_gaming, function() {music_set(mus.chillin)}),
 	txt("Do you not have your \"princessly duties\" this eve?", KAGUYA2.NORMAL),
 	txt("Alas, the eve has already given way to morrow.", KOTOHIME.THINKING, SPRITEPOS.LEFT),
 	txt("So it has...", KAGUYA2.NORMAL),
-	txt("Especially with that, will you be staying much longer, Kotohime?", KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT),
+	txt("Especially with that, will you be staying much longer?", KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT),
 	txt("No, I ought to not.", KOTOHIME.DISAPPOINTED),
 	txt("I'm sure to have mountains of work upon my unexpected return.", KOTOHIME.THINKING),
 	txt("Peoples' campaigns, marriage proposals...", KOTOHIME.THINKING),

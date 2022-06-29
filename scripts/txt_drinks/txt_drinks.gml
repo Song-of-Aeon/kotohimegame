@@ -3,7 +3,7 @@ function txt_drinks() {
 	msg = msglang([
 	
 	txt("..."),
-	txt("Hiiii~!", KOTOHIME.EXCITED, SPRITEPOS.MIDRIGHT, s_thebar),
+	txt("Hiiii~!", KOTOHIME.EXCITED, SPRITEPOS.MIDRIGHT, s_thebar, function() {music_set(mus.bar)}),
 	txt("What happened over there? It sounded almost like a danmaku battle.", KAGUYA2.NORMAL, SPRITEPOS.MIDLEFT),
 	txt("Simply a greeting. Our resident tavernkeep is out at the moment, and I was catching up with her substitute.", KOTOHIME.THINKING),
 	txt("Yeah, don't worry about it. Come over to the bar, I'll get the two of you some drinks.", CHIYURI.NOTHING, SPRITEPOS.RIGHT),
@@ -27,7 +27,7 @@ function txt_drinks() {
 	txt("Right, she and Kotohime went and made this.", CHIYURI.NOTHING),
 	txt("Are you skilled in that sort of thing, Kotohime?", KAGUYA2.NORMAL),
 	txt("It is from any princess' upbringing that she is to have myriad skills.", KOTOHIME.SMUG),
-	txt("I suppose it's out of the understanding of us common folk, isn't it.", CHIYURI.HAPPY),
+	txt("I suppose it's out of the understanding of us common folk, isn't it.", CHIYURI.NOTHING),
 	txt("By the way, new girl, what did you say your name was?", CHIYURI.NOTHING),
 	txt("|c102137255Ah... Chiyuri's playing with Kaguya. I'm sure she can handle it.", KOTOHIME.THINKING),
 	txt("It's Tsukiko.", KAGUYA2.NORMAL),

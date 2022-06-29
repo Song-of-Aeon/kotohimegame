@@ -3,7 +3,7 @@ function txt_thesegrounds() {
 	msg = msglang([
 	
 	txt("Take that!"),
-	txt("It's this!", KOTOHIME.HAPPY),
+	txt("It's this!", KOTOHIME.HAPPY, u, u, function() {music_set(mus.null)}),
 	txt("Your perception of being a \"dangerous person to meet\"!", KOTOHIME.HAPPY, u, u, u, [se_17]),
 	txt("The public has a pre-conceived notion of \"Princes Kaguya\".", KOTOHIME.DISAPPOINTED),
 	txt("However, it would be clear to both Chiyurii and Elly that you are, in fact, very personable.", KOTOHIME.HAPPY),

@@ -11,7 +11,7 @@ function txt_standards() {
 	txt("How selfless."),
 	txt("You know, Kotohime, one such as yourself ought to be more careful."),
 	txt("If you keep this up, the one I fall for might be you...~"),
-	txt("Oh.", KOTOHIME.DISAPPOINTED),
+	txt("Oh.", KOTOHIME.DISAPPOINTED, u, u, function() {music_set(mus.null)}),
 	txt("...I really hate to say this, Kaguya, but I'm sorry.", KOTOHIME.THINKING),
 	txt("I couldn't accept that.", KOTOHIME.DISAPPOINTED),
 	txt("W-why not...?"),

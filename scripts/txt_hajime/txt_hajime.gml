@@ -44,7 +44,7 @@ function txt_hajime() {
 	ntxt(0, KOTOHIME.SMUG, SPRITEPOS.CENTER),
 	txt("|c255000085Royalty|c255255255."),
 	txt("It is?", REISEN.HAPPY, SPRITEPOS.RIGHT, s_bamboo),
-	txt("What? Oh, you. It's nothing. You're welcome.", KOTOHIME.LMAO, SPRITEPOS.LEFT),
+	txt("What? Oh, you. It's nothing. You're welcome.", KOTOHIME.LMAO, SPRITEPOS.LEFT, u, function() {music_set(mus.kotohime)}),
 	txt("I'm welcome... for what?", REISEN.HAPPY),
 	txt("The sight of one of my rare performances! Very enigmatic, yes?", KOTOHIME.HAPPY),
 	txt("I mean, maybe if what you're describing didn't use to be my job.", REISEN.HAPPY),

@@ -10,7 +10,7 @@ function txt_oncemore() {
 	txt("|c160160160Despite being a bar, it is most used as a meeting place during the day."),
 	txt("|c160160160Gengetsu continues to illustrate something intentfully."),
 	txt("|c160160160Chiyuri is cleaning various dishware from the day's meals and drinks."),
-	ntxt(0, KOTOHIME.SOLEMN, SPRITEPOS.MIDLEFT, u, u, s_thebarnight),
+	ntxt(0, KOTOHIME.SOLEMN, SPRITEPOS.MIDLEFT, s_thebarnight),
 	txt("|c160160160Kotohime approaches the bar, and sits down."),
 	txt("Oh. You're back.", CHIYURI.NOTHING),
 	txt("I am.", KOTOHIME.SMUG),

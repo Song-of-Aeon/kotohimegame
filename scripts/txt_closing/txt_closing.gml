@@ -3,7 +3,7 @@ function txt_closing() {
 	msg = msglang([
 	
 	txt("Take that!"),
-	txt("...You remember, don't you, Kaguya?", KOTOHIME.HAPPY),
+	txt("...You remember, don't you, Kaguya?", KOTOHIME.HAPPY, u, u, function() {music_set(mus.null)}),
 	txt("Elly was clearly in a slump.", KOTOHIME.DISAPPOINTED),
 	txt("She didn't feel like she belonged anywhere.", KOTOHIME.DISAPPOINTED),
 	txt("...Yes, I had noticed."),
@@ -14,7 +14,7 @@ function txt_closing() {
 	txt("Of course... of course.", KOTOHIME.THINKING),
 	txt("As a reaper...", KOTOHIME.SMUG),
 	txt("!#You intend to say-"),
-	txt("Yes!", KOTOHIME.HAPPY),
+	txt("Yes!", KOTOHIME.HAPPY, u, u, function() {music_set(mus.gaming)}),
 	txt("Kaguya! You are a unique being that is perfectly suited to companionship of our now-mutual friend Elly!", KOTOHIME.HAPPY),
 	txt("If she is of interest to you...", KOTOHIME.THINKING),
 	txt("...She is a fairly striking woman."),

@@ -91,6 +91,7 @@ itemgen({
 	onpickup: function() {
 		battling = true;
 		c_makeboss(global.bosses.chiyuri, [SPELL.NON]);
+		music_set(mus.undertale);
 	},
 	menugen: function() {
 		if !sparing {

@@ -3,13 +3,13 @@ function txt_immortal() {
 	msg = msglang([
 	
 	txt("Take that!"),
-	txt("Of course. The effects of the Hourai Elixir. Irreversible, unbreakable immortality.", KOTOHIME.DISAPPOINTED),
+	txt("Of course. The effects of the Hourai Elixir. Irreversible, unbreakable immortality.", KOTOHIME.DISAPPOINTED, u, u, function() {music_set(mus.null)}),
 	txt("That's correct."),
 	txt("I cannot age or be killed."),
 	txt("I am exiled from all pure lands, the moon nor the Netherworld will accept me."),
 	txt("It is impossible to me to lead a life parallel to a mortal's."),
 	txt("Obviously!"),
-	txt("And what of it?", KOTOHIME.HAPPY),
+	txt("And what of it?", KOTOHIME.HAPPY, u, u, function() {music_set(mus.kotohime)}),
 	txt("To be undying... do you see it as a curse?", KOTOHIME.SMUG),
 	txt("I do not."),
 	txt("There are countless people who believe it to be one.", KOTOHIME.HAPPY),

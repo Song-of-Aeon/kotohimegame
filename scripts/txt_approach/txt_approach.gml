@@ -3,7 +3,7 @@ function txt_approach() {
 	msg = msglang([
 	
 	txt("..."),
-	txt("Shall we continue with our plans, now?", KAGUYA2.NORMAL, SPRITEPOS.CENTER, s_thebar),
+	txt("Shall we continue with our plans, now?", KAGUYA2.NORMAL, SPRITEPOS.CENTER, s_thebar, function() {music_set(mus.chillin)}),
 	txt("If you're ready.", KOTOHIME.HAPPY, SPRITEPOS.MIDLEFT),
 	txt("How shall we proceed?", KAGUYA2.NORMAL),
 	txt("Just pick any girl here, and we can go strike up a conversation. They're all nice enough.", KOTOHIME.HAPPY),

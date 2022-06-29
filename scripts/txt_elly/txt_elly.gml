@@ -2,7 +2,7 @@ function txt_elly() {
 	
 	msg = msglang([
 	
-	txt("None of these women seem terribly approachable...", KAGUYA.NORMAL, SPRITEPOS.MIDRIGHT, s_thebar),
+	txt("None of these women seem terribly approachable...", KAGUYA.NORMAL, SPRITEPOS.MIDRIGHT, s_thebar, function() {music_set(mus.null)}),
 	txt("Admittedly, the bachelorettes of the Twilight Bar are a fair bit eccentric.", KOTOHIME.THINKING, SPRITEPOS.RIGHT),
 	txt("|c102137255Who could have guessed?"),
 	txt("Slow day, is it?"),
@@ -19,7 +19,7 @@ function txt_elly() {
 	txt("|c160160160A woman in a deep crimson dress sits, contemplating under a pale hood."),
 	txt("Good evening."),
 	txt("|c160160160Startled, she unsheathes her eyes at the newcomer."),
-	txt("Oh... hi.", ELLY.CONFUSED),
+	txt("Oh... hi.", ELLY.CONFUSED, u, u, function() {music_set(mus.bar)}),
 	txt("Did you need something?", ELLY.FAKELAUGH),
 	txt("Not terribly much. I had been enjoying this bar, and became curious to make the acquaintence of one of its' regulars."),
 	txt("May I?"),
@@ -106,7 +106,7 @@ function txt_elly() {
 	txt("|c102137255With \"Tsukiko\"..."),
 	txt("|c102137255No, this is wrong."),
 	txt("|c102137255This sort of deception... this friviolity... it is disrespectful."),
-	txt("...No. Apologies.", u, u, s_bar),
+	txt("...No. Apologies.", u, u, s_bar, function() {music_set(mus.null)}),
 	txt("Truthfully, I must be going now."),
 	txt("...Oh. That's a shame.", ELLY.CONFUSED),
 	txt("Elly. Kotohime. It was pleasant."),

@@ -2,8 +2,8 @@ function txt_deception() {
 	
 	msg = msglang([
 	
-	txt("..."),
-	txt("That was heavy. I don't think I've ever seen the princess get so mad...", REISEN.HAPPY, SPRITEPOS.LEFT, s_bamboo),
+	txt("...", u, u, u, function() {music_set(mus.null)}),
+	txt("That was heavy. I don't think I've ever seen the princess get so mad...", REISEN.HAPPY, SPRITEPOS.LEFT, s_bamboo, function() {music_set(mus.chillin)}),
 	txt("What did you do?", REISEN.HAPPY),
 	txt("Well~", KOTOHIME.HAPPY, SPRITEPOS.RIGHT),
 	txt("You know~", KOTOHIME.SMUG),

@@ -6,6 +6,7 @@ function txt_kagumoku() {
 	
 	ntxt(0, u, u, u, function() {music_set(mus.null)}),
 	
+	ptxt(),
 	txt("Time goes by fast, doesn't it?", u, u, s_black, function() {textbox_set_type(global.textnvl)}),
 	txt("At least, for some of us. We think we have all of eternity ahead of us, and that conviction results in lethargy."),
 	txt("And by the time one realizes how much time they've wasted, it's too late."),

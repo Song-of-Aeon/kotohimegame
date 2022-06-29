@@ -6,6 +6,7 @@ function txt_end() {
 	
 	ntxt(0, u, u, u, function() {music_set(mus.null)}),
 	
+	ptxt(),
 	txt("Life went on in the House of Eternity.", u, u, s_black, function() {textbox_set_type(global.textnvl)}),
 	txt("Ever since that rainy night, Kaguya and Mokou seemed closer. Though neither of them mentioned it in front of me, it was clear that my plan had been a success."),
 	txt("With that success came growth."),

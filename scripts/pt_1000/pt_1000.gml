@@ -8,7 +8,7 @@ nu pattern_ext(function() {
 	
 	
 	
-	if ncm(30){
+	if ncm(42){
 		c_shoot(-32, sin(count/60)*40+0, 2, 0, bul.bluamulet, c_red);
 		c_shoot(-32, sin(count/60)*40+50, 2, 0, bul.bluamulet, c_red);
 		c_shoot(-32, sin(count/60)*40+100, 2, 0, bul.bluamulet, c_red);
@@ -36,41 +36,50 @@ nu pattern_ext(function() {
 		meposx = ISAAC.x
 		meposy = ISAAC.y	
 	}
-		
 	
-	if count > 120 and count < 400 {
+	if count = 60{
+		meposx = ISAAC.x
+		meposy = ISAAC.y	
+	}
+	//once this happens
+	//SPEEN
+	
+	
+	if count > 60 and count < 200 {
 		x = lerp(x, meposx, .03);
 		y = lerp(y, meposy, .03);
 	}
 			
-	if count = 400 {
+			
+	if count = 200 {
 		mokoboomposx = x
 		mokoboomposy = y
-			
+			//STOP SPEENING ONLY WHEN SHE EXPLODES
 	}
-	if count = 401 {
-		var boom = c_shootcircle(mokoboomposx, mokoboomposy, 3, seed.next(360), 50, bul.smolerboolit);
-		boom.escapedistance = 20;
+	if count = 201 {
+		var boom = c_shootcircle(mokoboomposx, mokoboomposy, 3, seed.next(360), 90, bul.bigerboolit, u, function() {
+			c;
+			
+			if count = 30 {instance_destroy()}			
+			
+			});
+
 	}
 			
-	if count = 402 {
+	if count = 202 {
 		x = lerp(x, 6000, 1);
 		y = lerp(y, 6000, 1);
-	}
-	//if count >= 100 and count < 200
-	//&& means and
-			
-	if count = 402 {
 		x = lerp(x, x, 1);
 		y = lerp(y, y, 1);
 	}
 			
+			//do not SPEEN here
 			
-	if count = 600 {
+	if count = 333 {
 		x = lerp(x, mokoboomposx, 1);
 		y = lerp(y, mokoboomposy, 1);
 	}
-	if count = 601{count = 2}
+	if count = 350{count = 2}
 		/*
 		if count = 6{
 			
@@ -87,7 +96,7 @@ nu pattern_ext(function() {
 	
 
 	
-}, 600, 100, "mokou", SPELL.CARD, DIFFICULTY.HARD, "1000 Years of Hatred", function() {
+}, 700, 100, "mokou", SPELL.CARD, DIFFICULTY.HARD, "1000 Years of Hatred", function() {
 	meposx = ISAAC.x
 	meposy = ISAAC.y});
 

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "bakgrounds",
-    "path": "folders/Sprites/bakgrounds.yy",
+    "name": "yours",
+    "path": "folders/Sprites/bakgrounds/yours.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_ke4",

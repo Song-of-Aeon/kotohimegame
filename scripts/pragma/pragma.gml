@@ -14,7 +14,7 @@ nu boss("reisen", s_impossiblereisen);
 nu boss("yumemi", s_impossibleyumemi);
 nu boss("touhou", s_touhou);
 nu boss("chiyuri", s_null);
-nu boss("mokou", s_touhou);
+nu boss("mokou", s_mokouboss);
 
 global.destroyshape = DESTROYSHAPE.CIRCLE;
 

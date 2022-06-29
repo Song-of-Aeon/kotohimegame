@@ -3,6 +3,7 @@
   "glyphOperations": 0,
   "interpreter": 0,
   "pointRounding": 0,
+  "applyKerning": 0,
   "fontName": "Eras Medium ITC",
   "styleName": "Regular",
   "size": 16.0,
@@ -20,6 +21,7 @@
     "path": "texturegroups/Default",
   },
   "ascenderOffset": 0,
+  "ascender": 0,
   "glyphs": {
     "32": {"x":2,"y":2,"w":5,"h":24,"character":32,"shift":5,"offset":0,},
     "33": {"x":2,"y":80,"w":2,"h":24,"character":33,"shift":6,"offset":2,},

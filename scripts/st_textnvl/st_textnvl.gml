@@ -1,7 +1,7 @@
 function st_textnvl() {
 	surface_set_target(global.surfaces.HUD);
 	draw_sprite(bg, 0, 0, 0);
-	if !global.suoting {
+	if !global.luying {
 		for (i=array_length(talker)-1; i>=0; i--) {
 			draw_sprite_ext(talker[i].sprite,
 			talker[i].index,

@@ -2,8 +2,8 @@ nu pattern_ext(function() {
 	c;
 	
 	if count = 1 {
-			ISAAC.x=145
-			ISAAC.y=240
+		ISAAC.x=145
+		ISAAC.y=240
 	}
 	
 	
@@ -32,68 +32,53 @@ nu pattern_ext(function() {
 
 	}
 	
-		if count = 3{
-				meposx = ISAAC.x
-				meposy = ISAAC.y	
-		}
+	if count = 3 {
+		meposx = ISAAC.x
+		meposy = ISAAC.y	
+	}
 		
 	
-		if count > 120 and count < 400 {
-			x = lerp(x, meposx, .03);
-			y = lerp(y, meposy, .03);
+	if count > 120 and count < 400 {
+		x = lerp(x, meposx, .03);
+		y = lerp(y, meposy, .03);
+	}
 			
-			if count = 400{
-			mokoboomposx= x
-			mokoboomposy = y
+	if count = 400 {
+		mokoboomposx = x
+		mokoboomposy = y
 			
-			}
-			if count = 401{
-			var boom = c_shootcircle(mokoboomposx, mokoboomposy, 3, seed.next(360), 50, bul.smolerboolit);
-			boom.escapedistance = 20;
-			}
+	}
+	if count = 401 {
+		var boom = c_shootcircle(mokoboomposx, mokoboomposy, 3, seed.next(360), 50, bul.smolerboolit);
+		boom.escapedistance = 20;
+	}
 			
-			if count = 402{
-			x = lerp(x, 6000, 1);
-			y = lerp(y, 6000, 1);
+	if count = 402 {
+		x = lerp(x, 6000, 1);
+		y = lerp(y, 6000, 1);
+	}
+	//if count >= 100 and count < 200
+	//&& means and
 			
-			//if count >= 100 and count < 200
-			//&& means and
-			
-			if count = 402{
-			
-			x = lerp(x, x, 1);
-			y = lerp(y, y, 1);
-			}
-			
-			
-				if count = 600{
-				x = lerp(x, mokoboomposx, 1);
-				y = lerp(y, mokoboomposy, 1);
-				
-				if count = 601{count = 2}
-					
-					
-				}
-			
-			}
-			/*
-			if count = 6{
+	if count = 402 {
+		x = lerp(x, x, 1);
+		y = lerp(y, y, 1);
+	}
 			
 			
-			x = lerp(x, mokoboomposx, 1);
-			y = lerp(y, mokoboomposy, 1);
-			}
-			*/
+	if count = 600 {
+		x = lerp(x, mokoboomposx, 1);
+		y = lerp(y, mokoboomposy, 1);
+	}
+	if count = 601{count = 2}
+		/*
+		if count = 6{
 			
 			
-			
-			
-			
-			
-				
-			
-		
+		x = lerp(x, mokoboomposx, 1);
+		y = lerp(y, mokoboomposy, 1);
 		}
+		*/
 	
 //	x = lerp(x, ease_inoutsine(count, 200)*230+30, .1);
 //	y = lerp(y, ease_inoutsine(count, 200)*70+40, .1);

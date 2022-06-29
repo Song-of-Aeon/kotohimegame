@@ -249,6 +249,7 @@
     {"id":{"name":"x_charsetup","path":"scripts/x_charsetup/x_charsetup.yy",},"order":3,},
     {"id":{"name":"o_itemmanager","path":"objects/o_itemmanager/o_itemmanager.yy",},"order":0,},
     {"id":{"name":"ft_copperplateh2","path":"fonts/ft_copperplateh2/ft_copperplateh2.yy",},"order":8,},
+    {"id":{"name":"pt_1000","path":"scripts/pt_1000/pt_1000.yy",},"order":13,},
     {"id":{"name":"s_fairy127","path":"sprites/s_fairy127/s_fairy127.yy",},"order":18,},
     {"id":{"name":"txt_end","path":"scripts/txt_end/txt_end.yy",},"order":2,},
     {"id":{"name":"s_melting","path":"sprites/s_melting/s_melting.yy",},"order":2,},

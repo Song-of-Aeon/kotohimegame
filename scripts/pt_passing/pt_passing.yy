@@ -6,7 +6,7 @@
     "path": "folders/Technical/Patterns.yy",
   },
   "resourceVersion": "1.0",
-  "name": "pt_bird",
+  "name": "pt_passing",
   "tags": [],
   "resourceType": "GMScript",
 }

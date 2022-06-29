@@ -20,7 +20,8 @@ nu bullet("smolerboolit", s_smolerboolit, 1, true, false, false, 1);
 nu bullet("naifu", s_naifu, 1, true, false, false, 1);
 nu bullet("blunaifu", s_blunaifu, 1, true, false, false, 1);
 nu bullet("wideamulet", s_wideamulet, 1, true, false, false, 1);
-//nu bullet("bluamulet", s_bluamulet, 1, true, false, false, 1);
+nu bullet("bluamulet", s_bluamulet, 1, true, false, false, 1);
+nu bullet("smoolboolit", s_smoolboolit, 1, true, false, false, 1);
 
 var shootConsoleCommand = function(){
 	

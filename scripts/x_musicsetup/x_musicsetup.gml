@@ -20,6 +20,14 @@ nu song("maniacal wingman", "kotohime", [m_kotohime]);
 nu song("the ultimate eientei", "eientei", [m_eientei]);
 nu song("vanishing dream", "vanishing", [m_vanishing]);
 
+nu song("bar fight", "undertale", [m_undertale]);
+nu song("full moon bar", "bar", [m_bar]);
+nu song("hanging out", "chillin", [m_hangingout]);
+nu song("intermission", "intermission", [m_intermission]);
+nu song("immortal smoke", "mokou", [m_okou]);
+nu song("and dies", "dies", [m_dies]);
+nu song("gaming time", "gaming", [m_gaming]);
+
 
 nu song("Ragnarok", "ragnarok", [m_ragnarok], u, "by nerve");
 nu song("Flower", "flower", [m_flower], u, "by nerve");

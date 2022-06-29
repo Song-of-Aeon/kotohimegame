@@ -115,7 +115,8 @@ itemgen({
 			chiyuri.draw = munction(function() {
 				if global.MenuCursor.target == self {
 					if c_getitembyid(ITEMS.UNDERTALE).sparing draw_set_color(c_yellow) else draw_set_color(c_white);
-					draw_text(x, y, "* Chiyuri!");
+					draw_text(x, y, "  Chiyuri");
+					draw_sprite(s_soul, 0, x+12, y+16);
 					draw_set_color(c_white);
 				} else {
 					if c_getitembyid(ITEMS.UNDERTALE).sparing draw_set_color(c_yellow) else draw_set_color(c_white);
@@ -145,7 +146,8 @@ itemgen({
 			var check = makeGenericElement(272, 386, 10, 10, s_null);
 			check.draw = munction(function() {
 				if global.MenuCursor.target == self {
-					draw_text(x, y, "* Check!");
+					draw_text(x, y, "  Check");
+					draw_sprite(s_soul, 0, x+12, y+16);
 				} else {
 					draw_text(x, y, "* Check");
 				}
@@ -157,7 +159,8 @@ itemgen({
 			var beg = makeGenericElement(572, 386, 10, 10, s_null);
 			beg.draw = munction(function() {
 				if global.MenuCursor.target == self {
-					draw_text(x, y, "* Beg!");
+					draw_text(x, y, "  Beg");
+					draw_sprite(s_soul, 0, x+12, y+16);
 				} else {
 					draw_text(x, y, "* Beg");
 				}
@@ -182,7 +185,8 @@ itemgen({
 			var reason = makeGenericElement(272, 446, 10, 10, s_null);
 			reason.draw = munction(function() {
 				if global.MenuCursor.target == self {
-					draw_text(x, y, "* Reason!");
+					draw_text(x, y, "  Reason");
+					draw_sprite(s_soul, 0, x+12, y+16);
 				} else {
 					draw_text(x, y, "* Reason");
 				}
@@ -204,7 +208,8 @@ itemgen({
 			var order = makeGenericElement(572, 446, 10, 10, s_null);
 			order.draw = munction(function() {
 				if global.MenuCursor.target == self {
-					draw_text(x, y, "* Order!");
+					draw_text(x, y, "  Order");
+					draw_sprite(s_soul, 0, x+12, y+16);
 				} else {
 					draw_text(x, y, "* Order");
 				}
@@ -230,12 +235,13 @@ itemgen({
 		mercy.draw = munction(function() {
 			draw_sprite(s_undytale, 6+(global.MenuCursor.target==self), x, y);
 		})
-		fight.onSelect = munction(function() {
+		mercy.onSelect = munction(function() {
 			var chiyuri = makeGenericElement(272, 386, 10, 10, s_null);
 			chiyuri.draw = munction(function() {
 				if global.MenuCursor.target == self {
 					if c_getitembyid(ITEMS.UNDERTALE).sparing draw_set_color(c_yellow) else draw_set_color(c_white);
-					draw_text(x, y, "* Chiyuri!");
+					draw_text(x, y, "  Chiyuri");
+					draw_sprite(s_soul, 0, x+12, y+16);
 					draw_set_color(c_white);
 				} else {
 					if c_getitembyid(ITEMS.UNDERTALE).sparing draw_set_color(c_yellow) else draw_set_color(c_white);

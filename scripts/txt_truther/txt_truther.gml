@@ -5,7 +5,7 @@ function txt_truther() {
 	txt("Obviously!"),
 	txt("You're right!", KOTOHIME.LMAO),
 	txt("Yes... so I'll be on my way now."),
-	txt("Oh! Wait! I meant to say...", KOTOHIME.NERVOUS),
+	txt("|aOh! Wait! I meant to say...", KOTOHIME.NERVOUS, u, u, u, [se_15]),
 	
 	],[
 	

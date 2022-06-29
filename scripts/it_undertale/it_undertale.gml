@@ -1,6 +1,7 @@
 //gen u items
 
 itemgen({
+	ondie: game_end,
 	onstep: function(player=global.me) {
 		if battling {
 			bordleft = 580/2-60;
@@ -112,6 +113,7 @@ itemgen({
 			draw_sprite(s_undytale, 0+(global.MenuCursor.target==self), x, y);
 		})
 		fight.onSelect = munction(function() {
+			audio_play_sound(se_select, 0, false);
 			var chiyuri = makeGenericElement(272, 386, 10, 10, s_null);
 			chiyuri.draw = munction(function() {
 				if global.MenuCursor.target == self {
@@ -127,6 +129,7 @@ itemgen({
 			})
 			chiyuri.onSelect = munction(function() {
 				c_getitembyid(ITEMS.UNDERTALE).fighting = true;
+				audio_play_sound(se_select, 0, false);
 				destroy();
 				global.MenuCursor.disabled = true;
 			})
@@ -144,6 +147,7 @@ itemgen({
 			draw_sprite(s_undytale, 2+(global.MenuCursor.target==self), x, y);
 		})
 		act.onSelect = munction(function() {
+			audio_play_sound(se_select, 0, false);
 			var check = makeGenericElement(272, 386, 10, 10, s_null);
 			check.draw = munction(function() {
 				if global.MenuCursor.target == self {
@@ -156,6 +160,7 @@ itemgen({
 			check.onSelect = munction(function() {
 				textbox_create(txt_check, global.textchara, true);
 				global.MenuCursor.disabled = true;
+				audio_play_sound(se_select, 0, false);
 			})
 			var beg = makeGenericElement(572, 386, 10, 10, s_null);
 			beg.draw = munction(function() {
@@ -181,6 +186,7 @@ itemgen({
 						textbox_create(txt_beg3, global.textchara);
 						break;
 				}
+				audio_play_sound(se_select, 0, false);
 				global.MenuCursor.disabled = true;
 			})
 			var reason = makeGenericElement(272, 446, 10, 10, s_null);
@@ -204,6 +210,7 @@ itemgen({
 						textbox_create(txt_reason, global.textchara);
 						break;
 				}
+				audio_play_sound(se_select, 0, false);
 				global.MenuCursor.disabled = true;
 			})
 			var order = makeGenericElement(572, 446, 10, 10, s_null);
@@ -218,6 +225,7 @@ itemgen({
 			order.onSelect = munction(function() {
 				textbox_create(txt_order, global.textchara, true);
 				global.MenuCursor.disabled = true;
+				audio_play_sound(se_select, 0, false);
 			})
 			instance_destroy(o_textbox);
 			o_uicontroller.UIElements[0].options.selectable = false;
@@ -254,6 +262,7 @@ itemgen({
 				if c_getitembyid(ITEMS.UNDERTALE).sparing {
 					c_removeitem(ITEMS.UNDERTALE);
 					textbox_create(txt_acceptence);
+					audio_play_sound(se_select, 0, false);
 				}
 			})
 			instance_destroy(o_textbox);

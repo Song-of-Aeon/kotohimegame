@@ -769,6 +769,7 @@
     {"id":{"name":"s_kselect","path":"sprites/s_kselect/s_kselect.yy",},"order":1,},
     {"id":{"name":"pt_makesitbig","path":"scripts/pt_makesitbig/pt_makesitbig.yy",},"order":3,},
     {"id":{"name":"s_reimuintro1b","path":"sprites/s_reimuintro1b/s_reimuintro1b.yy",},"order":8,},
+    {"id":{"name":"se_select","path":"sounds/se_select/se_select.yy",},"order":3,},
     {"id":{"name":"s_40","path":"sprites/s_40/s_40.yy",},"order":24,},
     {"id":{"name":"m_vanishing","path":"sounds/m_vanishing/m_vanishing.yy",},"order":13,},
     {"id":{"name":"ISAAC","path":"objects/ISAAC/ISAAC.yy",},"order":0,},

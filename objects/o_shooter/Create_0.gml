@@ -31,3 +31,5 @@ iterations = 0;
 inventory = ds_list_create();
 //inventory[|0] = c_getitembyid(ITEMS.GOCRAZY);
 escapedistance = 0;
+
+destroy = c_null;

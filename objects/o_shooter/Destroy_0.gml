@@ -1,5 +1,5 @@
 //log(hp);
-
+destroy();
 var guy = new Particle(x, y, function() {
 	//log(self);
 	draw_set_color(c_cyan);

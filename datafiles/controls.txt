@@ -2,7 +2,6 @@ select/progress - enter/z/s
 back - esc/x
 navigate/move - arrows
 hide/show textbox - mouse2
-unlock all - alt+f4
 reload - r
 alt fire - c
 switch shot type - a/s

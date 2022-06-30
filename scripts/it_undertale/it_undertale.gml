@@ -4,10 +4,10 @@ itemgen({
 	ondie: game_end,
 	onstep: function(player=global.me) {
 		if battling {
-			bordleft = 580/2-60;
-			bordright = 580/2+60;
-			bordup = 680/2-60;
-			borddown = 680/2+60;
+			bordleft = 290/2-90;
+			bordright = 290/2+90;
+			bordup = 340/2-90;
+			borddown = 340/2+90;
 			ISAAC.state = st_standard;
 			ISAAC.sprite_index = s_soul;
 			ISAAC.x = clamp(ISAAC.x, bordleft+8, bordright-8);
@@ -92,6 +92,7 @@ itemgen({
 	onpickup: function() {
 		battling = true;
 		c_makeboss(global.bosses.chiyuri, [SPELL.NON]);
+		c_removeitem(ITEMS.HIDE);
 		music_set(mus.undertale);
 	},
 	menugen: function() {
@@ -248,6 +249,7 @@ itemgen({
 			draw_sprite(s_undytale, 6+(global.MenuCursor.target==self), x, y);
 		})
 		mercy.onSelect = munction(function() {
+			audio_play_sound(se_select, 0, false);
 			var chiyuri = makeGenericElement(272, 386, 10, 10, s_null);
 			chiyuri.draw = munction(function() {
 				if global.MenuCursor.target == self {

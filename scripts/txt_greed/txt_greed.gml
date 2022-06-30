@@ -2,7 +2,7 @@ function txt_greed() {
 	
 	msg = msglang([
 	
-	txt("Shit, Kotohime, you aren't suited for this.", u, u, s_path, function() {music_set(mus.null)}),
+	txt("Shit, Kotohime, you aren't suited for this.", u, u, s_path, function() {music_set(mus.null) c_additem(ITEMS.HIDE)}),
 	txt("I know you won, but that was basically brute strength."),
 	txt("It has been quite some time since I've engaged in combat.", KOTOHIME.DISAPPOINTED, SPRITEPOS.LEFT),
 	txt("...It has."),

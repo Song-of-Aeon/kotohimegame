@@ -26,7 +26,7 @@ nu pattern_ext(function() {
 			c_shoot(bordright, lad+bordup+irandom(5), .3+i*.2, 180, bul.square2);
 		}
 	}
-}, 10, 1, "chiyuri", SPELL.NON, DIFFICULTY.HARD, "ut1blue", u, u, function() {c_getitembyid(ITEMS.UNDERTALE).menugen()});
+}, 10, 8, "chiyuri", SPELL.NON, DIFFICULTY.HARD, "ut1blue", u, u, function() {c_getitembyid(ITEMS.UNDERTALE).menugen()});
 
 nu bullet("bluesquare", s_bluesquare, 4, true, false, false, 1);
 nu bullet("square2", s_bulletsquare, 4, true, false, false, 1);

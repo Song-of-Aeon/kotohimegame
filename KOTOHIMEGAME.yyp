@@ -584,6 +584,7 @@
     {"id":{"name":"o_damagenumber","path":"objects/o_damagenumber/o_damagenumber.yy",},"order":1,},
     {"id":{"name":"s_yumemi16","path":"sprites/s_yumemi16/s_yumemi16.yy",},"order":9,},
     {"id":{"name":"snd_running_in_fall_forest","path":"sounds/snd_running_in_fall_forest/snd_running_in_fall_forest.yy",},"order":47,},
+    {"id":{"name":"pt_chiyuri2","path":"scripts/pt_chiyuri2/pt_chiyuri2.yy",},"order":2,},
     {"id":{"name":"m_selene","path":"sounds/m_selene/m_selene.yy",},"order":5,},
     {"id":{"name":"matrux_transpose","path":"scripts/matrux_transpose/matrux_transpose.yy",},"order":0,},
     {"id":{"name":"s_heal","path":"sprites/s_heal/s_heal.yy",},"order":2,},

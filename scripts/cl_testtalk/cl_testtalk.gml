@@ -2,6 +2,9 @@ function cl_testtalk() {
 	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_hajime); global.luying = false});
 }
 function cl_testtalk2() {
+	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_begin, global.textnvl); global.luying = true});
+}
+function cl_testtalk3() {
 	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_kagumoku, global.textnvl); global.luying = true});
 }
 function cl_load() {

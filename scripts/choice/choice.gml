@@ -1,4 +1,5 @@
-function choice(name_=c_errorstring(), func_=c_null) constructor {
+function choice(name_=c_errorstring(), func_=c_null, desc_="") constructor {
 	name = name_;
-	func = func_;
+	func = munction(func_);
+	desc = desc_;
 }

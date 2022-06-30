@@ -48,3 +48,5 @@ bg = s_null;
 drawstates = [st_textadv, st_textnvl, c_null, c_null, st_textfacepic];
 
 with o_pickup pulled = true;
+
+halting = false;

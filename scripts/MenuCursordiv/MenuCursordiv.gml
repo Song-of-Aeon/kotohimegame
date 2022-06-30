@@ -121,7 +121,7 @@ function setCursor(){
 			if downp {
 				move(DIRECTIONS.DOWN);
 			}
-			if(options.mouse){
+			if(false){
 				var closest = noone;
 				var mousex = window_mouse_get_x()*global.scale;
 				var mousey = window_mouse_get_y()*global.scale;

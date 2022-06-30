@@ -2,11 +2,11 @@ function txt_closing() {
 	
 	msg = msglang([
 	
-	txt("Take that!"),
+	txt("Take that!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
 	txt("...You remember, don't you, Kaguya?", KOTOHIME.HAPPY, u, u, function() {music_set(mus.null)}),
 	txt("Elly was clearly in a slump.", KOTOHIME.DISAPPOINTED),
 	txt("She didn't feel like she belonged anywhere.", KOTOHIME.DISAPPOINTED),
-	txt("...Yes, I had noticed.", KAGUYA2.NORMAL),
+	txt("Yes, I had noticed.", KAGUYA2.NORMAL),
 	txt("She is unsuited to the modern ways of Gensokyo, and doesn't have any notable social standing.", KOTOHIME.THINKING),
 	txt("I do not resent her for it.", KAGUYA2.NORMAL),
 	txt("Elly is wise and skilled, but she's been lost ever since she lost her last gig.", KAGUYA2.NORMAL),

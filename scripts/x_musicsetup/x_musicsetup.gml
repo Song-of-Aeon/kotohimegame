@@ -15,7 +15,7 @@ nu song("Sweeping Through the Mysterious Waters", "thurs2", [m_mysteriouswaters]
 nu song("Lunatic Eyes ~ Invisible Full Moon", "reisen", [m_lunaticeyes], u, "by palto"); //no information
 nu song("nothing ~ there's nothing", "null");*/
 
-nu song("the monstrous glossary", "glosasary", [m_glossary]);
+nu song("the monstrous glossary", "glossary", [m_glossary]);
 nu song("maniacal wingman", "kotohime", [m_kotohime]);
 nu song("the ultimate eientei", "eientei", [m_eientei]);
 nu song("vanishing dream", "vanishing", [m_vanishing]);

@@ -2,17 +2,17 @@ function txt_thosegrounds() {
 	
 	msg = msglang([
 	
-	txt("Take that!"),
+	txt("Take that!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
 	txt("This is what we can overcome!", KOTOHIME.HAPPY),
-	txt("...So? What about that can you change?", KAGUYA.NORMAL, SPRITEPOS.MIDLEFT, u, u, [se_23]),
+	txt("...So? What about that can you change?", KAGUYA2.NORMAL, SPRITEPOS.MIDLEFT, u, u, [se_23]),
 	txt("You know...", KOTOHIME.HAPPY),
 	txt("The whole thing~", KOTOHIME.WINK),
-	txt("Don't kid with me.", KAGUYA.NORMAL, SPRITEPOS.MIDLEFT, u, u, [se_17]),
+	txt("Don't kid with me.", KAGUYA2.NORMAL, SPRITEPOS.MIDLEFT, u, u, [se_17]),
 	txt("|c102137255Damn.", KOTOHIME.NERVOUS),
-	txt("Have you forgotten?"),
-	txt("Romance and I are not famed for our synergy."),
+	txt("Have you forgotten?", KAGUYA2.NORMAL),
+	txt("Romance and I are not famed for our synergy.", KAGUYA2.NORMAL),
 	txt("I am aware. However, I believe those perceptions can be overcome.", KOTOHIME.SMUG),
-	txt("On what grounds? Before that, what part of my image do you think can be overcome?"),
+	txt("On what grounds? Before that, what part of my image do you think can be overcome?", KAGUYA2.NORMAL),
 	
 	],[
 	
@@ -21,16 +21,6 @@ function txt_thosegrounds() {
 	])
 	
 	endevent = function() {
-		textchoice_make([
-			new choice("police badge", textbox_create(txt_thosegrounds)),
-			new choice("eientei", textbox_create(txt_thosegrounds)),
-			new choice("imperishable night incident", textbox_create(txt_thosegrounds)),
-			new choice("the tale of the bamboo-cutter", textbox_create(txt_thosegrounds)),
-			new choice("impossible requests", textbox_create(txt_thesegrounds)),
-			new choice("hourai elixir", textbox_create(txt_thosegrounds)),
-			new choice("kotohime", textbox_create(txt_thosegrounds)),
-			new choice("tsukiko", textbox_create(txt_thosegrounds)),
-			new choice("elly", textbox_create(txt_thosegrounds)),
-		]);
+		c_evidencegen(4, txt_thesegrounds, txt_thesegrounds);
 	};
 }

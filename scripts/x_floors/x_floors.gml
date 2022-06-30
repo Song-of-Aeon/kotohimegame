@@ -30,6 +30,7 @@ fl_tutorial();
 fl_test();
 fl_testwo();
 fl_testhree();
+fl_testfour();
 fl_loadstage();
 fl_endstage();
 

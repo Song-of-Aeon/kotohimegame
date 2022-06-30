@@ -240,6 +240,9 @@ itemgen({
 		item.draw = munction(function() {
 			draw_sprite(s_undytale, 4+(global.MenuCursor.target==self), x, y);
 		})
+		item.onSelect = munction(function() {
+			audio_play_sound(se_select, 0, false);
+		})
 		var mercy = makeGenericElement(1280/5*4, 640, 10, 10, s_null);
 		mercy.draw = munction(function() {
 			draw_sprite(s_undytale, 6+(global.MenuCursor.target==self), x, y);

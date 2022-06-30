@@ -42,11 +42,15 @@ for (i=0; i<array_length(talker); i++) {
 	}
 }
 
+if back {
+	halting = !halting;
+}
+
 if ctrlh {
 	wait = 0;
 }
 
-if wait {
+if wait || halting {
 	wait--;
 	exit;
 }

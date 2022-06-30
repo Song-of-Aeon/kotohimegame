@@ -2,7 +2,7 @@ function txt_totalfail() {
 	
 	msg = msglang([
 	
-	txt("Take that!"),
+	txt("Take that!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
 	txt("...I don't see it.", KAGUYA2.NORMAL),
 	txt("...My finger slipped.", KOTOHIME.NERVOUS),
 	txt("A-allow me once more.", KOTOHIME.NERVOUS),
@@ -15,16 +15,6 @@ function txt_totalfail() {
 	])
 	
 	endevent = function() {
-		textchoice_make([
-			new choice("police badge", textbox_create(txt_totalfail)),
-			new choice("eientei", textbox_create(txt_totalfail)),
-			new choice("imperishable night incident", textbox_create(txt_totalfail)),
-			new choice("the tale of the bamboo-cutter", textbox_create(txt_totalfail)),
-			new choice("impossible requests", textbox_create(txt_totalfail)),
-			new choice("hourai elixir", textbox_create(txt_totalfail)),
-			new choice("kotohime", textbox_create(txt_totalfail)),
-			new choice("tsukiko", textbox_create(txt_closing)),
-			new choice("elly", textbox_create(txt_totalfail)),
-		]);
+		c_evidencegen(8, txt_totalfail, txt_closing);
 	};
 }

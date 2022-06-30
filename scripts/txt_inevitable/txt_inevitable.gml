@@ -8,7 +8,7 @@ function txt_inevitable() {
 	txt("...I cannot.", KOTOHIME.DISAPPOINTED),
 	txt("Then it is as simple as that.", KAGUYA2.NORMAL),
 	txt("The Twilight Bar is an interesting place, but I am not welcome there.", KAGUYA2.NORMAL),
-	txt("Obviously!"),
+	txt("Obviously!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
 	txt("That is not the case.", KOTOHIME.HAPPY),
 	txt("\"Tsukiko\" may not be sustainable, |abut it doesn't have to be her.", KOTOHIME.HAPPY, u, u, u, [se_17]),
 	txt("Have you forgotten?", KAGUYA2.NORMAL),
@@ -23,17 +23,7 @@ function txt_inevitable() {
 	])
 	
 	endevent = function() {
-		textchoice_make([
-			new choice("police badge", textbox_create(txt_thosegrounds)),
-			new choice("eientei", textbox_create(txt_thosegrounds)),
-			new choice("imperishable night incident", textbox_create(txt_thosegrounds)),
-			new choice("the tale of the bamboo-cutter", textbox_create(txt_thosegrounds)),
-			new choice("impossible requests", textbox_create(txt_thesegrounds)),
-			new choice("hourai elixir", textbox_create(txt_thosegrounds)),
-			new choice("kotohime", textbox_create(txt_thosegrounds)),
-			new choice("tsukiko", textbox_create(txt_thosegrounds)),
-			new choice("elly", textbox_create(txt_thosegrounds)),
-		]);
+		c_evidencegen(4, txt_thosegrounds, txt_thesegrounds);
 	};
 }
 

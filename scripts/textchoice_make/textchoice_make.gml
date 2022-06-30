@@ -22,7 +22,7 @@ function textchoice_make(choices=[new choice(), new choice()]){
 	var guys = [];
 	var i, dude;
 	for (i=1; i<choicecount+1; i++) {
-		dude = makeGenericElement(1280/2, i*(720/(choicecount+1)), string_width(choices[i-1].name), 60, s_9slice_cursor); //640 360 BAD BAD BAD
+		dude = makeGenericElement(1280/2, i*(720/(choicecount+1)), string_width(choices[i-1].name), 60); //640 360 BAD BAD BAD
 		dude.choicename = choices[i-1].name;
 		dude.choicedesc = choices[i-1].desc;
 		dude.draw = method(dude, function(){

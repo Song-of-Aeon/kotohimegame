@@ -4,18 +4,18 @@ itemgen({
 	ondie: game_end,
 	onstep: function(player=global.me) {
 		if battling {
-			bordleft = 580/2-60;
-			bordright = 580/2+60;
-			bordup = 680/2-60;
-			borddown = 680/2+60;
+			bordleft = 290/2-90;
+			bordright = 290/2+90;
+			bordup = 340/2-90;
+			borddown = 340/2+90;
 			ISAAC.state = st_standard;
 			ISAAC.sprite_index = s_soul;
 			ISAAC.x = clamp(ISAAC.x, bordleft+8, bordright-8);
 			ISAAC.y = clamp(ISAAC.y, bordup+8, borddown-8);
 			fightx = 0;
 		} else {
-			bordleft = 1280/5-350;
-			bordright = 1280/5*4-350;
+			bordleft = 1280/5-(350+290);
+			bordright = 1280/5*4-(350+290);
 			bordup = 360;
 			borddown = 520;
 			ISAAC.state = c_null;
@@ -65,17 +65,17 @@ itemgen({
 			var middle = (bordright-bordleft)/4;
 			var dropoff = floor(abs(fightx-middle)/4);
 			var dude = 50-dropoff;
-			draw_text_transformed(bordleft+350+fightx, 400, dude, 1, 1, 270);
+			draw_text_transformed(bordleft+(350+290)+fightx, 400, dude, 1, 1, 270);
 			
 		}
 		var myleft = 1280/5;
 		var myright = 1280/5*4;
 		var myup = 284*2;
 		set_font_style(FONT.DETERMINATION);
-		draw_line_width(bordleft+350, bordup+10-2.5, bordleft+350, borddown+10+2.5, 5);
-		draw_line_width(bordleft+350, bordup+10, bordright+350, bordup+10, 5);
-		draw_line_width(bordright+350, bordup+10-2.5, bordright+350, borddown+10+2.5, 5);
-		draw_line_width(bordleft+350, borddown+10, bordright+350, borddown+10, 5);
+		draw_line_width(bordleft+(350+290), bordup+10-2.5, bordleft+(350+290), borddown+10+2.5, 5);
+		draw_line_width(bordleft+(350+290), bordup+10, bordright+(350+290), bordup+10, 5);
+		draw_line_width(bordright+(350+290), bordup+10-2.5, bordright+(350+290), borddown+10+2.5, 5);
+		draw_line_width(bordleft+(350+290), borddown+10, bordright+(350+290), borddown+10, 5);
 		draw_set_valign(fa_middle);
 		draw_text(myleft, myup, "KOTOHIME");
 		draw_text(myleft+160, myup, "LV 1");
@@ -92,6 +92,7 @@ itemgen({
 	onpickup: function() {
 		battling = true;
 		c_makeboss(global.bosses.chiyuri, [SPELL.NON]);
+		c_removeitem(ITEMS.HIDE);
 		music_set(mus.undertale);
 	},
 	menugen: function() {
@@ -248,6 +249,7 @@ itemgen({
 			draw_sprite(s_undytale, 6+(global.MenuCursor.target==self), x, y);
 		})
 		mercy.onSelect = munction(function() {
+			audio_play_sound(se_select, 0, false);
 			var chiyuri = makeGenericElement(272, 386, 10, 10, s_null);
 			chiyuri.draw = munction(function() {
 				if global.MenuCursor.target == self {

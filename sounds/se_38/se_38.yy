@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "se_22.wav",
-  "duration": 0.70764,
+  "soundFile": "se_38.wav",
+  "duration": 1.325084,
   "parent": {
     "name": "court",
     "path": "folders/Sounds/court.yy",
   },
   "resourceVersion": "1.0",
-  "name": "se_22",
+  "name": "se_38",
   "tags": [],
   "resourceType": "GMSound",
 }

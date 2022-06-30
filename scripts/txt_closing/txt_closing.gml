@@ -9,7 +9,7 @@ function txt_closing() {
 	txt("Yes, I had noticed.", KAGUYA2.NORMAL),
 	txt("She is unsuited to the modern ways of Gensokyo, and doesn't have any notable social standing.", KOTOHIME.THINKING),
 	txt("I do not resent her for it.", KAGUYA2.NORMAL),
-	txt("Elly is wise and skilled, but she's been lost ever since she lost her last gig.", KAGUYA2.NORMAL),
+	txt("Elly is wise and skilled, but she's been lost ever since she lost her last stay.", KAGUYA2.NORMAL),
 	txt("I imagine that as a wandering reaper, it's difficult to make connections.", KAGUYA2.NORMAL),
 	txt("Of course... of course.", KOTOHIME.THINKING),
 	txt("As a reaper...", KOTOHIME.SMUG),

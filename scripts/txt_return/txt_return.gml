@@ -21,7 +21,7 @@ function txt_return() {
 	txt("Yes, I-", KAGUYA2.NORMAL),
 	txt("Elly, Elly, hear this, though.", KOTOHIME.HAPPY),
 	txt("She's not just any famous moon-princess, Kaguya here is a bona-fide immortal.", KOTOHIME.EXCITED),
-	txt("Well, yeah. The only ones who aren't here are humans.", KAGUYA2.NORMAL),
+	txt("Well, yeah. The only ones who aren't here are humans.", ELLY.BORED),
 	txt("You misunderstand. I mean a deeper, truly everlasting immortality.", KOTOHIME.SMUG),
 	txt("So, really immortal?", ELLY.CONFUSED),
 	txt("Really really immortal.", KOTOHIME.SMUG),

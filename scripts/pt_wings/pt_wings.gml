@@ -7,7 +7,7 @@ nu pattern_ext(function() {
 		
 	
 	
-}, 9999999, 200, "mokou", SPELL.CARD, DIFFICULTY.HARD, "...And So We Continued to Stay on This Beautiful Earth");
+}, 99999999, 200, "mokou", SPELL.CARD, DIFFICULTY.HARD, "...And So We Continued to Stay on This Beautiful Earth");
 
 
 

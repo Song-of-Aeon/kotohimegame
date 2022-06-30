@@ -4,10 +4,10 @@ function txt_kagumoku() {
 	c_additem(ITEMS.HIDE);
 	msg = msglang([
 	
-	ntxt(0, u, u, u, function() {music_set(mus.null)}),
+	ntxt(0, u, u, u, function() {music_set(mus.intermission)}),
 	
 	ptxt(),
-	txt("Time goes by fast, doesn't it?", u, u, s_black, function() {textbox_set_type(global.textnvl)}),
+	txt("Time goes by fast, doesn't it?", u, u, s_fullmoon2, function() {textbox_set_type(global.textnvl)}),
 	txt("At least, for some of us. We think we have all of eternity ahead of us, and that conviction results in lethargy."),
 	txt("And by the time one realizes how much time they've wasted, it's too late."),
 	txt("But if they realize it early, their life becomes dominated by the fear of death."),
@@ -35,7 +35,7 @@ function txt_kagumoku() {
 	
 	
 	txt("KAGUYAAAAA!", MOKOU.DEF, u, s_bambooday2, function() {textbox_set_type(global.textzpix)}),
-	txt("COME BACK HERE, YOU COWARD!", MOKOU.DEF, u, u, function() {music_set(mus.graving)}),
+	txt("COME BACK HERE, YOU COWARD!", MOKOU.DEF, u, u, function() {music_set(mus.undertale)}),
 	
 	ptxt(),
 	txt("A scream from above the trees rang in my ears.", u, u, s_bambooday, function() {textbox_set_type(global.textnvl)}),
@@ -220,7 +220,7 @@ function txt_kagumoku() {
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN),
 	
-	txt("Later...", u, u, s_crescent2, function() {music_set(mus.ragnarok)}),
+	txt("Later...", u, u, s_crescent2, function() {music_set(mus.eientei)}),
 	txt("And my Rook takes your Gold General...", REISEN.YAY, SPRITEPOS.RIGHT, s_eienteihall2),
 	txt("How the--", KANA.SCARED, SPRITEPOS.CENTER),
 	txt("Oh, I see.", KANA.AWW),
@@ -414,11 +414,10 @@ function txt_kagumoku() {
 	ntxt(0, ME.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.keyboard)}),
 	
 	ptxt(),
-	txt("...|w0222 |- ", u, u, s_black, function() {textbox_set_type(global.textnvl)}),
-	ptxt(),
-	txt("The next day...", u, u, s_eienteihall1, function() {music_set(mus.dancers5)}),
+	txt("...|w0333 |- ", u, u, s_crescent2, function() {textbox_set_type(global.textnvl)}),
+	ntxt(0, u, u, u, function() {music_set(mus.eientei)}),
 	
-	txt("So what am I here for, exactly?", MOKOU.NEUTRAL, SPRITEPOS.CENTER, u, function() {textbox_set_type(global.textzpix)}),
+	txt("So what am I here for, exactly?", MOKOU.NEUTRAL, SPRITEPOS.CENTER, s_eienteihall1, function() {textbox_set_type(global.textzpix)}),
 	txt("Fun and games for the whole family!", ME.YAY, SPRITEPOS.RIGHT),
 	txt("Heh. Alright.", MOKOU.DEF),
 	txt("By \"the whole family\" do you mean Kaguya and I?", MOKOU.DEF),
@@ -479,7 +478,7 @@ function txt_kagumoku() {
 	txt("Kana and Reisen were off doing errands, so it was only me and the contestants."),
 	txt("I quickly explained a little bit about the game to Kaguya and Mokou, for the sake of expedience."),
 	
-	ntxt(0, u, u, u, function() {music_set(mus.sunnyday)}),
+	ntxt(0, u, u, u, function() {music_set(mus.glosasary)}),
 	txt("Ladies and ladies, welcome to the first ever CLASH OF THE MOON AND THE SUN!!", ME.YAY, SPRITEPOS.CENTER, s_eienteihall2, function() {textbox_set_type(global.textzpix)}),
 	txt("An event where we make your undying wishes come true!", ME.WINKY),
 	//yay clapping sound effect
@@ -539,7 +538,7 @@ function txt_kagumoku() {
 	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN, s_peeceescreen),
 	
 	ntxt(0090, u, u, s_kstart),
-	txt("ROUND 1, START!", ME.DEF),
+	txt("ROUND 1, START!", ME.DEF, function() {music_set(mus.gaming)}),
 	ntxt(0069, u, u, s_k01),
 	
 	txt("Ah, this truly is like our fights.", KAGUYA.DEF, u, s_k01),
@@ -640,11 +639,11 @@ function txt_kagumoku() {
 	txt("Fine.", MOKOU.HMPH),
 	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
-	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),
+	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.intermission)}),
 	
 	ptxt(),
 	
-	txt("The two exchanged short goodbyes, and Mokou departed.", u, u, s_black, function() {textbox_set_type(global.textnvl)}),
+	txt("The two exchanged short goodbyes, and Mokou departed.", u, u, s_bamboonight, function() {textbox_set_type(global.textnvl)}),
 	txt("Despite how quick the game went, I was happy with my efforts."),
 	txt("Even if my impeccable romance detectors were wrong... they had done something else for a change."),
 	txt("But I was nothing if not confident in my assumption."),
@@ -653,6 +652,8 @@ function txt_kagumoku() {
 	txt("...A tranlucent mask."),
 	txt("Mokou was a little trickier to judge, but her bouts of anger towards Kaguya seemed more like a shield than a sword."),
 	txt("If I could only push them a little more, the truth would reveal itself."),
+	
+//	ntxt(00, u, u, u, function() {music_set(mus.autmninsects3)}),
 	
 	txt("Little Rabbit, where are you going?", KAGUYA.DEF, SPRITEPOS.MIDLEFT, s_eienteihall1, function() {textbox_set_type(global.textzpix)}),
 	txt("Mokou's house. I'm telling her to prepare for Round 2!", ME.YAY, SPRITEPOS.MIDRIGHT),
@@ -668,7 +669,7 @@ function txt_kagumoku() {
 	txt("Nope!", ME.DEF),
 	txt("Let's go then!", ME.DEF),
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
-	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.autmninsects3)}),
+	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.mokou)}),
 	
 	ptxt(),
 	txt("The outside air was even more refreshing than usual.", u, u, s_bambooday2, function() {textbox_set_type(global.textnvl)}),
@@ -778,6 +779,8 @@ function txt_kagumoku() {
 	txt("\"Just fine\" isn't enough in a competition. You'll be facing the best of the best!", KEINE.DEF),
 	txt("Somehow, I doubt it.", MOKOU.DEF),
 	
+	ntxt(00, u, u, u, function() {music_set(mus.autmninsects3)}),
+	
 	ntxt(0070, u, u, s_bambooday, function() {textbox_set_type(global.textzpix)}),
 	txt("Hey, Kaguya.", ME.DEF, SPRITEPOS.LEFT),
 	txt("Hello.", KAGUYA.NEUTRAL, SPRITEPOS.CENTER),
@@ -817,7 +820,7 @@ function txt_kagumoku() {
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(199, ME.DEF, SPRITEPOS.HIDDEN, s_black),
 	
-	txt("Ladies and ladies, welcome to the second ever CLASH OF THE MOON AND THE SUN!!", ME.YAY, SPRITEPOS.CENTER, s_eienteiroom1, function() {music_set(mus.sunnyday)}),
+	txt("Ladies and ladies, welcome to the second ever CLASH OF THE MOON AND THE SUN!!", ME.YAY, SPRITEPOS.CENTER, s_eienteiroom1, function() {music_set(mus.glosasary)}),
 	txt("An event where we make your undying wishes come true!", ME.WINKY),
 	//yay clapping sound effect
 	txt("We have gathered our two fine contestants here today for the second greatest competition in the whole House of Eternity!", ME.DEF),
@@ -1041,7 +1044,7 @@ function txt_kagumoku() {
 	ptxt(),
 	txt("While the two immortals argued, us judges started cleaning everything up.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("Kana and Reisen had to leave immediately, but I stuck around to see Mokou off."),
-	txt("Just as I was about to say goodbye...", u, u, s_kitchen, function() {music_set(mus.sunrise)}),
+	txt("Just as I was about to say goodbye...", u, u, s_kitchen, function() {music_set(mus.chillin)}),
 	
 	ntxt(00, KAGUYA.YAY, SPRITEPOS.RIGHT),
 	txt("Hey, Princess?", MOKOU.NEUTRAL, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textzpix)}),
@@ -1280,7 +1283,7 @@ function txt_kagumoku() {
 	txt("... |w0200 |- ", u, u, s_black),
 	
 	ptxt(),
-	txt("The night of a full moon, and a night of rain.", u, u, s_eienteihall3, function() {music_set(mus.rainthunder1)}),
+	txt("The night of a full moon, and a night of rain.", u, u, s_eienteihall3),
 	txt("The moon shone through the clouds with a strange glow. The glow felt... nostalgic. Like something I had not felt in centuries."),
 	txt("This was not the feeling I had when the Moon's emissaries came to take me back. This was... more akin to when I had first gone to Earth."),
 	txt("Normally this would generate excitement from Reisen and Eirin, but the sounds seemed to cast a spell of sleep on them."),
@@ -1457,7 +1460,7 @@ function txt_kagumoku() {
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
 	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	ptxt(),
-	txt("Without giving myself time for doubt, I closed my eyes and leaned forward.", u, u, s_black, function() {textbox_set_type(global.textnvl)}),
+	txt("Without giving myself time for doubt, I closed my eyes and leaned forward.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("And then we were together."),
 	//MORE DESCRIPTION
 

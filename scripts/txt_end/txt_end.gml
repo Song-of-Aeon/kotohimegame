@@ -4,7 +4,7 @@ function txt_end() {
 	c_additem(ITEMS.HIDE);
 	msg = msglang([
 	
-	ntxt(0, u, u, u, function() {music_set(mus.null)}),
+	ntxt(0, u, u, u, function() {music_set(mus.intermission)}),
 	
 	ptxt(),
 	txt("Life went on in the House of Eternity.", u, u, s_black, function() {textbox_set_type(global.textnvl)}),
@@ -17,7 +17,7 @@ function txt_end() {
 	ptxt(),
 	txt("Yet something was missing."),
 	
-	ntxt(0, u, u, u, function() {music_set(mus.flight)}),
+	ntxt(0, u, u, u, function() {music_set(mus.gaming)}),
 	
 	txt("Come on, come on...", REISEN.DEF, u, s_ke1, function() {textbox_set_type(global.textzpix)}),
 	txt("You can do it, Reisen! I believe in you!", KAGUYA.DEF),
@@ -31,7 +31,7 @@ function txt_end() {
 	
 	ntxt(0, KANA.AWW, SPRITEPOS.LEFT),
 	ntxt(0, REISEN.MAD, SPRITEPOS.CENTER),
-	txt("Bravo, you two! Absolutely beautiful show of gaming skill!", KAGUYA.YAY, SPRITEPOS.RIGHT, s_eienteihall2, function() {music_set(mus.dancers5)}),
+	txt("Bravo, you two! Absolutely beautiful show of gaming skill!", KAGUYA.YAY, SPRITEPOS.RIGHT, s_eienteihall2, function() {music_set(mus.chillin)}),
 	txt("Sorry, Reisen...", KANA.NEUTRAL),
 	txt("Whatever. She made the whole game, of course she's really good at it.", REISEN.UGGH),
 	

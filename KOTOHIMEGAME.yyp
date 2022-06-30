@@ -800,6 +800,7 @@
     {"id":{"name":"gcd","path":"scripts/gcd/gcd.yy",},"order":13,},
     {"id":{"name":"s_eirin","path":"sprites/s_eirin/s_eirin.yy",},"order":29,},
     {"id":{"name":"o_corpse","path":"objects/o_corpse/o_corpse.yy",},"order":6,},
+    {"id":{"name":"s_fire","path":"sprites/s_fire/s_fire.yy",},"order":79,},
     {"id":{"name":"o_tutorial","path":"objects/o_tutorial/o_tutorial.yy",},"order":3,},
     {"id":{"name":"s_minihakkero","path":"sprites/s_minihakkero/s_minihakkero.yy",},"order":1,},
     {"id":{"name":"c_distabs","path":"scripts/c_distabs/c_distabs.yy",},"order":9,},

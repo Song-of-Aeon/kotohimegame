@@ -175,11 +175,11 @@ function txt_end() {
 	txt("Come on. I know a liar when I see one.", MOKOU.SMUG),
 
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
-	ntxt(400, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN, s_fireplace),
+	ntxt(400, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN, s_fireplace),	
 	
-	txt("Hey, Mokou?", ME.NEUTRAL, SPRITEPOS.LEFT),	
+	txt("Hey, Mokou?", ME.NEUTRAL),	
 	txt("I don't want to be here anymore.", ME.DISAPOINT),
-	txt("...Well, I don't blame ya.", MOKOU.DEF, SPRITEPOS.RIGHT),
+	txt("...Well, I don't blame ya.", MOKOU.DEF),
 	txt("You've been living in this dump for-- how long?", MOKOU.DEF),
 	txt("Too long.", ME.NEUTRAL),
 	txt("...", ME.DISTANT),	
@@ -202,8 +202,18 @@ function txt_end() {
 	ntxt(0060, u, u, s_black, function() {music_set(mus.null)}),
 		
 	
-	
 	ntxt(500, u, u, s_fire, function() {audio_play_sound(snd_firebig1, 0, false)}),
+	
+	ptxt(),
+	txt("Smoke clouds obscure the faint moon. Embers rise from the blazing building, as if trying to escape the destruction. Wooden walls collapse into each other, their own weight proving too much.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	ptxt(),
+	txt("I stand alone in front of the burning remains, for... far too long."),
+	txt("In only minutes, everything had disappeared. Everything that I had here, all that I loved and hated."),
+	txt("I should be happy... the place that has kept me unhappy is gone now. My cage has burst open, and now, I'm free."),
+	ptxt(),
+	txt("Then..."),
+	txt("Why can't I stop crying?"),
+	
 	
 	ntxt(100, u, u, s_black),
 
@@ -222,7 +232,13 @@ function txt_end() {
 	txt("Nope.", MOKOU.SAD),
 	txt("Not even once.", REISEN.DEF),
 	txt("I had wished to, but she always went home by herself.", KAGUYA.NEUTRAL),
-	txt("Huh. Then you'll be getting a guided tour of the place!", KANA.YAY),
+	txt("...", KANA.NEUTRAL),
+	
+	
+	txt("Mokou, are you alright?", KAGUYA.NEUTRAL),
+	txt("Huh? Of course.", MOKOU.NEUTRAL),
+	txt("Are you certain? You were tossing and turning all night.", KAGUYA.NEUTRAL),
+	txt("Oh, yeah. Just... had a weird dream.", MOKOU.SAD),
 	
 	
 	

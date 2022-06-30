@@ -2,7 +2,7 @@ function txt_liar() {
 	
 	msg = msglang([
 	
-	txt("Obviously!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
+	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection)}),
 	txt("You're wrong about something there, Kaguya.", KOTOHIME.SMUG),
 	txt("Your \"lies\" bore no malign intent.", KOTOHIME.HAPPY),
 	txt("Less than that, the image of \"Tsukiko\" was created to be able to avoid the rumors and hearsay of \"Kaguya\"; such things are lies themselves.", KOTOHIME.DISAPPOINTED, u, u, function() {music_set(mus.mokou)}),
@@ -13,7 +13,7 @@ function txt_liar() {
 	txt("Then again, I hardly understand you.", KAGUYA2.NORMAL),
 	txt("Still, you speak the truth.", KAGUYA2.NORMAL),
 	txt("Then, isn't it-", KOTOHIME.HAPPY),
-	txt("You fool!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
+	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection).image_index = 1}),
 	txt("Yet, it is more than that history that I would be guilty of denying.", KAGUYA2.NORMAL),
 	txt("Kotohime, you must recall. There is something else about myself that \"Tsukiko\" could never have.", KAGUYA2.NORMAL),
 	txt("Y-yes, of course...", KOTOHIME.NERVOUS),

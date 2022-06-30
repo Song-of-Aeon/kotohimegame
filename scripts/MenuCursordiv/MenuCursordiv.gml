@@ -11,7 +11,7 @@ function setCursor(){
 		options:{
 			speed: -1, //-1 is instant
 			direct: false, //does cursor go directly from one element to another or move on x/y
-			mouse: true,
+			mouse: false,
 			sounds: {
 				moving: new Sound(se_themenu,50),
 				select: new Sound(se_themenu,50),
@@ -123,29 +123,29 @@ function setCursor(){
 			}
 			if(false){
 				var closest = noone;
-				var mousex = window_mouse_get_x()*global.scale;
-				var mousey = window_mouse_get_y()*global.scale;
+				//var mousex = window_mouse_get_x()*global.scale;
+				//var mousey = window_mouse_get_y()*global.scale;
 				for(var i = 0; i < array_length(o_uicontroller.UIElements);i++){
 					var guy = o_uicontroller.UIElements[i]
 						if(closest == noone || point_distance(mousex,mousey,guy.x,guy.y) < point_distance(mousex,mousey,closest.x,closest.y)){
 							closest = guy;	
 						}
 				}
-				x = mousex;
-				y = mousey;
-				if(closest != noone && point_distance(closest.x,closest.y,mousex,mousey) < 50){
+				//x = mousex;
+				//y = mousey;
+				if(closest != noone){
 					target = closest;	
 				}
 			}
 		},
 		draw: function(){
 			surface_set_target(global.surfaces.HUD);
-			var mousex = window_mouse_get_x()*global.scale;
-			var mousey = window_mouse_get_y()*global.scale;
-			draw_sprite(s_mistake,0,mousex,mousey);
+			//var mousex = window_mouse_get_x()*global.scale;
+			//var mousey = window_mouse_get_y()*global.scale;
+			//draw_sprite(s_mistake,0,mousex,mousey);
 			draw_set_color(c_white);
 			draw_rectangle(x,y,x+width,y+height,true);
-			draw_sprite_ext(s_itemselector,0,x,y,(width+6)/32,(height+6)/32,0,0,1);
+			//draw_sprite_ext(s_itemselector,0,x,y,(width+6)/32,(height+6)/32,0,0,1);
 			surface_reset_target();
 		},
 		onBack: function(){ //use this for pressing x?

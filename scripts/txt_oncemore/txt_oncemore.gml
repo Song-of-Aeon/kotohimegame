@@ -41,7 +41,7 @@ function txt_oncemore() {
 	txt("After this, I'm cutting you off.", CHIYURI.NOTHING),
 	txt("No more drinks. No more Twilight Bar.", CHIYURI.NOTHING),
 	txt("I'll tell Rika tomorrow.", CHIYURI.NOTHING),
-	txt("|x02.|w0020.|w0020.", KOTOHIME.SOLEMN),
+	txt("|x02...", KOTOHIME.SOLEMN),
 	txt("|c160160160It is a deep, tall, violet mixture."),
 	txt("You know I'm not doing this because I hate you.", CHIYURI.NOTHING),
 	txt("You'll know when you can come back, but it isn't now.", CHIYURI.NOTHING),

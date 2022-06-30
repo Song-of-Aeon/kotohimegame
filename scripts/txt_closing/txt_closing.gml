@@ -2,7 +2,7 @@ function txt_closing() {
 	
 	msg = msglang([
 	
-	txt("Take that!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
+	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection).image_index = 2}),
 	txt("...You remember, don't you, Kaguya?", KOTOHIME.HAPPY, u, u, function() {music_set(mus.null)}),
 	txt("Elly was clearly in a slump.", KOTOHIME.DISAPPOINTED),
 	txt("She didn't feel like she belonged anywhere.", KOTOHIME.DISAPPOINTED),

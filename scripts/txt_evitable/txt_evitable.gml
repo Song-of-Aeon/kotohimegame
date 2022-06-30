@@ -8,7 +8,7 @@ function txt_evitable() {
 	txt("How could it be done, then?", KAGUYA2.NORMAL),
 	txt("To maintain a deeper and deeper interpersonal relationship without ever breathing one's true identity?", KAGUYA2.NORMAL),
 	txt("It's simple. Enter the cycle of reincarnation and be reborn anew, |aas the real Tsukiko!", KOTOHIME.EXCITED, u, u, u, [se_22]),
-	txt("...I can't."),
+	txt("...I can't.", KAGUYA2.NORMAL),
 	txt("|aOh. Right.", KOTOHIME.NERVOUS, u, u, u, [se_25]),
 	txt("Kotohime, take this seriously.", KAGUYA2.NORMAL),
 	txt("Can you really argue that the existence of \"Tsukiko\" is sustainable?", KAGUYA2.NORMAL),

@@ -2,7 +2,7 @@ function txt_totalfail() {
 	
 	msg = msglang([
 	
-	txt("Take that!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
+	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection).image_index = 2}),
 	txt("...I don't see it.", KAGUYA2.NORMAL),
 	txt("...My finger slipped.", KOTOHIME.NERVOUS),
 	txt("A-allow me once more.", KOTOHIME.NERVOUS),

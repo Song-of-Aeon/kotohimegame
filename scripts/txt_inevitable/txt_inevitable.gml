@@ -8,7 +8,7 @@ function txt_inevitable() {
 	txt("...I cannot.", KOTOHIME.DISAPPOINTED),
 	txt("Then it is as simple as that.", KAGUYA2.NORMAL),
 	txt("The Twilight Bar is an interesting place, but I am not welcome there.", KAGUYA2.NORMAL),
-	txt("Obviously!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
+	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection)}),
 	txt("That is not the case.", KOTOHIME.HAPPY),
 	txt("\"Tsukiko\" may not be sustainable, |abut it doesn't have to be her.", KOTOHIME.HAPPY, u, u, u, [se_17]),
 	txt("Have you forgotten?", KAGUYA2.NORMAL),

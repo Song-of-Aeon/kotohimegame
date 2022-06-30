@@ -2,13 +2,13 @@ function txt_immortal() {
 	
 	msg = msglang([
 	
-	txt("Take that!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
+	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection).image_index = 2}),
 	txt("Of course. The effects of the Hourai Elixir. Irreversible, unbreakable immortality.", KOTOHIME.DISAPPOINTED, u, u, function() {music_set(mus.null)}),
 	txt("That's correct.", KAGUYA2.NORMAL),
 	txt("I cannot age or be killed.", KAGUYA2.NORMAL),
 	txt("I am exiled from all pure lands, the moon nor the Netherworld will accept me.", KAGUYA2.NORMAL),
 	txt("It is impossible to me to lead a life parallel to a mortal's.", KAGUYA2.NORMAL),
-	txt("Obviously!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
+	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection)}),
 	txt("And what of it?", KOTOHIME.HAPPY, u, u, function() {music_set(mus.kotohime)}),
 	txt("To be undying... do you see it as a curse?", KOTOHIME.SMUG),
 	txt("I do not.", KAGUYA2.NORMAL),
@@ -25,7 +25,7 @@ function txt_immortal() {
 	txt("For anyone's love to be invincible... it is a wish presumptuous to the point that few would begin such ideations.", KOTOHIME.SMUG),
 	txt("Yet you live it. If you were to find love, your inheritance of the Hourai would only be celebrated.", KOTOHIME.SMUG),
 	txt("...Kotohime, you...", KAGUYA2.NORMAL),
-	txt("Obviously!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
+	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection)}),
 	txt("Oh, there's more where that came from.", KOTOHIME.WINK),
 	txt("Unbound from your former biases! Armed with a life that would never leave another crying! The princess Kaguya bears yet one more pillar of aptitude toward this potential romance!", KOTOHIME.HAPPY),
 	txt("If you have reason to abandon this venture after this, Kaguya, I will not stop you. Love ought to be to one's own discretion.", KOTOHIME.DISAPPOINTED),

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_bosshp",
-    "path": "sprites/s_bosshp/s_bosshp.yy",
+    "name": "s_interjection",
+    "path": "sprites/s_interjection/s_interjection.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,0 +1,18 @@
+select/progress - enter/z/s
+back - esc/x
+navigate/move - arrows
+hide/show textbox - mouse2
+unlock all - alt+f4
+reload - r
+alt fire - c
+switch shot type - a/s
+ping - q (hold)
+undo - ctrl+z
+redo - ctrl+shift+z
+pause - scroll lock
+speak to kotohime - microphone (must run in administrator)
+light attack - o
+heavy attack - p
+wavedash (macro, can be performed manually) - ;
+
+in all situations, clicking is equivalent to pressing enter.

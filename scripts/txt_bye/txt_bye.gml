@@ -2,7 +2,8 @@ function txt_bye() {
 	
 	msg = msglang([
 	
-	txt("|c160160160In few words, Kotohime and Kaguya make the trek back to the Bamboo Forest of the Lost.", u, u, s_bamboo, function() {music_set(mus.null)}),
+	txt("...", u, u, s_bamboo),
+	txt("|c160160160In few words, Kotohime and Kaguya make the trek back to the Bamboo Forest of the Lost.", u, u, u, function() {music_set(mus.null)}),
 	txt("|c160160160The sun is setting."),
 	ntxt(0, KOTOHIME.HAPPY, SPRITEPOS.RIGHT),
 	txt("Kotohime, this is far enough.", KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT),

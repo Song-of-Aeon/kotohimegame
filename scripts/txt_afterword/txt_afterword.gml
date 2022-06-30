@@ -16,6 +16,8 @@ function txt_afterword() {
 	ptxt(),
 	txt("This is a lot of firsts for me-- first time participating in a game jam, first time participating in a team, first time writing a Touhou fanwork, first time using Game Maker, first time working on a Visual Novel, first time writing anything that took more than 15 minutes to read, first time posting my writing on the internet..."),
 	
+	
+	
 	ptxt(),
 	 
 	txt("I can't thank the other team members enough for their amazing work."),

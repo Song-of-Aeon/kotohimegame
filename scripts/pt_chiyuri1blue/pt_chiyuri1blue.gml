@@ -6,7 +6,7 @@ nu pattern_ext(function() {
 	static bordup = utitem.bordup;
 	static borddown = utitem.borddown;
 	static bordright = utitem.bordright;
-	if ncm(45) {
+	if ncm(55) {
 		var i;
 		var lad = irandom((borddown-bordup)-6)+6;
 		for (i=0; i<4; i++) {

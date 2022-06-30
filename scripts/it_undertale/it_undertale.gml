@@ -14,8 +14,8 @@ itemgen({
 			ISAAC.y = clamp(ISAAC.y, bordup+8, borddown-8);
 			fightx = 0;
 		} else {
-			bordleft = 1280/5-350;
-			bordright = 1280/5*4-350;
+			bordleft = 1280/5-(350+290);
+			bordright = 1280/5*4-(350+290);
 			bordup = 360;
 			borddown = 520;
 			ISAAC.state = c_null;
@@ -65,17 +65,17 @@ itemgen({
 			var middle = (bordright-bordleft)/4;
 			var dropoff = floor(abs(fightx-middle)/4);
 			var dude = 50-dropoff;
-			draw_text_transformed(bordleft+350+fightx, 400, dude, 1, 1, 270);
+			draw_text_transformed(bordleft+(350+290)+fightx, 400, dude, 1, 1, 270);
 			
 		}
 		var myleft = 1280/5;
 		var myright = 1280/5*4;
 		var myup = 284*2;
 		set_font_style(FONT.DETERMINATION);
-		draw_line_width(bordleft+350, bordup+10-2.5, bordleft+350, borddown+10+2.5, 5);
-		draw_line_width(bordleft+350, bordup+10, bordright+350, bordup+10, 5);
-		draw_line_width(bordright+350, bordup+10-2.5, bordright+350, borddown+10+2.5, 5);
-		draw_line_width(bordleft+350, borddown+10, bordright+350, borddown+10, 5);
+		draw_line_width(bordleft+(350+290), bordup+10-2.5, bordleft+(350+290), borddown+10+2.5, 5);
+		draw_line_width(bordleft+(350+290), bordup+10, bordright+(350+290), bordup+10, 5);
+		draw_line_width(bordright+(350+290), bordup+10-2.5, bordright+(350+290), borddown+10+2.5, 5);
+		draw_line_width(bordleft+(350+290), borddown+10, bordright+(350+290), borddown+10, 5);
 		draw_set_valign(fa_middle);
 		draw_text(myleft, myup, "KOTOHIME");
 		draw_text(myleft+160, myup, "LV 1");

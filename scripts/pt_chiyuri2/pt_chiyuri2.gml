@@ -7,13 +7,14 @@ nu pattern_ext(function() {
 	static borddown = utitem.borddown;
 	static bordright = utitem.bordright;
 	
-	if ncm(10) {
+	if ncm(20) {
 		var lad = irandom((bordright-bordleft)-6)+6;
 		//c_bang(bordleft+lad, borddown, irandom(45)+67, 10, 30, 60, hsn.flat);
 	}
 	
 }, 10, 8, "chiyuri", SPELL.NON, DIFFICULTY.HARD, "ut2", u, u, function() {c_getitembyid(ITEMS.UNDERTALE).menugen()});
 
+nu hitscan("flat", s_flathitscan, 1, false, false, false, 1);
 
 
 nu pattern_ext(function() {

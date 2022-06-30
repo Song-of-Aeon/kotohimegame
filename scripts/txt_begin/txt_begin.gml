@@ -26,7 +26,7 @@ function txt_begin() {
 	ptxt(),
 	txt("But you don't care about all that sad stuff, do you?", ME.DEF, SPRITEPOS.CENTER, s_black, function() {textbox_set_type(global.textdefault)}),
 	txt("I certainly don't!", ME.HEHE),
-	txt("Today, I'm here to show you a collection of stories where love is everywhere!", ME.HEHE, function() {music_set(mus.glosasary)}),
+	txt("Today, I'm here to show you a collection of stories where love is everywhere!", ME.HEHE, u, u, function() {music_set(mus.glosasary)}),
 	txt("Blooming from the spring trees, falling from the sky, and sneaking up on you when you least expect it!", ME.WINKYHEART),
 	txt("These stories aren't exactly mine to tell...", ME.WINKYHEART),
 	txt("But I played a part in them, so it's okay.", ME.WINKYHEART),

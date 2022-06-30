@@ -478,7 +478,7 @@ function txt_kagumoku() {
 	txt("Kana and Reisen were off doing errands, so it was only me and the contestants."),
 	txt("I quickly explained a little bit about the game to Kaguya and Mokou, for the sake of expedience."),
 	
-	ntxt(0, u, u, u, function() {music_set(mus.glosasary)}),
+	ntxt(0, u, u, u, function() {music_set(mus.glossary)}),
 	txt("Ladies and ladies, welcome to the first ever CLASH OF THE MOON AND THE SUN!!", ME.YAY, SPRITEPOS.CENTER, s_eienteihall2, function() {textbox_set_type(global.textzpix)}),
 	txt("An event where we make your undying wishes come true!", ME.WINKY),
 	//yay clapping sound effect

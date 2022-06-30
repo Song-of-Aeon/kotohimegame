@@ -144,7 +144,7 @@ function setCursor(){
 			//var mousey = window_mouse_get_y()*global.scale;
 			//draw_sprite(s_mistake,0,mousex,mousey);
 			draw_set_color(c_white);
-			draw_rectangle(x,y,x+width,y+height,true);
+			//draw_rectangle(x,y,x+width,y+height,true);
 			//draw_sprite_ext(s_itemselector,0,x,y,(width+6)/32,(height+6)/32,0,0,1);
 			surface_reset_target();
 		},

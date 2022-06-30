@@ -2,10 +2,11 @@ function txt_bye() {
 	
 	msg = msglang([
 	
-	txt("|c160160160In few words, Kotohime and Kaguya make the trek back to the Bamboo Forest of the Lost.", u, u, u, function() {music_set(mus.null)}),
+	txt("|c160160160In few words, Kotohime and Kaguya make the trek back to the Bamboo Forest of the Lost.", u, u, s_bamboo, function() {music_set(mus.null)}),
 	txt("|c160160160The sun is setting."),
-	txt("Kotohime, this is far enough.", KAGUYA2.NORMAL),
-	txt("I'll smooth things over with Eirin for you.", KAGUYA2.NORMAL),
+	ntxt(0, KOTOHIME.HAPPY, SPRITEPOS.RIGHT),
+	txt("Kotohime, this is far enough.", KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT),
+	txt("I'll smooth things over with Eirin for you.", KAGUYA2.NORMAL, SPRITEPOS.MIDLEFT),
 	txt("You can expect another job of delivery at the same time next month...", KAGUYA2.NORMAL),
 	txt("But I imagine I'll see you again before then, as well.", KAGUYA2.NORMAL),
 	txt("Inevitably.", KOTOHIME.HAPPY),

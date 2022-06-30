@@ -4,7 +4,9 @@ function txt_return() {
 	
 	txt("|c160160160Kotohime and Kaguya re-enter the Twilight Bar.", u, u, s_bar, function() {music_set(mus.bar)}),
 	txt("|c160160160Elly perks her head up at the sound of the door opening."),
-	txt("Oh?", ELLY.CONFUSED),
+	txt("Oh?", ELLY.CONFUSED, SPRITEPOS.RIGHT),
+	ntxt(0, KAGUYA2.NORMAL, SPRITEPOS.MIDLEFT),
+	ntxt(0, KOTOHIME.HAPPY, SPRITEPOS.LEFT),
 	txt("|c160160160The two return to their seats across from Elly.", u, u, s_table),
 	txt("Didn't you say you weren't coming back?", ELLY.CONFUSED),
 	txt("Yes...#Before that, Elly, I must apologize.", KAGUYA2.NORMAL),
@@ -56,6 +58,7 @@ function txt_return() {
 		file_text_write_string(guy, "congrats!");
 		file_text_close(guy);
 		music_set(mus.null);
-		room_goto(TITLE);
+		room_goto(MINE);
+		c_flash(global.surfaces.HUD, 120, c_white);
 	};
 }

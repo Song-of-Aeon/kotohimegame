@@ -17,7 +17,7 @@ function txt_standards() {
 	txt("W-why not...?", KAGUYA2.NORMAL),
 	txt("Please don't take this personally. My standards... they are unreasonably high.", KOTOHIME.THINKING),
 	txt("Even the great Kaguya... I cannot become interested in.", KOTOHIME.THINKING),
-	txt("In truth, |c160160160I've never |c255255255met someone |c128000128worthy enough|c to stand beside me in such a way.", KOTOHIME.SMUG),
+	txt("In truth, |c160160160I've |c255255255never |c128000128met |c160160160someone|c255255255 worthy |c128000128enough |c160160160to |c255255255stand |c128000128beside |c160160160me |c255255255in |c128000128such |c160160160a |cway.", KOTOHIME.SMUG),
 	txt("O-oh.", KAGUYA2.NORMAL),
 	txt("I'm sorry.", KOTOHIME.DISAPPOINTED),
 	txt("I was just joking, you know.", KAGUYA2.NORMAL),

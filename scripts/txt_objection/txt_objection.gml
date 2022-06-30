@@ -18,6 +18,6 @@ function txt_objection() {
 	])
 	
 	endevent = function() {
-		textchoice_make([new choice("I can.", textbox_create(txt_evitable)), new choice("I cannot.", function() {textbox_create(txt_inevitable)})])
+		textchoice_make([new choice("I can.", function() {textbox_create(txt_evitable)}), new choice("I cannot.", function() {textbox_create(txt_inevitable)})]);
 	};
 }

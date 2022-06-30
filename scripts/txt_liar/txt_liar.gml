@@ -5,7 +5,7 @@ function txt_liar() {
 	txt("Obviously!", u, u, u, function() {instance_create(640, 360, o_bjection)}),
 	txt("You're wrong about something there, Kaguya.", KOTOHIME.SMUG),
 	txt("Your \"lies\" bore no malign intent.", KOTOHIME.HAPPY),
-	txt("Less than that, the image of \"Tsukiko\" was created to be able to avoid the rumors and hearsay of \"Kaguya\"; such things are lies themselves.", KOTOHIME.DISAPPOINTED, u, u, function() {music_set(mus.chillin)}),
+	txt("Less than that, the image of \"Tsukiko\" was created to be able to avoid the rumors and hearsay of \"Kaguya\"; such things are lies themselves.", KOTOHIME.DISAPPOINTED, u, u, function() {music_set(mus.mokou)}),
 	txt("By being able to circumvent ridiculous assumptions and expectations, you are able to express yourself with no burden.", KOTOHIME.HAPPY),
 	txt("\"Man is most honest when he wears a mask\", or so.", KOTOHIME.SMUG),
 	txt("...For a human, you have interesting philosophies.", KAGUYA2.NORMAL),

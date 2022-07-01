@@ -5,7 +5,7 @@ itemgen({
 	onstep: function(player=global.me) {
 		if battling {
 			bordleft = 290/2-90+4;
-			bordright = 290/2+90-4;
+			bordright = 290/2+90-5;
 			bordup = 340/2-90+5;
 			borddown = 340/2+90-5;
 			ISAAC.state = st_standard;
@@ -29,13 +29,15 @@ itemgen({
 				if (player.select && fightx >= 7) || fightx >= bordright-bordleft {
 					var middle = bordright-bordleft;
 					var dropoff = floor(abs(fightx-middle/5));
-					bosshp -= 50-dropoff;
-					log(bosshp);
+					//bosshp -= 50-dropoff;
+					//log(bosshp);
+					audio_play_sound(snd_enemydeath, 0, false);
 					if bosshp <= 0 {
 						textbox_create(txt_hajime);
 						c_removeitem(ITEMS.UNDERTALE);
 						exit;
 					}
+					instance_create(640, 240, o_damagenum);
 					fighting = false;
 					battling = true;
 					switch fightpoint {
@@ -65,7 +67,7 @@ itemgen({
 	ondraw: function() {
 		draw_set_color(c_white);
 		surface_set_target(global.surfaces.HUD);
-		draw_sprite_ext(s_chiyuritale, 0, 640, 240, sin(gc/60)/5+.6, cos(gc/80)/5+.6, 0, c_white, 1-battling*.5);
+		draw_sprite_ext(s_chiyuritale, 0, 640, 240, sin(gc/60)/7+.6, cos(gc/60)/7+.6, 0, c_white, 1-battling*.4);
 		var myleft = 1280/5;
 		var myright = 1280/5*4;
 		var myup = 284*2;
@@ -79,10 +81,12 @@ itemgen({
 			draw_rectangle(bordleft, bordup, bordright, borddown, false);
 			draw_set_color(c_white);
 			if fighting {
+				draw_sprite(s_dontcare, 0, 0, 0);
 				var middle = (bordright-bordleft)/4;
 				var dropoff = floor(abs(fightx-middle)/4);
 				var dude = 50-dropoff;
-				draw_text_transformed(bordleft+fightx, 400, dude, 1, 1, 270);
+				//draw_text_transformed(bordleft+fightx, 400, dude, 1, 1, 270);
+				draw_sprite_ext(s_docaredidask, 0, bordleft+fightx, 414, 1, 1, -gc*2, c_white, 1);
 			
 			}
 			draw_line_width(bordleft, bordup, bordleft, borddown, 5);
@@ -292,6 +296,8 @@ itemgen({
 				} else {
 					c_getitembyid(ITEMS.UNDERTALE).battling = true;
 					c_makeboss(global.bosses.chiyuri, [SPELL.NON]);
+					destroy();
+					global.MenuCursor.disabled = true;
 				}
 			})
 			instance_destroy(o_textbox);

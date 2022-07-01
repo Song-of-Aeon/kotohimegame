@@ -9,7 +9,7 @@ image_alpha = min(image_alpha+.04, alpha);
 fxxscale = image_xscale*((alpha-image_alpha)*4+1);
 fxyscale = image_yscale*((alpha-image_alpha)*4+1);
 //var time = get_timer();
-if !(x==clamp(x, -50, 340) && y==clamp(y, -50, 390)) {
+if !(x==clamp(x, -escapedistance, 290+escapedistance) && y==clamp(y, -escapedistance, 340+escapedistance)) {
 	instance_destroy();
 }
 //image_angle = point_direction(xprevious, yprevious, x, y)-90;

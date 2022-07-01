@@ -28,3 +28,4 @@ intangible = false;
 despawn = c_null;
 
 addvspd = 0;
+escapedistance = 50;

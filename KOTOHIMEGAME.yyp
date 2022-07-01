@@ -123,6 +123,7 @@
     {"id":{"name":"txt_testtalk","path":"scripts/txt_testtalk/txt_testtalk.yy",},"order":12,},
     {"id":{"name":"s_hakkerolaser","path":"sprites/s_hakkerolaser/s_hakkerolaser.yy",},"order":5,},
     {"id":{"name":"x_pickupstuff","path":"scripts/x_pickupstuff/x_pickupstuff.yy",},"order":0,},
+    {"id":{"name":"s_chiyuritale","path":"sprites/s_chiyuritale/s_chiyuritale.yy",},"order":19,},
     {"id":{"name":"ft_gothic8","path":"fonts/ft_gothic8/ft_gothic8.yy",},"order":3,},
     {"id":{"name":"se_15","path":"sounds/se_15/se_15.yy",},"order":6,},
     {"id":{"name":"s_xbutton","path":"sprites/s_xbutton/s_xbutton.yy",},"order":23,},

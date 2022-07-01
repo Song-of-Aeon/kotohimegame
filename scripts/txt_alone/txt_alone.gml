@@ -19,7 +19,7 @@ function txt_alone() {
 	txt("So is it that...#Uh...", KOTOHIME.THINKING),
 	txt("...", KOTOHIME.THINKING),
 	txt("So is it that she has clawed her way out of desperation! So is it that she will...", KOTOHIME.LMAO),
-	txt("...", KOTOHIME.DISAPPOINTED, u, u, function() {global.textguy[?"kotohime"].textspeed = .1}),
+	txt("...", KOTOHIME.DISAPPOINTED, u, u, function() {global.textguy[?"kotohime"].textspeed = .17}),
 	txt("|c160160160Kotohime continues walking."),
 	
 	],[

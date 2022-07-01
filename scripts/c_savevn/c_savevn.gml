@@ -1,4 +1,5 @@
 function c_savevn(thescript, textstyle) {
+	if global.gameplay thescript = txt_bar;
 	var guy = file_text_open_write("hi guys.kotohime");
 	file_text_write_string(guy, script_get_name(thescript));
 	file_text_close(guy);

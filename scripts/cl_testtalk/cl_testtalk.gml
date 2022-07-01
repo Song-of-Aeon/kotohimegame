@@ -1,5 +1,5 @@
 function cl_testtalk() {
-	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_hajime); global.luying = false});
+	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_bar); global.luying = false});
 }
 function cl_testtalk2() {
 	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_begin, global.textnvl); global.luying = true});

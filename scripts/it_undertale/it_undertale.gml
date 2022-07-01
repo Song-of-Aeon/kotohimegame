@@ -4,10 +4,10 @@ itemgen({
 	ondie: game_end,
 	onstep: function(player=global.me) {
 		if battling {
-			bordleft = 290/2-90;
-			bordright = 290/2+90;
-			bordup = 340/2-90;
-			borddown = 340/2+90;
+			bordleft = 290/2-90+4;
+			bordright = 290/2+90-4;
+			bordup = 340/2-90+5;
+			borddown = 340/2+90-5;
 			ISAAC.state = st_standard;
 			ISAAC.sprite_index = s_soul;
 			ISAAC.x = clamp(ISAAC.x, bordleft+8, bordright-8);
@@ -16,6 +16,10 @@ itemgen({
 		} else {
 			bordleft = 1280/5-(350+290);
 			bordright = 1280/5*4-(350+290);
+			bordup = 360;
+			borddown = 520;
+			bordleft = 1280/5;
+			bordright = 1280/5*4;
 			bordup = 360;
 			borddown = 520;
 			ISAAC.state = c_null;
@@ -61,22 +65,30 @@ itemgen({
 	ondraw: function() {
 		draw_set_color(c_white);
 		surface_set_target(global.surfaces.HUD);
-		if fighting {
-			var middle = (bordright-bordleft)/4;
-			var dropoff = floor(abs(fightx-middle)/4);
-			var dude = 50-dropoff;
-			draw_text_transformed(bordleft+(350+290)+fightx, 400, dude, 1, 1, 270);
-			
-		}
+		draw_sprite_ext(s_chiyuritale, 0, 640, 240, sin(gc/60)/5+.6, cos(gc/80)/5+.6, 0, c_white, 1-battling*.5);
 		var myleft = 1280/5;
 		var myright = 1280/5*4;
 		var myup = 284*2;
 		set_font_style(FONT.DETERMINATION);
-		if battling {
-			draw_line_width(bordleft+(350+290), bordup+10-2.5, bordleft+(350+290), borddown+10+2.5, 5);
+		if !battling {
+			/*draw_line_width(bordleft+(350+290), bordup+10-2.5, bordleft+(350+290), borddown+10+2.5, 5);
 			draw_line_width(bordleft+(350+290), bordup+10, bordright+(350+290), bordup+10, 5);
 			draw_line_width(bordright+(350+290), bordup+10-2.5, bordright+(350+290), borddown+10+2.5, 5);
-			draw_line_width(bordleft+(350+290), borddown+10, bordright+(350+290), borddown+10, 5);
+			draw_line_width(bordleft+(350+290), borddown+10, bordright+(350+290), borddown+10, 5);*/
+			draw_set_color(c_black);
+			draw_rectangle(bordleft, bordup, bordright, borddown, false);
+			draw_set_color(c_white);
+			if fighting {
+				var middle = (bordright-bordleft)/4;
+				var dropoff = floor(abs(fightx-middle)/4);
+				var dude = 50-dropoff;
+				draw_text_transformed(bordleft+fightx, 400, dude, 1, 1, 270);
+			
+			}
+			draw_line_width(bordleft, bordup, bordleft, borddown, 5);
+			draw_line_width(bordleft, bordup, bordright, bordup, 5);
+			draw_line_width(bordright, bordup, bordright, borddown, 5);
+			draw_line_width(bordleft, borddown, bordright, borddown, 5);
 		} else {
 			surface_reset_target();
 			draw_line_width(bordleft, bordup, bordleft, borddown, 5);

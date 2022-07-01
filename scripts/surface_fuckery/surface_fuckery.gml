@@ -10,6 +10,7 @@ global.surfaces = {
 	screen2: surface_create(640,480),
 	map: surface_create(290, 340),
 	threedee: surface_create(1,1),
+	HUDTWO: surface_create(1280, 720),
 	
 	gameSize: {x:290,y:340},
 	//gameSize: {x:200,y:340},
@@ -115,8 +116,9 @@ function surfaces_init(_scale){
 	with(global.surfaces){
 		log("initting surfaces");
 		//HUD= surface_create(window_get_width(),window_get_height());
-		HUD= surface_create(1280,720);
-		bg= surface_create(310,360);
+		HUD = surface_create(1280,720);
+		HUDTWO = surface_create(1280,720);
+		bg = surface_create(310,360);
 		screen2 = surface_create(640,360);
 		map = surface_create(290, 340);
 		border = surface_create((640)+(borderSize*2),(360)+(borderSize*2));

@@ -24,5 +24,5 @@ function txt_leaving() {
 	
 	])
 	
-	endevent = function() {textbox_create(txt_objection)};
+	endevent = function() {textbox_create(txt_objection, global.textcourt)};
 }

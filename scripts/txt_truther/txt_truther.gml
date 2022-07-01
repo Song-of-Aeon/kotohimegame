@@ -2,10 +2,10 @@ function txt_truther() {
 	
 	msg = msglang([
 	
-	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection)}),
-	txt("You're right!", KOTOHIME.LMAO),
-	txt("Yes... so I'll be on my way now.", KAGUYA2.NORMAL),
-	txt("|aOh! Wait! I meant to say...", KOTOHIME.NERVOUS, u, u, u, [se_15]),
+	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection, "Instances_ui")}),
+	txt("You're right!", KOTOHIME.LMAO, SPRITEPOS.MIDRIGHT, s_court),
+	txt("Yes... so I'll be on my way now.", KAGUYA2.NORMAL, SPRITEPOS.MIDLEFT),
+	txt("|aOh! Wait! I meant to say...", KOTOHIME.NERVOUS, SPRITEPOS.MIDRIGHT, s_court, u, [se_15]),
 	
 	],[
 	
@@ -15,8 +15,8 @@ function txt_truther() {
 	
 	endevent = function() {
 		textchoice_make([
-			new choice("You're right.", function() {textbox_create(txt_truther)}),
-			new choice("You're wrong about something.", function() {textbox_create(txt_liar)}),
+			new choice("You're right.", function() {textbox_create(txt_truther, global.textcourt)}),
+			new choice("You're wrong about something.", function() {textbox_create(txt_liar, global.textcourt)}),
 		]);
 	};
 }

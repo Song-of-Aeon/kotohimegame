@@ -4,7 +4,7 @@ nu chardata("Mike", s_mike16, se_talkgeneral, .5);
 nu chardata("Yukari", s_yukari16, se_talkbloop, .3);
 nu chardata("Reisen", s_reisen16, se_ntalk8, .75);
 nu chardata("Yumemi", s_yumemi16, se_talkbloop, .8);
-nu chardata("Chiyuri", s_chiyurii, se_ntalk5, .5);
+nu chardata("Chiyuri", s_chiyur2, se_ntalk5, .5);
 nu chardata("", s_null, se_null, .75);
 nu chardata("spamton g. spamton", s_drip);
 nu chardata();

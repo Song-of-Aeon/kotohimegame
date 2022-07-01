@@ -7,6 +7,7 @@ enum TEXTTYPE {
 	FREE,
 	OUTLINE,
 	FACEPIC,
+	COURT,
 }
 
 global.textdefault = {
@@ -18,6 +19,17 @@ global.textdefault = {
 	spriteposy: 400,
 	sprite: s_kotohimetext,
 	type: TEXTTYPE.ADV,
+	font: FONT.TALK,
+}
+global.textcourt = {
+	x: 640,
+	y: 520,
+	width: 940,
+	height: 160,
+	spriteposx: 210,
+	spriteposy: 400,
+	sprite: s_kotohimetext,
+	type: TEXTTYPE.COURT,
 	font: FONT.TALK,
 }
 global.textzpix = {

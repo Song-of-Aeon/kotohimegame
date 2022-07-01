@@ -45,7 +45,7 @@ nvlline = 0;
 
 bg = s_null;
 
-drawstates = [st_textadv, st_textnvl, c_null, c_null, st_textfacepic];
+drawstates = [st_textadv, st_textnvl, c_null, c_null, st_textfacepic, st_textcourt];
 
 with o_pickup pulled = true;
 

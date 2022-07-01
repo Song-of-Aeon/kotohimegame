@@ -115,7 +115,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 222,
-    "yorigin": 342,
+    "yorigin": 320,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"s_mokou","path":"sprites/s_mokou/s_mokou.yy",},

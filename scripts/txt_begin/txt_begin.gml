@@ -7,12 +7,12 @@ function txt_begin() {
 	
 	txt("Hey...", u, u, s_fullmoon2, function() {music_set(mus.intermission)}),
 	txt("Have you ever wondered if you're really living?"),
-	txt("I don't mean having a body of flesh and blood and a beating heart-- we in Gensokyo know you don't need that to live."),
+	txt("I don't mean having a body of flesh and blood and a beating heart-- we in The Land of Fantasy know you don't need that to live."),
 	txt("I mean... LIVING. Whatever that means to you."),
 	txt("Funny question, isn't it? For some it's easy as one word, and for others answering it is an impossible request."),
 	//the "impossible request" line is probably pretentious
 	txt("To many long-lived youkai, life is safety and freedom."),
-	txt("To the citizens of the Lunar Capital, life is just continued existence."),
+	txt("To the Lunarians residing on the moon, life is just continued existence."),
 	ptxt(),
 	txt("To me... life means movement. Growth. Change."),
 	txt("Floating on the wind,#swimming through the seas,#finding patches of shelter and sunlight,#and becoming a part of the world."),
@@ -24,9 +24,9 @@ function txt_begin() {
 	
 	ntxt(0, u, u, u, function() {music_set(mus.null)}),
 	ptxt(),
-	txt("But you don't care about all that sad stuff, do you?", ME.DEF, SPRITEPOS.CENTER, s_black, function() {textbox_set_type(global.textdefault)}),
+	txt("But you don't care about all that sad stuff, do you?", ME.DEF, SPRITEPOS.CENTER, s_black, function() {textbox_set_type(global.textzpix)}),
 	txt("I certainly don't!", ME.HEHE),
-	txt("Today, I'm here to show you a collection of stories where love is everywhere!", ME.HEHE, u, u, function() {music_set(mus.glosasary)}),
+	txt("Today, I'm here to show you a collection of stories where love is everywhere!", ME.HEHE, u, u, function() {music_set(mus.glossary)}),
 	txt("Blooming from the spring trees, falling from the sky, and sneaking up on you when you least expect it!", ME.WINKYHEART),
 	txt("These stories aren't exactly mine to tell...", ME.WINKYHEART),
 	txt("But I played a part in them, so it's okay.", ME.WINKYHEART),
@@ -53,7 +53,7 @@ function txt_begin() {
 	txt("I was out of tune, out of line, and out of my mind."),
 	txt("...But I was happy."),
 	
-	txt("~~And as the sandcastles melt,~~", ME.YAYNOTE, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("~~And as the sandcastles melt,~~", ME.YAYNOTE, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("~~Will you see on my face, a much brighter place~~", ME.YAYNOTE),
 	txt("~~Than the one--~~ |- ", ME.YAYNOTE, u, u, function() {music_set(mus.null)}),
 	//hard cut to a big explosion image thingy with a BOOM and a BONK sound effect
@@ -81,11 +81,11 @@ function txt_begin() {
 	ptxt(),
 	txt("On that surprisingly cool summer day, a scene from a cartoon played before me.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("I had only come to this shrine to visit an acquaintance, but instead I found two."),
-	txt("The shrine maiden Reimu Hakurei|n and... someone else."),
+	txt("The shrine maiden Reimu Hakurei, and... someone else."),
 	ntxt(0000, KANA.NEUTRAL, SPRITEPOS.CENTER),
 	
 	ptxt(),
-	txt("A girl covered in blue and gold, floating in the air."),
+	txt("A girl dressed in blue and gold, floating in the air."),
 	txt("She had been blown out the front door, covered in countless little amulets."),
 	txt("When she was far away to escape the shrine maiden's wrath, she stopped moving and tried scraping off the dirt and amulets."),
 	txt("I only stood in place, watching her closely."),
@@ -97,12 +97,12 @@ function txt_begin() {
 	txt("Before I could reply, she turned her head and flew right past me."),
 	txt("Only then did I finally recognize her,|n but by then it was too late."),
 	
-	txt("Hey, you! Are you gonna come over here and donate or what?", REIMU.HAHA, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Hey, you! Are you gonna come over here and donate or what?", REIMU.HAHA, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("...Oh, it's you again.", REIMU.DEF),
 	txt("Why hello there, Reimu! What brings you here today?", ME.YAYNOTE, SPRITEPOS.RIGHT),
 	txt("\(\"What brings you here?\" This is my shrine!\)", REIMU.SWEAT),
 	txt("Not much, just taking out the trash.", REIMU.DEF),
-	txt("...And the \"trash\" is Kana?", ME.NEUTRAL),
+	txt("...And the \"trash\" is that girl that passed me?", ME.NEUTRAL),
 	txt("Yeah, and it was really hard! I needed to get myself some new poltergeist-repellant amulets!", REIMU.HAHA),
 	txt("Why did you...?", ME.KAAAY),
 	txt("She showed up here a few weeks ago and acted like she owned the place!", REIMU.MIFFED),
@@ -132,7 +132,7 @@ function txt_begin() {
 	txt("...", REIMU.SWEAT),
 	txt("Goodbye!!", ME.YAY),
 	
-	ntxt(020, u, u, u, function() {music_set(mus.null)}),
+	ntxt(020, u, u, u, function() {music_set(mus.summerhill2)}),
 	//sound of running footsteps on stone
 	ntxt(0000, REIMU.DEF, SPRITEPOS.HIDDEN),
 	ntxt(0000, ME.DEF, SPRITEPOS.HIDDEN, u, function() {audio_play_sound(snd_running_in_fall_forest, 0, false)}),
@@ -152,8 +152,7 @@ function txt_begin() {
 	ntxt(0000, KANA.NEUTRAL, SPRITEPOS.MIDLEFT),
 	txt("She turned to me, and we simply stood there for... far too long."),
 	
-	ntxt(60, u, u, u, function() {music_set(mus.summerhill2)}),
-	txt("Are you gonna say something or what?", KANA.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Are you gonna say something or what?", KANA.DEF, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("You're Kana, right?", ME.POG),
 	txt("You got it. Kana Anaberal, in the ectoplasm!", KANA.YAY),
 	txt("And aren't you that weird girl from that danmaku competition? The really weak one who went down in ten seconds?", KANA.COCKY),	
@@ -189,12 +188,12 @@ function txt_begin() {
 	ptxt(),
 	txt("I liked having her there. She brought life to the uptight home, and she turned out to be just as interesting as I had hoped."),
 	txt("She originally lived in a western-style house just outside the Human Village, and while she couldn't get out much, she had access to tomes that taught her many things."),
-	txt("It was to the point that she knew more about the outside world than Gensokyo."),
+	txt("It was to the point that she knew more about the outside world than The Land of Fantasy."),
 	txt("We would often go on walks and talk for hours on incredibly important subjects."),
 	txt("Until one night..."),	
 	
-	ntxt(0, u, u, u, function() {music_set(mus.glosasary)}),
-	txt("Come on, cookies are infinitely better than mochi!", KANA.WINKY, SPRITEPOS.MIDRIGHT, s_bambooevening, function() {textbox_set_type(global.textdefault)}),
+	ntxt(0, u, u, u, function() {music_set(mus.glossary)}),
+	txt("Come on, cookies are infinitely better than mochi!", KANA.WINKY, SPRITEPOS.MIDRIGHT, s_bambooevening, function() {textbox_set_type(global.textzpix)}),
 	txt("But they're so dry\~\~. Half the time it's just crumbly bits of flowers.", ME.DISAPOINT, SPRITEPOS.MIDLEFT),
 	//the wigglylines look weird ingame. fix it or get rid of em
 	txt("That's what the milk is for! You just dip them in the milk, and they're all nice and wet.", KANA.WINKY),
@@ -219,8 +218,8 @@ function txt_begin() {
 	txt("We were thinking of going home soon, but..."),
 	
 	ptxt(),
-	txt("Hey, can I say something... kinda silly?", KANA.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
-	txt("What else do we do around here?", ME.DEF),
+	txt("Hey, can I say something... kinda silly?", KANA.DEF, u, u, function() {textbox_set_type(global.textzpix)}),
+	txt("What else do we do together?", ME.DEF),
 	txt("Alright. Uhm...", KANA.DEF),
 	txt("I wanna get a girlfriend.", KANA.DEF),
 	
@@ -229,9 +228,8 @@ function txt_begin() {
 	txt("Oh my!", ME.DEF, SPRITEPOS.MIDLEFT),
 	txt("You mean a...|w0060|-", ME.DEF),
 	txt("A soulmate. Someone to love romantically.", KANA.DEF),
-	txt("I've been thinking about it for a while. Being with you is fun and all... but I can't stay forever.", KANA.DEF), 
-	txt("Having someone like that might help me.", KANA.YAY),
-	txt("But I don't know a thing about finding a soulmate.", KANA.NEUTRAL),
+	txt("I've been thinking about it for a while. Being with you is fun and all... but I can't stay forever. Having someone like that might help me.", KANA.NEUTRAL),
+	txt("But I don't know a thing about finding a soulmate.", KANA.AWW),
 	txt("Me neither!", ME.HEHE),
 			
 	//if the Mary story is cut out, put the whole I READ A LOT OF ROMANCE STUFF here
@@ -240,17 +238,15 @@ function txt_begin() {
 	txt("What's your dream girl like?", ME.DEF),
 	txt("My dream girl?", KANA.NEUTRAL),
 	txt("Your dream girl!", ME.WINKYHEART),
-	txt("The perfect woman for you-- someone who has everything you desire in a lover.", ME.TINYSMIRK),
+	txt("The perfect woman for you-- someone who has everything you desire in a lover.", ME.SMUG),
 	txt("Oh, that's easy!", KANA.DEF),
-	txt("Soft and caring, with a big smile on her face all the time!", KANA.DEF),
-	txt("She'd be the master of a huge mansion full of things to do, and take care of it with the utmost skill.", KANA.DEF),
+	txt("Soft and caring, with a big smile on her face all the time! She'd be the master of a huge mansion full of things to do, and take care of it with the utmost skill.", KANA.DEF),
 	txt("Tall and strong, in both mind and body. Always there to reassure me when something goes wrong.", KANA.DEF),
-	txt("She'd have long hair that glows like the stars!", KANA.YAY),
-	txt("A sense of fashion in her clothing, but not so much it becomes gaudy.", KANA.YAY),
-	txt("Oh, and a set of massive honkers!", KANA.YAY),
-	txt("...Honkers?", ME.WHAA),
+	txt("She'd have long hair that glows like the stars, and a sense of fashion in her clothing-- but not so much it becomes gaudy.", KANA.YAY),
+	txt("Oh, and a set of massive honkers!", KANA.WINKY),
+	txt("...Honkers?", ME.KAAAY),
 	txt("Honkers! You know, those big metal things that go HONK when you blow into them!", KANA.DEF),
-	txt("...Ah. Trumpets.", ME.TINYSMIRK),
+	txt("...Ah. Trumpets.", ME.SMUG),
 	txt("Every night, she would cast a spell for them to magically serenade me to sleep!", KANA.DEF),
 	txt("How convenient!|n I know a few people just like that right in this very forest!", ME.YAYNOTE),
 	txt("Just follow me.", ME.HEHENOTE),
@@ -259,16 +255,18 @@ function txt_begin() {
 
 	ptxt(),
 	txt("And so, our night out continued.", u, u, s_crescent2, function() {textbox_set_type(global.textnvl)}),
-	txt("The people I knew resided in a place completely isolated from the rest of Gensokyo."),
+	txt("The people I knew resided in a place completely isolated from most of The Land of Fantasy."),
 	txt("I had happened upon this place some years ago, and since then it's been a little secret of mine."),
 	txt("Past the brook where the frogs do not croak, over the anthill that towers above mountains, and through the eye of a spiderweb... there she was."),
 	txt("The white rabbit.", u, u, s_fuckingbnuuy),
 	txt("It sat in a clearing, seeming to beckon us closer."),
 	
-	txt("Looks like her doors are open this time.", ME.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Looks like her doors are open this time.", ME.DEF, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("What do you mean? It's just a rabbit.", KANA.DEF),
 	txt("A rabbit that will show us the way.", ME.DEF),
 	txt("It just ran away!", KANA.DEF),
+	
+	ntxt(00, u, u, u, function() {audio_play_sound(snd_running_in_fall_forest, 0, false)}),
 	
 	ptxt(),
 	txt("One second it was there, and the next it was gone, only leaving a ruffling of bamboo leaves in its wake.", u, u, u, function() {textbox_set_type(global.textnvl)}),
@@ -276,7 +274,7 @@ function txt_begin() {
 	txt("Several times, we thought we lost it. But after what felt like hours..."),
 	txt("We were there."),
 	ntxt(0045, u, u, s_eientei2),
-	txt("So tired...", KANA.AWW, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("So tired...", KANA.AWW, u, u, function() {textbox_set_type(global.textzpix)}),
 		
 	//so im not sure how hard it canonically was to find eientei before IN but
 	//who cares
@@ -288,8 +286,8 @@ function txt_begin() {
 	//for now imma just say tewi intentionally leads kotohime and kana to eientei because haha trololololol
 	//that seems to sortakinda fit her personality right?
 		
-	txt("Tewi! What are you doing here?", REISEN.CONFUZZLED, SPRITEPOS.CENTER),
-	txt("Aren't you supposed to be fetching the laundry?", REISEN.CONFUZZLED),
+	txt("Tewi! What are you doing here?", REISEN.DEF, SPRITEPOS.CENTER),
+	txt("Aren't you supposed to be fetching the laundry?", REISEN.DEF),
 	ntxt(0069, REISEN.WOAH, SPRITEPOS.HIDDEN, s_fuckingbnuuy),
 	txt("...Tewi?", REISEN.WOAH),
 	
@@ -299,7 +297,7 @@ function txt_begin() {
 	
 	txt("Hey, get back here! Tewi!", REISEN.UGGH, SPRITEPOS.CENTER),
 	txt("Good morning!", ME.WINKYHEART, SPRITEPOS.RIGHT),	
-	txt("Wha|w0030-|-", REISEN.WOAH),
+	txt("Wha-- |w0020- |- ", REISEN.WOAH),
 	txt("You!", REISEN.MAD),
 	txt("Me!", ME.YAY),
 	txt("I can't believe Tewi led you here again.", REISEN.UGGH),
@@ -332,7 +330,7 @@ function txt_begin() {
 	
 	txt("Fufufu...", KAGUYA.FUFUFU, SPRITEPOS.HIDDEN),
 	
-	ntxt(0000, REISEN.CONFUZZLED, SPRITEPOS.LEFT),
+	ntxt(0000, REISEN.DEF, SPRITEPOS.LEFT),
 	//confuzzled might not fit here. dunno
 	txt("Little inaba, you have much to learn.", KAGUYA.FUFUFU),
 	txt("Powers of insanity won't work on a being born from insanity.", KAGUYA.FUFUFU, SPRITEPOS.CENTER),
@@ -348,12 +346,10 @@ function txt_begin() {
 	txt("This red-haired girl has been dear to me ever since she stumbled upon our abode.", KAGUYA.DEF),
 	txt("And despite being of the *superior* Lunarian race, I somedays desire visits from earthlings.", KAGUYA.DEF),
 	//find a way to do italics or do somethin else	
-	txt("For in a place where time stands still, the only thing that grows is boredom.", KAGUYA.FUFUFU),	
-	txt("Even an earthling princess like you should understand that.", KAGUYA.FUFUFU),
+	txt("For in a place where time stands still, the only thing that grows is boredom. Even an earthling princess like you should understand that.", KAGUYA.FUFUFU),
 	txt("...Princess?", KANA.NEUTRAL),
 	//HAHA FORESHADOWING
-	txt("You're right, I do understand! That's why I've brought you a new plaything!", ME.DEF),
-	txt("Her name is Kana.", ME.DEF),
+	txt("You're right, I do understand! That's why I've brought you a new plaything! Her name is Kana.", ME.DEF),
 	txt("PLAYTHING!?", KANA.SCARED),
 	txt("Oh, don't be so scared, little ghost! You won't be treated differently from any other earthling.", KAGUYA.YAY),
 	txt("For some reason, that doesn't raise my spirits at all...", KANA.SCARED),
@@ -364,7 +360,7 @@ function txt_begin() {
 	txt("...I see.", KAGUYA.NEUTRAL),
 	txt("Come then. The night shall perish if we take too long.", KAGUYA.NEUTRAL),
 	
-	txt("Princess, this is-|w0033|-", REISEN.CONFUZZLED),
+	txt("Princess, this is- |w0033 |- ", REISEN.DEF),
 	txt("Reisen, go back to your usual task. There's no need to worry.", KAGUYA.DEF),
 	//put in a name for what "usual task" is
 	
@@ -377,10 +373,8 @@ function txt_begin() {
 	ntxt(0250, u, u, u, function() {audio_play_sound(snd_sliding_door_O, 0, false)}),
 	ntxt(0164, u, u, s_eienteihall1, function() {audio_play_sound(snd_sliding_door_C, 0, false)}),
 	
-	txt("Welcome to the House of Eternity.", KAGUYA.DEF, SPRITEPOS.RIGHT, u, function() {music_set(mus.eientei)}),
-	txt("I have lived here for over a thousand years.", KAGUYA.DEF),
-	txt("With my powers to manipulate eternity, time has effectively stopped.", KAGUYA.DEF),
-	txt("In this house, nothing changes and nothing dies. It is a place void of impurity.", KAGUYA.DEF),
+	txt("Welcome to the House of Eternity, my home of over a thousand years and counting.", KAGUYA.DEF, SPRITEPOS.RIGHT, u, function() {music_set(mus.eientei)}),
+	txt("With my powers to manipulate eternity, I have created a spell to effectively stop time- in this house, nothing changes and nothing dies. It is a place void of impurity.", KAGUYA.DEF),
 
 	
 	ptxt(),
@@ -394,10 +388,10 @@ function txt_begin() {
 	//prob put a bit more description here? or lead up to the question
 	
 		
-	txt("You mentioned \"impossible requests\"...#Are you the legendary Princess Kaguya of the moon?", KANA.DEF, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("You mentioned \"impossible requests\"...#Are you the legendary Princess Kaguya of the moon?", KANA.DEF, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Oh? You've heard of me? A mighty well-read one, I see.", KAGUYA.DEF, SPRITEPOS.RIGHT),
 	txt("Not really. Your story is still famous, even in the outside world! Everyone knows it!", KANA.DEF),
-	txt("Ah.|n That's...", KAGUYA.AWW),
+	txt("Ah.|n That's...", KAGUYA.WAAH),
 	txt("That's nice.", KAGUYA.AWW),
 	//the reason she goes AWW is cuz she secretly wants to not be a NEET but is all like BUT IM A LUNARIAN PRINCESS BWAAH
 	txt("Why are you here, though? Weren't you brought to the moon shortly after you arrived?", KANA.BRUH),
@@ -427,7 +421,7 @@ function txt_begin() {
 	txt("I had expected this, knowing Kaguya-- her posturing could never fully hide her excitement for the \"earthlings.\""),
 	txt("...Did we have something on our hands here?"),
 	
-	txt("\(Hey, Kana...\)", ME.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("\(Hey, Kana...\)", ME.DEF, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("\(Hm?\)", KANA.DEF),
 	txt("\(Isn't Kaguya beautiful?\)", ME.SMUG),
 	txt("\(...\)", KANA.NEUTRAL),
@@ -461,11 +455,13 @@ function txt_begin() {
 	txt("...I'll pass, thanks.", KANA.SCARED),
 	
 	txt("What a shame.", KAGUYA.AWW),
-	txt("What about Reisen?", KAGUYA.FUFUFU),
-	ntxt(0000, KANA.BRUH, SPRITEPOS.LEFT),
-	txt("She fits zero of those descriptors, but she is close by.", KAGUYA.FUFUFU),
-	txt("Maybe you two could become closer if given proper tools.", KAGUYA.FUFUFU),
-	txt("Tools?", ME.KAAAY),
+	txt("What about Reisen? She fits zero of those descriptors, but she is close by.", KAGUYA.FUFUFU),
+	txt("Who?", KANA.BRUH),
+	txt("Reisen's that bunny lady that tried to shoot us earlier.", ME.DEF),
+	txt("Funny one, she is. She used to work at the Lunar Capital with the other moon rabbits, but she deserted during the Lunar War.", KAGUYA.DEF),
+	txt("Eirin and I happened to find her one day and took her in.", KAGUYA.FUFUFU),
+	txt("She may seem aloof at first, but you two could perchance become closer if given proper tools.", KAGUYA.YAY),
+	txt("Tools?", KANA.NEUTRAL),
 	txt("Kana, have you ever played Shogi?", KAGUYA.SMUG),
 
 	ptxt(),
@@ -477,7 +473,7 @@ function txt_begin() {
 	ntxt(000, KANA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(000, KAGUYA.DEF, SPRITEPOS.HIDDEN),
 	
-	txt("We're playing Chess too?", REISEN.CONFUZZLED, SPRITEPOS.MIDRIGHT, s_eienteihall2, function() {textbox_set_type(global.textdefault)}),
+	txt("We're playing Chess too?", REISEN.DEF, SPRITEPOS.MIDRIGHT, s_eienteihall2, function() {textbox_set_type(global.textzpix)}),
 	txt("Yep! Since I gave you a Chess game not too long ago, we thought it would be perfect for you and Kana to bond over!", ME.YAY),
 	txt("But I've never played Chess. How does it work?", REISEN.DEF),
 	txt("...You'll figure it out.", ME.HEHE),
@@ -562,7 +558,7 @@ function txt_begin() {
 	txt("...#...#...#...", u, u, s_27),	
 	ptxt(),
 	txt("Reisen, don't you moon rabbits play Shogi all the time? Surely you should be better than this.", KAGUYA.DEF),
-	txt("Actually, I was so bad at it that everyone made fun of me. Reason number seven-seventy-six why I deserted.", REISEN.DEF),
+	txt("Actually, I was so bad at it that everyone made fun of me. Reason number seven-seventy-six why I left.", REISEN.DEF),
 	txt("But hey, at least I'm fighting against a master here.", REISEN.DEF),
 	txt("This is my second time ever playing chess.", KANA.DEF),
 	txt("Yeah, she's pretty bad at it.", ME.DEF),
@@ -576,8 +572,8 @@ function txt_begin() {
 	txt("...", u, u, s_32),
 	ptxt(),
 	txt("Yes, I got my bishop over there! Now let's just...", REISEN.DEF),
-	txt("Wow, you're in trouble now.", ME.DEF),
-	txt("Yeah, I know...", KANA.DEF),
+	txt("Kana, you're in trouble now...", ME.DEF),
+	txt("Yeah, I know.", KANA.DEF),
 	txt("Drop this bishop right here!", REISEN.DEF, u, s_34),
 	txt("Fine, then I'll just...", KANA.DEF, u, s_35),
 	txt("...", u, u, s_36),
@@ -645,28 +641,27 @@ function txt_begin() {
 	ptxt(),
 	
 	txt("THIS!", REISEN.DEF),
-	ntxt(0030, u, u, s_54_1),
-	ntxt(0030, u, u, s_54_2),
-	ntxt(0030, u, u, s_54_3),
-	ntxt(0030, u, u, s_54_4),
+	ntxt(0064, u, u, s_54_1),
+	ntxt(0064, u, u, s_54_2),
+	ntxt(0064, u, u, s_54_3),
+	ntxt(0064, u, u, s_54_4),
 	ntxt(0200, u, u, s_54_5),
 	
-	ntxt(0000, KANA.NEUTRAL, SPRITEPOS.LEFT, u, function() {music_set(mus.glosasary)}),
+	ntxt(0000, KANA.NEUTRAL, SPRITEPOS.LEFT, u, function() {music_set(mus.glossary)}),
 	ntxt(0000, REISEN.SMUG, SPRITEPOS.CENTER),
 	
-	ntxt(0050, u, u, s_eienteihall2, function() {textbox_set_type(global.textdefault)}),
+	ntxt(0050, u, u, s_eienteihall2, function() {textbox_set_type(global.textzpix)}),
 	
 	txt("And there we have it. I've won.", REISEN.SMUG),
 	
 	txt("Good game!", KANA.YAY),
 	txt("Even though I lost fair and square, I had a lot of fun!", KANA.YAY),
-	txt("...Are you serious?", REISEN.CONFUZZLED),
+	txt("...Are you serious?", REISEN.DEF),
 	txt("Yeah. I don't get to do these things often, and playing with you was a real treat.", KANA.WINKY),
 	txt("To be totally honest, that was the funnest thing I've done in years!", KANA.WINKY),
 	txt("...", REISEN.HEH),
 	txt("To be totally honest, I hated every second of it.", REISEN.HEH),
-	txt("But... you seem fun to be around.", REISEN.YAY),
-	txt("How about we play again sometime?", REISEN.YAY),
+	txt("...But you seem fun to be around. How about we play again sometime?", REISEN.YAY),
 	txt("Preferably with the *same* pieces.", REISEN.UGGH),
 	txt("Deal!", KANA.DEF),
 	
@@ -676,7 +671,7 @@ function txt_begin() {
 	
 	txt("Bravo, you two! Bravo!", KAGUYA.YAY, SPRITEPOS.RIGHT, u, function() {audio_play_sound(snd_clapping_alone1, 0, false)}),
 	txt("I've never seen such a splendid battle of wits!", KAGUYA.WINKY),
-	txt("If you say so.", REISEN.CONFUZZLED, SPRITEPOS.CENTER),
+	txt("If you say so.", REISEN.DEF, SPRITEPOS.CENTER),
 	txt("*YAWNNNN*", REISEN.DEF),
 	txt("Woof... I'm so tired...", REISEN.UGGH),
 	txt("Princess, may I please go to bed now?", REISEN.UGGH),
@@ -689,13 +684,13 @@ function txt_begin() {
 	txt("We should be going home soon, or my parents will get extra mad.", ME.DEF),
 	txt("Your...?", KANA.NEUTRAL),
 	txt("Well, do you think Reisen is the one?", ME.WINKYHEART),
-	txt("Uh-- maybe, but it's hard to tell when I'm clobbering her so bad.", KANA.DEF),
-	txt("For now, I wanna find at least one more person to go for.", KANA.DEF),
+	txt("...", KANA.AWW),
+	txt("Maybe, but it's hard to tell when I'm clobbering her so bad. For now, I wanna find at least one more person to go for.", KANA.DEF),
 	
 	txt("Hmm...", ME.HEHE),
 	txt("What about Mokou?", ME.POGQMARK),
 	txt("She fits most of your description.", ME.POGQMARK),
-	txt("Though I've never been to her house. And she certainly doesn't have massive honkers.", ME.KAAAY),
+	txt("Though I've never been to her house. And she certainly doesn't have massive honkers.", ME.NEUTRAL),
 	txt("Oh, that would be a *wonderful* idea.", KAGUYA.FUFUFU),
 	
 	txt("Who's Mokou?", KANA.NEUTRAL),
@@ -707,7 +702,7 @@ function txt_begin() {
 	txt("She's... not that kind of friend.", KAGUYA.AWW),
 	//maybe have the AWW be NEUTRAL instead
 	txt("I was talking to Kana, silly!", ME.WINKY),
-	txt("Ah. How silly of me.", KAGUYA.YAY),	
+	txt("Ah. What a comical mistake.", KAGUYA.YAY),	
 	txt("Dunno about you, but I'll stay up all night if I have to!", KANA.COCKY),
 	txt("Let's go see her!", KANA.COCKY),
 	txt("Oh, if you're seeing her tonight...", KAGUYA.DEF),
@@ -736,7 +731,7 @@ function txt_begin() {
 	txt("But then, we reached a clearing with the moon in full view.", u, u, s_crescent2),
 	txt("And without anything to prompt it... Kana began to sing."),
 	
-	txt("~~At just a glance~~#~~It's only us two~~", KANA.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("~~At just a glance~~#~~It's only us two~~", KANA.DEF, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("~~But our lives are full~~#~~Of the people we see every day on the street~~", KANA.DEF),
 	txt("~~Though yesterday~~#~~Was forever dark~~", KANA.DEF),
 	txt("~~Forever is only a moment too~~", KANA.DEF),
@@ -751,14 +746,14 @@ function txt_begin() {
 	txt("Her voice was one with the wind, and she floated along it like a white veil."),
 	ptxt(),
 	txt("We arrived at Mokou's house far too soon.", u, u, s_mkhsnt, function() {music_set(mus.wind1)}),
-	txt("It was far smaller than I had expected. But thinking back, it was definitely more fitting for her."),
+	txt("It was much smaller than I had expected. But thinking back, it was definitely more fitting for her."),
 	txt("I approached the front door with the smallest steps, while Kana floated close behind."),
 	
-	txt("What if she's sleeping now? Wouldn't it be rude to wake her up?", KANA.NEUTRAL, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("What if she's sleeping now? Wouldn't it be rude to wake her up?", KANA.NEUTRAL, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Absolutely.", ME.SMUG, SPRITEPOS.CENTER),
 	txt("HEY, MOKOU! COME ON OUT!", ME.YAY),
 	ntxt(00147, KANA.BRUH, SPRITEPOS.LEFT),
-	ntxt(00169, u, u, u, function() {audio_play_sound(snd_running_in_a_house, 0, false)}),
+	ntxt(00169, u, u, u, function() {audio_play_sound(snd_bath_door_O, 0, false)}),
 	//sound effect of door sliding open
 	
 	txt("...", MOKOU.NEUTRAL, SPRITEPOS.RIGHT),
@@ -781,7 +776,7 @@ function txt_begin() {
 	txt("Walking through the house, I could only think one thing."),
 	txt("\"I would love to live here.\""),
 	
-	txt("Sorry, there's not much here. I live a simple life, you see.", MOKOU.DEF, u, u, function() {textbox_set_type(global.textdefault)}),	
+	txt("Sorry, there's not much here. I live a simple life, you see.", MOKOU.DEF, u, u, function() {textbox_set_type(global.textzpix)}),	
 	txt("...Hang on just a second. Don't want you stumbling around in the dark.", MOKOU.DEF),
 	
 	ptxt(),	
@@ -792,7 +787,7 @@ function txt_begin() {
 	txt("A flame had appeared right over her free hand."),
 	txt("It was both a lantern and a stove."),
 	
-	txt("Woah, that's so cool!", KANA.DEF, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Woah, that's so cool!", KANA.DEF, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("How do you do that?", KANA.YAY),
 	txt("Heh, I'm glad you like it.", MOKOU.YAY, SPRITEPOS.RIGHT),
 	txt("It's just your ordinary magic. Learned it a long time ago.", MOKOU.YAY),
@@ -823,12 +818,12 @@ function txt_begin() {
 	ntxt(0000, ME.NEUTRAL, SPRITEPOS.CENTER),
 	txt("At least, until I saw Kana. She looked... deeply upset."),
 	
-	txt("That's amazing. You chose me, of all people.", MOKOU.YAY, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("That's amazing. You chose me, of all people.", MOKOU.YAY, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("I'm flattered, really.", MOKOU.YAY),
 	
 	txt("Sorry, it's probably stupid.", KANA.DISTANT),
-	txt("No no, you're fine.", MOKOU.DEF),
-	txt("It's good to know what you want. And I've seen plenty worse goals in my days.", MOKOU.DEF),
+	txt("No no, you're fine. It's good to know what you want.", MOKOU.DEF),
+	txt("Besides, I've seen plenty worse goals in my days.", MOKOU.SMUG),
 	
 	ntxt(0070, u, u, u, function() {music_set(mus.null)}),
 	
@@ -848,30 +843,32 @@ function txt_begin() {
 	txt("Sure. Just--|w050  let me drink it first.", MOKOU.DEF),	
 	
 	ntxt(200, u, u, u, function() {audio_play_sound(snd_drinking_a_hot_one2, 0, false)}),
-	ntxt(222, MOKOU.HMPH, SPRITEPOS.RIGHT, u, function() {audio_play_sound(snd_woman_coughing3, 0, false)}),
+	ntxt(222, MOKOU.NEUTRAL, SPRITEPOS.RIGHT, u, function() {audio_play_sound(snd_woman_coughing3, 0, false)}),
 	
 	txt("Oh man, that's... really strong...", MOKOU.NEUTRAL),
 	
 	//sounds of more coughing and then slump over
 	
 	ntxt(0100),
-	ntxt(060, MOKOU.DEF, SPRITEPOS.HIDDEN, s_mkinntdk, function() {music_set(mus.dies)}),
 	ntxt(000, KANA.SCARED, SPRITEPOS.LEFT),
 	ntxt(000, ME.WHAA, SPRITEPOS.CENTER),
+	ntxt(060, MOKOU.DEF, SPRITEPOS.HIDDEN, s_mkinntdk, function() {music_set(mus.dies)}),
 	
 	ptxt(),
 	txt("The room went dark.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("Mokou kept coughing and just wouldn't stop."),
 	txt("We both froze for only a second... but that was enough."),
 	txt("By the time the coughing ended, all we could see was the outline of a collapsed body on the floor, unmoving.", u, u, u, function() {textbox_set_type(global.textnvl)}),
-	txt("Oh my gosh...", KANA.SCARED, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Oh my gosh...", KANA.SCARED, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Is she...", ME.WHAA),
 	
-	ntxt(0069, MOKOU.HMPH, SPRITEPOS.RIGHT, s_mkinnt, function() {audio_play_sound(snd_game_explosion4, 0, false)}),
+	
+	ntxt(033, u, u, u, function() {music_set(mus.null)}),
+	ntxt(0123, MOKOU.NEUTRAL, SPRITEPOS.RIGHT, s_mkinnt, function() {audio_play_sound(snd_game_explosion4, 0, false)}),
 	//big sound effect of magic RESSURECTION BWAAHM
 	//game_explosion4
 	
-	txt("Holy macaroni, that hurt.", MOKOU.HMPH, u, u, function() {music_set(mus.mokou)}),
+	txt("Holy macaroni, that hurt.", MOKOU.SADSMILE, u, u, function() {music_set(mus.mokou)}),
 	txt("Sorry you had to see that.", MOKOU.NEUTRAL),	
 	txt("Wha...", ME.WHAA),
 	txt("No worries, I'm all fine now.", MOKOU.YAY),
@@ -884,7 +881,7 @@ function txt_begin() {
 	txt("...", MOKOU.MAD),
 	txt("You seem sincere enough.", MOKOU.HMPH),
 	txt("Just... don't do any more favors for her, okay?", MOKOU.NEUTRAL),
-	txt("She does this sort of thing every time. We kind of hate each other.", MOKOU.DEF),	
+	txt("She does this sort of thing all the time. We kind of hate each other.", MOKOU.DEF),	
 	txt("That's awful!", KANA.SCARED),
 	txt("Yeah, a little. None of it does any real damage, though.", MOKOU.DEF),
 	txt("Since, you know... I can't die.", MOKOU.NEUTRAL),
@@ -894,12 +891,10 @@ function txt_begin() {
 	txt("That's how it's been, and that's how it'll always be.", MOKOU.DEF),
 	txt("Forever.", MOKOU.SAD),
 	txt("...But that's enough about me.", MOKOU.HMPH),
-	txt("How the heck do you know Kaguya? She never lets visitors in.", MOKOU.HMPH),
-	txt("Especially not \"impure earthlings.\"", MOKOU.HMPH),
+	txt("How the heck do you know Kaguya? She never lets visitors in. Especially not \"impure earthlings.\"", MOKOU.HMPH),
 	//probably abrupt but GO GO GO WE NEED THIS DONE ASAP
 	ntxt(0000, KANA.NEUTRAL, SPRITEPOS.LEFT),
-	txt("I just stumbled upon her house many moons ago.", ME.HEHE),
-	txt("But she welcomed Kana and I with open arms!", ME.HEHE),
+	txt("I just stumbled upon her house many moons ago. She welcomed Kana and I with open arms!", ME.HEHE),
 	txt("Really now? That selfish, stuck-up lunatic?", MOKOU.COCKY),
 	txt("Are you sure you didn't just meet a lookalike?", MOKOU.COCKY),
 	txt("...Yes, she is a selfish stuck-up lunatic.", ME.HEHE),
@@ -920,7 +915,7 @@ function txt_begin() {
 	txt("She lives mostly as a hermit, in the company of fairies more than humans. Though she sometimes visits the human village for supplies or talking to friends."),
 	txt("She runs a yakitori stand, which is how she can afford her few worldly possessions; clothes, books, and the occassional snack."),
 	
-	txt("When you can't die, it's hard to care about food or comfort.", MOKOU.DEF, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("When you can't die, it's hard to care about food or comfort.", MOKOU.DEF, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("...By the way, keep the whole immortality thing between us, alright?", MOKOU.DEF),
 	txt("You saw it, but that ain't supposed to be a public thing.", MOKOU.DEF),
 	txt("Right!", ME.YAY),
@@ -957,7 +952,7 @@ function txt_begin() {
 	ptxt(),
 	txt("In truth, I didn't have to go right then. This was all part of my master plan.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("Despite Mokou's earlier insistence, I wasn't quite convinced that things couldn't work between them."),
-	txt("Mokou seemed friendly the both of us, and Kana had a little twinkle in her eye as they talked."),
+	txt("Mokou seemed friendly with both of us, and Kana had a little twinkle in her eye as they talked."),
 	txt("But at the very least, these two needed to be alone for something special to take place."),
 	txt("That was certainly my only reason for leaving."),
 	
@@ -965,7 +960,7 @@ function txt_begin() {
 	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	ntxt(00, KANA.DEF, SPRITEPOS.HIDDEN),
 	
-	txt("By the time I got done with my business, they were already midway through their conversation.", u, u, s_mkhsnt, function() {music_set(mus.wind1)}),
+	txt("By the time I got done with my business, they were already midway through a conversation.", u, u, s_mkhsnt, function() {music_set(mus.wind1)}),
 	txt("They sounded... oddly serious."),
 	txt("I decided to wait, and simply pressed my ear against the door."),
 	
@@ -984,8 +979,7 @@ function txt_begin() {
 	
 	txt("...Did you like her?", MOKOU.DEF),
 	txt("Yes.", KANA.DEF),
-	txt("We had a lot of fun in those days.", KANA.DEF),
-	txt("I became more humanlike in mind, body, and spirit.", KANA.DEF),
+	txt("She was like a mother to me. We had a lot of fun in those days, and I became more humanlike in mind, body, and spirit.", KANA.DEF),
 	txt("We played games, read together, and talked about our lives.", KANA.DEF),
 	//should there be another line or two here? you decide!
 	txt("And then she left.", KANA.DEF),
@@ -994,24 +988,26 @@ function txt_begin() {
 	
 	txt("The mansion was totally empty for a while, until a new family moved in.", KANA.DEF),
 	txt("And when they got there... just like my mother, they were terrified of me. But they left before I could befriend them.", KANA.DEF),
-	txt("Years later, a new family moved in. And they were a little less scared of youkai. They put seals on the house to keep me from coming out.", KANA.DEF),
-	txt("It went on like this until the princess and I met.", KANA.DEF),
+	txt("Years later, a new family moved in-- these ones were a little less scared of youkai. They put seals on the house to keep me from materializing.", KANA.DEF),
+	ptxt(),
+	txt("It went on like that until the princess and I met.", KANA.DEF),
 	txt("I'm living at her place now, but she's the only one there that likes me. Everyone else is just like the other families.", KANA.DEF),
 	txt("It makes sense, of course. I'm a poltergeist.", KANA.DEF),
 	
 	ptxt(),	
 	txt("...", MOKOU.DEF),
-	txt("Being unwanted is hard.", MOKOU.DEF),
-	txt("When your own creator deems you a mistake. Your very existence is a thing to fear, a thing to hide away. Even when given food or shelter, you're being starved.", MOKOU.DEF),
+	txt("I get you-- being unwanted is hard.", MOKOU.DEF),
+	txt("When your own creator deems you a mistake, your very existence is a thing to hide away. Even when given food or shelter, you're being starved of affection.", MOKOU.DEF),
 	txt("By instinct, you search for some way to get that nourishment, through any means necessary.", MOKOU.DEF),
+	ptxt(),
 	txt("At first you cry and beg. That doesn't work, so you try to earn it. That doesn't work, and you start to believe that you've done something wrong.", MOKOU.DEF),
 	txt("...That you *are* something wrong.", MOKOU.DEF),
 	txt("Then you either wither away, believing they are right... or you do something stupid.", MOKOU.DEF),
 	//kinda awkwardly phrased
 	
-	ptxt(),
 	txt("You can leave that place, bask in the sunlight, and eat the most delicious food in the world...", MOKOU.DEF),
 	txt("But those days stick with you.", MOKOU.DEF),	
+	ptxt(),
 	txt("...|w064 |- ", KANA.DEF),
 	txt("Uhm...", KANA.DEF),
 	txt("Is it possible to move on from something like that? Find a new family, or make peace with your old one?", KANA.DEF),
@@ -1029,7 +1025,7 @@ function txt_begin() {
 	ntxt(0, KANA.DISTANT, SPRITEPOS.RIGHT),
 	ntxt(0, MOKOU.SAD, SPRITEPOS.CENTER),
 	
-	txt("Hey, I'm back!", ME.YAY, SPRITEPOS.LEFT, s_mkinnt, function() {textbox_set_type(global.textdefault)}),
+	txt("Hey, I'm back!", ME.YAY, SPRITEPOS.LEFT, s_mkinnt, function() {textbox_set_type(global.textzpix)}),
 	txt("Oh, hey.", MOKOU.DEF),
 	txt("Hi.", KANA.DISTANT),
 	txt("Kana, let's go home. It's getting SUPER early.", ME.DEF),
@@ -1054,10 +1050,10 @@ function txt_begin() {
 	txt("So watching the sun rise felt no different from seeing it set."),
 	txt("We kept silent the whole time, but that was okay."),
 	
-	txt("You know... I think I'm ready to give up on our search.", KANA.AWW, SPRITEPOS.RIGHT, u, function() {textbox_set_type(global.textdefault)}),
-	txt("Really? We only just started!", ME.POGQMARK, SPRITEPOS.LEFT),
+	txt("You know... I think I'm ready to give up on our search.", KANA.AWW, SPRITEPOS.RIGHT, u, function() {textbox_set_type(global.textzpix)}),
+	txt("Really? We only just started!", ME.DEF, SPRITEPOS.LEFT),
 	txt("Yeah. It's just... maybe the whole \"dream girl\" thing isn't helping.", KANA.AWW),
-	txt("What do you mean?", ME.KAAAY),
+	txt("What do you mean?", ME.NEUTRAL),
 	txt("It's too specific. Everyone we've met has some things I like, and some things I don't.", KANA.NEUTRAL),
 	txt("Maybe I should get to know them more. All we've even done is introductions.", KANA.DEF),
 	txt("Hmm...", ME.DISAPOINT),
@@ -1071,8 +1067,7 @@ function txt_begin() {
 	txt("I thought about it on our way here. All the things we've done together.", KANA.AWW),
 	txt("And... it really means a lot to me, you know?", KANA.AWW),
 	txt("...Thanks.", ME.HEHE),	
-	txt("We made a big deal out of finding a girlfriend before, but...", KANA.YAY),
-	txt("I think I already know who I like most.", KANA.YAY),
+	txt("We made a big deal out of finding a girlfriend before, but... I already know who I like most.", KANA.YAY),
 	txt("Really? That's amazing!", ME.YAY),
 	txt("Who is it?", ME.YAY),
 	txt("...Can you close your eyes? I need to get something.", KANA.WINKY),
@@ -1098,10 +1093,10 @@ function txt_begin() {
 	//im kinda going off romance mango logic here
 	//(and also having kotohime's eyes closed makes for a great way to save on assets!!!)
 	ntxt(00, KANA.LOVEY, SPRITEPOS.RIGHT, s_mistylakesunrise),
-	ntxt(80, ME.NEUTRAL, SPRITEPOS.LEFT),
+	ntxt(80, ME.DISAPOINT, SPRITEPOS.LEFT),
 	
 	//should she say "i love you"?? you decide!
-	txt("You're my dream girl.", KANA.LOVEY, u, u, function() {textbox_set_type(global.textdefault)}),
+	txt("You're my dream girl.", KANA.LOVEY, u, u, function() {textbox_set_type(global.textzpix)}),
 	//ha ha super cheesy and dumb
 	//keep it or dont
 	txt("And I wouldn't have it any other way.", KANA.LOVEY),
@@ -1109,7 +1104,7 @@ function txt_begin() {
 	txt("Will you be my girlfriend?", KANA.LOVEY),
 	
 	txt("...", ME.DISTANT),
-	txt("?", KANA.LOVEYSHY),
+	txt("...?", KANA.LOVEYSHY),
 	txt("Sorry.", ME.DISTANT),
 	txt("...", KANA.DISTANT),
 	txt("Do you... not like me?", KANA.DISTANT),
@@ -1141,25 +1136,24 @@ function txt_begin() {
 	txt("As the fairies came out and sang their songs, we walked in silence, gazing at anything but each other.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("The wind bit at us, and the beautiful water of the Misty Lake looked ice-cold."),
 	ptxt(),
-	txt("When we got home, we were met with exactly what should've happened.", u, u, u, function() {music_set(mus.null)}),
+	txt("When we got home, we were met with exactly what should've happened."),
 	txt("My parents yelled at me for leaving so long, but I didn't mind much. I was far more furious with myself than they could ever be."),
 	txt("The next couple days were silent too. We didn't do much together, and each time I looked into Kana's eyes, they looked farther and farther away.", u, u, s_kotohimehall),
 	txt("Something had to be done about this."),
 	
 	
-	txt("Hey, Kana?", ME.NEUTRAL, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Hey, Kana?", ME.NEUTRAL, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Yeah?", KANA.NEUTRAL, SPRITEPOS.LEFT),
 	txt("What if you moved into the House of Eternity?", ME.DEF),
 	txt("...Why?", KANA.AWW),
 	txt("You liked playing games with Reisen. You liked Kaguya and Mokou alright, and I think you'll take a fancy to Eirin.", ME.TINYSMIRK),
 	txt("Any of them would be great to get to know.", ME.HEHE),
 	txt("And... it seems to me like you're looking for a family.", ME.TINYSMIRK),
-	txt("I can't give that to you on my own, but maybe Kaguya and her friends can.", ME.DISTANT),
+	txt("I can't give that to you on my own, but maybe Kaguya and her friends can.", ME.NEUTRAL),
 	txt("I want to be with you, though...", KANA.LOVEYSHY),
 	txt("I promise I'll visit as much as possible!", ME.YAY),
 	txt("And maybe it'll be easier this way. If we're not living together, we'll feel more like friends.", ME.DEF),
-	txt("You'll get to meet tons of new people who all welcome you.", ME.HEHE),
-	txt("You'll get to learn tons of new things about Gensokyo, the moon, and youkai.", ME.HEHE),
+	txt("You'll get to meet tons of new people who all welcome you. You'll get to learn tons of new things about our world, the moon, and youkai.", ME.HEHE),
 	txt("And whenever you wish, you can come over to my house, and we'll finally make those chocolate-chip cookies together!", ME.WINKYHEART),
 	txt("...", KANA.LOVEYSHY),
 	txt("Okay.", KANA.LOVEY),
@@ -1171,14 +1165,18 @@ function txt_begin() {
 	txt("Kaguya was on board with it, and so were Reisen and Eirin."),
 	txt("And before we knew it, Kana had been magically transferred to the House of Eternity."),
 	
+	
+	ntxt(00, KANA.DEF, SPRITEPOS.HIDDEN),
+	ntxt(60, ME.DEF, SPRITEPOS.HIDDEN),
+	
 	ntxt(00, KANA.NEUTRAL, SPRITEPOS.MIDLEFT),
 	ntxt(00, ME.TINYSMIRK, SPRITEPOS.LEFT),
-	ntxt(00, KAGUYA.FUFUFU, SPRITEPOS.RIGHT, u, function() {music_set(mus.chillin)}),
-	txt("Good afternoon, Miss Anaberal.", REISEN.HEH, SPRITEPOS.MIDRIGHT, s_eienteiday, function() {textbox_set_type(global.textdefault)}),
+	ntxt(00, KAGUYA.FUFUFU, SPRITEPOS.RIGHT),
+	txt("Good afternoon, Miss Anaberal.", REISEN.HEH, SPRITEPOS.MIDRIGHT, s_eienteiday, function() {textbox_set_type(global.textzpix)}),
 	txt("What's with the formality?", KANA.NEUTRAL),
-	txt("There's no reason to treat you like an outsider anymore. You're here to stay, aren't you?", REISEN.HEH),
+	txt("There's no reason to treat you like an outsider anymore. You're here to stay, aren't you?", REISEN.DEF),
 	txt("As long as I'm allowed to.", KANA.DEF),
-	txt("You'll need to do about 5000 menial tasks per day to stay. Cooking, cleaning, directing the youkai rabbits, laundry...", REISEN.SMUG),
+	txt("You'll need to do about 5000 menial tasks per day to stay. Cooking, cleaning, directing the youkai rabbits, laundry...", REISEN.DEF),
 	txt("Okay!", KANA.YAY),
 	txt("If that's what you need, I'm ready to take on all the chores you got!", KANA.COCKY),
 	txt("Oh my gosh, you'll actually help me out? I was just joking!", REISEN.YAY),
@@ -1194,9 +1192,8 @@ function txt_begin() {
 	txt("I promise we'll take good care of her.", KAGUYA.YAY),
 	txt("...I'm glad.", ME.HEHE),
 	txt("Well, I must go now. It's about time to water the bonsai tree.", KAGUYA.DEF),
-	txt("The bonsai tree? That won't ever grow, will it? Due to your spell and all.", ME.KAAAY),
-	txt("Oh, it's just an old habit of mine. It gives me something to do every day.", KAGUYA.FUFUFU),
-	txt("Even something so small alleviates much of my boredom.", KAGUYA.FUFUFU),
+	txt("The bonsai tree? That won't ever grow, will it? Due to your spell and all.", ME.NEUTRAL),
+	txt("Oh, it's just an old habit of mine. It gives me something to do every day. Even a task so small alleviates much of my boredom.", KAGUYA.FUFUFU),
 	txt("I'll leave you to it, then.", ME.HEHE),
 	ntxt(40, KAGUYA.DEF, SPRITEPOS.HIDDEN),
 	
@@ -1210,9 +1207,9 @@ function txt_begin() {
 	txt("Just as I turned around to leave, Kana rushed back to me with something in her hand.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),
 	txt("Her little straw hat.", u, u, s_hat),	
-	txt("Here you go. Take it.", KANA.LOVEY, SPRITEPOS.RIGHT, u, function() {textbox_set_type(global.textdefault)}),
+	txt("Here you go. Take it.", KANA.LOVEY, SPRITEPOS.RIGHT, s_eienteiday, function() {textbox_set_type(global.textzpix)}),
 	//kana has no hat on	
-	txt("...Really?", ME.NEUTRAL, SPRITEPOS.LEFT, s_eienteiday),
+	txt("...Really?", ME.NEUTRAL, SPRITEPOS.LEFT),
 	txt("Yeah. I don't want it anymore. So... you can keep it.", KANA.LOVEY, SPRITEPOS.RIGHT),
 	txt("It might look nice on you.", KANA.LOVEY),
 	txt("...", ME.DISTANT),

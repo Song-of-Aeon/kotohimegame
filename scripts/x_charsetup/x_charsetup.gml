@@ -107,6 +107,26 @@ nu talksprite("JDGMOKU", "kana", z++);
 nu talksprite("JDGKAGU", "kana", z++);
 
 
+#macro KANAHAT global.textguy[?" kana "]
+nu chardata(" Kana ", s_kana, se_null, .75);
+var z=0;
+nu talksprite("DEF", " kana ", z++);
+nu talksprite("AWW", " kana ", z++);
+nu talksprite("YAY", " kana ", z++);
+nu talksprite("WINKY", " kana ", z++);
+nu talksprite("MAD", " kana ", z++);
+nu talksprite("COCKY", " kana ", z++);
+nu talksprite("NEUTRAL", " kana ", z++);
+nu talksprite("SCARED", " kana ", z++);
+nu talksprite("DISTANT", " kana ", z++);
+nu talksprite("SADSMILE", " kana ", z++);
+nu talksprite("BRUH", " kana ", z++);
+nu talksprite("LOVEYSHY", " kana ", z++);
+nu talksprite("LOVEY", " kana ", z++);
+nu talksprite("JDGMOKU", " kana ", z++);
+nu talksprite("JDGKAGU", " kana ", z++);
+
+
 
 #macro KAGUYA global.textguy[?"kaguya"]
 nu chardata("Kaguya", s_kaguya, se_null, .75);

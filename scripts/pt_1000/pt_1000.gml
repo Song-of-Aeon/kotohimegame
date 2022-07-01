@@ -9,24 +9,24 @@ nu pattern_ext(function() {
 	
 	
 	if ncm(42){
-		c_shoot(-32, sin(count/60)*40+0, 2, 0, bul.bluamulet, c_red);
-		c_shoot(-32, sin(count/60)*40+50, 2, 0, bul.bluamulet, c_red);
-		c_shoot(-32, sin(count/60)*40+100, 2, 0, bul.bluamulet, c_red);
-		c_shoot(-32, sin(count/60)*40+150, 2, 0, bul.bluamulet, c_red);
-		c_shoot(-32, sin(count/60)*40+200, 2, 0, bul.bluamulet, c_red);
-		c_shoot(-32, sin(count/60)*40+250, 2, 0, bul.bluamulet, c_red);
-		c_shoot(-32, sin(count/60)*40+300, 2, 0, bul.bluamulet, c_red);
-		c_shoot(-32, sin(count/60)*40+350, 2, 0, bul.bluamulet, c_red);
+		c_shoot(-32, sin(count/60)*40+0, 2.5, 0, bul.bluamulet, c_red);
+		c_shoot(-32, sin(count/60)*40+50, 2.5, 0, bul.bluamulet, c_red);
+		c_shoot(-32, sin(count/60)*40+100, 2.5, 0, bul.bluamulet, c_red);
+		c_shoot(-32, sin(count/60)*40+150, 2.5, 0, bul.bluamulet, c_red);
+		c_shoot(-32, sin(count/60)*40+200, 2.5, 0, bul.bluamulet, c_red);
+		c_shoot(-32, sin(count/60)*40+250, 2.5, 0, bul.bluamulet, c_red);
+		c_shoot(-32, sin(count/60)*40+300, 2.5, 0, bul.bluamulet, c_red);
+		c_shoot(-32, sin(count/60)*40+350, 2.5, 0, bul.bluamulet, c_red);
 		
 		
-		c_shoot(322, sin(count/60)*40-25, 2, 180, bul.bluamulet, c_red);
-		c_shoot(322, sin(count/60)*40+25, 2, 180, bul.bluamulet, c_red);
-		c_shoot(322, sin(count/60)*40+75, 2, 180, bul.bluamulet, c_red);
-		c_shoot(322, sin(count/60)*40+125, 2, 180, bul.bluamulet, c_red);
-		c_shoot(322, sin(count/60)*40+175, 2, 180, bul.bluamulet, c_red);
-		c_shoot(322, sin(count/60)*40+225, 2, 180, bul.bluamulet, c_red);
-		c_shoot(322, sin(count/60)*40+275, 2, 180, bul.bluamulet, c_red);
-		c_shoot(322, sin(count/60)*40+325, 2, 180, bul.bluamulet, c_red);
+		c_shoot(322, sin(count/60)*40-25, 2.5, 180, bul.bluamulet, c_red);
+		c_shoot(322, sin(count/60)*40+25, 2.5, 180, bul.bluamulet, c_red);
+		c_shoot(322, sin(count/60)*40+75, 2.5, 180, bul.bluamulet, c_red);
+		c_shoot(322, sin(count/60)*40+125, 2.5, 180, bul.bluamulet, c_red);
+		c_shoot(322, sin(count/60)*40+175, 2.5, 180, bul.bluamulet, c_red);
+		c_shoot(322, sin(count/60)*40+225, 2.5, 180, bul.bluamulet, c_red);
+		c_shoot(322, sin(count/60)*40+275, 2.5, 180, bul.bluamulet, c_red);
+		c_shoot(322, sin(count/60)*40+325, 2.5, 180, bul.bluamulet, c_red);
 		
 		//c_shoot(322, sin((count+180)/60)*170+165, 2+random(1), 180, bul.smolerboolit, c_purple);
 

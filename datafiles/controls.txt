@@ -8,10 +8,12 @@ switch shot type - a/s
 ping - q (hold)
 undo - ctrl+z
 redo - ctrl+shift+z
+skip text - ctrl
 pause - scroll lock
-speak to kotohime - microphone (must run in administrator)
+speak to kotohime - microphone+` (push to talk, must run in administrator)
 light attack - o
 heavy attack - p
-wavedash (macro, can be performed manually) - ;
+wavedash macro - ;
+focus - shift
 
-in all situations, clicking is equivalent to pressing enter.
+in all situations, clicking is equivalent to pressing enter

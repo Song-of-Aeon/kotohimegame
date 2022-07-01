@@ -43,7 +43,7 @@ global.textchara = {
 	font: FONT.DETERMINATION,
 }
 global.texttale = {
-	x: 420,
+	x: 920,
 	y: 40,
 	width: 185*2,
 	height: 120,
@@ -51,7 +51,7 @@ global.texttale = {
 	spriteposy: 190,
 	sprite: s_textbubble,
 	type: TEXTTYPE.ADV,
-	font: FONT.DETERMINATION,
+	font: FONT.DETERMINATIONSMALL,
 }
 global.textfacepic = {
 	x: 320,

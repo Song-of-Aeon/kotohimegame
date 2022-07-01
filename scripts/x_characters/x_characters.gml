@@ -89,8 +89,8 @@ global.chara[?"chiyuri"] = {
 		}
 	},
 	sprite: s_cforward,
-	startingitems: [ITEMS._DEBUG, /*ITEMS._SHOTPOWERNUMBERS,*/ ITEMS._STATS, ITEMS._GRAZE, ITEMS._CONSOLE, ITEMS.PAUSE, ITEMS.FOCUS, ITEMS._DPS,
-	ITEMS.NEEDLES,
+	startingitems: [ITEMS._STATS, ITEMS._GRAZE, ITEMS._CONSOLE, ITEMS.PAUSE, ITEMS.FOCUS, ITEMS._DPS,
+	ITEMS.KAGUYAA,
 	],
 	name: "Kaguya",
 	desc: "Lunatic",

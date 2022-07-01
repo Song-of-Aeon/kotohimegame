@@ -6,11 +6,8 @@ function c_badpractice(line) {
 		case "c": //color
 			var myguy = string_copy(shitread.text, i, 9);
 			var myguy2 = string_replace(myguy, ".", "0");
-			if string_digits(myguy2) != myguy2 {
-			} else {
-				i += 9;
-				specialchars += 9;
-			}
+			i += 9;
+			specialchars += 9;
 			
 			//
 			break;

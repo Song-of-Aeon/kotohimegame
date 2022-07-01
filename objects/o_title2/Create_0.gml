@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-generateMainMenu(40,160);
+generateMainMenu(60,160);
 
 global.MenuCursor.disabled = false;
 global.count = 0;

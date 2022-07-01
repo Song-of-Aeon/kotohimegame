@@ -1,19 +1,18 @@
 BONUS CREDITS:
 framework is from a danmakugame im making check it out (looking for feedback!!)
 http://aeon-n.cool/kasegai.zip
-
-if you open kotohimegame in undertalemodtool you will find a lot of related assets
+if you open kotohimegame in undertalemodtool you will find a lot of related assets to that game. this is incredibly bulky for a visual novel. i am sorry
 
 sound effects shamelessly stolen from undertale, ace attorney, and freesound.org
-MODS DONT KILL ME PLEASE
+MODS DONT NUKE THE GAME PLEASE
 
 font is nova mono (normal) and determination (undertale)
 engine is gamemaker 2.3
 aesthetic concepts taken from undertale, ace attorney, and two games you've never heard of
 
 our artists did not feel like making backgrounds
-instead we used pdn color quantize tool with a buncha photos, mizuno's 16 craft with some basic ass shaders, and gm_pub. work with what you got huh
+instead i used pdn color quantize tool with a buncha photos, mizuno's 16 craft with some basic ass shaders, and gm_pub. work with what you got huh
 
 https://www.youtube.com/watch?v=00lzKO-9hUk
 
-TOUHOU PROJECT TEAM SHANGHAI ALICE COPYRIGHT OF GENSOKYO'S WONDERFUL LADIES
+TOUHOU PROJECT TEAM SHANGHAI ALICE COPYRIGHT FOR GENSOKYO'S WONDERFUL LADIES

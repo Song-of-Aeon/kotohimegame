@@ -74,6 +74,7 @@ enum ITEMS {
 	GOCRAZY,
 	UNDERTALE,
 	HIDE,
+	KAGUYAA,
 	#region mechanics
 	_STATS,
 	_GRAZE,

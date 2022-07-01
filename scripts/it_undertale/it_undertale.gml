@@ -72,10 +72,19 @@ itemgen({
 		var myright = 1280/5*4;
 		var myup = 284*2;
 		set_font_style(FONT.DETERMINATION);
-		draw_line_width(bordleft+(350+290), bordup+10-2.5, bordleft+(350+290), borddown+10+2.5, 5);
-		draw_line_width(bordleft+(350+290), bordup+10, bordright+(350+290), bordup+10, 5);
-		draw_line_width(bordright+(350+290), bordup+10-2.5, bordright+(350+290), borddown+10+2.5, 5);
-		draw_line_width(bordleft+(350+290), borddown+10, bordright+(350+290), borddown+10, 5);
+		if battling {
+			draw_line_width(bordleft+(350+290), bordup+10-2.5, bordleft+(350+290), borddown+10+2.5, 5);
+			draw_line_width(bordleft+(350+290), bordup+10, bordright+(350+290), bordup+10, 5);
+			draw_line_width(bordright+(350+290), bordup+10-2.5, bordright+(350+290), borddown+10+2.5, 5);
+			draw_line_width(bordleft+(350+290), borddown+10, bordright+(350+290), borddown+10, 5);
+		} else {
+			surface_reset_target();
+			draw_line_width(bordleft, bordup, bordleft, borddown, 5);
+			draw_line_width(bordleft, bordup, bordright, bordup, 5);
+			draw_line_width(bordright, bordup, bordright, borddown, 5);
+			draw_line_width(bordleft, borddown, bordright, borddown, 5);
+			surface_set_target(global.surfaces.HUD);
+		}
 		draw_set_valign(fa_middle);
 		draw_text(myleft, myup, "KOTOHIME");
 		draw_text(myleft+160, myup, "LV 1");
@@ -268,6 +277,9 @@ itemgen({
 					c_removeitem(ITEMS.UNDERTALE);
 					textbox_create(txt_acceptence);
 					audio_play_sound(se_select, 0, false);
+				} else {
+					c_getitembyid(ITEMS.UNDERTALE).battling = true;
+					c_makeboss(global.bosses.chiyuri, [SPELL.NON]);
 				}
 			})
 			instance_destroy(o_textbox);

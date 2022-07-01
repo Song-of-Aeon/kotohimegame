@@ -1,5 +1,6 @@
 function textline_next() {
 	do {
+		set_font_style(font);
 		skipped = false;
 		waiting = 0;
 		waited = array_create(20);
@@ -16,6 +17,7 @@ function textline_next() {
 		}
 		var dudes = font_get_size(draw_get_font())*.8;
 		var dudes2 = floor((width-margin*2)/dudes);
+		log(dudes2);
 		msg[talkpos].text = lb_auto(msg[talkpos].text, dudes2);
 		log(msg[talkpos]);
 		talklength = string_length(msg[talkpos].text);

@@ -56,7 +56,7 @@ global.textchara = {
 }
 global.texttale = {
 	x: 920,
-	y: 40,
+	y: 60,
 	width: 185*2,
 	height: 120,
 	spriteposx: 210,

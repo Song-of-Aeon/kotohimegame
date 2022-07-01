@@ -67,7 +67,7 @@ itemgen({
 	ondraw: function() {
 		draw_set_color(c_white);
 		surface_set_target(global.surfaces.HUD);
-		draw_sprite_ext(s_chiyuritale, 0, 640, 240, sin(gc/60)/7+.6, cos(gc/60)/7+.6, 0, c_white, 1-battling*.4);
+		draw_sprite_ext(s_chiyuritale, 0, 640, 220, sin(gc/60)/7+.6, cos(gc/60)/7+.6, 0, c_white, 1-battling*.4);
 		var myleft = 1280/5;
 		var myright = 1280/5*4;
 		var myup = 284*2;
@@ -86,7 +86,7 @@ itemgen({
 				var dropoff = floor(abs(fightx-middle)/4);
 				var dude = 50-dropoff;
 				//draw_text_transformed(bordleft+fightx, 400, dude, 1, 1, 270);
-				draw_sprite_ext(s_docaredidask, 0, bordleft+fightx, 414, 1, 1, -gc*2, c_white, 1);
+				draw_sprite_ext(s_docaredidask, 0, bordleft+fightx, 436, 1, 1, -gc*2, c_white, 1);
 			
 			}
 			draw_line_width(bordleft, bordup, bordleft, borddown, 5);

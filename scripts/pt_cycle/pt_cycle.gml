@@ -5,7 +5,6 @@ nu pattern_ext(function() {
 		ISAAC.y=240
 	}
 	
-	if count > 20 {
 		
 		if ncm(40) {
 				
@@ -21,7 +20,8 @@ nu pattern_ext(function() {
 				c_shoot(x, y, 3, point_me()+36, bul.smolerboolit);
 				c_shoot(x, y, 3, point_me()-36, bul.smolerboolit);
 		}
-	}
+	
+	
 	
 	
 	if ncm(6) {
@@ -78,15 +78,15 @@ nu pattern_ext(function() {
 				
 				c_shoot(x, y, 2, point_me()+16, bul.blunaifu, u, function(){
 					c
-					if count > 170 and count < 200 {
+					if count > 70 and count < 100 {
 						spd = 0
 						}
 					
-					if count > 200 and count < 230{
+					if count > 100 and count < 130{
 					dir = point_me();
 					spd = 1
 					
-					if count = 230 {
+					if count = 130 {
 					dir = point_me();
 					
 					}
@@ -97,15 +97,15 @@ nu pattern_ext(function() {
 				
 				c_shoot(x, y, 2, point_me()-16, bul.blunaifu, u, function(){
 					c
-					if count > 170 and count < 200 {
+					if count > 70 and count < 100 {
 						spd = 0
 						}
 					
-					if count > 200 and count < 230{
+					if count > 100 and count < 130{
 					dir = point_me();
 					spd = 1
 					
-					if count = 230 {
+					if count = 130 {
 					dir = point_me();
 					
 					}
@@ -116,15 +116,15 @@ nu pattern_ext(function() {
 				
 				c_shoot(x, y, 2, point_me()+32, bul.blunaifu, u, function(){
 					c
-					if count > 170 and count < 200 {
+					if count > 70 and count < 100 {
 						spd = 0
 						}
 					
-					if count > 200 and count < 230{
+					if count > 100 and count < 130{
 					dir = point_me();
 					spd = 1
 					
-					if count = 230 {
+					if count = 130 {
 					dir = point_me();
 					
 					}
@@ -134,15 +134,15 @@ nu pattern_ext(function() {
 					});
 				c_shoot(x, y, 2, point_me()-32, bul.blunaifu, u, function(){
 					c
-					if count > 170 and count < 200 {
+					if count > 70 and count < 100 {
 						spd = 0
 						}
 					
-					if count > 200 and count < 230{
+					if count > 100 and count < 130{
 					dir = point_me();
 					spd = 1
 					
-					if count = 230 {
+					if count = 130 {
 					dir = point_me();
 					
 					}

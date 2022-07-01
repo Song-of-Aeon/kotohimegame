@@ -326,21 +326,21 @@ function txt_end() {
 	txt("...", KANA.DEF),
 	
 	//sound of putting on hat
-	txt("...There we go!", KANA.YAY, SPRITEPOS.MIDRIGHT, s_closet),
+	txt("...There we go!", KANAHAT.YAY, SPRITEPOS.MIDRIGHT, s_closet),
 	txt("Heh... it looks great on you.", REISEN.YAY, SPRITEPOS.MIDLEFT),
-	txt("Thanks.", KANA.LOVEY),
+	txt("Thanks.", KANAHAT.LOVEY),
 	txt("So... she's not here?", REISEN.DEF, SPRITEPOS.CENTER),
 	txt("Doesn't look like it. She must be taking a stroll right now.", KANA.AWW, SPRITEPOS.RIGHT),
-	txt("How about we try again tonight?", KANA.DEF),
+	txt("How about we try again tonight?", KANAHAT.DEF),
 	txt("Alright.", REISEN.DEF),
 	
 	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN),
-	ntxt(0, KANA.NEUTRAL, SPRITEPOS.HIDDEN),
+	ntxt(0, KANAHAT.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, KAGUYA.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(108, MOKOU.SAD, SPRITEPOS.HIDDEN, s_home),
 	
 	ntxt(0, REISEN.DEF, SPRITEPOS.LEFT),
-	ntxt(0, KANA.DISTANT, SPRITEPOS.MIDLEFT),
+	ntxt(0, KANAHAT.DISTANT, SPRITEPOS.MIDLEFT),
 	ntxt(0, KAGUYA.NEUTRAL, SPRITEPOS.MIDRIGHT),
 	ntxt(30, MOKOU.SAD, SPRITEPOS.RIGHT),
 
@@ -354,7 +354,7 @@ function txt_end() {
 	txt("...?", REISEN.DEF),
 	txt("Oh, there's something in my pocket.", MOKOU.NEUTRAL),
 	txt("\(Feels like it just appeared out of nowhere...\)", MOKOU.SAD),
-	txt("Really? What is it?", KANA.NEUTRAL),
+	txt("Really? What is it?", KANAHAT.NEUTRAL),
 	txt("A note...", MOKOU.SADSMILE),
 	txt("What does it say?", KAGUYA.NEUTRAL),
 	txt("...", MOKOU.SAD),

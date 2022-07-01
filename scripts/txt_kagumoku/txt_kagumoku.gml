@@ -1308,8 +1308,7 @@ function txt_kagumoku() {
 	//boom bam wapposhy pow
 	//AKA FIRST SPELLCARD
 	
-	txt("What's with you tonight?", MOKOU.MAD, SPRITEPOS.LEFT),
-	txt("Attack me already!", MOKOU.MAD),
+	txt("What's with you tonight? You're barely attacking me at all!", MOKOU.MAD, SPRITEPOS.LEFT),
 	txt("One thing first...", KME.DEF, SPRITEPOS.CENTER),
 	txt("I think you're smoking hot.", KME.FUFUFU),
 	txt("Wow. Never heard that one before.", MOKOU.HMPH),
@@ -1499,7 +1498,7 @@ function txt_kagumoku() {
 	txt("I do not know how long we stayed there-- seconds, minutes, or even hours. But it did not matter. However long this moment may have lasted..."),
 	txt("It was forever."),
 	
-	txt("#END OF KAGUYAXMOKOU STORY |w999 ", u, u, s_black, function() {textbox_set_type(global.textzpix)}),
+	txt("#END OF KAGUYAXMOKOU STORY |w300 ", u, u, s_black, function() {textbox_set_type(global.textzpix)}),
 	
 	
 	

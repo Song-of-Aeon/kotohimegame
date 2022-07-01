@@ -265,7 +265,13 @@ nu talksprite("INTENSE", "aunn", z++);
 nu talksprite("NOTHING", "aunn", z++);
 
 var z=0;
-nu talksprite("NOTHING", "chiyuri", z++);
+nu talksprite("HAPPY", "chiyuri", z++);
+nu talksprite("STERN", "chiyuri", z++);
+nu talksprite("WORRIED", "chiyuri", z++);
+nu talksprite("ANNOYED", "chiyuri", z++);
+nu talksprite("INTERESTED", "chiyuri", z++);
+nu talksprite("GLEEFUL", "chiyuri", z++);
+nu talksprite("CONFUSED", "chiyuri", z++);
 
 var z=0;
 nu talksprite("HAPPY", "yumemi", z++);

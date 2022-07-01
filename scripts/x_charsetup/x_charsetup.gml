@@ -108,7 +108,7 @@ nu talksprite("JDGKAGU", "kana", z++);
 
 
 #macro KANAHAT global.textguy[?" kana "]
-nu chardata(" Kana ", s_kana, se_null, .75);
+nu chardata(" Kana ", s_kanahat, se_null, .75);
 var z=0;
 nu talksprite("DEF", " kana ", z++);
 nu talksprite("AWW", " kana ", z++);

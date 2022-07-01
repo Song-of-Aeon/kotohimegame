@@ -5,14 +5,14 @@ function txt_afterword() {
 	msg = msglang([
 	
 	
-	txt("CREDITS#LUYUU - WRITING, PROGRAMMING, SOME ART #AEON - MOST OF THE PROGRAMMING, SOME ART #TAMI - MUSIC#YUNEVII - ART#AQWA - ART#ANUMANIA - TECHNICAL SUPPORT#SPRONKLESS - SOME ART#TAIRA KOMORI - SOUND EFFECTS", u, u, s_black),
+	txt("CREDITS#LUYUU - WRITING, SOME CODING & ART#AEON - MOST OF THE CODING, GFX#TAMI - MUSIC#YUNEVII - ART#AQWA - ART#ANUMANIA - TECHNICAL SUPPORT#TAIRA KOMORI - SOUND EFFECTS#SPRONKLESSS - MORAL SUPPORT", u, u, s_black, function() {music_set(mus.glossary)}),
 	
 	
 	
 	
 	ptxt(),
 	txt("Hey!"),
-	txt("This is Luyuu-- the writer of this story."),	
+	txt("This is Luyuu-- the writer of The Little Rabbit Princess and the House of Eternity."),	
 	txt("First off, thank you so much for reading this \"game.\" It really means a lot to me."),
 	
 	ptxt(),
@@ -20,17 +20,17 @@ function txt_afterword() {
 	txt("A lot."),
 	ptxt(),
 	txt("I've kinda been writing in the dark, without too much idea of what works and what doesn't. So comments, reviews, criticism, etc. would be greatly appreciated."),
-	txt("At the moment I can think of lots of possible flaws with the writing-- the themes may be a little on the nose, the characters out-of-character, the pace too slow, and the ending abrupt and overly confusing."),
+	txt("At the moment I can think of lots of possible flaws with the writing-- the themes may be on the nose, the characters out-of-character, the pace too slow, and the ending abrupt and overly confusing."),
 	txt("But making this was fun, and I'm looking forward to doing more things like it."),
 	
 	ptxt(),
-	txt("That's not to say production was perfect. One of the artists on our team got really sick and had to drop out."),
+	txt("That's not to say production was perfect. One of the artists on our team had to drop out before they could make much."),
 	txt("...You may have been able to tell."),
 	ptxt(),
 	txt("Most of the writing was done in the last two weeks-- the first two were spent reading official print works for research, and writing a big section that got thrown out because we didn't have the time to make art for it."),	
 	txt("...You may have been able to tell."),
 	ptxt(),
-	txt("And pretty much all of the gameplay was made in three sittings, featuring me trying to figure out a danmaku system made by Aeon, even though I have no knowledge of programming."),
+	txt("And pretty much all of the gameplay segment was made the last few days, featuring me trying to figure out Aeon's danmaku system even though I have virtually zero knowledge of programming."),
 	txt("...You may have been able to tell."),
 	ptxt(),
 	txt("We had to crunch a little to get this one done in time... but overall, I'm happy with this."),

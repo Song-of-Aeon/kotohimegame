@@ -22,9 +22,13 @@ nu bullet("oringboolit", s_oringboolit, 1, true, false, false, 1);
 nu bullet("peenkboolit", s_peenkboolit, 1, true, false, false, 1);
 nu bullet("naifu", s_naifu, 1, true, false, false, 1);
 nu bullet("blunaifu", s_blunaifu, 1, true, false, false, 1);
+nu bullet("gurinnaifu", s_gurinnaifu, 1, true, false, false, 1);
+nu bullet("yellernaifu", s_yellernaifu, 1, true, false, false, 1);
 nu bullet("wideamulet", s_wideamulet, 1, true, false, false, 1);
 nu bullet("bluamulet", s_bluamulet, 1, true, false, false, 1);
 nu bullet("smoolboolit", s_smoolboolit, 1, true, false, false, 1);
+nu bullet("daga", s_daga, 1, true, false, false, 1);
+nu bullet("dagablu", s_dagablu, 1, true, false, false, 1);
 
 var shootConsoleCommand = function(){
 	

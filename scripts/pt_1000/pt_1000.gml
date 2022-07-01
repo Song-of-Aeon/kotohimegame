@@ -96,7 +96,7 @@ nu pattern_ext(function() {
 	
 
 	
-}, 700, 100, "mokou", SPELL.CARD, DIFFICULTY.HARD, "1000 Years of Hatred", function() {
+}, 555, 60, "mokou", SPELL.CARD, DIFFICULTY.HARD, "1000 Years of Hatred", function() {
 	meposx = ISAAC.x
 	meposy = ISAAC.y});
 

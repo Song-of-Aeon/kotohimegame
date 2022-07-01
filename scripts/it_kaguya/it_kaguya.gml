@@ -52,5 +52,5 @@ itemgen({
 	difficultydata: 3,
 }, ITEMS.KAGUYAA);
 
-nu laser("kaguya", s_bulletpoint, .5, false, true, false, .4);
-nu bullet("kaguya", s_bulletcircle, 2, true, true, true, .5);
+nu laser("kaguya", s_bulletpoint, 1, false, true, false, .4);
+nu bullet("kaguya", s_bulletcircle, 1.5, true, true, true, .5);

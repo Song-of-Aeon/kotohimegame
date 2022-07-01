@@ -27,6 +27,7 @@ nu song("intermission", "intermission", [m_intermission]);
 nu song("immortal smoke", "mokou", [m_okou]);
 nu song("and dies", "dies", [m_dies]);
 nu song("gaming time", "gaming", [m_gaming]);
+nu song("love is war - no intro", "lovewar", [m_lovewar]);
 
 
 

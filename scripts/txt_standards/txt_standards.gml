@@ -2,12 +2,12 @@ function txt_standards() {
 	
 	msg = msglang([
 	
-	txt("...I...", KAGUYA2.NORMAL),
+	txt("...I...", KAGUYA2.NORMAL, SPRITEPOS.MIDLEFT, s_ky),
 	txt("I don't quite know what to say.", KAGUYA2.NORMAL),
 	txt("How deeply candid...", KAGUYA2.NORMAL),
 	txt("Kotohime, why go this far?", KAGUYA2.NORMAL),
 	txt("What is your investment in this mission?", KAGUYA2.NORMAL),
-	txt("...Nothing in particular. It is just a shame to see a fellow princess lose the opportunities availed to her.", KOTOHIME.SMUG),
+	txt("...Nothing in particular. It is just a shame to see a fellow princess lose the opportunities availed to her.", KOTOHIME.SMUG, SPRITEPOS.RIGHT),
 	txt("How selfless.", KAGUYA2.NORMAL),
 	txt("You know, Kotohime, one such as yourself ought to be more careful.", KAGUYA2.NORMAL),
 	txt("If you keep this up, the one I fall for might be you...~", KAGUYA2.NORMAL),

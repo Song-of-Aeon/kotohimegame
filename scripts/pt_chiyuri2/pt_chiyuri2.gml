@@ -15,17 +15,3 @@ nu pattern_ext(function() {
 }, 10, 8, "chiyuri", SPELL.NON, DIFFICULTY.HARD, "ut2", u, u, function() {c_getitembyid(ITEMS.UNDERTALE).menugen()});
 
 nu hitscan("flat", s_flathitscan, 2, false, false, false, 1);
-
-
-nu pattern_ext(function() {
-	c
-	x = -99;
-	static utitem = c_getitembyid(ITEMS.UNDERTALE);
-	static bordleft = utitem.bordleft;
-	static bordup = utitem.bordup;
-	static borddown = utitem.borddown;
-	static bordright = utitem.bordright;
-	
-	
-	
-}, 10, 8, "chiyuri", SPELL.NON, DIFFICULTY.HARD, "ut1", u, u, function() {c_getitembyid(ITEMS.UNDERTALE).menugen()});

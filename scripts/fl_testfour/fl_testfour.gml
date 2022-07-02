@@ -55,7 +55,7 @@ global.stages[DAY.WEDNES][5] = {
 			y++;
 			//var c_darkpurple = $0
 			draw_clear_alpha(c_blue,1);
-			draw_sprite_stretched(s_kybox,0,0,0,surface_get_width(global.surfaces.threedee)+1,surface_get_height(global.surfaces.threedee)+1);
+			draw_sprite_stretched(Sprite393,0,0,0,surface_get_width(global.surfaces.threedee)+1,surface_get_height(global.surfaces.threedee)+1);
 			//mousey = -20
 			//gpu_pop_state()
 

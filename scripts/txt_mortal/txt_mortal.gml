@@ -20,6 +20,6 @@ function txt_mortal() {
 	])
 	
 	endevent = function() {
-		c_evidencegen(5, txt_immortal, txt_mortal);
+		c_evidencegen(5, txt_mortal, txt_immortal);
 	};
 }

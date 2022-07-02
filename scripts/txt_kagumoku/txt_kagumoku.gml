@@ -1341,6 +1341,7 @@ function txt_kagumokumid1() {
 	}
 	//2ND SPELLCARD
 	//BANGBANG PICHUUN WAPOOSH BAZZAP
+}
 function txt_kagumokumid2() {
 	
 	msg = [
@@ -1364,6 +1365,7 @@ function txt_kagumokumid2() {
 		global.spells[DIFFICULTY.HARD].mokou = [global.spellnames[?"1000 Years of Hatred"]];
 		c_makeboss(global.bosses.mokou, [SPELL.CARD]);
 	}
+}
 function txt_kagumokumid3() {
 	//3RD SPELLCARD
 	//BACHOOM WAPISH SCHKWANACH
@@ -1389,6 +1391,7 @@ function txt_kagumokumid3() {
 		global.spells[DIFFICULTY.HARD].mokou = [global.spellnames[?"Loved Ones Passing Us By"]];
 		c_makeboss(global.bosses.mokou, [SPELL.CARD]);
 	}
+}
 function txt_kagumokumid4() {
 	//4TH SPELLCARD
 	//BACHIKUUUU

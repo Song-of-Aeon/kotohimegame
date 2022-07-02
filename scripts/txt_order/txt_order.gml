@@ -13,7 +13,7 @@ function txt_orderc() {
 	],[txt(""),])	
 	endevent = function() {
 		c_getitembyid(ITEMS.UNDERTALE).ordered = true;
-		textbox_create(txt_orderr, global.texttale);
+		textbox_create(txt_orderr, global.textchara);
 	};
 }
 function txt_orderr() {

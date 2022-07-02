@@ -1,7 +1,7 @@
 {
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.12,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "se_talkbloop.wav",
-  "duration": 0.126825,
+  "soundFile": "m_alone.mp3",
+  "duration": 85.39427,
   "parent": {
-    "name": "talksounds",
-    "path": "folders/Sounds/talksounds.yy",
+    "name": "Music",
+    "path": "folders/Music.yy",
   },
   "resourceVersion": "1.0",
-  "name": "se_talkbloop",
+  "name": "m_alone",
   "tags": [],
   "resourceType": "GMSound",
 }

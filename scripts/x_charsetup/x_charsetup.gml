@@ -2,7 +2,7 @@ nu chardata("Reimu", s_reimu16, se_talkpew, .5);
 nu chardata("Aunn", s_aunn16, se_talkpew, .5);
 nu chardata("Mike", s_mike16, se_talkgeneral, .5);
 nu chardata("Yukari", s_yukari16, se_talkbloop, .3);
-nu chardata("Reisen", s_reisen16, se_ntalk8, .75);
+nu chardata("Reisen", s_reisen16, se_talkbloop, .75);
 nu chardata("Yumemi", s_yumemi16, se_talkbloop, .8);
 nu chardata("Chiyuri", s_chiyur2, se_ntalk5, .5);
 nu chardata("", s_null, se_null, .75);
@@ -212,7 +212,7 @@ nu chardata("Eirin", s_eirin, se_talkgeneral);
 nu talksprite("NORMAL", "eirin", 0);
 
 #macro GENGETSU global.textguy[?"gengetsu"]
-nu chardata("Gengetsu", s_null, se_ntalk2);
+nu chardata("Gengetsu", s_null, se_ntalk2, .2);
 nu talksprite("NORMAL", "gengetsu", 0);
 
 #macro ELLY global.textguy[?"elly"]

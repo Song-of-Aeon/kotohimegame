@@ -36,7 +36,7 @@ function txt_chillin() {
 	txt("...Have I given you something to consider, Kotohime?", KAGUYA2.NORMAL),
 	txt("...Yes.", KOTOHIME.THINKING),
 	txt("Let's get you in the game, Kaguya.", KOTOHIME.LMAO),
-	txt("Gensokyo isn't so uptight as the Lunar Capital.", KOTOHIME.HAPPY),
+	txt("Gensokyo isn't as uptight as the Lunar Capital.", KOTOHIME.HAPPY),
 	txt("Why not give that romance thing another try?", KOTOHIME.HAPPY),
 	txt("Kotohime, are you insane?", KAGUYA2.NORMAL),
 	txt("It's the only way anything gets done.", KOTOHIME.SMUG),

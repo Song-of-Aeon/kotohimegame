@@ -218,7 +218,7 @@ function txt_kagumoku() {
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN),
 	
-	txt("Later...", u, u, s_crescent2, function() {music_set(mus.eientei)}),
+	ntxt(0150, u, u, s_crescent2, function() {music_set(mus.eientei)}),
 	txt("And my Rook takes your Gold General...", REISEN.YAY, SPRITEPOS.RIGHT, s_eienteihall2),
 	txt("How the--", KANA.SCARED, SPRITEPOS.CENTER),
 	txt("Oh, I see.", KANA.AWW),
@@ -397,7 +397,7 @@ function txt_kagumoku() {
 	txt("I wouldn't want you to lie to me. Not like you do with everyone else.", KANA.DISTANT),
 	txt("You've made me happy just by being you.", KANA.YAY),
 	//txt("Looking back, I think it was just that you were in the right place at the right time.", KANA.AWW),
-	txt("And even if I was sad at first... it's okay how things went back then. Like I said. I wouldn't have it any other way.", KANA.DEF),
+	txt("And even if I was sad at first... it's okay how things went back then. Like I said, I wouldn't have it any other way.", KANA.DEF),
 	
 	txt("...", ME.DISTANT),
 	txt("Thank you.", ME.TINYSMIRK),
@@ -531,7 +531,7 @@ function txt_kagumoku() {
 	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN, s_peeceescreen),
 	
 	ntxt(0090, u, u, s_kstart),
-	txt("ROUND 1, START!", ME.DEF, u, u, function() {music_set(mus.gaming)}),
+	txt("ROUND 1, START!", ME.DEF, u, u, function() {music_set(mus.vidya2)}),
 	ntxt(0069, u, u, s_k01),
 	
 	txt("Ah, this truly is like our fights.", KAGUYA.DEF, u, s_k01),
@@ -632,7 +632,7 @@ function txt_kagumoku() {
 	txt("Fine.", MOKOU.HMPH),
 	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
-	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.intermission)}),
+	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.isnight)}),
 	
 	ptxt(),
 	
@@ -660,7 +660,7 @@ function txt_kagumoku() {
 	txt("Nope!", ME.DEF),
 	txt("Let's go then!", ME.DEF),
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
-	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.mokou)}),
+	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),
 	
 	ptxt(),
 	txt("The outside air was even more refreshing than usual.", u, u, s_bambooday2, function() {textbox_set_type(global.textnvl)}),
@@ -763,6 +763,7 @@ function txt_kagumoku() {
 	
 	ptxt(),
 	txt("As I slowly walked away, I could hear a little bit of talking coming from Mokou's house.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	ptxt(),
 	txt("Mokou, you never told me about this! That's so interesting!", KEINE.DEF),
 	txt("It's nothing special, really. Just games with a friend.", MOKOU.DEF),
 	//woah! kaguya is a friend!?!?!?
@@ -771,7 +772,6 @@ function txt_kagumoku() {
 	txt("\"Just fine\" isn't enough in a competition. You'll be facing the best of the best!", KEINE.DEF),
 	txt("Somehow, I doubt it.", MOKOU.DEF),
 	
-	ntxt(00, u, u, u, function() {music_set(mus.autmninsects3)}),
 	
 	ntxt(0070, u, u, s_bambooday, function() {textbox_set_type(global.textzpix)}),
 	txt("Hey, Kaguya.", ME.DEF, SPRITEPOS.LEFT),
@@ -802,8 +802,7 @@ function txt_kagumoku() {
 	txt("...The moon.", KAGUYA.DEF, u, s_daymoon),
 	txt("Yes.", ME.DEF),
 	txt("The moon is in the sky today, like almost every other day.", ME.DEF),
-	txt("We think the day is the time of sun, and night is when the moon comes out.", ME.DEF),
-	txt("But that's only because it's easier to see the moon at night.", ME.DEF),
+	txt("We think the day is the time of sun, and night is when the moon comes out. But that's only because it's easier to see the moon at night.", ME.DEF),
 	txt("In reality, they aren't separate at all. You can see them together all the time.", ME.DEF),
 	txt("Little Rabbit, I already know that.", KAGUYA.DEF),
 	txt("Do you?", ME.DEF),
@@ -1026,7 +1025,7 @@ function txt_kagumoku() {
 	ptxt(),
 	txt("While the two immortals argued, us judges started cleaning everything up.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("Kana and Reisen had to leave immediately, but I stuck around to see Mokou off."),
-	txt("Just as I was about to say goodbye...", u, u, s_kitchen, function() {music_set(mus.chillin)}),
+	txt("Just as I was about to say goodbye...", u, u, s_kitchen, function() {music_set(mus.isnight)}),
 	
 	ntxt(00, KAGUYA.YAY, SPRITEPOS.RIGHT),
 	txt("Hey, Princess?", MOKOU.NEUTRAL, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textzpix)}),
@@ -1040,7 +1039,7 @@ function txt_kagumoku() {
 	txt("Go for it!", ME.YAY),
 	txt("Thanks. We'll be done in a jiffy, I promise.", MOKOU.DEF),
 	txt("By the way, don't get the wrong idea. I'm only doing this to gauge Kaguya's skills for our next battle.", MOKOU.HMPH),
-	txt("\(Sure you are.\)", ME.KAAAY),
+	txt("\(Sure you are.\)", ME.HEHE),
 	ntxt(000, ME.DEF, SPRITEPOS.HIDDEN),
 	
 	txt("Alright, so you roll these into balls... and I'll take these ones.", MOKOU.DEF),
@@ -1082,6 +1081,8 @@ function txt_kagumoku() {
 	txt("Can I have some?", ME.YAY),
 	txt("Don't you hate cookies?", MOKOU.BRUH, SPRITEPOS.LEFT),
 	txt("Yes.", ME.WINKY),
+	ntxt(000, MOKOU.NEUTRAL, SPRITEPOS.LEFT),
+	ntxt(000, KAGUYA.NEUTRAL, SPRITEPOS.RIGHT),
 	
 	//nomnomnom sounds
 	
@@ -1124,7 +1125,7 @@ function txt_kagumoku() {
 	txt("I want to see Mokou happy. Like she is with Keine.", KAGUYA.DEF),
 	txt("No, more than that. I want to be the one that makes her happy. And I want to be with her, happy together.", KAGUYA.YAY),
 	txt("...Forever.", KAGUYA.LOVEY),
-	txt("So... you love her.", ME.KAAAY),
+	txt("So... you love her.", ME.HEHE),
 	txt("Ah--", KAGUYA.WOAH),
 	txt("\"Love\" is a rather intense word...", KAGUYA.AWW),
 	txt("You murder each other regularly. I don't think intensity is that taboo for you.", ME.SMUG),
@@ -1176,7 +1177,7 @@ function txt_kagumoku() {
 	ntxt(000, ME.YAY, SPRITEPOS.CENTER),
 	//nomnomnom sounds
 	
-	txt("It's been a hot minute since I've talked to you, Kana.", MOKOU.DEF, SPRITEPOS.RIGHT),	
+	txt("It's been a hot minute since I've talked to you, Kana.", MOKOU.DEF, SPRITEPOS.RIGHT),
 	txt("Yeah, it has!", KANA.YAY),
 	txt("You like it over there in the House of Eternity?", MOKOU.DEF),
 	txt("Absolutely!", KANA.YAY),
@@ -1434,10 +1435,11 @@ function txt_kagumokuend() {
 	
 	//, function() {music_set(mus.null)}),	
 	
-	ntxt(200, u, u, s_fullmoon2),
+	ntxt(200, u, u, s_fullmoon2, function() {music_set(mus.moonkiss)}),
 	
 	ntxt(0, KME.CRY, SPRITEPOS.MIDRIGHT),
 	ntxt(80, MOKOU.SAD, SPRITEPOS.MIDLEFT),
+	
 	
 	
 	ptxt(),

@@ -375,7 +375,7 @@ function txt_begin() {
 	ntxt(0250, u, u, u, function() {audio_play_sound(snd_sliding_door_O, 0, false)}),
 	ntxt(0164, u, u, s_eienteihall1, function() {audio_play_sound(snd_sliding_door_C, 0, false)}),
 	
-	txt("Welcome to the House of Eternity, my home of over a thousand years and counting.", KAGUYA.DEF, SPRITEPOS.RIGHT, u, function() {music_set(mus.eientei)}),
+	txt("Welcome to the House of Eternity, my home of over a thousand years and counting.", KAGUYA.DEF, SPRITEPOS.RIGHT, u, function() {music_set(mus.eternight)}),
 	txt("With my powers to manipulate eternity, I have created a spell to effectively stop time- in this house, nothing changes and nothing dies. It is a place void of impurity.", KAGUYA.DEF),
 
 	
@@ -649,7 +649,7 @@ function txt_begin() {
 	ntxt(0064, u, u, s_54_4),
 	ntxt(0200, u, u, s_54_5),
 	
-	ntxt(0000, KANAHAT.NEUTRAL, SPRITEPOS.LEFT, u, function() {music_set(mus.glossary)}),
+	ntxt(0000, KANAHAT.NEUTRAL, SPRITEPOS.LEFT, u, function() {music_set(mus.eientei)}),
 	ntxt(0000, REISEN.SMUG, SPRITEPOS.CENTER),
 	
 	ntxt(0050, u, u, s_eienteihall2, function() {textbox_set_type(global.textzpix)}),
@@ -970,7 +970,6 @@ function txt_begin() {
 	txt("So this girl dreamt you into existence?", MOKOU.DEF),
 	txt("Yeah, basically.", KANAHAT.DEF),
 	txt("She was going through a lot of horrible things. Her family said they loved her, but...", KANAHAT.DEF),
-	ptxt(),
 	txt("Anyways, I was the monster in her closet. Something to project all the fear and sadness onto.", KANAHAT.DEF),
 	txt("I had horrible red spots all over me, disfigured legs, long claws and black eyes.", KANAHAT.DEF),
 	txt("To be honest, I was okay with that. That's just what a poltergeist was to me.", KANAHAT.DEF),
@@ -986,11 +985,12 @@ function txt_begin() {
 	//should there be another line or two here? you decide!
 	txt("And then she left.", KANAHAT.DEF),
 	
-	ptxt(),
 	
 	txt("The mansion was totally empty for a while, until a new family moved in.", KANAHAT.DEF),
 	txt("And when they got there... just like my mother, they were terrified of me. But they left before I could befriend them.", KANAHAT.DEF),
 	txt("Years later, a new family moved in-- these ones were a little less scared of youkai. They put seals on the house to keep me from materializing.", KANAHAT.DEF),
+	
+	
 	ptxt(),
 	txt("It went on like that until the princess and I met.", KANAHAT.DEF),
 	txt("I'm living at her place now, but she's the only one there that likes me. Everyone else is just like the other families.", KANAHAT.DEF),
@@ -998,12 +998,14 @@ function txt_begin() {
 	
 	ptxt(),	
 	txt("...", MOKOU.DEF),
-	txt("I get you-- being unwanted is hard.", MOKOU.DEF),
+	txt("I get you-- being unwanted sucks.", MOKOU.DEF),
 	txt("When your own creator deems you a mistake, your very existence is a thing to hide away. Even when given food or shelter, you're being starved of affection.", MOKOU.DEF),
 	txt("By instinct, you search for some way to get that nourishment, through any means necessary.", MOKOU.DEF),
-	ptxt(),
+	
 	txt("At first you cry and beg. That doesn't work, so you try to earn it. That doesn't work, and you start to believe that you've done something wrong.", MOKOU.DEF),
 	txt("...That you *are* something wrong.", MOKOU.DEF),
+	
+	ptxt(),
 	txt("Then you either wither away, believing they are right... or you do something stupid.", MOKOU.DEF),
 	//kinda awkwardly phrased
 	
@@ -1137,7 +1139,6 @@ function txt_begin() {
 	ptxt(),	
 	txt("As the fairies came out and sang their songs, we walked in silence, gazing at anything but each other.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("The wind bit at us, and the beautiful water of the Misty Lake looked ice-cold."),
-	ptxt(),
 	txt("When we got home, we were met with exactly what should've happened."),
 	txt("My parents yelled at me for leaving so long, but I didn't mind much. I was far more furious with myself than they could ever be."),
 	txt("The next couple days were silent too. We didn't do much together, and each time I looked into Kana's eyes, they looked farther and farther away.", u, u, s_kotohimehall),
@@ -1208,7 +1209,7 @@ function txt_begin() {
 	ptxt(),
 	txt("Just as I turned around to leave, Kana rushed back to me with something in her hand.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),
-	txt("Her little straw hat.", u, u, s_hat),	
+	txt("Her little hat.", u, u, s_hat),	
 	txt("Here you go. Take it.", KANA.LOVEY, SPRITEPOS.RIGHT, s_eienteiday, function() {textbox_set_type(global.textzpix)}),
 	//kana has no hat on	
 	txt("...Really?", ME.NEUTRAL, SPRITEPOS.LEFT),

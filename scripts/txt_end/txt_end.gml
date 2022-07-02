@@ -29,7 +29,7 @@ function txt_end() {
 	
 	ntxt(0, KANA.AWW, SPRITEPOS.LEFT),
 	ntxt(0, REISEN.MAD, SPRITEPOS.CENTER),
-	txt("Bravo, you two! Absolutely beautiful show of gaming skill!", KAGUYA.YAY, SPRITEPOS.RIGHT, s_eienteihall2, function() {music_set(mus.chillin)}),
+	txt("Bravo, you two! Absolutely beautiful show of gaming skill!", KAGUYA.YAY, SPRITEPOS.RIGHT, s_eienteihall2, function() {music_set(mus.eientei)}),
 	txt("Sorry, Reisen...", KANA.NEUTRAL),
 	txt("Whatever. She made the whole game, of course she's really good at it.", REISEN.UGGH),
 	
@@ -82,6 +82,7 @@ function txt_end() {
 //	txt("I'm really happy for you.", ME.YAY),
 	ntxt(0050, u, u, u, function() {audio_play_sound(snd_walking_on_the_earth, 0, false)}),
 		
+	ntxt(0, u, u, u, function() {music_set(mus.isnight)}),
 	txt("Hey, Princess.", MOKOU.NEUTRAL, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Hm?", ME.NEUTRAL, SPRITEPOS.RIGHT),	
 	txt("Oh hey. What are you doing here?", ME.DEF),
@@ -139,7 +140,7 @@ function txt_end() {
 	ptxt(),
 	txt("With only muscle memory to guide me, I took a few pieces of wood out of the dresser, and dropped them near the hearth."),
 	txt("But then something on the top of the dresser caught my eye."),
-	txt("An old straw sun hat, sitting clear as day.", u, u, s_hat),
+	txt("An old sun hat, sitting clear as day.", u, u, s_hat),
 	txt("Each time I'd come here, my eyes glossed over it. But this time, it practically glowed."),
 	ptxt(),
 	txt("She said it would look good on me, didn't she?"),
@@ -152,7 +153,7 @@ function txt_end() {
 	txt("Kneeling in front of the fireplace, I struck a match. Then another, and another."),
 	txt("As the first sparks shone, my whole body felt like it was being pricked-- I had finally noticed the cold. Even in Autumn, the coming night was cold enough to kill."),
 	//fire lighting sounds
-	txt("Finally... warmth.", u, u, s_fireplace, function() {music_set(mus.campfire)}),
+	txt("Finally... warmth.", u, u, s_fireplace),
 	ptxt(),
 	txt("I laid into the futon and closed my eyes. This floor wasn't too comfortable, but I had gotten used to it."),
 	txt("The crackle of the fire was comforting, at least. It was all I had for fun at the moment-- all of my collectibles laid in another room, far from the fire."),
@@ -229,7 +230,7 @@ function txt_end() {
 	ntxt(0044),
 	ntxt(0088, u, u, s_black),
 	
-	ntxt(100, u, u, u, function() {music_set(mus.intermission)}),
+	ntxt(100, u, u, u, function() {music_set(mus.epilogue)}),
 //this is epilogue track
 	
 	ntxt(0200, u, u, s_bambooday, function() {audio_play_sound(snd_walkin_on_leafs, 0, false)}),

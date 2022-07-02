@@ -1510,7 +1510,11 @@ function txt_kagumoku() {
 	
 	])
 	
-	endevent = function() {textbox_create(txt_end)};
+	endevent = function() {room_goto(TITLE);
+		var dude = file_text_open_write("you've won again.kotohime2");
+		file_text_write_string(dude, "these files brought to you by aeon")
+		file_text_close(dude);
+	};
 	
 	//endevent = textbox_create(txt_end, global.textzpix, false);
 }

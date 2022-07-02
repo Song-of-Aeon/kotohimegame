@@ -1238,7 +1238,11 @@ function txt_begin() {
 	
 	])
 	
-	endevent = function() {textbox_create(txt_kagumoku)};
+	endevent = function() {room_goto(TITLE);
+		var dude = file_text_open_write("you've won.kotohime2");
+		file_text_write_string(dude, "also try the end(-)less (and) kotohime!")
+		file_text_close(dude);
+	};
 }
 
 

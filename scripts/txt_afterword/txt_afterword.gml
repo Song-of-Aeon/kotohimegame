@@ -52,7 +52,7 @@ function txt_afterword() {
 	
 	])
 	
-	endevent = function() {while true {}};
+	endevent = function() {room_goto(TITLE)};
 }
 
 

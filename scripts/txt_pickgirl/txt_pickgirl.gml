@@ -23,14 +23,14 @@ function txt_gengetsu() {
 	txt("|c160160160She seems to be illustrating a chaotic scene."),
 	txt("Kotohime, that girl seems interesting.", KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT, s_thebar),
 	txt("Ah, her...", KOTOHIME.DISAPPOINTED, SPRITEPOS.MIDLEFT),
-	txt("I forget her name. Something-getsu.", KOTOHIME.THINKING),
-	txt("From Makai, I think. She was a great sparring partner, back when I practiced danmaku.", KOTOHIME.HAPPY),
+	txt("The name is something-getsu, I believe.", KOTOHIME.THINKING),
+	txt("From Makai, she hails. She was a great sparring partner, back when I practiced danmaku.", KOTOHIME.HAPPY),
 	txt("And you do not presently?", KAGUYA2.NORMAL),
 	txt("...I do not. Maybe it's because something-getsu here is too IMPATIENT and wouldn't let me breathe for a MOMENT without some impossible pattern!", KOTOHIME.THINKING),
 	txt("|c160160160The woman stops her violent ink strokes, and turns toward Kotohime and Kaguya."),
 	txt("|c160160160She swiftly constructs an immaculate grin with much finer care than afforded for her illustration."),
 	txt("Ha.", GENGETSU.NORMAL),
-	txt("|c160160160Work on the picture continues."),
+	txt("|c160160160Work on the scroll continues."),
 	txt("|c102137255...It seems she also has good ears.", KAGUYA2.NORMAL),
 	],[txt(""),])
 	endevent = c_pickgirl;

@@ -8,11 +8,11 @@ enum DAY {
 
 global.stages = [
 
-[{}, {}, {}, {}, {}, {}, {}], //wednesday
-[{}, {}, {}, {}, {}, {}, {}], //thursday (moon)
-[{}, {}, {}, {}, {}, {}, {}], //friday (makai)
-[{}, {}, {}, {}, {}, {}, {}], //saturday (dream)
-[{}, {}, {}, {}, {}, {}, {}], //sunday
+[{}, {}, {}, {}, {}, {}, {}, {}], //wednesday
+[{}, {}, {}, {}, {}, {}, {}, {}], //thursday (moon)
+[{}, {}, {}, {}, {}, {}, {}, {}], //friday (makai)
+[{}, {}, {}, {}, {}, {}, {}, {}], //saturday (dream)
+[{}, {}, {}, {}, {}, {}, {}, {}], //sunday
 
 ]
 global.doingtutorial = false;
@@ -33,4 +33,6 @@ fl_testhree();
 fl_testfour();
 fl_loadstage();
 fl_endstage();
+fl_epiloguestage();
+fl_epiloguestage2();
 

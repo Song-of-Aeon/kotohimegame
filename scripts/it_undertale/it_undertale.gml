@@ -1,7 +1,10 @@
 //gen u items
 
 itemgen({
-	ondie: game_end,
+	ondie: function(player=global.me) {
+		c_savevn(txt_bar, global.textdefault);
+		game_end();
+	},
 	onstep: function(player=global.me) {
 		if battling {
 			bordleft = 290/2-90+4;
@@ -37,7 +40,7 @@ itemgen({
 						c_removeitem(ITEMS.UNDERTALE);
 						exit;
 					}
-					instance_create(640, 240, o_damagenum);
+					instance_create(640, 200, o_damagenum);
 					fighting = false;
 					battling = true;
 					switch fightpoint {
@@ -86,7 +89,7 @@ itemgen({
 				var dropoff = floor(abs(fightx-middle)/4);
 				var dude = 50-dropoff;
 				//draw_text_transformed(bordleft+fightx, 400, dude, 1, 1, 270);
-				draw_sprite_ext(s_docaredidask, 0, bordleft+fightx, 436, 1, 1, -gc*2, c_white, 1);
+				draw_sprite_ext(s_docaredidask, 0, bordleft+fightx, 436, 1, 1, -gc*4, c_white, 1);
 			
 			}
 			draw_line_width(bordleft, bordup-2.5, bordleft, borddown+2.5, 5);
@@ -122,7 +125,7 @@ itemgen({
 	},
 	menugen: function() {
 		if !sparing {
-			textbox_create(sparing ? txt_mercy : choose(txt_battle, txt_battle2, txt_battle3, txt_battle4), global.textchara);
+			textbox_create(sparing ? txt_mercy : choose(txt_battle, txt_battle2, txt_battle3, txt_battle4), global.textchara, false);
 		}
 		battling = false;
 		fighting = false;
@@ -249,7 +252,12 @@ itemgen({
 				}
 			})
 			order.onSelect = munction(function() {
-				textbox_create(txt_order, global.textchara, true);
+				if c_getitembyid(ITEMS.UNDERTALE).ordered {
+					textbox_create(txt_order2, global.textchara, true);
+				} else {
+					c_getitembyid(ITEMS.UNDERTALE).ordered = true;
+					textbox_create(txt_order, global.textchara, true);
+				}
 				global.MenuCursor.disabled = true;
 				audio_play_sound(se_select, 0, false);
 			})

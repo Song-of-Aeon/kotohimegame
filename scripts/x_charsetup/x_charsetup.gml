@@ -208,7 +208,7 @@ nu talksprite("DEF", "keine", 0);
 
 
 #macro EIRIN global.textguy[?"eirin"]
-nu chardata("Eirin", s_eirin, se_ntalk1);
+nu chardata("Eirin", s_eirin, se_talkgeneral);
 nu talksprite("NORMAL", "eirin", 0);
 
 #macro GENGETSU global.textguy[?"gengetsu"]

@@ -9,10 +9,16 @@ nu pattern_ext(function() {
 	
 	if ncm(40) {
 		var lad = irandom((bordright-bordleft)-6)+6;
-		c_bang(bordleft+lad, borddown, irandom(45)+67, 10, 30, 60, hsn.flat);
+		c_bang(bordleft+lad, borddown, irandom(45)+67, 10, 60, 60, hsn.flat);
 	}
 	if ncm(120) {
-		c_shootcircle(WIDTH/2, 100, 1, irandom(359), 40, bul.bluesquare);
+		c_shootcircle(WIDTH/2, 100, 1, irandom(359), 40, bul.bluesquare, u, function() {
+			if ISAAC.x+ISAAC.hput != ISAAC.xprevious || ISAAC.y+ISAAC.vput != ISAAC.yprevious {
+				friendly = false;
+			} else {
+				friendly = NaN;
+			}
+		});
 	}
 	
 }, 10, 8, "chiyuri", SPELL.NON, DIFFICULTY.HARD, "ut2blue", u, u, function() {c_getitembyid(ITEMS.UNDERTALE).menugen()});

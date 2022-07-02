@@ -396,7 +396,11 @@ function txt_end() {
 	
 	])
 	
-	endevent = function() {while true {}};
+	endevent = function() {room_goto(TITLE)
+		var dude = file_text_open_write("you've won again again.kotohime2");
+		file_text_write_string(dude, "these files brought to you by aeon")
+		file_text_close(dude);
+	};
 }
 
 

@@ -98,7 +98,9 @@ nu pattern_ext(function() {
 	
 }, 555, 60, "mokou", SPELL.CARD, DIFFICULTY.HARD, "1000 Years of Hatred", function() {
 	meposx = ISAAC.x
-	meposy = ISAAC.y});
+	meposy = ISAAC.y}, u, function() {
+	textbox_create(txt_kagumokumid3, global.textzpix);
+});
 
 //static meposx = ISAAC.x;
 //	static meposy = ISAAC.y;

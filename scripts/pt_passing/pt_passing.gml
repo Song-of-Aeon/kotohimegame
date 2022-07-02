@@ -28,4 +28,6 @@ nu pattern_ext(function() {
 	});
 	}
 	
-}, 666, 60, "touhou", SPELL.CARD, DIFFICULTY.HARD, "Loved Ones Passing Us By")
+}, 666, 60, "touhou", SPELL.CARD, DIFFICULTY.HARD, "Loved Ones Passing Us By", u, u, function() {
+	textbox_create(txt_kagumokumid4, global.textzpix);
+})

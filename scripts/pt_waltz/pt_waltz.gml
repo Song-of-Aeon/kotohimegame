@@ -73,7 +73,9 @@ nu pattern_ext(function() {
 					c_shoot(x, y, 4, sin(count/42)*6+i*60, bul.smoolboolit, c_red);
 				}			
 		}	
-}, 888, 60, "mokou", SPELL.CARD, DIFFICULTY.HARD, "Waltz of the Moon and Sun");
+}, 888, 60, "mokou", SPELL.CARD, DIFFICULTY.HARD, "Waltz of the Moon and Sun", u, u, function() {
+	textbox_create(txt_kagumokumid2, global.textzpix);
+});
 
 
 nu shootman("moon", s_moon)

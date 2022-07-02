@@ -246,6 +246,8 @@ nu pattern_ext(function() {
 		//put this on the bigass lazors on the side of the screen mokou aint on
 			
 	
-}, 776, 60, "touhou", SPELL.CARD, DIFFICULTY.HARD, "Cycle of Death and Rebirth");
+}, 776, 60, "touhou", SPELL.CARD, DIFFICULTY.HARD, "Cycle of Death and Rebirth", u, u, function() {
+	textbox_create(txt_kagumokumid1, global.textzpix);
+});
 
 nu shootman("familiar", s_reimu);

@@ -15,7 +15,7 @@ function glentry(name_, sprite_, info_, desc_) constructor {
 }
 
 nu glentry("Kaguya Houraisan", s_kaguya2, @"Lunarian; Hourai
-Capable of manipulation of eternity", "The famed woman behind the Tale of the Bamboo-cutter. When she first came to Earth, she became a rich woman with many suitors, even to the point of the emperor taking an interest in her. She turned them all away, and eventually was forcefully returned to the moon.\nSome time later, she created and subsequently drank the Hourai Elixir, a concoction that distinguishes one's soul from their body, and provides endless regeneration and immortality.\nShe presently lives in the remote estate known as \"Eientei\".");
+Capable of manipulation of eternity", "The famed woman behind the Tale of the Bamboo-cutter. When she first came to Earth, she became a rich woman with many suitors, even to the point of the emperor taking an interest in her. She turned them all away, and eventually was forcefully returned to the moon.\nSome time later, she created and subsequently drank the Hourai Elixir, a concoction that distinguishes one's soul from their body, and provides endless regeneration and immortality.\nShe presently lives in the remote estate known as \"Eientei\".\n...Somehow, she doesn't seem terribly expressive today.");
 
 nu glentry("Reisen Udongein Inaba", s_reisen16, @"Lunarian
 Capable of manipulation of insanity", "A person of various occupations who lives within Eientei. She once lived on the moon, but fled for her own reasons. Allies herself with Gensokyo's humans to resolve incidents on occasion.\nSomehow, she looks different when compared to everyone else. I wonder why that is...?");

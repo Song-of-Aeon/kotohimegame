@@ -15,7 +15,6 @@
   "layers": [
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"o_musicmanager","path":"objects/o_musicmanager/o_musicmanager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":133.0,"resourceVersion":"1.0","name":"inst_7D7F4435","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"o_vnbutton","path":"objects/o_vnbutton/o_vnbutton.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":160.0,"y":64.0,"resourceVersion":"1.0","name":"inst_6CDD2863","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":-2500,"userdefinedDepth":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances_ui","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":-2400,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"bullets","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -41,7 +40,6 @@
     {"name":"inst_784690B7","path":"rooms/BASEMENT/BASEMENT.yy",},
     {"name":"inst_565EB8E4","path":"rooms/BASEMENT/BASEMENT.yy",},
     {"name":"inst_7D7F4435","path":"rooms/BASEMENT/BASEMENT.yy",},
-    {"name":"inst_6CDD2863","path":"rooms/BASEMENT/BASEMENT.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

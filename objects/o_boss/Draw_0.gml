@@ -23,15 +23,19 @@ set_font_style(FONT.UI);
 
 draw_set_color(c_white);
 draw_set_halign(fa_right);
-//set_font_style("formalh3");
-//draw_text_outline(x-3-15, y-48, 100, 100, 0, 0, 0, 1, 2, function() {
+//set_font_style("formalh3");*/
+draw_set_halign(fa_center);
+draw_set_font(ft_couriernew8);
+/*draw_text_outline(x-3-15, y-48, 100, 100, 0, 0, 0, 1, 2, function() {
 	draw_text(global.gw, 7, string_format(time/60, 5, 2));
 	
 	//string_copy(string(time/60), 0, 5)
-//});
-//draw_text(x, y-40, string_copy(string(time/60), 0, 5));
+});*/
+if global.luying {
+	draw_text(x, y-55, string_copy(string(time/60), 0, 5));
+}
 draw_set_halign(fa_left);
-set_font_style(FONT.UI);
+//set_font_style(FONT.UI);
 
 
 //draw_sprite_part(s_bosshpbar, 1, 0, 0, 48*(time/2000), 16, x-24, y-60-8);

@@ -5,7 +5,7 @@ function txt_end() {
 	msg = msglang([
 	
 	
-	txt("Life went on in the House of Eternity.", u, u, s_fullmoon2, function() {music_set(mus.intermission)}),
+	txt("Life went on in the House of Eternity.", u, u, s_stars, function() {music_set(mus.intermission)}),
 	txt("Ever since that rainy night, Kaguya and Mokou seemed closer. Though neither of them mentioned it in front of me, it was clear that my plan had been a success."),
 	txt("With that success came growth."),
 	txt("Mokou came over a lot more, playing games, chatting, and helping out."),
@@ -82,7 +82,7 @@ function txt_end() {
 //	txt("I'm really happy for you.", ME.YAY),
 	ntxt(0050, u, u, u, function() {audio_play_sound(snd_walking_on_the_earth, 0, false)}),
 		
-	ntxt(0, u, u, u, function() {music_set(mus.isnight)}),
+	ntxt(0, u, u, u, function() {music_set(mus.alone)}),
 	txt("Hey, Princess.", MOKOU.NEUTRAL, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Hm?", ME.NEUTRAL, SPRITEPOS.RIGHT),	
 	txt("Oh hey. What are you doing here?", ME.DEF),
@@ -112,8 +112,7 @@ function txt_end() {
 	ptxt(),
 	txt("Ever since I first discovered the House of Eternity, I could see a glimmer of light through a door that was never meant to open."),
 	txt("And I wanted nothing more than to break that door down."),
-	txt("But years later, it was still there."),
-	txt("Something invisible was stopping me from living."),
+	txt("But years later, it was still there, and something invisible was holding me in place."),
 	
 	ptxt(),
 	txt("It wasn't a long walk to my home. The place laid just outside the Bamboo Forest, in a clearing.", u, u, s_home),
@@ -156,7 +155,7 @@ function txt_end() {
 	txt("Finally... warmth.", u, u, s_fireplace),
 	ptxt(),
 	txt("I laid into the futon and closed my eyes. This floor wasn't too comfortable, but I had gotten used to it."),
-	txt("The crackle of the fire was comforting, at least. It was all I had for fun at the moment-- all of my collectibles laid in another room, far from the fire."),
+	txt("The crackle of the fire was comforting, at least. It was all I had at the moment-- all of my collectibles laid in another room, far from the fire."),
 	txt("I could bring something from over there, of course... but I was just exhausted after such a long day."),
 	
 	ptxt(),
@@ -170,7 +169,7 @@ function txt_end() {
 	txt("Come on. I know a liar when I see one.", MOKOU.SMUG),
 
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
-	ntxt(280, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN, s_fireplace),	
+	ntxt(220, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN, s_fireplace),	
 	
 	txt("Isn't it pretty?", ME.SMUG, SPRITEPOS.LEFT),
 	txt("Yeah. Though this place is still chilly even with it. You want it bigger?", MOKOU.DEF, SPRITEPOS.RIGHT),
@@ -181,7 +180,7 @@ function txt_end() {
 	txt("It's nostalgic.", ME.HEHE),
 	
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
-	ntxt(200, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN, s_fireplace),	
+	ntxt(130, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN, s_fireplace),	
 		
 	txt("To be honest...", ME.DISAPOINT, SPRITEPOS.LEFT),	
 	txt("I don't want to be here anymore.", ME.DISAPOINT),
@@ -206,19 +205,18 @@ function txt_end() {
 	txt("Are you totally sure you should do this?", MOKOU.NEUTRAL),
 	txt("...Yes.", ME.DISTANT),
 	
-	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
-	ntxt(300, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN),
+	ntxt(70, ME.NEUTRAL, SPRITEPOS.HIDDEN),
+	ntxt(120, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN, u, function() {music_set(mus.null)}),
 	
 	txt("Well... here goes nothing.", MOKOU.DEF),
 	
-	ntxt(0260, u, u, s_black, function() {music_set(mus.null)}),
-		
+	ptxt(),
+	ntxt(0260, u, u, s_black, function() {textbox_set_type(global.textnvl)}),
+	
 	
 	ntxt(500, u, u, s_fire, function() {audio_play_sound(snd_firebig1, 0, false)}),
 	
-	ptxt(),
-	txt("Smoke clouds obscure the faint moon. Embers rise from the blazing building, as if trying to escape the destruction. Wooden walls collapse into each other, their own weight proving too much.", u, u, u, function() {textbox_set_type(global.textnvl)}),
-	ptxt(),
+	txt("Smoke clouds obscure the faint moon. Embers rise from the blazing building, as if trying to escape the destruction. Wooden walls collapse into each other, their own weight proving too much."),
 	txt("I stand alone in front of the burning remains, for... far too long."),
 	txt("In only minutes, everything had disappeared. Everything that I had here, all that I loved and hated."),
 	txt("I should be happy... the place that has kept me sad is gone now. My cage has burst open, and now, I'm free."),
@@ -366,7 +364,8 @@ function txt_end() {
 	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN),
 	ntxt(0, KANAHAT.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, KAGUYA.NEUTRAL, SPRITEPOS.HIDDEN),
-	ntxt(108, MOKOU.SAD, SPRITEPOS.HIDDEN, s_daymoon, function() {textbox_set_type(global.textnvl)}),
+	ntxt(108, MOKOU.SAD, SPRITEPOS.HIDDEN, s_black),
+	ntxt(108, u, u, s_stars, function() {textbox_set_type(global.textnvl)}),
 	
 	ptxt(),	
 	txt("To the people of the House of Eternity--"),

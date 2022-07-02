@@ -33,6 +33,7 @@ nu song("gaming time", "gaming", [m_gaming]);
 nu song("gaming 2", "vidya2", [m_vidyagaem_2]);
 nu song("love is war - no intro", "lovewar", [m_lovewar]);
 nu song("moonkiss scene", "moonkiss", [m_moonkiss]);
+nu song("alone", "alone", [m_alone]);
 
 
 

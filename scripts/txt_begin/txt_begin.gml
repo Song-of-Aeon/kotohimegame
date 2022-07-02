@@ -5,7 +5,7 @@ function txt_begin() {
 	msg = msglang([
 	
 	
-	txt("Hey...", u, u, s_fullmoon2, function() {music_set(mus.intermission)}),
+	txt("Hey...", u, u, s_stars, function() {music_set(mus.intermission)}),
 	txt("Have you ever wondered if you're really living?"),
 	txt("I don't mean having a body of flesh and blood and a beating heart-- we in The Land of Fantasy know you don't need that to live."),
 	txt("I mean... LIVING. Whatever that means to you."),

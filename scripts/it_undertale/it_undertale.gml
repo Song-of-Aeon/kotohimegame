@@ -28,7 +28,7 @@ itemgen({
 			ISAAC.state = c_null;
 			ISAAC.sprite_index = s_null;
 			if fighting {
-				fightx += 3;
+				fightx += 8;
 				if (player.select && fightx >= 7) || fightx >= bordright-bordleft {
 					var middle = bordright-bordleft;
 					var dropoff = floor(abs(fightx-middle/5));
@@ -89,7 +89,7 @@ itemgen({
 				var dropoff = floor(abs(fightx-middle)/4);
 				var dude = 50-dropoff;
 				//draw_text_transformed(bordleft+fightx, 400, dude, 1, 1, 270);
-				draw_sprite_ext(s_docaredidask, 0, bordleft+fightx, 436, 1, 1, -gc*4, c_white, 1);
+				draw_sprite_ext(s_docaredidask, 0, bordleft+fightx, 436, 1, 1, -gc*9, c_white, 1);
 			
 			}
 			draw_line_width(bordleft, bordup-2.5, bordleft, borddown+2.5, 5);

@@ -468,7 +468,6 @@
     {"id":{"name":"s_chiyuriintro1b","path":"sprites/s_chiyuriintro1b/s_chiyuriintro1b.yy",},"order":4,},
     {"id":{"name":"txt_encounter","path":"scripts/txt_encounter/txt_encounter.yy",},"order":7,},
     {"id":{"name":"s_32","path":"sprites/s_32/s_32.yy",},"order":19,},
-    {"id":{"name":"m_alone","path":"sounds/m_alone/m_alone.yy",},"order":30,},
     {"id":{"name":"rescale","path":"scripts/rescale/rescale.yy",},"order":44,},
     {"id":{"name":"s_ui","path":"sprites/s_ui/s_ui.yy",},"order":5,},
     {"id":{"name":"pt_chiyuri3","path":"scripts/pt_chiyuri3/pt_chiyuri3.yy",},"order":57,},

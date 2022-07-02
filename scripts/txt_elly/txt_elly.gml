@@ -107,7 +107,7 @@ function txt_elly() {
 	txt("|c102137255With \"Tsukiko\"...", KAGUYA2.NORMAL),
 	txt("|c102137255No, this is wrong.", KAGUYA2.NORMAL),
 	txt("|c102137255This sort of deception... this friviolity... it is disrespectful.", KAGUYA2.NORMAL),
-	txt("...No. Apologies.", u, u, s_bar, function() {music_set(mus.null)}),
+	txt("...No. Apologies.", KAGUYA2.NORMAL, u, s_bar, function() {music_set(mus.null)}),
 	txt("Truthfully, I must be going now.", KAGUYA2.NORMAL),
 	txt("...Oh. That's a shame.", ELLY.CONFUSED),
 	txt("Elly. Kotohime. It was pleasant.", KAGUYA2.NORMAL),

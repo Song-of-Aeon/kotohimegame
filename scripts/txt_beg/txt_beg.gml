@@ -31,7 +31,7 @@ function txt_beg2c() {
 	txt("|c000000000Even ignoring your own... intellect, there's always a bigger fish."),
 	txt("|c000000000Haven't you heard of that spirit going around, impersonating and attacking people?"),
 	txt("|c000000000It's going everywhere..."),
-	txt("|c000000000...Everywhere the shrine maiden has bothered to check out."),
+	txt("|c000000000...Everywhere the#shrine maiden has#bothered to check out."),
 	txt("|c000000000I don't want to add the bar to that list."),
 	],[txt(""),])	
 	endevent = function() {

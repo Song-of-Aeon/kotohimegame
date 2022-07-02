@@ -1,4 +1,4 @@
-global.stages[DAY.WEDNES][6] = {
+global.stages[DAY.WEDNES][7] = {
 	generation: munction(function() { with o_roommanager {
 		//rooms[0][0] = new cell(u, u, u, u, u, u, u, function() {c_makeshooter(global.gw/3, global.gh/3, 9999999)});
 		rooms[0][0] = cl_testtalk6();

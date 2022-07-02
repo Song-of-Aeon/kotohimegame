@@ -8,10 +8,10 @@ function cl_testtalk3() {
 	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_kagumoku, global.textnvl); global.luying = true});
 }
 function cl_testtalk5() {
-	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_epilogue, global.textnvl); global.luying = true});
+	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_end, global.textnvl); global.luying = true});
 }
 function cl_testtalk6() {
-	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_end, global.textnvl); global.luying = true});
+	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_afterword, global.textnvl); global.luying = true});
 }
 function cl_load() {
 	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){c_loadvn(); global.luying = false});

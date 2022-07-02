@@ -89,15 +89,15 @@ itemgen({
 				draw_sprite_ext(s_docaredidask, 0, bordleft+fightx, 436, 1, 1, -gc*2, c_white, 1);
 			
 			}
-			draw_line_width(bordleft, bordup, bordleft, borddown, 5);
+			draw_line_width(bordleft, bordup-2.5, bordleft, borddown+2.5, 5);
 			draw_line_width(bordleft, bordup, bordright, bordup, 5);
-			draw_line_width(bordright, bordup, bordright, borddown, 5);
+			draw_line_width(bordright, bordup-2.5, bordright, borddown+2.5, 5);
 			draw_line_width(bordleft, borddown, bordright, borddown, 5);
 		} else {
 			surface_reset_target();
-			draw_line_width(bordleft, bordup, bordleft, borddown, 5);
+			draw_line_width(bordleft, bordup-2.5, bordleft, borddown+2.5, 5);
 			draw_line_width(bordleft, bordup, bordright, bordup, 5);
-			draw_line_width(bordright, bordup, bordright, borddown, 5);
+			draw_line_width(bordright, bordup-2.5, bordright, borddown+2.5, 5);
 			draw_line_width(bordleft, borddown, bordright, borddown, 5);
 			surface_set_target(global.surfaces.HUD);
 		}

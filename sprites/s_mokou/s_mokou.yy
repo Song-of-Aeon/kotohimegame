@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"76d94d13-5cfd-4b2a-ae99-3450e9c65e87","path":"sprites/s_mokou/s_mokou.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"76d94d13-5cfd-4b2a-ae99-3450e9c65e87","path":"sprites/s_mokou/s_mokou.yy",},"LayerId":{"name":"807dcb00-d09c-45c6-832b-a838addb3a4c","path":"sprites/s_mokou/s_mokou.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_mokou","path":"sprites/s_mokou/s_mokou.yy",},"resourceVersion":"1.0","name":"76d94d13-5cfd-4b2a-ae99-3450e9c65e87","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"a55adc30-c15f-4c45-9e78-982817b90af1","path":"sprites/s_mokou/s_mokou.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"a55adc30-c15f-4c45-9e78-982817b90af1","path":"sprites/s_mokou/s_mokou.yy",},"LayerId":{"name":"807dcb00-d09c-45c6-832b-a838addb3a4c","path":"sprites/s_mokou/s_mokou.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_mokou","path":"sprites/s_mokou/s_mokou.yy",},"resourceVersion":"1.0","name":"a55adc30-c15f-4c45-9e78-982817b90af1","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"c5e0bc78-c33c-4252-a1a3-cd1601cfbb92","path":"sprites/s_mokou/s_mokou.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"c5e0bc78-c33c-4252-a1a3-cd1601cfbb92","path":"sprites/s_mokou/s_mokou.yy",},"LayerId":{"name":"807dcb00-d09c-45c6-832b-a838addb3a4c","path":"sprites/s_mokou/s_mokou.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"s_mokou","path":"sprites/s_mokou/s_mokou.yy",},"resourceVersion":"1.0","name":"c5e0bc78-c33c-4252-a1a3-cd1601cfbb92","tags":[],"resourceType":"GMSpriteFrame",},
@@ -86,7 +86,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"e9fd66d9-5289-425f-ad10-be9659327b6d","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"76d94d13-5cfd-4b2a-ae99-3450e9c65e87","path":"sprites/s_mokou/s_mokou.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"dcb5ca9b-e8d4-44be-89b8-7b614c0e3722","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a55adc30-c15f-4c45-9e78-982817b90af1","path":"sprites/s_mokou/s_mokou.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"eaf46263-78a6-47c3-9bde-7d7e41e7768d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"c5e0bc78-c33c-4252-a1a3-cd1601cfbb92","path":"sprites/s_mokou/s_mokou.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"96dc64b6-a31a-4595-93cd-1417f5d5d165","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"16470e94-7e8b-42de-a4c7-5d77a37edd63","path":"sprites/s_mokou/s_mokou.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6f424eb4-7e1f-44dd-a879-7905b5954432","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0a843cbb-9ece-4e28-aac9-0772430c146f","path":"sprites/s_mokou/s_mokou.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},

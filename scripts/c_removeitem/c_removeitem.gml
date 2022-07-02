@@ -5,7 +5,10 @@ function c_removeitem(item, amount = 1) {
 			switch c_getitembyid(item).usage {
 				case ITTYPE.ACTIVE:
 					for (i=0; i<array_length(myactive); i++) {
-						if myactive[i] = item {
+						if c_getidbyitem(myactive[i]) = item {
+							if variable_struct_exists(myactive[i], hooks.ondrop) {
+								myactive[i].ondrop();
+							}
 							myactive[i] = c_getitembyid(ITEMS.NULL);
 							break;
 						}
@@ -15,7 +18,8 @@ function c_removeitem(item, amount = 1) {
 				case ITTYPE.PASSIVE:
 					var deleting = ds_list_find_index(myitems, item);
 					var doing = c_getitembyid(item);
-					if variable_struct_exists(doing, hooks.ondrop) {
+					if variable_struct_exists(doing, "ondrop") {
+						//log("dropped");
 						doing.ondrop();
 					}
 					if deleting != -1 {

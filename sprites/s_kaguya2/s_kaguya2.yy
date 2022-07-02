@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 274,
-  "bbox_top": 0,
-  "bbox_bottom": 276,
+  "bbox_right": 406,
+  "bbox_top": 7,
+  "bbox_bottom": 732,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 275,
-  "height": 277,
+  "width": 433,
+  "height": 736,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"7fc74d5d-b246-40e4-9ff2-06a5e7df341a","path":"sprites/s_kaguya2/s_kaguya2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7fc74d5d-b246-40e4-9ff2-06a5e7df341a","path":"sprites/s_kaguya2/s_kaguya2.yy",},"LayerId":{"name":"ef5e82ed-6f6f-4c42-92c0-f52f3e3eb6a9","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"s_kaguya2","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","name":"7fc74d5d-b246-40e4-9ff2-06a5e7df341a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6894d80f-edcc-4941-a124-97d61234e06a","path":"sprites/s_kaguya2/s_kaguya2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6894d80f-edcc-4941-a124-97d61234e06a","path":"sprites/s_kaguya2/s_kaguya2.yy",},"LayerId":{"name":"695d76e0-8f08-49a1-b25a-7d8e053e1ce9","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_kaguya2","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","name":"6894d80f-edcc-4941-a124-97d61234e06a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"s_kaguya2","path":"sprites/s_kaguya2/s_kaguya2.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"1dd7e3a5-3ae3-4fd6-93e1-c7e670ffd615","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7fc74d5d-b246-40e4-9ff2-06a5e7df341a","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ae0d9430-cd61-49f3-b2bd-3960908379c5","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6894d80f-edcc-4941-a124-97d61234e06a","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 130,
-    "yorigin": 120,
+    "xorigin": 230,
+    "yorigin": 328,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"s_kaguya2","path":"sprites/s_kaguya2/s_kaguya2.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"ef5e82ed-6f6f-4c42-92c0-f52f3e3eb6a9","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"695d76e0-8f08-49a1-b25a-7d8e053e1ce9","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

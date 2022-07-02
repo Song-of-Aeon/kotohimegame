@@ -289,7 +289,7 @@ function txt_end() {
 	txt("But... how?", KAGUYA.WAAH),
 	txt("Did they simply not live here?", KAGUYA.NEUTRAL),
 	txt("No, that wasn't it. I think... they were like me. Or, like what I was to my mom.", KANA.DISTANT),
-	txt("The monster in her closet.", KANA.SADSMILE),
+	txt("The monster in her closet.", KANA.DISTANT),
 	txt("...", KAGUYA.WAAH),
 	
 	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN),
@@ -299,7 +299,7 @@ function txt_end() {
 	
 	txt("Nothing here... she must be asleep.", KANA.AWW, SPRITEPOS.CENTER),
 	txt("Wh-why does she live here? This place looks like it's been abondoned for decades!", REISEN.DEF, SPRITEPOS.LEFT),
-	txt("...It's her home.", KANA.SADSMILE),
+	txt("...It's her home.", KANA.DISTANT),
 	txt("I hate this place. Can we just find her and get out?", MOKOU.SAD, SPRITEPOS.RIGHT),
 	txt("Yeah. She's probably close by.", KANA.DISTANT),
 	
@@ -313,14 +313,14 @@ function txt_end() {
 	txt("...Forgotten objects.", KANA.AWW),
 	txt("...", MOKOU.SAD),
 	
-	txt("The Fire Room...", KANA.SADSMILE),
+	txt("The Fire Room...", KANA.DEF),
 	txt("This is where I stayed all those years ago. We'd go outside in the day, spend all evening playing with all the trinkets littered around, and then sleep together in this closet.", KANA.YAY),
 	
 	ntxt(0, KANA.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(134, MOKOU.SAD, SPRITEPOS.HIDDEN, s_black),
 	
-	
-	txt("...It's my hat!", KANA.DEF, SPRITEPOS.HIDDEN, s_hat),
+	txt("...Hey, look!", KANA.DEF, SPRITEPOS.HIDDEN, s_hat),
+	txt("It's my hat!", KANA.DEF),
 	txt("I haven't seen this in so long!", KANA.DEF),
 	txt("Honestly... I've missed it.", KANA.DEF),
 	txt("...", KANA.DEF),
@@ -329,8 +329,8 @@ function txt_end() {
 	txt("...There we go!", KANAHAT.YAY, SPRITEPOS.MIDRIGHT, s_closet),
 	txt("Heh... it looks great on you.", REISEN.YAY, SPRITEPOS.MIDLEFT),
 	txt("Thanks.", KANAHAT.LOVEY),
-	txt("So... she's not here?", REISEN.DEF, SPRITEPOS.CENTER),
-	txt("Doesn't look like it. She must be taking a stroll right now.", KANA.AWW, SPRITEPOS.RIGHT),
+	txt("So... she's not here?", REISEN.DEF),
+	txt("Doesn't look like it. She must be taking a stroll right now.", KANAHAT.AWW),
 	txt("How about we try again tonight?", KANAHAT.DEF),
 	txt("Alright.", REISEN.DEF),
 	
@@ -363,7 +363,7 @@ function txt_end() {
 	ptxt(),	
 
 	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN),
-	ntxt(0, KANA.NEUTRAL, SPRITEPOS.HIDDEN),
+	ntxt(0, KANAHAT.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, KAGUYA.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(108, MOKOU.SAD, SPRITEPOS.HIDDEN, s_daymoon, function() {textbox_set_type(global.textnvl)}),
 	
@@ -378,8 +378,8 @@ function txt_end() {
 	txt("And now, I must do the same."),
 	txt("Leave my cage, find happiness in new places, and relish the wonders of this impure Earth."),
 	txt("I'm sorry for leaving you so suddenly, but... this wasn't going to happen while I was still here."),
-	txt("I'll return when I feel truly alive again. When that will be, I'm not certain. It may be in a year, ten years, or a thousand."),
-	txt("But no matter what, I will return. And when I do, we'll all be so much happier for it."),
+	txt("I'll return when I feel truly alive again. When that will happen, I'm not certain. It may be in a year, ten years, or a thousand."),
+	txt("But no matter what, I will come back. And when I do, we'll all be so much happier for it."),
 	txt("Thank you all. For everything."),
 	ptxt(),
 	txt("Love, |w0030 #        The Little Rabbit Princess."),

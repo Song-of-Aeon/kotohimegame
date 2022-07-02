@@ -8,8 +8,10 @@ nu pattern_ext(function() {
 			ISAAC.x=145
 			ISAAC.y=90
 			
+			
 			var moonthingy = c_makeshooter(WIDTH/2, HEIGHT/2, 99999999, en.moon, new pattern(function() {
 				c;
+				
 				
 			if count > 60 and count < 2000{
 				if ncm (9){
@@ -36,9 +38,11 @@ nu pattern_ext(function() {
 				
 				}
 				}
+				
+				
 			
 			
-			if count > 2200 and count < 4800{
+			if count > 2200{
 			
 			//should be count > 2200 and count <4800
 			
@@ -69,6 +73,41 @@ nu pattern_ext(function() {
 			
 			}
 			}
+			
+			if count > 4000{
+			if ncm(42){
+				
+					c_shoot(x+25, y, 2, point_me(), bul.peenkboolit);
+					c_shoot(x-25, y, 2, point_me(), bul.peenkboolit);					
+			}
+			
+			}
+			
+			if count > 4800{
+			if ncm(30){
+			
+			
+			c_shoot(x, y+40, 6, point_me(), bul.bigerboolit, u, function(){	
+			c
+				x = sin(count/60)*30+WIDTH/2;
+				y = cos(count/60)*30+HEIGHT/2;
+				if count = 400{
+				instance_destroy();
+				}
+			
+			});
+			
+			}
+			
+			}
+			
+	
+			
+			
+			
+			
+			
+			
 		}))
 		
 			
@@ -76,7 +115,8 @@ nu pattern_ext(function() {
 	}	
 	
 	
-	if count > 75 and count < 4800{
+	
+	if count > 75{
 		
 	if ncm(7) {
 		//var i;
@@ -92,8 +132,8 @@ nu pattern_ext(function() {
 	}
 	
 	
-	//THIS 101 COUNT SHOULD BE 2201
-	if count > 2201 and count < 4800{
+	
+	if count > 2201{
 		
 		if ncm(30){
 		
@@ -120,20 +160,73 @@ nu pattern_ext(function() {
 				orbit.escapedistance = 200
 				
 		}
+		
+		
 				
-	/*
-	if ncm(13) {
-					c_shoot(x, y, 2, seed.next(360), bul.blunaifu);
-					c_shoot(x, y, 2, seed.next(360), bul.naifu);
-					c_shoot(x, y, 2, seed.next(360), bul.blunaifu);
-					c_shoot(x, y, 2, seed.next(360), bul.naifu);
-					c_shoot(x, y, 2, seed.next(360), bul.blunaifu);
-					c_shoot(x, y, 2, seed.next(360), bul.naifu);
 	
-	*/
+	if ncm(13) {
+					c_shoot(x, y, 2, seed.next(360), bul.gurinnaifu);
+					c_shoot(x, y, 2, seed.next(360), bul.gurinnaifu);
+					c_shoot(x, y, 2, seed.next(360), bul.gurinnaifu);
+					c_shoot(x, y, 2, seed.next(360), bul.gurinnaifu);
+					c_shoot(x, y, 2, seed.next(360), bul.gurinnaifu);
+					c_shoot(x, y, 2, seed.next(360), bul.gurinnaifu);
+	
+	
 		}
+		
+		
+			if count > 3800{
+			
+			
+		if count %260 >= 130{
+				
+			if ncm(69) {
+				
+				c_shootlaser(x, y, 0.5, point_me(), 12, 144, las.sunlazer, u, function() {spd+=0.1});
+				c_shootlaser(x, y, 0.5, point_me()+16, 8, 96, las.blulazer, u, function() {spd+=0.1});
+				c_shootlaser(x, y, 0.5, point_me()-16, 8, 96, las.blulazer, u, function() {spd+=0.1});
+				c_shootlaser(x, y, 0.5, point_me()+32, 8, 96, las.lazerred, u, function() {spd+=0.1});
+				c_shootlaser(x, y, 0.5, point_me()-32, 8, 96, las.lazerred, u, function() {spd+=0.1});
+								
+			}
+			
+			}else{
+				if ncm(69) {
+					
+					c_shootlaser(x, y, 0.5, point_me(), 12, 144, las.sunlazer, u, function() {spd+=0.1});
+					c_shootlaser(x, y, 0.5, point_me()+16, 8, 96, las.lazerred, u, function() {spd+=0.1});
+					c_shootlaser(x, y, 0.5, point_me()-16, 8, 96, las.lazerred, u, function() {spd+=0.1});
+					c_shootlaser(x, y, 0.5, point_me()+32, 8, 96, las.blulazer, u, function() {spd+=0.1});
+					c_shootlaser(x, y, 0.5, point_me()-32, 8, 96, las.blulazer, u, function() {spd+=0.1});
+									
+			}
+			
+			}
+			/*
+					
+					if ncm (35){
+					
+					
+		c_shoot(-32, 25, 2, 0, bul.bluamulet, c_red);
+		c_shoot(-32, 125, 2, 0, bul.bluamulet, c_red);
+		c_shoot(-32, 225, 2, 0, bul.bluamulet, c_red);
+		c_shoot(-32, 325, 2, 0, bul.bluamulet, c_red);
+		
+		c_shoot(322, 75, 2, 180, bul.bluamulet, c_red);
+		c_shoot(322, 175, 2, 180, bul.bluamulet, c_red);
+		c_shoot(322, 275, 2, 180, bul.bluamulet, c_red);
+		c_shoot(322, 375, 2, 180, bul.bluamulet, c_red);
+					
+					}
+					*/
+			
+			}
+	
 	
 					
+					
+	}
 		
 			
 	
@@ -155,7 +248,7 @@ nu pattern_ext(function() {
 		
 	
 	
-}, 999999999, 200, "mokou", SPELL.CARD, DIFFICULTY.HARD, "...And So We Continued to Stay on This Beautiful Earth");
+}, 999999999, 101, "mokou", SPELL.CARD, DIFFICULTY.HARD, "...And So We Continued to Stay on This Beautiful Earth");
 
 nu shootman("moon", s_moon)
 

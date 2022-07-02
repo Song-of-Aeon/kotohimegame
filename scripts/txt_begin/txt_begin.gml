@@ -1212,7 +1212,7 @@ function txt_begin() {
 	txt("Here you go. Take it.", KANA.LOVEY, SPRITEPOS.RIGHT, s_eienteiday, function() {textbox_set_type(global.textzpix)}),
 	//kana has no hat on	
 	txt("...Really?", ME.NEUTRAL, SPRITEPOS.LEFT),
-	txt("Yeah. I don't want it anymore. So... you can keep it.", KANA.LOVEY, SPRITEPOS.RIGHT),
+	txt("Yeah. I don't want it anymore. So... you can keep it.", KANA.DEF),
 	txt("It might look nice on you.", KANA.LOVEY),
 	txt("...", ME.DISTANT),
 	txt("Thanks.", ME.TINYSMIRK),

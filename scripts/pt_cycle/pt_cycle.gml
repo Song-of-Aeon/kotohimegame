@@ -45,6 +45,8 @@ nu pattern_ext(function() {
 		//in this part is where she SPEENS
 	}
 	
+	if count > 180{
+	
 		if ncm(39){
 			meposx = ISAAC.x
 			meposy = ISAAC.y	
@@ -76,10 +78,11 @@ nu pattern_ext(function() {
 				*/
 				
 				
-				c_shoot(x, y, 2, point_me()+16, bul.blunaifu, u, function(){
+				c_shoot(x, y, 2, point_me()+16, bul.dagablu, u, function(){
 					c
 					if count > 70 and count < 100 {
 						spd = 0
+						dir = point_me();
 						}
 					
 					if count > 100 and count < 130{
@@ -95,10 +98,11 @@ nu pattern_ext(function() {
 					
 					});
 				
-				c_shoot(x, y, 2, point_me()-16, bul.blunaifu, u, function(){
+				c_shoot(x, y, 2, point_me()-16, bul.dagablu, u, function(){
 					c
 					if count > 70 and count < 100 {
 						spd = 0
+						dir = point_me();
 						}
 					
 					if count > 100 and count < 130{
@@ -114,10 +118,11 @@ nu pattern_ext(function() {
 					
 					});
 				
-				c_shoot(x, y, 2, point_me()+32, bul.blunaifu, u, function(){
+				c_shoot(x, y, 2, point_me()+32, bul.daga, u, function(){
 					c
 					if count > 70 and count < 100 {
 						spd = 0
+						dir = point_me();
 						}
 					
 					if count > 100 and count < 130{
@@ -132,10 +137,11 @@ nu pattern_ext(function() {
 					}
 					
 					});
-				c_shoot(x, y, 2, point_me()-32, bul.blunaifu, u, function(){
+				c_shoot(x, y, 2, point_me()-32, bul.daga, u, function(){
 					c
 					if count > 70 and count < 100 {
 						spd = 0
+						dir = point_me();
 						}
 					
 					if count > 100 and count < 130{
@@ -153,7 +159,7 @@ nu pattern_ext(function() {
 				
 				
 				}
-				
+	}			
 	
 	if count = 250{
 	
@@ -240,6 +246,6 @@ nu pattern_ext(function() {
 		//put this on the bigass lazors on the side of the screen mokou aint on
 			
 	
-}, 600, 100, "touhou", SPELL.CARD, DIFFICULTY.HARD, "Cycle of Death and Rebirth");
+}, 776, 60, "touhou", SPELL.CARD, DIFFICULTY.HARD, "Cycle of Death and Rebirth");
 
 nu shootman("familiar", s_reimu);

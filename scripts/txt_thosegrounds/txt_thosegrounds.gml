@@ -21,6 +21,6 @@ function txt_thosegrounds() {
 	])
 	
 	endevent = function() {
-		c_evidencegen(4, txt_thesegrounds, txt_thesegrounds);
+		c_evidencegen(4, txt_thosegrounds, txt_thesegrounds);
 	};
 }

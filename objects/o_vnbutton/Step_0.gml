@@ -1,4 +1,4 @@
-exit;
+/*exit;
 //log(mouse_x);
 //log(mouse_y);
 if mouse_y > 300 && mouse_x < -90 {

@@ -11,7 +11,7 @@ function txt_mortal() {
 	txt("...I wasn't concerned about that, but thank you.", KAGUYA2.NORMAL, SPRITEPOS.MIDLEFT),
 	txt("Oh.", KOTOHIME.THINKING, SPRITEPOS.MIDRIGHT, s_court),
 	txt("I meant something more specific.", KAGUYA2.NORMAL),
-	txt("Kotohime, you must recall. There is something else about myself that \"Tsukiko\" could never have.", KAGUYA2.NORMAL),
+	txt("Kotohime, you must recall. There is something else about myself that \"Tsukiko\ could never have.", KAGUYA2.NORMAL),
 	
 	],[
 	

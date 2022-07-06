@@ -54,7 +54,7 @@ nu talksprite("JDGKAGU", "me", z++);
 nu talksprite("JDGALL", "me", z++);
 
 #macro KME global.textguy[?" me "]
-nu chardata(" Me ", s_kagdairi, se_null, .75);
+nu chardata(" Me ", s_kaguya, se_null, .75);
 var z=0;
 nu talksprite("NORMAL", " me ", z++);
 nu talksprite("DEF", " me ", z++);
@@ -129,7 +129,7 @@ nu talksprite("JDGKAGU", " kana ", z++);
 
 
 #macro KAGUYA global.textguy[?"kaguya"]
-nu chardata("Kaguya", s_kagdairi, se_null, .75);
+nu chardata("Kaguya", s_kaguya, se_null, .75);
 var z=0;
 nu talksprite("NORMAL", "kaguya", z++);
 nu talksprite("DEF", "kaguya", z++);

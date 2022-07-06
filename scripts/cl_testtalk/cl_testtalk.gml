@@ -5,7 +5,7 @@ function cl_testtalk2() {
 	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_begin, global.textnvl); global.luying = true});
 }
 function cl_testtalk3() {
-	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_kagumokumid1, global.textnvl); global.luying = true});
+	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_kagumoku, global.textnvl); global.luying = true});
 }
 function cl_testtalk5() {
 	return new cell(ROOMTYPE.GENERAL, u, u, u, u, function(){textbox_create(txt_end, global.textnvl); global.luying = true});

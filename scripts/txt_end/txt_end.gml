@@ -15,7 +15,7 @@ function txt_end() {
 	ptxt(),
 	txt("Yet something was missing."),
 	
-	ntxt(0, u, u, u, function() {music_set(mus.gaming)}),
+	ntxt(0, u, u, u, function() {music_set(mus.vidya2)}),
 	
 	txt("Come on, come on...", REISEN.DEF, u, s_ke1, function() {textbox_set_type(global.textzpix)}),
 	txt("You can do it, Reisen! I believe in you!", KAGUYA.DEF),
@@ -82,7 +82,6 @@ function txt_end() {
 //	txt("I'm really happy for you.", ME.YAY),
 	ntxt(0050, u, u, u, function() {audio_play_sound(snd_walking_on_the_earth, 0, false)}),
 		
-	ntxt(0, u, u, u, function() {music_set(mus.alone)}),
 	txt("Hey, Princess.", MOKOU.NEUTRAL, u, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Hm?", ME.NEUTRAL, SPRITEPOS.RIGHT),	
 	txt("Oh hey. What are you doing here?", ME.DEF),
@@ -95,13 +94,8 @@ function txt_end() {
 	txt("Can I help in any way?", MOKOU.NEUTRAL),
 	txt("No.", ME.DISAPOINT),
 	txt("I caused the problem myself. Someone else fixing it for me wouldn't be fair.", ME.DISTANT),
-	txt("...", MOKOU.SAD),
-	txt("Little Rabbit, life is short.", MOKOU.NEUTRAL),
-	txt("So please... don't hide from others out of fear. Take what you can get, and treasure it.", MOKOU.SAD),
-	txt("Okay?", MOKOU.YAY),
-	txt("...", ME.DISAPOINT),
-	txt("I'll try.", ME.TINYSMIRK),
-	txt("If you need anything, I'll be here.", MOKOU.SADSMILE),
+	txt("...If you say so.", MOKOU.SAD),
+	txt("Well, if you need anything, I'll be here.", MOKOU.SADSMILE),
 	txt("...", ME.DISAPOINT),
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN),
@@ -109,10 +103,8 @@ function txt_end() {
 	ptxt(),
 	txt("Without another word, I turned away and headed for home.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("It was a strange feeling that I had then-- I should have been fine, but..."),
-	ptxt(),
-	txt("Ever since I first discovered the House of Eternity, I could see a glimmer of light through a door that was never meant to open."),
-	txt("And I wanted nothing more than to break that door down."),
-	txt("But years later, it was still there, and something invisible was holding me in place."),
+	
+	ntxt(0, u, u, u, function() {music_set(mus.alone)}),
 	
 	ptxt(),
 	txt("It wasn't a long walk to my home. The place laid just outside the Bamboo Forest, in a clearing.", u, u, s_home),
@@ -135,7 +127,7 @@ function txt_end() {
 	ptxt(),	
 	//CREEEAK sound effect
 	txt("I walked through the door and entered the Fire Room."),
-	txt("A tiny area, barely bigger than a closet. Nothing occupied this space, except a dresser, a hearth, and a futon."),
+	txt("A tiny area, barely bigger than an average closet. Nothing occupied this space, except a dresser, a hearth, and a futon."),
 	ptxt(),
 	txt("With only muscle memory to guide me, I took a few pieces of wood out of the dresser, and dropped them near the hearth."),
 	txt("But then something on the top of the dresser caught my eye."),
@@ -151,8 +143,11 @@ function txt_end() {
 	txt("Now it was time to start the fire."),
 	txt("Kneeling in front of the fireplace, I struck a match. Then another, and another."),
 	txt("As the first sparks shone, my whole body felt like it was being pricked-- I had finally noticed the cold. Even in Autumn, the coming night was cold enough to kill."),
+
+	ntxt(0080, u, u, u, function() {music_set(mus.null)}),
+
 	//fire lighting sounds
-	txt("Finally... warmth.", u, u, s_fireplace),
+	txt("Finally... warmth.", u, u, s_fireplace, function() {music_set(mus.campfire)}),
 	ptxt(),
 	txt("I laid into the futon and closed my eyes. This floor wasn't too comfortable, but I had gotten used to it."),
 	txt("The crackle of the fire was comforting, at least. It was all I had at the moment-- all of my collectibles laid in another room, far from the fire."),
@@ -178,31 +173,123 @@ function txt_end() {
 	txt("...Actually, I don't want it changed. This cold is alright to me.", ME.DISAPOINT),
 	txt("...Do you like it, or are you just used to it?", MOKOU.SADSMILE),
 	txt("It's nostalgic.", ME.HEHE),
+	txt("If you say so.", MOKOU.SAD),
 	
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
-	ntxt(130, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN, s_fireplace),	
+	ntxt(130, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN, s_fireplace),
 		
-	txt("To be honest...", ME.DISAPOINT, SPRITEPOS.LEFT),	
-	txt("I don't want to be here anymore.", ME.DISAPOINT),
-	txt("...Well, I don't blame ya.", MOKOU.DEF, SPRITEPOS.RIGHT),
-	txt("You've been living in this dump for-- how long?", MOKOU.DEF),
-	txt("Too long.", ME.NEUTRAL),
-	txt("Why not move in to the House of Eternity?", MOKOU.DEF),
-	txt("You can't keep hiding away like this forever. Someday, it's gonna kill you.", MOKOU.SADSMILE),
-	txt("...", ME.NEUTRAL),
-	txt("You're right.", ME.NEUTRAL),
+//	txt("To be honest...", ME.DISAPOINT, SPRITEPOS.LEFT),	
+//	txt("I don't want to be here anymore.", ME.DISAPOINT),
+//	txt("...Well, I don't blame ya.", MOKOU.DEF, SPRITEPOS.RIGHT),
+//	txt("You've been living in this dump for-- how long?", MOKOU.DEF),
+
+//	txt("You can't keep hiding away like this forever. Someday, it's gonna kill you.", MOKOU.SADSMILE),
+
+//	txt("How'd your little gaming session go?", MOKOU.NEUTRAL, SPRITEPOS.RIGHT),
+//	txt("It went.", ME.NEUTRAL, SPRITEPOS.LEFT),
+
+
+	txt("Little Rabbit...", MOKOU.SADSMILE, SPRITEPOS.RIGHT),
+	txt("I don't think this is good for you.", MOKOU.SADSMILE),
+	txt("...", ME.DISTANT, SPRITEPOS.LEFT),
+	txt("Coming back here every night, all alone...", MOKOU.SAD),
+	txt("Why don't you find someplace else to be? Move in with the House of Eternity if you gotta.", MOKOU.NEUTRAL),	
+	txt("...This is my home. It's where I've lived, and where I'll always live.", ME.DISTANT),
+	txt("No matter what... every road I take just brings me back here.", ME.DISTANT),
+	txt("I don't think you've taken enough roads, Little Rabbit.", MOKOU.NEUTRAL),
+	
+	txt("...Weren't you going to sleep over at the House of Eternity?", ME.MIFFED),
+	txt("Yeah.", MOKOU.NEUTRAL),
+	txt("Why are you here?", ME.DISAPOINT),
+	txt("Because you're here.", MOKOU.DEF),
+	txt("So?", ME.NEUTRAL),
+	txt("Come on, do I really need another reason?", MOKOU.SMUG),
+	txt("I think so.", ME.MIFFED),
+	
+	txt("I'm just a mayfly in the winter, clinging on to a dying cherry tree.", ME.DISAPOINT),
+	//In a few thousand years, you won't remember a thing about me.", ME.DISAPOINT),
+	//txt("Not you, nor anybody else.", ME.DISTANT),
+	txt("Being with me instead of your loved ones... isn't that just wasting your time?", ME.DISTANT),
+	txt("You're the one who's wasting her time here.", MOKOU.HMPH),
+	txt("I think my reasons for caring about you are pretty darn obvious. But if you don't understand, then at least let me accompany you.", MOKOU.HMPH),
+	txt("...", ME.DISTANT),
+
+
+	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
+	ntxt(130, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN, s_fireplace),
+
+	txt("Sorry, I'm... really tired right now.", ME.NEUTRAL, SPRITEPOS.LEFT),
+	txt("Alright.", MOKOU.SMUG),
+	txt("
+	
+	txt("Maybe you're right, though.
+	
+	txt("I'll have to think about it
+	
+	txt("Oh, in the meantime, let's make sure we do those steps just in case.", MOKOU.
+	txt("Huh?", ME.NEUTRAL),
+	txt("Ya know, those rituals that bind you to the House of Eternity. That's what your kind needs when they lose their old home, right?", MOKOU.NEUTRAL),
+	txt("Mokou, what are you talking about?", ME.DEF),
+	txt("I'm a human, just like you.", ME.HEHE),
+	txt("...", MOKOU.SADSMILE),
+	txt("Either way, this isn't final.", ME.DEF),	
+	txt("Alright, alright.", MOKOU.DEF),
+	
+	
+	
+	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
+	ntxt(99, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN, s_closet),
+	
+	txt("Little Rabbit, life is short.", MOKOU.NEUTRAL),
+	txt("So please... take what you can get, and treasure it.", MOKOU.SAD),
+	txt("Okay?", MOKOU.YAY),
+	txt("...", ME.DISAPOINT),
+	txt("I'll try.", ME.TINYSMIRK),
+	
+	
+	/*
+	txt("...", MOKOU.SAD),
+	txt("...Little Rabbit, do you mind if I tell you a story?", MOKOU.DEF),
+	txt("...Go ahead.", ME.NEUTRAL),
+	txt("Okay, I'll try to make it quick.", MOKOU.SMUG),
+	
+	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
+	ntxt(80, MOKOU.NEUTRAL, SPRITEPOS.HIDDEN, u, function() {music_set(mus.isnight)}),
+	ntxt(50, MOKOU.NEUTRAL, SPRITEPOS.CENTER, s_fireplace),
+	
+	txt("One-thousand and twelve years ago, I was stuck in a cave.", MOKOU.DEF),
+	txt("Though, maybe cave doesn't describe it well enough. This dark, musty place, with no sunlight or life. Just the sound of water seeping through the cracks in stone.", MOKOU.DEF),
+	txt("Its walls were impossible to climb, and I didn't know any magic.", MOKOU.DEF),
+	txt("...I didn't just fall in, though. Someone brought me here.", MOKOU.SAD),
+	txt("I'd been living away from other humans for quite some time back then. But one night in the middle of nowhere, I came across a group of young men.", MOKOU.NEUTRAL),
+	txt("There were... five of them, I think. The man in front had this really big scar on his left eye, and whenever he smiled, it looked like he was in pain.", MOKOU.NEUTRAL),
+	txt("Anyways, he offered to take me in if I helped them out. They used to be farmers, but could no longer stay in their village due to a terrible drought, he said.", MOKOU.DEF),
+	txt("I didn't know what I could help them out with, nor did I care. I tried to find and opening to run away, but... I misjudged.", MOKOU.NEUTRAL),
+	txt("Long story short, these guys found out I was immortal pretty quickly... and they decided that a girl who could never die would be fun.", MOKOU.SAD),
+	txt("So I was tossed in that cave. Every few days, those men would come down with a rope, and... have their fun.", MOKOU.SAD),
+	txt("And then when it was time to go, they'd make sure half the bones in my body were broken, just so I couldn't try to climb up the rope with them.", MOKOU.NEUTRAL),
+	txt("It kinda sucked.", MOKOU.SADSMILE),
+	txt("Though, the worst part was when they wouldn't come for weeks. I was all alone, with nothing to do but wonder how long my life would be like this.", MOKOU.SAD),
+	*/
+	
+	txt("...", MOKOU.SAD),
+	
+	
+	
+	
+	txt("f
+	
+	
+	
 	txt("Can you burn this place down for me?", ME.DISTANT),
-	txt("What!?", MOKOU.SURPRISED),
 	txt("If I don't do this now, it'll never happen. Tonight, let this house go up in smoke.", ME.DISTANT),
 	txt("...You sure?", MOKOU.NEUTRAL),
 	txt("We've talked about it so much-- it's time to follow through.", ME.DISTANT),
 	txt("All of it must go.", ME.DISTANT),
 	
-	txt("W-wait a sec. Aren't you gonna vanish? That's what happens to your kind when they lose their home, right?", MOKOU.SURPRISED),
-	txt("Mokou, what are you talking about?", ME.HEHE),
-	txt("I'm a human, just like you.", ME.DEF),
-	txt("...", MOKOU.SADSMILE),
-	txt("Are you totally sure you should do this?", MOKOU.NEUTRAL),
+	
+	
+	txt("Are you totally sure you should do this now?", MOKOU.NEUTRAL),
 	txt("...Yes.", ME.DISTANT),
 	
 	ntxt(70, ME.NEUTRAL, SPRITEPOS.HIDDEN),
@@ -219,7 +306,7 @@ function txt_end() {
 	txt("Smoke clouds obscure the faint moon. Embers rise from the blazing building, as if trying to escape the destruction. Wooden walls collapse into each other, their own weight proving too much."),
 	txt("I stand alone in front of the burning remains, for... far too long."),
 	txt("In only minutes, everything had disappeared. Everything that I had here, all that I loved and hated."),
-	txt("I should be happy... the place that has kept me sad is gone now. My cage has burst open, and now, I'm free."),
+	txt("I should be happy. My cage has burst open, and now, I'm free."),	
 	ptxt(),
 	txt("So..."),
 	txt("Why can't I stop crying?"),
@@ -258,9 +345,9 @@ function txt_end() {
 	
 	
 	
-	txt("Mokou, are you alright?", KAGUYA.NEUTRAL, SPRITEPOS.MIDLEFT),
+	txt("Mokou, are you alright?", KAGUYA.AWW, SPRITEPOS.MIDLEFT),
 	txt("Huh? Of course.", MOKOU.NEUTRAL, SPRITEPOS.MIDRIGHT),
-	txt("Are you certain? You were tossing and turning all night.", KAGUYA.NEUTRAL),
+	txt("Are you certain?", KAGUYA.NEUTRAL),
 	txt("...Yeah. Just had a weird dream.", MOKOU.DEF),
 	
 	ntxt(0, KAGUYA.NEUTRAL, SPRITEPOS.HIDDEN),
@@ -284,13 +371,13 @@ function txt_end() {
 	txt("She told me to keep it a secret, but...", KANA.AWW),	
 	txt("What of her parents?", KAGUYA.AWW),
 	txt("Her \"parents\"--", KANA.DISTANT),
-	txt("I never saw them once.", KANA.AWW),
+	txt("I never saw them once.", KANA.SADSMILE),
 	txt("But... how?", KAGUYA.WAAH),
-	txt("Did they simply not live here?", KAGUYA.NEUTRAL),
-	txt("No, that wasn't it. I think... they were like me. Or, like what I was to my mom.", KANA.DISTANT),
-	txt("The monster in her closet.", KANA.DISTANT),
+	txt("Do they simply... not exist?", KAGUYA.NEUTRAL),
+	txt("No, they exist-- I think so, at least. Just... in the same way I used to exist.", KANA.DISTANT),
+	txt("...As the monster in her closet.", KANA.DISTANT),
 	txt("...", KAGUYA.WAAH),
-	
+		
 	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN),
 	ntxt(0, KANA.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, KAGUYA.NEUTRAL, SPRITEPOS.HIDDEN),
@@ -378,13 +465,12 @@ function txt_end() {
 	txt("And now, I must do the same."),
 	txt("Leave my cage, find happiness in new places, and relish the wonders of this impure Earth."),
 	txt("I'm sorry for leaving you so suddenly, but... this wasn't going to happen while I was still here."),
-	txt("I'll return when I feel truly alive again. When that will happen, I'm not certain. It may be in a year, ten years, or a thousand."),
-	txt("But no matter what, I will come back. And when I do, we'll all be so much happier for it."),
+//	txt("I'll return when I feel truly alive again. When that will happen, I'm not certain. It may be in a year, ten years, or a thousand."),
+//	txt("But no matter what, I will come back. And when I do, we'll all be so much happier for it."),
 	txt("Thank you all. For everything."),
+	txt("I'm sorry."),
 	ptxt(),
 	txt("Love, |w0030 #        The Little Rabbit Princess."),
-		
-	txt("#THE END", u, u, s_black, function() {textbox_set_type(global.textzpix)}),
 	
 	
 		

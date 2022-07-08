@@ -9,7 +9,7 @@ nu pattern_ext(function() {
 			ISAAC.y=90
 			
 			
-			var moonthingy = c_makeshooter(WIDTH/2, HEIGHT/2, 99999999, en.moon, new pattern(function() {
+			var earfthingy = c_makeshooter(WIDTH/2, HEIGHT/2, 99999999, en.earf, new pattern(function() {
 				c;
 				
 				
@@ -252,6 +252,6 @@ nu pattern_ext(function() {
 	textbox_create(txt_kagumokuend, global.textzpix);
 });
 
-nu shootman("moon", s_moon)
+nu shootman("earf", s_earf)
 
 

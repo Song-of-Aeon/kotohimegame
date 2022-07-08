@@ -13,7 +13,7 @@ function txt_kagumoku() {
 	ptxt(),
 	txt("This is a very biased view, of course. Only a regular human would think something like this."),
 	txt("Kana Anaberal may die from an accident or a particularly nasty spell, but she does not age."),
-	txt("And the Hourai Immortals-- Fujiwara no Mokou and Houraisan Kaguya-- really do have an eternity ahead of them."),
+	txt("And the two immortals-- Fujiwara no Mokou and Houraisan Kaguya-- really do have an eternity ahead of them."),
 	txt("To be honest... I can't tell if I envy or pity them."),
 	ptxt(),
 	
@@ -30,7 +30,7 @@ function txt_kagumoku() {
 	
 	//boom punchy impact frame and big BOOM fire sound effect
 	
-	ntxt(0, u, u, u, function() {music_set(mus.undertale)}),
+	ntxt(0, u, u, u, function() {music_set(mus.faito)}),
 	
 	txt("KAGUYAAAAA!", MOKOU.DEF, u, s_bambooday2, function() {textbox_set_type(global.textzpix)}),
 	txt("COME BACK HERE, YOU COWARD!", MOKOU.DEF),
@@ -354,8 +354,8 @@ function txt_kagumoku() {
 	
 	txt("Ooh, what about enemy attacks?", KANA.YAY, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("What are those?", ME.YAY, SPRITEPOS.MIDLEFT),
-	txt("You can fill up your gauge to throw a clone of yourself at the other player!", KANA.DEF),
-	txt("And the clone does a bunch of attacks that are even harder to dodge than your normal gauge attacks!", KANA.COCKY),
+	txt("You can fill up your gayge to throw a clone of yourself at the other player!", KANA.DEF),
+	txt("And the clone does a bunch of attacks that are even harder to dodge than your normal gayge attacks!", KANA.COCKY),
 	txt("But there can only be one clone at a time, so if you're being attacked by a clone, you can make a clone to make the enemy's clone go away!", KANA.DEF),
 	txt("You're a genius, Kana.", ME.SMUG),
 	txt("Oh, don't flatter me like that!", KANA.YAY),
@@ -413,7 +413,7 @@ function txt_kagumoku() {
 	txt("Thank you.", ME.TINYSMIRK),
 	txt("You're welcome.", KANA.YAY),
 	txt("Let's get this game done, okay?", KANA.WINKY),
-	txt("Let's.", ME.YAY),
+	txt("Let's.", ME.WINKY),
 	ntxt(0, KANA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(0, ME.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.keyboard)}),
 	
@@ -1225,10 +1225,8 @@ function txt_kagumoku() {
 	txt("When she disappeared, she left behind the Elixir of Immortality.", MOKOU.NEUTRAL),
 	txt("Long story short, I ended up in the wrong place at the wrong time... and stole it for myself.", MOKOU.SADSMILE),
 	txt("Ah, sorry. You don't want to hear all this sad stuff, do you?", MOKOU.NEUTRAL),
-	txt("It's fine, Mokou.", KANA.YAY),
-	txt("...", MOKOU.NEUTRAL),
-	txt("Besides Keine, I've never told anyone all this. Certainly not like this.", MOKOU.DEF),
-	txt("...Are you okay saying these things now?", KANA.AWW),
+	txt("I'm fine, Mokou.", KANA.YAY),
+	txt("...Though you don't have to tell us if it makes you sad.", KANA.AWW),
 	txt("Ah, don't worry. It's in the past now. Besides, Kaguya's certainly told you all this already.", MOKOU.YAY),
 	txt("She hasn't.", KANA.NEUTRAL),
 	txt("...", MOKOU.NEUTRAL),
@@ -1484,7 +1482,7 @@ function txt_kagumokuend() {
 	//MORE DESCRIPTION
 
 	txt("Despite all the insults and screams that had come from Mokou's lips... they were so soft."),
-	txt("And for the first time ever, I could truly feel her heartbeat. It felt so powerful, yet... oddly hollow."),
+	txt("And for the first time ever, I could truly feel her heartbeat. It was powerful, tender, and... tired."),
 	txt("A body that had not changed in over 1000 years now seemed unrecognizable."),
 	//MOAR DESCRIPTION
 	
@@ -1550,7 +1548,7 @@ function txt_kagumokuend() {
 	txt("I do not know how long we stayed there-- seconds, minutes, or even hours. But it did not matter. However long this moment may have lasted..."),
 	txt("It was forever."),
 	
-	txt("#END OF KAGUYAXMOKOU STORY |w300 ", u, u, s_black, function() {textbox_set_type(global.textzpix)}),
+	txt("#END OF KAGUYAXMOKOU STORY", u, u, s_black, function() {textbox_set_type(global.textzpix)}),
 	
 	
 	

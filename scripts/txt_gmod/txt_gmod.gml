@@ -19,7 +19,7 @@ function txt_gmod() {
 	txt("Your disposition is yet unsuited to it.", KAGUYA2.NORMAL),
 	txt("What do you... |a|w0020no |a|w0020way! You set the whole place to blow, even though you were inside?", KOTOHIME.NERVOUS, u, u, u, [se_null, se_null]),
 	txt("Don't you see?", KAGUYA2.NORMAL),
-	txt("When death becomes loses its permanence, it becomes symbiotic.", KAGUYA2.NORMAL),
+	txt("When death loses its permanence, it becomes symbiotic.", KAGUYA2.NORMAL),
 	txt("A suicide attack is just using a tool in one's arsenal.", KAGUYA2.NORMAL),
 	txt("How pragmatic...", KOTOHIME.NERVOUS),
 	

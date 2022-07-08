@@ -1,7 +1,7 @@
 function c_evidencegen(correctone, wrong, right) {
 	var dude = 0;
 	var guys = textchoice_make([
-		new choice("Police Dadge", function() {textbox_create(myscript, global.textcourt)}, "It's quite legitimate."),
+		new choice("Police Badge", function() {textbox_create(myscript, global.textcourt)}, "It's quite legitimate."),
 		new choice("Eientei", function() {textbox_create(myscript, global.textcourt)}, "An isolated manor that resides in the Bamboo Forest of the Lost.\nKaguya's home."),
 		new choice("Imperishable Night Incident", function() {textbox_create(myscript, global.textcourt)}, "An incident caused by Kaguya years ago.\nThe Earth was sealed off from the Moon."),
 		new choice("The Tale of the Bamboo-cutter", function() {textbox_create(myscript, global.textcourt)}, "A famous story that chronicles Kaguya's time on Earth,\nliving amongst humans."),

@@ -31,7 +31,7 @@ draw_set_font(ft_couriernew8);
 	
 	//string_copy(string(time/60), 0, 5)
 });*/
-if global.luying {
+if global.luying && global.spelltiming {
 	draw_text(x, y-55, string_copy(string(time/60), 0, 5));
 }
 draw_set_halign(fa_left);

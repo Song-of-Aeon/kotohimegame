@@ -12,3 +12,7 @@ function c_makeboss(archetype, patternorder=[SPELL.NON, SPELL.CARD], difficulty=
 	chump.sprite_index = archetype.sprite;
 	return chump;
 }
+
+
+among = ds_map_create();
+guy = among[?"trolls"];

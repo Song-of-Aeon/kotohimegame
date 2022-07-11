@@ -7,9 +7,9 @@ else{
 	spellAlpha = lerp(spellAlpha,0,0.1);
 }*/
 scount ++;
-
+surface_set_target(global.surfaces.bg);
 try{
-	surface_set_target(global.surfaces.bg);
+	
 	//if(spellAlpha < 0.9 && spellAlpha > 0.1 && patterns[currentpattern].type = SPELL.CARD){
 		//draw_clear(c_white);
 	//}
@@ -25,8 +25,9 @@ try{
 	//patterns[currentpattern].bg, 0, scount, scount);
 	patterns[currentpattern].draw();
 	draw_set_alpha(1);
-	surface_reset_target();
+	
 }
 catch(e){
 	log("boss predraw error !")
 }
+surface_reset_target();

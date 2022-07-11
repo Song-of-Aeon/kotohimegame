@@ -1,5 +1,5 @@
 if !created {
-	if patterns[currentpattern].type = SPELL.CARD{
+	if patterns[currentpattern].type = SPELL.CARD {
 		var spellname = instance_create(290, 340, o_spelltext);
 		spellname.name = patterns[currentpattern].name;
 		armor = 600;

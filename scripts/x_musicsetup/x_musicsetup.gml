@@ -20,6 +20,7 @@ nu song("maniacal wingman", "kotohime", [m_kotohime]);
 nu song("the ultimate eientei", "eientei", [m_eientei]);
 nu song("eienteinight", "eternight", [m_eternight]);
 nu song("vanishing dream", "vanishing", [m_vanishing]);
+nu song("kana sings", "sing", [m_sing]);
 nu song("epilogue", "epilogue", [m_epilogue]);
 
 nu song("bar fight", "undertale", [m_undertale]);
@@ -36,10 +37,10 @@ nu song("kaguya and mokou fight", "faito", [m_faito]);
 nu song("love is war - no intro", "lovewar", [m_lovewar]);
 nu song("moonkiss scene", "moonkiss", [m_moonkiss]);
 nu song("alone", "alone", [m_alone]);
+nu song("somewhere over the rainbow", "credits", [m_credits]);
 
 
 
-nu song("Where The Wind Blows", "windblows", [m_windblows], u, "by nerve");
 
 nu song("summerhill2", "summerhill2", [m_summer_hill2], u, "by taira komori");
 nu song("autmninsects3", "autmninsects3", [m_autmn_insects3], u, "by taira komori");

@@ -5,7 +5,16 @@ function txt_afterword() {
 	msg = msglang([
 	
 	
-	txt("CREDITS#LUYUU - WRITING, SOME CODING & ART#AEON - MOST OF THE CODING, GFX#TAMI - MUSIC#YUNEVII - ART#AQWA - ART#ANUMANIA - TECHNICAL SUPPORT#TAIRA KOMORI - SOUND EFFECTS#SPRONKLESSS - MORAL SUPPORT#YOU - PLAYER", u, u, s_stars, function() {music_set(mus.kotohime)}),
+	txt("CREDITS |w0128 |- ", u, u, s_stars, function() {music_set(mus.credits)}),
+	txt("#LUYUU - WRITING, SOME CODING & ART |w0128 |- "),
+	txt("AEON - MOST OF THE CODING, GFX |w0128 |- "),
+	txt("TAMI - MUSIC |w0128 |- "),
+	txt("YUNEVII - ART |w0128 |- "),
+	txt("AQWA - ART |w0128 |- "),
+	txt("ANUMANIA - TECHNICAL SUPPORT |w0128 |- "),
+	txt("TAIRA KOMORI - SOUND EFFECTS |w0128 |- "),
+	txt("SPRONKLESSS - UNUSED ART & MORAL SUPPORT |w0128 |- "),
+	txt("YOU - PLAYER"),
 
 	
 	
@@ -22,8 +31,8 @@ function txt_afterword() {
 	
 	ptxt(),
 	txt("As you may have been able to tell, the production was far from perfect."),
-	txt("Two of the artists on our team had to drop out before they could make much."),
-	txt("Most of the writing was done in the last two weeks-- the first two were spent reading official print works for research, and writing a big section that got thrown out because we didn't have the time to make art for it."),	
+	txt("One of the artists on our team dropped out before they could make much, and another had a *lot* of other things on their plate."),
+	txt("Most of the writing was done in the last two weeks-- the first two were spent reading official print works for research, and writing a big section that got thrown out because we didn't have time to make art for it."),	
 	txt("And pretty much all of the gameplay segment was made the last few days, featuring me trying to code patterns with Aeon's danmaku system even though I have virtually no knowledge of programming."),
 	txt("But overall, I'm happy with this."),
 	ptxt(),
@@ -32,6 +41,13 @@ function txt_afterword() {
 	txt("--Oh, yeah. In case you didn't know, there are two Visual Novels in this little project. One written by me, the other written by Aeon. They both star Kotohime and share much of the same art and music, but feature different stories, minigames, and casts."),
 	txt("Aeon's game is called The Endless and Kotohime. Go check it out if you haven't already."),
 	ptxt(),
+	txt("On a slightly more personal note... for this story, I really tried to make something emotionally resonant."),
+	txt("Focusing on aspects of Touhou that seem to often get underemphasized in fanworks, and a few things that just personally really matter to me."),
+	txt("No matter how amateurish it is, this story was made from the heart, and I hope that shows."),
+//	txt("Hopefully that can continue with future projects."),
+//	txt("It may sound lofty, but... I think my greatest dream is for someone to honestly tell me, \"Your work saved my life.\""),
+
+	ptxt(),		
 	txt("There's lots more I could say here, but in this case, I think less is more."),
 	txt("So... yeah."),
 	txt("Byebye."),

@@ -6,6 +6,7 @@ nu pattern_ext(function() {
 		ISAAC.y=240
 	}
 	
+			//screen size is 290/340
 	
 	
 	if ncm(42){
@@ -27,6 +28,12 @@ nu pattern_ext(function() {
 		c_shoot(322, sin(count/60)*40+225, 2.5, 180, bul.bluamulet, c_red);
 		c_shoot(322, sin(count/60)*40+275, 2.5, 180, bul.bluamulet, c_red);
 		c_shoot(322, sin(count/60)*40+325, 2.5, 180, bul.bluamulet, c_red);
+		
+		
+		
+		
+		
+		
 		
 		//c_shoot(322, sin((count+180)/60)*170+165, 2+random(1), 180, bul.smolerboolit, c_purple);
 

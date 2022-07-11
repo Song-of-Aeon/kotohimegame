@@ -56,42 +56,23 @@ nu pattern_ext(function() {
 				}
 			}
 			
-			}else{
-				if ncm(5) {
-					c_shoot(x, y, 6, 60, bul.bluamulet);
-					c_shoot(x, y, 6, 180, bul.bluamulet);
-					c_shoot(x, y, 6, 300, bul.bluamulet);
-					//c_shoot(x, y, 6, 45, bul.bluamulet);
-					//c_shoot(x, y, 6, 135, bul.bluamulet);
-					//c_shoot(x, y, 6, 225, bul.bluamulet);
-					//c_shoot(x, y, 6, 315, bul.bluamulet);
-				
-				
-			}
-			
-			}
-			}
-			
-			/*
 			if count > 4000{
-			if ncm(42){
-				
-					c_shoot(x+25, y, 2, point_me(), bul.daga);
-					c_shoot(x-25, y, 2, point_me(), bul.daga);					
+				if ncm(42){
+					c_shoot(x+25, y, 2, point_me(), bul.peenkboolit);
+					c_shoot(x-25, y, 2, point_me(), bul.peenkboolit);					
+				}
 			}
-			}
-			*/
 			
 			if count > 4800{
-			if ncm(30){
-			
-			
-			c_shoot(x, y+40, 6, point_me(), bul.ringu, u, function(){	
-			c
-				x = sin(count/60)*30+WIDTH/2;
-				y = cos(count/60)*30+HEIGHT/2;
-				if count = 400{
-				instance_destroy();
+				if ncm(30){
+					c_shoot(x, y+40, 6, point_me(), bul.bigerboolit, u, function(){	
+						c
+						x = sin(count/60)*30+WIDTH/2;
+						y = cos(count/60)*30+HEIGHT/2;
+						if count = 400{
+							instance_destroy();
+						}
+					});
 				}
 			}
 		})) //end of earth logic
@@ -120,13 +101,10 @@ nu pattern_ext(function() {
 				if count = 600{
 					instance_destroy();
 				}
-				
-				});
-				
-				orbit.escapedistance = 200
-				
-	var orbit = c_shoot(x, y, 6, point_me(), bul.porplboolit, u, function(){	
-		c
+			});
+			orbit.escapedistance = 200
+			var orbit = c_shoot(x, y, 6, point_me(), bul.peenkboolit, u, function(){	
+				c
 				x = sin(count/80)*80+o_boss.x;
 				y = cos(count/80)*20+o_boss.y
 				if count = 600{
@@ -144,22 +122,15 @@ nu pattern_ext(function() {
 			c_shoot(x, y, 2, seed.next(360), bul.gurinnaifu);
 		}
 		
-		
-		
-			if count > 3800{
-			
-			
-		//if count %260 >= 130{
-				
-			if ncm(128) {
-				
-				c_shootlaser(x, y, 0.5, point_me(), 12, 144, las.sunlazer, u, function() {spd+=0.1});
-				c_shootlaser(x, y, 0.5, point_me()+16, 8, 96, las.sunlazer, u, function() {spd+=0.1});
-				c_shootlaser(x, y, 0.5, point_me()-16, 8, 96, las.sunlazer, u, function() {spd+=0.1});
-								
-			}
-			/*
-			
+		if count > 3800{
+			if count %260 >= 130{
+				if ncm(69) {
+					c_shootlaser(x, y, 0.5, point_me(), 12, 144, las.sunlazer, u, function() {spd+=0.1});
+					c_shootlaser(x, y, 0.5, point_me()+16, 8, 96, las.blulazer, u, function() {spd+=0.1});
+					c_shootlaser(x, y, 0.5, point_me()-16, 8, 96, las.blulazer, u, function() {spd+=0.1});
+					c_shootlaser(x, y, 0.5, point_me()+32, 8, 96, las.lazerred, u, function() {spd+=0.1});
+					c_shootlaser(x, y, 0.5, point_me()-32, 8, 96, las.lazerred, u, function() {spd+=0.1});
+				}
 			}else{
 				if ncm(69) {
 					c_shootlaser(x, y, 0.5, point_me(), 12, 144, las.sunlazer, u, function() {spd+=0.1});
@@ -169,8 +140,6 @@ nu pattern_ext(function() {
 					c_shootlaser(x, y, 0.5, point_me()-32, 8, 96, las.blulazer, u, function() {spd+=0.1});									
 				}
 			}
-			*/
-			//}
 			/*
 			if ncm (35){		
 				c_shoot(-32, 25, 2, 0, bul.bluamulet, c_red);
@@ -198,11 +167,7 @@ nu pattern_ext(function() {
 		
 	}*/
 		
-		
-		
-	
-	
-}, 999999999, 101, "mokou", SPELL.CARD, DIFFICULTY.HARD, "...And So We Continued to\nStay on This Beautiful Earth", u, u, function() {
+}, 999999999, 101, "mokou", SPELL.CARD, DIFFICULTY.HARD, "...And So We Continued to Stay on This Beautiful Earth", u, u, function() {
 	textbox_create(txt_kagumokuend, global.textzpix);
 });
 

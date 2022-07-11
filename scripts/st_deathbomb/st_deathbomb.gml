@@ -31,7 +31,9 @@ function st_deathbomb() {
 		if !c_dohook(hooks.onhit) {
 			var osdhufji = max(takingdamage-defense,1);
 			STATS.damagetaken += osdhufji;
-			audio_play_sound(snd_hurt,0,false);
+			if !global.luying {
+				audio_play_sound(snd_hurt,0,false);
+			}
 			hp -= osdhufji //prevent def from healing, min shotpower is 1
 			inv = invtime*4;
 			c_screenshake(8, inv/2);

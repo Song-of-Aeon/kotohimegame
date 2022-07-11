@@ -68,8 +68,8 @@ nu pattern_ext(function() {
 						}
 					});
 				}
-			});
-		} //end of earth logic
+			}
+		}); //end of earth logic
 	}	
 
 	if count > 75 {

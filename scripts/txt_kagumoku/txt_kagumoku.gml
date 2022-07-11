@@ -56,7 +56,7 @@ function txt_kagumoku() {
 	txt("You insufferable piece of...", MOKOU.HMPH),
 	txt("The *fun* is in burning YOUR smug little face off!", MOKOU.REALLYMAD),
 	txt("And?", KAGUYA.YAY),
-	txt("Then skewering you with a stray bamboo shoot and ripping off your limbs one by one!", MOKOU.REALLYMAD),
+	txt("Then skewering you with a broken bamboo tree and ripping off your limbs one by one!", MOKOU.REALLYMAD),
 	txt("And?", KAGUYA.YAY),
 	txt("Then clawing out your esophagus and forcefeeding it to you,", MOKOU.REALLYMAD),
 	txt("Chopping your skull clean in two,", MOKOU.REALLYMAD),
@@ -181,18 +181,17 @@ function txt_kagumoku() {
 	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
 	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
 	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
-	ntxt(13, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
-	ntxt(150, u, u, u, function() {audio_play_sound(snd_falling2a, 0, false)}),
+	ntxt(130, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
 	ntxt(30, u, u, u, function() {audio_play_sound(snd_explosion2, 0, false)}),
 	
-	txt("...|w0150 |- ", u, u , s_crater),
+	txt("...|w0150 |- ", u, u , s_bambooupday),
 	ntxt(0, ME.WHAA, SPRITEPOS.LEFT),
 	ntxt(0, REISEN.UGGH, SPRITEPOS.CENTER),
 	ntxt(0070, KANA.SCARED, SPRITEPOS.RIGHT, s_bambooday),
 	txt("Are you absolutely sure we should be here!?", KANA.SCARED),
 	txt("...No.", REISEN.UGGH),
 	txt("I'm only risking my life here to make sure they don't do anything stupid.", REISEN.UGGH),
-	txt("Like when they burned down half the forest?", KANA.BRUH),
+	txt("Like when they almost caused a forest fire?", KANA.BRUH),
 	txt("Worse.", REISEN.UGGH),
 	ntxt(0, KANA.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
@@ -200,7 +199,7 @@ function txt_kagumoku() {
 	
 	
 	ntxt(0, u, u, u, function() {audio_play_sound(snd_hard_attack, 0, false)}),
-	txt("You absolutely--|w0030 |- ", KAGUYA.MAD, SPRITEPOS.RIGHT, s_crater, function() {audio_play_sound(snd_straight_punch, 0, false)}),
+	txt("You absolutely--|w0030 |- ", KAGUYA.MAD, SPRITEPOS.RIGHT, s_bambooupday, function() {audio_play_sound(snd_straight_punch, 0, false)}),
 	ntxt(0, KAGUYA.DEF, SPRITEPOS.HIDDEN),
 	txt("Smug little--|w0030 |- ", MOKOU.MAD, SPRITEPOS.MIDLEFT, u, function() {audio_play_sound(snd_kick2, 0, false)}),
 	ntxt(0, MOKOU.DEF, SPRITEPOS.HIDDEN),
@@ -253,8 +252,8 @@ function txt_kagumoku() {
 	txt("What kinda nonsense is that?", REISEN.UGGH),
 	txt("I'm serious, you two!", ME.POGQMARK),
 	txt("There's just something with them.", ME.HEHE),
-	txt("Something *between* them.", ME.HEHE),
-	txt("I think your romance sensors need some tuning.", KANA.BRUH),
+	txt("Something *between* them.", ME.WINKY),
+	txt("I think your romance sensors need some tuning.", KANA.COCKY),
 	txt("Please, just trust me on this one!", ME.POG),
 	txt("If we just set them up together, with the right situations, they might just become a couple!", ME.WINKYHEART),
 	txt("You are out of your mind.", REISEN.UGGH),
@@ -263,7 +262,9 @@ function txt_kagumoku() {
 	ntxt(0, KANA.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN),
-	///door slide sound effect
+	
+	ntxt(000, u, u, u, function() {audio_play_sound(snd_sliding_door_O, 0, false)}),
+	
 	txt("HEY EVERYONE, I'M HOOOOME!!!", KAGUYA.YAY, SPRITEPOS.CENTER, s_eienteihall1),
 	ntxt(0, KAGUYA.YAY, SPRITEPOS.HIDDEN),	
 	ntxt(0, ME.POG, SPRITEPOS.LEFT),
@@ -291,7 +292,7 @@ function txt_kagumoku() {
 	txt("See?", ME.SMUG, SPRITEPOS.MIDLEFT),
 	txt("...You may have a point.", REISEN.HEH),
 	txt("Not with them liking each other--!!", REISEN.MAD),
-	txt("But the sooner they stop those destructive battles, the better.", REISEN.HEH),
+	txt("But the sooner they stop those obnoxious battles, the better.", REISEN.HEH),
 	txt("Yay!", ME.YAY),
 	txt("What should we do about it, then?", KANA.DEF, SPRITEPOS.MIDRIGHT),
 	txt("They likely wouldn't be on board with anything clearly friendly, so we should set up something competitive.", REISEN.DEF),
@@ -303,7 +304,7 @@ function txt_kagumoku() {
 	
 	ptxt(),
 	
-	txt("Only a fortnight ago, I had stumbled across a strange device in Muenzuka. It didn't function, but I wished to discover its secrets.", u, u, u, function() {textbox_set_type(global.textnvl)}),
+	txt("Only a fortnight ago, I had stumbled across a strange device in The Mound of the Nameless. It didn't function, but I wished to discover its secrets.", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	txt("Kourindou was no help, so I brought it to Eirin to figure out what it did. In only twenty minutes, she had disassembled the device, put it back together, and written a comprehensive manual on its use."),
 	txt("It was called a peecee nintey ate.", u, u, s_peecee),
 	//beary funni but kinda doomb
@@ -410,10 +411,10 @@ function txt_kagumoku() {
 	txt("And even if I was sad at first... it's okay how things went back then. Like I said, I wouldn't have it any other way.", KANA.DEF),
 	
 	txt("...", ME.DISTANT),
-	txt("Thank you.", ME.TINYSMIRK),
-	txt("You're welcome.", KANA.YAY),
-	txt("Let's get this game done, okay?", KANA.WINKY),
-	txt("Let's.", ME.WINKY),
+	txt("Alright.", ME.NEUTRAL),
+	txt("...", KANA.AWW),
+	txt("L-let's get this game done, okay?", KANA.SADSMILE),
+	txt("Let's.", ME.SMUG),
 	ntxt(0, KANA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(0, ME.DEF, SPRITEPOS.HIDDEN, u, function() {music_set(mus.keyboard)}),
 	
@@ -428,7 +429,7 @@ function txt_kagumoku() {
 	txt("Yes!", ME.WINKY),
 	txt("Okay...", MOKOU.HMPH),
 	txt("And what do I get by subjecting myself to this?", MOKOU.HMPH),
-	txt("You get the games themselves!", ME.YAY),
+	txt("You get to play the games themselves!", ME.YAY),
 	txt("Why would I care about some toy?", MOKOU.BRUH),
 	txt("Because...", ME.HEHE),
 	ntxt(0, MOKOU.DEF, SPRITEPOS.HIDDEN),
@@ -445,10 +446,9 @@ function txt_kagumoku() {
 	txt("...Brick?", ME.NEUTRAL, SPRITEPOS.RIGHT),
 	txt("Yeah, the brick. I got it from this kid from the Outside World who found his way into the forest.", MOKOU.DEF),
 	txt("Funny one, he was. I could barely understand half his vocabulary.", MOKOU.NEUTRAL),
-	txt("I escorted him out, and he gave me this little grey brick as thanks.", MOKOU.YAY),
-	txt("He said something like... \"This gizmo's got some giga-epic retro games! It's totally fire!\"", MOKOU.DEF),
+	txt("I escorted him out, and he gave me this little grey brick as thanks. He said, \"This gizmo's got some giga-epic retro games! It's totally fire, dude!\"", MOKOU.DEF),
 	txt("It had this little screen with a bunch of characters on it, like a puppet show. But the crazy thing was, I could control the characters!", MOKOU.YAY),
-	txt("That thing gave me hours of fun for the whole day afterwards.", MOKOU.DEF),	
+	txt("That thing gave me tons of fun for the whole day afterwards.", MOKOU.DEF),	
 	txt("And then outta nowhere, it stopped working. The characters wouldn't appear anymore.", MOKOU.SADSMILE),
 	txt("Now I just use it as a paperweight.", MOKOU.SADSMILE),	
 	txt("Wow, that's amazing!", ME.POG),
@@ -460,19 +460,6 @@ function txt_kagumoku() {
 	txt("...", MOKOU.NEUTRAL),
 	txt("Deal.", MOKOU.DEF),
 	
-	/*
-	txt("Yay!", ME.YAY),
-	txt("Kaguya isn't here, is she?", MOKOU.BRUH),
-	txt("Nope! She's been taking a nap for seven hours.", ME.DEF),
-	txt("Well, since I'm the first one here,", MOKOU.DEF),
-	txt("How about I get in a liiiiiitle practice?", MOKOU.SMUG),
-	txt("Go ahead!", ME.YAY),
-	txt("Mokou surprised me with how willing she was. It seemed this game had intrigued her.", u, u, u, function() {textbox_set_type(global.textnvl)}),
-	txt("She was... quite terrible at it. But that was to be expected of someone who hadn't played a game before."),
-	txt("And as the hours went by, she rapidly improved. By the end, she knew the ins and outs of the game."),
-	txt("I made the thing, and she had become better than me."),
-	*/
-	
 	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),
 	ptxt(),	
@@ -482,7 +469,7 @@ function txt_kagumoku() {
 	txt("I quickly explained a little bit about the game to Kaguya and Mokou, for the sake of expedience."),
 	
 	ntxt(0, u, u, u, function() {music_set(mus.glossary)}),
-	txt("Ladies and ladies, welcome to the first ever CLASH OF THE MOON AND THE SUN!!", ME.YAY, SPRITEPOS.CENTER, s_eienteihall2, function() {textbox_set_type(global.textzpix)}),
+	txt("Ladies and bunnies, welcome to the first ever CLASH OF THE MOON AND THE SUN!!", ME.YAY, SPRITEPOS.CENTER, s_eienteihall2, function() {textbox_set_type(global.textzpix)}),
 	txt("An event where we make your undying wishes come true!", ME.WINKY),
 	ntxt(033, u, u, u, function() {audio_play_sound(snd_clapping_alone1, 0, false)}),
 	txt("We have gathered our two fine contestants here today for the greatest competition in the whole House of Eternity!", ME.DEF),
@@ -821,7 +808,7 @@ function txt_kagumoku() {
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(199, ME.DEF, SPRITEPOS.HIDDEN, s_black),
 	
-	txt("Ladies and ladies, welcome to the second ever CLASH OF THE MOON AND THE SUN!!", ME.YAY, SPRITEPOS.CENTER, s_eienteiroom1, function() {music_set(mus.glossary)}),
+	txt("Ladies and bunnies, welcome to the second ever CLASH OF THE MOON AND THE SUN!!", ME.YAY, SPRITEPOS.CENTER, s_eienteiroom1, function() {music_set(mus.glossary)}),
 	txt("An event where we make your undying wishes come true!", ME.WINKY),
 	ntxt(033, u, u, u, function() {audio_play_sound(snd_clapping_alone1, 0, false)}),
 	txt("We have gathered our two fine contestants here today for the second greatest competition in the whole House of Eternity!", ME.DEF),
@@ -1060,7 +1047,7 @@ function txt_kagumoku() {
 	txt("Huh, you're really good at this.", MOKOU.NEUTRAL, SPRITEPOS.MIDLEFT),
 	txt("Don't flatter me, Mokou. Your ball-rolling skills are simply flawed.", KAGUYA.FUFUFU, SPRITEPOS.MIDRIGHT),
 	txt("I expected more from you, to be quite honest.", KAGUYA.FUFUFU),	
-	txt("Come on, gimme a break! I haven't done this in 384 years!", MOKOU.MAD),
+	txt("Come on, gimme a break! I haven't done this in four-hundred fifty-four years!", MOKOU.MAD),
 	txt("Isn't this the same as creating fireballs?", KAGUYA.DEF),
 	txt("Not at all! Fire is far more malleable than this. For these, you need a different amount of pressure.", MOKOU.HMPH),
 	
@@ -1202,7 +1189,7 @@ function txt_kagumoku() {
 	txt("Yeah! I wouldn't even have any food in the oven in time!", KANA.DEF),
 	txt("\(You don't use an oven for yakitori...\)", MOKOU.NEUTRAL),
 	txt("Oh, speaking of. Princess, you reminded me of Kaguya back there with your dumb tricks.", MOKOU.HMPH),	
-	txt("You're lucky nothing important was on the line there, or at least five of your bones would be broken right now.", MOKOU.MAD),
+	txt("You're lucky nothing important was on the line there, or at least seventeen of your bones would be broken right now.", MOKOU.MAD),
 	txt("Ah.", ME.WHAA),
 	txt("Na-hah, I'm just joshin' ya!", MOKOU.YAY),
 	txt("It led to a win for me, so who am I to complain?", MOKOU.YAY),
@@ -1220,10 +1207,14 @@ function txt_kagumoku() {
 	txt("A nosy one, aren't you?", MOKOU.SMUG),
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.CENTER),
 	txt("...It wasn't anything she did. Just what she had.", MOKOU.SADSMILE),
-	txt("Back when she first came to Earth, everyone saw her as the ever-unattainable maiden. She tempted my father with her charms, until he wanted her more than anything.", MOKOU.SAD),
+	txt("Back when Kaguya first came to Earth, everyone saw her as the ever-unattainable maiden. High-ranking men throughout the land came to court her, but she rejected them all.", MOKOU.NEUTRAL),
 	//txt("And as a kid, I thought that if I gave my father what he wanted... he might want me.", MOKOU.SAD),
-	txt("When she disappeared, she left behind the Elixir of Immortality.", MOKOU.NEUTRAL),
-	txt("Long story short, I ended up in the wrong place at the wrong time... and stole it for myself.", MOKOU.SADSMILE),
+	txt("When she disappeared, she left behind her Elixir of Immortality as a parting gift for the Emperor of that time.", MOKOU.NEUTRAL),
+	txt("It's still kinda hard to believe that she could see eternal life as a gift, but that's the Lunatic Princess for ya.", MOKOU.SMUG),
+	txt("Long story short, I ended up in the wrong place at the wrong time, with the Elixir within my reach. And as a dumb kid, I wanted to live forever.", MOKOU.SADSMILE),
+	txt("By the time I drank the Elixir, Kaguya was already cooped up in that Shack of Eternity, cut out from the rest of the world.", MOKOU.SADSMILE),
+	txt("She didn't even know I existed until a couple centuries ago.", MOKOU.SADSMILE),
+	txt("In a sense, this eternal cage of mine is a product of her neglect and my innocent greed.", MOKOU.SAD),
 	txt("Ah, sorry. You don't want to hear all this sad stuff, do you?", MOKOU.NEUTRAL),
 	txt("I'm fine, Mokou.", KANA.YAY),
 	txt("...Though you don't have to tell us if it makes you sad.", KANA.AWW),
@@ -1236,19 +1227,16 @@ function txt_kagumoku() {
 	txt("...", KANA.AWW),
 	txt("I spent 300 years hating myself. I wanted to die, but that was impossible. So the next best thing was to keep myself hidden away, as a living mistake.", MOKOU.SAD),
 	txt("For 300 years, I hated the world, and took it out on everyone I came across. And when I stopped hating, I stopped caring. I existed without living.", MOKOU.SAD),
-	txt("Now, the one to hate helped cause this in the first place. What's more, she'll always be there.", MOKOU.NEUTRAL),
-	txt("Whether or not she's really at fault... I hate her.", MOKOU.SAD),
+	txt("Now, the one to hate is an immortal like me, someone who will always be there to keep me company. What's more, she helped cause this in the first place.", MOKOU.NEUTRAL),
+	txt("Whether or not this curse is her fault alone... I hate her.", MOKOU.SAD),
 	txt("I have to.", MOKOU.SADSMILE),
 	txt("And sure, maybe that hatred will turn into love someday.", MOKOU.DEF),
-	txt("Maybe I'll look at her one night and say a few stupid words, only to take them back a moment later.", MOKOU.DEF),
-	txt("Maybe once Keine passes away, Kaguya will find me crying alone.", MOKOU.NEUTRAL),
-	txt("For just one night, I'll forget who we are, and lose myself in her arms.", MOKOU.NEUTRAL),
-	txt("And the morning after, we'll separate, and live through hatred once again.", MOKOU.SAD),
-	txt("...", KANA.AWW),
-	txt("That sounds like a very sad love.", KANA.AWW),
+	txt("Maybe once Keine passes away, Kaguya will find me crying alone. For just one night, I'll forget who we are, say a few stupid words, and lose myself in her arms.", MOKOU.SADSMILE),
+	txt("But it'll be over before we know it. The morning after, we'll separate, and live through hatred once again.", MOKOU.SAD),
+	txt("...That sounds like a very sad love.", KANA.SADSMILE),
 	txt("It does.", MOKOU.SADSMILE),
 	txt("...", KANA.AWW),
-	txt("Does it have to be that way?", ME.NEUTRAL),
+	txt("Does it have to be that way?", ME.DISAPOINT),
 	txt("...", MOKOU.SAD),
 	txt("Beats me.", MOKOU.DEF),
 	
@@ -1316,6 +1304,8 @@ function txt_kagumoku() {
 	txt("Then I shall fight you to the best of my abilities!", KME.COCKY),
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
 	ntxt(200, MOKOU.DEF, SPRITEPOS.HIDDEN),
+	
+	
 	])endevent = function() {
 		c_removeitem(ITEMS.HIDE);
 		ISAAC.state = st_standard;
@@ -1325,11 +1315,14 @@ function txt_kagumoku() {
 	}
 	
 }
+
 function txt_kagumokumid1() {
 	msg = [
 	//boom bam wapposhy pow
 	//AKA FIRST SPELLCARD
 	
+	
+	txt("What's with you tonight? You're barely attacking me at all!", MOKOU.MAD, SPRITEPOS.LEFT, s_fullmoon1),
 	txt("What's with you tonight? You're barely attacking me at all!", MOKOU.MAD, SPRITEPOS.LEFT, s_fullmoon1, function() {c_additem(ITEMS.HIDE); global.gameplay = false;}),
 	txt("One thing first...", KME.DEF, SPRITEPOS.CENTER),
 	txt("I think you're smoking hot.", KME.FUFUFU),
@@ -1341,6 +1334,7 @@ function txt_kagumokumid1() {
 	txt("Don't you dare say it again.", MOKOU.MAD),
 	txt("I can handle that from *anyone* but you.", MOKOU.HMPH),
 	txt("...", KME.AWW),
+	
 	
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
 	ntxt(100, MOKOU.DEF, SPRITEPOS.HIDDEN),
@@ -1358,6 +1352,9 @@ function txt_kagumokumid1() {
 function txt_kagumokumid2() {
 	
 	msg = [
+	
+	
+	txt("Your attacks aren't doing anything.", KME.FUFUFU, SPRITEPOS.LEFT, s_fullmoon1),
 	txt("Your attacks aren't doing anything.", KME.FUFUFU, SPRITEPOS.LEFT, s_fullmoon1, function() {c_additem(ITEMS.HIDE); global.gameplay = false;}),
 	txt("Why don't we try something else?", KME.FUFUFU),
 	txt("I hear the Scarlet Devil is throwing a party soon. Why not attend it together?", KME.YAY),
@@ -1373,6 +1370,7 @@ function txt_kagumokumid2() {
 	
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
 	ntxt(100, MOKOU.DEF, SPRITEPOS.HIDDEN),
+	
 	]endevent = function() {
 		c_removeitem(ITEMS.HIDE);
 		ISAAC.state = st_standard;
@@ -1385,6 +1383,8 @@ function txt_kagumokumid3() {
 	//3RD SPELLCARD
 	//BACHOOM WAPISH SCHKWANACH
 	msg = [
+	
+	txt("For a while, I've wished to get to know you, Mokou. We've only interacted in these battles, but you have so many sides to you.", KME.DEF, SPRITEPOS.MIDLEFT, s_fullmoon1),
 	txt("For a while, I've wished to get to know you, Mokou. We've only interacted in these battles, but you have so many sides to you.", KME.DEF, SPRITEPOS.MIDLEFT, s_fullmoon1, function() {c_additem(ITEMS.HIDE); global.gameplay = false;}),
 	txt("I want to see and understand you as a person.", KME.YAY),
 	txt("...", MOKOU.LOVEYSAD, SPRITEPOS.MIDRIGHT),
@@ -1394,12 +1394,13 @@ function txt_kagumokumid3() {
 	txt("The distinction between you and I was arbitrary from the start. I kept the pretense up for the sake of tradition, but...", KME.AWW),
 	txt("I'm a human, just like you.", KME.LOVEY),
 	txt("...I see.", MOKOU.SAD),
-	txt("I spent all these years cooped up inside a cage of my own making. But now that I have finally gone out into this \"impure\" Earth...", KME.DEF),
+	txt("I spent all these centuries inside a cage of my own making. But now that I have finally gone out into this \"impure\" Earth...", KME.DEF),
 	txt("It's better than I could've imagined.", KME.YAY),
 	txt("And you're the most beautiful part of it.", KME.LOVEY),
 		
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
 	ntxt(100, MOKOU.DEF, SPRITEPOS.HIDDEN),	
+	
 	
 	]endevent = function() {
 		c_removeitem(ITEMS.HIDE);
@@ -1413,18 +1414,25 @@ function txt_kagumokumid4() {
 	//4TH SPELLCARD
 	//BACHIKUUUU
 		msg = [
+	
+	ntxt(0, KME.WAAH, SPRITEPOS.RIGHT, s_fullmoon1),
 	ntxt(0, KME.WAAH, SPRITEPOS.RIGHT, s_fullmoon1, function() {c_additem(ITEMS.HIDE); global.gameplay = false;}),
 	txt("Please, Kaguya...", MOKOU.LOVEYSAD, SPRITEPOS.LEFT),
 	txt("I can't.", MOKOU.LOVEYSAD),
-	txt("Do you know how much time I spent in isolation, or being chased, or in constant battles?", MOKOU.LOVEYSAD),
+	txt("Do you know how much time I spent in isolation, or being chased, or in painful battles?", MOKOU.LOVEYSAD),
 	txt("Too much. Far too much.", MOKOU.SAD),
 	txt("The cycle of death and rebirth will never stop, no matter how much I want it to.", MOKOU.SAD),
 	txt("And it was all because of you!", MOKOU.REALLYMAD),
 	txt("I know.", KME.AWW),
 	txt("I know, and I'm sorry.", KME.WAAH),
-	txt("Sorry for keeping the Elixir of Immortality and throwing it away so recklessly.", KME.WAAH),
+	ntxt(0, MOKOU.SAD, SPRITEPOS.LEFT),
+	txt("Sorry for acting so carelessly with the Elixir of Immortality.", KME.WAAH),
 	txt("Sorry for hiding myself away from the consequences.", KME.WAAH),
 	txt("Sorry for leaving you all alone.", KME.CRY),
+	txt("If there's anything that can still be done to mend your wounds, make you even slightly happier...", KAGUYA.CRY),
+	txt("I wish for nothing more than to make it a reality.", KAGUYA.CRY),
+	txt("...", MOKOU.SAD),
+	
 	]
 	endevent = function() {
 		c_removeitem(ITEMS.HIDE);
@@ -1434,17 +1442,22 @@ function txt_kagumokumid4() {
 		c_makeboss(global.bosses.mokou, [SPELL.CARD]);
 	}
 }
+
+
 	//FINAL SPELLCARD
 	//TERIYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 function txt_kagumokuend() {
 	msg = [
+	
+	
+	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN, s_fullmoon1),
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN, s_fullmoon1, function() {c_additem(ITEMS.HIDE); global.gameplay = false;}),
 	ntxt(100, MOKOU.DEF, SPRITEPOS.HIDDEN),	
 	
 	txt("Kaguya...", MOKOU.LOVEYSAD, SPRITEPOS.MIDLEFT),
 	txt("Mokou, I know.", KME.AWW, SPRITEPOS.MIDRIGHT),
 	txt("I know we've started off on a terrible foot, and that you have every reason to despise me.", KME.AWW),
-	txt("I know you have gone through centuries of living, with all the memories and experience that comes with.", KME.AWW),
+	txt("I know you have gone through centuries of living, with all the memories and experience that comes with them.", KME.AWW),
 	txt("I know that I have spent far too long in one place, too afraid to leave.", KME.AWW),
 	txt("But at the end of the day, we're both children!", KME.LOVEY),
 	txt("We can still grow, we can still change! We have the whole world ahead of us, just waiting to be seen!", KME.AWW),
@@ -1473,15 +1486,15 @@ function txt_kagumokuend() {
 	txt("Kaguya--", MOKOU.SADSMILE),
 	txt("I had no idea you could be so amazing!", MOKOU.CRYLAUGH),
 	txt("...", KME.AWW),
-	txt("You're right... it's time for a change.", MOKOU.DEF),
-	txt("In 1300 years, I've lived countless lives. Most of them were bitter, lonely. They came and went, and I wanted nothing more than to end it all.", MOKOU.SADSMILE),
+	txt("You're right-- it's time for a change.", MOKOU.DEF),
+	txt("In thirteen-hundred years, I've lived countless lives. Most of them were bitter, lonely. They came and went, and I wanted nothing more than to end it all.", MOKOU.SADSMILE),
 	txt("But now, I don't feel that way. If only for a little longer, I want to cherish this life. ", MOKOU.DEF),	
-	txt("...The life I'm starting with you.", MOKOU.LOVEY),
+	txt("...The life we're starting together.", MOKOU.LOVEY),
 	txt("Mokou...", KME.LOVEY),
 	txt("...", MOKOU.SADSMILE),
-	txt("Can I kiss you?", MOKOU.LOVEY),
+	txt("Can I kiss you?", MOKOU.DEF),
 	txt("...", KME.FUFUFU),
-	txt("Not before I kiss you.", KME.FUFUFU),
+	txt("How about I kiss you first?", KME.FUFUFU),
 	
 	
 	//CG OR BIG OL DESCRIPTION OF KISS GOES HERE
@@ -1493,15 +1506,15 @@ function txt_kagumokuend() {
 	//MORE DESCRIPTION
 
 	txt("Despite all the insults and screams that had come from Mokou's lips... they were so soft."),
-	txt("And for the first time ever, I could truly feel her heartbeat. It was powerful, tender, and... tired."),
-	txt("A body that had not changed in over 1000 years now seemed unrecognizable."),
+	txt("And for the first time ever, I could truly feel her heartbeat. It felt so... tired."),
+	txt("Mokou's body-- one that had not changed in over a thousand years-- was now unrecognizably tender."),
 	//MOAR DESCRIPTION
 	
 	ptxt(),
 	txt("Mokou seemed stiff at first, as if she didn't know how to properly move."),
 	txt("...Not to say that I knew what I was doing either."),
 	txt("For a moment my hands searched for a proper place to stay, before I settled on wrapping my arms around her waist."),
-	txt("Mokou laid a hand on my chest and another on my shoulder, and I simply let my fingers run through her silky hair-- the hair that, only a month ago, I would want to rip off her scalp."),
+	txt("Mokou laid one hand on my chest and another on my shoulder, and I simply let my fingers run through her silky hair."),
 	
 	ptxt(),
 	txt("We settled and then stayed there, leaning into each other more and more."),
@@ -1520,19 +1533,18 @@ function txt_kagumokuend() {
 	txt("But I kept hold of Mokou's hand-- soft, yet calloused from millions of invisible wounds."),
 	
 	txt("...", MOKOU.LOVEYSAD, u, u, function() {textbox_set_type(global.textzpix)}),
-	txt("Is this love?", MOKOU.LOVEYSAD),
+	txt("I'm... scared, honestly.", MOKOU.LOVEYSAD),
+	txt("I can't tell if this is really love, you know?", MOKOU.LOVEYSAD),
 	txt("It feels like it, but...", MOKOU.LOVEYSAD),
-	txt("What if it's just desperation? What if we're just two fools who are scared of being lonely forever?", MOKOU.SADSMILE),
+	txt("What if it's just desperation? What if we're just clinging onto each other because we don't want to be lonely forever?", MOKOU.SADSMILE),
 	txt("...Maybe so.", KME.AWW),
-	txt("But whether or not that's where it started...", KME.AWW),
-	txt("No matter the origin, I believe we can learn to truly love.", KME.YAY),
+	txt("But whether or not that's where it started, I believe we can learn to truly love.", KME.YAY),
 	txt("In a way, we're lucky. We have all of eternity to figure it out.", KME.FUFUFU),
 	txt("Guess so.", MOKOU.YAY),
 	txt("...", MOKOU.LOVEYSAD),	
 	ntxt(0, KME.AWW, SPRITEPOS.MIDRIGHT),
-	txt("I'm... scared, honestly.", MOKOU.LOVEYSAD),
-	txt("This feeling might seem like forever, but... forever is only a moment.", MOKOU.NEUTRAL),
-	txt("We'll change and change until we're unrecognizable, and drift apart.", MOKOU.NEUTRAL),
+	txt("Even then... are you sure our true love will last forever?", MOKOU.SAD),
+	txt("Sooner or later, we'll change, become strangers, and drift apart.", MOKOU.NEUTRAL),
 	txt("Maybe we'll get back together, then be back at each other's throats within a few hundred years.", MOKOU.NEUTRAL),
 	txt("Friends will come and go, and we'll have no choice but to move on. We'll eventually see the world fall apart before our eyes.", MOKOU.SAD),
 	txt("And when it's all over, it'll only be us, floating in an endless void and losing our minds.", MOKOU.SAD),
@@ -1556,12 +1568,16 @@ function txt_kagumokuend() {
 	txt("But in the back of my mind, I knew no words would be enough-- all I could do was return the favor."),
 	txt("So I hugged Mokou as tight as I could, and cried with all my heart."),
 	ptxt(),
-	txt("I do not know how long we stayed there-- seconds, minutes, or even hours. But it did not matter. However long this moment may have lasted..."),
+	txt("I do not know how long we stayed there-- maybe minutes, maybe hours. But it did not matter. However long this moment may have lasted..."),
 	txt("It was forever."),
 	
-	txt("#END OF KAGUYAXMOKOU STORY", u, u, s_black, function() {textbox_set_type(global.textzpix)}),
+	ntxt(0099, u, u, s_black),
+	
+	txt("#END OF LATTER PART", u, u, u, function() {textbox_set_type(global.textzpix)}),
 	
 	
+
+
 	
 	
 	]
@@ -1572,9 +1588,9 @@ function txt_kagumokuend() {
 		file_text_close(dude);
 	};
 	
+	
 	//endevent = textbox_create(txt_end, global.textzpix, false);
 }
-
 
 
 

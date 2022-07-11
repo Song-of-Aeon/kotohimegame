@@ -53,6 +53,9 @@ nu talksprite("JDGMOKU", "me", z++);
 nu talksprite("JDGKAGU", "me", z++);
 nu talksprite("JDGALL", "me", z++);
 
+
+
+
 #macro KME global.textguy[?" me "]
 nu chardata(" Me ", s_kaguya, se_null, .75);
 var z=0;
@@ -76,6 +79,18 @@ nu talksprite("CRYSMILE", " me ", z++);
 nu talksprite("LOVEY", " me ", z++);
 
 
+
+#macro KANAUNK global.textguy[?"???"]
+nu chardata("???", s_kanahat, se_null, .75);
+var z=0;
+nu talksprite("DEF", "???", z++);
+nu talksprite("AWW", "???", z++);
+nu talksprite("YAY", "???", z++);
+nu talksprite("WINKY", "???", z++);
+nu talksprite("MAD", "???", z++);
+nu talksprite("COCKY", "???", z++);
+nu talksprite("NEUTRAL", "???", z++);
+nu talksprite("SCARED", "???", z++);
 
 
 #macro REIMU global.textguy[?"reimu"]

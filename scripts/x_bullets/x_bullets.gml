@@ -16,10 +16,12 @@ nu bullet("mycircle", s_bulletcircle, 10, true, true, true, 1);
 
 nu bullet("smolshot", s_bullet, 1, true, false, false, 1);
 nu bullet("bigerboolit", s_bigerboolit, 1, true, false, false, 1);
+nu bullet("ringu", s_ringu, 1, true, false, false, 1);
 nu bullet("smolerboolit", s_smolerboolit, 1, true, false, false, 1);
 nu bullet("bluboolit", s_bluboolit, 1, true, false, false, 1);
 nu bullet("oringboolit", s_oringboolit, 1, true, false, false, 1);
 nu bullet("peenkboolit", s_peenkboolit, 1, true, false, false, 1);
+nu bullet("porplboolit", s_porplboolit, 1, true, false, false, 1);
 nu bullet("naifu", s_naifu, 1, true, false, false, 1);
 nu bullet("blunaifu", s_blunaifu, 1, true, false, false, 1);
 nu bullet("gurinnaifu", s_gurinnaifu, 1, true, false, false, 1);

@@ -1317,7 +1317,7 @@ function txt_kagumoku() {
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
 	ntxt(200, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	])endevent = function() {
-		c_getitembyid(ITEMS.UNDERTALE).battling = true;
+		c_removeitem(ITEMS.HIDE);
 		global.spells[DIFFICULTY.HARD].mokou = [global.spellnames[?"Cycle of Death and Rebirth"]];
 		c_makeboss(global.bosses.mokou, [SPELL.CARD]);
 	}
@@ -1328,7 +1328,7 @@ function txt_kagumokumid1() {
 	//boom bam wapposhy pow
 	//AKA FIRST SPELLCARD
 	
-	txt("What's with you tonight? You're barely attacking me at all!", MOKOU.MAD, SPRITEPOS.LEFT, s_fullmoon1),
+	txt("What's with you tonight? You're barely attacking me at all!", MOKOU.MAD, SPRITEPOS.LEFT, s_fullmoon1, function() {c_additem(ITEMS.HIDE)}),
 	txt("One thing first...", KME.DEF, SPRITEPOS.CENTER),
 	txt("I think you're smoking hot.", KME.FUFUFU),
 	txt("Wow. Never heard that one before.", MOKOU.HMPH),
@@ -1342,8 +1342,9 @@ function txt_kagumokumid1() {
 	
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
 	ntxt(100, MOKOU.DEF, SPRITEPOS.HIDDEN),
-	];endevent = function() {
-		c_getitembyid(ITEMS.UNDERTALE).battling = true;
+	];
+	endevent = function() {
+		c_removeitem(ITEMS.HIDE);
 		global.spells[DIFFICULTY.HARD].mokou = [global.spellnames[?"Waltz of the Moon and Sun"]];
 		c_makeboss(global.bosses.mokou, [SPELL.CARD]);
 	}
@@ -1353,7 +1354,7 @@ function txt_kagumokumid1() {
 function txt_kagumokumid2() {
 	
 	msg = [
-	txt("Your attacks aren't doing anything.", KME.FUFUFU, SPRITEPOS.LEFT, s_fullmoon1),
+	txt("Your attacks aren't doing anything.", KME.FUFUFU, SPRITEPOS.LEFT, s_fullmoon1, function() {c_additem(ITEMS.HIDE)}),
 	txt("Why don't we try something else?", KME.FUFUFU),
 	txt("I hear the Scarlet Devil is throwing a party soon. Why not attend it together?", KME.YAY),
 	txt("That just sounds like a date.", MOKOU.HMPH, SPRITEPOS.RIGHT),
@@ -1369,7 +1370,7 @@ function txt_kagumokumid2() {
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
 	ntxt(100, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	]endevent = function() {
-		c_getitembyid(ITEMS.UNDERTALE).battling = true;
+		c_removeitem(ITEMS.HIDE);
 		global.spells[DIFFICULTY.HARD].mokou = [global.spellnames[?"1000 Years of Hatred"]];
 		c_makeboss(global.bosses.mokou, [SPELL.CARD]);
 	}
@@ -1378,7 +1379,7 @@ function txt_kagumokumid3() {
 	//3RD SPELLCARD
 	//BACHOOM WAPISH SCHKWANACH
 	msg = [
-	txt("For a while, I've wished to get to know you, Mokou. We've only interacted in these battles, but you have so many sides to you.", KME.DEF, SPRITEPOS.MIDLEFT, s_fullmoon1),
+	txt("For a while, I've wished to get to know you, Mokou. We've only interacted in these battles, but you have so many sides to you.", KME.DEF, SPRITEPOS.MIDLEFT, s_fullmoon1, function() {c_additem(ITEMS.HIDE)}),
 	txt("I want to see and understand you as a person.", KME.YAY),
 	txt("...", MOKOU.LOVEYSAD, SPRITEPOS.MIDRIGHT),
 	txt("S-stop lying. It's not like you see us as equals-- you keep calling me a \"foolish earthling\" every other blow.", MOKOU.HMPH),
@@ -1395,7 +1396,7 @@ function txt_kagumokumid3() {
 	ntxt(100, MOKOU.DEF, SPRITEPOS.HIDDEN),	
 	
 	]endevent = function() {
-		c_getitembyid(ITEMS.UNDERTALE).battling = true;
+		c_removeitem(ITEMS.HIDE);
 		global.spells[DIFFICULTY.HARD].mokou = [global.spellnames[?"Loved Ones Passing Us By"]];
 		c_makeboss(global.bosses.mokou, [SPELL.CARD]);
 	}
@@ -1404,7 +1405,7 @@ function txt_kagumokumid4() {
 	//4TH SPELLCARD
 	//BACHIKUUUU
 		msg = [
-	ntxt(0, KME.WAAH, SPRITEPOS.RIGHT, s_fullmoon1),
+	ntxt(0, KME.WAAH, SPRITEPOS.RIGHT, s_fullmoon1, function() {c_additem(ITEMS.HIDE)}),
 	txt("Please, Kaguya...", MOKOU.LOVEYSAD, SPRITEPOS.LEFT),
 	txt("I can't.", MOKOU.LOVEYSAD),
 	txt("Do you know how much time I spent in isolation, or being chased, or in constant battles?", MOKOU.LOVEYSAD),
@@ -1418,7 +1419,7 @@ function txt_kagumokumid4() {
 	txt("Sorry for leaving you all alone.", KME.CRY),
 	]
 	endevent = function() {
-		c_getitembyid(ITEMS.UNDERTALE).battling = true;
+		c_removeitem(ITEMS.HIDE);
 		global.spells[DIFFICULTY.HARD].mokou = [global.spellnames[?"...And So We Continued to Stay on This Beautiful Earth"]];
 		c_makeboss(global.bosses.mokou, [SPELL.CARD]);
 	}
@@ -1427,7 +1428,7 @@ function txt_kagumokumid4() {
 	//TERIYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 function txt_kagumokuend() {
 	msg = [
-	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN, s_fullmoon1),
+	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN, s_fullmoon1, function() {c_additem(ITEMS.HIDE)}),
 	ntxt(100, MOKOU.DEF, SPRITEPOS.HIDDEN),	
 	
 	txt("Kaguya...", MOKOU.LOVEYSAD, SPRITEPOS.MIDLEFT),

@@ -220,13 +220,13 @@ function txt_end() {
 
 	txt("Sorry, I'm... really tired right now.", ME.NEUTRAL, SPRITEPOS.LEFT),
 	txt("Alright.", MOKOU.SMUG),
-	txt("
+	/*txt("
 	
 	txt("Maybe you're right, though.
 	
 	txt("I'll have to think about it
 	
-	txt("Oh, in the meantime, let's make sure we do those steps just in case.", MOKOU.
+	txt("Oh, in the meantime, let's make sure we do those steps just in case.", MOKOU.*/
 	txt("Huh?", ME.NEUTRAL),
 	txt("Ya know, those rituals that bind you to the House of Eternity. That's what your kind needs when they lose their old home, right?", MOKOU.NEUTRAL),
 	txt("Mokou, what are you talking about?", ME.DEF),
@@ -277,7 +277,7 @@ function txt_end() {
 	
 	
 	
-	txt("f
+	//txt("f
 	
 	
 	

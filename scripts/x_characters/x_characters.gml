@@ -89,7 +89,7 @@ global.chara[?"chiyuri"] = {
 		}
 	},
 	sprite: s_cforward,
-	startingitems: [ITEMS._STATS, ITEMS.FOCUS, ITEMS._CONSOLE,
+	startingitems: [ITEMS._STATS, ITEMS.FOCUS,
 	ITEMS.KAGUYAA,
 	],
 	name: "Kaguya",

@@ -49,7 +49,7 @@ function txt_kagumoku() {
 	ntxt(0, ME.NEUTRAL, SPRITEPOS.HIDDEN),
 	ntxt(0, REISEN.DEF, SPRITEPOS.HIDDEN),
 	
-	txt("Oh Mokou, I can't truly participate yet. Your attacks weren't *exciting* enough.", KAGUYA.FUFUFU, SPRITEPOS.LEFT, s_bambooday2, function() {textbox_set_type(global.textzpix)}),
+	txt("Oh Mokou, I can't truly participate yet. Your attacks weren't *exciting* enough.", KAGUYA.SMUG, SPRITEPOS.LEFT, s_bambooday2, function() {textbox_set_type(global.textzpix)}),
 	txt("What the hell are you talking about!?", MOKOU.HMPH, SPRITEPOS.RIGHT),
 	txt("I've kicked you so hard your whole body went flying through three dozen trees, and thrown seventy-two fireballs at you!", MOKOU.MAD),
 	txt("Oh yes, those were very violent and painful. But I haven't been seeing the fun yet~~!", KAGUYA.FUFUFU),
@@ -516,7 +516,7 @@ function txt_kagumoku() {
 	txt("That has never happened!", MOKOU.HMPH),
 	txt("Really? It happened just last month.", KAGUYA.DEF),
 	txt("While I was trying to *kill you!* I just happened to burn off all your clothes by accident!", MOKOU.MAD),
-	txt("That didn't make your cheeks any less red!", KAGUYA.WINKY),
+	txt("That didn't make your cheeks any less red!", KAGUYA.SMUG),
 	txt("I was on fire too!", MOKOU.REALLYMAD),
 	
 	txt("Are you ready!?", ME.DEF, SPRITEPOS.LEFT),
@@ -832,7 +832,7 @@ function txt_kagumoku() {
 	txt("Yakitori.", MOKOU.YAY, SPRITEPOS.LEFT),
 	txt("Fufufu... Grilled chicken on a stick? Mokou, how unambitious.", KAGUYA.FUFUFU, SPRITEPOS.RIGHT),
 	txt("Oh yeah? Then what's your item?", MOKOU.HMPH),
-	txt("Chocolate-chip cookies!", KAGUYA.WINKY),
+	txt("Chocolate-chip cookies!", KAGUYA.COCKY),
 	txt("*Wow.*", MOKOU.SMUG),
 	txt("What is that look for? They are a high-class delicacy overseas.", KAGUYA.DEF),
 
@@ -1322,7 +1322,6 @@ function txt_kagumokumid1() {
 	//AKA FIRST SPELLCARD
 	
 	
-	txt("What's with you tonight? You're barely attacking me at all!", MOKOU.MAD, SPRITEPOS.LEFT, s_fullmoon1),
 	txt("What's with you tonight? You're barely attacking me at all!", MOKOU.MAD, SPRITEPOS.LEFT, s_fullmoon1, function() {c_additem(ITEMS.HIDE); global.gameplay = false;}),
 	txt("One thing first...", KME.DEF, SPRITEPOS.CENTER),
 	txt("I think you're smoking hot.", KME.FUFUFU),
@@ -1354,7 +1353,6 @@ function txt_kagumokumid2() {
 	msg = [
 	
 	
-	txt("Your attacks aren't doing anything.", KME.FUFUFU, SPRITEPOS.LEFT, s_fullmoon1),
 	txt("Your attacks aren't doing anything.", KME.FUFUFU, SPRITEPOS.LEFT, s_fullmoon1, function() {c_additem(ITEMS.HIDE); global.gameplay = false;}),
 	txt("Why don't we try something else?", KME.FUFUFU),
 	txt("I hear the Scarlet Devil is throwing a party soon. Why not attend it together?", KME.YAY),
@@ -1384,7 +1382,6 @@ function txt_kagumokumid3() {
 	//BACHOOM WAPISH SCHKWANACH
 	msg = [
 	
-	txt("For a while, I've wished to get to know you, Mokou. We've only interacted in these battles, but you have so many sides to you.", KME.DEF, SPRITEPOS.MIDLEFT, s_fullmoon1),
 	txt("For a while, I've wished to get to know you, Mokou. We've only interacted in these battles, but you have so many sides to you.", KME.DEF, SPRITEPOS.MIDLEFT, s_fullmoon1, function() {c_additem(ITEMS.HIDE); global.gameplay = false;}),
 	txt("I want to see and understand you as a person.", KME.YAY),
 	txt("...", MOKOU.LOVEYSAD, SPRITEPOS.MIDRIGHT),
@@ -1415,7 +1412,6 @@ function txt_kagumokumid4() {
 	//BACHIKUUUU
 		msg = [
 	
-	ntxt(0, KME.WAAH, SPRITEPOS.RIGHT, s_fullmoon1),
 	ntxt(0, KME.WAAH, SPRITEPOS.RIGHT, s_fullmoon1, function() {c_additem(ITEMS.HIDE); global.gameplay = false;}),
 	txt("Please, Kaguya...", MOKOU.LOVEYSAD, SPRITEPOS.LEFT),
 	txt("I can't.", MOKOU.LOVEYSAD),
@@ -1450,7 +1446,6 @@ function txt_kagumokuend() {
 	msg = [
 	
 	
-	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN, s_fullmoon1),
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN, s_fullmoon1, function() {c_additem(ITEMS.HIDE); global.gameplay = false;}),
 	ntxt(100, MOKOU.DEF, SPRITEPOS.HIDDEN),	
 	

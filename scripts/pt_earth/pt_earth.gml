@@ -39,18 +39,12 @@ nu pattern_ext(function() {
 						c_shoot(x, y, 6, 120, bul.smolerboolit);
 						c_shoot(x, y, 6, 240, bul.smolerboolit);
 						c_shoot(x, y, 6, 360, bul.smolerboolit);
-						//c_shoot(x, y, 6, 270, bul.smolerboolit);
-						//c_shoot(x, y, 6, 90, bul.smolerboolit);
 					}
 				} else {
 					if ncm(5) {
 						c_shoot(x, y, 6, 60, bul.bluamulet);
 						c_shoot(x, y, 6, 180, bul.bluamulet);
 						c_shoot(x, y, 6, 300, bul.bluamulet);
-						//c_shoot(x, y, 6, 45, bul.bluamulet);
-						//c_shoot(x, y, 6, 135, bul.bluamulet);
-						//c_shoot(x, y, 6, 225, bul.bluamulet);
-						//c_shoot(x, y, 6, 315, bul.bluamulet);
 					}
 			
 				}
@@ -74,8 +68,8 @@ nu pattern_ext(function() {
 						}
 					});
 				}
-			}
-		})) //end of earth logic
+			});
+		} //end of earth logic
 	}	
 
 	if count > 75 {
@@ -169,7 +163,7 @@ nu pattern_ext(function() {
 		
 }, 999999999, 101, "mokou", SPELL.CARD, DIFFICULTY.HARD, "...And So We Continued to Stay on This Beautiful Earth", u, u, function() {
 	textbox_create(txt_kagumokuend, global.textzpix);
-});
+}
 
 nu shootman("earf", s_earf)
 

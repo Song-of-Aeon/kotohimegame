@@ -338,14 +338,14 @@ function txt_begin() {
 	txt("Powers of insanity won't work on a being born from insanity.", KAGUYA.FUFUFU),
 	txt("Ah--|w0030 I'm sorry, Princess.", REISEN.DEF),
 	txt("I should've shot them instead.", REISEN.DEF),
-	txt("Please, you must not be so rude to our \"friends!\"", KAGUYA.YAY),
+	txt("Please, you must not be so rude to our \"friends!\"", KAGUYA.DEF),
 	
 	ntxt(u, REISEN.DEF, SPRITEPOS.HIDDEN),
 	ntxt(u, KANAHAT.NEUTRAL, SPRITEPOS.LEFT),
 	ntxt(u, ME.NEUTRAL, SPRITEPOS.RIGHT),
 	
 	
-	txt("This red-haired girl has been dear to me ever since she stumbled upon our abode.", KAGUYA.DEF),
+	txt("This red-haired girl has been dear to me ever since she stumbled upon our abode.", KAGUYA.YAY),
 	txt("And despite being of the *superior* Lunarian race, I somedays desire visits from earthlings.", KAGUYA.DEF),
 	//find a way to do italics or do somethin else	
 	txt("For in a place where time stands still, the only thing that grows is boredom. Even an earthling princess like you should understand that.", KAGUYA.FUFUFU),
@@ -356,14 +356,14 @@ function txt_begin() {
 	txt("Oh, don't be so scared, little ghost! You won't be treated differently from any other earthling.", KAGUYA.YAY),
 	txt("For some reason, that doesn't raise my spirits at all...", KANAHAT.SCARED),
 	
-	txt("Now, my \"friends.\" Are you ready to undertake my impossible requests?", KAGUYA.DEF),
+	txt("Now, my \"friends.\" Are you ready to undertake my impossible requests?", KAGUYA.SMUG),
 	txt("Absolutely not!", ME.MIFFED),
 	txt("We're just here for a tour around the house.", ME.NEUTRAL),
 	txt("...I see.", KAGUYA.NEUTRAL),
-	txt("Come then. The night shall perish if we take too long.", KAGUYA.NEUTRAL),
+	txt("Come then. The night shall perish if we take too long.", KAGUYA.DEF),
 	
 	txt("Princess, this is- |w0033 |- ", REISEN.DEF),
-	txt("Reisen, go back to your usual task. There's no need to worry.", KAGUYA.DEF),
+	txt("Reisen, go back to your usual task. There's no need to worry.", KAGUYA.FUFUFU),
 	//put in a name for what "usual task" is
 	
 	txt("...", REISEN.UGGH),
@@ -435,7 +435,7 @@ function txt_begin() {
 	ntxt(0000, KANAHAT.NEUTRAL, SPRITEPOS.LEFT),	
 	txt("Why are you whispering? I can hear everything you're saying.", KAGUYA.NEUTRAL),
 	txt("It's funner that way.", ME.YAYNOTE),
-	txt("Should I pretend not to hear...?", KAGUYA.DEF),
+	txt("Should I pretend not to hear...?", KAGUYA.NEUTRAL),
 	txt("Hmm...|w076 |-", ME.NEUTRAL),
 	txt("No.", ME.DEF),
 	txt("Kana, take it away.", ME.DEF),
@@ -669,7 +669,7 @@ function txt_begin() {
 	ntxt(000, ME.YAY, SPRITEPOS.LEFT),
 	
 	txt("Bravo, you two! Bravo!", KAGUYA.YAY, SPRITEPOS.RIGHT, u, function() {audio_play_sound(snd_clapping_alone1, 0, false)}),
-	txt("I've never seen such a splendid battle of wits!", KAGUYA.WINKY),
+	txt("I've never seen such a splendid battle of wits!", KAGUYA.SMUG),
 	txt("If you say so.", REISEN.DEF, SPRITEPOS.CENTER),
 	txt("*YAWNNNN*", REISEN.DEF),
 	txt("Woof... I'm so tired...", REISEN.UGGH),
@@ -714,7 +714,7 @@ function txt_begin() {
 	txt("Understood.", ME.NEUTRAL),
 	txt("What is this?", KANAHAT.BRUH),
 	txt("Only a box of tea leaves. It should be of no concern to you.", KAGUYA.DEF),	
-	txt("Oh, and don't let her know it's from me, okay?", KAGUYA.WINKY),
+	txt("Oh, and don't let her know it's from me, okay?", KAGUYA.SMUG),
 	
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),

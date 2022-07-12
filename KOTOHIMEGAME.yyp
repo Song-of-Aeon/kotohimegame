@@ -536,6 +536,7 @@
     {"id":{"name":"s_k07","path":"sprites/s_k07/s_k07.yy",},"order":9,},
     {"id":{"name":"s_48","path":"sprites/s_48/s_48.yy",},"order":30,},
     {"id":{"name":"txt_beg","path":"scripts/txt_beg/txt_beg.yy",},"order":3,},
+    {"id":{"name":"c_mokoudraw","path":"scripts/c_mokoudraw/c_mokoudraw.yy",},"order":59,},
     {"id":{"name":"draw_outline","path":"scripts/draw_outline/draw_outline.yy",},"order":3,},
     {"id":{"name":"x_aunn","path":"scripts/x_aunn/x_aunn.yy",},"order":0,},
     {"id":{"name":"s_bomby","path":"sprites/s_bomby/s_bomby.yy",},"order":2,},

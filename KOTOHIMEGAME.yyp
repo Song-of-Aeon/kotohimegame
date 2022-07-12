@@ -95,6 +95,7 @@
     {"id":{"name":"textline_next","path":"scripts/textline_next/textline_next.yy",},"order":11,},
     {"id":{"name":"snd_knocking_a_wooden_door1","path":"sounds/snd_knocking_a_wooden_door1/snd_knocking_a_wooden_door1.yy",},"order":20,},
     {"id":{"name":"it_stats","path":"scripts/it_stats/it_stats.yy",},"order":3,},
+    {"id":{"name":"s_mokou399","path":"sprites/s_mokou399/s_mokou399.yy",},"order":42,},
     {"id":{"name":"s_chiyuriintro1","path":"sprites/s_chiyuriintro1/s_chiyuriintro1.yy",},"order":3,},
     {"id":{"name":"array_front","path":"scripts/array_front/array_front.yy",},"order":47,},
     {"id":{"name":"s_ruinedbed","path":"sprites/s_ruinedbed/s_ruinedbed.yy",},"order":22,},
@@ -1197,7 +1198,7 @@
     {"CopyToMask":-1,"filePath":"datafiles","resourceVersion":"1.0","name":"readme.txt","resourceType":"GMIncludedFile",},
   ],
   "MetaData": {
-    "IDEVersion": "2022.500.0.121",
+    "IDEVersion": "2022.5.0.8",
   },
   "resourceVersion": "1.5",
   "name": "KOTOHIMEGAME",

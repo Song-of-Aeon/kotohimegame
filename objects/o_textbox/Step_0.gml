@@ -1,4 +1,5 @@
 c_input();
+c_input();
 count++;
 
 if !txtprocessed {

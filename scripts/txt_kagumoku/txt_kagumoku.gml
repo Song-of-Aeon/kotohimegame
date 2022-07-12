@@ -181,7 +181,7 @@ function txt_kagumoku() {
 	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
 	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
 	ntxt(01, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
-	ntxt(130, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
+	ntxt(33, u, u, u, function() {audio_play_sound(snd_middle_punch1, 0, false)}),
 	ntxt(30, u, u, u, function() {audio_play_sound(snd_explosion2, 0, false)}),
 	
 	txt("...|w0150 |- ", u, u , s_bambooupday),

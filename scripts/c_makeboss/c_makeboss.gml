@@ -10,6 +10,7 @@ function c_makeboss(archetype, patternorder=[SPELL.NON, SPELL.CARD], difficulty=
 	chump.patterns = c_generatedeck(chump.spells, chump.nonspells, patternorder);
 
 	chump.sprite_index = archetype.sprite;
+	chump.draw = archetype.draw;
 	return chump;
 }
 

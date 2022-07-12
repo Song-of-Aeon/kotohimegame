@@ -133,8 +133,13 @@ myitems = ds_list_create();
 ds_list_clear(myitems);
 c_resetstats();
 
-maxhp = 20;
-hp = 20;
+if global.luying {
+	maxhp = 999999;
+	hp = 999999;
+} else {
+	maxhp = 20;
+	hp = 20;
+}
 life = 2;
 bombs = 3;
 defaultbombs = 3;

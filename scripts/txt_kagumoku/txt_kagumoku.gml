@@ -366,7 +366,7 @@ function txt_kagumoku() {
 	ptxt(),
 	txt("... |w0222 |- ", u, u, u, function() {textbox_set_type(global.textnvl)}),
 	
-	txt("This is just like old times, isn't?", KANA.YAY, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textzpix)}),
+	txt("This is just like old times, isn't it?", KANA.YAY, SPRITEPOS.MIDRIGHT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("What do you mean?", ME.DEF, SPRITEPOS.MIDLEFT),
 	txt("We haven't been together like this in years.", KANA.WINKY),
 	txt("Just us two.", KANA.YAY),
@@ -638,7 +638,7 @@ function txt_kagumoku() {
 	txt("But I was nothing if not confident in my assumption."),
 	ptxt(),
 	txt("Kaguya denied any feelings for Mokou, but with the same face she had when dismissing the \"impure earthlings.\""),
-	txt("...A tranlucent mask."),
+	txt("...A translucent mask."),
 	txt("Mokou was a little trickier to judge, but her bouts of anger towards Kaguya seemed more like a shield than a sword."),
 	txt("If I could only push them a little more, the truth would reveal itself."),
 	
@@ -1138,7 +1138,7 @@ function txt_kagumoku() {
 	
 	ptxt(),
 	txt("That night, I thought of what to do. Something was coming either way; all I could do was speed it up.", u, u, s_crescent, function() {textbox_set_type(global.textnvl)}),
-	txt("The next few days went smoothly. Most of it comprised of helping out those at Eientei."),
+	txt("The next few days went smoothly. Most of it comprised of helping out those at the House of Eternity."),
 	txt("It appeared that Kaguya and Mokou were going to fight soon."),
 	ptxt(),
 	txt("With that knowledge, I decided to go see Mokou.", u, u, s_mkhsnt),

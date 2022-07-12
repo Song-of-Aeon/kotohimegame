@@ -21,7 +21,7 @@ function txt_drinks() {
 	txt("What's that, if I may ask?", KAGUYA2.SURPRISED),
 	txt("Some sort of drink-maker.", CHIYURI.HAPPY),
 	txt("Sorry, I would make 'em myself, but Kotohime here just tired me out.", CHIYURI.STERN),
-	txt("Quite modern, isn't it...?", KAGUYA2.NORMAL),
+	txt("Quite modern, isn't it...?", KAGUYA2.CONFUSED),
 	txt("One of our regulars is a scientist, like those Kappa. She went-", CHIYURI.HAPPY),
 	txt("And me!", KOTOHIME.EXCITED),
 	txt("Right, she and Kotohime went and made this.", CHIYURI.STERN),

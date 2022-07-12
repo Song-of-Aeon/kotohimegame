@@ -3,7 +3,7 @@ function txt_bar() {
 	msg = msglang([
 	
 	txt("...", u, u, u, function() {music_set(mus.null)}),//, MOKOU.DEF, SPRITEPOS.CENTER),
-	txt("This is it?", KAGUYA2.NORMAL, SPRITEPOS.LEFT),
+	txt("This is it?", KAGUYA2.CONFUSED, SPRITEPOS.LEFT),
 	txt("A bit...", KAGUYA2.DISAPPOINTED),
 	txt("Dingy, drab, and inelegant. It does not appear to be fit for a princess.", KOTOHIME.DISAPPOINTED, SPRITEPOS.MIDRIGHT),
 	txt("But we are not here as princesses today.", KOTOHIME.SMUG),
@@ -35,7 +35,7 @@ function txt_bar() {
 	txt("HEY, RIKA! GET US SOMETHING LIGHT!", KOTOHIME.EXCITED, SPRITEPOS.CENTER),
 	txt("AT LEAST COME OVER TO THE DAMN BAR, KOTOHIME!", CHIYURI.ANNOYED, SPRITEPOS.HIDDEN),
 	txt("A reasonable request. I'll be back in a moment.", KOTOHIME.SMUG),
-	ntxt(0, KAGUYA2.NORMAL, SPRITEPOS.HIDDEN),
+	ntxt(0, KAGUYA2.HAPPY, SPRITEPOS.HIDDEN),
 	ntxt(0, KOTOHIME.SMUG, SPRITEPOS.LEFT),
 	txt("|c160160160Kotohime approaches the bar quickly.", u, u, s_thebar),
 	txt("Also, Rika isn't here today.", CHIYURI.ANNOYED, SPRITEPOS.RIGHT),

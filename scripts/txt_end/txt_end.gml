@@ -113,7 +113,7 @@ function txt_end() {
 	ptxt(),
 	txt("For now, I only had one place to be."),
 	txt("I brushed past several cobwebs on my way. Each strand stuck to my hands, whispered in my ear, asked me to join them. It took a lot more effort than usual to reject them.", u, u, s_homein1),
-	txt("Soon, I had arrived at the Collection oom."),
+	txt("Soon, I had arrived at the Collection Room."),
 	txt("Dozens of items from The Mound of the Nameless littered the floor. Dolls with missing limbs, books with half the pages ripped out, toys with the paint fallen."),
 	txt("On top of a big pile was a little box of matchsticks. I grabbed it, trying to keep my eyes off the other items."),	
 	

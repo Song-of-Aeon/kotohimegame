@@ -59,7 +59,7 @@ function txt_ruukoto() {
 	msg = msglang([
 	txt("|c160160160A girl in a western maid outfit reads newspapers intently while sipping a dark drink in a mug.", u, u, s_bar),
 	txt("|c160160160There are multiple bottles of sake on her table, some empty."),
-	txt("|c102137255I can't make it out from here. Is that coffee? It's black enough to be oil...", KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT),
+	txt("|c102137255I can't make it out from here. Is that coffee? It's black enough to be oil...", KAGUYA2.SURPRISED, SPRITEPOS.MIDRIGHT),
 	txt("Is that girl alright? She's drinking so much, alone, at this time of day...", KAGUYA2.CONFUSED, u, s_thebar),
 	txt("She is quite fine. Ruukoto there isn't like us. She's a living metal doll.", KOTOHIME.THINKING, SPRITEPOS.MIDLEFT),
 	txt("To her, alcohol is water. She needs it to survive, as fuel or something.", KOTOHIME.HAPPY),

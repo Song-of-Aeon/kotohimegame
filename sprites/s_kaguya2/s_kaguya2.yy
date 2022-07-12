@@ -63,6 +63,9 @@
     {"compositeImage":{"FrameId":{"name":"7735f4db-f0cb-4a09-b78d-018a112fe825","path":"sprites/s_kaguya2/s_kaguya2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"7735f4db-f0cb-4a09-b78d-018a112fe825","path":"sprites/s_kaguya2/s_kaguya2.yy",},"LayerId":{"name":"18db10fc-fde9-4cad-996e-f17bb5d14327","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"s_kaguya2","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","name":"7735f4db-f0cb-4a09-b78d-018a112fe825","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"69323673-4bd4-4a1e-a7b4-69bd4148697f","path":"sprites/s_kaguya2/s_kaguya2.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"69323673-4bd4-4a1e-a7b4-69bd4148697f","path":"sprites/s_kaguya2/s_kaguya2.yy",},"LayerId":{"name":"18db10fc-fde9-4cad-996e-f17bb5d14327","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"s_kaguya2","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","name":"69323673-4bd4-4a1e-a7b4-69bd4148697f","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"s_kaguya2","path":"sprites/s_kaguya2/s_kaguya2.yy",},
@@ -72,7 +75,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 13.0,
+    "length": 14.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -90,6 +93,7 @@
             {"id":"b2f71db1-d4a4-426d-88f2-3cc497e86c2b","Key":10.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f4716970-090a-43cc-8582-7c1824326ee5","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"5dde19f9-cd7a-4e24-9d46-9cef7611e2cd","Key":11.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"619948cc-2952-46cc-96a2-2d7c537a313e","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"a2c01417-21c5-4c48-9b70-aee2b6bcb0c3","Key":12.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7735f4db-f0cb-4a09-b78d-018a112fe825","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"adadf286-e525-45b6-947d-e9985ae828a0","Key":13.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"69323673-4bd4-4a1e-a7b4-69bd4148697f","path":"sprites/s_kaguya2/s_kaguya2.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

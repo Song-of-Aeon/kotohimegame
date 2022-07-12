@@ -45,7 +45,7 @@ function txt_elly() {
 	txt("Bounded little worlds that are hard to move between.", ELLY.ANNOYED),
 	txt("Were you around back then?", ELLY.CONFUSED),
 	txt("I was... but I've always lived in Gensokyo.", KAGUYA2.HAPPY),
-	txt("I imagine it must feel suffocating, to go from the wide plains of the west to our quaint valley, here.", KAGUYA2.NORMAL),
+	txt("I imagine it must feel suffocating, to go from the wide plains of the west to our quaint valley, here.", KAGUYA2.HAPPY),
 	txt("I'm mostly over it. I just don't know what to do.", ELLY.FAKELAUGH),
 	txt("Gensokyo is nice. Makai was nice, but it's a dangerous place.", ELLY.BORED),
 	txt("Magic and danmaku isn't really my strong suit. I can use this scythe well, but...", ELLY.BORED),

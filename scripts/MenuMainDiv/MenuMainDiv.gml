@@ -1,8 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
  function generateMainMenu(x,y){
-	 //room_goto(MINE);
-	 //exit;
+	room_goto(MINE);
+	exit;
 	//music_set()
 	var background  = makeGenericElement(x-10,y-10,130,260,s_null,0);
 	//set_font_style("ui", LANGUAGE.ENGLISH);
@@ -37,12 +37,17 @@
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"continue", file_exists("hi guys.kotohime")).onSelect = function(){log("????????????");}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"glossary"/*, file_exists("you've won.kotohime")*/).onSelect = function(){}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"end", file_exists("you've won.kotohime")).onSelect = function(){}
-	
 	makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Former Part").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 1 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
-	makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Latter Part", file_exists("you've won.kotohime2")).onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 5 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
-	makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Epilogue", file_exists("you've won again.kotohime2")).onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 6 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
+	if file_exists("you've won.kotohime2") {
+		makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Latter Part").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 5 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
+	}
+	if file_exists("you've won again.kotohime2") {
+		makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Epilogue").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 6 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
+	}
 	//makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Spell Practice").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 2 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = true}
-	makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Credits / Afterword", file_exists("you've won again again.kotohime2")).onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 7 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
+	if file_exists("you've won again again.kotohime2") {
+		makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"Credits / Afterword").onSelect = function(){room_goto(BASEMENT); global.MenuCursor.disabled = true global.currentstage = 7 global.currentday = DAY.WEDNES restart_items() global.character = "chiyuri" global.gameplay = false}
+	}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"Replay Start", false).onSelect = function(){}
 	
 	//makeGenericMMElement(x+8,y+25,"Replay Start",false).onSelect = function(){}

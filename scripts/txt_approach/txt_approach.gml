@@ -9,7 +9,7 @@ function txt_approach() {
 	txt("Just pick any girl here, and we can go strike up a conversation. They're all nice enough.", KOTOHIME.HAPPY),
 	txt("Girls will do, right?", KOTOHIME.WINK),
 	txt("Yes.", KAGUYA2.GRIN),
-	ntxt(0, KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT),
+	ntxt(0, KAGUYA2.GRIN, SPRITEPOS.MIDRIGHT),
 	ntxt(0, KOTOHIME.WINK, SPRITEPOS.RIGHT),
 	txt("|c160160160Kaguya turns from her seat, and observes the tables around the bar.", u, u, s_bar),
 	txt("|c160160160She sees..."),

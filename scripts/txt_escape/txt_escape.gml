@@ -19,7 +19,7 @@ function txt_escape() {
 	txt("Certainly. That's how a mortal should think.", KAGUYA2.GRIN),
 	txt("Let's get on with the operation, now.", KAGUYA2.HAPPY),
 	ntxt(0, KOTOHIME.HAPPY, SPRITEPOS.HIDDEN),
-	ntxt(0, KAGUYA2.NORMAL, SPRITEPOS.HIDDEN),
+	ntxt(0, KAGUYA2.HAPPY, SPRITEPOS.HIDDEN),
 	txt("...", u, u, s_black, function() {music_set(mus.null)}),
 	txt("...if you would, please.", EIRIN.NORMAL, SPRITEPOS.LEFT, s_eienteihall1, function() {music_set(mus.eientei)}),
 	txt("Understood. I'll have it done by tomorrow.", REISEN.HAPPY, SPRITEPOS.MIDRIGHT),
@@ -28,11 +28,11 @@ function txt_escape() {
 	txt("|c102137255Ugh... another brutal assignment.", REISEN.SHITSTUFF, SPRITEPOS.MIDLEFT),
 	txt("|c102137255Maybe I should ask Tewi for help. I don't think I'll have enough time by myself.", REISEN.SHITSTUFF),
 	txt("|c102137255Then again, she might just-", REISEN.SHITSTUFF),
-	txt("-AND DON'T THINK YOU'LL GET ANOTHER CHANCE!", KAGUYA2.NORMAL),
+	txt("-AND DON'T THINK YOU'LL GET ANOTHER CHANCE!", KAGUYA2.ANGRY),
 	txt("!!", REISEN.SURPRISED),
 	txt("Aaaah!", KOTOHIME.THINKING, SPRITEPOS.CENTER),
 	txt("Hey, it was just a small mistake~", KOTOHIME.NERVOUS),
-	txt("I DO NOT CARE! LYING TO ME IS A SIN IN AND OF ITSELF!!", KAGUYA2.NORMAL),
+	txt("I DO NOT CARE! LYING TO ME IS A SIN IN AND OF ITSELF!!", KAGUYA2.ANGRY),
 	txt("Ow, ow, okay, okay! I'll leave.", KOTOHIME.NERVOUS),
 	txt("Oh, hey Reisen.", KOTOHIME.HAPPY, SPRITEPOS.MIDRIGHT),
 	txt("Hi?", REISEN.DAMN),
@@ -40,7 +40,7 @@ function txt_escape() {
 	ntxt(0, REISEN.HAPPY, SPRITEPOS.LEFT),
 	txt("REISEN! Escort this... nincompoop! Off the premises! Out of here! NOW!", KAGUYA2.ANGRY, SPRITEPOS.RIGHT),
 	txt("Very well. Should I-", REISEN.HAPPY),
-	txt("Just do it!!", KAGUYA2.NORMAL),
+	txt("Just do it!!", KAGUYA2.ANGRY),
 	
 	],[
 	

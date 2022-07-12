@@ -8,33 +8,31 @@ nu pattern_ext(function() {
 		ISAAC.y=90
 		var earfthingy = c_makeshooter(WIDTH/2, HEIGHT/2, 99999999, en.earf, new pattern(function() {
 			c;
-		if count > 60 and count < 2000{
-			if ncm(9) {
-				c_shoot(x, y, 6, point_me() +64, bul.smolerboolit);
-				c_shoot(x, y, 6, point_me() -64, bul.smolerboolit);
-				c_shoot(x, y, 6, point_me() -96, bul.smolerboolit);
-				c_shoot(x, y, 6, point_me() +96, bul.smolerboolit);
-				c_shoot(x, y, 6, point_me() +128, bul.smolerboolit);
-				c_shoot(x, y, 6, point_me() -128, bul.smolerboolit);
-				c_shoot(x, y, 6, point_me() +160, bul.smolerboolit);
-				c_shoot(x, y, 6, point_me() +160, bul.smolerboolit);
-				c_shoot(x, y, 6, point_me() +192, bul.smolerboolit);
-				c_shoot(x, y, 6, point_me() +192, bul.smolerboolit);
-			}
-			
-			if ncm(90) {
-				c_shootlaser(x, y, 3, point_me(), 10, 125, las.sunlazer, c_red);
-				c_shootlaser(x, y, 3, point_me()-32, 8, 100, las.blulazer, c_red);
-				c_shootlaser(x, y, 3, point_me()+32, 8, 100, las.blulazer, c_red);
-				c_shootlaser(x, y, 3, point_me()-64, 8, 100, las.blulazer, c_red);
-				c_shootlaser(x, y, 3, point_me()+64, 8, 100, las.blulazer, c_red);
-				
+			if count > 60 and count < 2000 {
+				if ncm(9) {
+					c_shoot(x, y, 6, point_me() +64, bul.smolerboolit);
+					c_shoot(x, y, 6, point_me() -64, bul.smolerboolit);
+					c_shoot(x, y, 6, point_me() -96, bul.smolerboolit);
+					c_shoot(x, y, 6, point_me() +96, bul.smolerboolit);
+					c_shoot(x, y, 6, point_me() +128, bul.smolerboolit);
+					c_shoot(x, y, 6, point_me() -128, bul.smolerboolit);
+					c_shoot(x, y, 6, point_me() +160, bul.smolerboolit);
+					c_shoot(x, y, 6, point_me() +160, bul.smolerboolit);
+					c_shoot(x, y, 6, point_me() +192, bul.smolerboolit);
+					c_shoot(x, y, 6, point_me() +192, bul.smolerboolit);
+				}
+				if ncm(90) {
+					c_shootlaser(x, y, 3, point_me(), 10, 125, las.sunlazer, c_red);
+					c_shootlaser(x, y, 3, point_me()-32, 8, 100, las.blulazer, c_red);
+					c_shootlaser(x, y, 3, point_me()+32, 8, 100, las.blulazer, c_red);
+					c_shootlaser(x, y, 3, point_me()-64, 8, 100, las.blulazer, c_red);
+					c_shootlaser(x, y, 3, point_me()+64, 8, 100, las.blulazer, c_red);
 				}
 			}
 			
-			if count > 2200{
+			if count > 2200 {
 			//should be count > 2200 and count <4800
-				if count %130 >= 65{
+				if count %130 >= 65 {
 					if ncm(5) {
 						c_shoot(x, y, 6, 120, bul.smolerboolit);
 						c_shoot(x, y, 6, 240, bul.smolerboolit);
@@ -46,19 +44,18 @@ nu pattern_ext(function() {
 						c_shoot(x, y, 6, 180, bul.bluamulet);
 						c_shoot(x, y, 6, 300, bul.bluamulet);
 					}
-			
 				}
 			}
 			
-			if count > 4000{
-				if ncm(42){
+			if count > 4000 {
+				if ncm(42) {
 					c_shoot(x+25, y, 2, point_me(), bul.peenkboolit);
 					c_shoot(x-25, y, 2, point_me(), bul.peenkboolit);					
 				}
 			}
 			
-			if count > 4800{
-				if ncm(30){
+			if count > 4800 {
+				if ncm(30) {
 					c_shoot(x, y+40, 6, point_me(), bul.bigerboolit, u, function(){	
 						c
 						x = sin(count/60)*30+WIDTH/2;
@@ -69,7 +66,7 @@ nu pattern_ext(function() {
 					});
 				}
 			}
-		}); //end of earth logic
+		})); //end of earth logic
 	}	
 
 	if count > 75 {
@@ -87,8 +84,8 @@ nu pattern_ext(function() {
 	}
 	
 	if count > 2201 {
-		if ncm(30){
-			var orbit = c_shoot(x, y, 6, point_me(), bul.oringboolit, u, function(){	
+		if ncm(30) {
+			var orbit = c_shoot(x, y, 6, point_me(), bul.oringboolit, u, function() {
 				c
 				x = sin(count/80)*20+o_boss.x;
 				y = cos(count/80)*80+o_boss.y;
@@ -96,8 +93,8 @@ nu pattern_ext(function() {
 					instance_destroy();
 				}
 			});
-			orbit.escapedistance = 200
-			var orbit = c_shoot(x, y, 6, point_me(), bul.peenkboolit, u, function(){	
+			orbit.escapedistance = 200;
+			var orbit = c_shoot(x, y, 6, point_me(), bul.peenkboolit, u, function() {	
 				c
 				x = sin(count/80)*80+o_boss.x;
 				y = cos(count/80)*20+o_boss.y
@@ -117,7 +114,7 @@ nu pattern_ext(function() {
 		}
 		
 		if count > 3800{
-			if count %260 >= 130{
+			if count %260 >= 130 {
 				if ncm(69) {
 					c_shootlaser(x, y, 0.5, point_me(), 12, 144, las.sunlazer, u, function() {spd+=0.1});
 					c_shootlaser(x, y, 0.5, point_me()+16, 8, 96, las.blulazer, u, function() {spd+=0.1});
@@ -163,9 +160,9 @@ nu pattern_ext(function() {
 		
 }, 999999999, 101, "mokou", SPELL.CARD, DIFFICULTY.HARD, "...And So We Continued to Stay on This Beautiful Earth", u, u, function() {
 	textbox_create(txt_kagumokuend, global.textzpix);
-}
+});
 
-nu shootman("earf", s_earf)
+nu shootman("earf", s_earf);
 
 
 global.spelltiming = false;

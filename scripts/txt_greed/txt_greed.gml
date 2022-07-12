@@ -1,5 +1,5 @@
 function txt_greed() {
-	
+	setCursor();
 	msg = msglang([
 	
 	txt("Shit, Kotohime, you aren't suited for this.", CHIYURI.ANNOYED, SPRITEPOS.RIGHT, s_path, function() {music_set(mus.null) c_additem(ITEMS.HIDE)}),

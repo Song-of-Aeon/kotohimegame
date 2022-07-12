@@ -1,5 +1,5 @@
 function txt_acceptence() {
-	
+	setCursor();
 	msg = msglang([
 	
 	txt("You must really have a good thing going with her, if you're going to actually pay your debts.", CHIYURI.STERN, SPRITEPOS.MIDRIGHT, s_path, function() {music_set(mus.null) c_additem(ITEMS.HIDE)}),

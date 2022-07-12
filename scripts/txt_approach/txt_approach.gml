@@ -3,12 +3,12 @@ function txt_approach() {
 	msg = msglang([
 	
 	txt("..."),
-	txt("Shall we continue with our plans, now?", KAGUYA2.NORMAL, SPRITEPOS.CENTER, s_thebar, function() {music_set(mus.chillin)}),
+	txt("Shall we continue with our plans, now?", KAGUYA2.HAPPY, SPRITEPOS.CENTER, s_thebar, function() {music_set(mus.chillin)}),
 	txt("If you're ready.", KOTOHIME.HAPPY, SPRITEPOS.MIDLEFT),
-	txt("How shall we proceed?", KAGUYA2.NORMAL),
+	txt("How shall we proceed?", KAGUYA2.EXCITED),
 	txt("Just pick any girl here, and we can go strike up a conversation. They're all nice enough.", KOTOHIME.HAPPY),
 	txt("Girls will do, right?", KOTOHIME.WINK),
-	txt("Yes.", KAGUYA2.NORMAL),
+	txt("Yes.", KAGUYA2.GRIN),
 	ntxt(0, KAGUYA2.NORMAL, SPRITEPOS.MIDRIGHT),
 	ntxt(0, KOTOHIME.WINK, SPRITEPOS.RIGHT),
 	txt("|c160160160Kaguya turns from her seat, and observes the tables around the bar.", u, u, s_bar),

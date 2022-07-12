@@ -214,7 +214,21 @@ nu talksprite("LOVEY", "mokou", z++);
 
 #macro KAGUYA2 global.textguy[?" kaguya "]
 nu chardata(" Kaguya ", s_kaguya2, se_ntalk3);
-nu talksprite("NORMAL", " kaguya ", 0);
+var z=0;
+nu talksprite("HAPPY", " kaguya ", z++);
+nu talksprite("DISAPPOINTED", " kaguya ", z++);
+nu talksprite("GRIN", " kaguya ", z++);
+nu talksprite("EXCITED", " kaguya ", z++);
+nu talksprite("DETERMINED", " kaguya ", z++);
+nu talksprite("CONFUSED", " kaguya ", z++);
+nu talksprite("ANGRY", " kaguya ", z++);
+//nu talksprite("RESIGNED", " kaguya ", z++);
+nu talksprite("SURPRISED", " kaguya ", z++);
+nu talksprite("SMUG", " kaguya ", z++);
+nu talksprite("CRYING", " kaguya ", z++);
+nu talksprite("UNUSED", " kaguya ", z++);
+nu talksprite("BLUSHING", " kaguya ", z++);
+nu talksprite("NOTHING", " kaguya ", z++);
 
 
 #macro KEINE global.textguy[?"keine"]

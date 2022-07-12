@@ -4,8 +4,6 @@ nu pattern_ext(function() {
 
 	if count == 1 {
 		c_removeitem(ITEMS.KAGUYAA);
-		ISAAC.x=145
-		ISAAC.y=90
 		var earfthingy = c_makeshooter(WIDTH/2, HEIGHT/2, 99999999, en.earf, new pattern(function() {
 			c;
 			if count > 60 and count < 2000 {
@@ -158,7 +156,7 @@ nu pattern_ext(function() {
 		
 	}*/
 		
-}, 999999999, 101, "mokou", SPELL.CARD, DIFFICULTY.HARD, "...And So We Continued to Stay on This Beautiful Earth", u, u, function() {
+}, 999999999, 101, "mokou", SPELL.CARD, DIFFICULTY.HARD, "...And So We Continued to \n Stay on This Beautiful Earth", u, u, function() {
 	textbox_create(txt_kagumokuend, global.textzpix);
 });
 

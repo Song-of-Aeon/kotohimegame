@@ -448,12 +448,11 @@ function txt_begin() {
 	txt("And some massive honkers!", ME.WINKYHEART),
 	
 	txt("That's so sweet!", KAGUYA.YAY),
-	txt("In that case, Eirin would be perfect for you!", KAGUYA.YAY),	
-	txt("She's the other Lunarian in this house.",KAGUYA.DEF),
-	txt("She has accrued a long history as a great sage, and even helped found the Lunar Capital, using her wits and intelligence thousands that of any human or youkai.", KAGUYA.DEF),
-	txt("Some have dubbed her \"the brain of the moon.\"", KAGUYA.FUFUFU),
+	txt("In that case, Eirin would be perfect for you!", KAGUYA.DEF),	
+	txt("She's the other Lunarian in this house. Many know her as \"the brain of the moon.\"",KAGUYA.FUFUFU),
+	txt("She has accrued a long history as a great sage, and even helped found the Lunar Capital, using her wits and intelligence thousands that of any human or youkai.", KAGUYA.FUFUFU),
 	txt("In the House of Eternity there are no spirits of your kind, so I bet she would fall in love at first sight!", KAGUYA.YAY),
-	txt("Or she would just dissect you for research. But that is a form of love from a scientist, is it not?", KAGUYA.FUFUFU),
+	txt("Or she would just dissect you for research. But that is a form of love from a scientist, is it not?", KAGUYA.SMUG),
 	txt("...I'll pass, thanks.", KANAHAT.SADSMILE),
 	
 	txt("What a shame.", KAGUYA.AWW),
@@ -714,7 +713,7 @@ function txt_begin() {
 	txt("Understood.", ME.NEUTRAL),
 	txt("What is this?", KANAHAT.BRUH),
 	txt("Only a box of tea leaves. It should be of no concern to you.", KAGUYA.DEF),	
-	txt("Oh, and don't let her know it's from me, okay?", KAGUYA.SMUG),
+	txt("...Oh, and don't let her know it's from me.", KAGUYA.SMUG),
 	
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(00, ME.DEF, SPRITEPOS.HIDDEN),

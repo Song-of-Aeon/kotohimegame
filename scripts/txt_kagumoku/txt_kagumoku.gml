@@ -13,7 +13,7 @@ function txt_kagumoku() {
 	ptxt(),
 	txt("This is a very biased view, of course. Only a regular human would think something like this."),
 	txt("Kana Anaberal may die from an accident or a particularly nasty spell, but she does not age."),
-	txt("And the two immortals-- Fujiwara no Mokou and Houraisan Kaguya-- really do have an eternity ahead of them."),
+	txt("And the two immortals-- Fujiwara no Mokou and the princess Kaguya-- really do have an eternity ahead of them."),
 	txt("To be honest... I can't tell if I envy or pity them."),
 	ptxt(),
 	
@@ -474,7 +474,7 @@ function txt_kagumoku() {
 	ntxt(033, u, u, u, function() {audio_play_sound(snd_clapping_alone1, 0, false)}),
 	txt("We have gathered our two fine contestants here today for the greatest competition in the whole House of Eternity!", ME.DEF),
 	ntxt(00, KAGUYA.YAY, SPRITEPOS.RIGHT),
-	txt("Houraisan Kaguya,", ME.DEF),
+	txt("The Princess Kaguya,", ME.DEF),
 	ntxt(00, MOKOU.DEF, SPRITEPOS.LEFT),
 	txt("And Fujiwara no Mokou!", ME.DEF),
 	txt("These two lovely ladies will be competing in a brand-new sport called...", ME.HEHE),
@@ -585,7 +585,7 @@ function txt_kagumoku() {
 	
 	txt("I can't believe it...", KAGUYA.WAAH, SPRITEPOS.MIDRIGHT, s_eienteihall2),
 	txt("I can.", MOKOU.SMUG, SPRITEPOS.CENTER),	
-	txt("That's it! There's no way I'll lose this round!", KAGUYA.MAD),
+	txt("That's it! There's no way I'll lose this round!", KAGUYA.COCKY),
 	txt("FINAL ROUND, START!", ME.WINKYHEART, SPRITEPOS.LEFT),
 	
 	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),
@@ -613,7 +613,7 @@ function txt_kagumoku() {
 	ntxt(0069, u, u, s_k40),
 	ntxt(0089, u, u, s_k41),
 	
-	txt("And it looks like Houraisan Kaguya wins this game!", ME.YAY, SPRITEPOS.LEFT, s_eienteihall2, function() {music_set(mus.null)}),
+	txt("And it looks like The Princess Kaguya wins this game!", ME.YAY, SPRITEPOS.LEFT, s_eienteihall2, function() {music_set(mus.null)}),
 	txt("Though Mokou's effort was valiant, it could not stand up to the special skills of the Princess herself!", ME.YAY),
 	txt("Are you kidding me!? You're gonna allow THAT!?", MOKOU.REALLYMAD, SPRITEPOS.CENTER),
 	txt("It wasn't disallowed in the rules, so yes.", ME.HEHE),
@@ -813,7 +813,7 @@ function txt_kagumoku() {
 	ntxt(033, u, u, u, function() {audio_play_sound(snd_clapping_alone1, 0, false)}),
 	txt("We have gathered our two fine contestants here today for the second greatest competition in the whole House of Eternity!", ME.DEF),
 	ntxt(00, KAGUYA.YAY, SPRITEPOS.RIGHT),
-	txt("Houraisan Kaguya,", ME.DEF),
+	txt("The Princess Kaguya,", ME.DEF),
 	ntxt(00, MOKOU.DEF, SPRITEPOS.LEFT),
 	txt("And Fujiwara no Mokou!", ME.DEF),
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
@@ -851,7 +851,7 @@ function txt_kagumoku() {
 	txt("~~Humpty Dumpty sat in a carton~~#~~Humpty Dumpty was cracked apart~~", KAGUYA.DEF, u, u, function() {audio_play_sound(snd_cracking_egg1, 0, false)}),
 	txt("~~And all the Princesses and all the bunnies~~#~~Ate Humpty up with an overjoyed grin!~~", KAGUYA.YAY),
 	txt("That didn't even rhyme.", MOKOU.SMUG),
-	txt("It's experimental poetry. You wouldn't understand.", KAGUYA.FUFUFU),
+	txt("It's experimental poetry. You wouldn't understand.", KAGUYA.SMUG),
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),	
 	ntxt(0, KANA.NEUTRAL, SPRITEPOS.LEFT),
@@ -966,7 +966,7 @@ function txt_kagumoku() {
 	ntxt(000, KANA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(000, ME.DEF, SPRITEPOS.HIDDEN),
 	
-	txt("Next is Houraisan Kaguya's chocolate chip cookies!", ME.YAY, SPRITEPOS.HIDDEN, s_cooky),
+	txt("Next is The Princess Kaguya's chocolate chip cookies!", ME.YAY, SPRITEPOS.HIDDEN, s_cooky),
 	txt("Pray tell, how did these go for you?", ME.DEF),
 	txt("Absolutely swimmingly.", KAGUYA.FUFUFU),
 	//nomnom sounds
@@ -975,7 +975,7 @@ function txt_kagumoku() {
 	txt("Judge Kana, what do you think of these?", ME.DEF),	
 	txt("These cookies are perfect!", KANA.YAY, SPRITEPOS.LEFT),
 	txt("They have such a nice gooeyness to them on the inside, that really elevates them for me.", KANA.DEF),
-	txt("It must be because of the chocolate chips, and those create the most immaculate palette of flavors ever!", KANA.COCKY),
+	txt("It must be because of the chocolate chips, and those create the most immaculate palette of flavors ever!", KANA.YAY),
 	txt("Oh my, what high praise! Judge Reisen, what's your opinion?", ME.YAY),
 	txt("It's good.", REISEN.DEF, SPRITEPOS.RIGHT),
 	txt("Splendiferous feedback, Judge Reisen!", ME.YAY),
@@ -983,7 +983,7 @@ function txt_kagumoku() {
 	ntxt(000, REISEN.DEF, SPRITEPOS.HIDDEN),
 	ntxt(000, KANA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(000, ME.DEF, SPRITEPOS.HIDDEN),
-	txt("Say goodbye to your dignity, Fujiwara no Mokou.", KAGUYA.FUFUFU, SPRITEPOS.MIDLEFT, s_kitchen),
+	txt("Say goodbye to your dignity, Fujiwara no Mokou.", KAGUYA.COCKY, SPRITEPOS.MIDLEFT, s_kitchen),
 	txt("You kidding me? I did that the moment I agreed to this \"competition.\"", MOKOU.HMPH, SPRITEPOS.MIDRIGHT),
 	ntxt(00, KAGUYA.DEF, SPRITEPOS.HIDDEN),
 	ntxt(00, MOKOU.DEF, SPRITEPOS.HIDDEN),	
@@ -1024,7 +1024,7 @@ function txt_kagumoku() {
 	txt("Kana and Reisen had to leave immediately, but I stuck around to see Mokou off."),
 	txt("Just as I was about to say goodbye...", u, u, s_kitchen, function() {music_set(mus.isnight)}),
 	
-	ntxt(00, KAGUYA.YAY, SPRITEPOS.RIGHT),
+	ntxt(00, KAGUYA.DEF, SPRITEPOS.RIGHT),
 	txt("Hey, Princess?", MOKOU.NEUTRAL, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textzpix)}),
 	txt("Yeah?", ME.YAY, SPRITEPOS.CENTER),
 	txt("Do you mind if I stay here a little longer?", MOKOU.DEF),
@@ -1045,9 +1045,8 @@ function txt_kagumoku() {
 	ntxt(000, KAGUYA.DEF, SPRITEPOS.HIDDEN),
 		
 	txt("Huh, you're really good at this.", MOKOU.NEUTRAL, SPRITEPOS.MIDLEFT),
-	txt("Don't flatter me, Mokou. Your ball-rolling skills are simply flawed.", KAGUYA.FUFUFU, SPRITEPOS.MIDRIGHT),
-	txt("I expected more from you, to be quite honest.", KAGUYA.FUFUFU),	
-	txt("Come on, gimme a break! I haven't done this in four-hundred fifty-four years!", MOKOU.MAD),
+	txt("Don't flatter me, Mokou. Your ball-rolling skills are simply flawed. I expected more from you, to be quite honest.", KAGUYA.FUFUFU, SPRITEPOS.MIDRIGHT),
+	txt("Come on, gimme a break! I haven't done this in four-hundred fifty-seven years!", MOKOU.MAD),
 	txt("Isn't this the same as creating fireballs?", KAGUYA.DEF),
 	txt("Not at all! Fire is far more malleable than this. For these, you need a different amount of pressure.", MOKOU.HMPH),
 	
@@ -1062,9 +1061,9 @@ function txt_kagumoku() {
 	
 	txt("Put these in the oven, and... done!", KAGUYA.YAY),
 	txt("Damn, you're really making me jealous with those powers. What the heck did you do to earn them?", MOKOU.DEF),
-	txt("Be a Lunarian Princess. Every one of us is born with some unique power.", KAGUYA.YAY),
+	txt("Be a Lunarian Princess. Every one of us is born with some unique power.", KAGUYA.DEF),
 	txt("Beautiful little snowflake, aren't ya? Just to be expected from a lunatic like you.", MOKOU.SMUG),
-	txt("You are too, Mokou.", KAGUYA.YAY),
+	txt("You are too, Mokou.", KAGUYA.FUFUFU),
 	ntxt(000, MOKOU.SURPRISED, SPRITEPOS.MIDLEFT),
 	txt("A beautiful snowflake.", KAGUYA.WINKYHEART),
 	txt("A--ahh...", MOKOU.LOVEYSAD),
@@ -1111,7 +1110,7 @@ function txt_kagumoku() {
 	txt("I... like spending time fighting you.", MOKOU.HMPH),
 	txt("...", KAGUYA.LOVEY),
 	txt("I'm off.", MOKOU.NEUTRAL),
-	txt("Goodnight, Mokou.", KAGUYA.YAY),
+	txt("Goodnight, Mokou.", KAGUYA.FUFUFU),
 	
 	ntxt(0110, MOKOU.DEF, SPRITEPOS.HIDDEN),
 	
@@ -1268,9 +1267,9 @@ function txt_kagumoku() {
 	txt("Each hall was total darkness, each step silent. I couldn't stand it."),
 	
 	txt("Hey Kaguya.", KANA.DEF, SPRITEPOS.LEFT, u, function() {textbox_set_type(global.textzpix)}),
-	txt("Good night.", KME.NEUTRAL, SPRITEPOS.RIGHT),
+	txt("Good night.", KME.FUFUFU, SPRITEPOS.RIGHT),
 	txt("I'm bored. Wanna play Chesshogi?", KANA.YAY),
-	txt("I shall pass tonight. It's about time to leave.", KME.NEUTRAL),
+	txt("I shall pass tonight. It's about time to leave.", KME.DEF),
 	txt("Someone is waiting for me.", KME.FUFUFU),
 	txt("...I see.", KANA.NEUTRAL),
 	txt("Good luck.", KANA.AWW),
@@ -1294,8 +1293,8 @@ function txt_kagumoku() {
 	txt("Y-yes. I... believe so.", KME.WAAH),
 	txt("What's gotten you so down?", MOKOU.DEF),
 	txt("Did the rain ruin your precious hair?", MOKOU.SMUG),
-	txt("I'm not here to fight. I just need tell you something.", KME.NEUTRAL),
-	txt("Mokou, I...|w0060 I lo-- |-", KME.AWW),
+	txt("I'm not here to fight. I just need tell you something.", KME.DEF),
+	txt("Mokou, I...|w0060 I lo-- |-", KME.DEF),
 	txt("Save your jokes for afterwards.", MOKOU.HMPH),
 	txt("Or even better, don't make them at all.", MOKOU.HMPH),
 	txt("It's not...", KME.WAAH),
@@ -1391,8 +1390,8 @@ function txt_kagumokumid3() {
 	txt("The distinction between you and I was arbitrary from the start. I kept the pretense up for the sake of tradition, but...", KME.AWW),
 	txt("I'm a human, just like you.", KME.LOVEY),
 	txt("...I see.", MOKOU.SAD),
-	txt("I spent all these centuries inside a cage of my own making. But now that I have finally gone out into this \"impure\" Earth...", KME.DEF),
-	txt("It's better than I could've imagined.", KME.YAY),
+	txt("I spent all these centuries inside a cage of my own making. But now that I have finally gone out into this \"impure\" Earth...", KME.FUFUFU),
+	txt("It's better than I could've imagined.", KME.DEF),
 	txt("And you're the most beautiful part of it.", KME.LOVEY),
 		
 	ntxt(0, KME.DEF, SPRITEPOS.HIDDEN),
@@ -1434,7 +1433,7 @@ function txt_kagumokumid4() {
 		c_removeitem(ITEMS.HIDE);
 		ISAAC.state = st_standard;
 		global.gameplay = true;
-		global.spells[DIFFICULTY.HARD].mokou = [global.spellnames[?"...and so we continued to stay on this beautiful earth"]];
+		global.spells[DIFFICULTY.HARD].mokou = [global.spellnames[?"...and so we continued to \n stay on this beautiful earth"]];
 		c_makeboss(global.bosses.mokou, [SPELL.CARD]);
 	}
 }

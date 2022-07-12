@@ -23,7 +23,7 @@ function txt_afterword() {
 	txt("Hey!"),
 	txt("This is Luyuu-- the writer of The Little Rabbit Princess and the House of Eternity."),	
 	txt("First off, thank you so much for reading this \"game.\" It really means a lot to me."),
-	txt("This thing is a lot of firsts for me-- first time participating in a game jam, first time participating in a team, first time writing a Touhou fanwork, first time using Game Maker, first time working on a Visual Novel, first time finishing something longer than 15 minutes, first time writing something with any focus on romance, first time posting my writing on the internet..."),
+	txt("This thing is a lot of firsts for me-- first time participating in a game jam, first time participating in a team, first time writing a Touhou fanwork, first time using GameMaker, first time working on a Visual Novel, first time finishing something longer than 15 minutes, first time writing something with any focus on romance, first time posting my writing on the internet..."),
 	txt("A lot."),
 	ptxt(),
 	txt("I've kinda been writing in the dark, without too much idea of what works and what doesn't. So comments, reviews, criticism, etc. would be greatly appreciated."),

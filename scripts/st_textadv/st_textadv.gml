@@ -119,7 +119,6 @@ function st_textcourt() {
 	ineg(talker[i].position > SPRITEPOS.CENTER),
 	1, 0, c_white, talker[i].alpha*(talker[i].position <= SPRITEPOS.RIGHT));
 	if halting {surface_reset_target() exit}
-	log(s_reisenspellbg)
 	if sprite_index == s_textbox || sprite_index == s_null {
 		/*draw_set_color(c_black);
 		draw_rectangle(x-width/2, y, x+width/2, y+height, false);

@@ -13,7 +13,7 @@ function txt(text_=c_errorstring(), sprite_=global.textguy[?""].NOTHING, spritep
 	};
 }//not technically a constructor since dont wanna write new every time
 
-function ntxt(wait=0, sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.HIDDEN, bg_="UNCHANGED", event_=c_null) {
+function ntxt(wait=0, sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.REPLACE, bg_="UNCHANGED", event_=c_null) {
 	return {
 		text: "|w"+ string_format(wait, 4, 0) + "|-",
 		name: sprite_.char.name,
@@ -25,7 +25,7 @@ function ntxt(wait=0, sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.
 	};
 }
 
-function ptxt(wait=0, sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.HIDDEN, bg_="UNCHANGED", event_=c_null) {
+function ptxt(wait=0, sprite_=global.textguy[?""].NOTHING, spritepos_=SPRITEPOS.REPLACE, bg_="UNCHANGED", event_=c_null) {
 	return {
 		text: "",
 		name: sprite_.char.name,

@@ -2,7 +2,7 @@ function txt_thosegrounds() {
 	
 	msg = msglang([
 	
-	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection, "Instances_ui").image_index = 2}),
+	ntxt(0, u, u, s_court, function() {instance_create(640, 360, o_bjection, "Instances_ui").image_index = 2}),
 	txt("This is what we can overcome!", KOTOHIME.HAPPY, SPRITEPOS.MIDRIGHT, s_court),
 	txt("...So? What about that can you change?", KAGUYA2.CONFUSED, SPRITEPOS.MIDLEFT, u, u, [se_23]),
 	txt("You know...", KOTOHIME.HAPPY, SPRITEPOS.MIDRIGHT, s_court),

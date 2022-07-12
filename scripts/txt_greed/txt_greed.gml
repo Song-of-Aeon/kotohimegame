@@ -11,10 +11,10 @@ function txt_greed() {
 	txt("It is.", KOTOHIME.SMUG),
 	txt("I have recently grown to have an appetite for greed.", KOTOHIME.SMUG),
 	txt("Fuckin' what?", CHIYURI.ANNOYED),
-	txt("..."),
+	txt("...", KOTOHIME.SMUG),
 	txt("Oh, like that.", CHIYURI.STERN),
 	txt("I still think that this is a bad idea, but I'll let it slide, for that.", CHIYURI.HAPPY),
-	txt("Let's go back to your princess friend there.", CHIYURI.GLEEFUL),
+	txt("Let's go back to your princess friend there.", CHIYURI.STERN),
 	txt("Yes, let's.", KOTOHIME.SMUG),
 	
 	],[

@@ -13,7 +13,7 @@ function txt_elly() {
 	txt("Hark; just behind that pillar lies our perfect target!", KOTOHIME.HAPPY),
 	txt("Calling them a \"target\"... this really is a crass mission.", KAGUYA2.GRIN),
 	txt("Well what is it to you, Tsukiko!?", KOTOHIME.HAPPY),
-	ntxt(0, KAGUYA.SURPRISED),
+	ntxt(0, KAGUYA2.SURPRISED),
 	txt("Are you not a woman of common birth, simply shooting your shot with some locals? No shame in that.", KOTOHIME.HAPPY),
 	txt("...Very well. I will continue to entertain this goal.", KAGUYA2.GRIN),
 	ntxt(0, KOTOHIME.HAPPY, SPRITEPOS.HIDDEN),

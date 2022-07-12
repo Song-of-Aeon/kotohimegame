@@ -2,7 +2,7 @@ function txt_mortal() {
 	
 	msg = msglang([
 	
-	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection, "Instances_ui").image_index = 2}),
+	ntxt(0, u, u, s_court, function() {instance_create(640, 360, o_bjection, "Instances_ui").image_index = 2}),
 	txt("Kaguya, Kaguya...", KOTOHIME.SMUG, SPRITEPOS.MIDRIGHT, s_court),
 	txt("Don't ask me that. As your friend, I have to keep you humble.", KOTOHIME.THINKING),
 	txt("But if you force my hand, I'll have to tell the truth.", KOTOHIME.SMUG),

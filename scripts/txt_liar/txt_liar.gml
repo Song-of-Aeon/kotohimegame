@@ -2,7 +2,7 @@ function txt_liar() {
 	
 	msg = msglang([
 	
-	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection, "Instances_ui")}),
+	ntxt(0, u, u, s_court, function() {instance_create(640, 360, o_bjection, "Instances_ui")}),
 	txt("You're wrong about something there, Kaguya.", KOTOHIME.SMUG, SPRITEPOS.MIDRIGHT, s_court),
 	txt("Your \"lies\" bore no malign intent.", KOTOHIME.HAPPY),
 	txt("Less than that, the image of \"Tsukiko\" was created to be able to avoid the rumors and hearsay of \"Kaguya\"; such things are lies themselves.", KOTOHIME.DISAPPOINTED, u, u, function() {music_set(mus.mokou)}),

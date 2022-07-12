@@ -29,7 +29,7 @@ itemgen({
 			ISAAC.sprite_index = s_null;
 			if fighting {
 				fightx += 8;
-				if (player.select && fightx >= 7) || fightx >= bordright-bordleft {
+				if (player.select && fightx >= 17) || fightx >= bordright-bordleft {
 					var middle = bordright-bordleft;
 					var dropoff = floor(abs(fightx-middle/5));
 					//bosshp -= 50-dropoff;

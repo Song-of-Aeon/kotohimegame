@@ -2,7 +2,7 @@ function txt_immortal() {
 	
 	msg = msglang([
 	
-	ntxt(0, u, u, u, function() {instance_create(640, 360, o_bjection, "Instances_ui").image_index = 2}),
+	ntxt(0, u, u, s_court, function() {instance_create(640, 360, o_bjection, "Instances_ui").image_index = 2}),
 	txt("Of course. The effects of the Hourai Elixir. Irreversible, unbreakable immortality.", KOTOHIME.DISAPPOINTED, SPRITEPOS.MIDRIGHT, s_court, function() {music_set(mus.null)}),
 	txt("That's correct.", KAGUYA2.GRIN, SPRITEPOS.MIDLEFT),
 	txt("I cannot age or be killed.", KAGUYA2.GRIN),

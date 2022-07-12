@@ -7,7 +7,7 @@ function txt_gaming() {
 	txt("Okay! Thanks, Reisen!", KOTOHIME.HAPPY, SPRITEPOS.LEFT),
 	txt("No problem...", REISEN.HAPPY, SPRITEPOS.HIDDEN),
 	txt("KAGUYAAAAAA!#I'M HEEEERE~!", KOTOHIME.EXCITED, u, u, function() {music_set(mus.null)}),
-	txt("Please come in.", KAGUYA2.NORMAL),
+	txt("Please come in.", KAGUYA2.HAPPY, SPRITEPOS.HIDDEN),
 	txt("And lo, your price arrives.", KOTOHIME.THINKING, SPRITEPOS.MIDLEFT, s_gaming),
 	txt("Oh? You know, I can only call you my prince if you can fulfill my impossible requests...", KAGUYA2.GRIN, SPRITEPOS.RIGHT),
 	txt("But of course.", KOTOHIME.WINK),

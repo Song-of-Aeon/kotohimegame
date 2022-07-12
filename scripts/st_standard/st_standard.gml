@@ -100,7 +100,7 @@ function st_standard() {
 	inv--;
 	inv = max(inv, 0);
 	hp = min(hp, maxhp);
-	if hp <= 0 {
+	if hp <= 0 && !global.luying {
 		c_die();
 	}
 	if inv {image_alpha -= .5}

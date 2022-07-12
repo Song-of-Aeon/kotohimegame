@@ -1,8 +1,6 @@
 nu pattern_ext(function() {
 	c;
 		if count = 1 {
-			ISAAC.x=145
-			ISAAC.y=240
 			
 			//screen size is 290/340
 			

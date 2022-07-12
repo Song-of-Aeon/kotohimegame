@@ -53,7 +53,7 @@ for (i=0; i<owlist; i++) {
 		}
 		if ow.destructible && ow.object_index != o_laser && ow.object_index != o_hitscan {
 			instance_destroy(ow);
-			audio_play_sound(snd_enemyhurt,0,false);
+			//audio_play_sound(snd_enemyhurt,0,false);
 		}
 		
 	}

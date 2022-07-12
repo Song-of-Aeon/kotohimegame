@@ -72,7 +72,7 @@ function st_standard() {
 				}
 			} else {
 				takingdamage = ow.damage;
-				if takingdamage > hp {
+				if takingdamage > hp && !global.luying {
 					state = st_deathbomb;
 					takingtype = ow.type;
 					if ow.destructible && ow.object_index != o_laser && ow.object_index != o_hitscan {

@@ -45,16 +45,9 @@ nu pattern_ext(function() {
 				}
 			}
 			
-			if count > 4000 {
-				if ncm(42) {
-					c_shoot(x+25, y, 2, point_me(), bul.peenkboolit);
-					c_shoot(x-25, y, 2, point_me(), bul.peenkboolit);					
-				}
-			}
-			
 			if count > 4800 {
 				if ncm(30) {
-					c_shoot(x, y+40, 6, point_me(), bul.bigerboolit, u, function(){	
+					c_shoot(x, y+40, 6, point_me(), bul.ringu, u, function(){	
 						c
 						x = sin(count/60)*30+WIDTH/2;
 						y = cos(count/60)*30+HEIGHT/2;
@@ -92,7 +85,7 @@ nu pattern_ext(function() {
 				}
 			});
 			orbit.escapedistance = 200;
-			var orbit = c_shoot(x, y, 6, point_me(), bul.peenkboolit, u, function() {	
+			var orbit = c_shoot(x, y, 6, point_me(), bul.porplboolit, u, function() {	
 				c
 				x = sin(count/80)*80+o_boss.x;
 				y = cos(count/80)*20+o_boss.y
@@ -112,22 +105,10 @@ nu pattern_ext(function() {
 		}
 		
 		if count > 3800{
-			if count %260 >= 130 {
-				if ncm(69) {
-					c_shootlaser(x, y, 0.5, point_me(), 12, 144, las.sunlazer, u, function() {spd+=0.1});
-					c_shootlaser(x, y, 0.5, point_me()+16, 8, 96, las.blulazer, u, function() {spd+=0.1});
-					c_shootlaser(x, y, 0.5, point_me()-16, 8, 96, las.blulazer, u, function() {spd+=0.1});
-					c_shootlaser(x, y, 0.5, point_me()+32, 8, 96, las.lazerred, u, function() {spd+=0.1});
-					c_shootlaser(x, y, 0.5, point_me()-32, 8, 96, las.lazerred, u, function() {spd+=0.1});
-				}
-			}else{
-				if ncm(69) {
-					c_shootlaser(x, y, 0.5, point_me(), 12, 144, las.sunlazer, u, function() {spd+=0.1});
-					c_shootlaser(x, y, 0.5, point_me()+16, 8, 96, las.lazerred, u, function() {spd+=0.1});
-					c_shootlaser(x, y, 0.5, point_me()-16, 8, 96, las.lazerred, u, function() {spd+=0.1});
-					c_shootlaser(x, y, 0.5, point_me()+32, 8, 96, las.blulazer, u, function() {spd+=0.1});
-					c_shootlaser(x, y, 0.5, point_me()-32, 8, 96, las.blulazer, u, function() {spd+=0.1});									
-				}
+			if ncm(128) {
+				c_shootlaser(x, y, .5, point_me(), 12, 144, las.sunlazer, u, function() {spd += .05});
+				c_shootlaser(x, y, .5, point_me()+16, 8, 96, las.sunlazer, u, function() {spd += .05});
+				c_shootlaser(x, y, .5, point_me()-16, 8, 96, las.sunlazer, u, function() {spd += .05});
 			}
 			/*
 			if ncm (35){		

@@ -43,7 +43,7 @@ function txt_afterword() {
 	ptxt(),
 	txt("On a slightly more personal note... for this story, I really tried to make something emotionally resonant."),
 	txt("Focusing on aspects of Touhou that seem to often get underemphasized in fanworks, and a few things that just personally really matter to me."),
-	txt("No matter how amateurish the writing is, this story was made from the heart, and I hope that shows."),
+	txt("This story was made from the heart, and I hope that shows."),
 //	txt("Hopefully that can continue with future projects."),
 //	txt("It may sound lofty, but... I think my greatest dream is for someone to honestly tell me, \"Your work saved my life.\""),
 

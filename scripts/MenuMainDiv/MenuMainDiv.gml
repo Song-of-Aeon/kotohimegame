@@ -1,8 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
  function generateMainMenu(x,y){
-	room_goto(MINE);
-	exit;
+	//room_goto(MINE);
+	//exit;
 	//music_set()
 	var background  = makeGenericElement(x-10,y-10,130,260,s_null,0);
 	//set_font_style("ui", LANGUAGE.ENGLISH);

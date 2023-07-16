@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "c_meleeshot",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Scripts",
     "path": "folders/Technical/Scripts.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "c_meleeshot",
-  "tags": [],
-  "resourceType": "GMScript",
 }

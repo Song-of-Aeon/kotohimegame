@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "txt_oncemore",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "KOTOHIME GAMING",
     "path": "folders/Dialogue/KOTOHIME GAMING.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "txt_oncemore",
-  "tags": [],
-  "resourceType": "GMScript",
 }

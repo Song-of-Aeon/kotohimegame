@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "c_graze",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "player",
     "path": "folders/Technical/Scripts/player.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "c_graze",
-  "tags": [],
-  "resourceType": "GMScript",
 }

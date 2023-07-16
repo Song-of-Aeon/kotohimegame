@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "x_spellcards",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Entities",
     "path": "folders/Technical/Entities.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "x_spellcards",
-  "tags": [],
-  "resourceType": "GMScript",
 }

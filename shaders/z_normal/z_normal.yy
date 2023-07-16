@@ -1,11 +1,10 @@
 {
-  "type": 1,
+  "resourceType": "GMShader",
+  "resourceVersion": "1.0",
+  "name": "z_normal",
   "parent": {
     "name": "Shaders",
     "path": "folders/Technical/Shaders.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "z_normal",
-  "tags": [],
-  "resourceType": "GMShader",
+  "type": 1,
 }

@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "txt_testtalk",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Dialogue",
     "path": "folders/Dialogue.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "txt_testtalk",
-  "tags": [],
-  "resourceType": "GMScript",
 }

@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "cell",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "constructors",
     "path": "folders/Technical/Scripts/constructors.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "cell",
-  "tags": [],
-  "resourceType": "GMScript",
 }

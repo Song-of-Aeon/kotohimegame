@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "x_songnames",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Music",
     "path": "folders/Music.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "x_songnames",
-  "tags": [],
-  "resourceType": "GMScript",
 }

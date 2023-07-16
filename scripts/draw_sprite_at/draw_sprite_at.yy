@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "draw_sprite_at",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "drawing",
     "path": "folders/Technical/Scripts/drawing.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "draw_sprite_at",
-  "tags": [],
-  "resourceType": "GMScript",
 }

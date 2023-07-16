@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "c_distabs",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "data",
     "path": "folders/Technical/Scripts/data.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "c_distabs",
-  "tags": [],
-  "resourceType": "GMScript",
 }

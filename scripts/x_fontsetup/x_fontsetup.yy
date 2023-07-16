@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "x_fontsetup",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Fonts",
     "path": "folders/Technical/Fonts.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "x_fontsetup",
-  "tags": [],
-  "resourceType": "GMScript",
 }

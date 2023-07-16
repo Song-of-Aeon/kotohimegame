@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "c_additem",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "items",
     "path": "folders/Technical/Scripts/items.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "c_additem",
-  "tags": [],
-  "resourceType": "GMScript",
 }

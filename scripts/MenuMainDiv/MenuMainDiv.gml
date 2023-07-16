@@ -33,7 +33,7 @@
 	var ypos = 1;
 	
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"crash quickly").onSelect = function(){room_goto(WHOAMI); global.MenuCursor.disabled = true global.currentstage = 0 restart_items() global.doingtutorial = false}
-	//makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"aeon mode").onSelect = function(){room_goto(MINE)}
+	makeGenericMMElement(x+(xpos*8),y+(ypos++*70),"aeon mode").onSelect = function(){room_goto(MINE)}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"continue", file_exists("hi guys.kotohime")).onSelect = function(){log("????????????");}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"glossary"/*, file_exists("you've won.kotohime")*/).onSelect = function(){}
 	//makeGenericMMElement(x+(xpos++*8),y+(ypos++*25),"end", file_exists("you've won.kotohime")).onSelect = function(){}
